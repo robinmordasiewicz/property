@@ -9,4 +9,3 @@ sphinxcontrib-nwdiag
 sphinxcontrib-serializinghtml
 sphinxcontrib-mermaid
 cloud_sptheme
-sphinx-hoverxref
