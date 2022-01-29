@@ -91,8 +91,8 @@ extensions = [
     "sphinx.ext.coverage",
     "sphinx.ext.ifconfig",
     "sphinx.ext.doctest",
-    "sphinxjp.themes.basicstrap",
     "cloud_sptheme.ext.table_styling"
+    # "sphinxjp.themes.basicstrap",
     # "sphinx_copybutton",
     # "sphinxcontrib.nwdiag",
     # "sphinx.ext.autosectionlabel"
