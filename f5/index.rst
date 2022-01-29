@@ -7,7 +7,9 @@ F5
    :titlesonly:
    :glob:
 
-How do you like F5
+Get the latest news at `F5`_.
+
+.. _F5: https://www.f5.com
 
 .. raw:: html
 
