@@ -90,8 +90,8 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.coverage",
     "sphinx.ext.ifconfig",
-    "sphinx.ext.doctest",
-    "cloud_sptheme.ext.table_styling"
+    "sphinx.ext.doctest"
+    # "cloud_sptheme.ext.table_styling"
     # "sphinxjp.themes.basicstrap",
     # "sphinx_copybutton",
     # "sphinxcontrib.nwdiag",
