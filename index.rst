@@ -18,7 +18,7 @@ This is the F5 family
 
 .. raw:: html
 
-    <iframe src="/_static/www.nginx.com/index.html"></iframe>
+    <iframe src="_static/www.nginx.com/index.html"></iframe>
 
 .. raw:: html
 
