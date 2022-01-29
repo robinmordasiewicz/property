@@ -48,8 +48,8 @@ rst_prolog = """
 .. |ve|  replace:: Virtual Edition
 .. |icr| replace:: iControl REST API
 .. |ics| replace:: iControl SOAP API
-.. |f5|  replace:: F5 Networks
-.. |f5i| replace:: F5 Networks, Inc.
+.. |f5|  replace:: F5
+.. |f5i| replace:: F5 Inc.
 .. |year| replace:: %s
 .. |github_repo| replace:: %s
 """ % (
@@ -94,8 +94,8 @@ extensions = [
     "sphinx.ext.doctest",
     "sphinxcontrib.nwdiag",
     "sphinx_copybutton",
-    "sphinx.ext.autosectionlabel"
-    # "sphinxjp.themes.basicstrap",
+    "sphinx.ext.autosectionlabel",
+    "sphinxjp.themes.basicstrap"
     # "cloud_sptheme.ext.table_styling"
 ]
 
@@ -185,9 +185,9 @@ html4_writer = True
 html_theme = "f5_sphinx_theme"
 html_theme_path = f5_sphinx_theme.get_html_theme_path()
 #html_sidebars = {"**": ["searchbox.html", "localtoc.html", "globaltoc.html"]}
-html_sidebars = {"**": ["searchbox.html", "globaltoc.html"]}
+html_sidebars = {"**": ["searchbox.html"]}
 html_theme_options = {
-    "site_name": "Community Training Classes & Labs",
+    "site_name": "Service Provider Portfolio",
     "next_prev_link": True,
 }
 html_last_updated_fmt = "%Y-%m-%d %H:%M:%S"
@@ -265,7 +265,7 @@ latex_documents = [
         master_doc,
         "%s.tex" % cleanname,
         "%s Documentation" % classname,
-        "F5 Networks, Inc.",
+        "F5 Inc.",
         "manual",
         True,
     ),
