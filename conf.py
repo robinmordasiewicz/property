@@ -95,7 +95,8 @@ extensions = [
     "sphinxcontrib.nwdiag",
     "sphinx_copybutton",
     "sphinx.ext.autosectionlabel",
-    "cloud_sptheme.ext.table_styling"
+    "cloud_sptheme.ext.table_styling",
+    "hoverxref.extension"
 ]
 
 graphviz_output_format = "svg"
@@ -212,6 +213,9 @@ html_show_sphinx = False
 #
 html_show_copyright = False
 
+# To enable the extension on all :ref: of your documentation,
+# set the hoverxref_auto_ref to True:
+hoverxref_auto_ref = True
 
 # -- Options for HTMLHelp output ------------------------------------------
 
