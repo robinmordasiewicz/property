@@ -7,6 +7,7 @@ F5
    :titlesonly:
    :glob:
 
+   f5/index.rst
    aspen-mesh/index.rst
    nginx/index.rst
    shape/index.rst
