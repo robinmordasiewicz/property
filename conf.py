@@ -208,6 +208,10 @@ html_static_path = ["_static"]
 #
 html_show_sphinx = False
 
+# If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
+#
+html_show_copyright = False
+
 
 # -- Options for HTMLHelp output ------------------------------------------
 
