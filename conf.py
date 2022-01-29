@@ -95,8 +95,7 @@ extensions = [
     "sphinxcontrib.nwdiag",
     "sphinx_copybutton",
     "sphinx.ext.autosectionlabel",
-    "sphinxjp.themes.basicstrap"
-    # "cloud_sptheme.ext.table_styling"
+    "cloud_sptheme.ext.table_styling"
 ]
 
 graphviz_output_format = "svg"

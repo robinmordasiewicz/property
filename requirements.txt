@@ -7,3 +7,4 @@ sphinxcontrib-blockdiag
 sphinxcontrib-nwdiag
 sphinxcontrib-serializinghtml
 sphinxcontrib-mermaid
+cloud_sptheme
