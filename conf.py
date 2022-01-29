@@ -17,6 +17,7 @@ classname = "Service Provider Portfolio"
 
 # OPTIONAL: The URL to the GitHub Repository for this class
 github_repo = "https://github.com/robinmordasiewicz/property"
+github_url = "https://github.com/robinmordasiewicz/property"
 
 #
 # END CONFIG
