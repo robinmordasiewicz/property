@@ -85,7 +85,6 @@ extensions = [
     "sphinx.ext.todo",
     "sphinx.ext.extlinks",
     "sphinx.ext.graphviz",
-    "sphinx_copybutton",
     "sphinxcontrib.blockdiag",
     "sphinxcontrib.mermaid",
     "sphinx.ext.intersphinx",
@@ -94,6 +93,7 @@ extensions = [
     "sphinx.ext.doctest",
     "sphinxjp.themes.basicstrap",
     "cloud_sptheme.ext.table_styling"
+    # "sphinx_copybutton",
     # "sphinxcontrib.nwdiag",
     # "sphinx.ext.autosectionlabel"
 ]
