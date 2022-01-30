@@ -1,4 +1,4 @@
-F5
+Campaigns
 =================
 
 .. toctree::
@@ -12,7 +12,6 @@ F5
    white-papers/index.rst
    solution-briefs/index.rst
    campaigns/index.rst
-   events/index.rst
 
-This is the F5 family
+This is the campaigns section
 
