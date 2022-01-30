@@ -7,7 +7,7 @@ Solution Profiles
    :titlesonly:
    :glob:
 
-This is the solution profiles
+   multi-layer-security.rst
 
 .. raw:: html
 
