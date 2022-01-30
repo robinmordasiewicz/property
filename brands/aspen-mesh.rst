@@ -11,4 +11,4 @@ How do you like aspen mesh
 
 .. raw:: html
 
-    <iframe width="1280" height="720" src="../_static/aspenmesh.io/index.html" title=AspenMesh frameborder="1" scrolling="yes"></iframe>
+    <iframe width="1280" height="720" src="../_static/sites/aspenmesh.io/index.html" title=AspenMesh frameborder="1" scrolling="yes"></iframe>

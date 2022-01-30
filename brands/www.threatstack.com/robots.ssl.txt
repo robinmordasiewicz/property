@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /wp-admin/
-Disallow: /blog/author/
-Disallow: /blog/tag/
-Allow: /wp-admin/admin-ajax.php
