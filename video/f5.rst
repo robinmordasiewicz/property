@@ -27,4 +27,7 @@ This is the video section
         <br>
         <iframe width="640" height="360" src="https://www.youtube.com/embed/c-Z-TeynbyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <br>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/7riGQIJRJgI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
     </div>
+
