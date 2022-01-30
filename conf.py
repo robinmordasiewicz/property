@@ -13,11 +13,13 @@ import f5_sphinx_theme
 # ------------
 #
 # REQUIRED: Your class/lab name
-classname = "Service Provider Portfolio"
+classname = "Service Provider"
 
 # OPTIONAL: The URL to the GitHub Repository for this class
 github_repo = "https://github.com/robinmordasiewicz/property"
 github_url = "https://github.com/robinmordasiewicz/property"
+
+show_source = False
 
 #
 # END CONFIG
@@ -183,10 +185,9 @@ todo_include_todos = True
 html4_writer = True
 html_theme = "f5_sphinx_theme"
 html_theme_path = f5_sphinx_theme.get_html_theme_path()
-#html_sidebars = {"**": ["searchbox.html", "localtoc.html", "globaltoc.html"]}
-html_sidebars = {"**": ["searchbox.html"]}
+html_sidebars = {"**": ["searchbox.html", "localtoc.html", "globaltoc.html"]}
 html_theme_options = {
-    "site_name": "Service Provider Portfolio",
+    "site_name": "Service Provider",
     "next_prev_link": True,
 }
 html_last_updated_fmt = "%Y-%m-%d %H:%M:%S"

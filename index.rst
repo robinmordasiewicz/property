@@ -1,4 +1,4 @@
-F5
+Portfolio
 =================
 
 .. toctree::
@@ -7,12 +7,13 @@ F5
    :titlesonly:
    :glob:
 
-   brands/index.rst
-   videos/index.rst
-   white-papers/index.rst
-   solution-briefs/index.rst
-   campaigns/index.rst
-   events/index.rst
+   brand/index.rst
+   video/index.rst
+   white-paper/index.rst
+   solution-brief/index.rst
+   campaign/index.rst
+   event/index.rst
+   blog/index.rst
 
 This is the F5 family
 
