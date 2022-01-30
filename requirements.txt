@@ -10,3 +10,4 @@ sphinxcontrib-serializinghtml
 sphinxcontrib-mermaid
 cloud_sptheme
 sphinxcontrib.yt
+sphinxcontrib.youtube
