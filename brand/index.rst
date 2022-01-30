@@ -14,6 +14,7 @@ Brands
    silverline.rst
    threat-stack.rst
    volterra.rst
+   facebook.rst
 
 Logos Here
 
