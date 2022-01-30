@@ -7,4 +7,10 @@ Volterra
    :titlesonly:
    :glob:
 
-How do you like Volterra
+Get the latest news at `Volterra`_.
+
+.. _Volterra: https://www.volterra.io
+
+.. raw:: html
+
+    <iframe width="1280" height="720" src="../_static/sites/www.volterra.io" title=F5 frameborder="1" scrolling="yes"></iframe>

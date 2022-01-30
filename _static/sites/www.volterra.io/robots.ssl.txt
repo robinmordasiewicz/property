@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: https://www.volterra.io/sitemap.xml
+Host: https://www.volterra.io
