@@ -95,7 +95,7 @@ extensions = [
     "sphinx.ext.ifconfig",
     "sphinx.ext.doctest",
     "sphinxcontrib.nwdiag",
-    "sphinxcontrib.yt",
+    "sphinxcontrib.youtube",
     "sphinx_copybutton",
     "sphinx.ext.autosectionlabel",
     "cloud_sptheme.ext.table_styling",
