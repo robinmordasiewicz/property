@@ -30,13 +30,13 @@ This is the F5 family
 
     <div>
       <object
-        data='https://pdfjs-express.s3-us-west-2.amazonaws.com/docs/choosing-a-pdf-viewer.pdf'
+        data='https://www.f5.com/pdf/solution-profiles/service-provider-multi-layered-security-sp.pdf'
         type="application/pdf"
         width="500"
         height="678"
       >
         <iframe
-          src='https://pdfjs-express.s3-us-west-2.amazonaws.com/docs/choosing-a-pdf-viewer.pdf'
+          src='https://www.f5.com/pdf/solution-profiles/service-provider-multi-layered-security-sp.pdf'
           width="500"
           height="678"
         >
