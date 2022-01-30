@@ -7,7 +7,7 @@ Portfolio
    :titlesonly:
    :glob:
 
-   solution-brief/index.rst
+   solution-profile/index.rst
    video/index.rst
    white-paper/index.rst
    campaign/index.rst

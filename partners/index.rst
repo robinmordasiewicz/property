@@ -7,4 +7,6 @@ Partners
    :titlesonly:
    :glob:
 
+   equinex.rst
+
 This is the F5 family
