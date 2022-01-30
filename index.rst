@@ -17,6 +17,7 @@ Portfolio
    documentation/index.rst
    support/index.rst
    sales/index.rst
+   use-cases/index.rst
 
 This is the F5 family
 
