@@ -16,6 +16,7 @@ Solution Profiles
    pem.rst
    cgnat.rst
    tcp-opt.rst
+   adaptive-bit-rate-video-detection-and-control.rst
    security.rst
 
 .. raw:: html
