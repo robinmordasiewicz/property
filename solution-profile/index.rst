@@ -13,6 +13,7 @@ Solution Profiles
    pem.rst
    cgnat.rst
    tcp-opt.rst
+   security.rst
 
 .. raw:: html
 
