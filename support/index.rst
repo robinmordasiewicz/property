@@ -8,9 +8,9 @@ Support
    :glob:
 
    overview.rst
+   standard-premium.rst
    Premium-Plus-Description.rst
    premium-plus-service.rst
-   standard-premium.rst
    technical-account-management-ds.rst
    RMA.rst
 
