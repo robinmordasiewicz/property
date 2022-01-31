@@ -8,6 +8,7 @@ Use Cases
    :glob:
 
    consolidated-virtual-gilan-use-case-mwc.rst
+   5g-performance.rst
 
 These are F5 use cases
 
