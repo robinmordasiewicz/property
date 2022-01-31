@@ -1,4 +1,4 @@
-Campaigns
+Security
 =================
 
 .. toctree::
@@ -7,8 +7,8 @@ Campaigns
    :titlesonly:
    :glob:
  
-   5g/index.rst
-   security/index.rst
+   5g-security.rst
 
-This is the campaigns section
+This is the Service Provider Security campaign
+
 
