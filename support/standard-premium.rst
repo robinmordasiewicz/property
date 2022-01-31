@@ -1,4 +1,4 @@
-Standard vs Premium
+Standard and Premium
 ========================
 
 .. toctree::
