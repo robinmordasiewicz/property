@@ -8,6 +8,7 @@ Solution Profiles
    :glob:
 
    f5-solutions-for-the-emerging-5g-landscape.rst
+   security.rst
    edge-compute.rst
    multi-layer-security.rst
    diameter-signalling.rst
@@ -17,7 +18,7 @@ Solution Profiles
    cgnat.rst
    tcp-opt.rst
    adaptive-bit-rate-video-detection-and-control.rst
-   security.rst
+   f5_optimize_your_network_ebook.rst
 
 .. raw:: html
 

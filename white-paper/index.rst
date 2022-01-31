@@ -16,6 +16,7 @@ White Papers
    containerization.rst
    mobile-security.rst
    building-better-5g-security.rst
+   build-your-future-ready-infrastructure.rst
 
 This is the white papers section
 
