@@ -1,4 +1,4 @@
-Premium Plus Description
+Premium Plus Overview
 ========================
 
 .. toctree::

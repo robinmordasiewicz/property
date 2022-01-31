@@ -1,5 +1,5 @@
-Description
-========================
+Premium Plus Description
+==========================
 
 .. toctree::
    :hidden:
