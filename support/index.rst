@@ -7,9 +7,9 @@ Support
    :titlesonly:
    :glob:
 
+   overview.rst
    Premium-Plus-Description.rst
    premium-plus-service.rst
-   overview.rst
    standard-premium.rst
    technical-account-management-ds.rst
    RMA.rst
