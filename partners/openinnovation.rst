@@ -1,5 +1,5 @@
-Partners
-=================
+Open Innovation Lab
+====================
 
 .. toctree::
    :hidden:
@@ -7,8 +7,7 @@ Partners
    :titlesonly:
    :glob:
 
-   equinex.rst
-   cisco.rst
-   openinnovation.rst
-
 This is the F5 family
+
+https://5goilab.com/partners/
+
