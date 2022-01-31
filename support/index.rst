@@ -13,6 +13,8 @@ Support
    premium-plus-service.rst
    technical-account-management-ds.rst
    RMA.rst
+   rma-disk-retention-ds.rst
+   rma-hardware-rentention-services-datasheet.rst
 
 .. raw:: html
 
