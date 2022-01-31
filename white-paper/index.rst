@@ -10,6 +10,7 @@ White Papers
    ipv6-migration.rst
    build-cdn.rst
    sip.rst
+   ims.rst
 
 This is the white papers section
 

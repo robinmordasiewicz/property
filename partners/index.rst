@@ -8,5 +8,6 @@ Partners
    :glob:
 
    equinex.rst
+   cisco.rst
 
 This is the F5 family
