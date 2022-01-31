@@ -8,6 +8,7 @@ Solution Profiles
    :glob:
 
    f5-solutions-for-the-emerging-5g-landscape.rst
+   edge-compute.rst
    multi-layer-security.rst
    diameter-signalling.rst
    diameter-signalling-SS7.rst
