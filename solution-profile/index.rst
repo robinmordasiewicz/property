@@ -10,6 +10,7 @@ Solution Profiles
    multi-layer-security.rst
    diameter-signalling.rst
    diameter-signalling-SS7.rst
+   sgi-lan-consolidation.rst
    pem.rst
    cgnat.rst
    tcp-opt.rst
