@@ -8,6 +8,7 @@ Blogs
    :glob:
 
    5g-migration.rst
+   telco-apps.rst
 
 This is the blogs section
 
