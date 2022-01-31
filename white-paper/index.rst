@@ -14,6 +14,7 @@ White Papers
    5g-cloud-native.rst
    smartnics.rst
    containerization.rst
+   mobile-security.rst
 
 This is the white papers section
 
