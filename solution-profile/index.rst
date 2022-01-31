@@ -10,6 +10,7 @@ Solution Profiles
    multi-layer-security.rst
    diameter-signalling-SS7.rst
    pem.rst
+   tcp-opt.rst
 
 .. raw:: html
 
