@@ -12,6 +12,7 @@ White Papers
    sip.rst
    ims.rst
    5g-cloud-native.rst
+   smartnics.rst
 
 This is the white papers section
 
