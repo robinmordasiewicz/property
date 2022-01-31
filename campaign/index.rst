@@ -10,6 +10,7 @@ Campaigns
    f5.rst
    n6-optimization.rst
    securing-5g-edge.rst
+   security.rst
 
 This is the campaigns section
 
