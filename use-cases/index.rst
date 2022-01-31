@@ -10,6 +10,7 @@ Use Cases
    consolidated-virtual-gilan-use-case-mwc.rst
    5g-performance.rst
    volte-and-ims-security-for-service-providers.rst
+   intelligent-dns-firewall-for-service-providers.rst
 
 These are F5 use cases
 
