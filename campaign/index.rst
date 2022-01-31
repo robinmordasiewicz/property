@@ -7,7 +7,7 @@ Campaigns
    :titlesonly:
    :glob:
  
-   5g/index.rst
+   5G/index.rst
    security/index.rst
 
 This is the campaigns section
