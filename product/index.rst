@@ -8,6 +8,7 @@ Products
    :glob:
 
    diameter-traffic-management.rst
+   carrier-grade-nat.rst
 
 These are the Products
 
