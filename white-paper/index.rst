@@ -15,6 +15,7 @@ White Papers
    smartnics.rst
    containerization.rst
    mobile-security.rst
+   building-better-5g-security.rst
 
 This is the white papers section
 
