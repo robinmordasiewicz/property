@@ -9,6 +9,7 @@ Security
  
    5g-security.rst
    edge-security.rst
+   securing-5g-edge.rst
 
 https://www.f5.com/solutions/service-provider-security
 
