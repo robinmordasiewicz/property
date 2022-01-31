@@ -7,6 +7,7 @@ Solution Profiles
    :titlesonly:
    :glob:
 
+   f5-solutions-for-the-emerging-5g-landscape.rst
    multi-layer-security.rst
    diameter-signalling.rst
    diameter-signalling-SS7.rst
