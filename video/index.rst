@@ -12,6 +12,7 @@ Videos
    nginx.rst
    shape.rst
    volterra.rst
+   5g-success.rst
 
 This is the video section
 
