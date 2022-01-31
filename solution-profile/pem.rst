@@ -1,4 +1,4 @@
-Diameter Signalling
+Subscriber Tiering
 ========================
 
 .. toctree::
@@ -7,19 +7,19 @@ Diameter Signalling
    :titlesonly:
    :glob:
 
-https://www.f5.com/pdf/solution-profiles/diameter-signaling-solution-profile.pdf
+https://www.f5.com/pdf/solution-profiles/big-ip-policy-enforcement-manager-solution-profile.pdf
 
 .. raw:: html
 
     <div>
       <object
-        data='https://www.f5.com/pdf/solution-profiles/diameter-signaling-solution-profile.pdf'
+        data='https://www.f5.com/pdf/solution-profiles/big-ip-policy-enforcement-manager-solution-profile.pdf'
         type="application/pdf"
         width="500"
         height="678"
       >
         <iframe
-          src='https://www.f5.com/pdf/solution-profiles/diameter-signaling-solution-profile.pdf'
+          src='https://www.f5.com/pdf/solution-profiles/big-ip-policy-enforcement-manager-solution-profile.pdf'
           width="500"
           height="678"
         >

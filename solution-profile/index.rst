@@ -1,5 +1,5 @@
 Solution Profiles
-=================
+=====================
 
 .. toctree::
    :hidden:
@@ -8,6 +8,8 @@ Solution Profiles
    :glob:
 
    multi-layer-security.rst
+   diameter-signalling-SS7.rst
+   pem.rst
 
 .. raw:: html
 
