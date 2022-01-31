@@ -11,6 +11,7 @@ White Papers
    build-cdn.rst
    sip.rst
    ims.rst
+   5g-cloud-native.rst
 
 This is the white papers section
 
