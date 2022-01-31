@@ -9,9 +9,10 @@
  
    5g.rst
    n6-optimization.rst
+   kickstart-your-move-to-5g-services-without-abandoning-4g-investments.rst
    fast-track-to-the-5g-edge-n6-lan-consolidation.rst
 
-This is the 5G campaign
+https://www.f5.com/solutions/service-providers/5g
 
 .. raw:: html
 
