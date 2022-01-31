@@ -8,8 +8,8 @@ Campaigns
    :glob:
  
    f5.rst
+   n6-optimization.rst
 
 This is the campaigns section
 
-.. youtube:: wNxO-aXY5Yw
 
