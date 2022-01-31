@@ -8,6 +8,7 @@ Portfolio
    :glob:
 
    solution-profile/index.rst
+   product/index.rst
    video/index.rst
    white-paper/index.rst
    campaign/index.rst
