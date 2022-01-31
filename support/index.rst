@@ -15,6 +15,7 @@ Support
    RMA.rst
    rma-disk-retention-ds.rst
    rma-hardware-rentention-services-datasheet.rst
+   iso-9001-ds.rst
 
 .. raw:: html
 
