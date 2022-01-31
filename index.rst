@@ -7,18 +7,17 @@ Portfolio
    :titlesonly:
    :glob:
 
+   campaign/index.rst
    solution-profile/index.rst
+   use-cases/index.rst
    product/index.rst
    video/index.rst
    white-paper/index.rst
-   campaign/index.rst
-   event/index.rst
    blog/index.rst
    brand/index.rst
    documentation/index.rst
    support/index.rst
    sales/index.rst
-   use-cases/index.rst
    partners/index.rst
 
 This is the F5 family
