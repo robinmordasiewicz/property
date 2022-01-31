@@ -1,4 +1,4 @@
-Overview
+Datasheet
 ========================
 
 .. toctree::
