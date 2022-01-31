@@ -11,6 +11,8 @@ Support
    premium-plus-service.rst
    overview.rst
    standard-premium.rst
+   technical-account-management-ds.rst
+   RMA.rst
 
 .. raw:: html
 
