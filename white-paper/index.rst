@@ -13,6 +13,7 @@ White Papers
    ims.rst
    5g-cloud-native.rst
    smartnics.rst
+   containerization.rst
 
 This is the white papers section
 
