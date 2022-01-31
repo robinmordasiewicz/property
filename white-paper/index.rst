@@ -7,5 +7,7 @@ White Papers
    :titlesonly:
    :glob:
 
+   ipv6-migration.rst
+
 This is the white papers section
 
