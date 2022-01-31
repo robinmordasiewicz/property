@@ -8,6 +8,8 @@ White Papers
    :glob:
 
    ipv6-migration.rst
+   build-cdn.rst
+   sip.rst
 
 This is the white papers section
 
