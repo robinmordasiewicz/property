@@ -9,6 +9,8 @@ Support
 
    Premium-Plus-Description.rst
    premium-plus-service.rst
+   overview.rst
+   standard-premium.rst
 
 .. raw:: html
 
