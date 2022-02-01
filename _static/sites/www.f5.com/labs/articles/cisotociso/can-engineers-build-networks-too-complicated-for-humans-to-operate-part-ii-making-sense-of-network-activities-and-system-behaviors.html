@@ -189,7 +189,7 @@
      
         
 
-       	<div class="background-cut " style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a05/optimize/article-background-image.jpg);"></div>
+       	<div class="background-cut " style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a05/optimize/article-background-image.jpg);"></div>
         
 
 
@@ -315,7 +315,7 @@
         
        
         <section class="container-fluid c02-header-area__main-article details fill-main-container">
-            <div class="c02-header-area__heroImageBackground" style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a05/optimize/article-background-image.jpg);"></div>
+            <div class="c02-header-area__heroImageBackground" style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a05/optimize/article-background-image.jpg);"></div>
             <div class="c02-header-area__main-article-overlay"></div>
            
             <div class="row">
@@ -352,7 +352,7 @@
                         
                     </div>
                     <div class="c02-header-area__author-name tags">
-                        By <a class="c02-header-area__author-name tag-item" href="https://www.f5.com/labs/search.author_Mike%2BSimon">Mike Simon</a>
+                        By <a class="c02-header-area__author-name tag-item" href="../../search.author_Mike+Simon.html">Mike Simon</a>
                     </div>
                     
                 </div>
@@ -402,7 +402,7 @@
     </div>
     <div class="a03-text text section">
 <div class="cmp-text ">
-    <p>In <a href="https://f5.com/labs/articles/cisotociso/trends/can-engineers-build-networks-too-complicated-for-humans-to-operate-part-i-scope-of-the-problem" target="_blank" rel="noreferrer">part I of this series</a><span>, I explored some of the issues surrounding the fact that we have managed to build networks so large and complex that it is essentially impossible to grasp any significant fraction of network activities without asking for help from… the network itself. In this installment, I delve into some actual techniques for acquiring, analyzing, and managing the Hydra’s head of firehoses aimed at your head if you are the one in charge of making sense of network activities and system behaviors.</span></p>
+    <p>In <a href="can-engineers-build-networks-too-complicated-for-humans-to-operate-part-i-scope-of-the-problem.html" target="_blank" rel="noreferrer">part I of this series</a><span>, I explored some of the issues surrounding the fact that we have managed to build networks so large and complex that it is essentially impossible to grasp any significant fraction of network activities without asking for help from… the network itself. In this installment, I delve into some actual techniques for acquiring, analyzing, and managing the Hydra’s head of firehoses aimed at your head if you are the one in charge of making sense of network activities and system behaviors.</span></p>
 <p>But first, I’d like to mention another reason that solving this problem is critical—and one of the most challenging puzzles of my professional life. Attackers or red-team folks have it easy. For them to plant a flag, declare victory, and do their silly looking celebration dance, they need to succeed once. They will fail several thousand times for each success, but the failures are Internet noise. Their failures are how I check to see if an Internet device is functioning properly. If I don’t see an attacker failing to take over the connected system in 5 to 10 seconds, I can assume the device isn’t configured and on the Internet. Defenders, on the other hand, have to succeed 100% of the time. Any failure on the part of a defender is notable and potentially disastrous. If we think about that in relation to the “rock-in-a-rock-stack-on-planet-rock” problem we have with seeing anything on a busy network, we start to see why and how figuring out a way to capture, parse, interpret, and generally process network activities at scale is such a challenging problem.</p>
 <p>In part I, I mentioned that in some circumstances the only absolute truth is the detailed packet contents. In some circumstances, 100% of the metadata surrounding an event will point one way, but examination of the packet contents will show that the truth is otherwise. My previous example was something that looked bad but wasn’t, so I’ll provide a counter example (and the more common type) of something that looks fine but indicates that your system is compromised.</p>
 <p>Malware beaconing (essentially the method and act of some malware reaching out to its operator for new commands) comes in many forms, and some are detectable as highly periodic, aimed at a specifically known bad reputation site, or detectable in some other way. Clever malware authors use command and control (C&amp;C) channels that look more like normal data, for example, DNS lookups or posting and reading comments in Britney Spears’ Instagram feed.<a href="#_ftn1"><sup>1</sup></a><a id="_ftnref1"></a> The only way you know the difference between a “legitimate” access of Britney’s Instagram and C&amp;C activities is by examining the actual packet contents. As it turns out, a Russian-generated bot’s communication with its master is measurably different from random folks posting comments. I know, I was surprised too.</p>
@@ -528,7 +528,7 @@
                             <span class="U:align-self-center">November 02, 2018</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/cisotociso/build-defense-in-depth-with-dissimilar-protections" class="a07-related-articles__link">
+                    <a href="build-defense-in-depth-with-dissimilar-protections.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Build Defense in Depth with Dissimilar Protections
                         </div>
@@ -555,7 +555,7 @@
                             <span class="U:align-self-center">January 17, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/security-lessons-from-across-the-pond--local-government-ransomwa" class="a07-related-articles__link">
+                    <a href="../bylines/security-lessons-from-across-the-pond--local-government-ransomwa.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Security Lessons from Across the Pond: Local Government Ransomware Attacks
                         </div>
@@ -582,7 +582,7 @@
                             <span class="U:align-self-center">May 31, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/permission-to-intrude--hiring-hackers-to-bolster-cyber-defenses" class="a07-related-articles__link">
+                    <a href="../bylines/permission-to-intrude--hiring-hackers-to-bolster-cyber-defenses.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Permission to Intrude: Hiring Hackers to Bolster Cyber Defenses
                         </div>
@@ -736,7 +736,7 @@
                     <div class="row">
                         <div class="a04-article-author-bio__content__image-wrap">
                             <div class="a04-article-author-bio__content__img-container">
-                                <img data-src="https://www.f5.com/content/dam/f5-labs-v2/_author-headshots/Mike_Simon.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                                <img data-src="../../../content/dam/f5-labs-v2/_author-headshots/Mike_Simon.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
                             </div>
                         </div>
                         <div class="a04-article-author-bio__content__data-wrap">
@@ -747,7 +747,7 @@
                             <div class="a04-article-author-bio__content__author-descr"><p>With an education in computer science and 25 years of experience designing and securing information systems, Mike Simon is a well-known and highly respected member of the Northwest’s information security community. He is faculty at the University of Washington Information School, a published author, an active collaborator in the PRISEM and PICES projects and other regional initiatives, a subject matter expert in the energy and finance sectors, and integrated with law enforcement through contacts in the FBI, DHS, and Infragard. As Critical Informatics’ Chief Technology Officer, he leads development teams for the Critical Insight security monitoring platform and the associated Critical Insight Collector-sensor, directs our Big Data and Data Analytics program and helps to set company direction and strategy.</p>
 </div>
                             <div>
-                                <a class="a04-article-author-bio__content__author-more-articles" href="https://www.f5.com/labs/search.author_Mike%2BSimon">More articles from Mike Simon</a>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="../../search.author_Mike+Simon.html">More articles from Mike Simon</a>
                             </div>
                         </div>
                     </div>
@@ -811,7 +811,7 @@
 
         <div class="a05-article-tags__tags-box">
             <strong class="a05-article-tags__strong">TAGS: </strong>
-            <a href="https://www.f5.com/labs/search?q=%22risk+management%22" class="a05-article-tags__a">risk management</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22risk+management%22.html" class="a05-article-tags__a">risk management</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=CISO.html" class="a05-article-tags__a">CISO</a><span class="a05-article-tags__span">,</span>
@@ -820,10 +820,10 @@
             <a href="../../search%EF%B9%96q=Controls.html" class="a05-article-tags__a">Controls</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22packet+analysis%22" class="a05-article-tags__a">packet analysis</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22packet+analysis%22.html" class="a05-article-tags__a">packet analysis</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22complex+systems%22" class="a05-article-tags__a">complex systems</a>
+            <a href="../../search%EF%B9%96q=%22complex+systems%22.html" class="a05-article-tags__a">complex systems</a>
         </div>
 
     
@@ -857,7 +857,7 @@
                             <span class="U:align-self-center">November 02, 2018</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/cisotociso/build-defense-in-depth-with-dissimilar-protections" class="a07-related-articles__link">
+                    <a href="build-defense-in-depth-with-dissimilar-protections.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Build Defense in Depth with Dissimilar Protections
                         </div>
@@ -884,7 +884,7 @@
                             <span class="U:align-self-center">January 17, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/security-lessons-from-across-the-pond--local-government-ransomwa" class="a07-related-articles__link">
+                    <a href="../bylines/security-lessons-from-across-the-pond--local-government-ransomwa.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Security Lessons from Across the Pond: Local Government Ransomware Attacks
                         </div>
@@ -911,7 +911,7 @@
                             <span class="U:align-self-center">May 31, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/permission-to-intrude--hiring-hackers-to-bolster-cyber-defenses" class="a07-related-articles__link">
+                    <a href="../bylines/permission-to-intrude--hiring-hackers-to-bolster-cyber-defenses.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Permission to Intrude: Hiring Hackers to Bolster Cyber Defenses
                         </div>
@@ -968,7 +968,7 @@
                             <span class="U:align-self-center">November 02, 2018</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/cisotociso/build-defense-in-depth-with-dissimilar-protections" class="a07-related-articles__link">
+                    <a href="build-defense-in-depth-with-dissimilar-protections.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Build Defense in Depth with Dissimilar Protections
                         </div>
@@ -995,7 +995,7 @@
                             <span class="U:align-self-center">January 17, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/security-lessons-from-across-the-pond--local-government-ransomwa" class="a07-related-articles__link">
+                    <a href="../bylines/security-lessons-from-across-the-pond--local-government-ransomwa.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Security Lessons from Across the Pond: Local Government Ransomware Attacks
                         </div>
@@ -1022,7 +1022,7 @@
                             <span class="U:align-self-center">May 31, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/permission-to-intrude--hiring-hackers-to-bolster-cyber-defenses" class="a07-related-articles__link">
+                    <a href="../bylines/permission-to-intrude--hiring-hackers-to-bolster-cyber-defenses.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Permission to Intrude: Hiring Hackers to Bolster Cyber Defenses
                         </div>

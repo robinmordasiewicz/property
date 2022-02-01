@@ -680,7 +680,7 @@
 <h2>Examining the Capital One Cloud Breach</h2>
 <p>One breach stands out. It’s the one everyone has been talking about this summer: the Capital One cloud breach of the personal financial records of 106 million individuals.<span class="footnoteList"></span><a id="_ftnrefAutoIncr1" class="footnote-ref" title="1" href="#_ftnAutoIncr1"><sup>1</sup></a> There are many factors in this case, and they are still trickling out months later. Capital One had a mature and multifaceted cloud security program, and it took a knowledgeable attacker to exploit its defenses. I see this as a good example of a Swiss-cheese incident, using many layers of imperfect barriers (Swiss cheese slices) in a series to prevent a penetration. But, in a large attack surface across a complex environment, there is a decent chance that a random set of holes in all the defensive layers will align all the way through.<span class="footnoteList"></span><a id="_ftnrefAutoIncr2" class="footnote-ref" title="2" href="#_ftnAutoIncr2"><sup>2</sup></a> If any lessons can be gleaned from this regarding the cloud, they are: 1) cloud security can be large, complex, and opaque and 2) you should always <a href="../cisotociso/everything-is-compromisednow-what.html" target="_blank" rel="no-opener no-referrer">assume breach</a>. In the latter lesson, Capital One excelled, as the breach was quickly detected, reported, and the attacker apprehended. To date, no known fraud has been reported using any of the stolen data. Also, AWS has recently closed many of the holes exploited in this breach with Version 2 of their EC2 instance metadata which adds protection against server-side request forgery (SSRF) and some WAF penetrating attacks<span class="footnoteList"></span><a id="_ftnrefAutoIncr3" class="footnote-ref" title="3" href="#_ftnAutoIncr3"><sup>3</sup></a>.</p>
 <h2>Cloud Provider Glitches</h2>
-<p>When you <a href="https://www.f5.com/labs/articles/cisotociso/third-party-security-is-your-security" target="_blank" rel="no-opener no-referrer">outsource a major part of your IT infrastructure</a> to anyone, cloud or otherwise, you risk putting all your eggs in one basket. Sometimes that basket has a hole in a it. It’s rare, but it happens.</p>
+<p>When you <a href="../cisotociso/third-party-security-is-your-security.html" target="_blank" rel="no-opener no-referrer">outsource a major part of your IT infrastructure</a> to anyone, cloud or otherwise, you risk putting all your eggs in one basket. Sometimes that basket has a hole in a it. It’s rare, but it happens.</p>
 <p>One of the most infamous cloud provider breaches happened in 2017 at Cloudflare. It was given the name Cloudbleed, which involved a vulnerability in how reverse proxies managed their buffer memory.<span class="footnoteList"></span><a id="_ftnrefAutoIncr4" class="footnote-ref" title="4" href="#_ftnAutoIncr4"><sup>4</sup></a> This bug caused memory contents to leak, possibly exposing (the bleed part) private web session information, including authentication and session tracking details. Customers of Cloudflare services were urged to rotate their passwords. This came on the heels of Heartbleed, a similar memory-leaking vulnerability in OpenSSL software (not necessarily cloud-specific) and served as a reminder that cloud vendors are not security problems or software bugs.</p>
 <p>Cloud providers can also susceptible be to ransomware, an ever-growing threat, striking organizations large and small over the past few years. Notably, there were two cloud-hosting firms suffered ransomware in 2019: ConnectWise<span class="footnoteList"></span><a id="_ftnrefAutoIncr5" class="footnote-ref" title="5" href="#_ftnAutoIncr5"><sup>5</sup></a> and iNSYNQ<span class="footnoteList"></span><a id="_ftnrefAutoIncr6" class="footnote-ref" title="6" href="#_ftnAutoIncr6"><sup>6</sup></a>, both of which locked up their cloud infrastructure and hindered customer operations.</p>
 <h2>Hacking the Cloud Itself</h2>
@@ -694,7 +694,7 @@
 <h3>Access Attack: Cloud Credentials Stolen</h3>
 <p>There are many ways to steal authentication credentials beyond phishing. Sometimes the details aren’t given, such as the case with cloud solution provider PCM’s breach of administrative credentials to clients’ Office365 accounts.<span class="footnoteList"></span><a id="_ftnrefAutoIncr11" class="footnote-ref" title="11" href="#_ftnAutoIncr11"><sup>11</sup></a> Sometimes login keys are left unencrypted sitting in code repositories,<span class="footnoteList"></span><a id="_ftnrefAutoIncr12" class="footnote-ref" title="12" href="#_ftnAutoIncr12"><sup>12</sup></a> and specifically targeted for theft as was the case of the Uber breach of 57 million users,<span class="footnoteList"></span><a id="_ftnrefAutoIncr13" class="footnote-ref" title="13" href="#_ftnAutoIncr13"><sup>13</sup></a> Because of the prevalence of accidental cloud key compromise in this manner, GitHub has taken steps to reduce this by proactively scanning and warning users.<span class="footnoteList"></span><a id="_ftnrefAutoIncr14" class="footnote-ref" title="14" href="#_ftnAutoIncr14"><sup>14</sup></a> Sometimes credential keys are ripped off from cloud compute instances and used for all sorts of mayhem, as was the case with the Imperva Cloud WAF breach in October 2018.<span class="footnoteList"></span><a id="_ftnrefAutoIncr15" class="footnote-ref" title="15" href="#_ftnAutoIncr15"><sup>15</sup></a></p>
 <h2>Accidental Cloud Leaks</h2>
-<p>Outside of breaches from active hacks by malicious entities, there are numerous cloud security incidents traced back to configuration errors, user misunderstandings, and just embarrassing gaps in operational procedures. Sadly, this is a common problem associated with the cloud because such complexity is hidden within layers of abstraction and virtualization. It’s easy to tweak a single configuration and have access fall open somewhere unseen. It’s compounded by the fact that <a href="https://www.f5.com/labs/articles/cisotociso/cloud-security--citadel-or-straw-house-its-your-call" target="_blank" rel="no-opener no-referrer">cloud deployments are being done more and more by users inexperienced in operations or IT security</a>. These accidental leaks break down into a few major categories as well.</p>
+<p>Outside of breaches from active hacks by malicious entities, there are numerous cloud security incidents traced back to configuration errors, user misunderstandings, and just embarrassing gaps in operational procedures. Sadly, this is a common problem associated with the cloud because such complexity is hidden within layers of abstraction and virtualization. It’s easy to tweak a single configuration and have access fall open somewhere unseen. It’s compounded by the fact that <a href="../cisotociso/cloud-security--citadel-or-straw-house-its-your-call.html" target="_blank" rel="no-opener no-referrer">cloud deployments are being done more and more by users inexperienced in operations or IT security</a>. These accidental leaks break down into a few major categories as well.</p>
 <h3>Cloud Database Leaks</h3>
 <p>It seems a lot of large databases of important things end up in the cloud without proper access controls put in place. Here are a few mishaps from 2017 through 2019:</p>
 <table border="1" cellspacing="0" cellpadding="10" style="width: auto;" class="table-striped">
@@ -1482,31 +1482,31 @@
 
         <div class="a05-article-tags__tags-box">
             <strong class="a05-article-tags__strong">TAGS: </strong>
-            <a href="https://www.f5.com/labs/search?q=%22cloud+security%22" class="a05-article-tags__a">cloud security</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22cloud+security%22.html" class="a05-article-tags__a">cloud security</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=cloud.html" class="a05-article-tags__a">cloud</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=Exfiltration" class="a05-article-tags__a">Exfiltration</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=Exfiltration.html" class="a05-article-tags__a">Exfiltration</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22breach+trends%22" class="a05-article-tags__a">breach trends</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22breach+trends%22.html" class="a05-article-tags__a">breach trends</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=Threats.html" class="a05-article-tags__a">Threats</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=Outage" class="a05-article-tags__a">Outage</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=Outage.html" class="a05-article-tags__a">Outage</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=%22Credential+stuffing%22.html" class="a05-article-tags__a">Credential stuffing</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=cryptocurrency" class="a05-article-tags__a">cryptocurrency</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=cryptocurrency.html" class="a05-article-tags__a">cryptocurrency</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22third-party+security%22" class="a05-article-tags__a">third-party security</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22third-party+security%22.html" class="a05-article-tags__a">third-party security</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=Injection.html" class="a05-article-tags__a">Injection</a><span class="a05-article-tags__span">,</span>
@@ -1521,7 +1521,7 @@
             <a href="../../search%EF%B9%96q=%22Credential+theft%22.html" class="a05-article-tags__a">Credential Theft</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=NIST" class="a05-article-tags__a">NIST</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=NIST.html" class="a05-article-tags__a">NIST</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=%22Services+Tier%22.html" class="a05-article-tags__a">Services Tier</a>

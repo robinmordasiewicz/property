@@ -1,0 +1,2764 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8"/>
+    <title>Ramnit Returns to its Banking Roots, Just in Time for Italian Tax Season</title>
+    <meta name="robots"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Ramnit’s latest configuration targets Europe leading up to tax season, focusing on Italian banks and international online advertisers."/>
+    <meta name="template" content="article-details-template"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>    
+    
+
+    <meta property="og:locale" content="en_US"/>
+
+    <meta property="og:type" content="website"/>
+
+    <meta property="og:title" content="Ramnit Returns to its Banking Roots, Just in Time for Italian Tax Season"/>
+
+    <meta property="og:description" content="Ramnit’s latest configuration targets Europe leading up to tax season, focusing on Italian banks and international online advertisers."/>
+
+    <meta property="og:site_name" content="F5 Labs"/>
+
+    <meta property="og:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+    <meta property="og:image_secure_url" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+
+    <meta property="fb:app_id" content="302184056577324"/>
+
+
+    <meta property="twitter:card" content="summary_large_image"/>
+
+    <meta property="twitter:title" content="Ramnit Returns to its Banking Roots, Just in Time for Italian Tax Season"/>
+
+    <meta property="twitter:description" content="Ramnit’s latest configuration targets Europe leading up to tax season, focusing on Italian banks and international online advertisers."/>
+
+    <meta property="twitter:site" content="@F5networks"/>
+
+    <meta property="twitter:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+    <meta property="twitter:creator" content="@F5networks"/>
+
+
+    <meta property="article:author" content="Remi Cohen, Roy Moshailov"/>
+
+    <meta property="article:published_time" content="2019-04-23T15:38:00.000-04:00"/>
+
+    <meta property="article:tag" content="Ramnit,Client-side Attacks,Client-platform malware,Threats,Cybercrime"/>
+
+    <meta property="article:id" content="/content/f5-labs-v2/en/labs/articles/threat-intelligence/ramnit-returns-to-its-banking-roots--just-in-time-for-italian-ta"/>
+
+    <meta property="article:read_time" content="8 min."/>
+
+    <meta property="article:topic" content="Fraud"/>
+
+    <meta property="article:type" content="article"/>
+
+    <meta property="article:title" content="Ramnit Returns to its Banking Roots, Just in Time for Italian Tax Season"/>
+
+<meta name="keywords" content="Ramnit,Client-side Attacks,Client-platform malware,Threats,Cybercrime,Phishing,Client,Fraud,banking trojan,Trojan"/> 
+<link rel="canonical" href="ramnit-returns-to-its-banking-roots--just-in-time-for-italian-ta.html"/>
+
+
+
+
+<meta property="labs:article:search-tab" content="Threats"/>
+
+    
+       	
+        <link href="https://assets.adobedtm.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://consent.trustarc.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://static.cloud.coveo.com" rel="rel=preconnect" crossorigin/>
+    
+
+    <script>window.F5=window.F5||{};window.F5.VisitorTracking=window.F5.VisitorTracking||{"isConfigEnabled":true,"tealiumScriptAsyncUrl":"//mktg.tags.f5.com/main/prod/utag.js","tealiumScriptSyncUrl":"//mktg.tags.f5.com/main/prod/utag.sync.js","visitorTrackingService":"tealium","isTealiumActive":true,"isLegacyActive":false,"legacyLibWarmingUrls":["https://assets.adobedtm.com","https://www.google-analytics.com","https://www.googletagmanager.com"]}</script>
+
+    <script src="../../../../mktg.tags.f5.com/main/prod/utag.sync.js"></script>
+    <!-- If JS enable will change the HTML class tag to "js"-->
+<script>
+    document.documentElement.className = document.documentElement.className.replace("js-off","js-on");
+</script>
+<!-- If JS enable will change the HTML class tag to "js" -->
+    
+    
+    
+
+    
+    
+
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/apple-touch-icon.png"/>
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-16x16.png"/>
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-32x32.png"/>
+    
+    <link rel="mask-icon" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/safari-pinned-tab.svg" color="#e21d38"/>
+
+    
+    
+
+    
+    
+<link rel="stylesheet" href="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.4921b04fbcd148d027b0a9a0b7fb303c.css" type="text/css">
+
+
+
+
+    <script src="https://app-aba.marketo.com/js/forms2/js/forms2.min.js"></script>
+    
+    
+
+<script>
+    window.digitalData = {"labs":{"articleAuthor":["remi cohen","roy moshailov"],"articlePostDate":"Apr 23, 2019","labsReadingTime":"8 min.","vitals":{"labsAttackType":["Client-side Attacks"],"labsAttackMethod":["Phishing","Client-platform malware"],"labsMalwareCampaignName":["Ramnit"],"labsAttackMotive":["Cybercrime"],"labsAppTiers":["client"],"labsMalwareType":["Trojan"]},"labsTags":["Client-side Attacks","Client-platform malware","Threats","Cybercrime","Phishing","Client","Trojan","Fraud","banking trojan"]},"page":{"pageInfo":{"pageName":"www:f5.labs.v2:labs:articles:threat-intelligence:ramnit-returns-to-its-banking-roots--just-in-time-for-italian-ta","destinationUrl":"https://www.f5.com/labs/articles/threat-intelligence/ramnit-returns-to-its-banking-roots--just-in-time-for-italian-ta.html","subDomain":"www","referringUrl":"https://www.f5.com/labs/articles/education/banking-trojans-a-reference-guide-to-the-malware-family-tree","referringPageName":"www:f5.labs.v2:labs:articles:education:banking-trojans-a-reference-guide-to-the-malware-family-tree","language":"en","version":""},"category":{"primaryCategory":"labs","subCategory1":"articles","subCategory2":"threat-intelligence","subCategory3":"ramnit-returns-to-its-banking-roots--just-in-time-for-italian-ta"},"contentInfo":{"articleAuthor":["remi cohen","roy moshailov"],"articlePostDate":"Apr 23, 2019","labsReadingTime":"8 min.","vitals":{"labsAttackType":["Client-side Attacks"],"labsAttackMethod":["Phishing","Client-platform malware"],"labsMalwareCampaignName":["Ramnit"],"labsAttackMotive":["Cybercrime"],"labsAppTiers":["client"],"labsMalwareType":["Trojan"]},"labsTags":["Client-side Attacks","Client-platform malware","Threats","Cybercrime","Phishing","Client","Trojan","Fraud","banking trojan"]}}};
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmContentParam = urlParams.get("utm_content");
+    if (utmContentParam && window.digitalData.user != undefined && window.digitalData.user.userInfo) {
+        const utmContentParamArray = utmContentParam.split("-");
+        if (utmContentParamArray.length >= 3) {
+            window.digitalData.user.userInfo.digitalSignal = utmContentParamArray[2];
+        }
+    }
+</script>
+<script>
+    window.utag_data = {"page.pageInfo.pageName":"www:f5.labs.v2:labs:articles:threat-intelligence:ramnit-returns-to-its-banking-roots--just-in-time-for-italian-ta","page.pageInfo.destinationUrl":"https://www.f5.com/labs/articles/threat-intelligence/ramnit-returns-to-its-banking-roots--just-in-time-for-italian-ta.html","page.pageInfo.subDomain":"www","page.pageInfo.referringUrl":"https://www.f5.com/labs/articles/education/banking-trojans-a-reference-guide-to-the-malware-family-tree","page.pageInfo.referringPageName":"www:f5.labs.v2:labs:articles:education:banking-trojans-a-reference-guide-to-the-malware-family-tree","page.pageInfo.language":"en","page.pageInfo.version":"","page.category.primaryCategory":"labs","page.category.subCategory1":"articles","page.category.subCategory2":"threat-intelligence","page.category.subCategory3":"ramnit-returns-to-its-banking-roots--just-in-time-for-italian-ta","page.contentInfo.articleAuthor[0]":"remi cohen","page.contentInfo.articleAuthor[1]":"roy moshailov","page.contentInfo.articlePostDate":"Apr 23, 2019","page.contentInfo.labsReadingTime":"8 min.","page.contentInfo.vitals.labsAttackType[0]":"Client-side Attacks","page.contentInfo.vitals.labsAttackMethod[0]":"Phishing","page.contentInfo.vitals.labsAttackMethod[1]":"Client-platform malware","page.contentInfo.vitals.labsMalwareCampaignName[0]":"Ramnit","page.contentInfo.vitals.labsAttackMotive[0]":"Cybercrime","page.contentInfo.vitals.labsAppTiers[0]":"client","page.contentInfo.vitals.labsMalwareType[0]":"Trojan","page.contentInfo.labsTags[0]":"Client-side Attacks","page.contentInfo.labsTags[1]":"Client-platform malware","page.contentInfo.labsTags[2]":"Threats","page.contentInfo.labsTags[3]":"Cybercrime","page.contentInfo.labsTags[4]":"Phishing","page.contentInfo.labsTags[5]":"Client","page.contentInfo.labsTags[6]":"Trojan","page.contentInfo.labsTags[7]":"Fraud","page.contentInfo.labsTags[8]":"banking trojan"};
+</script>
+
+
+    
+    <script>
+        ;(function(win, doc, style, timeout) {
+            var STYLE_ID = 'at-body-style';
+
+            function getParent() {
+                return doc.getElementsByTagName('head')[0];
+            }
+
+            function addStyle(parent, id, def) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.createElement('style');
+                style.id = id;
+                style.innerHTML = def;
+                parent.appendChild(style);
+            }
+
+            function removeStyle(parent, id) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.getElementById(id);
+
+                if (!style) {
+                    return;
+                }
+
+                parent.removeChild(style);
+            }
+
+            addStyle(getParent(), STYLE_ID, style);
+            setTimeout(function() {
+                removeStyle(getParent(), STYLE_ID);
+            }, timeout);
+        }(window, document, "body {opacity: 0 !important}", 3000));
+    </script>
+
+    <script src="../../../../assets.adobedtm.com/launch-EN37b07f3d0fa64d53b299e28194b30e0a.min.js" async></script>
+
+
+</head>
+    <body class="article-page preview-mode">
+        
+    <script>
+    (function(a,b,c,d){
+        a='//mktg.tags.f5.com/main/prod/utag.js';
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+    </script>
+
+        
+     
+        
+
+       	<div class="background-cut " style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a08/optimize/article-background-image.jpg);"></div>
+        
+
+
+<nav class="conf12-skip-links__nav" role="navigation">
+	<a href="#nav" class="conf12-skip-links__item">Skip to main navigation</a>
+
+	<a href="#content" class="conf12-skip-links__item">Skip to main content</a>
+
+	<a href="#footer" class="conf12-skip-links__item">Skip to footer</a>
+</nav>
+        
+
+<div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="megamenu-background"></div>
+
+	<div id="nav" class="fullscreen-wrapper header-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg labs-nav ">
+            <div class="container navbar-wrapper">
+                <a class="navbar-brand" href="../../../labs.html">
+                    <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <metadata>
+                            <rdf:RDF>
+                                <cc:Work rdf:about="">
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                    <dc:title/>
+                                </cc:Work>
+                            </rdf:RDF>
+                        </metadata>
+
+                        <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+                        <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+                        <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+                    </svg>
+                    <span>
+
+                        APPLICATION
+                        <br/> THREAT
+                        <br/> INTELLIGENCE
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  
+                    <div class="nav-wrap ml-lg-auto">
+                        <div class="upper-navigation">
+                            <div class="subscribe-item upper-nav-item">
+                                <a class="subscribe-link upper-nav-btn" href="../../subscribe.html">
+                                    <span class="upper-subscribe-ico ico"></span>
+                                    <span class="upper-navigation-content">Subscribe</span>
+                                </a>
+                            </div>
+                            <div class="search-item upper-nav-item">
+                                <a class="search-link upper-nav-btn">
+                                    <span class="upper-search-ico ico"></span>
+                                    <span class="upper-navigation-content">Search</span>
+                                </a>
+                                <form class="form-inline my-2 my-lg-0 search-form" method="get" action="../../search%EF%B9%96q=test.html" id="searchForm">
+                                    <div class="container">
+                                        <div class="search-input-container">
+                                            <a class="close-search-button"></a>
+                                            <input class="form-control mr-sm-2 " type="search" name="q" title="Cannot search for a blank query" placeholder="Search" required pattern="^(?!\s*$).+" aria-label="Search" id="search-input" lang="en"/>
+                                            <button class="btn btn-search  upper-nav-btn" type="submit"> <span class="upper-search-ico ico"></span> <span class="submit-text">Submit</span></button>
+                                        </div>
+    
+                                    </div>
+                                </form>
+                            </div>
+                            
+
+
+
+
+                        </div>
+                        
+<ul class="navbar-nav">
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../threat-intelligence.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Threats</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../ciso-to-ciso.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>CISO-to-CISO</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../application-protection.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Application Protection</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../rss-feeds.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>RSS Feeds</span>
+	</a></li>
+</ul>
+                     
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
+
+</div>
+<div>
+
+	
+    
+    
+
+
+</div><div class="c02-header-area aem-GridColumn aem-GridColumn--default--12"><div class="cq-placeholder section" data-emptytext="Article: Header area configuration"></div>
+
+    
+        
+       
+        <section class="container-fluid c02-header-area__main-article details fill-main-container">
+            <div class="c02-header-area__heroImageBackground" style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a08/optimize/article-background-image.jpg);"></div>
+            <div class="c02-header-area__main-article-overlay"></div>
+           
+            <div class="row">
+                <div class="align-bottom c02-header-area__article-wrap">
+                    <div class="info-row clearfix">
+                    	<a href="../../search%EF%B9%96q=Fraud.html">
+	                        <div class="category">
+	                            <span class="badge badge-secondary c02-header-area__badge">Fraud</span>
+	                        </div>
+                        </a>
+                        <div class="c02-header-area__additional-info">
+                            <div class="date U:padding-x">
+                                <span>April 23, 2019</span>
+                               
+                                
+                                
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="c02-header-area__main-articles-title">
+                        <h1>
+                            Ramnit Returns to its Banking Roots, Just in Time for Italian Tax Season
+                        </h1>
+                    </div>
+                    <div class="c02-header-area__additional-info U:display-flex">
+                    	
+	                    	<div class="c02-header-area__type  U:display-flex article-ico-wrap big-ico-wrap mid-point">
+	                        	<span class="article"><i></i>article</span>
+	                        </div>
+	                    	<div class="c02-header-area__content-duration U:display-flex ">
+	                        	<span>8 min. read</span>
+	                        </div>
+                        
+                        
+                    </div>
+                    <div class="c02-header-area__author-name tags">
+                        By <a class="c02-header-area__author-name tag-item" href="../../search.author_Remi+Cohen.html">Remi Cohen</a><a class="c02-header-area__author-name tag-item" href="https://www.f5.com/labs/search.author_Roy%2BMoshailov">Roy Moshailov</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+   		<div id="content"></div>
+    
+    
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row">
+        <div class="a01-container section">
+    <div class="a01-container-col-left">
+        <div data-component-type="article" class="c06-social-sharing section">
+
+
+
+<div class="addthis_share c06-social-sharing__links ">
+	
+	
+    <span class="addthis_share_button twitter addthis_sharing_toolbox" data-service="twitter" data-url="https://www.f5.com/labs/articles/threat-intelligence/ramnit-returns-to-its-banking-roots--just-in-time-for-italian-ta.html" data-description="Ramnit’s latest configuration targets Europe leading up to tax season, focusing on Italian banks and international online advertisers." data-title="Ramnit Returns to its Banking Roots, Just in Time for Italian Tax Season- Remi Cohen, Roy Moshailov">
+        <span class="social-bulb xs-mr-15 twitter"></span>
+    </span>
+    <span class="addthis_share_button linkedin addthis_sharing_toolbox" data-service="linkedin" data-url="https://www.f5.com/labs/articles/threat-intelligence/ramnit-returns-to-its-banking-roots--just-in-time-for-italian-ta.html" data-description="Ramnit’s latest configuration targets Europe leading up to tax season, focusing on Italian banks and international online advertisers." data-title="Ramnit Returns to its Banking Roots, Just in Time for Italian Tax Season- Remi Cohen, Roy Moshailov">
+        <span class="social-bulb xs-mr-15 linkedin"></span>
+    </span>
+    <span class="addthis_share_button facebook addthis_button_facebook addthis_sharing_toolbox" data-service="facebook" data-url="https://www.f5.com/labs/articles/threat-intelligence/ramnit-returns-to-its-banking-roots--just-in-time-for-italian-ta.html" data-description="Ramnit’s latest configuration targets Europe leading up to tax season, focusing on Italian banks and international online advertisers." data-title="Ramnit Returns to its Banking Roots, Just in Time for Italian Tax Season- Remi Cohen, Roy Moshailov">
+        <span class="social-bulb xs-mr-15 facebook"></span>
+    </span>
+    <a class="mail" target="_blank" href="mailto:?subject=Ramnit%20Returns%20to%20its%20Banking%20Roots,%20Just%20in%20Time%20for%20Italian%20Tax%20Season-%20Remi%20Cohen,%20Roy%20Moshailov&amp;body=Checkout%20this%20great%20article%20I%20read%20on%20F5%20Labs%20%20/content/f5-labs-v2/en/labs/articles/threat-intelligence/ramnit-returns-to-its-banking-roots--just-in-time-for-italian-ta" rel="noreferrer">
+        <span class="social-bulb xs-mr-15 mail"></span>
+    </a>
+    
+</div></div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-center">
+        <div data-component-type="article" class="a03-article-body section">
+
+<div id="content">
+    <div class="a03-article-body__content">
+        
+    </div>
+    <div class="a22-include-vitals-on-mobile a04-include section">
+	
+    
+
+
+    
+        
+        <div class=" display-old-labs-only vitalsarea  js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/isogrid.png">
+            <div class="accordion only-mobile ">
+                <a class="trigger-collapse collapsed article-vital">
+                    
+                    <div class="button-container">
+                        <div class="x medium"><b></b><b></b><b></b><b></b></div>
+                    </div>
+                </a>
+                <div class="can-collapse collapsed ">
+                    <div class="row">
+                        <div class="vitals-wrap">
+                            <div>
+                                
+
+
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Type:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Client-side+Attacks%22.html" target="_self">Client-side Attacks</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Method:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=Phishing.html" target="_self">Phishing</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Client-platform+malware%22.html" target="_self">Client-platform malware</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Motive:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=Cybercrime.html" target="_self">Cybercrime</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Malware Type:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=Trojan.html" target="_self">Trojan</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Malware / Campaign Name:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Ramnit" target="_self">Ramnit</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="vital-item stack-wrap ">
+                            <h5 class="vital-header">App Tiers Affected:
+                            </h5>
+                            <div class="app-stack">
+                                <div class="above-top active">
+
+                                    <div class="bg js-bg-lozad active" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-above-top-active.svg">
+                                    </div>
+                                    <span>Client</span>
+
+                                </div>
+                                <div class="red-dots shorter">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="stack-top">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-top.png">
+                                    </div>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+
+                                <div class="layer-1 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1.png" style="max-width: 80px;"/></div>
+                                    <span>Services</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-2 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3.png" style="max-width: 80px;"/></div>
+                                    <span>Access</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-3 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
+                                    <span>TLS </span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-4  ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4.png" style="max-width: 80px;"/></div>
+                                    <span>DNS</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-5 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
+                                    <span>Network</span>
+                                </div>
+                                <div class="stack-bottom">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-bottom.png">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        <div class="display-LC-only vitalsarea  js-bg-lozad">
+            <div>
+
+
+                <div class="row">               
+
+                    <div class="vital-item stack-wrap ">
+                        <h5 class="vital-header">App Tiers Affected:</h5>
+
+
+                        <div class="app-stack ">
+                            <div class="above-top active">
+
+                                <div class="bg js-bg-lozad active" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-above-top-active.png">
+                                </div>
+                                <span>Client</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="stack-top">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-top.png">
+                                </div>
+                            </div>
+
+                            <div class="layer-1 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1.png"/>
+                                </div>
+                                <span>Services</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-2 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2.png"/>
+                                </div>
+                                <span>Access</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-3 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
+                                </div>
+                                <span>TLS </span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-4  ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4.png"/>
+                                </div>
+                                <span>DNS</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-5 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
+                                </div>
+                                <span>Network</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+                            <div class="stack-bottom">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-bottom.png">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    
+
+    
+
+
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>F5 Labs and the F5 Security Operations Center (SOC) for WebSafe analyzed Ramnit banking Trojan Malware configurations active in February and March 2019. They discovered that Ramnit authors were—once again—largely targeting financial services websites, specifically in Italy.</p>
+<ul>
+<li>Financial services and financial technology industries make up the largest part of Ramnit targets. However, like many other “banking” Trojans, Ramnit has expanded its targets over the years to include industries beyond banking, including online advertising, web services, and ecommerce sites. <br />
+<br />
+</li>
+<li>Although social networking sites made up a smaller portion of targets seen in February and March, the target list included some of the biggest social networking and sharing platforms in the world, including Twitter, Facebook, Tumblr, and YouTube.<br />
+<br />
+</li>
+<li>Italian banks made up a large portion of targets of this configuration. France and the UK (specifically banks based out of Scotland) were also popular targets.</li>
+</ul>
+<p>In a recent Ramnit sample that was active in March 2019, Ramnit authors primarily targeted banks in Italy and the UK. See Figure 1 for a more detailed breakdown of which countries were highly targeted.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    
+
+    <!-- no link, lightbox -->
+    <a data-lightbox="Image preview" data-title="Figure 1. Frequency of European countries seen in the March 2019 Ramnit Configuration" href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/16--2019-apr-jun/20190418_ramnit/Figure1_min.png">
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/16--2019-apr-jun/20190418_ramnit/Figure1_min.png" data-component-type="platter" alt="Figure 1. Frequency of European countries seen in the March 2019 Ramnit Configuration" class="js-bg-lozad"/>
+        
+    </a>
+
+    <div class="a02-image__caption">
+        Figure 1. Frequency of European countries seen in the March 2019 Ramnit Configuration
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>At a global level, 70% of all targets in this Ramnit configuration were European. North American (USA) targets followed with 27% of the list, and the rest of the world made up the final 3%. See the frequency chart in Figure 2 for a more detailed breakout.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    
+
+    <!-- no link, lightbox -->
+    <a data-lightbox="Image preview" data-title="Figure 2.Frequency of targets from the March 2019 Ramnit configuration and their geographic locations in the world" href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/16--2019-apr-jun/20190418_ramnit/Figure2_min.png">
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/16--2019-apr-jun/20190418_ramnit/Figure2_min.png" data-component-type="platter" alt="Figure 2.Frequency of targets from the March 2019 Ramnit configuration and their geographic locations in the world" class="js-bg-lozad"/>
+        
+    </a>
+
+    <div class="a02-image__caption">
+        Figure 2.Frequency of targets from the March 2019 Ramnit configuration and their geographic locations in the world
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>In Figure 3 we can see Ramnit’s web injection manipulating the HTML. This type of web injection enables a malicious actor to capture credentials or sensitive account information, further allowing for funds to be stolen.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    
+
+    <!-- no link, lightbox -->
+    <a data-lightbox="Image preview" data-title="Figure 3. Screengrab from a recent sample of Ramnit malware showing web injection manipulating the HTML" href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/16--2019-apr-jun/20190418_ramnit/Figure3_min.jpg">
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/16--2019-apr-jun/20190418_ramnit/Figure3_min.jpg" data-component-type="platter" alt="Figure 3. Screengrab from a recent sample of Ramnit malware showing web injection manipulating the HTML" class="js-bg-lozad"/>
+        
+    </a>
+
+    <div class="a02-image__caption">
+        Figure 3. Screengrab from a recent sample of Ramnit malware showing web injection manipulating the HTML
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>In the Ramnit configuration, there were a number of targets that didn’t belong to a particular company or website: Instead, there were several words in French, Italian, and English. This is an innovation we have not seen in previous Ramnit configurations. It appears as though the Ramnit authors cast a wider net in hopes of catching random websites. Along with the simple word targets, Ramnit also included the name of an Italian Opera and a few misspelled domain names. Non-domain targets from this configuration include:</p>
+<table border="0" cellspacing="0" cellpadding="10" style="width: auto;">
+<tbody><tr><td width="33%">!*-sys.com*</td>
+<td width="33%">!*ocsp.*</td>
+<td width="34%">*control*</td>
+</tr><tr><td width="33%">!*ads.*</td>
+<td width="33%">!*office*</td>
+<td width="34%">*corp*</td>
+</tr><tr><td width="33%">!*analytic*</td>
+<td width="33%">!*outlook*</td>
+<td width="34%">*Customer*</td>
+</tr><tr><td width="33%">!*api.*</td>
+<td width="33%">!*stream*</td>
+<td width="34%">*Dashboard*</td>
+</tr><tr><td width="33%">!*bam.nr-data.net*</td>
+<td width="33%">!*track*</td>
+<td width="34%">*identity*</td>
+</tr><tr><td width="33%">!*chat*</td>
+<td width="33%">!*trouter.io*</td>
+<td width="34%">*importo*</td>
+</tr><tr><td width="33%">!*cloud*</td>
+<td width="33%">!*update*</td>
+<td width="34%">*login*</td>
+</tr><tr><td width="33%">!*download*</td>
+<td width="33%">!*upload*</td>
+<td width="34%">*Main*</td>
+</tr><tr><td width="33%">!*events*</td>
+<td width="33%">!*video*</td>
+<td width="34%">*manager*</td>
+</tr><tr><td width="33%">!*game*</td>
+<td width="33%">!http://*</td>
+<td width="34%">*panel*</td>
+</tr><tr><td width="33%">!*gigaup13b.allegati.tim.it*</td>
+<td width="33%">*access*</td>
+<td width="34%">*payment*</td>
+</tr><tr><td width="33%">!*gstatic.*</td>
+<td width="33%">*account*</td>
+<td width="34%">*register*</td>
+</tr><tr><td width="33%">!*hub*</td>
+<td width="33%">*admin*</td>
+<td width="34%">*secure*</td>
+</tr><tr><td width="33%">!*iltrovatore.it*</td>
+<td width="33%">*Authenticate*</td>
+<td width="34%">*sepa*</td>
+</tr><tr><td width="33%">!*iolam.it*</td>
+<td width="33%">*authentipec*</td>
+<td width="34%">*sign*</td>
+</tr><tr><td width="33%">!*lampoilbro*</td>
+<td width="33%">*bank*</td>
+<td width="34%">*trade*</td>
+</tr><tr><td width="33%">!*messenger*</td>
+<td width="33%">*basic*</td>
+<td width="34%">*virement*</td>
+</tr><tr><td width="33%">!*metric*</td>
+<td width="33%">*bonifico*</td>
+<td width="34%"> </td>
+</tr></tbody></table>
+<p>Companies and websites targeted from this configuration include:<br />
+ </p>
+<table border="1" cellspacing="0" cellpadding="10" style="width: auto;font-size: 80.0%;" class="table-striped">
+<tbody><tr style="background-color: rgb(73,27,98);color: rgb(255,255,255);"><td><b>Target Name</b></td>
+<td><b>Target Domain </b></td>
+<td><b>Country</b></td>
+<td><b>Industry</b></td>
+</tr><tr><td> </td>
+<td>http://*</td>
+<td> </td>
+<td> </td>
+</tr><tr><td>Bing</td>
+<td>https://www.bing.com/fd/ls/lsp.aspx</td>
+<td>USA</td>
+<td>Search Engine</td>
+</tr><tr><td>WebPT</td>
+<td>https://app.webpt.com/ping.php*</td>
+<td>USA</td>
+<td>Healthcare/Electronic Medical Records</td>
+</tr><tr><td>New Relic Browser</td>
+<td>https://*bam.nr-data.net*</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://googleads.g.doubleclick.net/pagead/ads</td>
+<td>USA</td>
+<td>Online Advertising</td>
+</tr><tr><td>Cure MD</td>
+<td>https://cloud8.curemd.com*</td>
+<td>USA</td>
+<td>Healthcare/Electronic Medical Records</td>
+</tr><tr><td>Microsoft</td>
+<td>https://word-view.officeapps.live.com*</td>
+<td>USA</td>
+<td>Productvity</td>
+</tr><tr><td>TrackJS</td>
+<td>https://capture.trackjs.com*</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>AirBnB</td>
+<td>https://www.airbnb.com*</td>
+<td>USA</td>
+<td>Travel</td>
+</tr><tr><td>SoundCloud</td>
+<td>https://*soundcloud.com*</td>
+<td>USA</td>
+<td>Music</td>
+</tr><tr><td>Tyler Technologies</td>
+<td>https://*tylertech.com*</td>
+<td>USA</td>
+<td>Computer Software</td>
+</tr><tr><td>Microsoft</td>
+<td>https://outlook.live.com/owa/service.svc*</td>
+<td>USA</td>
+<td>Email/Communications</td>
+</tr><tr><td>Expedia</td>
+<td>https://oms.expedia.com*</td>
+<td>USA</td>
+<td>Travel</td>
+</tr><tr><td>Yahoo</td>
+<td>https://mg.mail.yahoo.com*</td>
+<td>USA</td>
+<td>Email/Communications</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://mail.google.com/mail/*</td>
+<td>USA</td>
+<td>Email/Communications</td>
+</tr><tr><td>Clicktale</td>
+<td>https://*clicktale.net*</td>
+<td>USA</td>
+<td>Digital Analytics</td>
+</tr><tr><td>Yahoo</td>
+<td>https://geo.query.yahoo.com*</td>
+<td>USA</td>
+<td>Maps</td>
+</tr><tr><td>Yahoo</td>
+<td>https://finance.yahoo.com*</td>
+<td>USA</td>
+<td>News</td>
+</tr><tr><td>Go daddy</td>
+<td>https://email12.godaddy.com*</td>
+<td>USA</td>
+<td>Email/Communications</td>
+</tr><tr><td>tSheets</td>
+<td>https://ilweb15.tsheets.com/ajax</td>
+<td>USA</td>
+<td>Productvity</td>
+</tr><tr><td>Amazon</td>
+<td>https://music-xray-service.amazon.com/</td>
+<td>USA</td>
+<td>Music</td>
+</tr><tr><td>SpotX</td>
+<td>https://*spotxchange.com*</td>
+<td>USA</td>
+<td>Online Advertising</td>
+</tr><tr><td>Dropbox</td>
+<td>https://*dropbox.com*</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Amazon</td>
+<td>https://fls-na.amazon.com/1/bit-reporter/1/OE</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Microsoft</td>
+<td>https://t.urs.microsoft.com/urstelemetry.asmx*</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://photos.google.com*</td>
+<td>USA</td>
+<td>Video/Image Hosting</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://mail.google.com/cloudsearch*</td>
+<td>USA</td>
+<td>Email/Communications</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://hangouts.google.com/webchat/*</td>
+<td>USA</td>
+<td>Email/Communications</td>
+</tr><tr><td>Facebook</td>
+<td>https://*facebook*</td>
+<td>USA</td>
+<td>Social networking</td>
+</tr><tr><td>Youtube , LLC</td>
+<td>https://*youtube*</td>
+<td>USA</td>
+<td>Video/Image Hosting</td>
+</tr><tr><td>Twitter</td>
+<td>https://*twitter*</td>
+<td>USA</td>
+<td>Social networking</td>
+</tr><tr><td>Instagram</td>
+<td>https://*instagram*</td>
+<td>USA</td>
+<td>Social networking</td>
+</tr><tr><td>Flickr</td>
+<td>https://*flickr.com*</td>
+<td>USA</td>
+<td>Video/Image Hosting</td>
+</tr><tr><td>Linkedin</td>
+<td>https://*linkedin.com*</td>
+<td>USA</td>
+<td>Social networking</td>
+</tr><tr><td>Conviva</td>
+<td>https://*conviva.com*</td>
+<td>USA</td>
+<td>Digital Analytics</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://www.google-analytics.com*</td>
+<td>USA</td>
+<td>Digital Analytics</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://safebrowsing.google.com/*</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://translate.google.com/*</td>
+<td>USA</td>
+<td>Email/Communications</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://*clients1.google.com*</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://*clients2.google.com*</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://*clients4.google.com*</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://*clients5.google.com*</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://*clients6.google.com*</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://ogs.google.com/u/0/_/notifications/count</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://*googleapis.com*</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://*talkgadget.google.com*</td>
+<td>USA</td>
+<td>Email/Communications</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://0.client-channel.google.com*</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://plus.google.com/u/*</td>
+<td>USA</td>
+<td>Social networking</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://play.google.com/*</td>
+<td>USA</td>
+<td>Computer Software</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://drive.google.com/*</td>
+<td>USA</td>
+<td>Productvity</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://docs.google.com/*</td>
+<td>USA</td>
+<td>Productvity</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://notifications.google.com/u*</td>
+<td>USA</td>
+<td>Productvity</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://*client-channel.google.com*</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://apis.google.com*</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://calendar.google.com*</td>
+<td>USA</td>
+<td>Productvity</td>
+</tr><tr><td>Etsy</td>
+<td>https://*etsy.com*</td>
+<td>USA</td>
+<td>E-Commerce</td>
+</tr><tr><td>Issu</td>
+<td>https://*issuu.com*</td>
+<td>USA</td>
+<td>News</td>
+</tr><tr><td>Amazon</td>
+<td>https://music.amazon.com*</td>
+<td>USA</td>
+<td>Music</td>
+</tr><tr><td>Yahoo</td>
+<td>https://comet.yahoo.com/comet</td>
+<td>USA</td>
+<td>Online Advertising</td>
+</tr><tr><td>Yahoo</td>
+<td>https://pr.comet.yahoo.com/comet</td>
+<td>USA</td>
+<td>Online Advertising</td>
+</tr><tr><td>Apple</td>
+<td>https://p54-bookmarks.icloud.com*</td>
+<td>USA</td>
+<td>Web Storage</td>
+</tr><tr><td>Grendel CRM</td>
+<td>https://www.grendelonline.com*</td>
+<td>USA</td>
+<td>Financial Technology</td>
+</tr><tr><td>Yelp</td>
+<td>https://www.yelp.com*</td>
+<td>USA</td>
+<td>Travel</td>
+</tr><tr><td>LiveVol</td>
+<td>https://secure.livevol.com*</td>
+<td>USA</td>
+<td>Financial Technology</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://www.google-analytics.com/collect</td>
+<td>USA</td>
+<td>Digital Analytics</td>
+</tr><tr><td>Amazon</td>
+<td>https://fls-na.amazon.com/1/batch/1/OE/</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Toys&quot;R&quot;Us</td>
+<td>https://edq.toysrus.com/*</td>
+<td>USA</td>
+<td>E-Commerce</td>
+</tr><tr><td>tSheets</td>
+<td>https://azweb16.tsheets.com/ajax*</td>
+<td>USA</td>
+<td>Productvity</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://beacons.gvt2.com/domainreliability/upload*</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Pandora Radio</td>
+<td>https://www.pandora.com*</td>
+<td>USA</td>
+<td>Music</td>
+</tr><tr><td>Google, LLC</td>
+<td>https://www.google.com*</td>
+<td>USA</td>
+<td>Search Engine</td>
+</tr><tr><td>Microsoft</td>
+<td>https://urs.microsoft.com/urs.asmx*</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Yahoo</td>
+<td>https://udc.yahoo.com/v2/public*</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Full Story</td>
+<td>https://r.fullstory.com/rec/*</td>
+<td>USA</td>
+<td>Digital Analytics</td>
+</tr><tr><td>Mozilla</td>
+<td>https://incoming.telemetry.mozilla.org*</td>
+<td>USA</td>
+<td>Web services</td>
+</tr><tr><td>Microsoft</td>
+<td>https://msub03.manage.microsoft.com/ AdminAPIWebService/adminapi.svc/silverlightXml</td>
+<td>USA</td>
+<td>Web Services</td>
+</tr><tr><td>Full Slate</td>
+<td>https://app.fullslate.com/admin/journal/commit?poll</td>
+<td>USA</td>
+<td>Productvity</td>
+</tr><tr><td>Optimizely</td>
+<td>https://logx.optimizely.com/log/event</td>
+<td>USA</td>
+<td>Digital Analytics</td>
+</tr><tr><td>Expedia</td>
+<td>https://www.expedia.com/api/datacapture/track</td>
+<td>USA</td>
+<td>Travel</td>
+</tr><tr><td> </td>
+<td>https://s.acexedge.com*</td>
+<td> </td>
+<td> </td>
+</tr><tr><td>Scanmarket</td>
+<td>https://*scanmarket.com*</td>
+<td>USA</td>
+<td>Computer Software</td>
+</tr><tr><td>Intuit Inc.</td>
+<td>https://*intuit.com*</td>
+<td>USA</td>
+<td>Financial Technology</td>
+</tr><tr><td> </td>
+<td>https://*crdui.com*</td>
+<td> </td>
+<td> </td>
+</tr><tr><td>Yahoo</td>
+<td>https://www.yahoo.com*</td>
+<td>USA</td>
+<td>News</td>
+</tr></tbody></table>
+<h2>Conclusion</h2>
+<p>Trojan malware designed to attack the online customers of banks and financial institutions has been around for over a decade, but it continues to evolve in technique and sophistication. Ramnit is a persistent banking Trojan that first emerged in 2010 as a less sophisticated form of a self-replicating worm. Today, both its tactics and targets have evolved to include many other industries. It’s no longer enough for banking Trojans to just steal sensitive information or manipulate an online transaction—Ramnit in particular was designed to manipulate online banking sessions in order to steal credentials and funds from customers via wire transfer. Over the 2017 holiday season, however, F5 Labs reported that <a href="ramnit-goes-on-a-holiday-shopping-spree-targeting-retailers-and-banks.html" target="_blank" rel="no-opener no-referrer">Ramnit’s targets turned from banks to retail</a>, in anticipation of the busy shopping season. Today’s most sophisticated malware authors evade detection and demonstrate their knowledge of the targets by using new techniques to circumvent a target’s defense mechanisms. We’re seeing this trend in almost every piece of code that descends from banking malware.</p>
+<p>It’s critically important for banks and financial institutions to implement web fraud protection solutions to protect their customers and to help ease the burden of fraud expenses—especially banks that are actively being targeted. Because we’re seeing traditional banking Trojans expand their targets, other industries outside of banking (such as online advertising, ecommerce, social media, crypto currency exchanges, and others) need to be aware of attackers’ increasingly clever techniques so they can take equal precautions. Because Trojan malware is typically installed through phishing or malicious advertising, it’s also becoming more critical for all organizations to provide security awareness training to employees and clients to help them avoid falling victim.</p>
+<p>Ramnit is just one of many types of malware we follow at F5 Labs. Check back for updates to this article as future campaigns materialize and targeted industries expand.</p>
+<h2>IOCs</h2>
+<p>Malware hashes seen in this configuration:</p>
+<table border="0" cellspacing="10" cellpadding="10" style="width: auto;">
+<tbody><tr><td>SHA 1 hash:</td>
+<td>1acc71bd6f830061ed8f1d9446f439e019063656</td>
+</tr><tr><td>SHA 256 Hash:</td>
+<td>746bd60108cb3af40b98346f467c9fd9a3db216<br />
+f80e8677ad50aaf814999e68c</td>
+</tr><tr><td>MD5 Hash:</td>
+<td>ace9bd5b0a7e0d50e31eeec00970bf6f</td>
+</tr><tr><td>Config first seen:</td>
+<td>3/21/19 13:26</td>
+</tr><tr><td>Config last seen:</td>
+<td>3/21/19 13:26</td>
+</tr></tbody></table>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+
+</div>
+<div class="a03-text text section">
+
+
+    
+</div>
+
+
+</div>
+</div>
+<div class="a13-article-quote-labs section">
+
+
+    
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-right">
+        <div class="vitalsarea section">
+
+
+    
+        
+        <div class=" display-old-labs-only vitalsarea  js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/isogrid.png">
+            <div class="accordion only-mobile ">
+                <a class="trigger-collapse collapsed article-vital">
+                    
+                    <div class="button-container">
+                        <div class="x medium"><b></b><b></b><b></b><b></b></div>
+                    </div>
+                </a>
+                <div class="can-collapse collapsed ">
+                    <div class="row">
+                        <div class="vitals-wrap">
+                            <div>
+                                
+
+
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Type:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Client-side+Attacks%22.html" target="_self">Client-side Attacks</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Method:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=Phishing.html" target="_self">Phishing</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Client-platform+malware%22.html" target="_self">Client-platform malware</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Motive:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=Cybercrime.html" target="_self">Cybercrime</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Malware Type:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=Trojan.html" target="_self">Trojan</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Malware / Campaign Name:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Ramnit" target="_self">Ramnit</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="vital-item stack-wrap ">
+                            <h5 class="vital-header">App Tiers Affected:
+                            </h5>
+                            <div class="app-stack">
+                                <div class="above-top active">
+
+                                    <div class="bg js-bg-lozad active" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-above-top-active.svg">
+                                    </div>
+                                    <span>Client</span>
+
+                                </div>
+                                <div class="red-dots shorter">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="stack-top">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-top.png">
+                                    </div>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+
+                                <div class="layer-1 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1.png" style="max-width: 80px;"/></div>
+                                    <span>Services</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-2 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3.png" style="max-width: 80px;"/></div>
+                                    <span>Access</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-3 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
+                                    <span>TLS </span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-4  ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4.png" style="max-width: 80px;"/></div>
+                                    <span>DNS</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-5 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
+                                    <span>Network</span>
+                                </div>
+                                <div class="stack-bottom">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-bottom.png">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        <div class="display-LC-only vitalsarea  js-bg-lozad">
+            <div>
+
+
+                <div class="row">               
+
+                    <div class="vital-item stack-wrap ">
+                        <h5 class="vital-header">App Tiers Affected:</h5>
+
+
+                        <div class="app-stack ">
+                            <div class="above-top active">
+
+                                <div class="bg js-bg-lozad active" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-above-top-active.png">
+                                </div>
+                                <span>Client</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="stack-top">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-top.png">
+                                </div>
+                            </div>
+
+                            <div class="layer-1 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1.png"/>
+                                </div>
+                                <span>Services</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-2 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2.png"/>
+                                </div>
+                                <span>Access</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-3 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
+                                </div>
+                                <span>TLS </span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-4  ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4.png"/>
+                                </div>
+                                <span>DNS</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-5 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
+                                </div>
+                                <span>Network</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+                            <div class="stack-bottom">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-bottom.png">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    
+
+    
+
+</div>
+<div data-component-type="article" class="a07-related-articles section"><!--googleoff: all-->
+
+    
+
+    
+
+    <div class="a07-related-articles " data-id="relatedArticlesId">
+        <div class="a07-related-articles__container">
+            <h4 class="a07-related-articles__container-title">Related Articles</h4>
+
+            <div id="related-article-hidden-items">
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Fraud.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Fraud</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">July 15, 2020</span>
+                        </div>
+                    </div>
+                    <a href="../bylines/how-credential-stuffing-is-evolving.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            How Credential Stuffing Is Evolving
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center byline a07-related-articles__type-ico "><i></i>byline</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">1 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Education.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Education</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">May 22, 2020</span>
+                        </div>
+                    </div>
+                    <a href="../education/fraudulent-unemployment-claims-signal-consumers-to-step-up-perso.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Fraudulent Unemployment Claims Signal Consumers to Step Up Personal Identity Protection
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap ">
+                            <span class="U:align-self-center  a07-related-articles__type-ico "><i></i></span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center"></span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Fraud.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Fraud</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">December 09, 2019</span>
+                        </div>
+                    </div>
+                    <a href="danabot-s-new-tactics-and-targets-arrive-in-time-for-peak-phishi.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            DanaBot’s New Tactics and Targets Arrive in Time for Peak Phishing and Fraud Season
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">13 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--googleon: all--></div>
+<div class="a11-separation-line section">
+
+<div>
+	<div></div>
+</div></div>
+<div class="c20-newsletter-signup-display section">
+
+
+
+
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display__wrapper purple-bg right-rail c20-newsletter-signup-display__newsletter-form">
+	<div class="c20-newsletter-signup-display__signup-wrap">
+		<div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+			<div class="c20-newsletter-signup-display__title">
+				F5 Labs Newsletter
+            </div>
+            <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+            </div>
+		</div>
+		<div class="c20-newsletter-signup-display__row-wrap">
+			<div class="c20-newsletter-signup-display__signup-form-wrap">
+                	<!-- LOADER -->
+				<div id="loader" class="form-loader small-loader     
+                  hide-after-submit"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+				<form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit"></form>
+
+				<!-- SUCCESS MESSAGE -->
+                <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+					<div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>					
+				</div>
+			</div>
+		</div>
+
+    </div>
+    <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+        <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display__wrapper purple-bg right-rail known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__row-wrap ">
+			<div class="c20-newsletter-signup-display__signup-form-wrap">
+				
+				<!-- KNOWN USER MESSAGE -->
+                <div class="c20-newsletter-signup-display__success-message ">
+					<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row container-bottom">
+        <div class="a01-container section">
+    <div class="a01-container-col-left">
+        
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-center">
+        <div class="a10-article-summary section">
+    
+    
+        
+    
+    
+</div>
+<div data-component-type="article" class="a02-article-actions-container section">
+
+    
+        
+        
+        <div class="a02-article-actions-container">
+            
+
+
+
+
+    
+    
+    <div data-component-type="article" class="a01-article-action">
+
+    
+    
+        
+        <div class="a01-article-action__article-actions">
+            <div class="a01-article-action__article-action-box U:justify-content U:align-items-center  U:display-flex">
+              
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_technical.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Technical</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_preventative.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Preventative</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__box-descr">
+                    <div class="a01-article-action__box-descr-content"><ul>
+<li>Deploy a web application firewall</li>
+<li>Implement multi-factor authentication</li>
+<li>Implement web fraud protection to detect customers logging into your applications with infected clients designed to engage in fraud</li>
+<li>Use an intrusion detection system to catch Trojan malware</li>
+</ul>
+</div>
+                </div>                
+            </div>
+        </div>
+    
+
+    
+
+
+
+</div>
+
+
+    
+    
+    <div data-component-type="article" class="a01-article-action">
+
+    
+    
+        
+        <div class="a01-article-action__article-actions">
+            <div class="a01-article-action__article-action-box U:justify-content U:align-items-center  U:display-flex">
+              
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_technical.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Technical</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_corrective.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Corrective</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__box-descr">
+                    <div class="a01-article-action__box-descr-content"><ul>
+<li>Change email addresses of targeted employees</li>
+<li>Administrative/Corrective: Review access controls</li>
+<li>Notify your clients of the malware you detected on their system while logging into your application (why they are blocked from transacting), so they can take steps to clean their systems</li>
+</ul>
+</div>
+                </div>                
+            </div>
+        </div>
+    
+
+    
+
+
+
+</div>
+
+
+    
+    
+    <div data-component-type="article" class="a01-article-action">
+
+    
+    
+        
+        <div class="a01-article-action__article-actions">
+            <div class="a01-article-action__article-action-box U:justify-content U:align-items-center  U:display-flex">
+              
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_administrative.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Administrative</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_preventative.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Preventative</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__box-descr">
+                    <div class="a01-article-action__box-descr-content"><ul>
+<li>Provide security awareness training to employees and to clients</li>
+</ul>
+</div>
+                </div>                
+            </div>
+        </div>
+    
+
+    
+
+
+
+</div>
+
+
+
+        </div>
+    
+
+    
+</div>
+<div data-component-type="article" class="a04-article-author-bio section"><!-- <div class="cq-placeholder section" data-emptytext="Article: Author Bio" data-sly-test="false"></div> -->
+
+
+
+        
+        
+            <div class="a04-article-author-bio__content">
+                <div class="a04-article-author-bio__content__author-box">
+                    <div class="row">
+                        <div class="a04-article-author-bio__content__image-wrap">
+                            <div class="a04-article-author-bio__content__img-container">
+                                <img data-src="../../../content/dam/f5-labs-v2/_author-headshots/Remi_Cohen.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                            </div>
+                        </div>
+                        <div class="a04-article-author-bio__content__data-wrap">
+                            <div>
+                                <b>About the author</b>
+                            </div>
+                            <div class="a04-article-author-bio__content__author-name U:margin-top-md">Remi Cohen</div>
+                            <div class="a04-article-author-bio__content__author-descr"><p>Remi Cohen is a Threat Research Evangelist with F5 Labs. Prior to F5 she worked for a large national laboratory conducting vulnerability assessments, and research on current threats as well as an civilian analyst for the US Department of Defense. Her specialty areas of research include mobile vulnerabilities, Industrial Control Systems, and Eastern European threats. She is an associate of (ISC)2 by passing the CISSP exam and is certified in both COMPTIA Security+ and ECCouncil C|EH. She holds a Master’s degree from New Mexico State University in Industrial Engineering as well as Bachelor’s degrees in Computer Science and Government from Georgetown University.</p>
+</div>
+                            <div>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="../../search.author_Remi+Cohen.html">More articles from Remi Cohen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="a04-article-author-bio__content">
+                <div class="a04-article-author-bio__content__author-box">
+                    <div class="row">
+                        <div class="a04-article-author-bio__content__image-wrap">
+                            <div class="a04-article-author-bio__content__img-container">
+                                <img data-src="https://www.f5.com/content/dam/f5-labs-v2/_author-headshots/Roy_Moshailov.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                            </div>
+                        </div>
+                        <div class="a04-article-author-bio__content__data-wrap">
+                            <div>
+                                <b>About the author</b>
+                            </div>
+                            <div class="a04-article-author-bio__content__author-name U:margin-top-md">Roy Moshailov</div>
+                            <div class="a04-article-author-bio__content__author-descr"><p>Roy is a head of security and malware research at F5, breaking down even the most sophisticated and evasive attacks into pieces. Previously, he served and led an IDF Intelligence Unit, where he gained extensive hands-on experience in cybersecurity. Roy holds several professional security certifications, and his areas of interest include malware/exploit/shellcode reverse engineering and developed POCs, incident response, active threat hunting, vulnerability assessment, PT, and consulting for small and large companies to solve their security and privacy problems.</p>
+</div>
+                            <div>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="https://www.f5.com/labs/search.author_Roy%2BMoshailov">More articles from Roy Moshailov</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+    
+    
+</div>
+<div name="Footnotes" data-component-type="article" class="a09-article-footnotes section">
+
+
+    
+        
+        
+        
+    
+    
+
+</div>
+<div data-component-type="article" class="a05-article-tags section">
+
+
+    
+        
+
+        <div class="a05-article-tags__tags-box">
+            <strong class="a05-article-tags__strong">TAGS: </strong>
+            <a href="https://www.f5.com/labs/search?q=Ramnit" class="a05-article-tags__a">Ramnit</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=%22Client-side+Attacks%22.html" class="a05-article-tags__a">Client-side Attacks</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=%22Client-platform+malware%22.html" class="a05-article-tags__a">Client-platform malware</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Threats.html" class="a05-article-tags__a">Threats</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Cybercrime.html" class="a05-article-tags__a">Cybercrime</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Phishing.html" class="a05-article-tags__a">Phishing</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Client.html" class="a05-article-tags__a">Client</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Fraud.html" class="a05-article-tags__a">Fraud</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=%22banking+trojan%22.html" class="a05-article-tags__a">banking trojan</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Trojan.html" class="a05-article-tags__a">Trojan</a>
+        </div>
+
+    
+
+	
+    
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-right">
+        <div class="a04-include section"><!--googleoff: all-->
+<!-- inline style for wce-edit-mode -->
+
+    <!--googleoff: all-->
+
+    
+
+    
+
+    <div class="a07-related-articles " data-id="relatedArticlesId">
+        <div class="a07-related-articles__container">
+            <h4 class="a07-related-articles__container-title">Related Articles</h4>
+
+            <div id="related-article-hidden-items">
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Fraud.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Fraud</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">July 15, 2020</span>
+                        </div>
+                    </div>
+                    <a href="../bylines/how-credential-stuffing-is-evolving.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            How Credential Stuffing Is Evolving
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center byline a07-related-articles__type-ico "><i></i>byline</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">1 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Education.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Education</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">May 22, 2020</span>
+                        </div>
+                    </div>
+                    <a href="../education/fraudulent-unemployment-claims-signal-consumers-to-step-up-perso.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Fraudulent Unemployment Claims Signal Consumers to Step Up Personal Identity Protection
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap ">
+                            <span class="U:align-self-center  a07-related-articles__type-ico "><i></i></span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center"></span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Fraud.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Fraud</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">December 09, 2019</span>
+                        </div>
+                    </div>
+                    <a href="danabot-s-new-tactics-and-targets-arrive-in-time-for-peak-phishi.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            DanaBot’s New Tactics and Targets Arrive in Time for Peak Phishing and Fraud Season
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">13 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--googleon: all-->
+    
+    
+
+<!--googleon: all--></div>
+
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+<div class="a28-article-tile-list-dynamic aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+    
+<div class="a28-article-tile-list-dynamic__full-width-wrap xs-pt-20 xs-pb-20 container-fluid fill-main-container xs-mb-0 ">
+
+    
+        
+    
+<script src="../../../etc.clientlibs/base/clientlibs/libs/jquery/v3.6.0.abec7e706514e7e243d79b097790f71b.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-swiper.74571ff9ea0f905f582197d9e94ab140.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/components/articles/a28-article-tile-list-dynamic/clientlib.30cecdc12e1944d71b6a455f0740a7b6.js"></script>
+
+
+
+ 
+ 
+<!-- TEXT LAYOUT -->
+
+
+<!-- ALBUM COVER LAYOUT -->
+
+	<section class="a28-article-tile-list-dynamic__container a28-article-tile-list-dynamic-albumLayout a28-article-tile-list-dynamic-albumLayout__image-articles" data-numbersOfArticles="3" data-size="3" id="1684486191">
+
+		<div class="a28-article-tile-list-dynamic__section-title text-center xs-pt-20 xs-pb-20">
+			<h2>Need-to-Know</h2>
+			<span class="a28-article-tile-list-dynamic__text-bigger">Expertly picked stories on threat intelligence</span>
+		</div>
+
+		<div id="article-tile-items" class="a28-article-tile-list-dynamic-albumLayout__article-tiles-wrap U:justify-content-center swiper-container">
+
+			
+
+			<div class="swiper-wrapper">
+				<div id="1684486191_0" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a13/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Top Risks</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>May 18, 2021</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/2021-application-protection-report-of-ransom-and-redemption">
+								<a href="2021-application-protection-report-of-ransom-and-redemption.html">
+									<div class="article-title">
+										<h2 class="header-small">2021 Application Protection Report</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center report a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>report</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>60 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">Sander Vinberg</span>
+									
+										<span class="author-item">Raymond Pompon</span>
+									
+										<span class="author-item">Shahnawaz Backer</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			
+				<div id="1684486191_1" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a15/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=Encryption.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Encryption</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>July 17, 2020</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cryptonice">
+								<a href="cryptonice.html">
+									<div class="article-title">
+										<h2 class="header-small">Introducing the Cryptonice HTTPS Scanner</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center article a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>article</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>12 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">David Warburton</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			
+				<div id="1684486191_2" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a08/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Top Risks</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>February 01, 2021</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cybersecurity-threats-to-the-covid-19-vaccine">
+								<a href="cybersecurity-threats-to-the-covid-19-vaccine.html">
+									<div class="article-title">
+										<h2 class="header-small">Cybersecurity Threats to the COVID-19 Vaccine</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center article a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>article</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>9 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">Raymond Pompon</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="loader_1684486191" class="big-loader U:margin-bot-xl U:display-none"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+		<button class="a28-article-tile-list-dynamic__load-more-button btn btn-outline-inverse U:display-none" id="load_1684486191">
+			Load more stories</button>
+	</section>
+
+  
+
+<!-- MUTED LAYOUT -->
+
+
+</div>
+
+
+</div>
+<div data-component-type="category" class="u03-static-data-points aem-GridColumn aem-GridColumn--default--12"><!--googleoff: all-->
+
+    
+        
+        
+        <section class="u03-static-data-points__container fill-main-container">
+            <div class="full-site-container info-container-two-columns">
+                <div class="row">
+                    <div class="u03-static-data-points__left-column-container border-right">
+                        <div class="u03-static-data-points__left-column-wrap">
+                            <h3 class="display-3 u03-static-data-points__headline">Hundreds of apps will be attacked by the time you read this.</h3>
+                            <p><p>So, we get to work. We obsess over effective attack methods. We monitor the growth of IoT and its evolving threats. We dive deep into the latest crypto-mining campaigns. We analyze banking Trojan targets. We dissect exploits. We hunt for the latest malware. And then our team of experts share it all with you. For more than 20 years, F5 has been leading the app delivery space. With our experience, we are passionate about educating the security community-providing the intel you need to stay informed so your apps can stay safe.</p>
+</p>
+                        </div>
+                    </div>
+                    <div class="u03-static-data-points__right-column-container">
+                        <div class="u03-static-data-points__right-column-wrap">
+                            <h4 class="display-6">
+                                Every
+                            </h4>
+                            <h3 class="f5labs-big-number">9 hrs</h3>
+                            a critical vulnerability—with the potential for remote code execution—is released.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    
+
+<!--googleon: all--></div>
+<div class="u02-footer aem-GridColumn aem-GridColumn--default--12"><div>
+	
+<footer id="footer" class="u02-footer_labs conf06-footer-configuration">
+    <div class="conf06-footer-configuration__footer-logo">
+        <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <metadata>
+                <rdf:RDF>
+                    <cc:Work rdf:about="">
+                        <dc:format>image/svg+xml</dc:format>
+                        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                        <dc:title/>
+                    </cc:Work>
+                </rdf:RDF>
+            </metadata>
+            <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+            <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+            <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+        </svg>
+    </div>
+
+    <div class="conf06-footer-configuration__newslettersignup">
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg c20-newsletter-signup-display__newsletter-form">
+    <div class="c20-newsletter-signup-display__wrapper purple-bg  benefits-visible">
+
+        <div class="c20-newsletter-signup-display__signup-wrap">
+
+            <div class="c20-newsletter-signup-display__row form-and-benefits-row hide-after-submit">
+                <div class="c20-newsletter-signup-display__col">
+                    <div class="c20-newsletter-signup-display__title only-mobile">
+                        F5 Labs Newsletter
+                    </div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+                    </div>
+                </div>
+                <div class="c20-newsletter-signup-display__col">
+
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <div class="c20-newsletter-signup-display__title only-desktop">
+                            F5 Labs Newsletter
+                        </div>
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+                        <!-- LOADER -->
+                        <div id="loader" class="small-loader form-loader     
+                             "><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                        <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                            <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- SUCCESS MESSAGE -->
+            <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+                <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                <div class="c20-newsletter-signup-display__article-intro">
+                    Thanks for signing up! Get started with some of the articles below:
+                </div>
+                <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Fraud.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Fraud</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="2020-phishing-and-fraud-report.html" class="text-article__link">
+
+                                <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">November 11, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Education.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Education</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="../education/what-is-the-cia-triad.html" class="text-article__link">
+
+                                <div class="text-article__article-title">What Is the CIA Triad?</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">July 09, 2019</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Strategies.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Strategies</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="../cisotociso/the-three-main-cybersecurity-career-paths.html" class="text-article__link">
+
+                                <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex mid-point">
+                                    <span class="U:align-self-center">December 08, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center">9 min. read</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__wrapper purple-bg}">
+
+		<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+				<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+    <div class="conf06-footer-configuration__main-footer-container">
+        <div class="conf06-footer-configuration__main-footer-wrapper">
+          
+            <div class="conf06-footer-configuration__links-wrap first-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        <ul>
+            <li><a href="../../threat-intelligence.html" target="_blank" rel="no-opener no-referrer">THREATS</a></li>
+        
+            <li><a href="../../ciso-to-ciso.html" target="_blank" rel="no-opener no-referrer">CISO TO CISO</a></li>
+        
+            <li><a href="../../application-protection.html" target="_blank" rel="no-opener no-referrer">APPLICATION PROTECTION</a></li>
+        </ul>
+    
+
+    
+</div>
+            </div>
+            <div class="conf06-footer-configuration__links-wrap second-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        
+    
+
+    
+</div>
+            </div>
+                  
+
+            <div class="conf06-footer-configuration__social-links-wrap">
+                
+<div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Social media links configuration"></div> -->
+	<ul>
+		<li class="twitter">			
+			<a href="https://twitter.com/F5Labs" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb twitter xs-mr-15"></span></div><div class="float-left">TWITTER</div></a>
+		</li>
+	
+		<li class="linkedin">			
+			<a href="https://www.linkedin.com/showcase/f5labs/" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb linkedin xs-mr-15"></span></div><div class="float-left">LINKEDIN</div></a>
+		</li>
+	</ul>
+
+</div>
+
+            </div>
+        </div>
+        <div class="conf06-footer-configuration__foot-note  conf06-footer-configuration__footer-bottom footer-small">
+            <span class="conf06-footer-configuration__all-rights-reserved"> &copy; 2022 F5, Inc. All rights reserved</span> <br/>
+            
+
+                <a href="../../../company/policies.html">Policies</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/privacy-notice.html">Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/trademarks.html">Trademarks</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../index.html" rel="noreferrer">Manage Subscriptions</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/F5-California-privacy-summary.html">California Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/privacy-notice.html#no-sell">Do Not Sell My Personal Information</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+            <span>
+                <span id="teconsent"></span>
+            </span>
+
+        </div>
+    </div>
+
+    <script class="n-lang-en" async="async" src="../../../../consent.trustarc.com/notice%EF%B9%96domain=f5.com&amp;c=teconsent&amp;js=nj&amp;noticeType=bb&amp;text=true&amp;gtm=1.js" crossorigin=""></script>
+  
+     <div>
+
+
+
+
+
+<div class="c20-newsletter-signup-display__popover-bg   ">
+    <div class=" c20-newsletter-signup-display popover  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+                    <div class="c20-newsletter-signup-display__title">F5 Labs Newsletter</div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+</div>
+                </div>
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+
+                        <!-- SUCCESS MESSAGE -->
+                        <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none ">
+                            <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                            <div class="c20-newsletter-signup-display__article-intro">
+                                Thanks for signing up! Get started with some of the articles below:
+                            </div>
+
+                            <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="2020-phishing-and-fraud-report.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">November 11, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="../education/what-is-the-cia-triad.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">What Is the CIA Triad?</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">July 09, 2019</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="../cisotociso/the-three-main-cybersecurity-career-paths.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex mid-point">
+                                                <span class="U:align-self-center">December 08, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center">9 min. read</span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                         
+                        </div>
+
+                        <!-- LOADER -->
+                        <div id="loader" class="U:display-none big-loader"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" c20-newsletter-signup-display popover c20-newsletter-signup-display__subscribed-already  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__title">You already have a subscription</div>
+                  
+                </div>
+               
+              
+            </div>
+          
+        </div>
+    </div>
+
+</div>
+</div>
+  
+</footer>
+ 
+</div></div>
+
+    
+</div>
+</div>
+
+
+     
+        
+    
+    
+
+    
+<script src="../../../etc.clientlibs/clientlibs/granite/jquery/granite/csrf.a9dcac4698709ca8e1cbc88363cf0793.js"></script>
+<script src="../../../etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.68e8a508c100f218cc66bb13a94d1002.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.d96c3f535f649b3c2392029bf4ce52cd.js"></script>
+
+
+ 
+
+	<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5095d30f38626622"></script>
+	
+
+    
+
+
+        <div id="consent_blackbar" style="position:fixed;bottom:200px;width:100%"></div>
+    </body>
+</html>

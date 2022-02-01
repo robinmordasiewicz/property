@@ -429,7 +429,7 @@
             
         </div>
         <div class="a24-next-and-previous-article__next-button-wrap">
-            <a class="a24-next-and-previous-article__next-button btn btn-outline" href="https://www.f5.com/labs/articles/cisotociso/what-to-do-when-your-company-tells-you-they-re-making-a-mobile-app-part-2">
+            <a class="a24-next-and-previous-article__next-button btn btn-outline" href="what-to-do-when-your-company-tells-you-they-re-making-a-mobile-app-part-2.html">
                Next article in this series<span class="chev">›</span>
             </a>
         </div>
@@ -443,9 +443,9 @@
     <p>Whether it’s to support existing services or to push into new markets, lots of organizations are spinning up mobile applications. How many? Research shows that the mobile app space is growing at a rate that’s on par with the home computer Internet explosion of the mid-1990s. Allied Market Research predicts that this market will hit a compound annual growth rate of 19.2% by 2023, making it a $311.2 billion business market<a id="_ftnrefAutoIncr1" class="footnote-ref" title="1" href="#_ftnAutoIncr1"><sup>1</sup></a>.</p>
 <p>Just as we saw in those frontier days of Windows 95, the security on mobile devices is still in its infancy. Mobile app deployments are even worse: not only is their security similarly immature, their security issues open new attack avenues into the very heart of organizational infrastructures. This is why, when a company declares its intention to enter the mobile application space, it’s the security team that tries to pump the brakes.</p>
 <p>In the <a href="../threat-intelligence/2018-Application-Protection-Report.html" target="_blank" rel="no-opener no-referrer">F5 Labs 2018 Application Protection Report</a>, one of the questions we asked thousands of security professionals was: What’s holding organizations back from having better application defense? The number four response was &quot;Proliferation of mobile devices&quot; (41% of respondents). CISOs know mobile is a problem.</p>
-<p>The natural inclination is to respond by adopting a <a href="https://www.f5.com/labs/articles/cisotociso/the-ciso-a-field-guide" target="_blank" rel="no-opener no-referrer">”Doctor No” strategy</a> and try to block, delay, or deprioritize mobile rollouts. The reasons are the same every time. “It’s insecure.” “We’ll fail audit.” “Our customers will get hacked.” “We’ll be humiliated in public.” Yap, yap, yap.</p>
-<p>But we all know very well that “no” is a losing strategy—the business will do what the business will do, no matter how loud the InfoSec geeks howl. So how can we can we flip this from a problem into an <a href="https://www.f5.com/labs/articles/cisotociso/how-to-be-a-more-effective-ciso-by-aligning-your-security-to-the-business" target="_blank" rel="no-opener no-referrer">opportunity to serve the business</a>?</p>
-<p>This series of articles lays out a strategy to guide your organization through a safe and sane journey into the mobile world. At a high level, the strategy will look <a href="https://www.f5.com/labs/articles/bylines/risky-business-part-2-why-you-need-a-risk-treatment-plan" target="_blank" rel="no-opener no-referrer">awfully familiar</a>:</p>
+<p>The natural inclination is to respond by adopting a <a href="the-ciso-a-field-guide.html" target="_blank" rel="no-opener no-referrer">”Doctor No” strategy</a> and try to block, delay, or deprioritize mobile rollouts. The reasons are the same every time. “It’s insecure.” “We’ll fail audit.” “Our customers will get hacked.” “We’ll be humiliated in public.” Yap, yap, yap.</p>
+<p>But we all know very well that “no” is a losing strategy—the business will do what the business will do, no matter how loud the InfoSec geeks howl. So how can we can we flip this from a problem into an <a href="how-to-be-a-more-effective-ciso-by-aligning-your-security-to-the-business.html" target="_blank" rel="no-opener no-referrer">opportunity to serve the business</a>?</p>
+<p>This series of articles lays out a strategy to guide your organization through a safe and sane journey into the mobile world. At a high level, the strategy will look <a href="../bylines/risky-business-part-2-why-you-need-a-risk-treatment-plan.html" target="_blank" rel="no-opener no-referrer">awfully familiar</a>:</p>
 <ol>
 <li>Investigate the scope,</li>
 <li>Create a risk analysis,</li>
@@ -476,8 +476,8 @@
     
 
     <!-- no link, lightbox -->
-    <a data-lightbox="Image preview" data-title="Figure 1 – Survey Responses for “Which Apps are Mobile?”" href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/16--2019-apr-jun/20190606_mobile_app_pt1/Figure1_min.png">
-        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/16--2019-apr-jun/20190606_mobile_app_pt1/Figure1_min.png" data-component-type="platter" alt="Figure 1 – Survey Responses for “Which Apps are Mobile?”" class="js-bg-lozad"/>
+    <a data-lightbox="Image preview" data-title="Figure 1 – Survey Responses for “Which Apps are Mobile?”" href="../../../content/dam/f5-labs-v2/article/articles/ciso/16--2019-apr-jun/20190606_mobile_app_pt1/Figure1_min.png">
+        <img data-src="../../../content/dam/f5-labs-v2/article/articles/ciso/16--2019-apr-jun/20190606_mobile_app_pt1/Figure1_min.png" data-component-type="platter" alt="Figure 1 – Survey Responses for “Which Apps are Mobile?”" class="js-bg-lozad"/>
         
     </a>
 
@@ -499,18 +499,18 @@
 <p>More than anything, you need to make sure you’re clear on who “owns” the mobile project. This will be your point person for discussing risks and compliance issues, making trade-offs, and getting buy-in for resources. It is worth noting that <a href="../bylines/who-owns-application-security-.html" target="_blank" rel="no-opener no-referrer">establishing the owner of an application can be a real challenge in many organizations</a>. Responsibility can be spread between development, business units, and IT; but ultimately you need to be sure who is making the call for spending money, taking it offline to fix, or saying “no” to a risky feature.</p>
 <h2>Step 2: Build a Threat Model</h2>
 <p>Before we get into the nuts and bolts of building a threat model, we need to take a step back and look at the top threats to apps in general: <a href="../threat-intelligence/application-protection-report-2019--episode-2--2018-breach-trend.html" target="_blank" rel="no-opener no-referrer">access credential attacks and injection</a>. It’s a safe bet that these will also be significant threats in the mobile app space. This raises the question: how different is mobile app security from application security? Or better yet, are there mobile-unique security problems? The answer is mostly “no” with some major “buts” included. So let’s investigate.</p>
-<p>In theory, we should be able to be secure in the mobile app world by following the same security best practices we do in the traditional app world. But (and this is a big but) for the past couple of decades, we’ve been doing a <a href="https://www.f5.com/labs/articles/cisotociso/4-areas-where-infosec-facts-and-fiction-clash--mind-the-gap-pt--" target="_blank" rel="no-opener no-referrer">pretty skimpy job following those traditional security best practice security</a> things. The mobile threat landscape is far less forgiving of lackadaisically patchwork app security. We need to look again at all the things we should have been doing already, but sometimes skipped for expediency. Yes, things turned out mostly all right—<a href="https://www.f5.com/labs/articles/threat-intelligence/when-information-security-is-a-matter-of-public-safety" target="_blank" rel="no-opener no-referrer">at least the cyberworld hasn’t totally burned down yet</a>—but in the mobile world, these oversights can create fatal weaknesses.</p>
+<p>In theory, we should be able to be secure in the mobile app world by following the same security best practices we do in the traditional app world. But (and this is a big but) for the past couple of decades, we’ve been doing a <a href="4-areas-where-infosec-facts-and-fiction-clash--mind-the-gap-pt--.html" target="_blank" rel="no-opener no-referrer">pretty skimpy job following those traditional security best practice security</a> things. The mobile threat landscape is far less forgiving of lackadaisically patchwork app security. We need to look again at all the things we should have been doing already, but sometimes skipped for expediency. Yes, things turned out mostly all right—<a href="../threat-intelligence/when-information-security-is-a-matter-of-public-safety.html" target="_blank" rel="no-opener no-referrer">at least the cyberworld hasn’t totally burned down yet</a>—but in the mobile world, these oversights can create fatal weaknesses.</p>
 <p>It’s worth studying the fallacies of distributed computing<a id="_ftnrefAutoIncr4" class="footnote-ref" title="4" href="#_ftnAutoIncr4"><sup>4</sup></a>, a decades-old list of things that programmers stumble over. (In case you’re wondering, “distributed computing” is the grandmother of what we now call the cloud, but with mainframes.) Three of those old distributed computing fallacies are even more dangerous when we bring them into the context of mobile:</p>
 <ul>
 <li>Erroneously believing the network is reliable, because in the mobile world it really isn’t.</li>
 <li>Erroneously believing the network is secure, because it’s mostly wide open.</li>
 <li>Erroneously believing there is an administrator, because on a mobile there really is no admin whatsoever.</li>
 </ul>
-<p>Another old-but-useful concept to consider in threat modelling a mobile app is Ross Anderson’s “Satan’s Computer.”<a id="_ftnrefAutoIncr5" class="footnote-ref" title="5" href="#_ftnAutoIncr5"><sup>5</sup></a> This means assuming that not only is the network connection untrustworthy, but also that the computer the application runs on is potentially <i>evil</i>—as is the user. Indeed, in the mobile world, you must <a href="https://www.f5.com/labs/articles/cisotociso/liability-in-an-assume-breach-world" target="_blank" rel="no-opener no-referrer">assume breach</a> of the operating system itself, as it could be jailbroken or rooted. Your app may not operate in isolation from other local potentially evil apps, so watch what you store locally and how you handle your app data inputs.</p>
-<p>Another problem in the mobile app world that we don’t encounter too much anymore in the realm of traditional apps is counterfeit apps. There have been quite a number of <a href="https://www.f5.com/labs/articles/threat-intelligence/marcher-gets-close-to-users-by-targeting-mobile-banking-android-apps-social-media-and-email-26004" target="_blank" rel="no-opener no-referrer">trojan-horse</a> <a href="https://www.f5.com/labs/articles/threat-intelligence/yasuo-bot-flexible-customized-fraudulent-content-22442" target="_blank" rel="no-opener no-referrer">applications</a> released recently that masquerade as the real deal. F5 Labs has published numerous pieces on evil apps used to steal banking credentials, commit fraud, or build <a href="https://www.f5.com/labs/articles/threat-intelligence/wirex-android-ddos-malware-adds-udp-flood" target="_blank" rel="no-opener no-referrer">DDoS botnets</a>.</p>
+<p>Another old-but-useful concept to consider in threat modelling a mobile app is Ross Anderson’s “Satan’s Computer.”<a id="_ftnrefAutoIncr5" class="footnote-ref" title="5" href="#_ftnAutoIncr5"><sup>5</sup></a> This means assuming that not only is the network connection untrustworthy, but also that the computer the application runs on is potentially <i>evil</i>—as is the user. Indeed, in the mobile world, you must <a href="liability-in-an-assume-breach-world.html" target="_blank" rel="no-opener no-referrer">assume breach</a> of the operating system itself, as it could be jailbroken or rooted. Your app may not operate in isolation from other local potentially evil apps, so watch what you store locally and how you handle your app data inputs.</p>
+<p>Another problem in the mobile app world that we don’t encounter too much anymore in the realm of traditional apps is counterfeit apps. There have been quite a number of <a href="../threat-intelligence/marcher-gets-close-to-users-by-targeting-mobile-banking-android-apps-social-media-and-email-26004.html" target="_blank" rel="no-opener no-referrer">trojan-horse</a> <a href="../threat-intelligence/yasuo-bot-flexible-customized-fraudulent-content-22442.html" target="_blank" rel="no-opener no-referrer">applications</a> released recently that masquerade as the real deal. F5 Labs has published numerous pieces on evil apps used to steal banking credentials, commit fraud, or build <a href="../threat-intelligence/wirex-android-ddos-malware-adds-udp-flood.html" target="_blank" rel="no-opener no-referrer">DDoS botnets</a>.</p>
 <p>Another thing to consider is that unlike a desktop computer, a mobile phone is a very networked device. A typical mobile load-out includes ubiquitous connectivity for Bluetooth, NFC, USB, Wi-Fi, SMS, and of course cellular data. Not many of these protocols have robust (if any) security features. The device itself has other potential privacy-busting built-in technologies such as automatic uploading cloud storage, cameras, microphones, SIM card stored data, and GPS location tracking. If your app leverages any of these things, be sure to consider the privacy implications.</p>
 <p>As mentioned at the start of this section, credential theft is a big issue for applications in general. The prevalence of local storage and insecure networking in the mobile space exacerbates this threat. Mobile clients often talk to hosted Internet services via APIs, which can themselves become targets of attack. It is folly to assume that if an API is put on the Internet for mobile connectivity that only mobile clients will attempt to connect to it. Once attackers discover that endpoint is there, they will brute force, credential stuff, man-in-the-middle, privilege escalate, and inject attack to their heart’s content. Attackers will also download your mobile app and decompile it looking for embedded access keys, passwords, and authentication certificates. If you look at the <a href="../threat-intelligence/reviewing-recent-api-security-incidents.html" target="_blank" rel="no-opener no-referrer">F5 Labs story on API security incidents</a>, you’ll see that a lot of the incidents are tied to attacks on mobile APIs. Those attacks stem from basic security vulnerabilities related to authentication, injection, and weak permissions.</p>
-<p>Finally, think about how much your mobile app will need to stand alone. That is to say, assume no one will actively administer the app to patch it, tweak its security settings, or lock it down once installed. We have already published <a href="https://www.f5.com/labs/articles/threat-intelligence/breaking-down-the-door-to-emergency-services-through-cellular-io" target="_blank" rel="no-opener no-referrer">security horror stories around IoT deployments</a> that made assumptions that someone was going to lock down deployed apps but didn’t.</p>
+<p>Finally, think about how much your mobile app will need to stand alone. That is to say, assume no one will actively administer the app to patch it, tweak its security settings, or lock it down once installed. We have already published <a href="../threat-intelligence/breaking-down-the-door-to-emergency-services-through-cellular-io.html" target="_blank" rel="no-opener no-referrer">security horror stories around IoT deployments</a> that made assumptions that someone was going to lock down deployed apps but didn’t.</p>
 <h2>The risky business of apps</h2>
 <p>Now that we’ve got an idea about mobile app requirements, and a better picture of the threats to the app, we can do a risk analysis. Remember that risk includes the likelihood of bad things happening (the threats) and how badly those things happening will hurt us (the impacts to our requirements). Once we’ve got a good picture of risk, it’s time to look at how to mitigate them. We’ll cover security requirements and mitigation in part two. Stay tuned.</p>
 
@@ -526,7 +526,7 @@
             
         </div>
         <div class="a24-next-and-previous-article__next-button-wrap">
-            <a class="a24-next-and-previous-article__next-button btn btn-outline" href="https://www.f5.com/labs/articles/cisotociso/what-to-do-when-your-company-tells-you-they-re-making-a-mobile-app-part-2">
+            <a class="a24-next-and-previous-article__next-button btn btn-outline" href="what-to-do-when-your-company-tells-you-they-re-making-a-mobile-app-part-2.html">
                Next article in this series<span class="chev">›</span>
             </a>
         </div>
@@ -593,7 +593,7 @@
                             <span class="U:align-self-center">January 22, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/2020-cybersecurity-trends-and-resolutions" class="a07-related-articles__link">
+                    <a href="../bylines/2020-cybersecurity-trends-and-resolutions.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             2020 Cybersecurity Trends and Resolutions
                         </div>
@@ -620,7 +620,7 @@
                             <span class="U:align-self-center">January 02, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/build-your-immunity-across-all-app-security-insertion-points" class="a07-related-articles__link">
+                    <a href="../bylines/build-your-immunity-across-all-app-security-insertion-points.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Build Your Immunity Across All App-Security Insertion Points
                         </div>
@@ -647,7 +647,7 @@
                             <span class="U:align-self-center">December 05, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/cisotociso/cisos-share-their-wisdom--advice--and-strategies" class="a07-related-articles__link">
+                    <a href="cisos-share-their-wisdom--advice--and-strategies.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             CISOs Share Their Wisdom, Advice, and Strategies
                         </div>
@@ -846,11 +846,11 @@
                         <div class="collapse-panel">
                             <div class="panel-body can-collapse collapsed">
                                 <p><p><span><a href="#_ftnrefAutoIncr1" class="footnote-actual" title="1" id="_ftnAutoIncr1"><sup>1</sup></a> </span><a href="https://www.globenewswire.com/news-release/2019/04/01/1790836/0/en/Mobile-Application-Market-to-Garner-311-2-Billion-by-2023-with-19-2-CAGR-Says-Analyst-at-Allied-Market-Research.html" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.globenewswire.com/news-release/2019/04/01/1790836/0/en/Mobile-Application-Market-to-Garner-311-2-Billion-by-2023-with-19-2-CAGR-Says-Analyst-at-Allied-Market-Research.html</a></p>
-<p><span><a href="#_ftnrefAutoIncr2" class="footnote-actual" title="2"><sup>2</sup></a> </span><a href="https://www.ffiec.gov/press/PDF/FFIEC_booklet_Appendix_E_Mobile_Financial_Services.PDF" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><span class="footnote"></span>https://www.ffiec.gov/press/PDF/FFIEC_booklet_Appendix_E_Mobile_Financial_Services.PDF</a></p>
-<p><span><a href="#_ftnrefAutoIncr3" class="footnote-actual" title="3"><sup>3</sup></a> </span><a href="https://www.pcisecuritystandards.org/documents/Mobile_Payment_Security_Guidelines_Merchants_v1.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><span class="footnote"></span>https://www.pcisecuritystandards.org/documents/Mobile_Payment_Security_Guidelines_Merchants_v1.pdf</a></p>
+<p><span><a href="#_ftnrefAutoIncr2" class="footnote-actual" title="2"><sup>2</sup></a> </span><a href="../../../../www.ffiec.gov/press/PDF/FFIEC_booklet_Appendix_E_Mobile_Financial_Services.PDF" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><span class="footnote"></span>https://www.ffiec.gov/press/PDF/FFIEC_booklet_Appendix_E_Mobile_Financial_Services.PDF</a></p>
+<p><span><a href="#_ftnrefAutoIncr3" class="footnote-actual" title="3"><sup>3</sup></a> </span><a href="../../../../www.pcisecuritystandards.org/documents/Mobile_Payment_Security_Guidelines_Merchants_v1.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><span class="footnote"></span>https://www.pcisecuritystandards.org/documents/Mobile_Payment_Security_Guidelines_Merchants_v1.pdf</a></p>
 <p><span><a href="#_ftnrefAutoIncr4" class="footnote-actual" title="4"><sup>4</sup></a> </span><a href="https://www.fda.gov/medical-devices/digital-health/mobile-medical-applications" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><span class="footnote"></span>https://www.fda.gov/medical-devices/digital-health/mobile-medical-applications</a></p>
 <p><span><a href="#_ftnrefAutoIncr5" class="footnote-actual" title="5"><sup>5</sup></a> </span><a href="http://en.wikipedia.org/wiki/Fallacies_of_distributed_computing" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><span class="footnote"></span>http://en.wikipedia.org/wiki/Fallacies_of_distributed_computing</a></p>
-<p><span><a href="#_ftnrefAutoIncr6" class="footnote-actual" title="6"><sup>6</sup></a> </span><a href="https://www.cl.cam.ac.uk/~rja14/Papers/satan.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.cl.cam.ac.uk/~rja14/Papers/satan.pdf</a></p>
+<p><span><a href="#_ftnrefAutoIncr6" class="footnote-actual" title="6"><sup>6</sup></a> </span><a href="../../../../www.cl.cam.ac.uk/~rja14/Papers/satan.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.cl.cam.ac.uk/~rja14/Papers/satan.pdf</a></p>
 </p>
                             </div>
                         </div>
@@ -865,11 +865,11 @@
                 </summary>
                 <div class="a09-article-footnotes__panel">
                     <p><p><span><a href="#_ftnrefAutoIncr1" class="footnote-actual" title="1" id="_ftnAutoIncr1"><sup>1</sup></a> </span><a href="https://www.globenewswire.com/news-release/2019/04/01/1790836/0/en/Mobile-Application-Market-to-Garner-311-2-Billion-by-2023-with-19-2-CAGR-Says-Analyst-at-Allied-Market-Research.html" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.globenewswire.com/news-release/2019/04/01/1790836/0/en/Mobile-Application-Market-to-Garner-311-2-Billion-by-2023-with-19-2-CAGR-Says-Analyst-at-Allied-Market-Research.html</a></p>
-<p><span><a href="#_ftnrefAutoIncr2" class="footnote-actual" title="2"><sup>2</sup></a> </span><a href="https://www.ffiec.gov/press/PDF/FFIEC_booklet_Appendix_E_Mobile_Financial_Services.PDF" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><span class="footnote"></span>https://www.ffiec.gov/press/PDF/FFIEC_booklet_Appendix_E_Mobile_Financial_Services.PDF</a></p>
-<p><span><a href="#_ftnrefAutoIncr3" class="footnote-actual" title="3"><sup>3</sup></a> </span><a href="https://www.pcisecuritystandards.org/documents/Mobile_Payment_Security_Guidelines_Merchants_v1.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><span class="footnote"></span>https://www.pcisecuritystandards.org/documents/Mobile_Payment_Security_Guidelines_Merchants_v1.pdf</a></p>
+<p><span><a href="#_ftnrefAutoIncr2" class="footnote-actual" title="2"><sup>2</sup></a> </span><a href="../../../../www.ffiec.gov/press/PDF/FFIEC_booklet_Appendix_E_Mobile_Financial_Services.PDF" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><span class="footnote"></span>https://www.ffiec.gov/press/PDF/FFIEC_booklet_Appendix_E_Mobile_Financial_Services.PDF</a></p>
+<p><span><a href="#_ftnrefAutoIncr3" class="footnote-actual" title="3"><sup>3</sup></a> </span><a href="../../../../www.pcisecuritystandards.org/documents/Mobile_Payment_Security_Guidelines_Merchants_v1.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><span class="footnote"></span>https://www.pcisecuritystandards.org/documents/Mobile_Payment_Security_Guidelines_Merchants_v1.pdf</a></p>
 <p><span><a href="#_ftnrefAutoIncr4" class="footnote-actual" title="4"><sup>4</sup></a> </span><a href="https://www.fda.gov/medical-devices/digital-health/mobile-medical-applications" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><span class="footnote"></span>https://www.fda.gov/medical-devices/digital-health/mobile-medical-applications</a></p>
 <p><span><a href="#_ftnrefAutoIncr5" class="footnote-actual" title="5"><sup>5</sup></a> </span><a href="http://en.wikipedia.org/wiki/Fallacies_of_distributed_computing" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><span class="footnote"></span>http://en.wikipedia.org/wiki/Fallacies_of_distributed_computing</a></p>
-<p><span><a href="#_ftnrefAutoIncr6" class="footnote-actual" title="6"><sup>6</sup></a> </span><a href="https://www.cl.cam.ac.uk/~rja14/Papers/satan.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.cl.cam.ac.uk/~rja14/Papers/satan.pdf</a></p>
+<p><span><a href="#_ftnrefAutoIncr6" class="footnote-actual" title="6"><sup>6</sup></a> </span><a href="../../../../www.cl.cam.ac.uk/~rja14/Papers/satan.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.cl.cam.ac.uk/~rja14/Papers/satan.pdf</a></p>
 </p>
                 </div>
             </details>
@@ -886,10 +886,10 @@
 
         <div class="a05-article-tags__tags-box">
             <strong class="a05-article-tags__strong">TAGS: </strong>
-            <a href="https://www.f5.com/labs/search?q=%22Mobile+Malware%22" class="a05-article-tags__a">Mobile Malware</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Mobile+Malware%22.html" class="a05-article-tags__a">Mobile Malware</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=devops" class="a05-article-tags__a">devops</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=devops.html" class="a05-article-tags__a">devops</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=CISO.html" class="a05-article-tags__a">CISO</a><span class="a05-article-tags__span">,</span>
@@ -898,13 +898,13 @@
             <a href="../../search%EF%B9%96q=%22Credential+theft%22.html" class="a05-article-tags__a">Credential theft</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Threat+Modeling%22" class="a05-article-tags__a">Threat Modeling</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Threat+Modeling%22.html" class="a05-article-tags__a">Threat Modeling</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=Mobile" class="a05-article-tags__a">Mobile</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=Mobile.html" class="a05-article-tags__a">Mobile</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22API+vulnerability%22" class="a05-article-tags__a">API vulnerability</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22API+vulnerability%22.html" class="a05-article-tags__a">API vulnerability</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=%22Access+control%22.html" class="a05-article-tags__a">access control</a><span class="a05-article-tags__span">,</span>
@@ -951,7 +951,7 @@
                             <span class="U:align-self-center">January 22, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/2020-cybersecurity-trends-and-resolutions" class="a07-related-articles__link">
+                    <a href="../bylines/2020-cybersecurity-trends-and-resolutions.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             2020 Cybersecurity Trends and Resolutions
                         </div>
@@ -978,7 +978,7 @@
                             <span class="U:align-self-center">January 02, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/build-your-immunity-across-all-app-security-insertion-points" class="a07-related-articles__link">
+                    <a href="../bylines/build-your-immunity-across-all-app-security-insertion-points.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Build Your Immunity Across All App-Security Insertion Points
                         </div>
@@ -1005,7 +1005,7 @@
                             <span class="U:align-self-center">December 05, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/cisotociso/cisos-share-their-wisdom--advice--and-strategies" class="a07-related-articles__link">
+                    <a href="cisos-share-their-wisdom--advice--and-strategies.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             CISOs Share Their Wisdom, Advice, and Strategies
                         </div>

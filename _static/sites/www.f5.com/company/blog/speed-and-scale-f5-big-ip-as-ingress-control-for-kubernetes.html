@@ -230,7 +230,7 @@
                                     <li class="meta-nav__menu-item">
                                         
                                             
-                                            <a class="meta-nav__menu-link" href="https://www.f5.com/de_de/company/blog/speed-and-scale-f5-big-ip-as-ingress-control-for-kubernetes">
+                                            <a class="meta-nav__menu-link" href="../../de_de/company/blog/speed-and-scale-f5-big-ip-as-ingress-control-for-kubernetes.html">
                                                 DE
                                             </a>
                                             
@@ -240,7 +240,7 @@
                                     <li class="meta-nav__menu-item">
                                         
                                             
-                                            <a class="meta-nav__menu-link" href="https://www.f5.com/es_es/company/blog/speed-and-scale-f5-big-ip-as-ingress-control-for-kubernetes">
+                                            <a class="meta-nav__menu-link" href="../../es_es/company/blog/speed-and-scale-f5-big-ip-as-ingress-control-for-kubernetes.html">
                                                 ES
                                             </a>
                                             
@@ -250,7 +250,7 @@
                                     <li class="meta-nav__menu-item">
                                         
                                             
-                                            <a class="meta-nav__menu-link" href="https://www.f5.com/fr_fr/company/blog/speed-and-scale-f5-big-ip-as-ingress-control-for-kubernetes">
+                                            <a class="meta-nav__menu-link" href="../../fr_fr/company/blog/speed-and-scale-f5-big-ip-as-ingress-control-for-kubernetes.html">
                                                 FR
                                             </a>
                                             
@@ -270,7 +270,7 @@
                                     <li class="meta-nav__menu-item">
                                         
                                             
-                                            <a class="meta-nav__menu-link" href="https://www.f5.com/ja_jp/company/blog/speed-and-scale-f5-big-ip-as-ingress-control-for-kubernetes">
+                                            <a class="meta-nav__menu-link" href="../../ja_jp/company/blog/speed-and-scale-f5-big-ip-as-ingress-control-for-kubernetes.html">
                                                 日本語
                                             </a>
                                             
@@ -3279,7 +3279,7 @@
                                 
                                     
                                     
-                                    <a class="nav-list__link" href="https://www.f5.com/content/f5-com/de_de/company/blog/speed-and-scale-f5-big-ip-as-ingress-control-for-kubernetes">
+                                    <a class="nav-list__link" href="../../de_de/company/blog/speed-and-scale-f5-big-ip-as-ingress-control-for-kubernetes.html">
                                         DE
                                     </a>
                                     
@@ -3290,7 +3290,7 @@
                                 
                                     
                                     
-                                    <a class="nav-list__link" href="https://www.f5.com/content/f5-com/es_es/company/blog/speed-and-scale-f5-big-ip-as-ingress-control-for-kubernetes">
+                                    <a class="nav-list__link" href="../../es_es/company/blog/speed-and-scale-f5-big-ip-as-ingress-control-for-kubernetes.html">
                                         ES
                                     </a>
                                     
@@ -3301,7 +3301,7 @@
                                 
                                     
                                     
-                                    <a class="nav-list__link" href="https://www.f5.com/content/f5-com/fr_fr/company/blog/speed-and-scale-f5-big-ip-as-ingress-control-for-kubernetes">
+                                    <a class="nav-list__link" href="../../fr_fr/company/blog/speed-and-scale-f5-big-ip-as-ingress-control-for-kubernetes.html">
                                         FR
                                     </a>
                                     
@@ -3323,7 +3323,7 @@
                                 
                                     
                                     
-                                    <a class="nav-list__link" href="https://www.f5.com/content/f5-com/ja_jp/company/blog/speed-and-scale-f5-big-ip-as-ingress-control-for-kubernetes">
+                                    <a class="nav-list__link" href="../../ja_jp/company/blog/speed-and-scale-f5-big-ip-as-ingress-control-for-kubernetes.html">
                                         日本語
                                     </a>
                                     
@@ -3562,7 +3562,7 @@
 <div id="article970096782" class="a01 "><p><b>There’s as much confusion as there is chaos in container land. Every day seems to bring some new capability or component to the world of container orchestration environments. That’s necessary, because it’s still maturing as use of containers expands beyond the experimental into the existential.</b></p>
 <p>Speed and scale are amongst the two primary drivers of container deployments. The former is as much about development as it is delivery, and thus the focus on scale. But not just vanilla protocol scale, we’re talking about <i>application </i>scale.</p>
 <p>The distinction is important. Containers have been voted most likely to contain microservices, and one of the cardinal rules of microservices is communication via API only. An API that is based on HTTP – not TCP – and thus requires a smarter solution for scale.</p>
-<p>Most container orchestration environments come “out of the box” with proxies capable of vanilla scale. That means <a href="https://f5.com/about-us/blog/articles/go-beyond-polb-plain-old-load-balancing" rel="noreferrer">plain old load balancing (POLB)</a> at the TCP layer. IP addresses and ports are the lingua franca of these proxies. While they do fine in an environment where services are differentiated based on an IP address/port combination, they don’t do so well for applications (services) that are differentiated by HTTP layer characteristics – like API version, or URI, or host name. Those are <a href="https://devcentral.f5.com/articles/load-balancing-versus-application-routing-26129" rel="noreferrer">app layer (HTTP) constructs</a>, and require smarter proxies to both route and scale with the speed desired. These constructs must be taken into consideration upon receipt of a request from a client-side entity, something most vanilla scale solutions for containers can’t provide.  </p>
+<p>Most container orchestration environments come “out of the box” with proxies capable of vanilla scale. That means <a href="go-beyond-polb-plain-old-load-balancing.html" rel="noreferrer">plain old load balancing (POLB)</a> at the TCP layer. IP addresses and ports are the lingua franca of these proxies. While they do fine in an environment where services are differentiated based on an IP address/port combination, they don’t do so well for applications (services) that are differentiated by HTTP layer characteristics – like API version, or URI, or host name. Those are <a href="https://devcentral.f5.com/articles/load-balancing-versus-application-routing-26129" rel="noreferrer">app layer (HTTP) constructs</a>, and require smarter proxies to both route and scale with the speed desired. These constructs must be taken into consideration upon receipt of a request from a client-side entity, something most vanilla scale solutions for containers can’t provide.  </p>
 <p>In response to this need rises the notion of Ingress* control. <a href="ingress-controllers-new-name-familiar-function.html">Ingress control is basically app or HTTP routing</a> or layer 7 switching or content switching or any other of a dozen or so names the capability has gone by since the turn of the century. Ingress control assumes service differentiation at the application (HTTP) layer, and accordingly acts upon it when making routing and scaling decisions inside the container environment.</p>
 <p>But you can’t just slap a F5 BIG-IP in front of a container environment and call it Ingress control. That’s because an Ingress controller also needs to be integrated with the container orchestration environment to achieve the scale <i>and </i>speed desired. To do that, you need something that lives inside the container environment that natively speaks container orchestration and BIG-IP.</p>
 <p>That’s what the <a href="http://clouddocs.f5.com/containers/v1/kubernetes/kctlr-ingress.html" rel="noreferrer">BIG-IP Controller for Kubernetes</a> does. It’s a Docker container that runs in a <a href="https://kubernetes.io/" rel="noreferrer">Kubernetes</a> Pod and enables you to use a BIG-IP as a Kubernetes Ingress controller. That means it can read the Kubernetes Ingress resource and automatically configure BIG-IP with the appropriate objects to make sure requests are scaled based on the app layer constructs you desire.</p>

@@ -1,0 +1,2437 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8"/>
+    <title>How To Survive the Rash of Ransomware</title>
+    <meta name="robots"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Ransomware is ramping up, especially in the public sector. The key to stopping these attacks is to focus on the ransomware attack vectors."/>
+    <meta name="template" content="article-details-template"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>    
+    
+
+    <meta property="og:locale" content="en_US"/>
+
+    <meta property="og:type" content="website"/>
+
+    <meta property="og:title" content="How To Survive the Rash of Ransomware"/>
+
+    <meta property="og:description" content="Ransomware is ramping up, especially in the public sector. The key to stopping these attacks is to focus on the ransomware attack vectors."/>
+
+    <meta property="og:site_name" content="F5 Labs"/>
+
+    <meta property="og:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+    <meta property="og:image_secure_url" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+
+    <meta property="fb:app_id" content="302184056577324"/>
+
+
+    <meta property="twitter:card" content="summary_large_image"/>
+
+    <meta property="twitter:title" content="How To Survive the Rash of Ransomware"/>
+
+    <meta property="twitter:description" content="Ransomware is ramping up, especially in the public sector. The key to stopping these attacks is to focus on the ransomware attack vectors."/>
+
+    <meta property="twitter:site" content="@F5networks"/>
+
+    <meta property="twitter:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+    <meta property="twitter:creator" content="@F5networks"/>
+
+
+    <meta property="article:author" content="Raymond Pompon"/>
+
+    <meta property="article:published_time" content="2019-09-05T15:39:00.000-04:00"/>
+
+    <meta property="article:tag" content="Client-side Attacks,Threats,Cybercrime,App Infrastructure Attacks,Credential theft"/>
+
+    <meta property="article:id" content="/content/f5-labs-v2/en/labs/articles/threat-intelligence/how-to-survive-the-rash-of-ransomware"/>
+
+    <meta property="article:read_time" content="11 min."/>
+
+    <meta property="article:topic" content="Ransomware"/>
+
+    <meta property="article:type" content="blog"/>
+
+    <meta property="article:title" content="How To Survive the Rash of Ransomware"/>
+
+<meta name="keywords" content="Client-side Attacks,Threats,Cybercrime,App Infrastructure Attacks,Credential theft,Web Application Attacks,Phishing,Dictionary attacks,Ransomware,CVE-2019-0708,Access Tier,Ransomware,Access control,CVE-2019-2725"/> 
+<link rel="canonical" href="how-to-survive-the-rash-of-ransomware.html"/>
+
+
+
+
+<meta property="labs:article:search-tab" content="Threats"/>
+
+    
+       	
+        <link href="https://assets.adobedtm.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://consent.trustarc.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://static.cloud.coveo.com" rel="rel=preconnect" crossorigin/>
+    
+
+    <script>window.F5=window.F5||{};window.F5.VisitorTracking=window.F5.VisitorTracking||{"isConfigEnabled":true,"tealiumScriptAsyncUrl":"//mktg.tags.f5.com/main/prod/utag.js","tealiumScriptSyncUrl":"//mktg.tags.f5.com/main/prod/utag.sync.js","visitorTrackingService":"tealium","isTealiumActive":true,"isLegacyActive":false,"legacyLibWarmingUrls":["https://assets.adobedtm.com","https://www.google-analytics.com","https://www.googletagmanager.com"]}</script>
+
+    <script src="../../../../mktg.tags.f5.com/main/prod/utag.sync.js"></script>
+    <!-- If JS enable will change the HTML class tag to "js"-->
+<script>
+    document.documentElement.className = document.documentElement.className.replace("js-off","js-on");
+</script>
+<!-- If JS enable will change the HTML class tag to "js" -->
+    
+    
+    
+
+    
+    
+
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/apple-touch-icon.png"/>
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-16x16.png"/>
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-32x32.png"/>
+    
+    <link rel="mask-icon" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/safari-pinned-tab.svg" color="#e21d38"/>
+
+    
+    
+
+    
+    
+<link rel="stylesheet" href="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.4921b04fbcd148d027b0a9a0b7fb303c.css" type="text/css">
+
+
+
+
+    <script src="https://app-aba.marketo.com/js/forms2/js/forms2.min.js"></script>
+    
+    
+
+<script>
+    window.digitalData = {"labs":{"articleAuthor":["raymond pompon"],"articlePostDate":"Sep 5, 2019","labsReadingTime":"11 min.","vitals":{"labsAttackType":["App Infrastructure Attacks","Client-side Attacks","Web Application Attacks"],"labsAttackMethod":["Dictionary attacks","Credential theft","Phishing"],"labsVulnerabilities":["CVE-2019-2725","CVE-2019-0708"],"labsAttackMotive":["Cybercrime"],"labsAppTiers":["access"],"labsMalwareType":["Ransomware"]},"labsTags":["Ransomware","Threats","App Infrastructure Attacks","Client-side Attacks","Web Application Attacks","Dictionary attacks","Credential theft","Phishing","Access Tier","Access control","CVE-2019-2725","CVE-2019-0708","Ransomware","Cybercrime"]},"page":{"pageInfo":{"pageName":"www:f5.labs.v2:labs:articles:threat-intelligence:how-to-survive-the-rash-of-ransomware","destinationUrl":"https://www.f5.com/labs/articles/threat-intelligence/how-to-survive-the-rash-of-ransomware.html","subDomain":"www","referringUrl":"https://www.f5.com/labs/articles/threat-intelligence/ransomware-how-it-has-evolved-to-be-faster-stealthier-and-strike-harder","referringPageName":"www:f5.labs.v2:labs:articles:threat-intelligence:ransomware-how-it-has-evolved-to-be-faster-stealthier-and-strike-harder","language":"en","version":""},"category":{"primaryCategory":"labs","subCategory1":"articles","subCategory2":"threat-intelligence","subCategory3":"how-to-survive-the-rash-of-ransomware"},"contentInfo":{"articleAuthor":["raymond pompon"],"articlePostDate":"Sep 5, 2019","labsReadingTime":"11 min.","vitals":{"labsAttackType":["App Infrastructure Attacks","Client-side Attacks","Web Application Attacks"],"labsAttackMethod":["Dictionary attacks","Credential theft","Phishing"],"labsVulnerabilities":["CVE-2019-2725","CVE-2019-0708"],"labsAttackMotive":["Cybercrime"],"labsAppTiers":["access"],"labsMalwareType":["Ransomware"]},"labsTags":["Ransomware","Threats","App Infrastructure Attacks","Client-side Attacks","Web Application Attacks","Dictionary attacks","Credential theft","Phishing","Access Tier","Access control","CVE-2019-2725","CVE-2019-0708","Ransomware","Cybercrime"]}}};
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmContentParam = urlParams.get("utm_content");
+    if (utmContentParam && window.digitalData.user != undefined && window.digitalData.user.userInfo) {
+        const utmContentParamArray = utmContentParam.split("-");
+        if (utmContentParamArray.length >= 3) {
+            window.digitalData.user.userInfo.digitalSignal = utmContentParamArray[2];
+        }
+    }
+</script>
+<script>
+    window.utag_data = {"page.pageInfo.pageName":"www:f5.labs.v2:labs:articles:threat-intelligence:how-to-survive-the-rash-of-ransomware","page.pageInfo.destinationUrl":"https://www.f5.com/labs/articles/threat-intelligence/how-to-survive-the-rash-of-ransomware.html","page.pageInfo.subDomain":"www","page.pageInfo.referringUrl":"https://www.f5.com/labs/articles/threat-intelligence/ransomware-how-it-has-evolved-to-be-faster-stealthier-and-strike-harder","page.pageInfo.referringPageName":"www:f5.labs.v2:labs:articles:threat-intelligence:ransomware-how-it-has-evolved-to-be-faster-stealthier-and-strike-harder","page.pageInfo.language":"en","page.pageInfo.version":"","page.category.primaryCategory":"labs","page.category.subCategory1":"articles","page.category.subCategory2":"threat-intelligence","page.category.subCategory3":"how-to-survive-the-rash-of-ransomware","page.contentInfo.articleAuthor[0]":"raymond pompon","page.contentInfo.articlePostDate":"Sep 5, 2019","page.contentInfo.labsReadingTime":"11 min.","page.contentInfo.vitals.labsAttackType[0]":"App Infrastructure Attacks","page.contentInfo.vitals.labsAttackType[1]":"Client-side Attacks","page.contentInfo.vitals.labsAttackType[2]":"Web Application Attacks","page.contentInfo.vitals.labsAttackMethod[0]":"Dictionary attacks","page.contentInfo.vitals.labsAttackMethod[1]":"Credential theft","page.contentInfo.vitals.labsAttackMethod[2]":"Phishing","page.contentInfo.vitals.labsVulnerabilities[0]":"CVE-2019-2725","page.contentInfo.vitals.labsVulnerabilities[1]":"CVE-2019-0708","page.contentInfo.vitals.labsAttackMotive[0]":"Cybercrime","page.contentInfo.vitals.labsAppTiers[0]":"access","page.contentInfo.vitals.labsMalwareType[0]":"Ransomware","page.contentInfo.labsTags[0]":"Ransomware","page.contentInfo.labsTags[1]":"Threats","page.contentInfo.labsTags[2]":"App Infrastructure Attacks","page.contentInfo.labsTags[3]":"Client-side Attacks","page.contentInfo.labsTags[4]":"Web Application Attacks","page.contentInfo.labsTags[5]":"Dictionary attacks","page.contentInfo.labsTags[6]":"Credential theft","page.contentInfo.labsTags[7]":"Phishing","page.contentInfo.labsTags[8]":"Access Tier","page.contentInfo.labsTags[9]":"Access control","page.contentInfo.labsTags[10]":"CVE-2019-2725","page.contentInfo.labsTags[11]":"CVE-2019-0708","page.contentInfo.labsTags[12]":"Ransomware","page.contentInfo.labsTags[13]":"Cybercrime"};
+</script>
+
+
+    
+    <script>
+        ;(function(win, doc, style, timeout) {
+            var STYLE_ID = 'at-body-style';
+
+            function getParent() {
+                return doc.getElementsByTagName('head')[0];
+            }
+
+            function addStyle(parent, id, def) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.createElement('style');
+                style.id = id;
+                style.innerHTML = def;
+                parent.appendChild(style);
+            }
+
+            function removeStyle(parent, id) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.getElementById(id);
+
+                if (!style) {
+                    return;
+                }
+
+                parent.removeChild(style);
+            }
+
+            addStyle(getParent(), STYLE_ID, style);
+            setTimeout(function() {
+                removeStyle(getParent(), STYLE_ID);
+            }, timeout);
+        }(window, document, "body {opacity: 0 !important}", 3000));
+    </script>
+
+    <script src="../../../../assets.adobedtm.com/launch-EN37b07f3d0fa64d53b299e28194b30e0a.min.js" async></script>
+
+
+</head>
+    <body class="article-page preview-mode">
+        
+    <script>
+    (function(a,b,c,d){
+        a='//mktg.tags.f5.com/main/prod/utag.js';
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+    </script>
+
+        
+     
+        
+
+       	<div class="background-cut " style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a09/optimize/article-background-image.jpg);"></div>
+        
+
+
+<nav class="conf12-skip-links__nav" role="navigation">
+	<a href="#nav" class="conf12-skip-links__item">Skip to main navigation</a>
+
+	<a href="#content" class="conf12-skip-links__item">Skip to main content</a>
+
+	<a href="#footer" class="conf12-skip-links__item">Skip to footer</a>
+</nav>
+        
+
+<div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="megamenu-background"></div>
+
+	<div id="nav" class="fullscreen-wrapper header-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg labs-nav ">
+            <div class="container navbar-wrapper">
+                <a class="navbar-brand" href="../../../labs.html">
+                    <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <metadata>
+                            <rdf:RDF>
+                                <cc:Work rdf:about="">
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                    <dc:title/>
+                                </cc:Work>
+                            </rdf:RDF>
+                        </metadata>
+
+                        <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+                        <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+                        <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+                    </svg>
+                    <span>
+
+                        APPLICATION
+                        <br/> THREAT
+                        <br/> INTELLIGENCE
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  
+                    <div class="nav-wrap ml-lg-auto">
+                        <div class="upper-navigation">
+                            <div class="subscribe-item upper-nav-item">
+                                <a class="subscribe-link upper-nav-btn" href="../../subscribe.html">
+                                    <span class="upper-subscribe-ico ico"></span>
+                                    <span class="upper-navigation-content">Subscribe</span>
+                                </a>
+                            </div>
+                            <div class="search-item upper-nav-item">
+                                <a class="search-link upper-nav-btn">
+                                    <span class="upper-search-ico ico"></span>
+                                    <span class="upper-navigation-content">Search</span>
+                                </a>
+                                <form class="form-inline my-2 my-lg-0 search-form" method="get" action="../../search%EF%B9%96q=test.html" id="searchForm">
+                                    <div class="container">
+                                        <div class="search-input-container">
+                                            <a class="close-search-button"></a>
+                                            <input class="form-control mr-sm-2 " type="search" name="q" title="Cannot search for a blank query" placeholder="Search" required pattern="^(?!\s*$).+" aria-label="Search" id="search-input" lang="en"/>
+                                            <button class="btn btn-search  upper-nav-btn" type="submit"> <span class="upper-search-ico ico"></span> <span class="submit-text">Submit</span></button>
+                                        </div>
+    
+                                    </div>
+                                </form>
+                            </div>
+                            
+
+
+
+
+                        </div>
+                        
+<ul class="navbar-nav">
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../threat-intelligence.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Threats</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../ciso-to-ciso.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>CISO-to-CISO</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../application-protection.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Application Protection</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../rss-feeds.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>RSS Feeds</span>
+	</a></li>
+</ul>
+                     
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
+
+</div>
+<div>
+
+	
+    
+    
+
+
+</div><div class="c02-header-area aem-GridColumn aem-GridColumn--default--12"><div class="cq-placeholder section" data-emptytext="Article: Header area configuration"></div>
+
+    
+        
+       
+        <section class="container-fluid c02-header-area__main-article details fill-main-container">
+            <div class="c02-header-area__heroImageBackground" style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a09/optimize/article-background-image.jpg);"></div>
+            <div class="c02-header-area__main-article-overlay"></div>
+           
+            <div class="row">
+                <div class="align-bottom c02-header-area__article-wrap">
+                    <div class="info-row clearfix">
+                    	<a href="../../search%EF%B9%96q=Ransomware.html">
+	                        <div class="category">
+	                            <span class="badge badge-secondary c02-header-area__badge">Ransomware</span>
+	                        </div>
+                        </a>
+                        <div class="c02-header-area__additional-info">
+                            <div class="date U:padding-x">
+                                <span>September 05, 2019</span>
+                               
+                                
+                                
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="c02-header-area__main-articles-title">
+                        <h1>
+                            How To Survive the Rash of Ransomware
+                        </h1>
+                    </div>
+                    <div class="c02-header-area__additional-info U:display-flex">
+                    	
+	                    	<div class="c02-header-area__type  U:display-flex article-ico-wrap big-ico-wrap mid-point">
+	                        	<span class="blog"><i></i>blog</span>
+	                        </div>
+	                    	<div class="c02-header-area__content-duration U:display-flex ">
+	                        	<span>11 min. read</span>
+	                        </div>
+                        
+                        
+                    </div>
+                    <div class="c02-header-area__author-name tags">
+                        By <a class="c02-header-area__author-name tag-item" href="../../search.author_Raymond+Pompon.html">Raymond Pompon</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+   		<div id="content"></div>
+    
+    
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row">
+        <div class="a01-container section">
+    <div class="a01-container-col-left">
+        <div data-component-type="article" class="c06-social-sharing section">
+
+
+
+<div class="addthis_share c06-social-sharing__links ">
+	
+	
+    <span class="addthis_share_button twitter addthis_sharing_toolbox" data-service="twitter" data-url="https://www.f5.com/labs/articles/threat-intelligence/how-to-survive-the-rash-of-ransomware.html" data-description="Ransomware is ramping up, especially in the public sector. The key to stopping these attacks is to focus on the ransomware attack vectors." data-title="How To Survive the Rash of Ransomware- Raymond Pompon">
+        <span class="social-bulb xs-mr-15 twitter"></span>
+    </span>
+    <span class="addthis_share_button linkedin addthis_sharing_toolbox" data-service="linkedin" data-url="https://www.f5.com/labs/articles/threat-intelligence/how-to-survive-the-rash-of-ransomware.html" data-description="Ransomware is ramping up, especially in the public sector. The key to stopping these attacks is to focus on the ransomware attack vectors." data-title="How To Survive the Rash of Ransomware- Raymond Pompon">
+        <span class="social-bulb xs-mr-15 linkedin"></span>
+    </span>
+    <span class="addthis_share_button facebook addthis_button_facebook addthis_sharing_toolbox" data-service="facebook" data-url="https://www.f5.com/labs/articles/threat-intelligence/how-to-survive-the-rash-of-ransomware.html" data-description="Ransomware is ramping up, especially in the public sector. The key to stopping these attacks is to focus on the ransomware attack vectors." data-title="How To Survive the Rash of Ransomware- Raymond Pompon">
+        <span class="social-bulb xs-mr-15 facebook"></span>
+    </span>
+    <a class="mail" target="_blank" href="mailto:?subject=How%20To%20Survive%20the%20Rash%20of%20Ransomware-%20Raymond%20Pompon&amp;body=Checkout%20this%20great%20article%20I%20read%20on%20F5%20Labs%20%20/content/f5-labs-v2/en/labs/articles/threat-intelligence/how-to-survive-the-rash-of-ransomware" rel="noreferrer">
+        <span class="social-bulb xs-mr-15 mail"></span>
+    </a>
+    
+</div></div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-center">
+        <div data-component-type="article" class="a03-article-body section">
+
+<div id="content">
+    <div class="a03-article-body__content">
+        
+    </div>
+    <div class="a22-include-vitals-on-mobile a04-include section">
+	
+    
+
+
+    
+        
+        <div class=" display-old-labs-only vitalsarea  js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/isogrid.png">
+            <div class="accordion only-mobile ">
+                <a class="trigger-collapse collapsed article-vital">
+                    
+                    <div class="button-container">
+                        <div class="x medium"><b></b><b></b><b></b><b></b></div>
+                    </div>
+                </a>
+                <div class="can-collapse collapsed ">
+                    <div class="row">
+                        <div class="vitals-wrap">
+                            <div>
+                                
+
+
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Type:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22App+Infrastructure+Attacks%22.html" target="_self">App Infrastructure Attacks</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Client-side+Attacks%22.html" target="_self">Client-side Attacks</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Web+Application+Attacks%22.html" target="_self">Web Application Attacks</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Method:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Dictionary+attacks%22.html" target="_self">Dictionary attacks</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Credential+theft%22.html" target="_self">Credential theft</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=Phishing.html" target="_self">Phishing</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Vulnerabilities:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=CVE-2019-2725" target="_self">CVE-2019-2725</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=CVE-2019-0708.html" target="_self">CVE-2019-0708</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Motive:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=Cybercrime.html" target="_self">Cybercrime</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Malware Type:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=Ransomware.html" target="_self">Ransomware</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="vital-item stack-wrap ">
+                            <h5 class="vital-header">App Tiers Affected:
+                            </h5>
+                            <div class="app-stack">
+                                <div class="above-top ">
+
+                                    <div class="bg js-bg-lozad " data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-above-top.png">
+                                    </div>
+                                    <span>Client</span>
+
+                                </div>
+                                <div class="red-dots shorter">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="stack-top">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-top.png">
+                                    </div>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+
+                                <div class="layer-1 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1.png" style="max-width: 80px;"/></div>
+                                    <span>Services</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-2 active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3-active.png" style="max-width: 80px;"/></div>
+                                    <span>Access</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-3 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
+                                    <span>TLS </span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-4  ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4.png" style="max-width: 80px;"/></div>
+                                    <span>DNS</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-5 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
+                                    <span>Network</span>
+                                </div>
+                                <div class="stack-bottom">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-bottom.png">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        <div class="display-LC-only vitalsarea  js-bg-lozad">
+            <div>
+
+
+                <div class="row">               
+
+                    <div class="vital-item stack-wrap ">
+                        <h5 class="vital-header">App Tiers Affected:</h5>
+
+
+                        <div class="app-stack ">
+                            <div class="above-top ">
+
+                                <div class="bg js-bg-lozad " data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-above-top.png">
+                                </div>
+                                <span>Client</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="stack-top">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-top.png">
+                                </div>
+                            </div>
+
+                            <div class="layer-1 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1.png"/>
+                                </div>
+                                <span>Services</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-2 active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2-active.png"/>
+                                </div>
+                                <span>Access</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-3 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
+                                </div>
+                                <span>TLS </span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-4  ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4.png"/>
+                                </div>
+                                <span>DNS</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-5 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
+                                </div>
+                                <span>Network</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+                            <div class="stack-bottom">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-bottom.png">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    
+
+    
+
+
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>The US Department of Homeland Security Cybersecurity and Infrastructure Security Agency (DHS CISA) has cited ransomware as &quot;the most visible cybersecurity risk&quot; attacking American IT systems.<a id="_ftnrefAutoIncr1" class="footnote-ref" title="1" href="#_ftnAutoIncr1"><sup>1</sup></a> I think that's a valid statement, since &quot;most visible&quot; doesn't necessarily mean largest or most devastating, but it does still qualify ransomware as a significant threat.</p>
+<p>Indeed, it seems that recent news has been full of public sector organizations being taken offline by ransomware. These public sector organizations have included some high-profile cases involving including schools, municipalities, and government agencies. Ransomware is highly visible, in part because a single, one-time infection originating from a user with high-level privileges can disable thousands of servers, causing millions of customers to be disrupted for weeks. This is what happened in Baltimore in May of 2019, and in Texas in August of 2019.<a id="_ftnrefAutoIncr2" class="footnote-ref" title="2" href="#_ftnAutoIncr2"><sup>2</sup></a><sup>,</sup><a id="_ftnrefAutoIncr3" class="footnote-ref" title="3" href="#_ftnAutoIncr3"><sup>3</sup></a></p>
+<p>A little over a year ago, the F5 2018 Application Protection survey found that public sector organizations did not prioritize impacts from denial of service to their applications or information leakages—both of which occur in a successful ransomware attack. <a href="industry-breakdowns-for-the-2018-application-protection-report.html" target="_blank" rel="no-opener no-referrer">Survey responses from public sector security leaders for estimated security incident impacts was the lowest of all reported sectors</a> for both denial of service (extrapolated average $7.19M while Public Sector estimates were $5.07M) and leakage of personal information (extrapolated average impact was $6.57M while Public Sector estimates were $4.05M). Perhaps the survey respondents did not associate ransomware with these likely potential impacts? Or perhaps this was not seen as a likely threat until the recent campaigns? It does seem that the public sector has been singled out for special attention lately, so I’m sure they’d answer differently in a newer poll.</p>
+<p>Across the industry, our <a href="../../application-protection.html" target="_blank" rel="no-opener no-referrer">2019 Application Protection Research series</a> found that ransomware was responsible for only 3.4% of reported breaches in 2018. Within the public sector, this number rises to 9.09%, with access control and payment form injection attacks more prevalent. In fact, <a href="application-protection-report-2019--episode-2--2018-breach-trend.html" target="_blank" rel="no-opener no-referrer">in the public sector, web breaches</a> were the most common at 36.36% (mostly because of the third party Click2Gov). One reason we do not see ransomware more prominently in the breach records is that, for some states, a ransomware infection is not considered a data breach requiring notification.<a id="_ftnrefAutoIncr4" class="footnote-ref" title="4" href="#_ftnAutoIncr4"><sup>4</sup></a></p>
+<p>Whether a number one threat or not, we know that ransomware is a significant enough problem to warrant consideration in most organizations’ risk analyses. In fact, considering the <a href="../cisotociso/the-risk-pivot-succeeding-with-business-leadership-by-quantifying-operational-risk-24929.html" target="_blank" rel="no-opener no-referrer">direct financial costs associated with operational downtime</a>, the costs of ransomware defensive controls should be easier to justify than protections against more nebulous attack impacts, such as reputation loss from data breach.</p>
+<p>Ransomware can tear through a network using a single opening in your defenses; therefore, you need to use a defense-in-depth approach. This means putting several dissimilar but overlapping barriers in place to slow down or stop the known ransomware attack vectors. Your first line of defense is to stop an attack from even landing on any of your systems. Let’s see what that entails.</p>
+<h2>First Layer of Defense: Stopping Ransomware Entry</h2>
+<p>A common security hole—and one that is easy to close—is weak authentication on Internet-linked logins. Locking down <a href="../cisotociso/wait-dont-throw-out-your-firewalls-25982.html" target="_blank" rel="no-opener no-referrer">Internet-linked logins with better authentication</a> is the first step organizations should take to protect against ransomware, ideally using <a href="../cisotociso/tips-and-tricks-for-rolling-out-multi-factor-authentication.html" target="_blank" rel="no-opener no-referrer">multi-factor authentication</a>. If you can’t manage that, then at least make sure <a href="spaceballs-security--the-top-attacked-usernames-and-passwords.html" target="_blank" rel="no-opener no-referrer">default passwords</a> and <a href="the-credential-crisis-its-really-happening.html" target="_blank" rel="no-opener no-referrer">known leaked credentials</a> are changed.</p>
+<p>Phishing is the go-to tactic for many kinds of cyberattack, including ransomware, so phishing defense should be a high priority. In the <a href="2018-phishing-and-fraud-report--attacks-peak-during-the-holidays.html" target="_blank" rel="no-opener no-referrer">F5 2018 Phishing and Fraud report</a>, we reported that a majority of links in phishing emails lead to TLS/SSL encrypted sites with legitimate certificates. This means that the malware your users are clicking on remains hidden from traditional traffic inspection devices, so in order to find malware you will need to decrypt and inspect. Attackers are now cloning legitimate emails from well-known companies, making phishing attempts harder to spot. In the Phishing and Fraud report, we also noted that training employees to recognize phishing attempts will reduce their click-through rate on malicious emails, links, and attachments from 33% to 13%. Lastly, it is wise to scrape out executable email attachments.</p>
+<p>Another common entry point for ransomware is a drive-by download, where attackers will booby trap websites with browser exploits that inject their ransomware. This means a user surfing to a site and viewing a weaponized banner ad can unwittingly land ransomware on your network. These attacks typically leverage one of the many vulnerabilities in web browsers, web scripting languages, and web animation tools. Defenders need to ensure that all browsers in use at a company are patched. Firewall filtering should also be used, but don’t forget that attackers often hide their traffic using encryption with legitimate TLS certificates. Again, the filtering system should have decryption capabilities to look for hidden ransomware.</p>
+<h2>Second Layer Defense: Ransomware Got In, but We Contained It</h2>
+<p>All those things you’ve done to ensure ransomware won’t get into your systems won’t be enough—something will slip through. <a href="../cisotociso/everything-is-compromisednow-what.html" target="_blank" rel="no-opener no-referrer">We’ve talked about assume breach before</a>, and it means you should expect ransomware to land in your network. The first, most obvious thing to do is run good anti-virus software—not only on the workstations, but on the servers as well. The software should auto-sync its signatures on its own and it should be able to perform quickly, in hours, not days.</p>
+<p>Once ransomware gets into your network, it will automatically pivot laterally and look for other systems to infect and encrypt. This means you should segment your network as much as is feasible. That way, an infected system must pass through some kind of filter or additional access control before moving out of its local resource group. Open internal file shares, such as SMB, are especially vulnerable to ransomware attacks. Internal systems should be patched for <a href="https://www.f5.com/labs/articles/threat-intelligence/from-ddos-to-server-ransomware-apache-struts-2-cve-2017-5638-campaign-25922" target="_blank" rel="no-opener no-referrer">vulnerabilities with published weaponized exploits</a>, as ransomware <a href="from-nsa-exploit-to-widespread-ransomware-wannacry-is-on-the-loose-26847.html" target="_blank" rel="no-opener no-referrer">may try to exploit these vulnerabilities as it moves around inside</a> a network.</p>
+<p>You locked down authentication for your first line of defense; don’t forget to harden authorization. This means ensuring that if a user account gets taken over, it doesn’t provide the ransomware with full access to all the applications and data stores everywhere. In some organizations, users are given overly permissive access to far too many systems. In a ransomware situation, every single file share to which a user has read/write access can become corrupted with ransomware.</p>
+<p>System administrators, with their godlike access to everything, risk having their accounts turned into devastating weapons in a ransomware compromise. The number of administrators should be extremely limited, and, if possible, administrative usage should be partitioned to just the systems a given administrator is responsible for managing. The same goes for service accounts which run in the background, which can also function as deadly vectors in ransomware infections. Consider giving administrators separate accounts without administrative privileges for mundane activities like reading email and browsing websites. Reducing the footprint of administrative access to only those systems and activities where those privileges are truly necessary reduces the risk of systemic infection via phishing and drive-by malware attacks.</p>
+<h2>Third Layer: Ransomware Went Wild, but We’re Bouncing Back</h2>
+<p>Let’s assume your first two layers failed and your critical applications and data are seized up with ransomware—what do you do? Your immediate response should focus on containment. This may mean putting backup servers offline so they don’t become corrupted, shutting down workstations, and initiating a mandatory password change for all users. Hopefully you’ve got a good <a href="../bylines/to-protect-your-network-you-must-first-know-your-network.html" target="_blank" rel="no-opener no-referrer">inventory of systems</a> and <a href="../cisotociso/can-engineers-build-networks-too-complicated-for-humans-to-operate-part-ii-making-sense-of-network-activities-and-system-behaviors.html" target="_blank" rel="no-opener no-referrer">decent logging in place</a> so you can readily identify which systems were hit, and how the infected systems were impacted. If you know which ransomware variant infected your system, there are some online resources available that may help you find a decryption key (for example, No More Ransom).<a id="_ftnrefAutoIncr5" class="footnote-ref" title="5" href="#_ftnAutoIncr5"><sup>5</sup></a></p>
+<p>Before you attempt to recover from backup, be very sure that all traces of ransomware have either been eradicated or disconnected from your network—you may need to literally unplug infected machines from the network. The best way to ensure that the ransomware is gone is to rebuild the machines from bare metal using automation. This is not the kind of thing that will go smoothly if you’re attempting it for the first time during a ransomware incident. However, it is the kind of thing that you can plan for—ideally, your security team will already have practiced and documented this process in an <a href="https://www.f5.com/labs/articles/cisotociso/10-ways-organizations-can-get-ready-for-breach-disclosure" target="_blank" rel="no-opener no-referrer">incident response playbook</a>. If not, note that this type of automated rebuild can provide a lot of operational efficiency and flexibility in circumstances that go beyond security incident response. If you aren’t already looking into automated system rebuild, consider ransomware a good excuse to begin.</p>
+<p>Once you have contained the infection and rebuilt your system to be infection-free, you will need to recover your data from backup. Wise administrators recommend a 3-2-1 approach to backups. This means maintaining at least 3 copies of your data, in 2 different formats, with at least 1 located offsite and <a href="../cisotociso/attacking-air-gap-segregated-computers.html" target="_blank" rel="no-opener no-referrer">air-gapped</a> away. Make sure your backup restoration capability matches the organization’s expectations regarding downtime and acceptable data loss, etc. I’ve been in IT long enough to endure a 30+ hour day babysitting data restores to servers. Test your backups to ensure you’re successfully restoring the data you need in a reasonable time frame.</p>
+<h2>Good Luck</h2>
+<p>When all is said and done, ransomware is likely to remain a significant threat for quite a while. We now primarily see ransomware hitting traditional, general purpose, physical computers, but it’s only a matter of time before it becomes a big problem for <a href="iot-threats-a-first-step-into-a-much-larger-world-of-mayhem-24664.html" target="_blank" rel="no-opener no-referrer">IoT devices</a>, mobiles, and cloud systems.<a id="_ftnrefAutoIncr6" class="footnote-ref" title="6" href="#_ftnAutoIncr6"><sup>6</sup></a><sup>,</sup><a id="_ftnrefAutoIncr7" class="footnote-ref" title="7" href="#_ftnAutoIncr7"><sup>7</sup></a> As long as ransomware keeps making money for criminals, they will keep using it. It pays to be ready.</p>
+
+</div>
+
+    
+</div>
+
+
+</div>
+</div>
+<div class="a13-article-quote-labs section">
+
+
+    
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-right">
+        <div class="vitalsarea section">
+
+
+    
+        
+        <div class=" display-old-labs-only vitalsarea  js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/isogrid.png">
+            <div class="accordion only-mobile ">
+                <a class="trigger-collapse collapsed article-vital">
+                    
+                    <div class="button-container">
+                        <div class="x medium"><b></b><b></b><b></b><b></b></div>
+                    </div>
+                </a>
+                <div class="can-collapse collapsed ">
+                    <div class="row">
+                        <div class="vitals-wrap">
+                            <div>
+                                
+
+
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Type:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22App+Infrastructure+Attacks%22.html" target="_self">App Infrastructure Attacks</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Client-side+Attacks%22.html" target="_self">Client-side Attacks</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Web+Application+Attacks%22.html" target="_self">Web Application Attacks</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Method:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Dictionary+attacks%22.html" target="_self">Dictionary attacks</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Credential+theft%22.html" target="_self">Credential theft</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=Phishing.html" target="_self">Phishing</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Vulnerabilities:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=CVE-2019-2725" target="_self">CVE-2019-2725</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=CVE-2019-0708.html" target="_self">CVE-2019-0708</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Motive:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=Cybercrime.html" target="_self">Cybercrime</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Malware Type:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=Ransomware.html" target="_self">Ransomware</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="vital-item stack-wrap ">
+                            <h5 class="vital-header">App Tiers Affected:
+                            </h5>
+                            <div class="app-stack">
+                                <div class="above-top ">
+
+                                    <div class="bg js-bg-lozad " data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-above-top.png">
+                                    </div>
+                                    <span>Client</span>
+
+                                </div>
+                                <div class="red-dots shorter">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="stack-top">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-top.png">
+                                    </div>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+
+                                <div class="layer-1 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1.png" style="max-width: 80px;"/></div>
+                                    <span>Services</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-2 active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3-active.png" style="max-width: 80px;"/></div>
+                                    <span>Access</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-3 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
+                                    <span>TLS </span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-4  ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4.png" style="max-width: 80px;"/></div>
+                                    <span>DNS</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-5 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
+                                    <span>Network</span>
+                                </div>
+                                <div class="stack-bottom">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-bottom.png">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        <div class="display-LC-only vitalsarea  js-bg-lozad">
+            <div>
+
+
+                <div class="row">               
+
+                    <div class="vital-item stack-wrap ">
+                        <h5 class="vital-header">App Tiers Affected:</h5>
+
+
+                        <div class="app-stack ">
+                            <div class="above-top ">
+
+                                <div class="bg js-bg-lozad " data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-above-top.png">
+                                </div>
+                                <span>Client</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="stack-top">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-top.png">
+                                </div>
+                            </div>
+
+                            <div class="layer-1 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1.png"/>
+                                </div>
+                                <span>Services</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-2 active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2-active.png"/>
+                                </div>
+                                <span>Access</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-3 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
+                                </div>
+                                <span>TLS </span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-4  ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4.png"/>
+                                </div>
+                                <span>DNS</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-5 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
+                                </div>
+                                <span>Network</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+                            <div class="stack-bottom">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-bottom.png">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    
+
+    
+
+</div>
+<div data-component-type="article" class="a07-related-articles section"><!--googleoff: all-->
+
+    
+
+    
+
+    <div class="a07-related-articles " data-id="relatedArticlesId">
+        <div class="a07-related-articles__container">
+            <h4 class="a07-related-articles__container-title">Related Articles</h4>
+
+            <div id="related-article-hidden-items">
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Ransomware.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Ransomware</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">July 24, 2017</span>
+                        </div>
+                    </div>
+                    <a href="https://www.f5.com/labs/articles/threat-intelligence/from-ddos-to-server-ransomware-apache-struts-2-cve-2017-5638-campaign-25922" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            From DDoS to Server Ransomware: Apache Struts 2 – CVE-2017-5638 Campaign
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">9 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Ransomware.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Ransomware</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">July 24, 2017</span>
+                        </div>
+                    </div>
+                    <a href="from-nsa-exploit-to-widespread-ransomware-wannacry-is-on-the-loose-26847.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            From NSA Exploit to Widespread Ransomware: WannaCry Is on the Loose
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center blog a07-related-articles__type-ico "><i></i>blog</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">3 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Ransomware.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Ransomware</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">July 11, 2017</span>
+                        </div>
+                    </div>
+                    <a href="https://www.f5.com/labs/articles/threat-intelligence/sambacry-the-linux-sequel-to-wannacry" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            SambaCry: The Linux Sequel to WannaCry
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center blog a07-related-articles__type-ico "><i></i>blog</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">5 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--googleon: all--></div>
+<div class="a11-separation-line section">
+
+<div>
+	<div></div>
+</div></div>
+<div class="c20-newsletter-signup-display section">
+
+
+
+
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display__wrapper purple-bg right-rail c20-newsletter-signup-display__newsletter-form">
+	<div class="c20-newsletter-signup-display__signup-wrap">
+		<div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+			<div class="c20-newsletter-signup-display__title">
+				F5 Labs Newsletter
+            </div>
+            <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+            </div>
+		</div>
+		<div class="c20-newsletter-signup-display__row-wrap">
+			<div class="c20-newsletter-signup-display__signup-form-wrap">
+                	<!-- LOADER -->
+				<div id="loader" class="form-loader small-loader     
+                  hide-after-submit"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+				<form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit"></form>
+
+				<!-- SUCCESS MESSAGE -->
+                <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+					<div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>					
+				</div>
+			</div>
+		</div>
+
+    </div>
+    <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+        <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display__wrapper purple-bg right-rail known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__row-wrap ">
+			<div class="c20-newsletter-signup-display__signup-form-wrap">
+				
+				<!-- KNOWN USER MESSAGE -->
+                <div class="c20-newsletter-signup-display__success-message ">
+					<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row container-bottom">
+        <div class="a01-container section">
+    <div class="a01-container-col-left">
+        
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-center">
+        <div class="a10-article-summary section">
+    
+    
+        
+    
+    
+</div>
+<div data-component-type="article" class="a02-article-actions-container section">
+
+    
+        
+        
+        <div class="a02-article-actions-container">
+            
+
+
+
+
+    
+    
+    <div data-component-type="article" class="a01-article-action">
+
+    
+    
+        
+        <div class="a01-article-action__article-actions">
+            <div class="a01-article-action__article-action-box U:justify-content U:align-items-center  U:display-flex">
+              
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_preventative.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Preventative</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_technical.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Technical</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__box-descr">
+                    <div class="a01-article-action__box-descr-content"><ul>
+<li>Implement authentication solutions</li>
+<li>Use multi-factor authentication</li>
+<li>Deploy anti-virus solutions</li>
+<li>Use an intrusion prevention system (IPSs)</li>
+<li>Denylist suspicious URLs</li>
+<li>Inspect &amp; Filter encrypted traffic</li>
+</ul>
+</div>
+                </div>                
+            </div>
+        </div>
+    
+
+    
+
+
+
+</div>
+
+
+    
+    
+    <div data-component-type="article" class="a01-article-action">
+
+    
+    
+        
+        <div class="a01-article-action__article-actions">
+            <div class="a01-article-action__article-action-box U:justify-content U:align-items-center  U:display-flex">
+              
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_preventative.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Preventative</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_administrative.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Administrative</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__box-descr">
+                    <div class="a01-article-action__box-descr-content"><ul>
+<li>Enforce separation of duties</li>
+<li>Provide security awareness training</li>
+<li>Write disaster recovery plans</li>
+</ul>
+</div>
+                </div>                
+            </div>
+        </div>
+    
+
+    
+
+
+
+</div>
+
+
+    
+    
+    <div data-component-type="article" class="a01-article-action">
+
+    
+    
+        
+        <div class="a01-article-action__article-actions">
+            <div class="a01-article-action__article-action-box U:justify-content U:align-items-center  U:display-flex">
+              
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_detective.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Detective</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_technical.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Technical</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__box-descr">
+                    <div class="a01-article-action__box-descr-content"><ul>
+<li>Use intrusion detection systems (IDSs)</li>
+<li>Actively monitor systems and review all logs</li>
+</ul>
+</div>
+                </div>                
+            </div>
+        </div>
+    
+
+    
+
+
+
+</div>
+
+
+    
+    
+    <div data-component-type="article" class="a01-article-action">
+
+    
+    
+        
+        <div class="a01-article-action__article-actions">
+            <div class="a01-article-action__article-action-box U:justify-content U:align-items-center  U:display-flex">
+              
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_detective.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Detective</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_administrative.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Administrative</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__box-descr">
+                    <div class="a01-article-action__box-descr-content"><ul>
+<li>Review access rights</li>
+<li>Review audit logs</li>
+<li>Review user permissions</li>
+</ul>
+</div>
+                </div>                
+            </div>
+        </div>
+    
+
+    
+
+
+
+</div>
+
+
+    
+    
+    <div data-component-type="article" class="a01-article-action">
+
+    
+    
+        
+        <div class="a01-article-action__article-actions">
+            <div class="a01-article-action__article-action-box U:justify-content U:align-items-center  U:display-flex">
+              
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_corrective.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Corrective</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_technical.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Technical</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__box-descr">
+                    <div class="a01-article-action__box-descr-content"><ul>
+<li>Reload an OS</li>
+<li>Quarantine a virus</li>
+<li>Initiate backup and restore plans</li>
+<li>Patch vulnerable systems</li>
+<li>Force password resets</li>
+</ul>
+</div>
+                </div>                
+            </div>
+        </div>
+    
+
+    
+
+
+
+</div>
+
+
+    
+    
+    <div data-component-type="article" class="a01-article-action">
+
+    
+    
+        
+        <div class="a01-article-action__article-actions">
+            <div class="a01-article-action__article-action-box U:justify-content U:align-items-center  U:display-flex">
+              
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_corrective.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Corrective</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_administrative.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Administrative</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__box-descr">
+                    <div class="a01-article-action__box-descr-content"><ul>
+<li>Implement business continuity plan and incident response plan</li>
+</ul>
+</div>
+                </div>                
+            </div>
+        </div>
+    
+
+    
+
+
+
+</div>
+
+
+
+        </div>
+    
+
+    
+</div>
+<div data-component-type="article" class="a04-article-author-bio section"><!-- <div class="cq-placeholder section" data-emptytext="Article: Author Bio" data-sly-test="false"></div> -->
+
+
+
+        
+        
+            <div class="a04-article-author-bio__content">
+                <div class="a04-article-author-bio__content__author-box">
+                    <div class="row">
+                        <div class="a04-article-author-bio__content__image-wrap">
+                            <div class="a04-article-author-bio__content__img-container">
+                                <img data-src="../../../content/dam/f5-labs-v2/_author-headshots/Ray_Pompon.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                            </div>
+                        </div>
+                        <div class="a04-article-author-bio__content__data-wrap">
+                            <div>
+                                <b>About the author</b>
+                            </div>
+                            <div class="a04-article-author-bio__content__author-name U:margin-top-md">Raymond Pompon</div>
+                            <div class="a04-article-author-bio__content__author-descr"><p>Raymond Pompon is the Director of F5 Labs. With over 20 years of experience in Internet security, he has worked closely with federal law enforcement in cyber-crime investigations. He was directly involved in several major intrusion cases, including the FBI undercover Flyhook operation and the NW Hospital botnet prosecution. He is the author of IT Security Risk Control Management: An Audit Preparation Plan published by Apress books.</p>
+</div>
+                            <div>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="../../search.author_Raymond+Pompon.html">More articles from Raymond Pompon</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+    
+    
+</div>
+<div name="Footnotes" data-component-type="article" class="a09-article-footnotes section">
+
+
+    
+        
+        <div class="a09-article-footnotes U:padding-y-lg display-old-labs-only">
+            <div class="links-box border-bottom-dotted article-bottom-box">
+                <div class="panel-group accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-parent="#accordion" class="trigger-collapse collapsed" aria-expanded="false">
+                                <h4 class="panel-title display-3">
+                                    Footnotes
+                                </h4>
+                                <div class="button-container">
+                                    <img alt="" class="js-bg-lozad expand-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/expand-button.png"/>
+                                    <img alt="" class="js-bg-lozad close-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/close-button.png"/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="collapse-panel">
+                            <div class="panel-body can-collapse collapsed">
+                                <p><p><span><a href="#_ftnrefAutoIncr1" class="footnote-actual" title="1" id="_ftnAutoIncr1"><sup>1</sup></a> <a href="https://www.us-cert.gov/Ransomware" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.us-cert.gov/Ransomware</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr2" class="footnote-actual" title="2" id="_ftnAutoIncr2"><sup>2</sup></a> <a href="https://en.wikipedia.org/wiki/2019_Baltimore_ransomware_attack" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://en.wikipedia.org/wiki/2019_Baltimore_ransomware_attack</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr3" class="footnote-actual" title="3" id="_ftnAutoIncr3"><sup>3</sup></a> <a href="https://www.wired.com/story/ransomware-strike-local-texas-government-agencies/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.wired.com/story/ransomware-strike-local-texas-government-agencies/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr4" class="footnote-actual" title="4" id="_ftnAutoIncr4"><sup>4</sup></a> <a href="https://www.lawtechnologytoday.org/2017/06/ransomware-attack-data-breach/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.lawtechnologytoday.org/2017/06/ransomware-attack-data-breach/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr5" class="footnote-actual" title="5" id="_ftnAutoIncr5"><sup>5</sup></a> <a href="https://www.nomoreransom.org" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.nomoreransom.org</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr6" class="footnote-actual" title="6" id="_ftnAutoIncr6"><sup>6</sup></a> <a href="https://www.techrepublic.com/article/report-mobile-ransomware-attacks-soared-in-2017-up-250-in-q1/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.techrepublic.com/article/report-mobile-ransomware-attacks-soared-in-2017-up-250-in-q1/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr7" class="footnote-actual" title="7" id="_ftnAutoIncr7"><sup>7</sup></a> <a href="https://www.computerweekly.com/news/450432488/Ransomware-to-hit-cloud-computing-in-2018-predicts-MIT" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.computerweekly.com/news/450432488/Ransomware-to-hit-cloud-computing-in-2018-predicts-MIT</a></span></p>
+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="a09-article-footnotes display-LC-only">
+            <details id="-button" class="a09-article-footnotes__button cmp-accordion__button ">
+                <summary class="a09-article-footnotes__title  display-as-">
+                    <span> Footnotes </span> <span class="a09-article-footnotes__icon cmp-accordion__icon"></span>
+                </summary>
+                <div class="a09-article-footnotes__panel">
+                    <p><p><span><a href="#_ftnrefAutoIncr1" class="footnote-actual" title="1" id="_ftnAutoIncr1"><sup>1</sup></a> <a href="https://www.us-cert.gov/Ransomware" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.us-cert.gov/Ransomware</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr2" class="footnote-actual" title="2" id="_ftnAutoIncr2"><sup>2</sup></a> <a href="https://en.wikipedia.org/wiki/2019_Baltimore_ransomware_attack" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://en.wikipedia.org/wiki/2019_Baltimore_ransomware_attack</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr3" class="footnote-actual" title="3" id="_ftnAutoIncr3"><sup>3</sup></a> <a href="https://www.wired.com/story/ransomware-strike-local-texas-government-agencies/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.wired.com/story/ransomware-strike-local-texas-government-agencies/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr4" class="footnote-actual" title="4" id="_ftnAutoIncr4"><sup>4</sup></a> <a href="https://www.lawtechnologytoday.org/2017/06/ransomware-attack-data-breach/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.lawtechnologytoday.org/2017/06/ransomware-attack-data-breach/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr5" class="footnote-actual" title="5" id="_ftnAutoIncr5"><sup>5</sup></a> <a href="https://www.nomoreransom.org" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.nomoreransom.org</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr6" class="footnote-actual" title="6" id="_ftnAutoIncr6"><sup>6</sup></a> <a href="https://www.techrepublic.com/article/report-mobile-ransomware-attacks-soared-in-2017-up-250-in-q1/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.techrepublic.com/article/report-mobile-ransomware-attacks-soared-in-2017-up-250-in-q1/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr7" class="footnote-actual" title="7" id="_ftnAutoIncr7"><sup>7</sup></a> <a href="https://www.computerweekly.com/news/450432488/Ransomware-to-hit-cloud-computing-in-2018-predicts-MIT" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.computerweekly.com/news/450432488/Ransomware-to-hit-cloud-computing-in-2018-predicts-MIT</a></span></p>
+</p>
+                </div>
+            </details>
+        </div>
+    
+    
+
+</div>
+<div data-component-type="article" class="a05-article-tags section">
+
+
+    
+        
+
+        <div class="a05-article-tags__tags-box">
+            <strong class="a05-article-tags__strong">TAGS: </strong>
+            <a href="../../search%EF%B9%96q=%22Client-side+Attacks%22.html" class="a05-article-tags__a">Client-side Attacks</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Threats.html" class="a05-article-tags__a">Threats</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Cybercrime.html" class="a05-article-tags__a">Cybercrime</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=%22App+Infrastructure+Attacks%22.html" class="a05-article-tags__a">App Infrastructure Attacks</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=%22Credential+theft%22.html" class="a05-article-tags__a">Credential theft</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=%22Web+Application+Attacks%22.html" class="a05-article-tags__a">Web Application Attacks</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Phishing.html" class="a05-article-tags__a">Phishing</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=%22Dictionary+attacks%22.html" class="a05-article-tags__a">Dictionary attacks</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Ransomware.html" class="a05-article-tags__a">Ransomware</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=CVE-2019-0708.html" class="a05-article-tags__a">CVE-2019-0708</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=%22Access+Tier%22.html" class="a05-article-tags__a">Access Tier</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Ransomware.html" class="a05-article-tags__a">Ransomware</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=%22Access+control%22.html" class="a05-article-tags__a">Access control</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=CVE-2019-2725" class="a05-article-tags__a">CVE-2019-2725</a>
+        </div>
+
+    
+
+	
+    
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-right">
+        <div class="a04-include section"><!--googleoff: all-->
+<!-- inline style for wce-edit-mode -->
+
+    <!--googleoff: all-->
+
+    
+
+    
+
+    <div class="a07-related-articles " data-id="relatedArticlesId">
+        <div class="a07-related-articles__container">
+            <h4 class="a07-related-articles__container-title">Related Articles</h4>
+
+            <div id="related-article-hidden-items">
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Ransomware.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Ransomware</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">July 24, 2017</span>
+                        </div>
+                    </div>
+                    <a href="https://www.f5.com/labs/articles/threat-intelligence/from-ddos-to-server-ransomware-apache-struts-2-cve-2017-5638-campaign-25922" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            From DDoS to Server Ransomware: Apache Struts 2 – CVE-2017-5638 Campaign
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">9 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Ransomware.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Ransomware</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">July 24, 2017</span>
+                        </div>
+                    </div>
+                    <a href="from-nsa-exploit-to-widespread-ransomware-wannacry-is-on-the-loose-26847.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            From NSA Exploit to Widespread Ransomware: WannaCry Is on the Loose
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center blog a07-related-articles__type-ico "><i></i>blog</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">3 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Ransomware.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Ransomware</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">July 11, 2017</span>
+                        </div>
+                    </div>
+                    <a href="https://www.f5.com/labs/articles/threat-intelligence/sambacry-the-linux-sequel-to-wannacry" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            SambaCry: The Linux Sequel to WannaCry
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center blog a07-related-articles__type-ico "><i></i>blog</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">5 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--googleon: all-->
+    
+    
+
+<!--googleon: all--></div>
+
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+<div class="a28-article-tile-list-dynamic aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+    
+<div class="a28-article-tile-list-dynamic__full-width-wrap xs-pt-20 xs-pb-20 container-fluid fill-main-container xs-mb-0 ">
+
+    
+        
+    
+<script src="../../../etc.clientlibs/base/clientlibs/libs/jquery/v3.6.0.abec7e706514e7e243d79b097790f71b.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-swiper.74571ff9ea0f905f582197d9e94ab140.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/components/articles/a28-article-tile-list-dynamic/clientlib.30cecdc12e1944d71b6a455f0740a7b6.js"></script>
+
+
+
+ 
+ 
+<!-- TEXT LAYOUT -->
+
+
+<!-- ALBUM COVER LAYOUT -->
+
+	<section class="a28-article-tile-list-dynamic__container a28-article-tile-list-dynamic-albumLayout a28-article-tile-list-dynamic-albumLayout__image-articles" data-numbersOfArticles="3" data-size="3" id="1684486191">
+
+		<div class="a28-article-tile-list-dynamic__section-title text-center xs-pt-20 xs-pb-20">
+			<h2>Need-to-Know</h2>
+			<span class="a28-article-tile-list-dynamic__text-bigger">Expertly picked stories on threat intelligence</span>
+		</div>
+
+		<div id="article-tile-items" class="a28-article-tile-list-dynamic-albumLayout__article-tiles-wrap U:justify-content-center swiper-container">
+
+			
+
+			<div class="swiper-wrapper">
+				<div id="1684486191_0" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a13/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Top Risks</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>May 18, 2021</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/2021-application-protection-report-of-ransom-and-redemption">
+								<a href="2021-application-protection-report-of-ransom-and-redemption.html">
+									<div class="article-title">
+										<h2 class="header-small">2021 Application Protection Report</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center report a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>report</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>60 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">Sander Vinberg</span>
+									
+										<span class="author-item">Raymond Pompon</span>
+									
+										<span class="author-item">Shahnawaz Backer</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			
+				<div id="1684486191_1" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a15/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=Encryption.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Encryption</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>July 17, 2020</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cryptonice">
+								<a href="cryptonice.html">
+									<div class="article-title">
+										<h2 class="header-small">Introducing the Cryptonice HTTPS Scanner</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center article a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>article</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>12 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">David Warburton</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			
+				<div id="1684486191_2" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a08/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Top Risks</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>February 01, 2021</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cybersecurity-threats-to-the-covid-19-vaccine">
+								<a href="cybersecurity-threats-to-the-covid-19-vaccine.html">
+									<div class="article-title">
+										<h2 class="header-small">Cybersecurity Threats to the COVID-19 Vaccine</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center article a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>article</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>9 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">Raymond Pompon</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="loader_1684486191" class="big-loader U:margin-bot-xl U:display-none"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+		<button class="a28-article-tile-list-dynamic__load-more-button btn btn-outline-inverse U:display-none" id="load_1684486191">
+			Load more stories</button>
+	</section>
+
+  
+
+<!-- MUTED LAYOUT -->
+
+
+</div>
+
+
+</div>
+<div data-component-type="category" class="u03-static-data-points aem-GridColumn aem-GridColumn--default--12"><!--googleoff: all-->
+
+    
+        
+        
+        <section class="u03-static-data-points__container fill-main-container">
+            <div class="full-site-container info-container-two-columns">
+                <div class="row">
+                    <div class="u03-static-data-points__left-column-container border-right">
+                        <div class="u03-static-data-points__left-column-wrap">
+                            <h3 class="display-3 u03-static-data-points__headline">Hundreds of apps will be attacked by the time you read this.</h3>
+                            <p><p>So, we get to work. We obsess over effective attack methods. We monitor the growth of IoT and its evolving threats. We dive deep into the latest crypto-mining campaigns. We analyze banking Trojan targets. We dissect exploits. We hunt for the latest malware. And then our team of experts share it all with you. For more than 20 years, F5 has been leading the app delivery space. With our experience, we are passionate about educating the security community-providing the intel you need to stay informed so your apps can stay safe.</p>
+</p>
+                        </div>
+                    </div>
+                    <div class="u03-static-data-points__right-column-container">
+                        <div class="u03-static-data-points__right-column-wrap">
+                            <h4 class="display-6">
+                                Every
+                            </h4>
+                            <h3 class="f5labs-big-number">9 hrs</h3>
+                            a critical vulnerability—with the potential for remote code execution—is released.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    
+
+<!--googleon: all--></div>
+<div class="u02-footer aem-GridColumn aem-GridColumn--default--12"><div>
+	
+<footer id="footer" class="u02-footer_labs conf06-footer-configuration">
+    <div class="conf06-footer-configuration__footer-logo">
+        <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <metadata>
+                <rdf:RDF>
+                    <cc:Work rdf:about="">
+                        <dc:format>image/svg+xml</dc:format>
+                        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                        <dc:title/>
+                    </cc:Work>
+                </rdf:RDF>
+            </metadata>
+            <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+            <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+            <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+        </svg>
+    </div>
+
+    <div class="conf06-footer-configuration__newslettersignup">
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg c20-newsletter-signup-display__newsletter-form">
+    <div class="c20-newsletter-signup-display__wrapper purple-bg  benefits-visible">
+
+        <div class="c20-newsletter-signup-display__signup-wrap">
+
+            <div class="c20-newsletter-signup-display__row form-and-benefits-row hide-after-submit">
+                <div class="c20-newsletter-signup-display__col">
+                    <div class="c20-newsletter-signup-display__title only-mobile">
+                        F5 Labs Newsletter
+                    </div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+                    </div>
+                </div>
+                <div class="c20-newsletter-signup-display__col">
+
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <div class="c20-newsletter-signup-display__title only-desktop">
+                            F5 Labs Newsletter
+                        </div>
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+                        <!-- LOADER -->
+                        <div id="loader" class="small-loader form-loader     
+                             "><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                        <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                            <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- SUCCESS MESSAGE -->
+            <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+                <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                <div class="c20-newsletter-signup-display__article-intro">
+                    Thanks for signing up! Get started with some of the articles below:
+                </div>
+                <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Fraud.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Fraud</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="2020-phishing-and-fraud-report.html" class="text-article__link">
+
+                                <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">November 11, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Education.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Education</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="../education/what-is-the-cia-triad.html" class="text-article__link">
+
+                                <div class="text-article__article-title">What Is the CIA Triad?</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">July 09, 2019</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Strategies.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Strategies</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="../cisotociso/the-three-main-cybersecurity-career-paths.html" class="text-article__link">
+
+                                <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex mid-point">
+                                    <span class="U:align-self-center">December 08, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center">9 min. read</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__wrapper purple-bg}">
+
+		<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+				<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+    <div class="conf06-footer-configuration__main-footer-container">
+        <div class="conf06-footer-configuration__main-footer-wrapper">
+          
+            <div class="conf06-footer-configuration__links-wrap first-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        <ul>
+            <li><a href="../../threat-intelligence.html" target="_blank" rel="no-opener no-referrer">THREATS</a></li>
+        
+            <li><a href="../../ciso-to-ciso.html" target="_blank" rel="no-opener no-referrer">CISO TO CISO</a></li>
+        
+            <li><a href="../../application-protection.html" target="_blank" rel="no-opener no-referrer">APPLICATION PROTECTION</a></li>
+        </ul>
+    
+
+    
+</div>
+            </div>
+            <div class="conf06-footer-configuration__links-wrap second-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        
+    
+
+    
+</div>
+            </div>
+                  
+
+            <div class="conf06-footer-configuration__social-links-wrap">
+                
+<div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Social media links configuration"></div> -->
+	<ul>
+		<li class="twitter">			
+			<a href="https://twitter.com/F5Labs" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb twitter xs-mr-15"></span></div><div class="float-left">TWITTER</div></a>
+		</li>
+	
+		<li class="linkedin">			
+			<a href="https://www.linkedin.com/showcase/f5labs/" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb linkedin xs-mr-15"></span></div><div class="float-left">LINKEDIN</div></a>
+		</li>
+	</ul>
+
+</div>
+
+            </div>
+        </div>
+        <div class="conf06-footer-configuration__foot-note  conf06-footer-configuration__footer-bottom footer-small">
+            <span class="conf06-footer-configuration__all-rights-reserved"> &copy; 2022 F5, Inc. All rights reserved</span> <br/>
+            
+
+                <a href="../../../company/policies.html">Policies</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/privacy-notice.html">Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/trademarks.html">Trademarks</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../index.html" rel="noreferrer">Manage Subscriptions</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/F5-California-privacy-summary.html">California Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/privacy-notice.html#no-sell">Do Not Sell My Personal Information</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+            <span>
+                <span id="teconsent"></span>
+            </span>
+
+        </div>
+    </div>
+
+    <script class="n-lang-en" async="async" src="../../../../consent.trustarc.com/notice%EF%B9%96domain=f5.com&amp;c=teconsent&amp;js=nj&amp;noticeType=bb&amp;text=true&amp;gtm=1.js" crossorigin=""></script>
+  
+     <div>
+
+
+
+
+
+<div class="c20-newsletter-signup-display__popover-bg   ">
+    <div class=" c20-newsletter-signup-display popover  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+                    <div class="c20-newsletter-signup-display__title">F5 Labs Newsletter</div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+</div>
+                </div>
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+
+                        <!-- SUCCESS MESSAGE -->
+                        <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none ">
+                            <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                            <div class="c20-newsletter-signup-display__article-intro">
+                                Thanks for signing up! Get started with some of the articles below:
+                            </div>
+
+                            <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="2020-phishing-and-fraud-report.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">November 11, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="../education/what-is-the-cia-triad.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">What Is the CIA Triad?</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">July 09, 2019</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="../cisotociso/the-three-main-cybersecurity-career-paths.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex mid-point">
+                                                <span class="U:align-self-center">December 08, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center">9 min. read</span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                         
+                        </div>
+
+                        <!-- LOADER -->
+                        <div id="loader" class="U:display-none big-loader"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" c20-newsletter-signup-display popover c20-newsletter-signup-display__subscribed-already  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__title">You already have a subscription</div>
+                  
+                </div>
+               
+              
+            </div>
+          
+        </div>
+    </div>
+
+</div>
+</div>
+  
+</footer>
+ 
+</div></div>
+
+    
+</div>
+</div>
+
+
+     
+        
+    
+    
+
+    
+<script src="../../../etc.clientlibs/clientlibs/granite/jquery/granite/csrf.a9dcac4698709ca8e1cbc88363cf0793.js"></script>
+<script src="../../../etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.68e8a508c100f218cc66bb13a94d1002.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.d96c3f535f649b3c2392029bf4ce52cd.js"></script>
+
+
+ 
+
+	<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5095d30f38626622"></script>
+	
+
+    
+
+
+        <div id="consent_blackbar" style="position:fixed;bottom:200px;width:100%"></div>
+    </body>
+</html>

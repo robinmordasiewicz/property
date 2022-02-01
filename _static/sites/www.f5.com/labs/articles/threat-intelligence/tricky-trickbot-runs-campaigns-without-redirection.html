@@ -352,7 +352,7 @@
                         
                     </div>
                     <div class="c02-header-area__author-name tags">
-                        By <a class="c02-header-area__author-name tag-item" href="https://www.f5.com/labs/search.author_Doron%2BVoolf">Doron Voolf</a><a class="c02-header-area__author-name tag-item" href="https://www.f5.com/labs/search.author_Remi%2BCohen">Remi Cohen</a><a class="c02-header-area__author-name tag-item" href="../../search.author_Malcolm+Heath.html">Malcolm Heath</a>
+                        By <a class="c02-header-area__author-name tag-item" href="../../search.author_Doron+Voolf.html">Doron Voolf</a><a class="c02-header-area__author-name tag-item" href="../../search.author_Remi+Cohen.html">Remi Cohen</a><a class="c02-header-area__author-name tag-item" href="../../search.author_Malcolm+Heath.html">Malcolm Heath</a>
                     </div>
                     
                 </div>
@@ -503,7 +503,7 @@
             <h5 class="vital-header">Malware Type:</h5>
             <div class="tags ">
                 <!-- below markup needs to be in a one line to properly display comas after links-->
-                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Trojan" target="_self">Trojan</a></div>
+                <div class="tag-item"><a href="../../search%EF%B9%96q=Trojan.html" target="_self">Trojan</a></div>
             </div>
         </div>
     
@@ -699,8 +699,8 @@
 <li>The vast majority of all spotted Trickbot campaigns target US financial services institutions; a much smaller percentage target other industries, including cryptocurrencies, credit card companies, and e-commerce.</li>
 <li>Notably, the access pages of financial services institutions, including single sign-on pages, are the most targeted, which indicates that access is still imperative in order to conduct lucrative cybercriminal attacks.</li>
 </ul>
-<p>Trickbot, one of today’s most active banking trojans, was first reported on in 2016. It was originally known for its <a href="https://www.f5.com/labs/articles/threat-intelligence/trickbot-now-targeting-german-banking-group-sparkassen-finanzgruppe-24420" target="_blank" rel="no-opener no-referrer">geographically centered campaigns</a> targeting only the <a href="https://www.f5.com/labs/articles/threat-intelligence/little-trickbot-growing-up-new-campaign-24412" target="_blank" rel="no-opener no-referrer">financial services industry</a>. But it quickly expanded its targets to include <a href="https://www.f5.com/labs/articles/threat-intelligence/trickbot-rapidly-expands-its-targets-in-august-shifting-focus-to-us-banks-and-credit-card-companies" target="_blank" rel="no-opener no-referrer">credit card</a>, <a href="https://www.f5.com/labs/articles/threat-intelligence/trickbot-focuses-on-wealth-management-services-from-its-dyre-core" target="_blank" rel="no-opener no-referrer">wealth management</a>, <a href="https://www.f5.com/labs/articles/threat-intelligence/trickbot-expands-global-targets-beyond-banks-and-payment-processors-to-crms" target="_blank" rel="no-opener no-referrer">customer relationship management software</a> companies. (For more background on Trickbot, check out the <a href="../education/banking-trojans-a-reference-guide-to-the-malware-family-tree.html" target="_blank" rel="no-opener no-referrer">F5 Labs banking malware reference guide</a>.)</p>
-<p>Since 2016, Trickbot campaigns have continued to evolve. New campaigns are pivoting to be much more regionally focused, and they exploit using only one type of attack: dynamic Injection (Dinj), also known as server-side injection. The details of these attacks are stored in Dinj files. While the<a href="https://www.f5.com/labs/articles/threat-intelligence/little-trickbot-growing-up-new-campaign-24412" target="_blank" rel="no-opener no-referrer"> dynamic injection technique isn’t new</a>, it is the first time it has been applied by Trickbot in such a geographically centered campaign.</p>
+<p>Trickbot, one of today’s most active banking trojans, was first reported on in 2016. It was originally known for its <a href="trickbot-now-targeting-german-banking-group-sparkassen-finanzgruppe-24420.html" target="_blank" rel="no-opener no-referrer">geographically centered campaigns</a> targeting only the <a href="little-trickbot-growing-up-new-campaign-24412.html" target="_blank" rel="no-opener no-referrer">financial services industry</a>. But it quickly expanded its targets to include <a href="trickbot-rapidly-expands-its-targets-in-august-shifting-focus-to-us-banks-and-credit-card-companies.html" target="_blank" rel="no-opener no-referrer">credit card</a>, <a href="trickbot-focuses-on-wealth-management-services-from-its-dyre-core.html" target="_blank" rel="no-opener no-referrer">wealth management</a>, <a href="trickbot-expands-global-targets-beyond-banks-and-payment-processors-to-crms.html" target="_blank" rel="no-opener no-referrer">customer relationship management software</a> companies. (For more background on Trickbot, check out the <a href="../education/banking-trojans-a-reference-guide-to-the-malware-family-tree.html" target="_blank" rel="no-opener no-referrer">F5 Labs banking malware reference guide</a>.)</p>
+<p>Since 2016, Trickbot campaigns have continued to evolve. New campaigns are pivoting to be much more regionally focused, and they exploit using only one type of attack: dynamic Injection (Dinj), also known as server-side injection. The details of these attacks are stored in Dinj files. While the<a href="little-trickbot-growing-up-new-campaign-24412.html" target="_blank" rel="no-opener no-referrer"> dynamic injection technique isn’t new</a>, it is the first time it has been applied by Trickbot in such a geographically centered campaign.</p>
 <p>Over the last few months, F5 researchers have gathered target configuration files from Trickbot campaigns and, for this analysis, compared two of the most different ones. (Note that the traditional Trickbot configuration we analyzed has not been active over the last four months.) Since there is such a stark difference in Trickbot’s current tactics, we used the older configuration as a comparison, which highlights Trickbot’s transition to attacking without redirection, because it is so much more sophisticated. The configurations we compared are v459, composed of new Trickbot tactics of shorter target lists and no redirection, and v420, a more traditional configuration that utilizes both redirection and dynamic injection attacks and has a very long target list.</p>
 <h2>Active Campaigns Without Redirection</h2>
 <p>Historically known for using <span class="tooltip">redirection attack<span class="tooltip-wrap"><span class="tooltip-text">A user is forwarded from a trusted site to another, possibly malicious site.</span></span></span>s, Trickbot is not using this tactic in some of its latest target configurations. This change, first noticed by F5 researchers in June and July, continues in August and September 2019. Along with the absence of target lists, redirection is also absent in the encrypted webinject files from the latest campaigns. There is no trace of the previous redirection targets alongside Dinj elements. While this seems to be an intentional shift in tactics, Trickbot continues to target the financial services industry, with 91% of targets on the v459 target list falling into this industry.</p>
@@ -722,8 +722,8 @@
     
 
     <!-- no link, lightbox -->
-    <a data-lightbox="Image preview" data-title="Figure 1. Industries targeted in the Trickbot v459 configuration " href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig1_Trickbot_v459_targets_by_industry.png">
-        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig1_Trickbot_v459_targets_by_industry.png" data-component-type="platter" alt="Figure 1. Industries targeted in the Trickbot v459 configuration " class="js-bg-lozad"/>
+    <a data-lightbox="Image preview" data-title="Figure 1. Industries targeted in the Trickbot v459 configuration " href="../../../content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig1_Trickbot_v459_targets_by_industry.png">
+        <img data-src="../../../content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig1_Trickbot_v459_targets_by_industry.png" data-component-type="platter" alt="Figure 1. Industries targeted in the Trickbot v459 configuration " class="js-bg-lozad"/>
         
     </a>
 
@@ -753,8 +753,8 @@
     
 
     <!-- no link, lightbox -->
-    <a data-lightbox="Image preview" data-title="Figure 2. Breakdown of Trickbot v459’s dynamic injection targets in the financial services industry " href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig2_Trickbot_v459_dynamic_injection_targets_in_financial_services_industry.png">
-        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig2_Trickbot_v459_dynamic_injection_targets_in_financial_services_industry.png" data-component-type="platter" alt="Figure 2. Breakdown of Trickbot v459’s dynamic injection targets in the financial services industry " class="js-bg-lozad"/>
+    <a data-lightbox="Image preview" data-title="Figure 2. Breakdown of Trickbot v459’s dynamic injection targets in the financial services industry " href="../../../content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig2_Trickbot_v459_dynamic_injection_targets_in_financial_services_industry.png">
+        <img data-src="../../../content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig2_Trickbot_v459_dynamic_injection_targets_in_financial_services_industry.png" data-component-type="platter" alt="Figure 2. Breakdown of Trickbot v459’s dynamic injection targets in the financial services industry " class="js-bg-lozad"/>
         
     </a>
 
@@ -785,8 +785,8 @@
     
 
     <!-- no link, lightbox -->
-    <a data-lightbox="Image preview" data-title="Figure 3. Trickbot v459 target list by geolocation, broken out by country" href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig3_Trickbot_v459_country_target_list.png">
-        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig3_Trickbot_v459_country_target_list.png" data-component-type="platter" alt="Figure 3. Trickbot v459 target list by geolocation, broken out by country" class="js-bg-lozad"/>
+    <a data-lightbox="Image preview" data-title="Figure 3. Trickbot v459 target list by geolocation, broken out by country" href="../../../content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig3_Trickbot_v459_country_target_list.png">
+        <img data-src="../../../content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig3_Trickbot_v459_country_target_list.png" data-component-type="platter" alt="Figure 3. Trickbot v459 target list by geolocation, broken out by country" class="js-bg-lozad"/>
         
     </a>
 
@@ -817,8 +817,8 @@
     
 
     <!-- no link, lightbox -->
-    <a data-lightbox="Image preview" data-title="Figure 4. Trickbot v420’s targeted industries by unique URL targeted" href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig4_Trickbot_v420_targets_by_industry.png">
-        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig4_Trickbot_v420_targets_by_industry.png" data-component-type="platter" alt="Figure 4. Trickbot v420’s targeted industries by unique URL targeted" class="js-bg-lozad"/>
+    <a data-lightbox="Image preview" data-title="Figure 4. Trickbot v420’s targeted industries by unique URL targeted" href="../../../content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig4_Trickbot_v420_targets_by_industry.png">
+        <img data-src="../../../content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig4_Trickbot_v420_targets_by_industry.png" data-component-type="platter" alt="Figure 4. Trickbot v420’s targeted industries by unique URL targeted" class="js-bg-lozad"/>
         
     </a>
 
@@ -848,8 +848,8 @@
     
 
     <!-- no link, lightbox -->
-    <a data-lightbox="Image preview" data-title="Figure 5. Trickbot v420 breakdown of the financial services industry by unique URL targeted" href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig5_Trickbot_v420_financial_services_targets.png">
-        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig5_Trickbot_v420_financial_services_targets.png" data-component-type="platter" alt="Figure 5. Trickbot v420 breakdown of the financial services industry by unique URL targeted" class="js-bg-lozad"/>
+    <a data-lightbox="Image preview" data-title="Figure 5. Trickbot v420 breakdown of the financial services industry by unique URL targeted" href="../../../content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig5_Trickbot_v420_financial_services_targets.png">
+        <img data-src="../../../content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig5_Trickbot_v420_financial_services_targets.png" data-component-type="platter" alt="Figure 5. Trickbot v420 breakdown of the financial services industry by unique URL targeted" class="js-bg-lozad"/>
         
     </a>
 
@@ -879,8 +879,8 @@
     
 
     <!-- no link, lightbox -->
-    <a data-lightbox="Image preview" data-title="Figure 6. Trickbot v420 target list geographic distribution showing unique URLs targeted by country " href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig6_Trickbot_v420_country_target_list.png">
-        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig6_Trickbot_v420_country_target_list.png" data-component-type="platter" alt="Figure 6. Trickbot v420 target list geographic distribution showing unique URLs targeted by country " class="js-bg-lozad"/>
+    <a data-lightbox="Image preview" data-title="Figure 6. Trickbot v420 target list geographic distribution showing unique URLs targeted by country " href="../../../content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig6_Trickbot_v420_country_target_list.png">
+        <img data-src="../../../content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig6_Trickbot_v420_country_target_list.png" data-component-type="platter" alt="Figure 6. Trickbot v420 target list geographic distribution showing unique URLs targeted by country " class="js-bg-lozad"/>
         
     </a>
 
@@ -910,8 +910,8 @@
     
 
     <!-- no link, lightbox -->
-    <a data-lightbox="Image preview" data-title="Figure 7. Breakdown of Trickbot v420 global targets by specific industry" href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig7_Trickbot_v420_global_targets_by_industry.png">
-        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig7_Trickbot_v420_global_targets_by_industry.png" data-component-type="platter" alt="Figure 7. Breakdown of Trickbot v420 global targets by specific industry" class="js-bg-lozad"/>
+    <a data-lightbox="Image preview" data-title="Figure 7. Breakdown of Trickbot v420 global targets by specific industry" href="../../../content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig7_Trickbot_v420_global_targets_by_industry.png">
+        <img data-src="../../../content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig7_Trickbot_v420_global_targets_by_industry.png" data-component-type="platter" alt="Figure 7. Breakdown of Trickbot v420 global targets by specific industry" class="js-bg-lozad"/>
         
     </a>
 
@@ -944,8 +944,8 @@
     
 
     <!-- no link, lightbox -->
-    <a data-lightbox="Image preview" data-title="Figure 8. Example of a bank warning users about Trickbot and other banking trojans" href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig8_Trojan_Warning.png">
-        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig8_Trojan_Warning.png" data-component-type="platter" alt="Figure 8. Example of a bank warning users about Trickbot and other banking trojans" class="js-bg-lozad"/>
+    <a data-lightbox="Image preview" data-title="Figure 8. Example of a bank warning users about Trickbot and other banking trojans" href="../../../content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig8_Trojan_Warning.png">
+        <img data-src="../../../content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Fig8_Trojan_Warning.png" data-component-type="platter" alt="Figure 8. Example of a bank warning users about Trickbot and other banking trojans" class="js-bg-lozad"/>
         
     </a>
 
@@ -1064,7 +1064,7 @@
         <div class="a21-download-button">
             <div class="container U:flex-direction-reverse U:justify-content-desktop-end">
                 <div class="a21-download-button__actions U:display-flex">
-                    <a href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Trickbot_v420_v459_Configs.pdf" class="btn btn-outline-inverse a21-download-button__button-download" target="_blank" rel="no-opener no-referrer">Download the Trickbot v459 and v420 target lists here</a>
+                    <a href="../../../content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190917_trickbot/Trickbot_v420_v459_Configs.pdf" class="btn btn-outline-inverse a21-download-button__button-download" target="_blank" rel="no-opener no-referrer">Download the Trickbot v459 and v420 target lists here</a>
                 </div>
             </div>
         </div>
@@ -1201,7 +1201,7 @@
             <h5 class="vital-header">Malware Type:</h5>
             <div class="tags ">
                 <!-- below markup needs to be in a one line to properly display comas after links-->
-                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Trojan" target="_self">Trojan</a></div>
+                <div class="tag-item"><a href="../../search%EF%B9%96q=Trojan.html" target="_self">Trojan</a></div>
             </div>
         </div>
     
@@ -1438,7 +1438,7 @@
                             <span class="U:align-self-center">December 09, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/danabot-s-new-tactics-and-targets-arrive-in-time-for-peak-phishi" class="a07-related-articles__link">
+                    <a href="danabot-s-new-tactics-and-targets-arrive-in-time-for-peak-phishi.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             DanaBot’s New Tactics and Targets Arrive in Time for Peak Phishing and Fraud Season
                         </div>
@@ -1465,7 +1465,7 @@
                             <span class="U:align-self-center">October 24, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/2019-phishing-and-fraud-report" class="a07-related-articles__link">
+                    <a href="2019-phishing-and-fraud-report.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             2019 Phishing and Fraud Report
                         </div>
@@ -1781,7 +1781,7 @@
                     <div class="row">
                         <div class="a04-article-author-bio__content__image-wrap">
                             <div class="a04-article-author-bio__content__img-container">
-                                <img data-src="https://www.f5.com/content/dam/f5-labs-v2/_author-headshots/Doron_Voolf_171.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                                <img data-src="../../../content/dam/f5-labs-v2/_author-headshots/Doron_Voolf_171.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
                             </div>
                         </div>
                         <div class="a04-article-author-bio__content__data-wrap">
@@ -1792,7 +1792,7 @@
                             <div class="a04-article-author-bio__content__author-descr"><p>Working at F5 for 5 years, Doron handles and analyzes cyber threat investigations for most of the major banking malware families in recent years. Doron holds a Bachelor of Science focused in Computer Science.</p>
 </div>
                             <div>
-                                <a class="a04-article-author-bio__content__author-more-articles" href="https://www.f5.com/labs/search.author_Doron%2BVoolf">More articles from Doron Voolf</a>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="../../search.author_Doron+Voolf.html">More articles from Doron Voolf</a>
                             </div>
                         </div>
                     </div>
@@ -1804,7 +1804,7 @@
                     <div class="row">
                         <div class="a04-article-author-bio__content__image-wrap">
                             <div class="a04-article-author-bio__content__img-container">
-                                <img data-src="https://www.f5.com/content/dam/f5-labs-v2/_author-headshots/Remi_Cohen.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                                <img data-src="../../../content/dam/f5-labs-v2/_author-headshots/Remi_Cohen.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
                             </div>
                         </div>
                         <div class="a04-article-author-bio__content__data-wrap">
@@ -1815,7 +1815,7 @@
                             <div class="a04-article-author-bio__content__author-descr"><p>Remi Cohen is a Threat Research Evangelist with F5 Labs. Prior to F5 she worked for a large national laboratory conducting vulnerability assessments, and research on current threats as well as an civilian analyst for the US Department of Defense. Her specialty areas of research include mobile vulnerabilities, Industrial Control Systems, and Eastern European threats. She is an associate of (ISC)2 by passing the CISSP exam and is certified in both COMPTIA Security+ and ECCouncil C|EH. She holds a Master’s degree from New Mexico State University in Industrial Engineering as well as Bachelor’s degrees in Computer Science and Government from Georgetown University.</p>
 </div>
                             <div>
-                                <a class="a04-article-author-bio__content__author-more-articles" href="https://www.f5.com/labs/search.author_Remi%2BCohen">More articles from Remi Cohen</a>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="../../search.author_Remi+Cohen.html">More articles from Remi Cohen</a>
                             </div>
                         </div>
                     </div>
@@ -1883,19 +1883,19 @@
             <a href="../../search%EF%B9%96q=Client.html" class="a05-article-tags__a">Client</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22banking+trojan%22" class="a05-article-tags__a">banking trojan</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22banking+trojan%22.html" class="a05-article-tags__a">banking trojan</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=%22Web+Application+Attacks%22.html" class="a05-article-tags__a">Web Application Attacks</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=Redirection" class="a05-article-tags__a">Redirection</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=Redirection.html" class="a05-article-tags__a">Redirection</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=Injection.html" class="a05-article-tags__a">Injection</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Dynamic+Injection%22" class="a05-article-tags__a">Dynamic Injection</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Dynamic+Injection%22.html" class="a05-article-tags__a">Dynamic Injection</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=%22Access+Tier%22.html" class="a05-article-tags__a">Access Tier</a><span class="a05-article-tags__span">,</span>
@@ -1910,7 +1910,7 @@
             <a href="../../search%EF%B9%96q=%22Services+Tier%22.html" class="a05-article-tags__a">Services Tier</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=Trojan" class="a05-article-tags__a">Trojan</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=Trojan.html" class="a05-article-tags__a">Trojan</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=Trickbot.html" class="a05-article-tags__a">Trickbot</a>
@@ -1981,7 +1981,7 @@
                             <span class="U:align-self-center">December 09, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/danabot-s-new-tactics-and-targets-arrive-in-time-for-peak-phishi" class="a07-related-articles__link">
+                    <a href="danabot-s-new-tactics-and-targets-arrive-in-time-for-peak-phishi.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             DanaBot’s New Tactics and Targets Arrive in Time for Peak Phishing and Fraud Season
                         </div>
@@ -2008,7 +2008,7 @@
                             <span class="U:align-self-center">October 24, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/2019-phishing-and-fraud-report" class="a07-related-articles__link">
+                    <a href="2019-phishing-and-fraud-report.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             2019 Phishing and Fraud Report
                         </div>

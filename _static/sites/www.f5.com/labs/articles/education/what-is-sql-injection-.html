@@ -347,7 +347,7 @@
 	                    </div>
                     </div>
                     <div class="c02-header-area__author-name tags">
-                        By <a class="c02-header-area__author-name tag-item" href="https://www.f5.com/labs/search.author_Debbie%2BWalkowski">Debbie Walkowski</a>
+                        By <a class="c02-header-area__author-name tag-item" href="../../search.author_Debbie+Walkowski.html">Debbie Walkowski</a>
                     </div>
                     
                 </div>
@@ -509,22 +509,22 @@
             <h5 class="vital-header">Terms to Know:</h5>
             <div class="tags display-cta">
                 <!-- below markup needs to be in a one line to properly display comas after links-->
-                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=SQL" target="_self">SQL</a></div>
+                <div class="tag-item"><a href="../../search%EF%B9%96q=SQL.html" target="_self">SQL</a></div>
             
                 <!-- below markup needs to be in a one line to properly display comas after links-->
-                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Input+Validation%22" target="_self">Input Validation</a></div>
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Input+Validation%22.html" target="_self">Input Validation</a></div>
             
                 <!-- below markup needs to be in a one line to properly display comas after links-->
-                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Input+Sanitization%22" target="_self">Input Sanitization</a></div>
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Input+Sanitization%22.html" target="_self">Input Sanitization</a></div>
             
                 <!-- below markup needs to be in a one line to properly display comas after links-->
-                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Prepared+Statements%22" target="_self">Prepared Statements</a></div>
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Prepared+Statements%22.html" target="_self">Prepared Statements</a></div>
             
                 <!-- below markup needs to be in a one line to properly display comas after links-->
-                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Parameterized+Query%22" target="_self">Parameterized Query</a></div>
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Parameterized+Query%22.html" target="_self">Parameterized Query</a></div>
             
                 <!-- below markup needs to be in a one line to properly display comas after links-->
-                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Least+privilege%22" target="_self">Least privilege</a></div>
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Least+privilege%22.html" target="_self">Least privilege</a></div>
             </div>
         </div>
     
@@ -780,16 +780,16 @@
 <h2><a id="_How_to_Prevent_SQL_Injection_Attacks"></a>How to Prevent SQL Injection Attacks</h2>
 <p>Most attacks can never be entirely prevented, but there are many ways to protect against SQL injection attacks. None alone is a cure-all, so it’s important to implement multiple <a href="what-are-security-controls.html" target="_blank" rel="no-opener no-referrer">security controls</a>.</p>
 <ul>
-<li><b>Validate and sanitize user input.</b> <i>All</i> user input should be considered untrusted, whether it’s supplied directly by a user or from an <a href="https://www.f5.com/labs/search?q=API&amp;page=0" target="_blank" rel="no-opener no-referrer">application programming interface</a> (API). Therefore, all input should be validated, meaning it must be checked to ensure it meets the stated criteria, contains only permitted characters, uses the correct format and syntax, meets length or “range” requirements (as in date ranges), and so on. Sanitizing involves modifying input to ensure such characters are deleted, altered, or replaced so they’re not misinterpreted and processed as SQL commands. If all user input were checked in this way, there would be far fewer successful SQL injection attacks. (Note, however, that validating and sanitizing user input does not fix an underlying vulnerability, if one exists.)</li>
+<li><b>Validate and sanitize user input.</b> <i>All</i> user input should be considered untrusted, whether it’s supplied directly by a user or from an <a href="../../search%EF%B9%96q=API&amp;page=0.html" target="_blank" rel="no-opener no-referrer">application programming interface</a> (API). Therefore, all input should be validated, meaning it must be checked to ensure it meets the stated criteria, contains only permitted characters, uses the correct format and syntax, meets length or “range” requirements (as in date ranges), and so on. Sanitizing involves modifying input to ensure such characters are deleted, altered, or replaced so they’re not misinterpreted and processed as SQL commands. If all user input were checked in this way, there would be far fewer successful SQL injection attacks. (Note, however, that validating and sanitizing user input does not fix an underlying vulnerability, if one exists.)</li>
 <li><b>Use prepared statements with parameterized queries.</b> Unlike dynamic SQL statements, which are created on the fly, prepared statements are safer to use because they’re stored on the database server and can only be modified by administrators or developers who have the correct privileges. Use of “parameterized queries” ensures that the SQL code is created first, then the parameters—the values (such as password, address, quantity, credit card number, etc.)—<i>are supplied at the time a query runs,</i> thus ensuring the two are kept distinctly separate. The database is then able to ignore any malicious commands that might have been injected by an attacker.</li>
-<li><b>Limit privileges.</b> Ensure that the principle of <a href="https://www.f5.com/labs/articles/education/what-is-the-principle-of-least-privilege-and-why-is-it-important">least privilege</a> is followed for the database account that accesses the web server. Don’t use an account with system-level admin privileges to connect to your database. If the web application itself only needs to retrieve data from the database, it should not be allowed to change or delete data. You can also set specific database fields to read only access, which limits the amount of useful information an attacker could extract.</li>
+<li><b>Limit privileges.</b> Ensure that the principle of <a href="what-is-the-principle-of-least-privilege-and-why-is-it-important.html">least privilege</a> is followed for the database account that accesses the web server. Don’t use an account with system-level admin privileges to connect to your database. If the web application itself only needs to retrieve data from the database, it should not be allowed to change or delete data. You can also set specific database fields to read only access, which limits the amount of useful information an attacker could extract.</li>
 <li><b>Check for vulnerabilities.</b> Use one of the many commercially available or open source automated tools to scan web applications for vulnerabilities. In many cases, these are the same tools attackers are using to find vulnerable sites to target! So, use these tools defensively—before attackers can use them against you.</li>
 <li><b>Patch systems regularly.</b> It can’t be overstated how important it is for organization to promptly patch operating systems, applications and, in this case, particularly database systems. New vulnerabilities are discovered every day, and most reputable vendors are quick to release patches. A simple Google search for recent data breaches due to SQL injection reveals that often, a patch was available but not applied.</li>
 <li><b>Limit error messages.</b> Keep error messages short, revealing as little information about the database as possible. Verbose error messages can give attackers clues to how the database is structured so they can customize their SQL queries.</li>
 <li><b>Teach developers secure coding practices.</b> One of the best ways to avoid website vulnerabilities is to code them correctly from the beginning, so whenever possible, invest in teaching in-house developers secure coding practices.</li>
 </ul>
 <h2><a id="_Conclusion"></a>Conclusion</h2>
-<p>Many companies, especially those that are not taking the precautions outlined above, do not realize how quickly or easily they could fall victim to an SQL injection attack. It doesn’t take an SQL expert (or even a botnet) to decimate an organization’s database. After so many years, it’s almost inconceivable that this attack vector still exists, given that clear-cut precautions exist and many tools are available to check code. In all cases, organizations should be diligent about applying the above controls and always take an <a href="https://www.f5.com/labs/articles/cisotociso/build-defense-in-depth-with-dissimilar-protections" target="_blank" rel="no-opener no-referrer">assume breach</a> approach.</p>
+<p>Many companies, especially those that are not taking the precautions outlined above, do not realize how quickly or easily they could fall victim to an SQL injection attack. It doesn’t take an SQL expert (or even a botnet) to decimate an organization’s database. After so many years, it’s almost inconceivable that this attack vector still exists, given that clear-cut precautions exist and many tools are available to check code. In all cases, organizations should be diligent about applying the above controls and always take an <a href="../cisotociso/build-defense-in-depth-with-dissimilar-protections.html" target="_blank" rel="no-opener no-referrer">assume breach</a> approach.</p>
 
 </div>
 
@@ -924,22 +924,22 @@
             <h5 class="vital-header">Terms to Know:</h5>
             <div class="tags display-cta">
                 <!-- below markup needs to be in a one line to properly display comas after links-->
-                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=SQL" target="_self">SQL</a></div>
+                <div class="tag-item"><a href="../../search%EF%B9%96q=SQL.html" target="_self">SQL</a></div>
             
                 <!-- below markup needs to be in a one line to properly display comas after links-->
-                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Input+Validation%22" target="_self">Input Validation</a></div>
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Input+Validation%22.html" target="_self">Input Validation</a></div>
             
                 <!-- below markup needs to be in a one line to properly display comas after links-->
-                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Input+Sanitization%22" target="_self">Input Sanitization</a></div>
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Input+Sanitization%22.html" target="_self">Input Sanitization</a></div>
             
                 <!-- below markup needs to be in a one line to properly display comas after links-->
-                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Prepared+Statements%22" target="_self">Prepared Statements</a></div>
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Prepared+Statements%22.html" target="_self">Prepared Statements</a></div>
             
                 <!-- below markup needs to be in a one line to properly display comas after links-->
-                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Parameterized+Query%22" target="_self">Parameterized Query</a></div>
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Parameterized+Query%22.html" target="_self">Parameterized Query</a></div>
             
                 <!-- below markup needs to be in a one line to properly display comas after links-->
-                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Least+privilege%22" target="_self">Least privilege</a></div>
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22Least+privilege%22.html" target="_self">Least privilege</a></div>
             </div>
         </div>
     
@@ -1259,7 +1259,7 @@
                     <div class="row">
                         <div class="a04-article-author-bio__content__image-wrap">
                             <div class="a04-article-author-bio__content__img-container">
-                                <img data-src="https://www.f5.com/content/dam/f5-labs-v2/_author-headshots/Debbie_Walkowski.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                                <img data-src="../../../content/dam/f5-labs-v2/_author-headshots/Debbie_Walkowski.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
                             </div>
                         </div>
                         <div class="a04-article-author-bio__content__data-wrap">
@@ -1270,7 +1270,7 @@
                             <div class="a04-article-author-bio__content__author-descr"><p>As a Security Threat Researcher for F5 Labs, Debbie specializes in writing threat-related educational content as well as blogs, articles, and comprehensive research reports about application threat intelligence. She has worked for F5 for 10 years and has more than 20 years’ experience in the technology industry as a technical writer. She holds SANS GIAC Information Security Professional (<a href="https://www.youracclaim.com/badges/b184d9ab-5941-44d2-bd92-9624e24cec5e/public_url" rel="noreferrer">GISP</a>), GIAC Security Essentials (<a href="https://www.youracclaim.com/badges/35904d93-5034-4f7c-85d7-275c5f6a99af/public_url" rel="noreferrer">GSEC</a>), and GIAC Security Fundamentals (<a href="https://www.youracclaim.com/badges/e896e680-558f-419b-aef7-709cf091d8a5/public_url" rel="noreferrer">GISF</a>) certifications. Her bachelor’s degree from the University of Washington is in scientific and technical communication with an emphasis in computer science. She is the author of 18 technology books published by IDG Books, SAMS, QUE, and Alpha Books.</p>
 </div>
                             <div>
-                                <a class="a04-article-author-bio__content__author-more-articles" href="https://www.f5.com/labs/search.author_Debbie%2BWalkowski">More articles from Debbie Walkowski</a>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="../../search.author_Debbie+Walkowski.html">More articles from Debbie Walkowski</a>
                             </div>
                         </div>
                     </div>
@@ -1340,22 +1340,22 @@
 
         <div class="a05-article-tags__tags-box">
             <strong class="a05-article-tags__strong">TAGS: </strong>
-            <a href="https://www.f5.com/labs/search?q=%22Input+Sanitization%22" class="a05-article-tags__a">Input Sanitization</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Input+Sanitization%22.html" class="a05-article-tags__a">Input Sanitization</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=SQL" class="a05-article-tags__a">SQL</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=SQL.html" class="a05-article-tags__a">SQL</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=Injection.html" class="a05-article-tags__a">Injection</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Input+Validation%22" class="a05-article-tags__a">Input Validation</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Input+Validation%22.html" class="a05-article-tags__a">Input Validation</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22SQL+Injection%22" class="a05-article-tags__a">SQL Injection</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22SQL+Injection%22.html" class="a05-article-tags__a">SQL Injection</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Website+Vulnerabilities%22" class="a05-article-tags__a">Website Vulnerabilities</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Website+Vulnerabilities%22.html" class="a05-article-tags__a">Website Vulnerabilities</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=Education.html" class="a05-article-tags__a">Education</a><span class="a05-article-tags__span">,</span>
@@ -1367,13 +1367,13 @@
             <a href="../../search%EF%B9%96q=Client.html" class="a05-article-tags__a">Client</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Least+privilege%22" class="a05-article-tags__a">Least privilege</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Least+privilege%22.html" class="a05-article-tags__a">Least privilege</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Prepared+Statements%22" class="a05-article-tags__a">Prepared Statements</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Prepared+Statements%22.html" class="a05-article-tags__a">Prepared Statements</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Parameterized+Query%22" class="a05-article-tags__a">Parameterized Query</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Parameterized+Query%22.html" class="a05-article-tags__a">Parameterized Query</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=%22Services+Tier%22.html" class="a05-article-tags__a">Services Tier</a>
@@ -1498,7 +1498,7 @@
 								</div>
 							</div>
 							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/russian-attacks-against-singapore-spike-during-trump-kim-summit">
-								<a href="https://www.f5.com/labs/articles/threat-intelligence/russian-attacks-against-singapore-spike-during-trump-kim-summit">
+								<a href="../threat-intelligence/russian-attacks-against-singapore-spike-during-trump-kim-summit.html">
 									<div class="article-title">
 										<h2 class="header-small">Russian Attacks Against Singapore Spike During Trump-Kim Summit</h2>
 									</div>
@@ -1537,7 +1537,7 @@
 								</div>
 							</div>
 							<article data-article-path="/content/f5-labs-v2/en/labs/articles/cisotociso/86-your-cyber-attackers-avoid-data-breaches-by-protecting-your-most-likely-attack-targets">
-								<a href="https://www.f5.com/labs/articles/cisotociso/86-your-cyber-attackers-avoid-data-breaches-by-protecting-your-most-likely-attack-targets">
+								<a href="../cisotociso/86-your-cyber-attackers-avoid-data-breaches-by-protecting-your-most-likely-attack-targets.html">
 									<div class="article-title">
 										<h2 class="header-small">86 Your Cyber Attackers! Avoid Data Breaches by Protecting Your Most Likely Attack Targets</h2>
 									</div>

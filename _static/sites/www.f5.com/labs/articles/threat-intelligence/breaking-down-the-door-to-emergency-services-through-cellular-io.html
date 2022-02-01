@@ -1,0 +1,2651 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8"/>
+    <title>Breaking Down the Door to Emergency Services through Cellular IoT Gateways</title>
+    <meta name="robots"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="If configured incorrectly, cellular IoT gateways can give attackers access to critical infrastructure, threatening human life in ways only Hollywood has conceived."/>
+    <meta name="template" content="article-details-template"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>    
+    
+
+    <meta property="og:locale" content="en_US"/>
+
+    <meta property="og:type" content="website"/>
+
+    <meta property="og:title" content="Breaking Down the Door to Emergency Services through Cellular IoT Gateways"/>
+
+    <meta property="og:description" content="If configured incorrectly, cellular IoT gateways can give attackers access to critical infrastructure, threatening human life in ways only Hollywood has conceived."/>
+
+    <meta property="og:site_name" content="F5 Labs"/>
+
+    <meta property="og:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+    <meta property="og:image_secure_url" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+
+    <meta property="fb:app_id" content="302184056577324"/>
+
+
+    <meta property="twitter:card" content="summary_large_image"/>
+
+    <meta property="twitter:title" content="Breaking Down the Door to Emergency Services through Cellular IoT Gateways"/>
+
+    <meta property="twitter:description" content="If configured incorrectly, cellular IoT gateways can give attackers access to critical infrastructure, threatening human life in ways only Hollywood has conceived."/>
+
+    <meta property="twitter:site" content="@F5networks"/>
+
+    <meta property="twitter:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+    <meta property="twitter:creator" content="@F5networks"/>
+
+
+    <meta property="article:author" content="Justin Shattuck, Scott Harvey, Sara Boddy, Preston Crowe"/>
+
+    <meta property="article:published_time" content="2018-08-09T04:00:00.000-04:00"/>
+
+    <meta property="article:tag" content="bashlite,sierra wireless,emergency services,critical infrastructure,default admin credentials"/>
+
+    <meta property="article:id" content="/content/f5-labs-v2/en/labs/articles/threat-intelligence/breaking-down-the-door-to-emergency-services-through-cellular-io"/>
+
+    <meta property="article:read_time" content="23 min."/>
+
+    <meta property="article:topic" content="IoT"/>
+
+    <meta property="article:type" content="article"/>
+
+    <meta property="article:title" content="Breaking Down the Door to Emergency Services through Cellular IoT Gateways"/>
+
+<meta name="keywords" content="bashlite,sierra wireless,emergency services,critical infrastructure,default admin credentials,Thingbot,Mirai,Threats,IoT,cellular gateways"/> 
+<link rel="canonical" href="breaking-down-the-door-to-emergency-services-through-cellular-io.html"/>
+
+
+
+
+<meta property="labs:article:search-tab" content="Threats"/>
+
+    
+       	
+        <link href="https://assets.adobedtm.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://consent.trustarc.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://static.cloud.coveo.com" rel="rel=preconnect" crossorigin/>
+    
+
+    <script>window.F5=window.F5||{};window.F5.VisitorTracking=window.F5.VisitorTracking||{"isConfigEnabled":true,"tealiumScriptAsyncUrl":"//mktg.tags.f5.com/main/prod/utag.js","tealiumScriptSyncUrl":"//mktg.tags.f5.com/main/prod/utag.sync.js","visitorTrackingService":"tealium","isTealiumActive":true,"isLegacyActive":false,"legacyLibWarmingUrls":["https://assets.adobedtm.com","https://www.google-analytics.com","https://www.googletagmanager.com"]}</script>
+
+    <script src="../../../../mktg.tags.f5.com/main/prod/utag.sync.js"></script>
+    <!-- If JS enable will change the HTML class tag to "js"-->
+<script>
+    document.documentElement.className = document.documentElement.className.replace("js-off","js-on");
+</script>
+<!-- If JS enable will change the HTML class tag to "js" -->
+    
+    
+    
+
+    
+    
+
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/apple-touch-icon.png"/>
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-16x16.png"/>
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-32x32.png"/>
+    
+    <link rel="mask-icon" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/safari-pinned-tab.svg" color="#e21d38"/>
+
+    
+    
+
+    
+    
+<link rel="stylesheet" href="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.4921b04fbcd148d027b0a9a0b7fb303c.css" type="text/css">
+
+
+
+
+    <script src="https://app-aba.marketo.com/js/forms2/js/forms2.min.js"></script>
+    
+    
+
+<script>
+    window.digitalData = {"labs":{"articleAuthor":["justin shattuck","scott harvey","sara boddy","preston crowe"],"articlePostDate":"Aug 9, 2018","labsReadingTime":"23 min.","vitals":{"labsVulnerability":["Default Admin Credentials"],"labsMalwareCampaignName":["Mirai"],"labsAppTiers":[]},"labsTags":["sierra wireless","bashlite","default admin credentials","critical infrastructure","emergency services","Mirai","Threats","Thingbot","IoT","cellular gateways"]},"page":{"pageInfo":{"pageName":"www:f5.labs.v2:labs:articles:threat-intelligence:breaking-down-the-door-to-emergency-services-through-cellular-io","destinationUrl":"https://www.f5.com/labs/articles/threat-intelligence/breaking-down-the-door-to-emergency-services-through-cellular-io.html","subDomain":"www","referringUrl":"https://www.f5.com/labs/articles/threat-intelligence/the-hunt-for-iot--multi-purpose-attack-thingbots-threaten-intern","referringPageName":"www:f5.labs.v2:labs:articles:threat-intelligence:the-hunt-for-iot--multi-purpose-attack-thingbots-threaten-intern","language":"en","version":""},"category":{"primaryCategory":"labs","subCategory1":"articles","subCategory2":"threat-intelligence","subCategory3":"breaking-down-the-door-to-emergency-services-through-cellular-io"},"contentInfo":{"articleAuthor":["justin shattuck","scott harvey","sara boddy","preston crowe"],"articlePostDate":"Aug 9, 2018","labsReadingTime":"23 min.","vitals":{"labsVulnerability":["Default Admin Credentials"],"labsMalwareCampaignName":["Mirai"],"labsAppTiers":[]},"labsTags":["sierra wireless","bashlite","default admin credentials","critical infrastructure","emergency services","Mirai","Threats","Thingbot","IoT","cellular gateways"]}}};
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmContentParam = urlParams.get("utm_content");
+    if (utmContentParam && window.digitalData.user != undefined && window.digitalData.user.userInfo) {
+        const utmContentParamArray = utmContentParam.split("-");
+        if (utmContentParamArray.length >= 3) {
+            window.digitalData.user.userInfo.digitalSignal = utmContentParamArray[2];
+        }
+    }
+</script>
+<script>
+    window.utag_data = {"page.pageInfo.pageName":"www:f5.labs.v2:labs:articles:threat-intelligence:breaking-down-the-door-to-emergency-services-through-cellular-io","page.pageInfo.destinationUrl":"https://www.f5.com/labs/articles/threat-intelligence/breaking-down-the-door-to-emergency-services-through-cellular-io.html","page.pageInfo.subDomain":"www","page.pageInfo.referringUrl":"https://www.f5.com/labs/articles/threat-intelligence/the-hunt-for-iot--multi-purpose-attack-thingbots-threaten-intern","page.pageInfo.referringPageName":"www:f5.labs.v2:labs:articles:threat-intelligence:the-hunt-for-iot--multi-purpose-attack-thingbots-threaten-intern","page.pageInfo.language":"en","page.pageInfo.version":"","page.category.primaryCategory":"labs","page.category.subCategory1":"articles","page.category.subCategory2":"threat-intelligence","page.category.subCategory3":"breaking-down-the-door-to-emergency-services-through-cellular-io","page.contentInfo.articleAuthor[0]":"justin shattuck","page.contentInfo.articleAuthor[1]":"scott harvey","page.contentInfo.articleAuthor[2]":"sara boddy","page.contentInfo.articleAuthor[3]":"preston crowe","page.contentInfo.articlePostDate":"Aug 9, 2018","page.contentInfo.labsReadingTime":"23 min.","page.contentInfo.vitals.labsVulnerability[0]":"Default Admin Credentials","page.contentInfo.vitals.labsMalwareCampaignName[0]":"Mirai","page.contentInfo.vitals.labsAppTiers":[],"page.contentInfo.labsTags[0]":"sierra wireless","page.contentInfo.labsTags[1]":"bashlite","page.contentInfo.labsTags[2]":"default admin credentials","page.contentInfo.labsTags[3]":"critical infrastructure","page.contentInfo.labsTags[4]":"emergency services","page.contentInfo.labsTags[5]":"Mirai","page.contentInfo.labsTags[6]":"Threats","page.contentInfo.labsTags[7]":"Thingbot","page.contentInfo.labsTags[8]":"IoT","page.contentInfo.labsTags[9]":"cellular gateways"};
+</script>
+
+
+    
+    <script>
+        ;(function(win, doc, style, timeout) {
+            var STYLE_ID = 'at-body-style';
+
+            function getParent() {
+                return doc.getElementsByTagName('head')[0];
+            }
+
+            function addStyle(parent, id, def) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.createElement('style');
+                style.id = id;
+                style.innerHTML = def;
+                parent.appendChild(style);
+            }
+
+            function removeStyle(parent, id) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.getElementById(id);
+
+                if (!style) {
+                    return;
+                }
+
+                parent.removeChild(style);
+            }
+
+            addStyle(getParent(), STYLE_ID, style);
+            setTimeout(function() {
+                removeStyle(getParent(), STYLE_ID);
+            }, timeout);
+        }(window, document, "body {opacity: 0 !important}", 3000));
+    </script>
+
+    <script src="../../../../assets.adobedtm.com/launch-EN37b07f3d0fa64d53b299e28194b30e0a.min.js" async></script>
+
+
+</head>
+    <body class="article-page preview-mode">
+        
+    <script>
+    (function(a,b,c,d){
+        a='//mktg.tags.f5.com/main/prod/utag.js';
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+    </script>
+
+        
+     
+        
+
+       	<div class="background-cut " style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a11/optimize/article-background-image.jpg);"></div>
+        
+
+
+<nav class="conf12-skip-links__nav" role="navigation">
+	<a href="#nav" class="conf12-skip-links__item">Skip to main navigation</a>
+
+	<a href="#content" class="conf12-skip-links__item">Skip to main content</a>
+
+	<a href="#footer" class="conf12-skip-links__item">Skip to footer</a>
+</nav>
+        
+
+<div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="megamenu-background"></div>
+
+	<div id="nav" class="fullscreen-wrapper header-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg labs-nav ">
+            <div class="container navbar-wrapper">
+                <a class="navbar-brand" href="../../../labs.html">
+                    <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <metadata>
+                            <rdf:RDF>
+                                <cc:Work rdf:about="">
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                    <dc:title/>
+                                </cc:Work>
+                            </rdf:RDF>
+                        </metadata>
+
+                        <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+                        <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+                        <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+                    </svg>
+                    <span>
+
+                        APPLICATION
+                        <br/> THREAT
+                        <br/> INTELLIGENCE
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  
+                    <div class="nav-wrap ml-lg-auto">
+                        <div class="upper-navigation">
+                            <div class="subscribe-item upper-nav-item">
+                                <a class="subscribe-link upper-nav-btn" href="../../subscribe.html">
+                                    <span class="upper-subscribe-ico ico"></span>
+                                    <span class="upper-navigation-content">Subscribe</span>
+                                </a>
+                            </div>
+                            <div class="search-item upper-nav-item">
+                                <a class="search-link upper-nav-btn">
+                                    <span class="upper-search-ico ico"></span>
+                                    <span class="upper-navigation-content">Search</span>
+                                </a>
+                                <form class="form-inline my-2 my-lg-0 search-form" method="get" action="../../search%EF%B9%96q=test.html" id="searchForm">
+                                    <div class="container">
+                                        <div class="search-input-container">
+                                            <a class="close-search-button"></a>
+                                            <input class="form-control mr-sm-2 " type="search" name="q" title="Cannot search for a blank query" placeholder="Search" required pattern="^(?!\s*$).+" aria-label="Search" id="search-input" lang="en"/>
+                                            <button class="btn btn-search  upper-nav-btn" type="submit"> <span class="upper-search-ico ico"></span> <span class="submit-text">Submit</span></button>
+                                        </div>
+    
+                                    </div>
+                                </form>
+                            </div>
+                            
+
+
+
+
+                        </div>
+                        
+<ul class="navbar-nav">
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../threat-intelligence.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Threats</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../ciso-to-ciso.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>CISO-to-CISO</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../application-protection.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Application Protection</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../rss-feeds.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>RSS Feeds</span>
+	</a></li>
+</ul>
+                     
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
+
+</div>
+<div>
+
+	
+    
+    
+
+
+</div><div class="c02-header-area aem-GridColumn aem-GridColumn--default--12"><div class="cq-placeholder section" data-emptytext="Article: Header area configuration"></div>
+
+    
+        
+       
+        <section class="container-fluid c02-header-area__main-article details fill-main-container">
+            <div class="c02-header-area__heroImageBackground" style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a11/optimize/article-background-image.jpg);"></div>
+            <div class="c02-header-area__main-article-overlay"></div>
+           
+            <div class="row">
+                <div class="align-bottom c02-header-area__article-wrap">
+                    <div class="info-row clearfix">
+                    	<a href="../../search%EF%B9%96q=IoT.html">
+	                        <div class="category">
+	                            <span class="badge badge-secondary c02-header-area__badge">IoT</span>
+	                        </div>
+                        </a>
+                        <div class="c02-header-area__additional-info">
+                            <div class="date U:padding-x">
+                                <span>August 09, 2018</span>
+                               
+                                
+                                
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="c02-header-area__main-articles-title">
+                        <h1>
+                            Breaking Down the Door to Emergency Services through Cellular IoT Gateways
+                        </h1>
+                    </div>
+                    <div class="c02-header-area__additional-info U:display-flex">
+                    	
+	                    	<div class="c02-header-area__type  U:display-flex article-ico-wrap big-ico-wrap mid-point">
+	                        	<span class="article"><i></i>article</span>
+	                        </div>
+	                    	<div class="c02-header-area__content-duration U:display-flex ">
+	                        	<span>23 min. read</span>
+	                        </div>
+                        
+                        
+                    </div>
+                    <div class="c02-header-area__author-name tags">
+                        By <a class="c02-header-area__author-name tag-item" href="../../search.author_Justin+Shattuck.html">Justin Shattuck</a><a class="c02-header-area__author-name tag-item" href="https://www.f5.com/labs/search.author_Scott%2BHarvey">Scott Harvey</a><a class="c02-header-area__author-name tag-item" href="../../search.author_Sara+Boddy.html">Sara Boddy</a><a class="c02-header-area__author-name tag-item" href="https://www.f5.com/labs/search.author_Preston%2BCrowe">Preston Crowe</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+   		<div id="content"></div>
+    
+    
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row">
+        <div class="a01-container section">
+    <div class="a01-container-col-left">
+        <div data-component-type="article" class="c06-social-sharing section">
+
+
+
+<div class="addthis_share c06-social-sharing__links ">
+	
+	
+    <span class="addthis_share_button twitter addthis_sharing_toolbox" data-service="twitter" data-url="https://www.f5.com/labs/articles/threat-intelligence/breaking-down-the-door-to-emergency-services-through-cellular-io.html" data-description="If configured incorrectly, cellular IoT gateways can give attackers access to critical infrastructure, threatening human life in ways only Hollywood has conceived." data-title="Breaking Down the Door to Emergency Services through Cellular IoT Gateways- Justin Shattuck, Scott Harvey, Sara Boddy, Preston Crowe">
+        <span class="social-bulb xs-mr-15 twitter"></span>
+    </span>
+    <span class="addthis_share_button linkedin addthis_sharing_toolbox" data-service="linkedin" data-url="https://www.f5.com/labs/articles/threat-intelligence/breaking-down-the-door-to-emergency-services-through-cellular-io.html" data-description="If configured incorrectly, cellular IoT gateways can give attackers access to critical infrastructure, threatening human life in ways only Hollywood has conceived." data-title="Breaking Down the Door to Emergency Services through Cellular IoT Gateways- Justin Shattuck, Scott Harvey, Sara Boddy, Preston Crowe">
+        <span class="social-bulb xs-mr-15 linkedin"></span>
+    </span>
+    <span class="addthis_share_button facebook addthis_button_facebook addthis_sharing_toolbox" data-service="facebook" data-url="https://www.f5.com/labs/articles/threat-intelligence/breaking-down-the-door-to-emergency-services-through-cellular-io.html" data-description="If configured incorrectly, cellular IoT gateways can give attackers access to critical infrastructure, threatening human life in ways only Hollywood has conceived." data-title="Breaking Down the Door to Emergency Services through Cellular IoT Gateways- Justin Shattuck, Scott Harvey, Sara Boddy, Preston Crowe">
+        <span class="social-bulb xs-mr-15 facebook"></span>
+    </span>
+    <a class="mail" target="_blank" href="mailto:?subject=Breaking%20Down%20the%20Door%20to%20Emergency%20Services%20through%20Cellular%20IoT%20Gateways-%20Justin%20Shattuck,%20Scott%20Harvey,%20Sara%20Boddy,%20Preston%20Crowe&amp;body=Checkout%20this%20great%20article%20I%20read%20on%20F5%20Labs%20%20/content/f5-labs-v2/en/labs/articles/threat-intelligence/breaking-down-the-door-to-emergency-services-through-cellular-io" rel="noreferrer">
+        <span class="social-bulb xs-mr-15 mail"></span>
+    </a>
+    
+</div></div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-center">
+        <div data-component-type="article" class="a03-article-body section">
+
+<div id="content">
+    <div class="a03-article-body__content">
+        
+    </div>
+    <div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    
+
+    <!-- no link, lightbox -->
+    <a data-lightbox="Image preview" href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/MH_Cellular_Gateways.jpg">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/MH_Cellular_Gateways.jpg" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p><i>Note: This research was presented at Black Hat 2018.<b></b></i></p>
+<h2>Introduction</h2>
+<p>The Internet continues to evolve and expand at an astonishing rate. Our constant desire to remain connected or feel some sentiment of <i>connection </i>seems to be a high priority for individuals. But, cellular connectivity does not stop at consumers on a personal cell phone. The demand for constant connection extends into servicing nearly every industry that needs long-range, constant connectivity. This requirement is especially true of organizations that operate fleet vehicles, as innocuous as a delivery driver, or as critical as a police car.</p>
+<p>Hollywood has provided a spectacular number of films depicting hackers involved in crime rings such as Lyle, the character portrayed by Seth Green in the Italian Job. At the end of the film, Lyle leverages his skills and talents to look after the health and welfare of his associates by manipulating traffic signals to control the flow of traffic, which subsequently assists in their successful heist.</p>
+<p>This scene is no longer fantasy. For instance, the traffic lights that are referenced do exist. They are often connected back to a smart city’s infrastructure through the use of VPN tunnels and other private means of communication over devices like cellular gateways. These gateways are similar to the modems and routers used by consumers at home but with an additional feature, cellular connectivity, often in the form of 4G/LTE, if available. Additionally, these devices are capable of providing a variety of connection options, including wireless connectivity over 802.11x, Ethernet, USB, serial; analog and digital I/O; and cellular bands ranging from 2G through 4G LTE. If said devices are not configured properly, an attacker may be able to access them and do just as Lyle did in the Italian Job.</p>
+<p>It feels like a time warp, but as with all cyber threats, they do not appear instantly. They evolve slowly in the background over long periods of time until the problem seems to reach a critical mass. Many threats grow over the course of months and years before anyone notices—if they notice at all. It is highly likely that if a threat actor has laid eyes on a target and decided to begin attacking, discovering the attack (let alone thwarting it) could be a real headache, given the lack of visibility into the what, who, where, and when in logging activity.</p>
+<p>Critical emergency services such as police, fire, and medical manage their fleets with vulnerable cellular IoT devices. “Vulnerable” doesn’t have to mean a vulnerability within the hardware or software, although we suspect that is the case in some makes and models, we just haven’t tested every model or manufacturer uncovered. In this instance, we are talking about devices susceptible to remote attacks because of their weak access control and use of default credentials. Once accessed, an attacker can use the device to launch attacks, as we have seen with thingbots like <a href="the-hunt-for-iot-the-rise-of-thingbots.html" target="_blank" rel="no-opener no-referrer">Mirai</a> and <a href="reaper-the-professional-bot-herders-thingbot.html" target="_blank" rel="no-opener no-referrer">Reaper</a>, or they can use that access for nefarious purposes to spy, redirect commands in the case of a fleet taking orders from a remote command, or shut the system off, effectively disabling operations. Because the critical emergency services we depend upon are using these systems, this is an urgent human-interest matter as we have moved beyond the unpleasant life impact of stolen data, and into attacks that can <i>literally cost people their lives</i>.</p>
+<p>Nearly two years have passed since we first started observing cellular gateways distributing packets across the internet. Today, we are only scratching the surface of what will inevitably turn into years of future research and discoveries before the world has tackled the problem of IoT devices being deployed without security considerations. For now, this article includes the following, and will be followed up with future research and discoveries.</p>
+<ul class="loose">
+<li>The existence of cellular IoT devices that are not properly configured is allowing attackers to easily leverage remote administration for nefarious purposes.<ul style="list-style-type: circle;">
+<li>The improperly configured devices we discovered and tested had either default administration credentials (such as admin:12345), or they required no authentication at all.</li>
+</ul>
+</li>
+<li>The absence of logging capabilities on these devices ensures that nefarious activities cannot be tracked.</li>
+<li>Because most of the use cases for cellular IoT are for moving fleets, devices that need tracking, or remote critical infrastructure, virtually all of them have GPS coordinates. Excessive information disclosure, such as providing GPS coordinates publicly without requiring authentication (as some devices we discovered do) is giving attackers the ability to track fleet vehicles without ever breaking the law with unauthorized access. <b>Yes, police cars can be tracked without breaking the law.</b></li>
+<li>There is no bias on which industries or cellular device manufacturer will fall victim to threats emerging from cellular devices. Virtually every industry that requires some form of long-range, constant connectivity is impacted (and likely, most manufacturers) as development standards apply unilaterally.</li>
+<li>As of July 28, 2018, we have identified more than 100,000 devices that are impacted online. 86% of the devices identified exist within the United States.</li>
+<li>Attackers have been exploiting many of these systems since August 2016, if not earlier.</li>
+<li>We have a defined list of impacted Sierra Wireless makes and models, however, we believe the problem to be widespread across all manufacturers of cellular IoT devices.</li>
+</ul>
+<h2>Discovery</h2>
+<p>Discovering anything new is often an accident; we stumble or trip and fall into a finding that wasn’t the initial intent, as was the case for this research. This research unintentionally began while looking into Bashlite.<a href="#_ftn1"><sup>1</sup></a><a id="_ftnref1"></a> The Bashlite research just so happened to coincide with the Mirai attack on DynDNS. While looking into the Bashlite incident, we stumbled upon a device we originally thought was a DVR infected by Bashlite. Looking further, we identified it as a digital signage device responsible for displaying flight arrival and departure times at a major airport in Europe. The system was actively compromised, which we disclosed to the impacted party. That party shipped the infected drives to us, which ultimately served as ground zero for this body of research. During the Bashlite incident, we were wondering how big the problem might be, so we began scanning. First manually on October 22, 2016, and then using a more automated approach starting on October 24, 2016. Part of that scanning effort included the airport network impacted by the Bashlite incident as they gave us authorization to do so. Those scans revealed cellular gateways manufactured by Sierra Wireless, <i>including one within the airport network that was publicly accessible.</i></p>
+<p>Initially we used Shodan to get an estimate of how many Sierra Wireless gateways exist on the Internet, and it gave us a preview of what we anticipated: a lengthy list of hostnames and IP addresses to research further. Sierra itself describes how vast and deep its reach is within the IOT and industrial system space—the industrial controls that are often threat-modeled to <i>not</i> include connectivity to the Internet. They are often highly disparate networks of devices that do not “speak IP” like packet switching networks do.</p>
+<h3>What did we find?</h3>
+<p>In October of 2016 we identified 49,962 hosts that appeared to be vulnerable to weak authentication in use by Sierra devices. The vast majority of these devices were located within the United States (84%), and therefore the US became our initial focus. The map in Figure 1 shows the GPS coordinates of the public-facing static IP addresses of devices discovered in the US in October 2016.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    
+
+    <!-- no link, lightbox -->
+    <a data-lightbox="Image preview" data-title="Figure 1: GPS coordinates of devices discovered in the US in Oct 2016" href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_01.png">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_01.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <div class="a02-image__caption">
+        Figure 1: GPS coordinates of devices discovered in the US in Oct 2016
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>We continued scanning from October 24, 2016 through July 30, 2018. Each scan became more precise as we tuned our scans connecting the dots between the affected models and software versions through SSL certificates, hashes of image assets in use on Sierra’s configuration GUI, and copyright references in their footer.<br />
+</p>
+<p>In September 2017, we discovered 58,670 hosts. During this time we were also attempting to tune our scans through fingerprinting devices. This effort proved difficult because the devices would often disappear.</p>
+<p>In July 2018, we discovered 105,400 hosts, as shown in Figure 2. This figure also compares Shodan results (the search engine we initially started with to discover devices), with scan data from our partner Loryka, because they were able to find a significantly larger number of devices than Shodan. Despite the larger numbers, the spread of devices across networks remained steady with approximately 70% of devices living on Verizon’s network.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 2: July 30, 2018 scan results by ISP">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_02.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 2: July 30, 2018 scan results by ISP
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>Figure 3 below shows the breakdown of Sierra Wireless models and their prevalence.<br />
+</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 3: July 30th, 2018 scans by Sierra Wireless device ">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_03.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 3: July 30th, 2018 scans by Sierra Wireless device 
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>From October 2016 to July 2018, we identified nearly 50,000 additional hosts globally. This increase is due not just to the nature of growth in this emerging industry but also to the methods we used to improve identifying devices.<br />
+</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 4: Global distribution of impacted devices, July 2016">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_04.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 4: Global distribution of impacted devices, July 2016
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>The map in Figure 5 shows the GPS coordinates of impacted devices in July 2018. Eighty-four percent of the devices exist in the US, however, it’s apparent that cellular devices are starting to be used all over the world.<br />
+</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 5: Global map of impacted devices, July 2018">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_05.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 5: Global map of impacted devices, July 2018
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h3>Disclosure Attempt</h3>
+<p>In October 2016, 417 disclosures were sent, but zero replies were received. Initially, we held off public disclosures, but due to the potential impact to human life, and because the problem has been largely ignored by the impacted entities (those that received disclosure notifications), we finally decided to talk about the research publicly in an effort to get the problem resolved. Once our talk about this research was announced by Black Hat, we began to see results from our disclosures, although still very few. By July 2018, over 13,500 disclosures had been sent, but we still only had two replies. One of those replies was from Sierra Wireless, which began a conversation that would help us refine our scans and present a more accurate picture of the problem at hand.</p>
+<h2>Research</h2>
+<p>Following our scans, we began performing research on manufacturers, the configuration GUIs, identifying fleet vehicles, mucking with GPS, toying with radios, discovering other manufacturers, reviewing configuration templates, and logging configurations.</p>
+<p>We discovered a Sierra Wireless bulletin (as shown in Figure 6) warning of Mirai infections.<a href="#_ftn2"><sup>2</sup></a><a id="_ftnref2"></a></p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 6: Sierra Wireless disclosure of Mirai infection">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_06.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 6: Sierra Wireless disclosure of Mirai infection
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>The Sierra notice also included a list of impacted makes and models.<a href="#_ftn3" style="background-color: rgb(215,215,215);"><sup>3</sup></a><a id="_ftnref3"></a><br />
+</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 7: Sierra Wireless devices impacted by Mirai ">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_07.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 7: Sierra Wireless devices impacted by Mirai 
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>In addition, on October 12, 2016, the US CERT issued an alert (ICS-ALERT-16-286-01)<a href="#_ftn4" style="background-color: rgb(215,215,215);"><sup>4</sup></a><a id="_ftnref4"></a> for industrial control systems warning about Mirai infections on Sierra Wireless devices (see Figure 8).<br />
+</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 8: US CERT Alert for Sierra Wireless and Mirai ">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_08.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 8: US CERT Alert for Sierra Wireless and Mirai 
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h2>Publicly Available Discoveries</h2>
+<p>Most vendors champion their customers on their websites through case studies, and Sierra Wireless is no different. Their website provided a wealth of customer stories and details about the types of applications many customers were using Sierra devices for:</p>
+<ul class="loose">
+<li>St. John Ambulance, Western Australia</li>
+<li>California Highway Patrol, California</li>
+<li>Ventura County Fire Department, California</li>
+<li>South Bay Regional Public Communications Authority (SBRPCA), California</li>
+<li>Los Angeles County Sheriff’s Department (LASD). California</li>
+<li>West Metro Fire Protection District, Colorado</li>
+<li>Westminster Police Department, Colorado</li>
+<li>Danish National Police, Denmark</li>
+<li>Acadian Ambulance Service, Louisiana &amp; Texas</li>
+<li>East Baton Rouge Parish Emergency Medical Services (EMS), Louisiana</li>
+<li>Mississippi Highway Safety Patrol</li>
+<li>Gem Ambulance, New Jersey</li>
+<li>Charlotte-Mecklenburg Police Department, North Carolina</li>
+<li>City of Charlotte, North Carolina</li>
+<li>Brazos County Sheriff’s Office, Texas</li>
+<li>Harris County, Texas</li>
+<li>Dickinson Police Department (DPD), Texas</li>
+<li>Fairfax’s Urban Search and Rescue Team, Virginia</li>
+<li>South Wales Police, Wales</li>
+<li>City of Yakima, Washington</li>
+<li>Seattle Fire Department, Washington</li>
+</ul>
+<p>We matched up the Sierra Wireless devices discovered in our scans with known customers from Sierra Wireless’s website and overlaid that onto the 300 most populous cities in the US.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 9: Sierra Wireless devices by city, state, and populations">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_09.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 9: Sierra Wireless devices by city, state, and populations
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>Sierra Wireless wasn’t the only manufacturer we discovered in our research. Moxa, DIGI, and Cambium also came up, however, they didn’t represent a large portion of our scan results and we did not purchase any of their devices for testing in a lab. Therefore, they are not included in this research piece, however, we do plan to test them in future research projects.<br />
+</p>
+<h2>Lab Setup</h2>
+<p>To explore all the potential presented by this “vulnerability,” we set up a lab with some of the most common devices we found with our scans. Our lab setup consisted of the GX440, ES300, and the GX450.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 10: Sierra Wireless devices tested in Lab">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_10_rev.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 10: Sierra Wireless devices tested in Lab
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>We configured the devices in a similar way to how we had seen them “in the wild” during our scans. The following screenshots are taken from Sierra Wireless devices we tested in our lab environment.<br />
+</p>
+<h3>Exploiting the Vulnerability</h3>
+<p>As mentioned earlier, “exploiting” these devices is not done through a typical hardware or software vulnerability. There is no weakness in the software to exploit. There’s no hacking of the hardware. This is a weak admin user authentication exploit—the age-old “user didn’t change the default password” story.</p>
+<p>Figure 11 is a screen shot of the Sierra Wireless ACEmanager admin interface. The admin username is “admin” and the password is “12345.”</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 11: Exploiting the default admin password">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_11.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 11: Exploiting the default admin password
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>We also noticed that several users deploying these devices were turning on options to show location data on the login page of the configuration software, including the latitude and longitude of the device.<br />
+</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 12: Latitude and longitude coordinates are shown on the login page">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_12.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 12: Latitude and longitude coordinates are shown on the login page
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>A simple Google search of the latitude and longitude coordinates made it easier for us to see what kinds of applications we were finding.<br />
+</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 13: Google shows a location based on latitude and longitude coordinates">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_13.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 13: Google shows a location based on latitude and longitude coordinates
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>Some device owners even chose to disclose more connection data, including their cellular signal information. Even if they chose not to disclose their latitude/longitude, knowing their LAC (Location Area Code) and the CELLID enables us to get an approximate location of the device. The LAC gives us the carrier of the cell tower they are connected to, and the CELLID defines what tower they are connected to.<br />
+</p>
+<h3>Configuration GUI</h3>
+<p>The screenshots in Figures 14 – 18 show the configuration GUI from login, to status page, and then how incredibly easy it is to change the vendor device admin password.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 14: The ACEmanager login screen">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_14.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 14: The ACEmanager login screen
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>This status page is presented once authenticated into the device.<br />
+</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 15: ACEmanager home screen  ">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_15.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 15: ACEmanager home screen  
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>The admin password can simply be changed in the admin tab.<br />
+</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 16: Simply changing the admin password ">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_16.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 16: Simply changing the admin password 
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>The configuration is available to download as an XML template, which includes sensitive data in plain text such as the IPSec tunnel secret, RADIUS, TACACS, and WPA2, if selected.<br />
+</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 17: Configuration download">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_17.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 17: Configuration download
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>We wrote a script that serves as a template crawler, essentially to enumerate through our lab devices, authenticate, and download the configuration template. We then parsed these configurations to identify strings of interest.<br />
+</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 18: Template crawler script">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_18.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 18: Template crawler script
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>There is quite a lot of information to be read within the configuration. As a user of the device within our lab, that is not much of a concern. However, if a nefarious actor were to gain access and download configurations, it could be another storyline altogether.<br />
+</p>
+<p>Figure 19 shows the available logging options provided by Sierra. Most of the useful logs are turned off by default. This allows for attackers to compromise these systems without leaving a trace.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 19: ACEmanager logging screen ">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_19.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 19: ACEmanager logging screen 
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>In our lab, we made a change to the device, and, as shown in Figure 20, there is no useful information within the log file to indicate we made a connection to the device and made any sort of change.<br />
+</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 20: Log file showing no useful information after a change was made">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_20.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 20: Log file showing no useful information after a change was made
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h2>Pattern Discovered—They are Fleet Vehicles!</h2>
+<p>As our lab research continued, so did our scanning and research into the devices we had discovered. We noticed a pattern within our scans that indicated some of the devices (those with static IP addresses) were available to us, and then they would seemingly disappear. These devices would come online at specific times, would occasionally go offline throughout a several hour period, then go offline for 8-12 hours. What we began to realize is that these resembled workers’ hourly shifts.</p>
+<p>We then returned to the publicly facing latitude and longitude data we had seen all throughout or research. We began to parse out the GPS data into Traccar, an open source fleet tracking software, and realized we were, in fact, tracking vehicles on the road. These were fleet vehicles moving around US cities.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 21: Traccar open source fleet tracking software">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_21.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 21: Traccar open source fleet tracking software
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>So, we developed our own simple JavaScript application to visualize what we were collecting from publicly available information as shown in Figure 22 below.<br />
+</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Figure 22: A moment-in-time screen shot of actual vehicles being tracked">
+        
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/20180809_cellular_gateways/Fig_22.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Figure 22: A moment-in-time screen shot of actual vehicles being tracked
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h2>Potential Attacks and Impact</h2>
+<p>We stumbled upon the issues with cellular IoT devices during our “Hunt for IoT” research of devices that were infected by Mirai. Attackers know how to exploit these systems and are actively monitoring them. Sierra Wireless, one of the largest manufacturers of cellular IoT devices, issued a public statement describing how to secure their devices from Mirai infections. US intelligence agencies have made public the fact that Russia attacks IoT devices to maintain long-term, persistent access for future offensive purposes. It is not a stretch of anyone’s imagination that Russia—or any other adversarial nation-state—could compromise these devices, as well, and use them to their own advantage. But this isn’t just a US issue. These devices are deployed in the same types of systems around the world and can absolutely be used in warfare, terrorist attacks, or by lone actors targeting specific people or businesses.</p>
+<p>If a system requires long-range constant connectivity, it’s important. Often critically important. We found many systems used to support human life such as police cars, fire trucks and ambulance fleets that are impacted by this research. Outside of what we already know attackers are using these systems for (such as relaying attacks when the devices are infected with Mirai), they could be used by nefarious hackers, criminals, nation-states, or terrorist groups to:</p>
+<ul class="loose">
+<li>Maintain persistent access to spy on people, businesses and operations</li>
+<li>Maintain persistent access to surveil and monitor law enforcement to aid in evasion</li>
+<li>Maintain access to monitor law enforcement activity to aid in ongoing litigation</li>
+<li>Gain control of device commands and redirect, reroute, or delete.</li>
+<li>In warfare or terrorist activities:<ul class="loose">
+<li>Take offline, effectively disabling the system relying on the cellular modem for operations</li>
+<li>Disrupt the physical activities of a system relying upon commands from the cellular modem.</li>
+<li>Disrupt communications on a wide scale by attacking the entire fleet at once.</li>
+</ul>
+</li>
+</ul>
+<h3>“1-800-CRIME-AID”</h3>
+<p>If we momentarily transport ourselves into the land of television and movies—the land where bad guys have extraordinary abilities to command traffic signals and hijack surveillance systems—we find the scenarios this type of vulnerability opens up.</p>
+<p>Infrastructure needs connectivity. Wireless gateways are useful for this. Attached to traffic cameras and traffic lights, they provide municipal workers up-to-the-minute data on and more efficient management of their systems. At the same time, when improperly configured (as we have seen in large numbers), they present an opportunity for an adversarial actor to manipulate the information delivered via the gateway, or even the systems to which they provide access.</p>
+<p>Combine that with real-time GPS tracking of a police department’s cruiser fleet and attackers have several of the tools necessary to facilitate a security-system-bypassing, camera-freezing, police-tracking, traffic light-changing heist à la The Italian Job.</p>
+<h3>Striking the Sentinels</h3>
+<p>The possibilities quickly took a dark turn. In late 2016 and early 2017, when our research was in its early stages, it was national news that 2016 was an especially fatal year for law enforcement officers. In fact, ambush-style assassinations on police officers were up over 150%. With this dominating much of the national discourse at that time, it wasn’t difficult to see the dangers posed by being able to track police officers in their vehicles, in real time. It is a horrifying thought, and we’ll leave it at that, but a real possibility.</p>
+<h3>Request Timed Out</h3>
+<p>Another horrifying yet real scenario involves medical help never making it to the scene, or at least not in any condition to provide aid. It is a tactic that began to emerge as terrorist attacks evolved over the past two decades. Emergency medical personnel en route to save lives become victims themselves, increasing the time before initial victims received help and reducing overall emergency response capacity. The same way police cruisers can be tracked, so can ambulances. The same way police cruisers can be tracked, so can ambulances.</p>
+<h3>Distributed Denial of Democracy</h3>
+<p>At this point, it should be crystal clear the dangerous doors this problem opens. And if we take a moment to revisit APTs, and if we’ve been paying attention over the last two years, we know there are concerns about election security and integrity. Disruption of a single emergency call is dangerous enough to merit attention. Surreptitious manipulation of traffic signals combined with disruption of police, fire, and medical systems to suppress voter turnout in key districts merits shouting from the rooftops. It is personal safety as well as a national security issue.</p>
+<p>Vigilantes might want to take matters into their own hands like their efforts we saw with Mirai and <a href="https://www.f5.com/labs/articles/threat-intelligence/brickerbot-do-good-intentions-justify-the-meansor-deliver-meaningful-results" target="_blank" rel="no-opener no-referrer">BrickerBot</a>, however they cannot do this without causing damage to systems that support human life. Vigilante efforts will ultimately hurt people, so they cannot participate in this cleanup. The best-case scenario right now (from a third-party remote access standpoint), is a white hat discovering a vulnerable system and not breaking the law by doing nothing, or breaking the law in an effort to help by changing the default admin password and upgrading the firmware.</p>
+<p>This goes beyond DDoS and beyond the exfiltration of data (even though that is a major concern). The second- and third-order effects of these wireless gateways being compromised mean that not only can sensitive information on police, medical, and other networks be exfiltrated, but the systems that first responders rely on to provide life-saving services can be disrupted or otherwise abused.</p>
+<p>We’re talking long-range, constant connectivity to critical infrastructure that is used to support human life or can directly impact lives if taken out or otherwise compromised. Police, fire, medical, utility and other municipal fleets impacted, traffic cameras and signal lights compromised.</p>
+<p>Take the attack scenarios presented into consideration with the industries and services we know use these types of devices. The Black Hat presentation focused on police cars, ambulances and fire trucks as examples, but these systems are used across virtually every industry that has fleets that need to be managed, or critical systems that need monitoring and constant connectivity. Therefore, the potential impact is big. <i>We have yet to find an industry that isn’t impacted.</i> The following list of potentially impacted industries is what we gathered from simple Google searches:</p>
+<ul class="loose">
+<li><b>Service Providers </b>that provide cellular connectivity to these devices. Verizon is the biggest, followed by AT&amp;T, Telestra, Sprint PCS, Telefonica Spain, Orange Israel, Bell Mobility, Orange France, Telus Mobility, and Rogers Wireless.</li>
+<li><b>Federal and Local City Governments and Law Enforcement</b>. Many cellular IoT manufacturers champion their customers and use cases on their websites. Sierra Wireless is just one example, which we pointed out earlier in this article.</li>
+<li><b>Financial. </b>ATMs are a consistent use case on most cellular IoT manufactures websites.</li>
+<li><b>Retail. </b>Point-of-sale (POS) systems and kiosks are consistently referenced as use cases on cellular IoT manufacturers’ websites.</li>
+<li><b>Mining, Fossil Fuels, Energy (Refueling Stations including and Hydrogen Refueling Stations), Maritime, Shipping, Transportation, Utility, Hospitality, Digital Signage, and Robotics Industries.</b> All of these industries need long-range, constant connectivity and, in most cases, fleet management, to maintain operational efficiency. As such, all of these industries are often championed as use cases for cellular IoT on manufacturers’ websites.</li>
+<li><b>Construction. </b>Large construction sites need Internet<b> </b>connectivity<b> </b>for communications before physical lines are laid.</li>
+<li><b>Broadcasting. </b>Uninterrupted live coverage requires multiple cellular IoT devices, so the broadcasting industry is often championed as a use case on cellular IoT on manufacturers’ websites.</li>
+</ul>
+<h2>Remediation</h2>
+<p>Failure to harden systems that results in remote access compromises is a widespread problem across IoT devices. This report has focused on Sierra Wireless devices, simply because they make up 80% of the cellular IoT market share and therefore appeared most often in our scanning. But the lessons learned and remediation activities apply to all IoT devices whether cellular or wireless. Here are steps every user of these devices should take immediately:</p>
+<ol class="loose">
+<li>Change the admin password. Because brute force attacks can still occur, make your admin password as long as possible, preferably 16 characters or more.</li>
+<li>If possible, use ACLs to restrict remote access to a specified management network or leverage VPN tunneling, which is an option with many of these devices.</li>
+<li>Stay up to date with the device’s latest firmware.</li>
+<li>Don’t use default ports, especially telnet, for remote administration! Shift to SSH and use keys instead of passwords.</li>
+<li><i>Update your device configuration settings. At a minimum:</i><ol class="loose" type="a">
+<li>Log events! (Log retention capacity limits may apply.)</li>
+<li>Don’t share GPS coordinates or any identifiable information publicly if you can avoid it. In the case of cellular IoT, improper information disclosure could literally put lives in jeopardy.</li>
+</ol>
+</li>
+</ol>
+<p>For purposes of this report, Sierra Wireless has graciously offered to assist customers securing their devices. If you need assistance with any of the items above, reach out to <a href="mailto:security@sierrawireless.com" target="_blank" rel="noreferrer">security@sierrawireless.com</a>.</p>
+<p>If you are a developer of IoT in general, especially cellular IoT products that are implemented to support critical systems, build in a requirement to reset the administration password upon initial login. Configuration settings should also be set to not disclose confidential information by default. Any settings that makes the device inherently less secure should be configurable by the device owner rather than being set by default.</p>
+<h2>Conclusion</h2>
+<p>Researching cyber threats is a critical service to global citizens simply because the manufacturers making these products don’t consider potential future cyber threats into their models. Add the human element (device administration errors will happen) and the reality that nefarious threat actors will eventually find every insecure system on the Internet, it is only a matter of time before a catastrophic cyber attack occurs that leverages cellular gateways. The time to act is <i>now</i>, especially with simple remediation steps to solve already present problems. And with common-sense solutions built into products by vendors, we can help keep weak credentials from having catastrophic consequences.</p>
+<p>Please share this story far and wide so action is taken globally, because over 13,500 disclosures have been sent, yet there still have only been two replies. If it weren’t for white hat researchers, we would be finding out about discoveries like this from news media <i>after</i> a terror attack, which is entirely too late. The right thing to do is avoid the risk by <i>remediating now</i>.</p>
+
+</div>
+
+    
+</div>
+
+
+</div>
+</div>
+<div class="a04-include section"><!--googleoff: all-->
+<!-- inline style for wce-edit-mode -->
+
+    
+
+
+    
+        
+        
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        
+
+
+    
+
+    
+
+
+    
+    
+
+<!--googleon: all--></div>
+<div class="a13-article-quote-labs section">
+
+
+    
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-right">
+        <div class="vitalsarea section">
+
+
+    
+        
+        
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        
+
+
+    
+
+    
+
+</div>
+<div data-component-type="article" class="a07-related-articles section"><!--googleoff: all-->
+
+    
+
+    
+
+    <div class="a07-related-articles " data-id="relatedArticlesId">
+        <div class="a07-related-articles__container">
+            <h4 class="a07-related-articles__container-title">Related Content</h4>
+
+            <div id="related-article-hidden-items">
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=IoT.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">IoT</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">September 15, 2020</span>
+                        </div>
+                    </div>
+                    <a href="the-rising-iot-threat-to-the-agriculture-industry-and-the-global-food-supply.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            The Rising IoT Threat to the Agriculture Industry and the Global Food Supply
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center blog a07-related-articles__type-ico "><i></i>blog</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">8 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=IoT.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">IoT</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">April 24, 2020</span>
+                        </div>
+                    </div>
+                    <a href="mirai-covid-variant-disregards-stay-at-home-orders.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Mirai “COVID” Variant Disregards Stay-at-Home Orders
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">7 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=IoT.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">IoT</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">April 14, 2020</span>
+                        </div>
+                    </div>
+                    <a href="privacy-and-surveillance--how-generation-z-and-millennials-see-t.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Privacy and Surveillance: How Generation Z and Millennials See the Internet of Things
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">15 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--googleon: all--></div>
+<div class="a11-separation-line section">
+
+<div>
+	<div></div>
+</div></div>
+<div class="c20-newsletter-signup-display section">
+
+
+
+
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display__wrapper purple-bg right-rail c20-newsletter-signup-display__newsletter-form">
+	<div class="c20-newsletter-signup-display__signup-wrap">
+		<div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+			<div class="c20-newsletter-signup-display__title">
+				F5 Labs Newsletter
+            </div>
+            <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+            </div>
+		</div>
+		<div class="c20-newsletter-signup-display__row-wrap">
+			<div class="c20-newsletter-signup-display__signup-form-wrap">
+                	<!-- LOADER -->
+				<div id="loader" class="form-loader small-loader     
+                  hide-after-submit"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+				<form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit"></form>
+
+				<!-- SUCCESS MESSAGE -->
+                <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+					<div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>					
+				</div>
+			</div>
+		</div>
+
+    </div>
+    <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+        <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display__wrapper purple-bg right-rail known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__row-wrap ">
+			<div class="c20-newsletter-signup-display__signup-form-wrap">
+				
+				<!-- KNOWN USER MESSAGE -->
+                <div class="c20-newsletter-signup-display__success-message ">
+					<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row container-bottom">
+        <div class="a01-container section">
+    <div class="a01-container-col-left">
+        
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-center">
+        <div class="a10-article-summary section">
+    
+    
+        
+    
+    
+</div>
+<div data-component-type="article" class="a02-article-actions-container section">
+
+    
+        
+        
+        <div class="a02-article-actions-container">
+            
+
+
+
+
+    
+    
+    <div data-component-type="article" class="a01-article-action">
+
+    
+    
+        
+        <div class="a01-article-action__article-actions">
+            <div class="a01-article-action__article-action-box U:justify-content U:align-items-center  U:display-flex">
+              
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_technical.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Technical</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="../education/what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_preventative.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Preventative</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__box-descr">
+                    <div class="a01-article-action__box-descr-content">Use ACLs or IP tables to restrict remote access to a specific management network, change IoT device default passwords, update IoT device firmware, log all events, don’t share sensitive information to the entire Internet</div>
+                </div>                
+            </div>
+        </div>
+    
+
+    
+
+
+
+</div>
+
+
+
+        </div>
+    
+
+    
+</div>
+<div data-component-type="article" class="a04-article-author-bio section"><!-- <div class="cq-placeholder section" data-emptytext="Article: Author Bio" data-sly-test="false"></div> -->
+
+
+
+        
+        
+            <div class="a04-article-author-bio__content">
+                <div class="a04-article-author-bio__content__author-box">
+                    <div class="row">
+                        <div class="a04-article-author-bio__content__image-wrap">
+                            <div class="a04-article-author-bio__content__img-container">
+                                <img data-src="../../../content/dam/f5-labs-v2/_author-headshots/Justin_Shattuck.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                            </div>
+                        </div>
+                        <div class="a04-article-author-bio__content__data-wrap">
+                            <div>
+                                <b>About the author</b>
+                            </div>
+                            <div class="a04-article-author-bio__content__author-name U:margin-top-md">Justin Shattuck</div>
+                            <div class="a04-article-author-bio__content__author-descr"><p>Justin Shattuck is a Principal Threat Researcher for F5 Labs. He has been an avid threat hunter for most of his life and continually tracks attack campaigns and threat actors. He routinely participates in takedowns and helps to inform various law enforcement agencies of nefarious cyber activity. Justin has been a security product developer and researcher for over 15 years. Most recently he was the Manager of Product Development for F5 Silverline where he was responsible for developing features and enhancements to F5 Silverline's managed security services including Web Application Firewall and DDoS attack mitigation.</p>
+</div>
+                            <div>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="../../search.author_Justin+Shattuck.html">More articles from Justin Shattuck</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="a04-article-author-bio__content">
+                <div class="a04-article-author-bio__content__author-box">
+                    <div class="row">
+                        <div class="a04-article-author-bio__content__image-wrap">
+                            <div class="a04-article-author-bio__content__img-container">
+                                <img data-src="https://www.f5.com/content/dam/f5-labs-v2/_author-headshots/Scott_Harvey.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                            </div>
+                        </div>
+                        <div class="a04-article-author-bio__content__data-wrap">
+                            <div>
+                                <b>About the author</b>
+                            </div>
+                            <div class="a04-article-author-bio__content__author-name U:margin-top-md">Scott Harvey</div>
+                            <div class="a04-article-author-bio__content__author-descr"><p>Scott Harvey is a security researcher with Loryka and a contributing researcher and author for F5 Labs. He has worked in SIGINT and counterterrorism for 10 years. He previously worked with the NSA as an analyst and Pashto linguist and, prior to that, served in the United States Marine Corps as an Arabic linguist.</p>
+</div>
+                            <div>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="https://www.f5.com/labs/search.author_Scott%2BHarvey">More articles from Scott Harvey</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="a04-article-author-bio__content">
+                <div class="a04-article-author-bio__content__author-box">
+                    <div class="row">
+                        <div class="a04-article-author-bio__content__image-wrap">
+                            <div class="a04-article-author-bio__content__img-container">
+                                <img data-src="../../../content/dam/f5-labs-v2/_author-headshots/Sara_Boddy.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                            </div>
+                        </div>
+                        <div class="a04-article-author-bio__content__data-wrap">
+                            <div>
+                                <b>About the author</b>
+                            </div>
+                            <div class="a04-article-author-bio__content__author-name U:margin-top-md">Sara Boddy</div>
+                            <div class="a04-article-author-bio__content__author-descr"><p>Sara Boddy is a Senior Director overseeing F5 Labs and Communities. She came to F5 from Demand Media where she was the Vice President of Information Security and Business Intelligence. Sara ran the security team at Demand Media for 6 years; prior to Demand Media, she held various roles in the information security community over 11 years at Network Computing Architects and Conjungi Networks.</p>
+</div>
+                            <div>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="../../search.author_Sara+Boddy.html">More articles from Sara Boddy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="a04-article-author-bio__content">
+                <div class="a04-article-author-bio__content__author-box">
+                    <div class="row">
+                        <div class="a04-article-author-bio__content__image-wrap">
+                            <div class="a04-article-author-bio__content__img-container">
+                                <img data-src="https://www.f5.com/content/dam/f5-labs-v2/labs-logo.svg" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                            </div>
+                        </div>
+                        <div class="a04-article-author-bio__content__data-wrap">
+                            <div>
+                                <b>About the author</b>
+                            </div>
+                            <div class="a04-article-author-bio__content__author-name U:margin-top-md">Preston Crowe</div>
+                            <div class="a04-article-author-bio__content__author-descr"><p>Preston Crowe is a contributing researcher and author for F5 Labs.</p>
+</div>
+                            <div>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="https://www.f5.com/labs/search.author_Preston%2BCrowe">More articles from Preston Crowe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+    
+    
+</div>
+<div name="Footnotes" data-component-type="article" class="a09-article-footnotes section">
+
+
+    
+        
+        <div class="a09-article-footnotes U:padding-y-lg display-old-labs-only">
+            <div class="links-box border-bottom-dotted article-bottom-box">
+                <div class="panel-group accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-parent="#accordion" class="trigger-collapse collapsed" aria-expanded="false">
+                                <h4 class="panel-title display-3">
+                                    Footnotes
+                                </h4>
+                                <div class="button-container">
+                                    <img alt="" class="js-bg-lozad expand-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/expand-button.png"/>
+                                    <img alt="" class="js-bg-lozad close-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/close-button.png"/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="collapse-panel">
+                            <div class="panel-body can-collapse collapsed">
+                                <p><p><a href="#_ftnref1">1</a> <a href="https://www.cyber.nj.gov/threat-profiles/botnet-variants/bashlite" rel="noreferrer">https://www.cyber.nj.gov/threat-profiles/botnet-variants/bashlite</a><img src="https://www.f5.com/libs/clientlibs/granite/richtext/resources/images/blank.png" width="11" height="12" style=""/><a href="#_ftnref2" style="background-color: rgb(255,255,255);">2</a> <a href="https://source.sierrawireless.com/resources/airlink/software_reference_docs/technical-bulletin/sierra-wireless-technical-bulletin---mirai/" style="background-color: rgb(255,255,255);" rel="noreferrer">https://source.sierrawireless.com/resources/airlink/software_reference_docs/technical-bulletin/sierra-wireless-technical-bulletin---mirai/</a></p>
+<p><a href="#_ftnref3">3</a> <a href="https://source.sierrawireless.com/~/media/support_downloads/airlink/docs/technical%20bulletin/sierra%20wireless%20technical%20bulletin%20-%20mirai%20-%204oct2016.ashx?la=en" rel="noreferrer">https://source.sierrawireless.com/~/media/support_downloads/airlink/docs/technical%20bulletin/sierra%20wireless%20technical%20bulletin%20-%20mirai%20-%204oct2016.ashx?la=en</a></p>
+<p><a href="#_ftnref4">4</a> <a href="https://ics-cert.us-cert.gov/alerts/ICS-ALERT-16-286-01" rel="noreferrer">https://ics-cert.us-cert.gov/alerts/ICS-ALERT-16-286-01</a></p>
+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="a09-article-footnotes display-LC-only">
+            <details id="-button" class="a09-article-footnotes__button cmp-accordion__button ">
+                <summary class="a09-article-footnotes__title  display-as-">
+                    <span> Footnotes </span> <span class="a09-article-footnotes__icon cmp-accordion__icon"></span>
+                </summary>
+                <div class="a09-article-footnotes__panel">
+                    <p><p><a href="#_ftnref1">1</a> <a href="https://www.cyber.nj.gov/threat-profiles/botnet-variants/bashlite" rel="noreferrer">https://www.cyber.nj.gov/threat-profiles/botnet-variants/bashlite</a><img src="https://www.f5.com/libs/clientlibs/granite/richtext/resources/images/blank.png" width="11" height="12" style=""/><a href="#_ftnref2" style="background-color: rgb(255,255,255);">2</a> <a href="https://source.sierrawireless.com/resources/airlink/software_reference_docs/technical-bulletin/sierra-wireless-technical-bulletin---mirai/" style="background-color: rgb(255,255,255);" rel="noreferrer">https://source.sierrawireless.com/resources/airlink/software_reference_docs/technical-bulletin/sierra-wireless-technical-bulletin---mirai/</a></p>
+<p><a href="#_ftnref3">3</a> <a href="https://source.sierrawireless.com/~/media/support_downloads/airlink/docs/technical%20bulletin/sierra%20wireless%20technical%20bulletin%20-%20mirai%20-%204oct2016.ashx?la=en" rel="noreferrer">https://source.sierrawireless.com/~/media/support_downloads/airlink/docs/technical%20bulletin/sierra%20wireless%20technical%20bulletin%20-%20mirai%20-%204oct2016.ashx?la=en</a></p>
+<p><a href="#_ftnref4">4</a> <a href="https://ics-cert.us-cert.gov/alerts/ICS-ALERT-16-286-01" rel="noreferrer">https://ics-cert.us-cert.gov/alerts/ICS-ALERT-16-286-01</a></p>
+</p>
+                </div>
+            </details>
+        </div>
+    
+    
+
+</div>
+<div data-component-type="article" class="a05-article-tags section">
+
+
+    
+        
+
+        <div class="a05-article-tags__tags-box">
+            <strong class="a05-article-tags__strong">TAGS: </strong>
+            <a href="https://www.f5.com/labs/search?q=bashlite" class="a05-article-tags__a">bashlite</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22sierra+wireless%22" class="a05-article-tags__a">sierra wireless</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22emergency+services%22" class="a05-article-tags__a">emergency services</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=%22critical+infrastructure%22.html" class="a05-article-tags__a">critical infrastructure</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=%22default+admin+credentials%22.html" class="a05-article-tags__a">default admin credentials</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Thingbot.html" class="a05-article-tags__a">Thingbot</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Mirai.html" class="a05-article-tags__a">Mirai</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Threats.html" class="a05-article-tags__a">Threats</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=IoT.html" class="a05-article-tags__a">IoT</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22cellular+gateways%22" class="a05-article-tags__a">cellular gateways</a>
+        </div>
+
+    
+
+	
+    
+</div>
+<div class="a04-include section"><!--googleoff: all-->
+<!-- inline style for wce-edit-mode -->
+
+    <!--googleoff: all-->
+
+    
+
+    
+
+    <div class="a07-related-articles " data-id="relatedArticlesId">
+        <div class="a07-related-articles__container">
+            <h4 class="a07-related-articles__container-title">Related Content</h4>
+
+            <div id="related-article-hidden-items">
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=IoT.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">IoT</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">September 15, 2020</span>
+                        </div>
+                    </div>
+                    <a href="the-rising-iot-threat-to-the-agriculture-industry-and-the-global-food-supply.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            The Rising IoT Threat to the Agriculture Industry and the Global Food Supply
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center blog a07-related-articles__type-ico "><i></i>blog</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">8 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=IoT.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">IoT</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">April 24, 2020</span>
+                        </div>
+                    </div>
+                    <a href="mirai-covid-variant-disregards-stay-at-home-orders.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Mirai “COVID” Variant Disregards Stay-at-Home Orders
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">7 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=IoT.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">IoT</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">April 14, 2020</span>
+                        </div>
+                    </div>
+                    <a href="privacy-and-surveillance--how-generation-z-and-millennials-see-t.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Privacy and Surveillance: How Generation Z and Millennials See the Internet of Things
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">15 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--googleon: all-->
+    
+    
+
+<!--googleon: all--></div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-right">
+        <div class="a04-include section"><!--googleoff: all-->
+<!-- inline style for wce-edit-mode -->
+
+    <!--googleoff: all-->
+
+    
+
+    
+
+    <div class="a07-related-articles " data-id="relatedArticlesId">
+        <div class="a07-related-articles__container">
+            <h4 class="a07-related-articles__container-title">Related Content</h4>
+
+            <div id="related-article-hidden-items">
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=IoT.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">IoT</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">September 15, 2020</span>
+                        </div>
+                    </div>
+                    <a href="the-rising-iot-threat-to-the-agriculture-industry-and-the-global-food-supply.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            The Rising IoT Threat to the Agriculture Industry and the Global Food Supply
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center blog a07-related-articles__type-ico "><i></i>blog</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">8 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=IoT.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">IoT</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">April 24, 2020</span>
+                        </div>
+                    </div>
+                    <a href="mirai-covid-variant-disregards-stay-at-home-orders.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Mirai “COVID” Variant Disregards Stay-at-Home Orders
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">7 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=IoT.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">IoT</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">April 14, 2020</span>
+                        </div>
+                    </div>
+                    <a href="privacy-and-surveillance--how-generation-z-and-millennials-see-t.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Privacy and Surveillance: How Generation Z and Millennials See the Internet of Things
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">15 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--googleon: all-->
+    
+    
+
+<!--googleon: all--></div>
+
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+<div class="a28-article-tile-list-dynamic aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+    
+<div class="a28-article-tile-list-dynamic__full-width-wrap xs-pt-20 xs-pb-20 container-fluid fill-main-container xs-mb-0 ">
+
+    
+        
+    
+<script src="../../../etc.clientlibs/base/clientlibs/libs/jquery/v3.6.0.abec7e706514e7e243d79b097790f71b.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-swiper.74571ff9ea0f905f582197d9e94ab140.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/components/articles/a28-article-tile-list-dynamic/clientlib.30cecdc12e1944d71b6a455f0740a7b6.js"></script>
+
+
+
+ 
+ 
+<!-- TEXT LAYOUT -->
+
+
+<!-- ALBUM COVER LAYOUT -->
+
+	<section class="a28-article-tile-list-dynamic__container a28-article-tile-list-dynamic-albumLayout a28-article-tile-list-dynamic-albumLayout__image-articles" data-numbersOfArticles="3" data-size="3" id="1684486191">
+
+		<div class="a28-article-tile-list-dynamic__section-title text-center xs-pt-20 xs-pb-20">
+			<h2>Need-to-Know</h2>
+			<span class="a28-article-tile-list-dynamic__text-bigger">Expertly picked stories on threat intelligence</span>
+		</div>
+
+		<div id="article-tile-items" class="a28-article-tile-list-dynamic-albumLayout__article-tiles-wrap U:justify-content-center swiper-container">
+
+			
+
+			<div class="swiper-wrapper">
+				<div id="1684486191_0" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a13/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Top Risks</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>May 18, 2021</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/2021-application-protection-report-of-ransom-and-redemption">
+								<a href="2021-application-protection-report-of-ransom-and-redemption.html">
+									<div class="article-title">
+										<h2 class="header-small">2021 Application Protection Report</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center report a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>report</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>60 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">Sander Vinberg</span>
+									
+										<span class="author-item">Raymond Pompon</span>
+									
+										<span class="author-item">Shahnawaz Backer</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			
+				<div id="1684486191_1" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a15/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=Encryption.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Encryption</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>July 17, 2020</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cryptonice">
+								<a href="cryptonice.html">
+									<div class="article-title">
+										<h2 class="header-small">Introducing the Cryptonice HTTPS Scanner</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center article a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>article</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>12 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">David Warburton</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			
+				<div id="1684486191_2" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a08/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Top Risks</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>February 01, 2021</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cybersecurity-threats-to-the-covid-19-vaccine">
+								<a href="cybersecurity-threats-to-the-covid-19-vaccine.html">
+									<div class="article-title">
+										<h2 class="header-small">Cybersecurity Threats to the COVID-19 Vaccine</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center article a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>article</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>9 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">Raymond Pompon</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="loader_1684486191" class="big-loader U:margin-bot-xl U:display-none"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+		<button class="a28-article-tile-list-dynamic__load-more-button btn btn-outline-inverse U:display-none" id="load_1684486191">
+			Load more stories</button>
+	</section>
+
+  
+
+<!-- MUTED LAYOUT -->
+
+
+</div>
+
+
+</div>
+<div data-component-type="category" class="u03-static-data-points aem-GridColumn aem-GridColumn--default--12"><!--googleoff: all-->
+
+    
+        
+        
+        <section class="u03-static-data-points__container fill-main-container">
+            <div class="full-site-container info-container-two-columns">
+                <div class="row">
+                    <div class="u03-static-data-points__left-column-container border-right">
+                        <div class="u03-static-data-points__left-column-wrap">
+                            <h3 class="display-3 u03-static-data-points__headline">Hundreds of apps will be attacked by the time you read this.</h3>
+                            <p><p>So, we get to work. We obsess over effective attack methods. We monitor the growth of IoT and its evolving threats. We dive deep into the latest crypto-mining campaigns. We analyze banking Trojan targets. We dissect exploits. We hunt for the latest malware. And then our team of experts share it all with you. For more than 20 years, F5 has been leading the app delivery space. With our experience, we are passionate about educating the security community-providing the intel you need to stay informed so your apps can stay safe.</p>
+</p>
+                        </div>
+                    </div>
+                    <div class="u03-static-data-points__right-column-container">
+                        <div class="u03-static-data-points__right-column-wrap">
+                            <h4 class="display-6">
+                                Every
+                            </h4>
+                            <h3 class="f5labs-big-number">9 hrs</h3>
+                            a critical vulnerability—with the potential for remote code execution—is released.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    
+
+<!--googleon: all--></div>
+<div class="u02-footer aem-GridColumn aem-GridColumn--default--12"><div>
+	
+<footer id="footer" class="u02-footer_labs conf06-footer-configuration">
+    <div class="conf06-footer-configuration__footer-logo">
+        <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <metadata>
+                <rdf:RDF>
+                    <cc:Work rdf:about="">
+                        <dc:format>image/svg+xml</dc:format>
+                        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                        <dc:title/>
+                    </cc:Work>
+                </rdf:RDF>
+            </metadata>
+            <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+            <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+            <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+        </svg>
+    </div>
+
+    <div class="conf06-footer-configuration__newslettersignup">
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg c20-newsletter-signup-display__newsletter-form">
+    <div class="c20-newsletter-signup-display__wrapper purple-bg  benefits-visible">
+
+        <div class="c20-newsletter-signup-display__signup-wrap">
+
+            <div class="c20-newsletter-signup-display__row form-and-benefits-row hide-after-submit">
+                <div class="c20-newsletter-signup-display__col">
+                    <div class="c20-newsletter-signup-display__title only-mobile">
+                        F5 Labs Newsletter
+                    </div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+                    </div>
+                </div>
+                <div class="c20-newsletter-signup-display__col">
+
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <div class="c20-newsletter-signup-display__title only-desktop">
+                            F5 Labs Newsletter
+                        </div>
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+                        <!-- LOADER -->
+                        <div id="loader" class="small-loader form-loader     
+                             "><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                        <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                            <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- SUCCESS MESSAGE -->
+            <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+                <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                <div class="c20-newsletter-signup-display__article-intro">
+                    Thanks for signing up! Get started with some of the articles below:
+                </div>
+                <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Fraud.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Fraud</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="2020-phishing-and-fraud-report.html" class="text-article__link">
+
+                                <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">November 11, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Education.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Education</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="../education/what-is-the-cia-triad.html" class="text-article__link">
+
+                                <div class="text-article__article-title">What Is the CIA Triad?</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">July 09, 2019</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Strategies.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Strategies</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="../cisotociso/the-three-main-cybersecurity-career-paths.html" class="text-article__link">
+
+                                <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex mid-point">
+                                    <span class="U:align-self-center">December 08, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center">9 min. read</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__wrapper purple-bg}">
+
+		<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+				<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+    <div class="conf06-footer-configuration__main-footer-container">
+        <div class="conf06-footer-configuration__main-footer-wrapper">
+          
+            <div class="conf06-footer-configuration__links-wrap first-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        <ul>
+            <li><a href="../../threat-intelligence.html" target="_blank" rel="no-opener no-referrer">THREATS</a></li>
+        
+            <li><a href="../../ciso-to-ciso.html" target="_blank" rel="no-opener no-referrer">CISO TO CISO</a></li>
+        
+            <li><a href="../../application-protection.html" target="_blank" rel="no-opener no-referrer">APPLICATION PROTECTION</a></li>
+        </ul>
+    
+
+    
+</div>
+            </div>
+            <div class="conf06-footer-configuration__links-wrap second-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        
+    
+
+    
+</div>
+            </div>
+                  
+
+            <div class="conf06-footer-configuration__social-links-wrap">
+                
+<div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Social media links configuration"></div> -->
+	<ul>
+		<li class="twitter">			
+			<a href="https://twitter.com/F5Labs" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb twitter xs-mr-15"></span></div><div class="float-left">TWITTER</div></a>
+		</li>
+	
+		<li class="linkedin">			
+			<a href="https://www.linkedin.com/showcase/f5labs/" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb linkedin xs-mr-15"></span></div><div class="float-left">LINKEDIN</div></a>
+		</li>
+	</ul>
+
+</div>
+
+            </div>
+        </div>
+        <div class="conf06-footer-configuration__foot-note  conf06-footer-configuration__footer-bottom footer-small">
+            <span class="conf06-footer-configuration__all-rights-reserved"> &copy; 2022 F5, Inc. All rights reserved</span> <br/>
+            
+
+                <a href="../../../company/policies.html">Policies</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/privacy-notice.html">Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/trademarks.html">Trademarks</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../index.html" rel="noreferrer">Manage Subscriptions</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/F5-California-privacy-summary.html">California Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/privacy-notice.html#no-sell">Do Not Sell My Personal Information</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+            <span>
+                <span id="teconsent"></span>
+            </span>
+
+        </div>
+    </div>
+
+    <script class="n-lang-en" async="async" src="../../../../consent.trustarc.com/notice%EF%B9%96domain=f5.com&amp;c=teconsent&amp;js=nj&amp;noticeType=bb&amp;text=true&amp;gtm=1.js" crossorigin=""></script>
+  
+     <div>
+
+
+
+
+
+<div class="c20-newsletter-signup-display__popover-bg   ">
+    <div class=" c20-newsletter-signup-display popover  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+                    <div class="c20-newsletter-signup-display__title">F5 Labs Newsletter</div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+</div>
+                </div>
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+
+                        <!-- SUCCESS MESSAGE -->
+                        <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none ">
+                            <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                            <div class="c20-newsletter-signup-display__article-intro">
+                                Thanks for signing up! Get started with some of the articles below:
+                            </div>
+
+                            <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="2020-phishing-and-fraud-report.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">November 11, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="../education/what-is-the-cia-triad.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">What Is the CIA Triad?</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">July 09, 2019</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="../cisotociso/the-three-main-cybersecurity-career-paths.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex mid-point">
+                                                <span class="U:align-self-center">December 08, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center">9 min. read</span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                         
+                        </div>
+
+                        <!-- LOADER -->
+                        <div id="loader" class="U:display-none big-loader"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" c20-newsletter-signup-display popover c20-newsletter-signup-display__subscribed-already  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__title">You already have a subscription</div>
+                  
+                </div>
+               
+              
+            </div>
+          
+        </div>
+    </div>
+
+</div>
+</div>
+  
+</footer>
+ 
+</div></div>
+
+    
+</div>
+</div>
+
+
+     
+        
+    
+    
+
+    
+<script src="../../../etc.clientlibs/clientlibs/granite/jquery/granite/csrf.a9dcac4698709ca8e1cbc88363cf0793.js"></script>
+<script src="../../../etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.68e8a508c100f218cc66bb13a94d1002.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.d96c3f535f649b3c2392029bf4ce52cd.js"></script>
+
+
+ 
+
+	<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5095d30f38626622"></script>
+	
+
+    
+
+
+        <div id="consent_blackbar" style="position:fixed;bottom:200px;width:100%"></div>
+    </body>
+</html>

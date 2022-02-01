@@ -402,7 +402,7 @@
     </div>
     <div class="a03-text text section">
 <div class="cmp-text ">
-    <p>The security industry is quick to point out the ineffectiveness of passwords and advocate replacing them with <a href="https://www.f5.com/labs/search?q=multifactor+authentication" target="_blank" rel="no-opener no-referrer">multi-factor authentication</a> (MFA). However, reality is never that simple. Implementing MFA in most organization is a big lift. That’s why I’m bringing in help to help you with your deployments. I talked to our new CISO, Mary Gardner as well as the Director or Information Security at Slalom Consulting, Erik Pierson. Both are experienced security leaders who’ve had been in the trenches of MFA deployments.</p>
+    <p>The security industry is quick to point out the ineffectiveness of passwords and advocate replacing them with <a href="../../search%EF%B9%96q=multifactor+authentication.html" target="_blank" rel="no-opener no-referrer">multi-factor authentication</a> (MFA). However, reality is never that simple. Implementing MFA in most organization is a big lift. That’s why I’m bringing in help to help you with your deployments. I talked to our new CISO, Mary Gardner as well as the Director or Information Security at Slalom Consulting, Erik Pierson. Both are experienced security leaders who’ve had been in the trenches of MFA deployments.</p>
 <p>Yes, passwords are old and busted. In the F5 Labs’ first annual <a href="../threat-intelligence/2018-Application-Protection-Report.html">Application Protection Report</a>, we asked security leaders to name their most devastating type of cyber-attack for their organizations. The majority (68%) answered: credential theft. A realistic answer, since our <a href="../threat-intelligence/lessons-learned-from-a-decade-of-data-breaches-29035.html">analysis of breach records</a> showed that 13% of all web app breaches in 2017 and Q1 2018 were access-related. However, that same survey showed only 45% of organizations had deployed MFA to protect critical web applications. Why?</p>
 
 </div>
@@ -423,11 +423,11 @@
     <p>Any CISO who’s been around the block understands Erik’s words. So, let’s roll up our sleeves and get started by understanding the scope of the problem.<br />
 </p>
 <h2>Understand Needs</h2>
-<p>The first step in any security project is to be sure you have a clear <a href="https://www.f5.com/labs/articles/cisotociso/to-protect-your-network-you-must-first-know-your-network">inventory of your asset and applications</a>. Everything flows from them. For most, this isn’t a small thing to do, but it is a necessity. From your assets, you can begin a risk analysis and business needs analysis. Mary Gardner expresses this step well: “Understand your various user groups and their risk profiles when rolling out MFA in a healthcare environment is very different than in a financial services environment.” This means honing in on your <a href="../threat-intelligence/know-the-risks-to-your-critical-apps-and-defend-against-them.html">critical applications</a>, looking at the <a href="https://www.f5.com/labs/articles/threat-intelligence/fight-credential-stuffing-by-taking-a-new-approach-to-authorization">major attack campaigns</a> going on, <a href="../threat-intelligence/the-credential-crisis-its-really-happening.html">and checking how well your current password authentication system can withstand these attacks</a>.</p>
+<p>The first step in any security project is to be sure you have a clear <a href="../bylines/to-protect-your-network-you-must-first-know-your-network.html">inventory of your asset and applications</a>. Everything flows from them. For most, this isn’t a small thing to do, but it is a necessity. From your assets, you can begin a risk analysis and business needs analysis. Mary Gardner expresses this step well: “Understand your various user groups and their risk profiles when rolling out MFA in a healthcare environment is very different than in a financial services environment.” This means honing in on your <a href="../threat-intelligence/know-the-risks-to-your-critical-apps-and-defend-against-them.html">critical applications</a>, looking at the <a href="../threat-intelligence/fight-credential-stuffing-by-taking-a-new-approach-to-authorization.html">major attack campaigns</a> going on, <a href="../threat-intelligence/the-credential-crisis-its-really-happening.html">and checking how well your current password authentication system can withstand these attacks</a>.</p>
 <p>You should look at key internal processes such as new employee roll-out (What credentials are provisioned and how burdensome is that process?), remote access solutions in-use (Which users are remote and what do they need to do?), and the pipeline for new apps and services (What will you need to deal with in the near future?). All of this can give you an idea of what and where you will need to focus your efforts. This is also important strategic information that you may need to build, explain, and justify your budget. As Mary says, “Be transparent about why MFA is being implemented—communication is key.”</p>
 <h2>Prioritize Which Apps Need MFA</h2>
-<p>It’s rare that a CISO ever gets to start fresh, so you’ll need to figure out how to integrate MFA into a live environment full of services that your customers and users depend on. Most people aren’t bold enough to flip a switch and convert every password login to MFA at once. The wise move is to pick and prioritize the deployment. Luckily, you should have enough information to rank who and what goes first and when. As Mary says, “MFA should not be required for every login unless the users or apps are high risk.” There are going to be some obvious candidates for MFA like remote access, administrator access, and anything involving compliance. Some apps will be on the fence, like e-mail, but in general, there can be <a href="https://www.f5.com/labs/articles/threat-intelligence/how-three-low-risk-vulnerabilities-become-one-high-24995">significant threats</a> and <a href="https://www.f5.com/labs/articles/cisotociso/executive-impersonation-fraud-is-on-the-riseand-it-is-working-26181">impacts</a> with it.</p>
-<p>One thing to reconsider is the apps and services that may be low-value to your organization. These same app services could be valuable to attackers and thus subject to exploitation. For example, unauthenticated or weakly authenticated services like <a href="../threat-intelligence/exploited-memcached-servers-lead-to-record-setting-13tbps-ddos-attack.html">memcached servers</a> or <a href="https://www.f5.com/labs/articles/threat-intelligence/default-passwords-are-not-the-biggest-part-of-the-iot-botnet-problem">IoT devices</a> can be subverted by attackers to create <a href="https://www.f5.com/labs/articles/threat-intelligence/the-hunt-for-iot-the-networks-building-death-star-sized-botnets-26796">DDoS weapons of immense magnitude</a>. So even if there is little threat or impact to your organization directly, it’s worth considering locking access to these services to organization-owned IP addresses, which counts as a second authentication factor (something you are) in my book.</p>
+<p>It’s rare that a CISO ever gets to start fresh, so you’ll need to figure out how to integrate MFA into a live environment full of services that your customers and users depend on. Most people aren’t bold enough to flip a switch and convert every password login to MFA at once. The wise move is to pick and prioritize the deployment. Luckily, you should have enough information to rank who and what goes first and when. As Mary says, “MFA should not be required for every login unless the users or apps are high risk.” There are going to be some obvious candidates for MFA like remote access, administrator access, and anything involving compliance. Some apps will be on the fence, like e-mail, but in general, there can be <a href="../threat-intelligence/how-three-low-risk-vulnerabilities-become-one-high-24995.html">significant threats</a> and <a href="executive-impersonation-fraud-is-on-the-riseand-it-is-working-26181.html">impacts</a> with it.</p>
+<p>One thing to reconsider is the apps and services that may be low-value to your organization. These same app services could be valuable to attackers and thus subject to exploitation. For example, unauthenticated or weakly authenticated services like <a href="../threat-intelligence/exploited-memcached-servers-lead-to-record-setting-13tbps-ddos-attack.html">memcached servers</a> or <a href="../threat-intelligence/default-passwords-are-not-the-biggest-part-of-the-iot-botnet-problem.html">IoT devices</a> can be subverted by attackers to create <a href="../threat-intelligence/the-hunt-for-iot-the-networks-building-death-star-sized-botnets-26796.html">DDoS weapons of immense magnitude</a>. So even if there is little threat or impact to your organization directly, it’s worth considering locking access to these services to organization-owned IP addresses, which counts as a second authentication factor (something you are) in my book.</p>
 <h2>Work <i>for</i> the Users, Not <i>on</i> Them</h2>
 <p>Both of our advisory CISOs agree: begin with a pilot. Erik notes that “It’s imperative to run a pilot to find out what you missed in your project plan.” Mary adds that you should “Pilot the solution with key business partners.” The pilot users should know the MFA deployment is in beta and there will be mistakes and oversights. This is why you need to be transparent regarding the process, so users are aware of what is happening, what to do, and where to get help if things fail. In addition to the basic MFA processes of provisioning and revoking access, make sure these other key processes are nailed down, as well:</p>
 <ul class="loose">
@@ -436,14 +436,14 @@
 <li>Managing software upgrades that may break the MFA process</li>
 <li>Providing emergency and urgent access for critical users when the MFA system is offline</li>
 </ul>
-<p>Before pushing your MFA program out, you’ll need to have your story straight for all the users. Erik recounts, “We started with ‘the why’ and a marketing campaign to get the message across to our employees why we were turning on MFA.” Note what he said there: marketing campaign. Not an email. Not a short comment during the all-staff meeting. A marketing <i>campaign</i> that includes both of these things and much more. Use all the information you’ve gathered on the threats and criticality of the systems. Talk about how the MFA deployment will please customers and <a href="https://www.f5.com/labs/articles/cisotociso/the-risk-pivot-succeeding-with-business-leadership-by-quantifying-operational-risk-24929" target="_blank" rel="no-opener no-referrer">improve operational efficiency</a>. Erik added, “We spent some time creating short videos, easy-to-access and consumable written FAQs, and a website to present it all. We used these over and over, and they proved critical to our success.”</p>
+<p>Before pushing your MFA program out, you’ll need to have your story straight for all the users. Erik recounts, “We started with ‘the why’ and a marketing campaign to get the message across to our employees why we were turning on MFA.” Note what he said there: marketing campaign. Not an email. Not a short comment during the all-staff meeting. A marketing <i>campaign</i> that includes both of these things and much more. Use all the information you’ve gathered on the threats and criticality of the systems. Talk about how the MFA deployment will please customers and <a href="the-risk-pivot-succeeding-with-business-leadership-by-quantifying-operational-risk-24929.html" target="_blank" rel="no-opener no-referrer">improve operational efficiency</a>. Erik added, “We spent some time creating short videos, easy-to-access and consumable written FAQs, and a website to present it all. We used these over and over, and they proved critical to our success.”</p>
 <p>Mary also suggests sweetening the deal by “Using MFA to roll out new functionality to users like Outlook Web Access and Office365; give the users some carrots.” Indeed, once you have a strong authentication system in place, powerful, easy-to-use application service models such as Google’s <a href="wait-dont-throw-out-your-firewalls-25982.html" target="_blank" rel="no-opener no-referrer">BeyondCorp</a> can now be available for users.</p>
 <h2>Chose the MFA Solution that Works for Your Needs</h2>
 <p>All of this organizational analysis and user-centric work will pay-off when it comes to architecting your technical solution. You will know what you need and what resources you can spend to get it. On top of the security and integration capability of the solution itself, other key questions to consider are hardware versus software tokens, token supply, self-service portals, logging, and diagnostic capability. Erik looked at speed of deployment across a global company with thousands of users. “We needed to partner with our MFA vendor to ensure we had the technology dialed in. The sooner you can do this, the better.”</p>
 <p>As the MFA deploys across your organization, remember even after the pilot, things will still go wrong. It’s just the nature of technology. Your MFA vendor and integration partners should be ready to help you with this. Mary also suggests, “Set up support functions as close to users as possible (rotating onsite helpdesks as you roll the function out).”</p>
 <h2>It’s Never Fire and Forget</h2>
 <p>Rolling out MFA is just the beginning. MFA should be monitored, nurtured, and adjusted. You should also realize that MFA deployments will continue to happen as upgraded token technology is available, new applications are introduced, and as new organizational units are integrated. Erik notes that “We learned many lessons when we rolled out MFA to our employees.” You, too, will have some stumbles as every organization is different, but you will learn from them as well. These lessons will come in handy as you tweak and upgrade your technology and processes.</p>
-<p>As with any security control, you should also keep an eye on how well MFA is reducing your risk in comparison to its overall cost. Metrics on the threat reduction side include: failed login attempts, foiled <a href="https://www.f5.com/labs/articles/threat-intelligence/phishing-the-secret-of-its-success-and-what-you-can-do-to-stop-it" target="_blank" rel="no-opener no-referrer">phishing credential thefts</a>, and denied privileged escalations. Every time <a href="../threat-intelligence/lessons-learned-from-a-decade-of-data-breaches-29035.html" target="_blank" rel="no-opener no-referrer">someone else’s organization (not yours) makes headlines for a credential breach</a>, it’s <a href="https://www.f5.com/labs/articles/threat-intelligence/the-good-news-about-breaches" target="_blank" rel="no-opener no-referrer">time to point at your MFA controls as a winning strategy</a>. On the operational side, it’s helpful to keep an eye on the numbers of false positive failed logins (authorized user can’t get in), helpdesk call related to MFA, token resets, and failed tokens (hard and soft). To this you can add surveys, polls, and conversations with key app and business owners.</p>
+<p>As with any security control, you should also keep an eye on how well MFA is reducing your risk in comparison to its overall cost. Metrics on the threat reduction side include: failed login attempts, foiled <a href="../threat-intelligence/phishing-the-secret-of-its-success-and-what-you-can-do-to-stop-it.html" target="_blank" rel="no-opener no-referrer">phishing credential thefts</a>, and denied privileged escalations. Every time <a href="../threat-intelligence/lessons-learned-from-a-decade-of-data-breaches-29035.html" target="_blank" rel="no-opener no-referrer">someone else’s organization (not yours) makes headlines for a credential breach</a>, it’s <a href="../threat-intelligence/the-good-news-about-breaches.html" target="_blank" rel="no-opener no-referrer">time to point at your MFA controls as a winning strategy</a>. On the operational side, it’s helpful to keep an eye on the numbers of false positive failed logins (authorized user can’t get in), helpdesk call related to MFA, token resets, and failed tokens (hard and soft). To this you can add surveys, polls, and conversations with key app and business owners.</p>
 <h2>Now, Go Get ‘Em</h2>
 <p>Hopefully we’ve given you some useful ideas to pull off a successful MFA deployment. Like floppy disks, acoustic modems, and dot matrix printers, passwords are rapidly becoming relics of the past. If you haven’t rolled out MFA in your organization, there is no better time than now. As we’ve said before, start small, but most of all, just start.</p>
 
@@ -534,7 +534,7 @@
                             <span class="U:align-self-center">January 17, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/security-lessons-from-across-the-pond--local-government-ransomwa" class="a07-related-articles__link">
+                    <a href="../bylines/security-lessons-from-across-the-pond--local-government-ransomwa.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Security Lessons from Across the Pond: Local Government Ransomware Attacks
                         </div>
@@ -561,7 +561,7 @@
                             <span class="U:align-self-center">May 31, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/permission-to-intrude--hiring-hackers-to-bolster-cyber-defenses" class="a07-related-articles__link">
+                    <a href="../bylines/permission-to-intrude--hiring-hackers-to-bolster-cyber-defenses.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Permission to Intrude: Hiring Hackers to Bolster Cyber Defenses
                         </div>
@@ -588,7 +588,7 @@
                             <span class="U:align-self-center">May 08, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/putting-application-threat-intelligence-into-action" class="a07-related-articles__link">
+                    <a href="../bylines/putting-application-threat-intelligence-into-action.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Putting Application Threat Intelligence Into Action
                         </div>
@@ -832,7 +832,7 @@
                             <span class="U:align-self-center">January 17, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/security-lessons-from-across-the-pond--local-government-ransomwa" class="a07-related-articles__link">
+                    <a href="../bylines/security-lessons-from-across-the-pond--local-government-ransomwa.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Security Lessons from Across the Pond: Local Government Ransomware Attacks
                         </div>
@@ -859,7 +859,7 @@
                             <span class="U:align-self-center">May 31, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/permission-to-intrude--hiring-hackers-to-bolster-cyber-defenses" class="a07-related-articles__link">
+                    <a href="../bylines/permission-to-intrude--hiring-hackers-to-bolster-cyber-defenses.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Permission to Intrude: Hiring Hackers to Bolster Cyber Defenses
                         </div>
@@ -886,7 +886,7 @@
                             <span class="U:align-self-center">May 08, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/putting-application-threat-intelligence-into-action" class="a07-related-articles__link">
+                    <a href="../bylines/putting-application-threat-intelligence-into-action.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Putting Application Threat Intelligence Into Action
                         </div>
@@ -943,7 +943,7 @@
                             <span class="U:align-self-center">January 17, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/security-lessons-from-across-the-pond--local-government-ransomwa" class="a07-related-articles__link">
+                    <a href="../bylines/security-lessons-from-across-the-pond--local-government-ransomwa.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Security Lessons from Across the Pond: Local Government Ransomware Attacks
                         </div>
@@ -970,7 +970,7 @@
                             <span class="U:align-self-center">May 31, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/permission-to-intrude--hiring-hackers-to-bolster-cyber-defenses" class="a07-related-articles__link">
+                    <a href="../bylines/permission-to-intrude--hiring-hackers-to-bolster-cyber-defenses.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Permission to Intrude: Hiring Hackers to Bolster Cyber Defenses
                         </div>
@@ -997,7 +997,7 @@
                             <span class="U:align-self-center">May 08, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/putting-application-threat-intelligence-into-action" class="a07-related-articles__link">
+                    <a href="../bylines/putting-application-threat-intelligence-into-action.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Putting Application Threat Intelligence Into Action
                         </div>
