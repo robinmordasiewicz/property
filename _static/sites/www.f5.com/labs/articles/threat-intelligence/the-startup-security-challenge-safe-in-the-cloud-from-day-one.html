@@ -189,7 +189,7 @@
      
         
 
-       	<div class="background-cut " style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a14/optimize/article-background-image.jpg);"></div>
+       	<div class="background-cut " style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a14/optimize/article-background-image.jpg);"></div>
         
 
 
@@ -315,7 +315,7 @@
         
        
         <section class="container-fluid c02-header-area__main-article details fill-main-container">
-            <div class="c02-header-area__heroImageBackground" style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a14/optimize/article-background-image.jpg);"></div>
+            <div class="c02-header-area__heroImageBackground" style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a14/optimize/article-background-image.jpg);"></div>
             <div class="c02-header-area__main-article-overlay"></div>
            
             <div class="row">
@@ -352,7 +352,7 @@
                         
                     </div>
                     <div class="c02-header-area__author-name tags">
-                        By <a class="c02-header-area__author-name tag-item" href="https://www.f5.com/labs/search.author_Raymond%2BPompon">Raymond Pompon</a>
+                        By <a class="c02-header-area__author-name tag-item" href="../../search.author_Raymond+Pompon.html">Raymond Pompon</a>
                     </div>
                     
                 </div>
@@ -430,7 +430,7 @@
 <h5>Mobile Optimized</h5>
 <p>For a powerful mobile experience, the site needed to be super-fast to load (ties to Fast goal), so the core JavaScript is only 90 KB (compressed), and the dependency JavaScript is asynchronously loaded. Since it’s a single-page application, once the JavaScript loads, site navigation is incredibly fast (no waiting for multi-hundred milliseconds round trips to fetch more JavaScript, HTML, and CSS). This means that the site works great even on a slow 3G mobile connection. Goal one accomplished; now, on to the security goal.</p>
 <h5>Secure</h5>
-<p>Wanderlust Society built their application in the cloud and they also correctly realized that <a href="https://www.f5.com/content/f5-labs/en/labs/articles/threat-intelligence/friendly-reminder-app-security-in-the-cloud-is-your-responsibility-24894.html" target="_blank" rel="no-opener no-referrer">application security in the cloud is their responsibility</a>. So, they had to build and configure the proper tools to lock things down to their specific risks.</p>
+<p>Wanderlust Society built their application in the cloud and they also correctly realized that <a href="friendly-reminder-app-security-in-the-cloud-is-your-responsibility-24894.html" target="_blank" rel="no-opener no-referrer">application security in the cloud is their responsibility</a>. So, they had to build and configure the proper tools to lock things down to their specific risks.</p>
 <p>First, the application was designed to respond only to HTTPS requests, so all communication is encrypted. Second, the application was partitioned with firewalls and rules locking down traffic in both directions (to reduce attack surface and exfiltration). Databases are in a restricted, non-public subnet and firewalled to a single port. This reduces the risk of attackers stealing data from users.</p>
 <p>Access control is the way you ensure only authorized users can access or change data. The first part of access control is authentication. Passwords are a common way to authenticate users, but they are also fragile and a burden to manage properly. Wanderlust Society chose an alternate method and went with Federated Identity. This means their web application pulls from another trusted authentication repository such as a third-party website where a user is already registered. Wanderlust Society chose to federate from Facebook for two reasons. First, most people already have a Facebook account and this way users don’t have to create and manage another account. Second, Facebook’s infrastructure and platform have been out for years and are used by billions daily, so they’ve been proven reliable and secure.</p>
 <p>The other half of access control is authorization: controlling which authenticated users can go where within an application. To securely track users, Wanderlust Society used a request/access token system for all service calls. When a user authenticates, he or she is granted a token tied to the originating client device. Because you never want to trust user input, the token is constantly verified at the server side. Another advantage is that tokens have a limited lifespan and are cleared on logout.</p>
@@ -634,35 +634,35 @@
                                 </div>
 
                                 <div class="layer-1 active">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1-active.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1-active.png" style="max-width: 80px;"/></div>
                                     <span>Services</span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-2 active">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3-active.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3-active.png" style="max-width: 80px;"/></div>
                                     <span>Access</span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-3 ">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
                                     <span>TLS </span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-4  ">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4.png" style="max-width: 80px;"/></div>
                                     <span>DNS</span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-5 ">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
                                     <span>Network</span>
                                 </div>
                                 <div class="stack-bottom">
@@ -708,7 +708,7 @@
                             </div>
 
                             <div class="layer-1 active">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1-active.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1-active.png"/>
                                 </div>
                                 <span>Services</span>
                                 <i class="icon-bolt"></i>
@@ -716,7 +716,7 @@
                             </div>
 
                             <div class="layer-2 active">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2-active.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2-active.png"/>
                                 </div>
                                 <span>Access</span>
                                 <i class="icon-bolt"></i>
@@ -724,7 +724,7 @@
                             </div>
 
                             <div class="layer-3 ">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
                                 </div>
                                 <span>TLS </span>
                                 <i class="icon-bolt"></i>
@@ -732,7 +732,7 @@
                             </div>
 
                             <div class="layer-4  ">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4.png"/>
                                 </div>
                                 <span>DNS</span>
                                 <i class="icon-bolt"></i>
@@ -740,7 +740,7 @@
                             </div>
 
                             <div class="layer-5 ">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
                                 </div>
                                 <span>Network</span>
                                 <i class="icon-bolt"></i>
@@ -890,35 +890,35 @@
                                 </div>
 
                                 <div class="layer-1 active">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1-active.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1-active.png" style="max-width: 80px;"/></div>
                                     <span>Services</span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-2 active">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3-active.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3-active.png" style="max-width: 80px;"/></div>
                                     <span>Access</span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-3 ">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
                                     <span>TLS </span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-4  ">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4.png" style="max-width: 80px;"/></div>
                                     <span>DNS</span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-5 ">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
                                     <span>Network</span>
                                 </div>
                                 <div class="stack-bottom">
@@ -964,7 +964,7 @@
                             </div>
 
                             <div class="layer-1 active">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1-active.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1-active.png"/>
                                 </div>
                                 <span>Services</span>
                                 <i class="icon-bolt"></i>
@@ -972,7 +972,7 @@
                             </div>
 
                             <div class="layer-2 active">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2-active.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2-active.png"/>
                                 </div>
                                 <span>Access</span>
                                 <i class="icon-bolt"></i>
@@ -980,7 +980,7 @@
                             </div>
 
                             <div class="layer-3 ">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
                                 </div>
                                 <span>TLS </span>
                                 <i class="icon-bolt"></i>
@@ -988,7 +988,7 @@
                             </div>
 
                             <div class="layer-4  ">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4.png"/>
                                 </div>
                                 <span>DNS</span>
                                 <i class="icon-bolt"></i>
@@ -996,7 +996,7 @@
                             </div>
 
                             <div class="layer-5 ">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
                                 </div>
                                 <span>Network</span>
                                 <i class="icon-bolt"></i>
@@ -1070,7 +1070,7 @@
                             <span class="U:align-self-center">September 23, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/jwt--a-how-not-to-guide" class="a07-related-articles__link">
+                    <a href="jwt--a-how-not-to-guide.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             JWT: A How Not to Guide
                         </div>
@@ -1097,7 +1097,7 @@
                             <span class="U:align-self-center">September 01, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/api-authentication-incidents-2020-apr-vol2" class="a07-related-articles__link">
+                    <a href="api-authentication-incidents-2020-apr-vol2.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             API Authentication Incidents: 2020 Application Protection Report, Volume 2
                         </div>
@@ -1251,7 +1251,7 @@
                     <div class="row">
                         <div class="a04-article-author-bio__content__image-wrap">
                             <div class="a04-article-author-bio__content__img-container">
-                                <img data-src="https://www.f5.com/content/dam/f5-labs-v2/_author-headshots/Ray_Pompon.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                                <img data-src="../../../content/dam/f5-labs-v2/_author-headshots/Ray_Pompon.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
                             </div>
                         </div>
                         <div class="a04-article-author-bio__content__data-wrap">
@@ -1262,7 +1262,7 @@
                             <div class="a04-article-author-bio__content__author-descr"><p>Raymond Pompon is the Director of F5 Labs. With over 20 years of experience in Internet security, he has worked closely with federal law enforcement in cyber-crime investigations. He was directly involved in several major intrusion cases, including the FBI undercover Flyhook operation and the NW Hospital botnet prosecution. He is the author of IT Security Risk Control Management: An Audit Preparation Plan published by Apress books.</p>
 </div>
                             <div>
-                                <a class="a04-article-author-bio__content__author-more-articles" href="https://www.f5.com/labs/search.author_Raymond%2BPompon">More articles from Raymond Pompon</a>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="../../search.author_Raymond+Pompon.html">More articles from Raymond Pompon</a>
                             </div>
                         </div>
                     </div>
@@ -1288,8 +1288,8 @@
                                     Footnotes
                                 </h4>
                                 <div class="button-container">
-                                    <img alt="" class="js-bg-lozad expand-btn" data-src="https://www.f5.com/content/dam/f5-labs-v2/components/footnotes/expand-button.png"/>
-                                    <img alt="" class="js-bg-lozad close-btn" data-src="https://www.f5.com/content/dam/f5-labs-v2/components/footnotes/close-button.png"/>
+                                    <img alt="" class="js-bg-lozad expand-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/expand-button.png"/>
+                                    <img alt="" class="js-bg-lozad close-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/close-button.png"/>
                                 </div>
                             </a>
                         </div>
@@ -1332,34 +1332,34 @@
 
         <div class="a05-article-tags__tags-box">
             <strong class="a05-article-tags__strong">TAGS: </strong>
-            <a href="https://www.f5.com/labs/search?q=%22risk+analysis%22" class="a05-article-tags__a">risk analysis</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22risk+analysis%22.html" class="a05-article-tags__a">risk analysis</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=start-up" class="a05-article-tags__a">start-up</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=start-up.html" class="a05-article-tags__a">start-up</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=Threats" class="a05-article-tags__a">Threats</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=Threats.html" class="a05-article-tags__a">Threats</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=%22Top+Risks%22.html" class="a05-article-tags__a">Top Risks</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=Cybercrime" class="a05-article-tags__a">Cybercrime</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=Cybercrime.html" class="a05-article-tags__a">Cybercrime</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Access+Tier%22" class="a05-article-tags__a">Access Tier</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Access+Tier%22.html" class="a05-article-tags__a">Access Tier</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Abuse+of+functionality%22" class="a05-article-tags__a">Abuse of functionality</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Abuse+of+functionality%22.html" class="a05-article-tags__a">Abuse of functionality</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22cloud+security%22" class="a05-article-tags__a">cloud security</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22cloud+security%22.html" class="a05-article-tags__a">cloud security</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Web+Application+Attacks%22" class="a05-article-tags__a">Web Application Attacks</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Web+Application+Attacks%22.html" class="a05-article-tags__a">Web Application Attacks</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Services+Tier%22" class="a05-article-tags__a">Services Tier</a>
+            <a href="../../search%EF%B9%96q=%22Services+Tier%22.html" class="a05-article-tags__a">Services Tier</a>
         </div>
 
     
@@ -1420,7 +1420,7 @@
                             <span class="U:align-self-center">September 23, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/jwt--a-how-not-to-guide" class="a07-related-articles__link">
+                    <a href="jwt--a-how-not-to-guide.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             JWT: A How Not to Guide
                         </div>
@@ -1447,7 +1447,7 @@
                             <span class="U:align-self-center">September 01, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/api-authentication-incidents-2020-apr-vol2" class="a07-related-articles__link">
+                    <a href="api-authentication-incidents-2020-apr-vol2.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             API Authentication Incidents: 2020 Application Protection Report, Volume 2
                         </div>
@@ -1531,7 +1531,7 @@
                             <span class="U:align-self-center">September 23, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/jwt--a-how-not-to-guide" class="a07-related-articles__link">
+                    <a href="jwt--a-how-not-to-guide.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             JWT: A How Not to Guide
                         </div>
@@ -1558,7 +1558,7 @@
                             <span class="U:align-self-center">September 01, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/api-authentication-incidents-2020-apr-vol2" class="a07-related-articles__link">
+                    <a href="api-authentication-incidents-2020-apr-vol2.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             API Authentication Incidents: 2020 Application Protection Report, Volume 2
                         </div>
@@ -1687,7 +1687,7 @@
 						<div class="image-article">
 							<div class="info-row clearfix">
 
-								<a class="category-link" href="https://www.f5.com/labs/search?q=Encryption">
+								<a class="category-link" href="../../search%EF%B9%96q=Encryption.html">
 									<div class="category">
 										<span class="badge badge-default badge-big">Encryption</span>
 									</div>
@@ -1697,7 +1697,7 @@
 								</div>
 							</div>
 							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cryptonice">
-								<a href="https://www.f5.com/labs/articles/threat-intelligence/cryptonice">
+								<a href="cryptonice.html">
 									<div class="article-title">
 										<h2 class="header-small">Introducing the Cryptonice HTTPS Scanner</h2>
 									</div>
@@ -1734,7 +1734,7 @@
 								</div>
 							</div>
 							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cybersecurity-threats-to-the-covid-19-vaccine">
-								<a href="https://www.f5.com/labs/articles/threat-intelligence/cybersecurity-threats-to-the-covid-19-vaccine">
+								<a href="cybersecurity-threats-to-the-covid-19-vaccine.html">
 									<div class="article-title">
 										<h2 class="header-small">Cybersecurity Threats to the COVID-19 Vaccine</h2>
 									</div>

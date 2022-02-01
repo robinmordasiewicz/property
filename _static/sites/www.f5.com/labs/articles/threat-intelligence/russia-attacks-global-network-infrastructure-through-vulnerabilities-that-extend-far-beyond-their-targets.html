@@ -189,7 +189,7 @@
      
         
 
-       	<div class="background-cut " style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a09/optimize/article-background-image.jpg);"></div>
+       	<div class="background-cut " style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a09/optimize/article-background-image.jpg);"></div>
         
 
 
@@ -315,13 +315,13 @@
         
        
         <section class="container-fluid c02-header-area__main-article details fill-main-container">
-            <div class="c02-header-area__heroImageBackground" style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a09/optimize/article-background-image.jpg);"></div>
+            <div class="c02-header-area__heroImageBackground" style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a09/optimize/article-background-image.jpg);"></div>
             <div class="c02-header-area__main-article-overlay"></div>
            
             <div class="row">
                 <div class="align-bottom c02-header-area__article-wrap">
                     <div class="info-row clearfix">
-                    	<a href="https://www.f5.com/labs/search?q=IoT">
+                    	<a href="../../search%EF%B9%96q=IoT.html">
 	                        <div class="category">
 	                            <span class="badge badge-secondary c02-header-area__badge">IoT</span>
 	                        </div>
@@ -352,7 +352,7 @@
                         
                     </div>
                     <div class="c02-header-area__author-name tags">
-                        By <a class="c02-header-area__author-name tag-item" href="https://www.f5.com/labs/search.author_Sara%2BBoddy">Sara Boddy</a>
+                        By <a class="c02-header-area__author-name tag-item" href="../../search.author_Sara+Boddy.html">Sara Boddy</a>
                     </div>
                     
                 </div>
@@ -411,9 +411,9 @@
 <li>Devices that are no longer supported with software upgrades or patches to remediate vulnerabilities, otherwise known as end-of-life (EOL).</li>
 </ol>
 <p>These vulnerabilities are rampant across Internet-connected systems worldwide. This is yet another example of how widespread the problem of mismanaged and vulnerable systems on the Internet really is. Telnet for example, a legacy protocol used for insecure (unencrypted) remote administration, happens to be the protocol of choice for remotely administering IoT devices. Subsequently, it is also the primary protocol exploited by attackers to build massive and destructive “thingbots,” or botnets composed of IoT devices.</p>
-<p>F5 Labs has been profiling this activity over the past two years in our <a href="https://f5.com/labs/articles/threat-intelligence/ddos/the-hunt-for-iot-the-growth-and-evolution-of-thingbots-ensures-chaos" target="_blank" rel="noreferrer">Hunt for IoT</a> research series, which leads us to question how many of the SOHO/residential routers and switches US-CERT is referring to are actually IoT devices that make up thingbots. Has the extent of Russia’s spying in this case intentionally spread into people’s homes, perhaps assisting in Russia’s targeted propaganda and election tampering efforts in the US? Or are these routers and switches simply swept up in Russia’s global Internet scans for open Telnet? It’s likely a mix of both. These devices will be discovered in Russia’s scans by virtue of Telnet being open. And even if a particular router isn’t routing the Internet traffic of a target of interest, Russia would likely maintain persistent access in case of future value, as noted by the US-CERT in its alert. Many thingbots have been created by exploiting Telnet. As we profiled in our latest IoT Hunt report, these thingbots haven’t attacked yet, so we don’t know their purpose. However, it’s not a stretch to think that one or more is owned and operated by Russian state-sponsored cyber actors and are currently just being used to spy and collect data.</p>
-<p>System hardening is another required step before deploying a system online that is far too often overlooked. We could cite many cases proving this point but let’s look at F5 Labs’ last two IoT hunt reports as evidence, simply because they include the top 50 most attacked admin credentials, most of which are vendor default credentials. This is the most direct evidence we’ve seen of the lack system hardening which <i>always</i> should include changing the vendor default credentials. <a href="https://f5.com/labs/articles/threat-intelligence/ddos/the-hunt-for-iot-the-rise-of-thingbots" target="_blank" rel="noreferrer">In the first half of 2017</a>, 96% of the top 50 most attacked admin credentials were vendor defaults. <a href="https://f5.com/labs/articles/threat-intelligence/ddos/the-hunt-for-iot-the-growth-and-evolution-of-thingbots-ensures-chaos" target="_blank" rel="noreferrer">In the second half of 2017</a>, the percentage of vendor default admin credentials in the top 50 attacked credential list did not change at all. These default admin credentials are on the top 50 most attacked list for a reason: because they work. The fact that attackers don’t have to change their methods proves this problem isn’t getting any better, and attackers continue to exploit systems with the same, easy tactics.</p>
-<p>The EOL system issue is particularly concerning as this problem, just like in the remote administration and system hardening cases, is not unique to network infrastructure, either. It is rampant across endpoints (desktops and laptops) globally, and particularly in public infrastructure, industrial industries, manufacturing, shipping, and aviation production, all of which are prime targets for cyber-warfare attacks. Russia has been testing cyber-warfare tactics on Ukraine for years now. These types of blue-collar industries are often more focused on servicing their utility or producing their products than they are on implementing the latest “tech,” refreshing workstations every three years, or keeping up to date with monthly patches. They also find themselves with equipment that requires them to use old operating systems (OS) because that’s all the manufacturer offers. This problem has reared its head a lot in the past year through ransomware attacks like <a href="https://f5.com/labs/articles/threat-intelligence/malware/from-nsa-exploit-to-widespread-ransomware-wannacry-is-on-the-loose-26847" target="_blank" rel="noreferrer">WannaCry</a> and <a href="https://f5.com/labs/articles/threat-intelligence/cyber-security/nsa-cia-leaks-provide-a-roadmap-to-stealthier-faster-more-powerful-malware-like-sambacry-and-notpetya" target="_blank" rel="noreferrer">NotPetya</a>, thanks to leaked exploits believed to have been created by the NSA (yes, every nation-state has offensive tactics) that target older Microsoft Windows operating systems, some of which are EOL. WannaCry, allegedly created by a nation-state (North Korea<a href="#_ftn2"><sup>2</sup></a><a id="_ftnref2"></a>) for offensive purposes, spread like a wildfire through EOL Windows systems. It was responsible for billions of dollars in damage when it first spread in 2017, however it’s still infecting businesses that are stuck in the position of not being able to patch because they have critical software programs or specialized equipment running on outdated, EOL operating systems. The NotPetya malware—which the CIA concluded was created by the Russian military<a href="#_ftn3"><sup>3</sup></a><a id="_ftnref3"></a> with the intent of compromising targets of interest in Ukraine—ended up spreading across the globe, infecting thousands of companies and causing billions of dollars in damage. One company alone, shipping giant A.P. Moller-Maersk, estimates their losses could be up to $300 million.<a href="#_ftn4"><sup>4</sup></a><a id="_ftnref4"></a></p>
+<p>F5 Labs has been profiling this activity over the past two years in our <a href="the-hunt-for-iot-the-growth-and-evolution-of-thingbots-ensures-chaos.html" target="_blank" rel="noreferrer">Hunt for IoT</a> research series, which leads us to question how many of the SOHO/residential routers and switches US-CERT is referring to are actually IoT devices that make up thingbots. Has the extent of Russia’s spying in this case intentionally spread into people’s homes, perhaps assisting in Russia’s targeted propaganda and election tampering efforts in the US? Or are these routers and switches simply swept up in Russia’s global Internet scans for open Telnet? It’s likely a mix of both. These devices will be discovered in Russia’s scans by virtue of Telnet being open. And even if a particular router isn’t routing the Internet traffic of a target of interest, Russia would likely maintain persistent access in case of future value, as noted by the US-CERT in its alert. Many thingbots have been created by exploiting Telnet. As we profiled in our latest IoT Hunt report, these thingbots haven’t attacked yet, so we don’t know their purpose. However, it’s not a stretch to think that one or more is owned and operated by Russian state-sponsored cyber actors and are currently just being used to spy and collect data.</p>
+<p>System hardening is another required step before deploying a system online that is far too often overlooked. We could cite many cases proving this point but let’s look at F5 Labs’ last two IoT hunt reports as evidence, simply because they include the top 50 most attacked admin credentials, most of which are vendor default credentials. This is the most direct evidence we’ve seen of the lack system hardening which <i>always</i> should include changing the vendor default credentials. <a href="the-hunt-for-iot-the-rise-of-thingbots.html" target="_blank" rel="noreferrer">In the first half of 2017</a>, 96% of the top 50 most attacked admin credentials were vendor defaults. <a href="the-hunt-for-iot-the-growth-and-evolution-of-thingbots-ensures-chaos.html" target="_blank" rel="noreferrer">In the second half of 2017</a>, the percentage of vendor default admin credentials in the top 50 attacked credential list did not change at all. These default admin credentials are on the top 50 most attacked list for a reason: because they work. The fact that attackers don’t have to change their methods proves this problem isn’t getting any better, and attackers continue to exploit systems with the same, easy tactics.</p>
+<p>The EOL system issue is particularly concerning as this problem, just like in the remote administration and system hardening cases, is not unique to network infrastructure, either. It is rampant across endpoints (desktops and laptops) globally, and particularly in public infrastructure, industrial industries, manufacturing, shipping, and aviation production, all of which are prime targets for cyber-warfare attacks. Russia has been testing cyber-warfare tactics on Ukraine for years now. These types of blue-collar industries are often more focused on servicing their utility or producing their products than they are on implementing the latest “tech,” refreshing workstations every three years, or keeping up to date with monthly patches. They also find themselves with equipment that requires them to use old operating systems (OS) because that’s all the manufacturer offers. This problem has reared its head a lot in the past year through ransomware attacks like <a href="from-nsa-exploit-to-widespread-ransomware-wannacry-is-on-the-loose-26847.html" target="_blank" rel="noreferrer">WannaCry</a> and <a href="nsa-cia-leaks-provide-a-roadmap-to-stealthier-faster-more-powerful-malware-like-sambacry-and-notpetya.html" target="_blank" rel="noreferrer">NotPetya</a>, thanks to leaked exploits believed to have been created by the NSA (yes, every nation-state has offensive tactics) that target older Microsoft Windows operating systems, some of which are EOL. WannaCry, allegedly created by a nation-state (North Korea<a href="#_ftn2"><sup>2</sup></a><a id="_ftnref2"></a>) for offensive purposes, spread like a wildfire through EOL Windows systems. It was responsible for billions of dollars in damage when it first spread in 2017, however it’s still infecting businesses that are stuck in the position of not being able to patch because they have critical software programs or specialized equipment running on outdated, EOL operating systems. The NotPetya malware—which the CIA concluded was created by the Russian military<a href="#_ftn3"><sup>3</sup></a><a id="_ftnref3"></a> with the intent of compromising targets of interest in Ukraine—ended up spreading across the globe, infecting thousands of companies and causing billions of dollars in damage. One company alone, shipping giant A.P. Moller-Maersk, estimates their losses could be up to $300 million.<a href="#_ftn4"><sup>4</sup></a><a id="_ftnref4"></a></p>
 <p>Before we get into the recommendations the US-CERT offered to combat this problem, we should remind ourselves of what’s at stake:</p>
 <ul class="loose">
 <li><b>Nation-state espionage.</b> Foreign adversaries spying on civilians, businesses, and government agencies to use for their advantage.</li>
@@ -421,7 +421,7 @@
 <li><b>Physical damage to critical infrastructure to be used in cyber-warfare.</b> Cyber-space is the new battleground, and it terminates at physical infrastructure that has the ability to cause catastrophic damage to people’s lives.</li>
 <li><b><i>Billions of dollars in damage.</i></b></li>
 </ul>
-<p>Outside of what the US-CERT warned about in its TA18-106A alert, the volume of breaches that happen on a regular basis around the world today are causing every online business to take an “assume breach” stance. So much data has been compromised that usernames and passwords <a href="https://f5.com/labs/articles/threat-intelligence/cyber-security/lessons-learned-from-a-decade-of-data-breaches" target="_blank" rel="noreferrer">should be treated as public information</a>. Valid credentials harvested from data breaches give attackers one-to-many access to applications since many people reuse usernames and passwords, which attackers then stuff into otherwise secure applications. If applications require security Q&amp;A (challenge questions) as their form of multi-factor authentication from new devices, attackers can answer them in an automated fashion, given how much personal information they’ve collected on global citizens from breaches. The point is, the same vulnerabilities, tactics, techniques, and procedures are leveraged far and wide by all categories of threat actors, and the damage caused must be looked at comprehensively because every vulnerable system on the Internet participates in exacerbating the global problem. Every breach brings us as Internet consumers closer together, but not in a good way. Now more than ever, our negligent Internet neighbors directly affect the confidentiality of our personal data and our business data, which includes customers and partners.</p>
+<p>Outside of what the US-CERT warned about in its TA18-106A alert, the volume of breaches that happen on a regular basis around the world today are causing every online business to take an “assume breach” stance. So much data has been compromised that usernames and passwords <a href="lessons-learned-from-a-decade-of-data-breaches-29035.html" target="_blank" rel="noreferrer">should be treated as public information</a>. Valid credentials harvested from data breaches give attackers one-to-many access to applications since many people reuse usernames and passwords, which attackers then stuff into otherwise secure applications. If applications require security Q&amp;A (challenge questions) as their form of multi-factor authentication from new devices, attackers can answer them in an automated fashion, given how much personal information they’ve collected on global citizens from breaches. The point is, the same vulnerabilities, tactics, techniques, and procedures are leveraged far and wide by all categories of threat actors, and the damage caused must be looked at comprehensively because every vulnerable system on the Internet participates in exacerbating the global problem. Every breach brings us as Internet consumers closer together, but not in a good way. Now more than ever, our negligent Internet neighbors directly affect the confidentiality of our personal data and our business data, which includes customers and partners.</p>
 <p>The US-CERT recommended the following four basic, 101-level security controls to address the misconfiguration errors outlined in this alert. It’s worth noting that these should apply to <i>all</i> systems touching the Internet, as has been true for decades, and for the most part, they don’t require any additional cost to implement.</p>
 <ul class="loose">
 <li>Don’t open insecure management ports to the entire Internet. If you have to use insecure protocols like Telnet, restrict access to a management network or put it behind a VPN.</li>
@@ -581,35 +581,35 @@
                                 </div>
 
                                 <div class="layer-1 active">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1-active.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1-active.png" style="max-width: 80px;"/></div>
                                     <span>Services</span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-2 active">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3-active.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3-active.png" style="max-width: 80px;"/></div>
                                     <span>Access</span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-3 ">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
                                     <span>TLS </span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-4  ">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4.png" style="max-width: 80px;"/></div>
                                     <span>DNS</span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-5 ">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
                                     <span>Network</span>
                                 </div>
                                 <div class="stack-bottom">
@@ -655,7 +655,7 @@
                             </div>
 
                             <div class="layer-1 active">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1-active.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1-active.png"/>
                                 </div>
                                 <span>Services</span>
                                 <i class="icon-bolt"></i>
@@ -663,7 +663,7 @@
                             </div>
 
                             <div class="layer-2 active">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2-active.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2-active.png"/>
                                 </div>
                                 <span>Access</span>
                                 <i class="icon-bolt"></i>
@@ -671,7 +671,7 @@
                             </div>
 
                             <div class="layer-3 ">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
                                 </div>
                                 <span>TLS </span>
                                 <i class="icon-bolt"></i>
@@ -679,7 +679,7 @@
                             </div>
 
                             <div class="layer-4  ">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4.png"/>
                                 </div>
                                 <span>DNS</span>
                                 <i class="icon-bolt"></i>
@@ -687,7 +687,7 @@
                             </div>
 
                             <div class="layer-5 ">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
                                 </div>
                                 <span>Network</span>
                                 <i class="icon-bolt"></i>
@@ -857,35 +857,35 @@
                                 </div>
 
                                 <div class="layer-1 active">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1-active.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1-active.png" style="max-width: 80px;"/></div>
                                     <span>Services</span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-2 active">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3-active.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3-active.png" style="max-width: 80px;"/></div>
                                     <span>Access</span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-3 ">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
                                     <span>TLS </span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-4  ">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4.png" style="max-width: 80px;"/></div>
                                     <span>DNS</span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-5 ">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
                                     <span>Network</span>
                                 </div>
                                 <div class="stack-bottom">
@@ -931,7 +931,7 @@
                             </div>
 
                             <div class="layer-1 active">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1-active.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1-active.png"/>
                                 </div>
                                 <span>Services</span>
                                 <i class="icon-bolt"></i>
@@ -939,7 +939,7 @@
                             </div>
 
                             <div class="layer-2 active">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2-active.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2-active.png"/>
                                 </div>
                                 <span>Access</span>
                                 <i class="icon-bolt"></i>
@@ -947,7 +947,7 @@
                             </div>
 
                             <div class="layer-3 ">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
                                 </div>
                                 <span>TLS </span>
                                 <i class="icon-bolt"></i>
@@ -955,7 +955,7 @@
                             </div>
 
                             <div class="layer-4  ">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4.png"/>
                                 </div>
                                 <span>DNS</span>
                                 <i class="icon-bolt"></i>
@@ -963,7 +963,7 @@
                             </div>
 
                             <div class="layer-5 ">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
                                 </div>
                                 <span>Network</span>
                                 <i class="icon-bolt"></i>
@@ -1001,7 +1001,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=IoT">
+                        <a href="../../search%EF%B9%96q=IoT.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">IoT</span>
                             </div>
@@ -1010,7 +1010,7 @@
                             <span class="U:align-self-center">September 15, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/the-rising-iot-threat-to-the-agriculture-industry-and-the-global-food-supply" class="a07-related-articles__link">
+                    <a href="the-rising-iot-threat-to-the-agriculture-industry-and-the-global-food-supply.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             The Rising IoT Threat to the Agriculture Industry and the Global Food Supply
                         </div>
@@ -1028,7 +1028,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=IoT">
+                        <a href="../../search%EF%B9%96q=IoT.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">IoT</span>
                             </div>
@@ -1037,7 +1037,7 @@
                             <span class="U:align-self-center">April 24, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/mirai-covid-variant-disregards-stay-at-home-orders" class="a07-related-articles__link">
+                    <a href="mirai-covid-variant-disregards-stay-at-home-orders.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Mirai “COVID” Variant Disregards Stay-at-Home Orders
                         </div>
@@ -1055,7 +1055,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=IoT">
+                        <a href="../../search%EF%B9%96q=IoT.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">IoT</span>
                             </div>
@@ -1064,7 +1064,7 @@
                             <span class="U:align-self-center">April 14, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/privacy-and-surveillance--how-generation-z-and-millennials-see-t" class="a07-related-articles__link">
+                    <a href="privacy-and-surveillance--how-generation-z-and-millennials-see-t.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Privacy and Surveillance: How Generation Z and Millennials See the Internet of Things
                         </div>
@@ -1218,7 +1218,7 @@
                     <div class="row">
                         <div class="a04-article-author-bio__content__image-wrap">
                             <div class="a04-article-author-bio__content__img-container">
-                                <img data-src="https://www.f5.com/content/dam/f5-labs-v2/_author-headshots/Sara_Boddy.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                                <img data-src="../../../content/dam/f5-labs-v2/_author-headshots/Sara_Boddy.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
                             </div>
                         </div>
                         <div class="a04-article-author-bio__content__data-wrap">
@@ -1229,7 +1229,7 @@
                             <div class="a04-article-author-bio__content__author-descr"><p>Sara Boddy is a Senior Director overseeing F5 Labs and Communities. She came to F5 from Demand Media where she was the Vice President of Information Security and Business Intelligence. Sara ran the security team at Demand Media for 6 years; prior to Demand Media, she held various roles in the information security community over 11 years at Network Computing Architects and Conjungi Networks.</p>
 </div>
                             <div>
-                                <a class="a04-article-author-bio__content__author-more-articles" href="https://www.f5.com/labs/search.author_Sara%2BBoddy">More articles from Sara Boddy</a>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="../../search.author_Sara+Boddy.html">More articles from Sara Boddy</a>
                             </div>
                         </div>
                     </div>
@@ -1255,8 +1255,8 @@
                                     Footnotes
                                 </h4>
                                 <div class="button-container">
-                                    <img alt="" class="js-bg-lozad expand-btn" data-src="https://www.f5.com/content/dam/f5-labs-v2/components/footnotes/expand-button.png"/>
-                                    <img alt="" class="js-bg-lozad close-btn" data-src="https://www.f5.com/content/dam/f5-labs-v2/components/footnotes/close-button.png"/>
+                                    <img alt="" class="js-bg-lozad expand-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/expand-button.png"/>
+                                    <img alt="" class="js-bg-lozad close-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/close-button.png"/>
                                 </div>
                             </a>
                         </div>
@@ -1307,55 +1307,55 @@
 
         <div class="a05-article-tags__tags-box">
             <strong class="a05-article-tags__strong">TAGS: </strong>
-            <a href="https://www.f5.com/labs/search?q=%22Client-side+Attacks%22" class="a05-article-tags__a">Client-side Attacks</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Client-side+Attacks%22.html" class="a05-article-tags__a">Client-side Attacks</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Brute+force+attack%22" class="a05-article-tags__a">Brute force attack</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Brute+force+attack%22.html" class="a05-article-tags__a">Brute force attack</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=Threats" class="a05-article-tags__a">Threats</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=Threats.html" class="a05-article-tags__a">Threats</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=Cybercrime" class="a05-article-tags__a">Cybercrime</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=Cybercrime.html" class="a05-article-tags__a">Cybercrime</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Credential+stuffing%22" class="a05-article-tags__a">Credential stuffing</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Credential+stuffing%22.html" class="a05-article-tags__a">Credential stuffing</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=IoT" class="a05-article-tags__a">IoT</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=IoT.html" class="a05-article-tags__a">IoT</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Credential+theft%22" class="a05-article-tags__a">Credential theft</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Credential+theft%22.html" class="a05-article-tags__a">Credential theft</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22system+hardening%22" class="a05-article-tags__a">system hardening</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22system+hardening%22.html" class="a05-article-tags__a">system hardening</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=SSH" class="a05-article-tags__a">SSH</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=SSH.html" class="a05-article-tags__a">SSH</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=Client" class="a05-article-tags__a">Client</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=Client.html" class="a05-article-tags__a">Client</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22security+awareness%22" class="a05-article-tags__a">security awareness</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22security+awareness%22.html" class="a05-article-tags__a">security awareness</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=Espionage" class="a05-article-tags__a">Espionage</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=Espionage.html" class="a05-article-tags__a">Espionage</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22US-CERT+Alert+TA18-106A%22" class="a05-article-tags__a">US-CERT Alert TA18-106A</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22US-CERT+Alert+TA18-106A%22.html" class="a05-article-tags__a">US-CERT Alert TA18-106A</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=Warfare" class="a05-article-tags__a">Warfare</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=Warfare.html" class="a05-article-tags__a">Warfare</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Access+Tier%22" class="a05-article-tags__a">Access Tier</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Access+Tier%22.html" class="a05-article-tags__a">Access Tier</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=Russia" class="a05-article-tags__a">Russia</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=Russia.html" class="a05-article-tags__a">Russia</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Services+Tier%22" class="a05-article-tags__a">Services Tier</a>
+            <a href="../../search%EF%B9%96q=%22Services+Tier%22.html" class="a05-article-tags__a">Services Tier</a>
         </div>
 
     
@@ -1380,7 +1380,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=IoT">
+                        <a href="../../search%EF%B9%96q=IoT.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">IoT</span>
                             </div>
@@ -1389,7 +1389,7 @@
                             <span class="U:align-self-center">September 15, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/the-rising-iot-threat-to-the-agriculture-industry-and-the-global-food-supply" class="a07-related-articles__link">
+                    <a href="the-rising-iot-threat-to-the-agriculture-industry-and-the-global-food-supply.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             The Rising IoT Threat to the Agriculture Industry and the Global Food Supply
                         </div>
@@ -1407,7 +1407,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=IoT">
+                        <a href="../../search%EF%B9%96q=IoT.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">IoT</span>
                             </div>
@@ -1416,7 +1416,7 @@
                             <span class="U:align-self-center">April 24, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/mirai-covid-variant-disregards-stay-at-home-orders" class="a07-related-articles__link">
+                    <a href="mirai-covid-variant-disregards-stay-at-home-orders.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Mirai “COVID” Variant Disregards Stay-at-Home Orders
                         </div>
@@ -1434,7 +1434,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=IoT">
+                        <a href="../../search%EF%B9%96q=IoT.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">IoT</span>
                             </div>
@@ -1443,7 +1443,7 @@
                             <span class="U:align-self-center">April 14, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/privacy-and-surveillance--how-generation-z-and-millennials-see-t" class="a07-related-articles__link">
+                    <a href="privacy-and-surveillance--how-generation-z-and-millennials-see-t.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Privacy and Surveillance: How Generation Z and Millennials See the Internet of Things
                         </div>
@@ -1491,7 +1491,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=IoT">
+                        <a href="../../search%EF%B9%96q=IoT.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">IoT</span>
                             </div>
@@ -1500,7 +1500,7 @@
                             <span class="U:align-self-center">September 15, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/the-rising-iot-threat-to-the-agriculture-industry-and-the-global-food-supply" class="a07-related-articles__link">
+                    <a href="the-rising-iot-threat-to-the-agriculture-industry-and-the-global-food-supply.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             The Rising IoT Threat to the Agriculture Industry and the Global Food Supply
                         </div>
@@ -1518,7 +1518,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=IoT">
+                        <a href="../../search%EF%B9%96q=IoT.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">IoT</span>
                             </div>
@@ -1527,7 +1527,7 @@
                             <span class="U:align-self-center">April 24, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/mirai-covid-variant-disregards-stay-at-home-orders" class="a07-related-articles__link">
+                    <a href="mirai-covid-variant-disregards-stay-at-home-orders.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Mirai “COVID” Variant Disregards Stay-at-Home Orders
                         </div>
@@ -1545,7 +1545,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=IoT">
+                        <a href="../../search%EF%B9%96q=IoT.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">IoT</span>
                             </div>
@@ -1554,7 +1554,7 @@
                             <span class="U:align-self-center">April 14, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/privacy-and-surveillance--how-generation-z-and-millennials-see-t" class="a07-related-articles__link">
+                    <a href="privacy-and-surveillance--how-generation-z-and-millennials-see-t.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Privacy and Surveillance: How Generation Z and Millennials See the Internet of Things
                         </div>
@@ -1683,7 +1683,7 @@
 						<div class="image-article">
 							<div class="info-row clearfix">
 
-								<a class="category-link" href="https://www.f5.com/labs/search?q=Encryption">
+								<a class="category-link" href="../../search%EF%B9%96q=Encryption.html">
 									<div class="category">
 										<span class="badge badge-default badge-big">Encryption</span>
 									</div>
@@ -1693,7 +1693,7 @@
 								</div>
 							</div>
 							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cryptonice">
-								<a href="https://www.f5.com/labs/articles/threat-intelligence/cryptonice">
+								<a href="cryptonice.html">
 									<div class="article-title">
 										<h2 class="header-small">Introducing the Cryptonice HTTPS Scanner</h2>
 									</div>
@@ -1730,7 +1730,7 @@
 								</div>
 							</div>
 							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cybersecurity-threats-to-the-covid-19-vaccine">
-								<a href="https://www.f5.com/labs/articles/threat-intelligence/cybersecurity-threats-to-the-covid-19-vaccine">
+								<a href="cybersecurity-threats-to-the-covid-19-vaccine.html">
 									<div class="article-title">
 										<h2 class="header-small">Cybersecurity Threats to the COVID-19 Vaccine</h2>
 									</div>

@@ -1,0 +1,3021 @@
+
+<!DOCTYPE HTML>
+<html lang="es-ES">
+    <head>
+    <meta charset="UTF-8"/>
+    <title>Asegure su 5G Edge</title>
+    <meta name="robots"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <meta name="description" content="Descubra cómo asegurar su red 5G comenzando por el edge computing. Proteja las API, asegure los dispositivos y aplicaciones IoT y mitigue los ataques DDoS con F5."/>
+    <meta name="template" content="article-template-02"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <script>window.F5=window.F5||{};window.F5.VisitorTracking=window.F5.VisitorTracking||{"isConfigEnabled":true,"tealiumScriptAsyncUrl":"//mktg.tags.f5.com/main/prod/utag.js","tealiumScriptSyncUrl":"//mktg.tags.f5.com/main/prod/utag.sync.js","visitorTrackingService":"tealium","isTealiumActive":true,"isLegacyActive":false,"legacyLibWarmingUrls":["https://assets.adobedtm.com","https://www.google-analytics.com","https://www.googletagmanager.com"]}</script>
+
+    <script src="../../../../../mktg.tags.f5.com/main/prod/utag.sync.js"></script>
+    
+    
+        <meta property="og:locale" content="en_US"/>
+    
+        <meta property="og:type" content="website"/>
+    
+        <meta property="og:title" content="Asegure su 5G Edge"/>
+    
+        <meta property="og:description" content="Descubra cómo asegurar su red 5G comenzando por el edge computing. Proteja las API, asegure los dispositivos y aplicaciones IoT y mitigue los ataques DDoS con F5."/>
+    
+        <meta property="og:site_name" content="F5 Networks"/>
+    
+        <meta property="og:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/favicons/touch-icon_180.png"/>
+    
+        <meta property="og:image_secure_url" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/favicons/touch-icon_180.png"/>
+    
+        <meta property="og:url" content="https://www.f5.com/c/landing/es_es/service-providers/securing-your-5g-edge"/>
+    
+    
+        <meta property="fb:app_id" content="302184056577324"/>
+    
+    
+        <meta property="twitter:card" content="summary_large_image"/>
+    
+        <meta property="twitter:title" content="Asegure su 5G Edge"/>
+    
+        <meta property="twitter:description" content="Descubra cómo asegurar su red 5G comenzando por el edge computing. Proteja las API, asegure los dispositivos y aplicaciones IoT y mitigue los ataques DDoS con F5."/>
+    
+        <meta property="twitter:site" content="@F5networks"/>
+    
+        <meta property="twitter:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/favicons/touch-icon_180.png"/>
+    
+        <meta property="twitter:creator" content="@F5networks"/>
+    
+    
+    <link rel="canonical" href="securing-your-5g-edge.html"/>
+
+
+    
+       	
+        <link href="https://assets.adobedtm.com" rel="preconnect" crossorigin/>
+       	
+        <link href="https://static.cloud.coveo.com" rel="preconnect" crossorigin/>
+       	
+        <link href="https://consent.trustarc.com" rel="preconnect" crossorigin/>
+       	
+        <link href="https://653-smc-783.mktoresp.com" rel="preconnect" crossorigin/>
+       	
+        <link href="https://f5networks.tt.omtrdc.net" rel="preconnect" crossorigin/>
+       	
+        <link href="../../../../../f5networks.sc.omtrdc.net/index" rel="preconnect" crossorigin/>
+       	
+        <link href="https://munchkin.marketo.net" rel="preconnect" crossorigin/>
+       	
+        <link href="https://www.google-analytics.com" rel="preconnect" crossorigin/>
+       	
+        <link href="https://www.googletagmanager.com" rel="preconnect" crossorigin/>
+       	
+        <link href="https://stats.g.doubleclick.net" rel="preconnect" crossorigin/>
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../content/dam/f5-labs-v2/global-configuration/favicons/touch-icon_180.png"/>
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-16x16.png"/>
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-32x32.png"/>
+    
+    <link rel="mask-icon" href="../../../../content/dam/f5-labs-v2/global-configuration/favicons/safari-pinned-tab.svg" color="#e21d38"/>
+
+    
+<link rel="preload" as="font" type="font/woff2" href="../../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Proxima-Bold.woff2" crossorigin/> 
+<link rel="preload" as="font" type="font/woff2" href="../../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Neusa.woff2" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="../../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Proxima.woff2" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="../../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Neusa-LightV2.woff2" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="../../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Neusa-Medium.woff2" crossorigin/>
+
+<link rel="preload" as="font" type="font/woff2" href="../../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Proxima-Medium.woff2" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="../../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Neusa-Bold.woff2" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="../../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Proxima-SemiBold.woff2" crossorigin/>
+
+
+
+
+     
+    
+<link rel="stylesheet" href="../../../../etc.clientlibs/f5-app-security/clientlibs/clientlib-base.f8a45b5dae215e14f8ea3e14c49de2de.css" type="text/css">
+
+
+
+     
+     
+    
+<link rel="stylesheet" href="../../../../etc.clientlibs/f5-com/clientlibs/clientlib-base.73d77c51fbcf42c93b7630cd1bd65351.css" type="text/css">
+
+
+
+
+    
+<link rel="stylesheet" href="../../../../etc.clientlibs/f5-com/clientlibs/clientlib-components.d8c6e09fec6fb9b3d9ff7d0a01cdb356.css" type="text/css">
+
+
+
+    
+    
+
+<script>
+    window.digitalData = {"page":{"pageInfo":{"pageName":"www:f5.com:appsecurity:es_es:service-providers:securing-your-5g-edge","destinationUrl":"https://www.f5.com/c/landing/es_es/service-providers/securing-your-5g-edge.html","subDomain":"www","referringUrl":"https://www.f5.com/es_es/solutions/service-provider-security","referringPageName":"www:f5.com:solutions:service-provider-security","language":"es_ES","version":""},"category":{"primaryCategory":"appsecurity","subCategory1":"es_es","subCategory2":"service-providers","subCategory3":"securing-your-5g-edge"},"contentInfo":{"articleSolution":[],"articleProduct":[]}}};
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmContentParam = urlParams.get("utm_content");
+    if (utmContentParam && window.digitalData.user != undefined && window.digitalData.user.userInfo) {
+        const utmContentParamArray = utmContentParam.split("-");
+        if (utmContentParamArray.length >= 3) {
+            window.digitalData.user.userInfo.digitalSignal = utmContentParamArray[2];
+        }
+    }
+</script>
+<script>
+    window.utag_data = {"page.pageInfo.pageName":"www:f5.com:appsecurity:es_es:service-providers:securing-your-5g-edge","page.pageInfo.destinationUrl":"https://www.f5.com/c/landing/es_es/service-providers/securing-your-5g-edge.html","page.pageInfo.subDomain":"www","page.pageInfo.referringUrl":"https://www.f5.com/es_es/solutions/service-provider-security","page.pageInfo.referringPageName":"www:f5.com:solutions:service-provider-security","page.pageInfo.language":"es_ES","page.pageInfo.version":"","page.category.primaryCategory":"appsecurity","page.category.subCategory1":"es_es","page.category.subCategory2":"service-providers","page.category.subCategory3":"securing-your-5g-edge","page.contentInfo.articleSolution":[],"page.contentInfo.articleProduct":[]};
+</script>
+
+
+    
+    <script>
+        ;(function(win, doc, style, timeout) {
+            var STYLE_ID = 'at-body-style';
+
+            function getParent() {
+                return doc.getElementsByTagName('head')[0];
+            }
+
+            function addStyle(parent, id, def) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.createElement('style');
+                style.id = id;
+                style.innerHTML = def;
+                parent.appendChild(style);
+            }
+
+            function removeStyle(parent, id) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.getElementById(id);
+
+                if (!style) {
+                    return;
+                }
+
+                parent.removeChild(style);
+            }
+
+            addStyle(getParent(), STYLE_ID, style);
+            setTimeout(function() {
+                removeStyle(getParent(), STYLE_ID);
+            }, timeout);
+        }(window, document, "body {opacity: 0 !important}", 3000));
+    </script>
+
+    <script src="../../../../../assets.adobedtm.com/launch-EN37b07f3d0fa64d53b299e28194b30e0a.min.js" async></script>
+
+
+</head>
+    <body id="articleBody" class="article-page-02 preview-mode">
+        
+    <script>
+    (function(a,b,c,d){
+        a='//mktg.tags.f5.com/main/prod/utag.js';
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+    </script>
+
+        
+       	
+
+<div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div data-component-type="structure" class="u01 aem-GridColumn aem-GridColumn--default--12" data-component-title="Mega Nav">
+
+
+
+
+
+<!-- Standard F5 Navigation Option -->
+
+    <header data-type="standard" class="u01-mega-nav">
+        <div class="u01-mega-nav__wrap">
+            <div class="u01-mega-nav__container container">
+                <div class="main-row row">
+                    <div class="main-nav__wrap outside">
+                        <div class="brand">
+                            <a class="brand-main" href="../../../../index.html" target="_self">
+                                
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88">
+        <circle r="44" cy="44" cx="44" fill="#E21D38"></circle>
+        <path stroke="null" d="M43.02 48.22c21.63 1.8 29.95 7.75 29.56 15.88-.4 4.36-4.57 8.52-9.92 8.93-6.34.4-9.33-2.2-11.1-4.97-1.6-2.57-3.38-5.16-5.17-7.94-.4-.8-1.2-.2-1.8.2-1.4 1.2-2.6 2.58-3.8 3.78-.7.78-.5 1.4-.3 1.98 1.2 2.78 2.4 5.56 3.6 8.13 1.9 1.2 10.8 2.8 17.4 2.2 4.6-.4 10.1-2.2 14.9-5.5 4.6-3.6 7.9-8.3 8.5-16.1.2-4.7-.6-9.6-4.78-14.2s-11.3-8.3-25.8-9.3c.8-2.3 1.4-4.5 2.2-6.73 8.75.4 16.5 1 23.04 1.8.6-2.5.8-4.95 1.4-7.36l-1.8-2.1c-3.36-.42-6.55-1.22-10.1-1.62-4.55-.6-9.3-1-14.46-1.2-3.4 9.57-7.4 21.64-11.6 34.3m-5.8-37.1c-1.6 0-3.76.4-7.33 1.2-7.73 2.2-17.24 7.54-18.24 16.45-.2 1.4-.2 3-.4 4.3l-6.13.6C5 35.6 5 37.2 4.8 39c2-.2 3.97-.2 6.15-.4-.4 9.36 0 18.7.8 27.37.2 1.4.2 2.6.2 3.4-.2.82-1.6 1.22-3.57 1.22l2.6 3.1c7.56 1.4 17.1 2.4 27.18 2.6v-3c-5.97-.4-8.7-1.2-9.1-2.4-.4-1-.4-2.4-.6-3.8-.4-9.1-.6-19.1-.4-29.2 3.43 0 6.75 0 10.17-.2 1.8-.8 3.4-1.6 5-2.4v-3.4c-5.17 0-10.13.2-15.1.2l.6-11.9c.2-2.6 1.98-4.4 3.57-4.4 2.77-.2 5.33.98 7.92 2.17 1.4.6 2.8 1.4 4.18 2 .6.2 1.4.4 2-.23.8-.97 1.6-1.97 2.38-2.76.4-.6.2-1 0-1.2l-5.38-4c-1-.8-2.8-.8-4.4-.8-.6-.2-1.2 0-1.8 0" fill="#FFF"></path>
+        <text x="80" y="85" font-size="14" font-face="sans-serif" fill="#E21D38">®</text>
+    </svg>
+
+                            </a>
+                        </div>
+                        <ul class="main-nav list-unstyled">
+                            
+                            <li>
+                                <a href="../../../../solutions.html" target="_self" class="main-nav__lvl-1-link text-uppercase  " data-mega-panel="solutions">
+                                    <span>Solutions &amp; Products</span>
+                                </a>
+                            </li>
+                        
+                            
+                            <li>
+                                <a href="../../../../partners.html" target="_self" class="main-nav__lvl-1-link text-uppercase  " data-mega-panel="partners">
+                                    <span>Partners</span>
+                                </a>
+                            </li>
+                        
+                            
+                            <li>
+                                <a href="../../../../services/resources.html" target="_self" class="main-nav__lvl-1-link text-uppercase  " data-mega-panel="services">
+                                    <span>Resources</span>
+                                </a>
+                            </li>
+                        
+                            
+                            <li>
+                                <a href="../../../../services/support.html" target="_self" class="main-nav__lvl-1-link text-uppercase  " data-mega-panel="customers">
+                                    <span>Support</span>
+                                </a>
+                            </li>
+                        
+                            
+                            <li>
+                                <a href="../../../../company.html" target="_self" class="main-nav__lvl-1-link text-uppercase  " data-mega-panel="company">
+                                    <span>Company</span>
+                                </a>
+                            </li>
+                        
+                            
+                            <li>
+                                <a href="../../../../products/get-f5.html" target="_self" class="main-nav__lvl-1-link text-uppercase  " data-mega-panel="community">
+                                    <span>Get F5</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="utility-nav list-unstyled">
+                            <li class="utility-nav__item language-select language-select--desktop">
+                                
+                                
+                                    
+                                        <a class="utility-nav__link language-select__link text-uppercase" href="#">
+                                            EN
+                                        </a>
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+
+                                    <ul class="language-select__list list-unstyled" hidden>
+                                        
+                                        <li>
+                                            <a href="#" class="language-select__list-link">EN</a>
+                                        </li>
+                                    
+                                        
+                                        <li>
+                                            <a href="../../../../de_de.html" class="language-select__list-link">DE</a>
+                                        </li>
+                                    
+                                        
+                                        <li>
+                                            <a href="../../../../es_es.html" class="language-select__list-link">ES</a>
+                                        </li>
+                                    
+                                        
+                                        <li>
+                                            <a href="../../../../fr_fr.html" class="language-select__list-link">FR</a>
+                                        </li>
+                                    
+                                        
+                                        <li>
+                                            <a href="https://www.f5.com/zh_cn" class="language-select__list-link">中文</a>
+                                        </li>
+                                    
+                                        
+                                        <li>
+                                            <a href="../../../../ja_jp.html" class="language-select__list-link">日本語</a>
+                                        </li>
+                                    </ul>
+                                
+                            </li>
+                            <li class="utility-nav__item hamburger__item">
+                                <button class="hamburger hamburger--boring utility-nav__link hamburger__link">
+                                    <span hidden>Mobile Nav Open</span>
+                                    <div class="hamburger-box">
+                                        <div class="hamburger-inner"></div>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="utility-nav__item">
+                                <a href="#" class="utility-nav__link search-link">
+                                    <img src="../../../../etc.clientlibs/base/clientlibs/base-resources/resources/icons/UI/global-search-close.svg" class="utility-nav__link close-search" alt="Cerrar la búsqueda"/>
+                                    
+    <svg viewbox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="#e30f37" fill="none" d="M7 13a6 6 0 1 0-5-7 6 6 0 0 0 5 7z"/>
+        <path stroke="#e30f37" stroke-linecap="round" d="M12 12l5 5"/>
+    </svg>
+
+                                    <span hidden>Search</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="meta-row piped pull-right list-unstyled">
+                    
+                    <li class="meta-row__item">
+                        <a class="meta-row__link" href="https://devcentral.f5.com" rel="noreferrer">DevCentral</a>
+                    </li>
+                
+                    
+                    <li class="meta-row__item">
+                        <a class="meta-row__link" href="https://support.f5.com" rel="noreferrer">Support</a>
+                    </li>
+                
+                    
+                    <li class="meta-row__item">
+                        <a class="meta-row__link" href="https://partnercentral.f5.com" rel="noreferrer">Partners</a>
+                    </li>
+                
+                    
+                    <li class="meta-row__item">
+                        <a class="meta-row__link" href="../../../../myf5.html">MyF5</a>
+                    </li>
+                
+                    
+                    <li class="meta-row__item">
+                        <a class="meta-row__link" href="../../../../products/get-f5%EF%B9%96ls=meta.html#contactsales">Contact F5</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mega-nav">
+            <ul class="lvl-1-group list-unstyled">
+                
+                <li class="lvl-1-item" data-mega-item="solutions">
+                    <div class="mega-nav__link-wrap">
+                        <a href="../../../../solutions.html" target="_self" class="lvl-1 mega-nav__link ">
+                            <span>Solutions &amp; Products</span>
+                        </a>
+                        
+                    </div>
+                    
+    <div class="mega-panel container" data-mobile-hidden="true">
+        <div class="mega-panel__row">
+            <div class="mega-panel__nav-col-container">
+                <div class="mega-panel__nav-col-wrap">
+                    
+                
+                    
+                
+                    
+                </div>
+            </div>
+            
+    
+    
+
+        </div>
+    </div>
+
+                </li>
+            
+                
+                <li class="lvl-1-item" data-mega-item="partners">
+                    <div class="mega-nav__link-wrap">
+                        <a href="../../../../partners.html" target="_self" class="lvl-1 mega-nav__link ">
+                            <span>Partners</span>
+                        </a>
+                        
+                    </div>
+                    
+    <div class="mega-panel container" data-mobile-hidden="true">
+        <div class="mega-panel__row">
+            <div class="mega-panel__nav-col-container">
+                <div class="mega-panel__nav-col-wrap">
+                    
+                
+                    
+                
+                    
+                </div>
+            </div>
+            
+    
+    
+
+        </div>
+    </div>
+
+                </li>
+            
+                
+                <li class="lvl-1-item" data-mega-item="services">
+                    <div class="mega-nav__link-wrap">
+                        <a href="../../../../services/resources.html" target="_self" class="lvl-1 mega-nav__link ">
+                            <span>Resources</span>
+                        </a>
+                        
+                    </div>
+                    
+    <div class="mega-panel container" data-mobile-hidden="true">
+        <div class="mega-panel__row">
+            <div class="mega-panel__nav-col-container">
+                <div class="mega-panel__nav-col-wrap">
+                    
+                
+                    
+                
+                    
+                </div>
+            </div>
+            
+    
+    
+
+        </div>
+    </div>
+
+                </li>
+            
+                
+                <li class="lvl-1-item" data-mega-item="customers">
+                    <div class="mega-nav__link-wrap">
+                        <a href="../../../../services/support.html" target="_self" class="lvl-1 mega-nav__link ">
+                            <span>Support</span>
+                        </a>
+                        
+                    </div>
+                    
+    <div class="mega-panel container" data-mobile-hidden="true">
+        <div class="mega-panel__row">
+            <div class="mega-panel__nav-col-container">
+                <div class="mega-panel__nav-col-wrap">
+                    
+                
+                    
+                </div>
+            </div>
+            
+    
+    
+
+        </div>
+    </div>
+
+                </li>
+            
+                
+                <li class="lvl-1-item" data-mega-item="company">
+                    <div class="mega-nav__link-wrap">
+                        <a href="../../../../company.html" target="_self" class="lvl-1 mega-nav__link ">
+                            <span>Company</span>
+                        </a>
+                        
+                    </div>
+                    
+    <div class="mega-panel container" data-mobile-hidden="true">
+        <div class="mega-panel__row">
+            <div class="mega-panel__nav-col-container">
+                <div class="mega-panel__nav-col-wrap">
+                    
+                
+                    
+                
+                    
+                </div>
+            </div>
+            
+    
+    
+
+        </div>
+    </div>
+
+                </li>
+            
+                
+                <li class="lvl-1-item" data-mega-item="community">
+                    <div class="mega-nav__link-wrap">
+                        <a href="../../../../products/get-f5.html" target="_self" class="lvl-1 mega-nav__link ">
+                            <span>Get F5</span>
+                        </a>
+                        
+                    </div>
+                    
+    <div class="mega-panel container" data-mobile-hidden="true">
+        <div class="mega-panel__row">
+            <div class="mega-panel__nav-col-container">
+                <div class="mega-panel__nav-col-wrap">
+                    
+                
+                    
+                </div>
+            </div>
+            
+    
+    
+
+        </div>
+    </div>
+
+                </li>
+            </ul>
+            <ul class="meta-row-mobile list-unstyled">
+                
+                <li class="meta-row-mobile__item">
+                    <a class="meta-row-mobile__link" href="https://devcentral.f5.com" rel="noreferrer">DevCentral</a>
+                </li>
+            
+                
+                <li class="meta-row-mobile__item">
+                    <a class="meta-row-mobile__link" href="https://support.f5.com" rel="noreferrer">Support</a>
+                </li>
+            
+                
+                <li class="meta-row-mobile__item">
+                    <a class="meta-row-mobile__link" href="https://partnercentral.f5.com" rel="noreferrer">Partners</a>
+                </li>
+            
+                
+                <li class="meta-row-mobile__item">
+                    <a class="meta-row-mobile__link" href="../../../../myf5.html">MyF5</a>
+                </li>
+            
+                
+                <li class="meta-row-mobile__item">
+                    <a class="meta-row-mobile__link" href="../../../../products/get-f5%EF%B9%96ls=meta.html#contactsales">Contact F5</a>
+                </li>
+            </ul>
+            <div class="language-select-mobile">
+                
+                
+                    <a href="#" class="language-select-mobile__link">
+                        
+                            EN
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    </a>
+                    <ul class="language-select-mobile__list list-unstyled" hidden>
+                        
+                        <li>
+                            <a href="#" class="language-select-mobile__list-link">EN</a>
+                        </li>
+                    
+                        
+                        <li>
+                            <a href="../../../../de_de.html" class="language-select-mobile__list-link">DE</a>
+                        </li>
+                    
+                        
+                        <li>
+                            <a href="../../../../es_es.html" class="language-select-mobile__list-link">ES</a>
+                        </li>
+                    
+                        
+                        <li>
+                            <a href="../../../../fr_fr.html" class="language-select-mobile__list-link">FR</a>
+                        </li>
+                    
+                        
+                        <li>
+                            <a href="https://www.f5.com/zh_cn" class="language-select-mobile__list-link">中文</a>
+                        </li>
+                    
+                        
+                        <li>
+                            <a href="../../../../ja_jp.html" class="language-select-mobile__list-link">日本語</a>
+                        </li>
+                    </ul>
+                
+            </div>
+        </div>
+        <div class="tablet-close-target"></div>
+    </header>
+
+<!-- Agility Navigation Option -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div data-component-type="platter" class="c20 aem-GridColumn aem-GridColumn--default--12" data-component-title="Page Header">
+
+
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="c20__grid" id="platter-1523433008">
+    
+    <div class="bg-default c20__background c20__background-true bg-dark" data-bg-sizes="xs|sm|md|lg|xl|hd|fhd" data-bg-src-xs="/content/dam/f5-app-security/en/2020/article/Securing_your_5G_hero_xs.jpg" data-bg-src-sm="/content/dam/f5-app-security/en/2020/article/Securing_your_5G_hero_sm.jpg" data-bg-src-md="/content/dam/f5-app-security/en/2020/article/Securing_your_5G_hero_md.jpg" data-bg-src-lg="/content/dam/f5-app-security/en/2020/article/Securing_your_5G_hero_lg.jpg" data-bg-src-xl="/content/dam/f5-app-security/en/2020/article/Securing_your_5G_hero_xl.jpg" data-bg-src-hd="/content/dam/f5-app-security/en/2020/article/Securing_your_5G_hero_hd.jpg" data-bg-src-fhd="/content/dam/f5-app-security/en/2020/article/Securing_your_5G_hero_hd.jpg">
+    </div>
+    <div class="c20__content">
+        <div class="c20__text-wrap">
+            <div class="eyebrow text-inverse">
+                PROVEEDORES DE SERVICIOS | SEGURIDAD 5G
+            </div>
+            <h1 class="display-1 c20__headline text-inverse">
+                Asegure su 5G Edge
+            </h1>
+        </div>
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+<div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp220554984" class="js-bg-lozad c01-columns__wrap bg-col  " style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--1">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="c02-floating aem-GridColumn aem-GridColumn--default--12">
+
+<div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div data-component-type="article" class="a03-social-sharing aem-GridColumn aem-GridColumn--default--12">
+    
+    
+
+        
+
+        
+        <div class="addthis_share a03-social-sharing__links">
+            <span class="addthis_share_button twitter addthis_sharing_toolbox" data-service="twitter" data-url="https://www.f5.com/c/landing/es_es/service-providers/securing-your-5g-edge.html" data-description="Descubra cómo asegurar su red 5G comenzando por el edge computing. Proteja las API, asegure los dispositivos y aplicaciones IoT y mitigue los ataques DDoS con F5." data-title="Asegure su 5G Edge">
+                <span class="social-bulb xs-mr-15 twitter"></span>
+            </span>
+            <span class="addthis_share_button linkedin addthis_sharing_toolbox" data-service="linkedin" data-url="https://www.f5.com/c/landing/es_es/service-providers/securing-your-5g-edge.html" data-title="Asegure su 5G Edge" data-description="Descubra cómo asegurar su red 5G comenzando por el edge computing. Proteja las API, asegure los dispositivos y aplicaciones IoT y mitigue los ataques DDoS con F5." data-media="none">
+                <span class="social-bulb xs-mr-15 linkedin"></span>
+            </span>
+            <span class="addthis_share_button facebook addthis_button_facebook addthis_sharing_toolbox" data-service="facebook" data-url="https://www.f5.com/c/landing/es_es/service-providers/securing-your-5g-edge.html" data-description="Descubra cómo asegurar su red 5G comenzando por el edge computing. Proteja las API, asegure los dispositivos y aplicaciones IoT y mitigue los ataques DDoS con F5." data-title="Asegure su 5G Edge" data-media="none">
+                <span class="social-bulb xs-mr-15 facebook"></span>
+            </span>
+            <a class="mail" target="_blank" href="mailto:?subject=Asegure%20su%205G%20Edge&amp;body=Checkout%20this%20great%20article%20I%20read%20on%20F5%20App%20Security%20https://www.f5.com/c/landing/es_es/service-providers/securing-your-5g-edge" rel="noreferrer">
+                <span class="social-bulb xs-mr-15 mail"></span>
+            </a>
+        </div>
+    
+
+    
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="a02-download-button aem-GridColumn aem-GridColumn--default--12">
+
+
+    
+        
+        
+    
+
+    
+</div>
+
+    
+</div>
+</div>
+
+    
+</div>
+</div>
+           </div>
+
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--11">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp564552618" class="js-bg-lozad c01-columns__wrap bg-col  " style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--9">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="a03-executive-summary aem-GridColumn aem-GridColumn--default--12">
+    
+    
+        
+        <div class="a03-executive-summary__article-summary ">        		
+            <div class="a03-executive-summary__summary-content">
+                <h3 class="a03-executive-summary__title">Executive Summary</h3>
+                <div class="a03-executive-summary__summary"><p>A medida que los proveedores de servicios se pasan a 5G, necesitan asegurar todos los aspectos de su red. Descubra los enfoques que necesita para asegurar su red 5G, comenzando por el edge computing. Proteja las API, asegure los dispositivos y aplicaciones IoT y mitigue los ataques DDoS con F5.<b></b></p>
+</div>
+            </div>
+        </div>
+    
+   
+    
+</div>
+<div class="c07-related-content-mobile aem-GridColumn aem-GridColumn--default--12">
+ 
+
+ 
+<div class="a09-related-article__content hide-on-embed auto ">
+	<div class="only-single-related">RELATED CONTENT</div>
+	<div class="a09-related-article__img-wrap">
+		<div class="img-placeholder"></div>
+		<img class="js-bg-lozad" data-src="../../../../content/dam/f5-com/page-assets-en/home-en/solutions/service-providers/5g-hype-becomes-reality.jpg" alt="&lt;p>Vía rápida a la era 5G Edge&lt;/p>
+"/>
+		<div class="a09-related-article__ico js-bg-lozad" data-background-image="/etc/images/f5-app-security/f5logo.png"></div>
+	</div>
+	<div class="a09-related-article__article-data">
+		
+		<a class="a09-related-article__title add-mark link-cta" href="../../../../es_es/solutions/service-providers/fast-track-to-the-5g-edge-ebook.html"><p>Vía rápida a la era 5G Edge</p>
+</a>
+		<div class="a09-related-article__desc only-single-related"><p>Descubra las mejores prácticas para implementar microservicios nativos de la nube y basados en contenedores en una arquitectura basada en servicios.</p>
+</div>
+		<div class="a09-related-article__mobile-button">
+			<a class="btn btn-blue btn-medium">Read the article</a>
+		</div>
+		
+		<a class="a09-related-article__cta link-cta" target="_self" href="../../../../es_es/solutions/service-providers/fast-track-to-the-5g-edge-ebook.html">Leer el eBook (en Ingles)</a>
+		
+	</div>
+</div>
+
+
+ </div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p><span class="display-2">La importancia del edge computing para los proveedores de servicios</span></p>
+<p>El edge computing es una capacidad imprescindible para los proveedores de servicios porque facilita nuevos modelos de negocio que pueden aumentar la rentabilidad. El edge computing es un paradigma de computación distribuida diseñada para reducir el ancho de banda y mejorar los tiempos de respuesta, lo que permite a los operadores implementar servicios administrados más cerca de los clientes empresariales. También permite cumplir rigurosos requisitos de rendimiento para una gama completa de casos de uso pensados para 5G, como las comunicaciones ultra fiables y de baja latencia para servicios de misiones críticas, la automatización industrial y las aplicaciones vehicle-to-everything (V2X). Las redes soportarán implementaciones generalizadas de dispositivos de la internet de las cosas (IoT) para casos de uso de ancho de banda bajo, lo que se conoce como comunicaciones masivas tipo máquina (mMTC). También tendrán la capacidad y el ancho de banda necesarios para prestar servicios de banda ancha móvil mejorada (eMBB) que satisfagan la demanda de los consumidores de aplicaciones de alto rendimiento, como juegos, realidad aumentada y realidad virtual. Con la explosión de datos que proporciona el 5G, es más importante que nunca asegurar todos los aspectos de la red, empezando por el borde.<br />
+<br />
+<span class="display-2">Seguridad en el borde de 5G</span><br />
+</p>
+<p>El mejor momento para asegurar la infraestructura es al comienzo de la implementación, sobre todo con el 5G SA: la red funciona principalmente con software y una arquitectura que permite a los proveedores distribuir funciones básicas virtualizadas, porciones de la red y servicios de terceros a cientos e incluso miles de ubicaciones del borde. Las transmisiones y aplicaciones de la red deben ser seguras en todos los puntos si los operadores quieren ganarse la confianza de los clientes en sus servicios y aumentar sus ingresos. Para organizar bien la seguridad 5G, los proveedores de servicios deben incorporar la seguridad en el ADN de sus redes 5G.</p>
+<h3><p style="color: rgb(243,112,75);line-height: 32.0px;">Un estudio de 2020 sobre operadores de todo el mundo realizado por Analysys Mason demostró que la gran mayoría de los proveedores (el 80 %) consideran que la seguridad es el factor más importante para las nubes periféricas.</p>
+</h3>
+<p>Los proveedores de servicios son muy conscientes de esta necesidad. Un estudio de 2020 sobre operadores de todo el mundo realizado por Analysys Mason demostró que la gran mayoría de los proveedores (el 80 %) consideran que la seguridad es el factor más importante para las nubes periféricas. La preocupación radica en la arquitectura distribuida, la movilidad de las aplicaciones, las cargas de trabajo sensibles e intensivas en datos y la vulnerabilidad de los dispositivos IoT.<sup>[1]</sup></p>
+<p>Este artículo examina la seguridad del 5G SA, con especial énfasis en la seguridad de la red y la capa de aplicaciones para implementaciones de la computación perimetral de acceso múltiple (MEC). Aborda los desafíos para la protección de la API, la seguridad de IoT, la mitigación de la denegación de distribución de servicios (DDoS) y los firewalls centrados en las aplicaciones, proporcionando enfoques que pueden emplearse para minimizar cada uno de estos riesgos.<br />
+</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--3">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="a09-related-article aem-GridColumn aem-GridColumn--default--12">
+
+ 
+<div class="a09-related-article__content hide-on-embed auto ">
+	<div class="only-single-related">RELATED CONTENT</div>
+	<div class="a09-related-article__img-wrap">
+		<div class="img-placeholder"></div>
+		<img class="js-bg-lozad" data-src="../../../../content/dam/f5-com/page-assets-en/home-en/solutions/service-providers/5g-hype-becomes-reality.jpg" alt="&lt;p>Vía rápida a la era 5G Edge&lt;/p>
+"/>
+		<div class="a09-related-article__ico js-bg-lozad" data-background-image="/etc/images/f5-app-security/f5logo.png"></div>
+	</div>
+	<div class="a09-related-article__article-data">
+		
+		<a class="a09-related-article__title add-mark link-cta" href="../../../../es_es/solutions/service-providers/fast-track-to-the-5g-edge-ebook.html"><p>Vía rápida a la era 5G Edge</p>
+</a>
+		<div class="a09-related-article__desc only-single-related"><p>Descubra las mejores prácticas para implementar microservicios nativos de la nube y basados en contenedores en una arquitectura basada en servicios.</p>
+</div>
+		<div class="a09-related-article__mobile-button">
+			<a class="btn btn-blue btn-medium">Read the article</a>
+		</div>
+		
+		<a class="a09-related-article__cta link-cta" target="_self" href="../../../../es_es/solutions/service-providers/fast-track-to-the-5g-edge-ebook.html">Leer el eBook (en Ingles)</a>
+		
+	</div>
+</div>
+
+
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp2043543634" class="js-bg-lozad c01-columns__wrap bg-col false bg-info" style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--12">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp-268931037" class="js-bg-lozad c01-columns__wrap bg-col false bg-default" style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--1">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--11">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line one-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+<div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp-2082234159" class="js-bg-lozad c01-columns__wrap bg-col false bg-default" style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--12">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <h2>Resumen rápido de la seguridad en las redes 5G</h2>
+
+</div>
+
+    
+
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line one-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+<div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp-251824960" class="js-bg-lozad c01-columns__wrap bg-col false bg-default" style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        <div class="row c01-columns__row two-tablet two-mobile">
+            <div class="c01-columns__col col c01-columns__col--3">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p style="text-align: left;"><img src="../../../../content/dam/f5-com/global-assets/icons/api.png" height="80"/></p>
+
+</div>
+
+    
+
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line two-rem-margin show-line-true">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #333333;"></div>
+</div></div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p class="display-3">Protección de las API</p>
+<p class="U:nudge-top-xs">Un requisito indispensable para los ecosistemas 5G basados en aplicaciones</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--3">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p style="text-align: left;"><img src="../../../../content/dam/f5-com/global-assets/icons/lock-with-controls.png" height="80"/></p>
+
+</div>
+
+    
+
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line two-rem-margin show-line-true">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #333333;"></div>
+</div></div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p class="display-3">Seguridad IoT</p>
+<p class="U:nudge-top-xs">Situado estratégicamente en la red de acceso 5G</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--3">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p style="text-align: left;"><img src="../../../../content/dam/f5-com/global-assets/icons/scale-out-square_38313D.svg" height="80"/></p>
+
+</div>
+
+    
+
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line two-rem-margin show-line-true">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #333333;"></div>
+</div></div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p class="display-3">Mitigación DDoS</p>
+<p class="U:nudge-top-xs">Impedir ataques de manera rápida, eficiente y a escala</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--3">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p style="text-align: left;"><img src="../../../../content/dam/f5-com/global-assets/icons/firewall-with-shield-and-checkmark-square_38313D.svg" height="80"/></p>
+
+</div>
+
+    
+
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line two-rem-margin show-line-true">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #333333;"></div>
+</div></div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p class="display-3">Firewall centrados en aplicaciones</p>
+<p class="U:nudge-top-xs">Diseñado para redes 5G centradas en aplicaciones</p>
+<p> </p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line no-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+<div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp-1069353639" class="js-bg-lozad c01-columns__wrap bg-col false bg-default" style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--1">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--11">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line two-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+<div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp1377398363" class="js-bg-lozad c01-columns__wrap bg-col false bg-default" style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--9">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div data-component-type="Platter" class="c04 aem-GridColumn aem-GridColumn--default--12" data-component-title="Featured Articles">
+
+
+
+                              
+
+
+
+
+
+<div id="Platter1000941415" class="container">
+    <div class="row c04--2">
+        
+        <div class="c04__column">
+            <div><div data-component-type="Molecule" class="m10" data-component-title="Featured Article">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="Molecule-444637095" class="m10__wrap m10__embedded-article-btn">
+    <a class="m10__bgImage-wrap cq-dd-image js-bg-lozad  " data-bg-sizes="xs" data-bg-src-xs="/content/dam/f5-app-security/en/2020/article/5G_cna_rf-IMAGE1.jpg" href="https://www.f5.com/c/landing/es_es/service-providers/5G-Technology-Transformation-Explained">
+        
+    </a>
+    
+    <div class="m10__content-wrap U:margin-top-md">
+        <div class="eyebrow ">ARTÍCULO</div>
+        <h2 class="display-4  m10__headline ">
+            <a class=" m10__headline--link " href="https://www.f5.com/c/landing/es_es/service-providers/5G-Technology-Transformation-Explained">Explicación de la transformación de la tecnología 5G</a>
+            
+        </h2>
+        <div class="U:margin-top-md m10__text ">
+            <p>Información sobre la seguridad, visibilidad y control que necesita para proteger su red 5G y habilitar las aplicaciones adaptativas clave para el futuro del 5G. <br /></p>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+        </div>
+<div class="c04__column">
+            <div><div data-component-type="Molecule" class="m10" data-component-title="Featured Article">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="Molecule-444637094" class="m10__wrap m10__embedded-article-btn">
+    <a class="m10__bgImage-wrap cq-dd-image js-bg-lozad  " data-bg-sizes="xs" data-bg-src-xs="/content/dam/f5-app-security/en/2020/article/5G_cna_rf_IMAGE2.jpg" href="https://www.f5.com/c/landing/es_es/service-providers/Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization">
+        
+    </a>
+    
+    <div class="m10__content-wrap U:margin-top-md">
+        <div class="eyebrow ">EBOOK</div>
+        <h2 class="display-4  m10__headline ">
+            <a class=" m10__headline--link " href="https://www.f5.com/c/landing/es_es/service-providers/Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization">Vía rápida a la era 5G Edge</a>
+            
+        </h2>
+        <div class="U:margin-top-md m10__text ">
+            <p>Descubra las mejores prácticas para implementar microservicios nativos de la nube y basados en contenedores en una arquitectura basada en servicios.<br /></p>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+        </div>
+
+    </div>
+</div>
+</div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p><span class="display-2">Protección API: un requisito indispensable en ecosistemas 5G basados en AP</span></p>
+<p>A medida que los proveedores de servicios han ido desagregando el hardware del software en las redes, han empezado a usar más API y adoptar microservicios para aumentar la modularidad y eficiencia en sus redes. La tendencia sigue al alza con el 5G nativo de la red, que utiliza una arquitectura basada en servicios construida sobre microservicios en contenedores que están interconectados con las API. Los proveedores de servicios también utilizarán las API para dar a sus socios y clientes acceso a los servicios y aplicaciones en el entorno MEC. Esto facilita la integración de soluciones de terceros y la proliferación de aplicaciones empresariales, y desempeña un papel fundamental en las comunicaciones masivas tipo máquina, un caso de uso clave en 5G.</p>
+<p>Dado que los proveedores de servicios dependen de las API para integrar a los servicios y a las empresas, deben asumir que dichas API tienen el potencial de introducir vectores de amenaza adicionales en una red y tomar precauciones para que estos componentes de software tengan la máxima seguridad. De hecho, F5 ha descubierto que la falta de autenticación o la autorización inadecuada pueden dejar a las API indefensas ante los ataques<sup>.[2] </sup>Antes de permitir una API en la red debe analizarse, autenticarse y asegurarse, y luego debe gestionarse durante su ciclo de vida para garantizar su seguridad.<br /> <br /> <span class="display-2">Las puertas de enlace de las API vigilan la puerta de entrada a su MEC</span><br /></p>
+<p>Las puertas de enlace se han convertido rápidamente en imprescindibles para gestionar un conjunto diverso de API y su tráfico. Son especialmente adecuadas para gestionar el tráfico que entra en la red desde conexiones externas. Pueden jugar un papel importante en la seguridad de los servicios 5G. Como se dijo en el 5G Future Forum, la puerta de enlace de la API ayuda a impedir «usos accidentales o deliberados de solicitudes dirigidas a la infraestructura y los servicios». <sup>[3]</sup></p>
+<p>Muchas puertas de enlace de API ofrecen funciones integradas de autenticación y autorización, y esto puede limitar el impacto de una intrusión en el caso de que el punto final de una API pública se vea comprometido. La puerta de enlace de la API debe garantizar estas precauciones sin degradar su funcionalidad al dirigir el tráfico para que el servicio 5G mantenga la baja latencia y otros parámetros exigentes. También debe incluir una programación liviana para gestionar el tráfico de la API para microservicios, que dejan un rastro pequeño en la red.</p>
+<p>La solución F5 API Gateway, disponible como parte de <a href="https://www.nginx.com/products/nginx" target="_blank" rel="noreferrer">NGINX Plus</a>, es nativa de la nube y simplifica la seguridad de las arquitecturas de microservicios. Cumple los requisitos recomendados para la autenticación y autorización integradas y es ideal para entornos MEC 5G. La solución también incluye un portal y documentación para los desarrolladores.</p>
+
+</div>
+
+    
+
+</div>
+<div class="a05-pull-quote aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+<div class="a05-pull-quote__wrapper js-bg-lozad force-horizontal-display auto all dark-grey-bg" data-bg-skip-lazy="false">
+		<div class="a05-pull-quote__img-wrap">
+		<img class="img-front js-bg-lozad" data-src="../../../../content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_a.jpg" data-img-sizes="xs|sm|md|lg|xl|hd|fhd" data-bg-skip-lazy="false" data-img-src-xs="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-TABLET_a.jpg" data-img-src-sm="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-TABLET_a.jpg" data-img-src-md="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-TABLET_a.jpg" data-img-src-lg="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-TABLET_a.jpg" data-img-src-xl="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_a.jpg" data-img-src-hd="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_a.jpg" data-img-src-fhd="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_a.jpg"/>
+		<img class="img-placeholder js-bg-lozad" data-src="../../../../content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_a.jpg" data-img-sizes="xs|sm|md|lg|xl|hd|fhd" data-bg-skip-lazy="false" data-img-src-xs="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-TABLET_a.jpg" data-img-src-sm="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-TABLET_a.jpg" data-img-src-md="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-TABLET_a.jpg" data-img-src-lg="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-TABLET_a.jpg" data-img-src-xl="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_a.jpg" data-img-src-hd="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_a.jpg" data-img-src-fhd="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_a.jpg"/>
+	</div>
+	
+	
+	<div class="a05-pull-quote__pullquote-content auto-height" style="height: px">
+		
+			<div class="a05-pull-quote__pullquote-content-wrapper">
+				<div class="a05-pull-quote__text  ">
+					<span class="quote-first">&#8220;</span> <h2><span style="font-size: 80.0%;">La solución F5 API Gateway, disponible como parte de NGINX Plus, es nativa de la nube y simplifica la seguridad de las arquitecturas de microservicios.<p> </p></span></h2>
+
+				</div>
+
+				
+			</div>
+		
+	</div>
+</div>
+
+
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line one-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p><span class="display-2">Seguridad de IOT: situado estratégicamente en la red de acceso 5G</span></p>
+<p>A los seres humanos se les ha considerado el «eslabón más débil» en la seguridad de una red, pero ahora también son motivo de preocupación los dispositivos IoT que se extienden por el ecosistema. La mera cantidad de dispositivos conectados, la variedad de casos de uso y las limitaciones de los dispositivos, aumentan la escala y el alcance de posibles vulnerabilidades. Esta situación no tiene precedentes y crea un entorno de red atractivo para las redes de robots de IoT. Al diseñar las arquitecturas de servicios de IoT, los proveedores de servicios deben incluir la seguridad como parte del diseño.</p>
+<p>Por ejemplo, la GSMA (organización de operadores móviles) prevé que el número de dispositivos IoT conectados a la red alcanzará casi los 25 000 millones en todo el mundo en 2025, en comparación con los 12 000 millones de 2019<sup>[4]. </sup>Muchos de los casos de uso de IoT que se esperan con 5G exigirán una seguridad especializada. Esto incluye dispositivos utilizados para comunicaciones esenciales con vehículos autónomos, dispositivos médicos conectados y telemedicina, así como ecosistemas enteros que tendrán una infraestructura «inteligente», como edificios, instalaciones de fabricación, hogares inteligentes y redes inteligentes.</p>
+<h3><p style="color: rgb(243,112,75);line-height: 32.0px;">La mera cantidad de dispositivos conectados, la variedad de casos de uso y las limitaciones de los dispositivos, aumentan la escala y el alcance de posibles vulnerabilidades.</p>
+</h3>
+<p>Los dispositivos de IoT, por sí mismos, no pueden hacer mucho para mitigar los riesgos. En particular, los dispositivos diseñados para IoT con factor de forma pequeño tienen una potencia de cálculo insuficiente para dedicarla a la seguridad. Y aunque los dispositivos puedan incluir elementos de seguridad, la inconsistencia en la entrega de actualizaciones de seguridad por parte de los fabricantes puede socavarlos. Este problema puede alargarse mucho, ya que se espera que numerosos dispositivos IoT permanezcan en el mercado durante muchos años.</p>
+<p>Los proveedores de servicios deben ocuparse de la seguridad de la IoT en todos sus sistemas, pero con las arquitecturas 5G y MEC, tienen una necesidad adicional y estratégica de incorporar la protección en el punto crítico en el que los datos de IoT entran en el borde de la red. Una solución práctica y sólida debería permitir a los proveedores ofrecer servicios de seguridad para la IoT sin necesidad de alojarlos en sus centros de datos o gestionarlo directamente. La solución debe estar diseñada para mitigar las amenazas a la red y a los dispositivos y el abuso del servicio. Debe tener en cuenta al abonado y ofrecer protección contra dispositivos IoT no manejados por el hombre.</p>
+
+</div>
+
+    
+
+</div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p><span class="display-2">Puertas de enlace de IoT que entienden la IoT y los protocolos de seguridad</span></p>
+<p>Las puertas de enlace de IoT, implementadas en la red de acceso, permiten a los dispositivos conectados utilizar la red y las aplicaciones. Dado que las comunicaciones desde los dispositivos se canalizan a través de estas ubicaciones, las puertas de enlace consolidan una variedad de servicios necesarios para el éxito de las iniciativas de IoT, incluida la seguridad.</p>
+<p>El F5 IoT Gateway, por ejemplo, está diseñado para entender los numerosos protocolos usados en IoT, así como los protocolos de seguridad. La puerta de enlace puede comprender los mensajes y temas de enrutamiento de la IoT para garantizar la validez de los datos antes de transmitirlos, lo que proporciona un punto estratégico de control para la aplicación de la seguridad. <a href="https://www.f5.com/es_es/company/blog/the-gateways-to-innovation-are-in-the-network" target="_self">El F5 IoT Gateway protege contra la explotación mediante la detección de anomalías y malos comportamientos</a>. El proceso no solo garantiza la seguridad, <a href="https://devcentral.f5.com/s/articles/gating-the-iot-24385" target="_blank" rel="noreferrer">sino que evita el desperdicio de recursos valiosos</a> de la red en conexiones ilegítimas o maliciosas.<br />
+<br />
+</p>
+<p><span class="display-2">Firewall de IoT que tienen en cuenta a los abonados y se pueden compartir y escalar</span></p>
+<p>Un firewall de IoT es un firewall en el plano del usuario que se implementa cerca del núcleo. Tiene capacidades superiores a los firewall de red tradicionales, ya que está diseñado específicamente para el dominio IoT y puede facilitar políticas basadas en los dispositivos y centradas en las aplicaciones que eviten amenazas desde el dispositivo IoT que, de lo contrario, afectarían a la integridad y disponibilidad de la red del proveedor de servicios.</p>
+<p>Por ejemplo, un firewall de IoT garantiza que los dispositivos se conecten solo a lugares «seguros» de la red y no a servicios desconocidos. Estas precauciones minimizan las posibilidades de que los dispositivos se vean comprometidos por un malware o explotados de forma remota por comunicaciones maliciosas. Esta capacidad también impide el uso de dispositivos IoT para servicios no deseados que reduzcan los ingresos del proveedor de servicios o del propietario de la aplicación.</p>
+<p>El <a href="../../../../pdf/solution-center/f5-network-security-for-iot.pdf" target="_self">F5 IoT Firewall</a> se ocupa de estos asuntos para los proveedores de servicios y sus socios. Como se muestra en la figura 1, el firewall es tanto escalable como granular, lo que ofrece seguridad en la IoT de forma rentable en el entorno del borde. Por ejemplo, el firewall puede compartirse entre diferentes clientes de IoT y dar servicio fácilmente a miles de clientes teniendo en cuenta a los abonados, lo que permite a cada uno de ellos aplicar sus propias políticas de seguridad. Puede dar cabida al tráfico de millones de dispositivos. La solución simplifica considerablemente la implementación y reduce los costes operativos para los proveedores de servicios y sus clientes, lo que les da confianza en su capacidad para prestar servicios de alta calidad de forma continua ante nuevas amenazas.</p>
+
+</div>
+
+    
+
+</div>
+<div class="a02-image aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class="imgfluidleft a02-image__image auto">
+	<!-- link  -->
+    
+    
+    <!-- no link, no lightbox -->
+    
+        
+        <!-- no link, lightbox -->
+    <a data-lightbox="Image preview" href="../../../../content/dam/f5-app-security/en/2020/article/Chart1.png">
+        <img class="js-bg-lozad" data-img-sizes="xs|sm|false|false|xl|hd|fhd" data-bg-skip-lazy="false" data-img-src-xs="/content/dam/f5-app-security/en/2020/article/Chart1.png" data-img-src-sm="/content/dam/f5-app-security/en/2020/article/Chart1.png" data-img-src-xl="/content/dam/f5-app-security/en/2020/article/Chart1.png" data-img-src-hd="/content/dam/f5-app-security/en/2020/article/Chart1.png" data-img-src-fhd="/content/dam/f5-app-security/en/2020/article/Chart1.png"/>
+    </a>
+           
+       
+</figure>
+</div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p><b>Figura 1: </b>el plano de datos del firewall de IoT sirve para aplicar la política de seguridad implementada por el cliente, dejando que pase el tráfico explícitamente permitido y bloqueando el resto. El cliente 3 está enviando tráfico desde un dispositivo infectado. Las líneas verdes representan el tráfico que puede pasar y la roja muestra el que se bloquea.</p>
+
+</div>
+
+    
+
+</div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p><span class="display-2">Mitigación de DDoS: prevención de ataques de manera rápida, eficiente y a escala</span></p>
+<p>Los ataques DDoS a las redes de proveedores de servicios están aumentando en tamaño, frecuencia e importancia. Según un estudio de F5, el 77 % de los ataques gestionados por su equipo de respuesta a incidentes de seguridad en 2019 tenía relación con la DDoS. Además, el riesgo es cada vez mayor, con un aumento del 52 % en 2019 de los ataques DDoS notificados sobre la infraestructura de servicios expuestos al público.<sup>[5]</sup></p>
+<p>Los ataques DDoS tienen serias implicaciones porque roban ancho de banda y comprometen las conexiones de los usuarios legítimos. Van siendo cada vez más complejos, sofisticados y adaptables a medida que las redes de robots encuentran formas de explotar las capacidades de la red para realizar ataques de mayor envergadura. En respuesta, los proveedores de servicios están utilizando soluciones proactivas como el F5 Advanced Web Application Firewall (Advanced WAF) para detectar y detener estas amenazas en constante evolución.</p>
+<p>Los proveedores de servicios que implementan 5G en las arquitecturas distribuidas nativas de la nube están cada vez más preocupados por una nueva generación de ataques DDoS a gran escala que amenaza sus redes. En particular, la distribución de recursos informáticos en los bordes y en los bordes más alejados de la red abre más oportunidades para que la DDoS y otras amenazas entren en los sistemas 5G. Los recursos de los bordes también atraerán mayores amenazas desde los miles de millones de conexiones de la red, y las potentes conexiones 5G, utilizadas para casos de uso de gran ancho de banda o de latencia ultra baja, ayudarán a acelerar los ataques.</p>
+
+</div>
+
+    
+
+</div>
+<div class="a05-pull-quote aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+<div class="a05-pull-quote__wrapper js-bg-lozad force-horizontal-display auto all dark-grey-bg" data-bg-skip-lazy="false">
+		<div class="a05-pull-quote__img-wrap">
+		<img class="img-front js-bg-lozad" data-src="../../../../content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_b.jpg" data-img-sizes="xs|sm|md|lg|xl|hd|fhd" data-bg-skip-lazy="false" data-img-src-xs="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_b.jpg" data-img-src-sm="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_b.jpg" data-img-src-md="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-TABLET_b.jpg" data-img-src-lg="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-TABLET_b.jpg" data-img-src-xl="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_b.jpg" data-img-src-hd="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_b.jpg" data-img-src-fhd="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_b.jpg"/>
+		<img class="img-placeholder js-bg-lozad" data-src="../../../../content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_b.jpg" data-img-sizes="xs|sm|md|lg|xl|hd|fhd" data-bg-skip-lazy="false" data-img-src-xs="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_b.jpg" data-img-src-sm="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_b.jpg" data-img-src-md="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-TABLET_b.jpg" data-img-src-lg="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-TABLET_b.jpg" data-img-src-xl="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_b.jpg" data-img-src-hd="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_b.jpg" data-img-src-fhd="/content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_b.jpg"/>
+	</div>
+	
+	
+	<div class="a05-pull-quote__pullquote-content auto-height" style="height: px">
+		
+			<div class="a05-pull-quote__pullquote-content-wrapper">
+				<div class="a05-pull-quote__text  ">
+					<span class="quote-first">&#8220;</span> <h2><span style="font-size: 80.0%;">El 77 % de los ataques gestionados por el equipo de respuesta a incidentes de seguridad de F5 en 2019 tenía relación con la DDoS.<p> </p></span></h2>
+
+				</div>
+
+				
+			</div>
+		
+	</div>
+</div>
+
+
+</div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p>La industria ha notado las implicaciones de seguridad para la arquitectura de núcleo distribuido 5G. Según 5G Americas, las vulnerabilidades de la arquitectura incluirán «interfaces de baja latencia (N6 de nueva generación) expuestas a internet y susceptibles de amenazas DDoS y DoS desde internet».<sup>[6]</sup></p>
+<p>Los proveedores de servicios que implementan la protección DDoS en este entorno deben buscar soluciones eficientes y de alto rendimiento diseñadas para este punto de la red. La solución debe ser aplicable a entornos nativos de nubes construidos en servidores comerciales listos para usar, y detectar y proteger automáticamente la red de ataques DDoS de gran envergadura. Debería proporcionar el rendimiento necesario para que los proveedores de servicios puedan ofrecer conexiones de latencia ultra baja y cumplir los acuerdos de nivel de servicio (SLA) sin necesidad de un hardware personalizado. La solución debe ser proactiva en lugar de reactiva, de modo que pueda proteger la capacidad del servidor para otros fines, proporcionar escalabilidad y eficiencia a la CPU para reducir los costes operativos y garantizar que los proveedores de servicios y sus clientes no pierden ingresos por culpa de las interrupciones.</p>
+<p><a href="../../../../es_es/solutions/application-security/ddos-protection.html" target="_self">F5 DDoS protection</a>, suministrado a través del Intel SmartNIC, cumple estos requisitos y algunos más. F5 es la primera empresa que utiliza el software DDoS virtual con tecnología SmartNIC, y la solución es ideal para el entorno MEC. El dispositivo SmartNIC se implementa en un nodo y se integra con <a href="../../../../es_es/products/big-ip-services/virtual-editions.html" target="_self">F5 BIG-IP Virtual Edition</a>.</p>
+<p>La solución ha sido probada en el mercado de las redes de proveedores de servicios. De hecho, muchos la han utilizado en el fronthaul en arquitecturas O-RAN, donde se implementa en unidades distribuidas (DU). Funciona detectando los ataques DDoS y descargando el tráfico afectado a un centro de depuración para mantener el nodo seguro y proteger el tráfico rutinario. Como precaución añadida, utiliza la ocultación de la topología para enmascarar la estructura interna de las funciones nativas de la nube (CNF) dentro de un clúster de Kubernetes. Si se implementa en nodos del borde de la red, se pueden extender estas protecciones y sus ventajas a esas ubicaciones.</p>
+<p>F5 y sus clientes han descubierto que la solución proporciona capacidades de mitigación de DDoS incomparables en entornos de nube, que son las que los proveedores de servicios necesitan a medida que crean sus arquitecturas 5G. La solución puede soportar ataques DDoS de una magnitud 300 veces mayor que las versiones que solo usan software, reduciendo a la vez el coste total de propiedad en un 47 %.<sup>[7]</sup></p>
+
+</div>
+
+    
+
+</div>
+<div class="a02-image aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class="imgfluidleft a02-image__image auto">
+	<!-- link  -->
+    
+    
+    <!-- no link, no lightbox -->
+    
+        
+        <!-- no link, lightbox -->
+    <a data-lightbox="Image preview" href="../../../../content/dam/f5-app-security/en/2020/article/Chart2.png">
+        <img class="js-bg-lozad" data-img-sizes="xs|sm|false|false|xl|hd|fhd" data-bg-skip-lazy="false" data-img-src-xs="/content/dam/f5-app-security/en/2020/article/Chart2.png" data-img-src-sm="/content/dam/f5-app-security/en/2020/article/Chart2.png" data-img-src-xl="/content/dam/f5-app-security/en/2020/article/Chart2.png" data-img-src-hd="/content/dam/f5-app-security/en/2020/article/Chart2.png" data-img-src-fhd="/content/dam/f5-app-security/en/2020/article/Chart2.png"/>
+    </a>
+           
+       
+</figure>
+</div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p><b>Figura 2: </b>F5 DDoS protection, suministrado a través de Intel SmartNIC, puede implementarse como parte de una función de ingreso para impedir que los ataques roben ancho de banda a los usuarios legítimos. La solución evita que el tráfico malo llegue a la red central, reduciendo los costes de transmisión de datos de borde a núcleo. Y como se integra con BIG-IP AFM, puede añadir otras funciones de red virtualizada (VNF), como la traducción de direcciones de red de grado de operador (CGNAT) o DNS.</p>
+
+</div>
+
+    
+
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line  show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid ;"></div>
+</div></div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p><span class="display-2">Firewall centrados en aplicaciones: diseñados para redes 5G centradas en aplicaciones</span></p>
+<p>La red 5G está centrada en las aplicaciones. Su arquitectura basada en servicios y nativa de la nube, se ejecuta en aplicaciones. Los proveedores de servicios implementan servicios centrales virtualizados, porciones de red y otras funciones clave en contenedores de software basados en Kubernetes, y la arquitectura distribuida de la red les da la flexibilidad necesaria para trasladar muchas de estas aplicaciones internas al MEC. Las aplicaciones para empresas y consumidores también pueden funcionar en el entorno MEC.</p>
+<p>La arquitectura requiere una seguridad centrada en las aplicaciones, ya que las aplicaciones comprometidas pueden causar tiempo de inactividad del servicio, poner en peligro datos confidenciales y permitir transacciones fraudulentas. Los proveedores de servicios pueden utilizar firewall para mitigar estos riesgos. Se recomiendan dos enfoques: los firewall que aseguren el acceso a las aplicaciones y los que aseguren las propias aplicaciones.<br />
+<br />
+</p>
+<p><span class="display-2">Uso de firewall para asegurar el acceso a las aplicaciones en el MEC</span></p>
+<p>Los proveedores de servicios pueden utilizar firewall para proteger el acceso a las aplicaciones basadas en contenedores que se implementan en el MEC. Este enfoque puede proteger las funciones y aplicaciones de la red central implementada por los proveedores de servicios en el MEC, así como las aplicaciones empresariales y de consumo alojadas en él. Al proteger el acceso a las aplicaciones, el firewall mitiga los ataques antes de que degraden o saturen los servicios. El firewall debe tener la escalabilidad, la flexibilidad, las capacidades de rendimiento y el control necesarios para detener los ataques más agresivos.</p>
+<p><a href="../../../../es_es/products/security/advanced-firewall-manager.html" target="_self">F5 BIG-IP Advanced Firewall Manager</a> (BIG-IP AFM) está diseñado para proveedores de servicios y protege las aplicaciones basadas en contenedores, independientemente de su plataforma o ubicación en la red, con capacidades avanzadas de protección que superan las de los firewalls tradicionales. Funciona situando un firewall alrededor de la propia aplicación. Ofrece una protección DDoS de alto rendimiento con una arquitectura de proxy integral que permite inspeccionar y detectar ataques DDoS, lo cual es inusual en los firewalls. Armoniza las políticas de los firewalls con las aplicaciones que debe proteger, aumentando así la eficacia de las políticas. Además, intercepta e inspecciona todas las conexiones entrantes y garantiza la seguridad de una conexión antes de que llegue a su aplicación objetivo, lo que aumenta la precisión en la detección de amenazas.</p>
+<h3><p style="color: rgb(243,112,75);line-height: 32.0px;">F5 BIG-IP Advanced Firewall Manager (BIG-IP AFM) está diseñado para proveedores de servicios y protege las aplicaciones basadas en contenedores, independientemente de su plataforma o ubicación en la red.</p>
+</h3>
+<p>Los proveedores de servicios pueden utilizar BIG-IP AFM para mitigar la inundación de la red, las amenazas de DNS o DDoS y otros ataques, mientras permiten que el tráfico legítimo fluya sin comprometer el rendimiento de la aplicación. Además de su papel protector, BIG-IP AFM agiliza las operaciones de seguridad. Puede implementarse como dispositivo, función de red virtualizada (VNF) o contenedor en Kubernetes, lo que facilita su integración, y se escala fácilmente para satisfacer cualquier nivel de demanda de tráfico. Tiene una interfaz de usuario eficiente que ayuda a automatizar la implementación, a aplicar políticas de seguridad, a supervisar y a desaprovisionar. Su panel de control ofrece una amplia visibilidad del estado de la seguridad de las aplicaciones para su comprensión y análisis.</p>
+
+</div>
+
+    
+
+</div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p><span class="display-2">Uso de firewall para la seguridad de la capa de aplicaciones en el borde</span></p>
+<p>A menudo, el objetivo de los ataques son las aplicaciones. Ese tipo de ataques pueden ser difíciles de detectar y prevenir porque las organizaciones pueden dejar involuntariamente las aplicaciones desprotegidas, porque los robots pueden eludir las protecciones estándar y porque los ataques pueden ser especialmente sofisticados si están coordinados por grupos organizados de delincuentes o estados.</p>
+<p>Los proveedores de servicios 5G deben tener en cuenta estos riesgos críticos cuando implementan aplicaciones en contenedores en el MEC y tomar precauciones adicionales para que los datos procesados en el borde sean seguros y no puedan robarse. También hay que proteger las aplicaciones empresariales y los servicios públicos de la nube implementados en el MEC.</p>
+<p><a href="../../../../es_es/products/security/advanced-waf.html" target="_self">F5 Advanced Web Application Firewall</a> (Advanced WAF) proporciona controles en la capa de aplicación para proteger las comunicaciones a través de aplicaciones basadas en web, así como los servidores. La solución puede utilizarse para asegurar las aplicaciones web, los microservicios, los contenedores y las API. Proporciona un cifrado en la capa de aplicación para evitar los ataques web que roban credenciales y obtienen acceso no autorizado a las cuentas de los usuarios. Realiza un «web scraping», protege las aplicaciones contra robots maliciosos, detecta y mitiga la DDoS y separa el tráfico malicioso del legítimo. Es muy programable e inteligente, por lo que puede adaptar dinámicamente las políticas y detener los ataques de forma proactiva.</p>
+<p>Advanced WAF proporciona muchas ventajas en las operaciones de seguridad. Por ejemplo, las capacidades incorporadas de inteligencia y auditoría facilitan la comprensión y el mantenimiento de las principales normas de seguridad y mandatos regulatorios. La solución realiza pruebas de seguridad dinámicas y aplica automáticamente parches virtuales para identificar y resolver rápidamente las vulnerabilidades. Su panel de control interactivo, con muchas funciones, es apto para ser usado por expertos y generalistas y proporciona una visibilidad directa de los ataques. Con esta información, los proveedores de servicios pueden tomar decisiones de seguridad con confianza para mantener sus aplicaciones seguras.<br />
+<br />
+</p>
+<p><span class="display-2">Asegurar su borde</span></p>
+<p>F5 ofrece conocimientos y soluciones vitales para ayudan a los proveedores de servicios a hacer frente a estos retos estratégicos. La vasta trayectoria de la empresa en redes empresariales, redes de proveedores de servicios y 4G, ayuda a los operadores a implementar con seguridad sus nuevas plataformas y a ejecutar servicios 5G, como cargas de trabajo empresariales, en la nube. Con las soluciones sólidas e integrales que necesitan, los proveedores de servicios pueden garantizar la seguridad de sus implementaciones actuales y futuras en el borde.</p>
+
+</div>
+
+    
+
+</div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p><sup>[1]</sup> Analysys Mason, «<a href="https://www.analysysmason.com/research/content/white-papers/edge-computing-strategies-rma16/" target="_blank" rel="noreferrer">Edge Computing: Operator Strategies, Use Cases, and Implementation»</a>, por Gorkem Yigit, junio de 2020, pág. 11.</p>
+<p><sup>[2] </sup>F5, «<a href="../../../../labs/articles/threat-intelligence/2020-apr-vol1-apis-architecture.html" target="_blank">2020 Application Protection Report, Volume 1: APIs, Architecture, and Making Sense of the</a> Moment», por Sander Vinberg et al., 30 de julio de 2020.</p>
+<p><sup>[3] </sup>FG Future Forum, «<a href="../../../../../www.verizon.com/about/sites/default/files/Abstract-MEC-Exposure-and-Experience-Management-08252020.pdf" target="_blank" rel="noreferrer">Multi-access Edge Computing Exposure and Experience Management Abstract».</a></p>
+<p><sup>[4]</sup> GSMA, <a href="../../../../../www.gsma.com/mobileeconomy/wp-content/uploads/2020/03/GSMA_MobileEconomy2020_Global.pdf" target="_blank" rel="noreferrer">«The Mobile Economy 2020»,</a> pág. 3</p>
+<p><sup>[5]</sup> F5, «<a href="../../../../labs/articles/threat-intelligence/top-attacks-against-service-providers-2017-2019.html" target="_blank">Top Attacks Against Service Providers 2017-2019</a>», 6 de febrero de 2020.</p>
+<p><sup>[6] </sup>FG Americas, <a href="../../../../../www.5gamericas.org/wp-content/uploads/2019/07/5G_Americas_5G_Security_White_Paper_Final.pdf" target="_blank" rel="noreferrer">«The Evolution of Security in 5G»,</a> octubre de 2018, págs. 25-28.</p>
+<p><sup>[7]</sup> F5, <a href="../../../../es_es/company/blog/mitigate-ddos-attacks-cloud-big-ip-ve-smartnics.html" target="_self">«Mitigate DDoS Attacks up to 300x greater in Magnitude in Cloud Environments: Introducing BIG-IP VE for SmartNICs»,</a> por Tom Atkins, 24 de junio de 2020.</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--3">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+            </div>
+        </div>
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line  show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid ;"></div>
+</div></div>
+<div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp-2026974784" class="js-bg-lozad c01-columns__wrap bg-col  " style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--1">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--11">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line two-rem-margin show-line-true">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #333333;"></div>
+</div></div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <h2>MÁS INFORMACIÓN<br /></h2>
+
+</div>
+
+    
+
+</div>
+<div data-component-type="Platter" class="c04 aem-GridColumn aem-GridColumn--default--12" data-component-title="Featured Articles">
+
+
+
+                              
+
+
+
+
+
+<div id="Platter226107691" class="container">
+    <div class="row c04--2">
+        
+        <div class="c04__column">
+            <div><div data-component-type="Molecule" class="m10" data-component-title="Featured Article">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="Molecule-354950891" class="m10__wrap m10__embedded-article-btn">
+    <a class="m10__bgImage-wrap cq-dd-image js-bg-lozad  " data-bg-sizes="xs" data-bg-src-xs="/content/dam/f5-app-security/en/2020/article/rf-city_lights_1.jpg" href="../../../../es_es/company/events/webinars/how-5g-success-starts-with-your-cloud-native-infrastructure.html">
+        
+    </a>
+    
+    <div class="m10__content-wrap U:margin-top-md">
+        <div class="eyebrow ">SEMINARIO WEB</div>
+        <h2 class="display-4  m10__headline ">
+            <a class=" m10__headline--link " href="../../../../es_es/company/events/webinars/how-5g-success-starts-with-your-cloud-native-infrastructure.html">El éxito en el 5G comienza con su infraestructura nativa de la nube</a>
+            
+        </h2>
+        <div class="U:margin-top-md m10__text ">
+            <p>Descubra cómo dos vanguardistas soluciones de F5 pueden ayudarle a implementar y gestionar con eficacia su infraestructura 5G nativa de la nube.<br /> <br /></p>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+        </div>
+<div class="c04__column">
+            <div><div data-component-type="Molecule" class="m10" data-component-title="Featured Article">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="Molecule-354950890" class="m10__wrap m10__embedded-article-btn">
+    <a class="m10__bgImage-wrap cq-dd-image js-bg-lozad  " data-bg-sizes="xs" data-bg-src-xs="/content/dam/f5-app-security/en/2020/article/rf_imagecollage_2.jpg" href="https://www.f5.com/c/landing/es_es/service-providers/Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization">
+        
+    </a>
+    
+    <div class="m10__content-wrap U:margin-top-md">
+        <div class="eyebrow ">ARTÍCULO</div>
+        <h2 class="display-4  m10__headline ">
+            <a class=" m10__headline--link " href="https://www.f5.com/c/landing/es_es/service-providers/Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization">Mejora de la calidad de experiencia y reducción del coste total de propiedad con la optimización N6 LAN</a>
+            
+        </h2>
+        <div class="U:margin-top-md m10__text ">
+            <p>Descubra cómo la consolidación de N6 LAN puede ayudarle a mejorar la calidad de la experiencia y a reducir el coste total de propiedad al migrar a 5G.<br /> <br /></p>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+        </div>
+
+    </div>
+</div>
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line  show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid ;"></div>
+</div></div>
+<div data-component-type="Platter" class="c04 aem-GridColumn aem-GridColumn--default--12" data-component-title="Featured Articles">
+
+
+
+                              
+
+
+
+
+
+<div id="Platter1845168983" class="container">
+    <div class="row c04--2">
+        
+        <div class="c04__column">
+            <div><div data-component-type="Molecule" class="m10" data-component-title="Featured Article">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="Molecule1936618089" class="m10__wrap m10__embedded-article-btn">
+    <a class="m10__bgImage-wrap cq-dd-image js-bg-lozad  " data-bg-sizes="xs" data-bg-src-xs="/content/dam/f5-app-security/en/2020/article/rf_numbers_people_3.jpg" href="https://www.f5.com/es_es/solutions/service-providers/nfv-ebook-optimize-your-network-with-best-of-suite-nfv-solutions">
+        
+    </a>
+    
+    <div class="m10__content-wrap U:margin-top-md">
+        <div class="eyebrow ">EBOOK</div>
+        <h2 class="display-4  m10__headline ">
+            <a class=" m10__headline--link " href="https://www.f5.com/es_es/solutions/service-providers/nfv-ebook-optimize-your-network-with-best-of-suite-nfv-solutions">Optimice su red con las mejores soluciones de NFV</a>
+            
+        </h2>
+        <div class="U:margin-top-md m10__text ">
+            <p>Descubra cómo las soluciones adecuadas de virtualización de funciones de red (NFV) pueden permitirle ampliar sus redes móviles con el crecimiento y adaptarse a la demanda durante la transición a 5G.</p>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+        </div>
+<div class="c04__column">
+            <div><div data-component-type="Molecule" class="m10" data-component-title="Featured Article">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="Molecule1936618090" class="m10__wrap m10__embedded-article-btn">
+    <a class="m10__bgImage-wrap cq-dd-image js-bg-lozad  " data-bg-sizes="xs" data-bg-src-xs="/content/dam/f5-com/global-assets/resources-featurettes/blogs/blog-abstract-particles-multi-colors_950x534.jpg" href="../../../../es_es/company/blog/how-cloud-based-infrastructure-enables-5g-innovation.html">
+        
+    </a>
+    
+    <div class="m10__content-wrap U:margin-top-md">
+        <div class="eyebrow ">BLOG</div>
+        <h2 class="display-4  m10__headline ">
+            <a class=" m10__headline--link " href="../../../../es_es/company/blog/how-cloud-based-infrastructure-enables-5g-innovation.html">Cómo la infraestructura basada en la nube permite la innovación 5G</a>
+            
+        </h2>
+        <div class="U:margin-top-md m10__text ">
+            <p>Descubra cómo puede alcanzar el éxito en 5G con una arquitectura basada en servicios y nativa de la nube.</p>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+        </div>
+
+    </div>
+</div>
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line two-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+<div data-component-type="Structure" class="u02 aem-GridColumn aem-GridColumn--default--12" data-component-title="Footer">
+
+
+
+
+
+
+
+<footer class="u02__container U:gapper-top">
+    <div class="container">
+        <div class="row">
+            <div class="u02__text-wrap u02__text-wrap--border">
+                <h4 class="display-3 u02__headline">SECURE AND DELIVER EXTRAORDINARY DIGITAL EXPERIENCES</h4>
+                <p class="u02__text">F5’s portfolio of automation, security, performance, and insight capabilities empowers our customers to create, secure, and operate adaptive applications that reduce costs, improve operations, and better protect users.</p>
+            </div>
+        </div>
+        <div class="row">
+            <hr class="u02__text-border"/>
+        </div>
+        <div class="row">
+            <div class="u02__contact-overall">
+                <div class="u02__contact-wrap">
+                    <h4 class="display-4 text-uppercase u02__contact">
+                        HAVE A QUESTION?</h4>
+
+                    <p class="u02__contact">
+                        <a>   <a href="../../../../company/contact.html">Support and Sales ›</a></a>
+                    </p>
+
+                </div>
+                <div class="u02__contact-wrap">
+                    <h4 class="display-4 text-uppercase u02__contact">
+                        Follow Us</h4>
+
+                    <div class="u02__contact">
+                        <ul class="u02__social-links">
+                            <li><a href="https://twitter.com/f5networks" target="_blank" rel="noreferrer">
+                                <svg class="svg-icon svg-n-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <path class="svg-fill" d="M95 23.3s-3.5 5.4-9.2 9C87 57.3 67.8 85 33.3 85 16 85 5 77 5 77s13.6 2.7 27.3-7.2C18.3 69 15 57.5 15 57.5s3.8 1 8.4-.3c-15.6-3.7-15-17.6-15-17.6s4 2.2 8.5 2.2C2.6 31.4 11 18 11 18s12.7 17.2 38 18.7C45.8 17.3 69 8.4 81 20.5c6.2-1 12-4.3 12-4.3s-2 6.6-8.3 9.8c5-.3 10.5-2.7 10.5-2.7z">
+                                    </path>
+                                </svg>
+                                Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/companies/f5-networks" target="_blank" rel="noreferrer">
+                                <svg class="svg-icon svg-n-linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.99 22.131">
+                                    <defs>
+                                        <style>.link-cls-1 {
+                                                fill: none
+                                            }
+
+                                        </style>
+                                        <clipPath id="link-clip-path">
+                                            <path id="Path_131" data-name="Path 131" class="link-cls-1" d="M1403.535-522.583h-18.741a1.605 1.605 0 0 0-1.624 1.583v18.96a1.605 1.605 0 0 0 1.624 1.585h18.741a1.606 1.606 0 0 0 1.625-1.585V-521a1.606 1.606 0 0 0-1.625-1.583zm-13.7 18.526h-3.321v-9.993h3.321zm-1.661-11.358h-.022a1.719 1.719 0 0 1-1.835-1.726 1.733 1.733 0 0 1 1.879-1.726 1.726 1.726 0 0 1 1.857 1.726 1.733 1.733 0 0 1-1.878 1.725zm13.637 11.358h-3.322v-5.343c0-1.343-.48-2.259-1.682-2.259a1.819 1.819 0 0 0-1.7 1.215 2.28 2.28 0 0 0-.109.81v5.581h-3.321s.043-9.056 0-9.993H1395v1.414a3.3 3.3 0 0 1 2.993-1.65c2.185 0 3.824 1.429 3.824 4.5v5.731z" transform="translate(-1383.17 522.583)"/>
+                                        </clipPath>
+                                        <clipPath id="link-clip-path-2">
+                                            <path id="Path_130" data-name="Path 130" class="link-cls-1" d="M0-117.436h1619.358V-750H0z" transform="translate(0 750)"/>
+                                        </clipPath>
+                                    </defs>
+                                    <g id="Icon_LinkedIn" clip-path="url(#link-clip-path)">
+                                        <g id="Group_241" data-name="Group 241" transform="translate(-1166.587 -191.807)" clip-path="url(#link-clip-path-2)">
+                                            <path id="Path_129" data-name="Path 129" d="M1378.17-497.019h30.43v-30.564h-30.43z" transform="translate(-215.8 715.174)" fill="#fff"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                                LinkedIn</a></li>
+                            <li><a href="https://www.facebook.com/f5networksinc" target="_blank" rel="noreferrer">
+                                <svg class="svg-icon svg-n-facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 100">
+                                    <path class="svg-fill" d="M45,95H27.3V53.9H12.5v-16h14.8V26.1c0-6.7,2.1-12,6.3-15.8C37.5,6.8,42.7,5,49.3,5c3.7,0,8.1,0.2,13.2,0.6v14.3h-9.3 c-5.5,0-8.3,2.3-8.3,7v11h16.9l-2.2,16H45V95z">
+                                    </path>
+                                </svg>
+                                Facebook</a></li>
+                            <li><a href="https://www.youtube.com/f5networksinc" target="_blank" rel="noreferrer">
+                                <svg class="svg-icon svg-n-youtube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.516 23" height="23px">
+                                    <path class="svg-fill" data-name="Union 1" d="M4.299 22.998a4.3 4.3 0 0 1-4.3-4.3v-3.45a4.3 4.3 0 0 1 4.3-4.3h14.919a4.3 4.3 0 0 1 4.3 4.3v3.45a4.3 4.3 0 0 1-4.3 4.3zm12.5-8.075a1.682 1.682 0 0 0-.506 1.261v2.674a1.9 1.9 0 0 0 .461 1.35 1.643 1.643 0 0 0 1.258.489 1.773 1.773 0 0 0 1.335-.461 1.912 1.912 0 0 0 .447-1.379v-.305h-1.229v.271a1.289 1.289 0 0 1-.117.679.493.493 0 0 1-.412.153.447.447 0 0 1-.406-.181 1.3 1.3 0 0 1-.116-.651v-1.125h2.275v-1.514a1.785 1.785 0 0 0-.438-1.3 1.669 1.669 0 0 0-1.255-.449 1.793 1.793 0 0 0-1.297.488zM7.95 19.558a1.284 1.284 0 0 0 .21.8.743.743 0 0 0 .622.268 1.432 1.432 0 0 0 .691-.19 2.692 2.692 0 0 0 .688-.55v.651h1.186v-5.954h-1.186v4.515a1.614 1.614 0 0 1-.372.32.667.667 0 0 1-.331.124.294.294 0 0 1-.244-.092.524.524 0 0 1-.072-.305v-4.562H7.95zm6.006.924a1.408 1.408 0 0 0 .622.13.994.994 0 0 0 .809-.337 1.5 1.5 0 0 0 .28-.97v-3.307a1.777 1.777 0 0 0-.3-1.111 1.034 1.034 0 0 0-.864-.38 1.159 1.159 0 0 0-.546.141 1.862 1.862 0 0 0-.51.414v-2.6h-1.2v8.067h1.2v-.455a1.5 1.5 0 0 0 .509.408zM3.315 13.639h1.384v6.9h1.343v-6.9H7.43v-1.172H3.315zm10.558 5.977a.979.979 0 0 1-.282-.213v-3.705a.86.86 0 0 1 .244-.184.6.6 0 0 1 .25-.058.468.468 0 0 1 .375.155.716.716 0 0 1 .124.458v3.075a.636.636 0 0 1-.1.409.378.378 0 0 1-.319.127.7.7 0 0 1-.292-.065zm3.786-2.839v-.6a.884.884 0 0 1 .123-.533.48.48 0 0 1 .406-.164.455.455 0 0 1 .394.164.853.853 0 0 1 .127.533v.6zm-8.06-8.223a1.735 1.735 0 0 1-.527-1.327v-3.4a1.494 1.494 0 0 1 .541-1.212 2.192 2.192 0 0 1 1.454-.452 1.979 1.979 0 0 1 1.365.475 1.581 1.581 0 0 1 .527 1.226v3.389a1.711 1.711 0 0 1-.519 1.318 2.038 2.038 0 0 1-1.434.478 1.97 1.97 0 0 1-1.407-.495zm1.006-5.125a.443.443 0 0 0-.153.348v3.574a.571.571 0 0 0 .144.415.53.53 0 0 0 .408.15.6.6 0 0 0 .429-.15.537.537 0 0 0 .164-.415V3.778a.428.428 0 0 0-.164-.348.675.675 0 0 0-.429-.13.6.6 0 0 0-.396.13zm3.677 5.254a1.388 1.388 0 0 1-.234-.875V2.33h1.336v5.027a.537.537 0 0 0 .089.334.316.316 0 0 0 .27.107.8.8 0 0 0 .375-.138 1.822 1.822 0 0 0 .412-.354V2.33h1.338v6.555h-1.336V8.16a2.851 2.851 0 0 1-.772.61 1.675 1.675 0 0 1-.774.21.84.84 0 0 1-.702-.296zm-8.58.2V5.364L3.911-.002h1.517l.979 3.553h.1l.928-3.553h1.532l-1.754 5.2v3.687z" fill="#fff"/>
+                                </svg>
+                                YouTube</a></li>
+                            <li><a href="https://devcentral.f5.com/" target="_blank" rel="noreferrer">
+                                <svg class="svg-icon svg-n-devcentral" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <g class="svg-fill">
+                                        <path transform="scale(2) rotate(-45 12.5 42.2)" d="M20.2 54.6h19.5v5.3H20.2z"/>
+                                        <path transform="scale(2) rotate(-45 -5 24.7)" d="M2.7 37.1h19.5v5.3H2.7z"/>
+                                        <path transform="scale(2) rotate(-45 -5 42.2)" d="M9.7 47.6h5.4v19.5H9.7z"/>
+                                        <path transform="scale(2) rotate(-45 -8.8 11)" d="M-1.1 23.4h19.5v5.3H-1.1z"/>
+                                        <path transform="scale(2) rotate(-45 8.7 28.5)" d="M16.4 40.9h19.5v5.3H16.4z"/>
+                                        <path transform="scale(2) rotate(-45 8.8 11)" d="M23.5 16.2h5.4v19.5h-5.4z"/>
+                                    </g>
+                                </svg>
+                                DevCentral</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="u02__border"/>
+
+    <div class="container">
+        <div class="row">
+            <div class="u02-stats">
+                <div class="u02-stats__col">
+                    
+                    <p class="u02-stats__number">48</p>
+                    <p class="u02-stats__text">of the Fortune 50 rely on F5</p>
+                </div>
+                <div class="u02-stats__col">
+                    
+                    <p class="u02-stats__number">76</p>
+                    <p class="u02-stats__text">offices in 43 countries</p>
+                </div>
+                <div class="u02-stats__col">
+                    
+                    <p class="u02-stats__number">20</p>
+                    <p class="u02-stats__text">plus years protecting apps</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="u02__border"/>
+
+    <div class="container">
+        <div class="row">
+            <div class="u02-nav isCollapsible">
+                <div class="u02-nav__col collapsibleOverall">
+                    
+                        <h4 class="u02-nav__title display-4 collapsibleTarget">About F5</h4>
+                    
+                    <ul class="u02-nav__list collapsibleContainer">
+                        
+                        <li><a class="u02-nav__link" href="../../../../company.html">Corporate Information</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="../../../../company/news.html"> Newsroom</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="https://investors.f5.com/home/default.aspx" target="_blank" rel="noreferrer"> Investor Relations</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="../../../../company/careers.html"> Careers</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="../../../../company/contact.html">Contact Information</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="https://interact.f5.com/F5-Preference-Center.html?utm_source=optin-f5footer" rel="noreferrer">Communication Preferences</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="../../../../company/certifications.html">Product Certifications</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="../../../../company/diversity-inclusion.html">Diversity &amp; Inclusion</a></li>
+                    </ul>
+                </div>
+            
+                <div class="u02-nav__col collapsibleOverall">
+                    
+                        <h4 class="u02-nav__title display-4 collapsibleTarget">Education</h4>
+                    
+                    <ul class="u02-nav__list collapsibleContainer">
+                        
+                        <li><a class="u02-nav__link" href="../../../../services/training.html">Training</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="../../../../services/certification.html">Professional Certification</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="https://account.f5.com/learnf5" target="_blank" rel="noreferrer">LearnF5</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="../../../../services/training/free-training-courses.html"> Free Online Training</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link"></a></li>
+                    </ul>
+                </div>
+            
+                <div class="u02-nav__col collapsibleOverall">
+                    
+                        <h4 class="u02-nav__title display-4 collapsibleTarget">F5 Sites</h4>
+                    
+                    <ul class="u02-nav__list collapsibleContainer">
+                        
+                        <li><a class="u02-nav__link" href="../../../../index.html">F5.com</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="https://devcentral.f5.com/" rel="noreferrer">DevCentral</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="https://support.f5.com/" rel="noreferrer">Support Portal</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="https://partners.f5.com/" rel="noreferrer">Partner Central</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="../../../../labs.html" target="_blank">F5 Labs</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="https://www.nginx.com/" target="_blank" rel="noreferrer">NGINX</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="../../../../products/security/shape-security.html" target="_blank" rel="noreferrer">Shape Security</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="https://www.volterra.io/" target="_blank" rel="noreferrer">Volterra</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="u02-legal display-8">
+                <p>&copy;2022 F5, Inc. All rights reserved.</p>
+                <ul class="u02-legal__links">
+                    <li class="u02-legal__list-item U:nudge-top-sm">
+                        <a href="../../../../company/policies/trademarks.html">Trademarks</a>
+                    </li>
+                    <li class="u02-legal__list-item U:nudge-top-sm">
+                        <a href="../../../../company/policies.html">Policies</a>
+                    </li>
+                    <li class="u02-legal__list-item U:nudge-top-sm">
+                        <a href="../../../../company/policies/privacy-notice.html">Privacy</a>
+                    </li>
+                    <li class="u02-legal__list-item U:nudge-top-sm">
+                        <a href="../../../../company/policies/F5-California-privacy-summary.html">California Privacy</a>
+                    </li>
+                    <li class="u02-legal__list-item U:nudge-top-sm">
+                        <a href="../../../../company/policies/privacy-notice.html#no-sell">Do Not Sell My Personal Information</a>
+                    </li>
+                    <li class="u02-legal__list-item U:nudge-top-sm">
+                        <span id="teconsent"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+    
+</div>
+</div>
+
+
+     
+        
+    
+     
+    
+<script src="../../../../etc.clientlibs/base/clientlibs/libs/jquery/v3.6.0.abec7e706514e7e243d79b097790f71b.js"></script>
+<script src="../../../../etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.68e8a508c100f218cc66bb13a94d1002.js"></script>
+<script src="../../../../etc.clientlibs/f5-app-security/clientlibs/clientlib-base.a04729916a75295191194ab12b98c435.js"></script>
+
+
+ 
+
+    
+<script src="../../../../etc.clientlibs/f5-com/clientlibs/clientlib-components.811851762dbe028ba94f2af6c4540d4a.js"></script>
+
+
+
+
+    
+<script src="../../../../etc.clientlibs/f5-com/clientlibs/clientlib-base.c125322a681df38e36d43f5655fd7c7a.js"></script>
+
+
+
+
+ <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5095d30f38626622"></script> 
+
+    
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+<section class="u03 CoveoSearchInterface" id="CoveoSearch" data-enable-history="true" data-enable-debug-info="true" data-cmp-name="u03" data-search-page-path="/content/f5-com/en_us/search.html" data-page-path="/content/f5-com/landing-pages/appsecurity/es_es/service-providers/securing-your-5g-edge" data-node-name="jcr:content" data-auto-trigger-query='false' data-global-search-url="https://api-u.f5.com/support/fedsearch" data-global-coveo-token="xx72b884cd-c3eb-4428-aa1b-6440a04643c1" data-global-search-nextalt="Página siguiente" data-global-search-prevalt="Página anterior" data-lang="es-ES" data-coveo-error-message="Lo sentimos, hubo un error técnico con esta búsqueda." data-headline-error-message="No se han encontrado resultados relevantes para esta búsqueda." data-subheadline-error-message="Vuelva a definir los términos de búsqueda o busque en uno de nuestros otros portales" data-repeat-en-search-page="Repita su búsqueda en inglés en F5.com para obtener recursos adicionales." data-ask-f5-portal="AskF5 para obtener ayuda y documentación" data-my-f5-portal="MyF5 para licencias de suscripción y claves" data-dev-central-portal="DevCentral para contenido comunitario y semejante" data-nginx-portal="NGINX para la documentación relacionada y la comunidad">
+    <div class="CoveoAnalytics" data-anonymous='true' data-search-hub="f5com"></div>
+    <div class="u03__close-target"></div>
+    <div class="u03__search-page-overlay U:padding-top-lg U:padding-bot-lg">
+        <div class="u03__search container">
+
+            <!-- Search Input container rendered by coveo engine dedicated for search page -->
+            
+
+            <!-- Search Input container dedicated for non search page -->
+            <div class="CoveoOmnibox CoveoSearchbox custom-search-box">
+                <div class="magic-box-input">
+                    <input spellcheck="false" form="coveo-dummy-form" role="combobox" autocomplete="off" aria-autocomplete="list" title="Insertar una consulta. Presione enter para enviar" aria-label="Buscar" placeholder="Buscar" class="u03__search-input U:margin-x"/>
+                </div>
+                <div class="magic-box-suggestions"></div>
+            </div>
+
+            
+        </div>
+        
+    </div>
+    <div class="CoveoTriggers"></div>
+    
+</section>
+
+
+    </body>
+</html>
