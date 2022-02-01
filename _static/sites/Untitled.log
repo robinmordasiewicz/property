@@ -251,3 +251,9 @@
 22-1-31, 9:07:05 PM - ERROR: Download of "https://devcentral.f5.com/cloud", referred from "/Users/mordasiewicz/GIT/f5-agility-labs-template/docs/_static/sites/www.f5.com/solutions/service-providers/5g.html", failed with error code 404 (not found)
 
 ---------------------
+
+22-2-1, 8:51:37 AM - ERROR: Download of "https://tmt.knect365.com/big-5g-event/agenda/2/", referred from "/Users/mordasiewicz/GIT/f5-agility-labs-template/docs/_static/sites/tmt.knect365.com/big-5g-event/index.html", failed with error code 404 (not found)
+22-2-1, 8:51:37 AM - ERROR: Download of "https://tmt.knect365.com/big-5g-event/speakers/", referred from "/Users/mordasiewicz/GIT/f5-agility-labs-template/docs/_static/sites/tmt.knect365.com/big-5g-event/index.html", failed with error code 404 (not found)
+22-2-1, 8:51:37 AM - ERROR: Download of "https://automotive.knect365.com/", referred from "/Users/mordasiewicz/GIT/f5-agility-labs-template/docs/_static/sites/tmt.knect365.com/big-5g-event/index.html", failed with error code 301 (moved permanently)
+
+---------------------
