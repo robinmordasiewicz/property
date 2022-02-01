@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Aspen Mesh</title>
+	<atom:link href="https://aspenmesh.io/feed/" rel="self" type="application/rss+xml" />
+	<link>https://aspenmesh.io</link>
+	<description></description>
+	<lastBuildDate>Thu, 06 Jan 2022 17:42:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.2</generator>
+	<item>
+		<title>Get a Health Check Report of your Istio to see if everything&#8217;s configured and optimized.</title>
+		<link>https://aspenmesh.io/istio-configuration-health-check-report/</link>
+					<comments>https://aspenmesh.io/istio-configuration-health-check-report/#respond</comments>
+		
+		<dc:creator><![CDATA[Steven Cheng]]></dc:creator>
+		<pubDate>Wed, 10 Nov 2021 15:33:55 +0000</pubDate>
+				<category><![CDATA[DevOps]]></category>
+		<category><![CDATA[Istio]]></category>
+		<category><![CDATA[Service Mesh]]></category>
+		<category><![CDATA[aspen mesh]]></category>
+		<category><![CDATA[istio]]></category>
+		<category><![CDATA[istio help]]></category>
+		<category><![CDATA[istio support]]></category>
+		<category><![CDATA[microservices]]></category>
+		<category><![CDATA[service mesh]]></category>
+		<category><![CDATA[service mesh help]]></category>
+		<guid isPermaLink="false">https://aspenmesh.io/?p=8002</guid>
+
+					<description><![CDATA[<p>How do you know your Open Source Istio is operating at its full potential? At Aspen Mesh, we focus on [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/istio-configuration-health-check-report/">Get a Health Check Report of your Istio to see if everything&#8217;s configured and optimized.</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>How do you know your Open Source Istio is operating at its full potential? At Aspen Mesh, we focus on optimizing Istio-based service mesh for our customers (service mesh is all we do).</p>
+<p>We talk to companies every day about their OS Istio, and the most common question we get is, “How do we know we’ve got everything in our Istio implementation working correctly?” Whether you’re in a pre-production environment, have Istio deployed in a portion of your network, or network-wide, there&#8217;s often a fear something’s not configured correctly or there&#8217;s a potential problem lurking that you don’t have the insight to head-off. Just as importantly, we&#8217;re asked if there is enhanced Istio functionality to leverage that can drive better performance.</p>
+<p>At Aspen Mesh the first thing we do for a new customer is a <a href="https://aspenmesh.io/istio-inspection-report/">360-degree health check of their Istio implementation.</a> It’s a lot like a 100-point diagnostic inspection for your car – a way to identify what’s working fine, where there are potential problems, and get recommendations from an expert about what’s critical to address immediately.</p>
+<p>That got us thinking, we should give <em>everyone</em> this level of insight into their Istio implementation.</p>
+<p><a href="https://aspenmesh.io/istio-inspection-report/"><strong>Aspen Mesh Now Offers a Complimentary OS Istio Health Check Report.</strong></a> This evaluation provides insight across all key areas, identifies critical issues, directs you to best practices, and recommends next steps. You receive an assessment of your Istio by our Istio experts. This is the same evaluation we conduct for every new Aspen Mesh customer running Istio.</p>
+<p>A few things that are covered in the Report:</p>
+<ul>
+<li>Platform: Ensure a stable foundation for smooth version upgrades.</li>
+<li>Security: ID security risks &amp; apply best practices.</li>
+<li>Ingress/Egress: Know you’re following best practices.</li>
+<li>Application Policy inspection</li>
+<li>Recommendations about where to optimize your performance.</li>
+<li>Steps to take to go live with confidence.</li>
+</ul>
+<h3><strong>You Receive your Report After it is Complete</strong></h3>
+<p>Our Istio expert will review the report with you and recommend remediation steps for critical items discovered – and answer any questions you have. There&#8217;s no obligation and the Report typically takes about 2 business days. After the review, we give you with a copy of your report. If you want to learn how we work to tackle any Istio problem you have and optimize an Istio environment, we can also share how to take advantage of <a href="https://aspenmesh.io/istio-support/" target="_blank" rel="noopener">Aspen Mesh&#8217;s array of customized Services</a> and <a href="https://aspenmesh.io/istio-support/" target="_blank" rel="noopener">Aspen Mesh 24/7 white glove Expert Support for OS Istio.</a></p>
+<p><a href="https://aspenmesh.io/istio-inspection-report/"><img class="alignnone size-large wp-image-7888" src="https://aspenmesh.io/wp-content/uploads/2021/10/Report-v2-633x1024.png" alt="" width="633" height="1024" srcset="https://aspenmesh.io/wp-content/uploads/2021/10/Report-v2-633x1024.png 633w, https://aspenmesh.io/wp-content/uploads/2021/10/Report-v2-185x300.png 185w, https://aspenmesh.io/wp-content/uploads/2021/10/Report-v2-768x1243.png 768w, https://aspenmesh.io/wp-content/uploads/2021/10/Report-v2.png 1000w" sizes="(max-width: 633px) 100vw, 633px" /></a></p>
+<p><strong>Where we get the data about your Istio to build your Report<br />
+</strong>The Aspen Mesh Istio Inspection Report analyzes your Istio system for common misconfigurations and vulnerabilities.</p>
+<p>The Report is done in 3 easy steps:</p>
+<ol>
+<li>You run the Aspen Mesh Data Collector tool on a workstation with your Kubernetes context configured. This generates a compressed file with the data collected from your Istio installation.</li>
+<li>You upload the compressed data file to the Aspen Mesh site.</li>
+<li>Aspen Mesh engineers analyze the data collected and build your customer report that details all of our findings.</li>
+</ol>
+<p>The Aspen Mesh Data Collector collects the following data:</p>
+<ul>
+<li>Kubernetes, Istio, and Envoy versions</li>
+<li>Node topology (number of nodes, node size)</li>
+<li>Objects installed in your cluster (Kubernetes and Istio objects)</li>
+<li>Kubernetes events</li>
+</ul>
+<p>Note that the Aspen Mesh Data Collector does <strong>not</strong> collect any potentially sensitive data such as secrets, certificates, or logs. All data that is collected is securely stored and accessed only by Aspen Mesh. Get in touch if you have questions about the process &#8212;  I can send you a link to our Data Collector tool and share how we gather and analyze your data to provide a comprehensive assessment. Just <a href="mailto:steven.cheng@aspenmesh.io">send me a note</a> and I&#8217;m happy to connect.</p>
+<p><em>-Steven Cheng, Sr. Solutions Engineer at Aspen Mesh</em></p>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/istio-configuration-health-check-report/">Get a Health Check Report of your Istio to see if everything&#8217;s configured and optimized.</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://aspenmesh.io/istio-configuration-health-check-report/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Get App-focused Security from an Enterprise-class Service Mesh &#124; On-demand Webinar</title>
+		<link>https://aspenmesh.io/how-to-get-app-focused-security-from-an-enterprise-class-service-mesh-webinar/</link>
+					<comments>https://aspenmesh.io/how-to-get-app-focused-security-from-an-enterprise-class-service-mesh-webinar/#respond</comments>
+		
+		<dc:creator><![CDATA[Andrew Jenkins]]></dc:creator>
+		<pubDate>Thu, 26 Aug 2021 15:29:50 +0000</pubDate>
+				<category><![CDATA[DevOps]]></category>
+		<category><![CDATA[Istio]]></category>
+		<category><![CDATA[Kubernetes]]></category>
+		<category><![CDATA[MTTR]]></category>
+		<category><![CDATA[Service Mesh]]></category>
+		<guid isPermaLink="false">https://aspenmesh.io/?p=7524</guid>
+
+					<description><![CDATA[<p>In our webinar you can now view on demand, You’ve Got Kubernetes. Now you Need App-focused Security using Istio, we teamed with [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/how-to-get-app-focused-security-from-an-enterprise-class-service-mesh-webinar/">Get App-focused Security from an Enterprise-class Service Mesh | On-demand Webinar</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><span data-contrast="auto">In our webinar you can now view on demand, <b><em>You’ve Got Kubernetes. Now you Need App-focused Security using Istio,</em></b> we teamed with Mirantis, <span class="NormalTextRun SCXW140913619 BCX0">an industry </span><span class="NormalTextRun SCXW140913619 BCX0">leader</span><span class="NormalTextRun SCXW140913619 BCX0"> in</span><span class="NormalTextRun SCXW140913619 BCX0"> enterprise-ready Kubernetes deployment and management,</span> to talk about security, Kubernetes, service mesh, istio and more.</span><span data-contrast="auto"> If you have Kubernetes, you’re off to a great start with a great platform for security based on Microsegmentation and Network Policy. But firewalls and perimeters aren’t enough &#8212; even in their modern, in-cluster form. </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
+<p><span data-contrast="auto">As enterprises embark on the cloud journey, modernizing applications with microservices and containers running on Kubernetes is key to application portability, code </span><span data-contrast="auto">reuse and automation. But along with these advantages come significant security and operational challenges due to security threats at various layers of the stack. While Kubernetes platform providers like Mirantis manage security at the infrastructure, orchestration and container level, the challenge at </span><span data-contrast="auto">application services level</span><span data-contrast="auto"> remains a concern. This is where a service mesh comes in.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:240}"> </span></p>
+<p><span data-contrast="auto">Companies with a hyper focus on security – like those in healthcare, finance, government, and highly regulated industries – demand the highest level of security possible to thwart cyberthreats, data breaches and non-compliance issues. You can up level your security by adding a service mesh that’s able to secure thousands of connections between microservices containers inside of a single cluster or across the globe.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:240}"> </span><span data-contrast="auto">Today Istio is the gold standard for enterprise-class service mesh for building Zero Trust Security. But I’m not the first to say that </span><i><span data-contrast="auto">implementing</span></i><span data-contrast="auto"> open source Istio has its challenges &#8212; and can cause a lot of headaches when Istio deployment and</span><span data-contrast="auto"> management </span><span data-contrast="auto">is added to a DevOps team’s workload without some forethought. </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:240}"> </span></p>
+<p><span data-contrast="auto">Aspen Mesh delivers an Istio-based, security hardened enterprise-class service mesh that’s easy to manage. Our Istio solution reduces friction between the experts in your organization because it understands your apps &#8212; and it seamlessly integrates into your SecOps approach &amp; certificate authority architecture.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:240}"> </span></p>
+<p><span data-contrast="auto">It’s not just about what knobs and config you adjust to get mTLS in one cluster – in our webinar we covered the architectural implications and lessons learned that’ll help you fit service mesh into your up-leveled Kubernetes security journey.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:240}"> </span><span data-contrast="auto">It was a lively discussion with a lot of questions from attendees. Click the link below to watch the live webinar recording.</span></p>
+<p><em>-Andrew</em></p>
+<p>&nbsp;</p>
+<p><strong>Click to watch webinar now:</strong></p>
+<h3><a href="https://register.gotowebinar.com/recording/recordingView?webinarKey=3520306795557003534&amp;registrantEmail=j.jensen%40f5.com">On Demand Webinar | You’ve Got Kubernetes. Now you Need App-focused Security using Istio.</a></h3>
+<p><span data-contrast="auto"> The webinar gets technical as we delve into:</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:240}"> </span></p>
+<ul>
+<li data-leveltext="" data-font="Symbol" data-listid="11" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1"><span data-contrast="auto">How Istio controls North-South and East-West traffic, and how it relates to application-level traffic.</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:240}"> </span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="11" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1"><span data-contrast="auto">How Istio secures communication between microservices.</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="11" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1"><span data-contrast="auto">How to simplify operations and prevent security holes as the number of microservices in production grows.</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="11" aria-setsize="-1" data-aria-posinset="4" data-aria-level="1"><span data-contrast="auto">What is involved in hardening Istio into an enterprise-class service mesh.</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="11" aria-setsize="-1" data-aria-posinset="5" data-aria-level="1"><span data-contrast="auto">How mTLS provides zero-trust based approach to security.</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:240}"> </span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="11" aria-setsize="-1" data-aria-posinset="6" data-aria-level="1"><span data-contrast="auto">How Aspen Mesh uses crypto to give each container its own identity (using a framework called SPIFFE). Then when containers talk to each other through the service mesh, they prove who they are cryptographically.</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:240}"> </span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="11" aria-setsize="-1" data-aria-posinset="7" data-aria-level="1"><span data-contrast="auto">Secure ingress</span><span data-contrast="auto"> </span><span data-contrast="auto">and egress, and Cloud Native packet capture.</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:240}"> </span></li>
+</ul>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/how-to-get-app-focused-security-from-an-enterprise-class-service-mesh-webinar/">Get App-focused Security from an Enterprise-class Service Mesh | On-demand Webinar</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://aspenmesh.io/how-to-get-app-focused-security-from-an-enterprise-class-service-mesh-webinar/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Aspen Mesh Leads the Way for a Secure Open Source Istio</title>
+		<link>https://aspenmesh.io/aspen-mesh-leads-the-way-for-a-secure-open-source-istio/</link>
+					<comments>https://aspenmesh.io/aspen-mesh-leads-the-way-for-a-secure-open-source-istio/#respond</comments>
+		
+		<dc:creator><![CDATA[Aspen Mesh]]></dc:creator>
+		<pubDate>Thu, 22 Jul 2021 16:01:09 +0000</pubDate>
+				<category><![CDATA[Istio]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[containerization]]></category>
+		<category><![CDATA[containers]]></category>
+		<category><![CDATA[egress]]></category>
+		<category><![CDATA[envoy]]></category>
+		<category><![CDATA[ingress]]></category>
+		<category><![CDATA[istio]]></category>
+		<category><![CDATA[istio community]]></category>
+		<category><![CDATA[kuberneted]]></category>
+		<category><![CDATA[kubernetes]]></category>
+		<guid isPermaLink="false">https://aspenmesh.io/?p=7248</guid>
+
+					<description><![CDATA[<p>Here at Aspen Mesh, we entrenched ourselves in the Istio project not long after its start. Recognizing Istio&#8217;s potential early [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/aspen-mesh-leads-the-way-for-a-secure-open-source-istio/">Aspen Mesh Leads the Way for a Secure Open Source Istio</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>Here at Aspen Mesh, we entrenched ourselves in the Istio project not long after its start. Recognizing Istio&#8217;s potential early on, we committed to building our entire company with Istio at its core. From the early days of the project, Aspen Mesh took an active role in Istio &#8212; we&#8217;ve been part of the community since Fall of 2017. Among our many firsts, Aspen Mesh was the first non-founding company to have someone on the Technical Oversight Committee (TOC) and have a release manager role when we helped manage the release of Istio v1.6 in 2020.</p>
+<p>Ensuring open source Istio continues to set the standard as the foundation for a secure enterprise-class service mesh is important to us. I hold a seat on the Istio Product Security Working Group (PSWG), where we continuously monitor and address potential Common Vulnerability and Exposures (CVEs) reports for Istio and its dependencies like the Envoy project. In fact, we helped create the PSWG in collaboration with other community leaders to ensure Istio remains a secure project with well-defined practices around responsible early disclosures and incident management.</p>
+<p>Along with me, my colleague, Jacob Delgado has been a tremendous contributor to Istio&#8217;s security and he currently leads the Product Security Working Group.</p>
+<h2><strong>Aspen Mesh leads contribution to Open Source Istio</strong></h2>
+<p><img class="wp-image-7354 size-medium alignleft" src="https://aspenmesh.io/wp-content/uploads/2021/07/Istio-Contributors-300x225.jpg" alt="" width="300" height="225" srcset="https://aspenmesh.io/wp-content/uploads/2021/07/Istio-Contributors-300x225.jpg 300w, https://aspenmesh.io/wp-content/uploads/2021/07/Istio-Contributors.jpg 640w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>The efforts of Aspen &#8216;Meshers&#8217; can be seen across Istio&#8217;s architecture today, and we add features to open source Istio regularly. Some of the major features we&#8217;ve added include Elliptic Curve Cryptography (ECC) support, Configuration validation (istio-vet -&gt; Istio analyzers), custom tracing tags, and Help v3 support. We are a Top 5 Istio Contributor of Pull Requests (PRs). One of our primary areas of focus is helping to shape and harden Istio&#8217;s security. We have responsibly reported several critical CVEs and addressed them as part of PSWG like the <a href="https://istio.io/latest/news/security/istio-security-2020-001/">Authentication Policy Bypass</a> CVE. You can read more about how security releases and 0-day critical CVE patches are handled in Istio in this <a href="https://istio.io/latest/blog/2021/patch-tuesdays/">blog</a> authored by my colleague Jacob.</p>
+<h2><strong>Istio Security Assessment Report findings announced in 2021</strong></h2>
+<p>The success of the Istio project and its critical use enforcing key security policies in infrastructure across a wide swath of industries was the impetus for a comprehensive security assessment that began in 2020. In order to determine whether there were any security issues in the Istio code base, a third-party security assessment of the Istio project was conducted last year that enlisted the NCC Group and sought collaboration with subject matter experts across the community.</p>
+<p>This in-depth assessment focused on Istio’s architecture as a whole, looking at security related issues with a focus on key components like istiod (Pilot), Ingress/Egress gateways, and Istio’s overall Envoy usage as its data plane proxy for Istio version 1.6.5. Since the report, the Product Security Working Group has issued several security releases as new vulnerabilities were disclosed, along with fixes to address concerns raised in the report. A good outcome of the report is the detailed <a href="https://istio.io/latest/docs/ops/best-practices/security/">Security Best Practices Guide</a> developed for Istio users.</p>
+<p>We invite you to read a <a href="https://istio.io/latest/blog/2021/ncc-security-assessment/">summary of the Istio Security Assessment Report</a> compiled for the Istio community. I detail the key areas of the report and distill what it means for Istio users today and looking ahead. Whether you&#8217;re a current open source Istio user, like keeping up on all things security, or you want a deep dive into Istio Security.</p>
+<p>At Aspen Mesh, we build upon the security features Istio provides and address enterprise security requirements with a zero-trust based service mesh that provides security within the Kubernetes cluster, provides monitoring and alerts, and ensures highly-regulated industries maintain compliance. You can read about how we think about security in our white paper, <a href="https://aspenmesh.io/service-mesh-knowledge-hub/adopting-a-zero-trust-approach-to-security-for-containerized-applications/">Adopting a Zero-Trust Approach to Security for Containerized Applications</a>.</p>
+<p>If you&#8217;d like to talk to us about what enterprise security in a service mesh looks like, please <a href="https://aspenmesh.io/contact-us/">get in touch</a>!</p>
+<p><strong><em>-Aspen Mesh</em></strong></p>
+<p>&nbsp;</p>
+<h6><em>* <a href="https://istio.teststats.cncf.io/d/5/companies-table?orgId=1&amp;var-period_name=Last%20year&amp;var-metric=prs">istio test stats from cncf.io</a></em></h6>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/aspen-mesh-leads-the-way-for-a-secure-open-source-istio/">Aspen Mesh Leads the Way for a Secure Open Source Istio</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://aspenmesh.io/aspen-mesh-leads-the-way-for-a-secure-open-source-istio/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Sailing Faster with Istio</title>
+		<link>https://aspenmesh.io/sailing-faster-with-istio/</link>
+					<comments>https://aspenmesh.io/sailing-faster-with-istio/#respond</comments>
+		
+		<dc:creator><![CDATA[Aspen Mesh]]></dc:creator>
+		<pubDate>Tue, 08 Jun 2021 14:44:54 +0000</pubDate>
+				<category><![CDATA[Istio]]></category>
+		<guid isPermaLink="false">https://aspenmesh.io/?p=6878</guid>
+
+					<description><![CDATA[<p>Read about testing the limits of sidecar proxies for maximum achievable throughput to meet the performance requirements of a variety of customer workloads.</p>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/sailing-faster-with-istio/">Sailing Faster with Istio</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>While the extraordinarily large shipping container, Ever Given, ran aground in the Suez Canal, halting a major trade route that has caused losses in the billions, our solution engineers at Aspen Mesh have been stuck diagnosing a tricky Istio and Envoy performance bottleneck on their own island for the past few weeks. Though the scale and global impacts of these two problems is quite different, it has presented an interesting way to correlate a global shipping event with the metaphorical nautical themes used by Istio. To elaborate on this theme, let’s switch from containers carrying dairy, and apparently everything else under the sun, to containers shuttling network packets.</p>
+<p>To unlock the most from containers and microservices architecture, Istio (and Aspen Mesh) uses a sidecar proxy model. Adding sidecar proxies into your mesh provides a host of benefits, from uniform identity to security to metrics and advanced traffic routing. As Aspen Mesh customers range from large enterprises all the way to service providers, the performance impacts of adding these sidecars is as important to us as the benefits outlined above. The performance experiment that I’m going to cover in this blog is geared toward evaluating the impact of adding sidecar proxies in high throughput scenarios on the server or client, or both sides.</p>
+<p>We have encountered workloads, especially in the service provider space, where there are high requests or transactions-per-second requirements for a particular service. Also, scaling up — i.e., adding more CPU/memory — is preferable to scaling out. We wanted to test the limits of sidecar proxies with regards to the maximum achievable throughput so that we can tune and optimize our model to meet the performance requirements of the wide variety of workloads used by our customers.</p>
+<h2><strong>Throughput Test Setup</strong></h2>
+<p>The test setup we used for this experiment was rather simple: a <a class="ext-link" href="https://github.com/fortio/fortio" rel="external ">Fortio</a> client and server running on <a class="ext-link" href="https://kubernetes.io/" rel="external ">Kubernetes</a> on large AWS node instance types like burstable t3.2xlarge with 8 vCPUs and 32 GB of memory or dedicated m5.8xlarge instance types which have 32 vCPUs and 128 GB of memory. The test was running a single instance of the Fortio client and server pod with no resource constraints on their own dedicated nodes. The Fortio client was run in a mode to maximize throughput like this:</p>
+<div id="crayon-60b66344f1857758571691" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-always">
+<pre class="crayon-plain-wrap"><span class="crayon-st">for</span> <span class="crayon-sy">(</span><span class="crayon-sy">(</span> <span class="crayon-v">k</span> <span class="crayon-o">=</span> <span class="crayon-cn">2</span><span class="crayon-sy">;</span> <span class="crayon-v">k</span> <span class="crayon-o">&lt;</span> <span class="crayon-cn">9000</span><span class="crayon-sy">;</span> <span class="crayon-v">k</span><span class="crayon-o">=</span><span class="crayon-e ">k*</span><span class="crayon-cn">2</span> <span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span> <span class="crayon-st">do
+</span> <span class="crayon-o">  /</span><span class="crayon-v">usr</span><span class="crayon-o">/</span><span class="crayon-v">bin</span><span class="crayon-o">/</span><span class="crayon-e">fortio </span><span class="crayon-v">load</span> <span class="crayon-o">-</span><span class="crayon-v">jitter</span><span class="crayon-o">=</span><span class="crayon-t">False</span> <span class="crayon-o">-</span><span class="crayon-i">c</span> <span class="crayon-sy">$</span><span class="crayon-v">k</span> <span class="crayon-o">-</span><span class="crayon-i">qps</span> <span class="crayon-cn">0</span> <span class="crayon-o">-</span><span class="crayon-i">t</span> <span class="crayon-cn">60s</span> <span class="crayon-o">-</span><span class="crayon-i">a</span> <span class="crayon-v">http</span><span class="crayon-o">:</span><span class="crayon-c">//fortio-server:8080/echo\?size\=1024’
+</span><span class="crayon-v">done</span></pre>
+</div>
+<p>The above command runs the test for 60 seconds with queries per second (QPS) 0 (i.e. maximum throughput with a varying number of simultaneous parallel connections). With this setup on a t3.2xlarge machine, we were able to achieve around 100,000 QPS. Further increasing the number of parallel connections didn’t result in throughput beyond ~100K QPS, signaling a possible CPU bottleneck. Running the same experiment on an m5.8xlarge instance, we could achieve much higher throughput around 300,000 QPS or higher depending upon the parallel connection settings.</p>
+<p>This was sufficient proof of CPU throttling. As adding more CPUs increased the QPS, we felt that we had a reasonable baseline to start evaluating the effects of adding sidecar proxies in this setup.</p>
+<h2>Adding Sidecar Proxies on Both Ends</h2>
+<p>Next, with the same setup on t3.2xlarge instances, we added Istio sidecar proxies on both Fortio client and server pods with Aspen Mesh default settings; mTLS STRICT setting, access logging enabled and the default concurrency (worker threads) of 2. With these parameters, and running the same command as before, we could only get a maximum throughput of around ~10,000 QPS.</p>
+<p>This is a factor of 10 reduction in throughput. This was expected as we had only configured two worker threads, which were hopefully running at their maximum capacity but could not keep up with client load.</p>
+<p>So, the logical next step for us was to increase the concurrency setting to run more worker threads to accept more connections and achieve higher throughput. In Istio and Aspen Mesh, you can set the proxy concurrency globally via the concurrency setting in proxy config under mesh config or override them via pod annotations like this:</p>
+<div id="crayon-60b66344f185c313954544" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-always">
+<pre class="crayon-plain-wrap"><span class="crayon-v">proxy</span><span class="crayon-sy">.</span><span class="crayon-v">istio</span><span class="crayon-sy">.</span><span class="crayon-v">io</span><span class="crayon-o">/</span><span class="crayon-v">config</span><span class="crayon-o">:</span> 
+<span class="crayon-h">  </span><span class="crayon-v">concurrency</span><span class="crayon-o">:</span> <span class="crayon-cn">4</span></pre>
+</div>
+<p>Note that using the value “0” for concurrency configures it to use all the available cores on the machine. We increased the concurrency setting from two to four to six and saw a steady increase in maximum throughput from 10K QPS to ~15K QPS to ~20K QPS as expected. However, these numbers were still quite low (by a factor of five) as compared to the results with no sidecar proxies.</p>
+<p>To eliminate the CPU throttling factor, we ran the same experiment on m5.8xlarge instances with even higher concurrency settings but the maximum throughput we could achieve was still around ~20,000 QPS.</p>
+<p>This degradation was far from acceptable, so we dug into why the throughput was low even with sufficient worker threads configured on the sidecar proxies.</p>
+<h2>Peeling the Onion</h2>
+<p>To investigate this issue, we looked at the CPU utilization metrics in the server pod and noticed that the CPU utilization as a percentage of total requested CPUs was not very high. This seemed odd as we expected the proxy worker threads to be spinning as fast as possible to achieve the maximum throughput, so we needed to investigate further to understand the root cause.</p>
+<p>To get a better understanding of low CPU utilization, we inspected the connections received by the server sidecar proxy. Envoy’s <a class="ext-link" href="https://blog.envoyproxy.io/envoy-threading-model-a8d44b922310" rel="external ">concurrency model </a>relies on the kernel to distribute connections between the different worker threads listening on the same socket. This means that if the number of connections received at the server sidecar proxy is less than the number of worker threads, you can never fully use all CPUs.</p>
+<p>As this investigation was purely on the server-side, we ran the above experiment again with the Fortio client pod, but this time without the sidecar proxy injected and only the Fortio server pod with the proxy injected. We found that the maximum throughput was still limited to around ~20K QPS as before, thereby hinting at issues on the server sidecar proxy.</p>
+<p>To investigate further, we had to look at connection level metrics reported by Envoy proxy. Later in this article, we’ll see what happens to this experiment with Envoy metrics exposed. (By default, Istio and Aspen Mesh don’t expose the connection-level metrics from Envoy.)</p>
+<p>These metrics can be enabled in Istio version 1.8 and above by following <a class="ext-link" href="https://istio.io/latest/docs/ops/configuration/telemetry/envoy-stats/" rel="external ">this guide</a> and adding the appropriate pod annotations corresponding to the metrics you want to be exposed. Envoy has many low-level metrics emitted at high resolution that can easily overwhelm your metrics backend for a moderately sized cluster, so you should enable this cautiously in production environments.</p>
+<p>Additionally, it can be quite a journey to find the right Envoy metrics to enable, so here’s what you will need to get connection-level metrics. On the server-side pod, add the following annotation:</p>
+<div id="crayon-60b66344f185d478960315" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-always">
+<pre class="crayon-plain-wrap"><span class="crayon-v">annotations</span><span class="crayon-o">:</span> 
+<span class="crayon-h">  </span><span class="crayon-v">proxy</span><span class="crayon-sy">.</span><span class="crayon-v">istio</span><span class="crayon-sy">.</span><span class="crayon-v">io</span><span class="crayon-o">/</span><span class="crayon-v">config</span><span class="crayon-o">:</span> <span class="crayon-o">|</span><span class="crayon-o">-</span> 
+<span class="crayon-h">    </span><span class="crayon-v">proxyStatsMatcher</span><span class="crayon-o">:</span> 
+<span class="crayon-h">      </span><span class="crayon-v">inclusionRegexps</span><span class="crayon-o">:</span> 
+<span class="crayon-h">        </span><span class="crayon-o">-</span> <span class="crayon-s">"listener.*.downstream_cx_total"</span> 
+<span class="crayon-h">        </span><span class="crayon-o">-</span> <span class="crayon-s">"listener.*.downstream_cx_active"</span></pre>
+</div>
+<p>This will enable reporting for all listeners configured by Istio, which can be a lot depending upon the number of services in your cluster, but only enable the downstream connections total counter and downstream connections active gauge metrics.</p>
+<p>To look at these metrics, you can use your <a class="ext-link" href="https://prometheus.io/" rel="external ">Prometheus</a> dashboard, if it’s enabled, or port-forward to the server pod under test to port 15000 and navigate to <a class="ext-link" href="http://localhost:15000/stats/prometheus" rel="external ">http://localhost:15000/stats/prometheus</a>. As there are many listeners configured by Istio, it can be tricky to find the correct one. Here’s a quick primer on how Istio sets up Envoy configuration. (You can find the complete list of Envoy listener metrics <a class="ext-link" href="https://www.envoyproxy.io/docs/envoy/latest/configuration/listeners/stats" rel="external ">here</a>.)</p>
+<p>For any inbound connections to a pod from clients outside of the pod, Istio configures a virtual inbound listener at 0.0.0.0:15006, which receives all the traffic from iptables’ redirect rules. This is the only listener that’s actually configured to receive connections from the kernel, and after the connection is received, it is matched against filter chain attributes to proxy the traffic to the correct application port on localhost. This means that even though the Fortio client above is targeting port 8080, we need to look at the total and active connections for the virtual inbound listener at 0.0.0.0:15006 instead of 0.0.0.0:8080. Looking at this metric, we found that the number of active connections were close to the configured number of simultaneous connections on the Fortio client side. This invalidated our theory about the number of connections being less than worker threads.</p>
+<p>The next step in our debugging journey was to look at the number of connections received on each worker thread. As I had alluded to earlier, Envoy relies on the kernel to distribute the accepted connections to different worker threads, and for all the worker threads to be fully utilizing the allotted CPUs, the connections also need to be fairly balanced. Luckily, Envoy has <a class="ext-link" href="https://www.envoyproxy.io/docs/envoy/latest/configuration/listeners/stats#per-handler-listener-stats" rel="external ">per-worker metrics</a> for listeners that can be enabled to understand the distribution. Since these metrics are rooted at listener.&lt;address&gt;.&lt;handler&gt;.&lt;metric name&gt;, the regex provided in the annotation above should also expose these metrics. The per-worker metrics looked like this:</p>
+<p><img class="alignnone size-full wp-image-16263780" src="https://cdn.thenewstack.io/media/2021/05/fe64972f-image6.png" alt="" width="682" height="686" /></p>
+<p>As you can see from the above image, the connections were far from being evenly distributed among the worker threads. One thread, worker 10, had 11.5K active connections as compared to some threads which had around ~1-1.5K active connections, and others were even lower. This explains the low CPU utilization numbers as most of the worker threads just didn’t have enough connections to do useful work.</p>
+<p>In our Envoy research, we quickly stumbled upon <a class="ext-link" href="https://github.com/envoyproxy/envoy/issues/4602" rel="external ">this issue,</a> which very nicely sums up the problem and the various efforts that have been made to fix it.</p>
+<div id="attachment_16263779" class="wp-caption alignnone">
+<p><img class="wp-image-16263779 size-full" src="https://cdn.thenewstack.io/media/2021/05/f920b6c2-image5.jpg" alt="" width="1280" height="853" aria-describedby="caption-attachment-16263779" /></p>
+<p id="caption-attachment-16263779" class="wp-caption-text">Image <a class="ext-link" href="https://pixabay.com/photos/bulldozer-excavator-heavy-machine-2195329/" rel="external ">via Pixabay</a>.</p>
+</div>
+<p>So, next, we went looking for a solution to fix this problem. It seemed like, for the moment, our own Ever Given was stuck as some diligent worker threads struggled to find balance. We needed an excavator to start digging.</p>
+<p>While our intrepid team tackled the problem of scaling for high-throughput workloads by adding sidecar proxies, we encountered a bottleneck not entirely unlike what the Ever Given experienced not long ago in the Suez Canal.</p>
+<p>Luckily, we had a few more things to try, and we were ready to take a closer look at the listener metrics.</p>
+<h2>Let There Be Equality Among Threads!</h2>
+<p>After parsing through the conversations in <a href="https://github.com/envoyproxy/envoy/issues/4602">the issue</a>, we found the <a class="ext-link" href="https://github.com/envoyproxy/envoy/pull/8422" rel="external ">pull request</a> that enabled a configuration option to turn on a feature to achieve better balancing across worker threads. At this point, trying this out seemed worthwhile, so we looked at how to enable this in Istio. (Note that as part of this PR, the per-worker thread metrics were added, which was useful in diagnosing this problem.)</p>
+<p>For all the ignoble things <a class="ext-link" href="https://istio.io/latest/docs/reference/config/networking/envoy-filter/" rel="external ">EnvoyFilter</a> can do in Istio, it’s useful in situations like these to quickly try out new Envoy configuration knobs without making code changes in “istiod” or the control plane. To turn the “exact balance” feature on, we created an EnvoyFilter resource like this:</p>
+<div id="crayon-60b663462f07f254240609" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-always">
+<div class="crayon-plain-wrap">
+<pre id="crayon-60b663462f07f254240609-1" class="crayon-line"><span class="crayon-v">apiVersion</span><span class="crayon-o">:</span> <span class="crayon-v">networking</span><span class="crayon-sy">.</span><span class="crayon-v">istio</span><span class="crayon-sy">.</span><span class="crayon-v">io</span><span class="crayon-o">/</span><span class="crayon-e">v1alpha3</span>
+<span class="crayon-v">kind</span><span class="crayon-o">:</span> <span class="crayon-e">EnvoyFilter</span>
+<span class="crayon-v">metadata</span><span class="crayon-o">:</span>
+<span class="crayon-h">  </span><span class="crayon-v">name</span><span class="crayon-o">:</span> <span class="crayon-v">fortio</span><span class="crayon-o">-</span><span class="crayon-v">server</span><span class="crayon-o">-</span><span class="crayon-v">listener</span><span class="crayon-o">-</span><span class="crayon-e">balance</span>
+<span class="crayon-e">  </span><span class="crayon-t">namespace</span><span class="crayon-o">:</span> <span class="crayon-v">perf</span><span class="crayon-o">-</span><span class="crayon-e">sidecar</span>
+<span class="crayon-v">spec</span><span class="crayon-o">:</span>
+<span class="crayon-h">  </span><span class="crayon-v">workloadSelector</span><span class="crayon-o">:</span>
+<span class="crayon-h">    </span><span class="crayon-v">labels</span><span class="crayon-o">:</span>
+<span class="crayon-h">      </span><span class="crayon-v">app</span><span class="crayon-o">:</span> <span class="crayon-v">fortio</span><span class="crayon-o">-</span><span class="crayon-e">server</span>
+<span class="crayon-e">  </span><span class="crayon-v">configPatches</span><span class="crayon-o">:</span>
+<span class="crayon-h">    </span><span class="crayon-o">-</span> <span class="crayon-v">applyTo</span><span class="crayon-o">:</span> <span class="crayon-e">LISTENER</span>
+<span class="crayon-e">      </span><span class="crayon-v">match</span><span class="crayon-o">:</span>
+<span class="crayon-h">        </span><span class="crayon-v">context</span><span class="crayon-o">:</span> <span class="crayon-e">SIDECAR_INBOUND</span>
+<span class="crayon-e">        </span><span class="crayon-v">listener</span><span class="crayon-o">:</span>
+<span class="crayon-h">          </span><span class="crayon-v">portNumber</span><span class="crayon-o">:</span> <span class="crayon-cn">15006</span>
+<span class="crayon-h">      </span><span class="crayon-v">patch</span><span class="crayon-o">:</span>
+<span class="crayon-h">        </span><span class="crayon-v">operation</span><span class="crayon-o">:</span> <span class="crayon-e">MERGE</span>
+<span class="crayon-e">        </span><span class="crayon-v">value</span><span class="crayon-o">:</span>
+<span class="crayon-h">          </span><span class="crayon-v">connection_balance_config</span><span class="crayon-o">:</span>
+<span class="crayon-h">            </span><span class="crayon-v">exact_balance</span><span class="crayon-o">:</span> <span class="crayon-sy">{</span><span class="crayon-sy">}</span></pre>
+</div>
+</div>
+<p>With this configuration applied and with bated breath, we ran the experiment again and looked at the per-worker thread metrics. Voila! Look at the perfectly balanced connections in the image below:</p>
+<p><a class="local-link" href="https://cdn.thenewstack.io/media/2021/05/11a876b1-ex0obtruyaamtae.png"><img class="alignnone size-full wp-image-16371282" src="https://cdn.thenewstack.io/media/2021/05/11a876b1-ex0obtruyaamtae.png" alt="" width="616" height="479" /></a></p>
+<p>Measuring the throughput with this configuration set, we could achieve around ~80,000 QPS, which is a significant improvement over the earlier results. Looking at CPU utilization, we saw that all the CPUs were fully pegged at or near 100%. This meant that we were finally seeing the CPU throttling. At this point, by adding more CPUs and a bigger machine, we could achieve much higher numbers as expected. So far so good.</p>
+<p>As you may recall, this experiment was purely to test the effects of server sidecar proxy, so we removed the client sidecar proxy for these tests. It was now time to measure performance with both sidecars added.</p>
+<h2>Measuring the Impacts of a Client Sidecar Proxy</h2>
+<p>With this exact balancing configuration enabled on the inbound port (server side only), we ran the experiment with sidecars on both ends. We were hoping to achieve high throughputs that could only be limited by the number of CPUs dedicated to Envoy worked threads. If only things were that simple.</p>
+<p>We found that the maximum throughput was once again capped at around ~20K QPS<strong>.</strong></p>
+<p>A bit disappointing, but since we then knew about the issue of connection imbalance on the server side, we reasoned that the same could happen on the client side between the application and the sidecar proxy container on localhost. First, we enabled the following metrics on the client-side proxy:</p>
+<div id="crayon-60b663462f084374126967" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-always">
+<pre id="crayon-60b663462f084374126967-1" class="crayon-line"><span class="crayon-v">annotations</span><span class="crayon-o">:</span>
+<span class="crayon-h">  </span><span class="crayon-v">proxy</span><span class="crayon-sy">.</span><span class="crayon-v">istio</span><span class="crayon-sy">.</span><span class="crayon-v">io</span><span class="crayon-o">/</span><span class="crayon-v">config</span><span class="crayon-o">:</span> <span class="crayon-o">|</span><span class="crayon-o">-</span>
+<span class="crayon-h">    </span><span class="crayon-v">proxyStatsMatcher</span><span class="crayon-o">:</span>
+<span class="crayon-h">      </span><span class="crayon-v">inclusionRegexps</span><span class="crayon-o">:</span>
+<span class="crayon-h">        </span><span class="crayon-o">-</span> <span class="crayon-s">"cluster.*.upstream_cx_total"</span>
+<span class="crayon-h">        </span><span class="crayon-o">-</span> <span class="crayon-s">"cluster.*.upstream_cx_active"</span>
+<span class="crayon-h">        </span><span class="crayon-o">-</span> <span class="crayon-s">"listener.*.downstream_cx_total"</span>
+<span class="crayon-h">        </span><span class="crayon-o">-</span> <span class="crayon-s">"listener.*.downstream_cx_active"</span></pre>
+</div>
+<p>In addition to the listener metrics, we also enabled cluster-level metrics, which emit total and active connections for any upstream cluster. We wanted to verify that the client sidecar proxy was sending a sufficient number of connections to the upstream Fortio server cluster to keep the server worker threads occupied. We found that the number of active connections mirrored the number of connections used by the Fortio client in our command. This was a good sign. Note that Envoy doesn’t report cluster-level metrics at the per-worker level, but these are all aggregated, so there’s no way for us to know how the connections were distributed on the outbound side.</p>
+<p>Next, we inspected the listener connection statistics on the client side similar to the server side to ensure that we were not having connection imbalance issues. The outbound listeners, or the listeners set up to handle traffic originating from the application in the same pod as the sidecar proxy, are set up a bit differently in Istio as compared to the inbound side. For outbound traffic, a virtual listener “0.0.0.0:15001” is created similar to the listener on “0.0.0.0:15006,” which is the target for iptables redirect rules. Unlike the inbound side, the virtual listener hands off the connection to the more specific listener like “0.0.0.0:8080” based on the <a class="ext-link" href="https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/listener/v3/listener.proto#listener-configuration" rel="external ">original destination address</a>. If there are no specific matches, then the listener configuration in the virtual outbound takes effect. This can block or allow all traffic depending on your configured outbound traffic policy. In the traffic flow from the Fortio client to server, we expected the listener at “0.0.0.0:8080” to be handling connections on the client-side proxy, so we inspected connections metrics at this listener. The listener metrics looked like this:</p>
+<p><img class="alignnone size-full wp-image-16263777" src="https://cdn.thenewstack.io/media/2021/05/8d2a52ee-image4.png" alt="" width="595" height="416" /></p>
+<p>The above image shows the connection imbalance issue between worker threads as we saw it on the server side. However, the connections on the outbound client-side proxy were only getting handled by one worker thread which explains the poor throughput QPS numbers. Having fixed this on the server-side, we applied a similar EnvoyFilter configuration with minor tweaks for context and port to address this imbalance:</p>
+<div id="crayon-60b663462f086189228980" class="crayon-syntax crayon-theme-github-gist crayon-font-liberation-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-always">
+<div class="crayon-plain-wrap">
+<pre id="crayon-60b663462f086189228980-1" class="crayon-line"><span class="crayon-v">apiVersion</span><span class="crayon-o">:</span> <span class="crayon-v">networking</span><span class="crayon-sy">.</span><span class="crayon-v">istio</span><span class="crayon-sy">.</span><span class="crayon-v">io</span><span class="crayon-o">/</span><span class="crayon-e">v1alpha3</span>
+<span class="crayon-v">kind</span><span class="crayon-o">:</span> <span class="crayon-e">EnvoyFilter</span>
+<span class="crayon-v">metadata</span><span class="crayon-o">:</span>
+<span class="crayon-h">  </span><span class="crayon-v">name</span><span class="crayon-o">:</span> <span class="crayon-v">fortio</span><span class="crayon-o">-</span><span class="crayon-v">server</span><span class="crayon-o">-</span><span class="crayon-v">listener</span><span class="crayon-o">-</span><span class="crayon-e">balance</span>
+<span class="crayon-e">  </span><span class="crayon-t">namespace</span><span class="crayon-o">:</span> <span class="crayon-v">perf</span><span class="crayon-o">-</span><span class="crayon-e">sidecar</span>
+<span class="crayon-v">spec</span><span class="crayon-o">:</span>
+<span class="crayon-h">  </span><span class="crayon-v">workloadSelector</span><span class="crayon-o">:</span>
+<span class="crayon-h">    </span><span class="crayon-v">labels</span><span class="crayon-o">:</span>
+<span class="crayon-h">      </span><span class="crayon-v">app</span><span class="crayon-o">:</span> <span class="crayon-v">fortio</span><span class="crayon-o">-</span><span class="crayon-e">server</span>
+<span class="crayon-e">  </span><span class="crayon-v">configPatches</span><span class="crayon-o">:</span>
+<span class="crayon-h">    </span><span class="crayon-o">-</span> <span class="crayon-v">applyTo</span><span class="crayon-o">:</span> <span class="crayon-e">LISTENER</span>
+<span class="crayon-e">      </span><span class="crayon-v">match</span><span class="crayon-o">:</span>
+<span class="crayon-h">        </span><span class="crayon-v">context</span><span class="crayon-o">:</span> <span class="crayon-e">SIDECAR_OUTBOUND</span>
+<span class="crayon-e">        </span><span class="crayon-v">listener</span><span class="crayon-o">:</span>
+<span class="crayon-h">          </span><span class="crayon-v">portNumber</span><span class="crayon-o">:</span> <span class="crayon-cn">8080</span>
+<span class="crayon-h">      </span><span class="crayon-v">patch</span><span class="crayon-o">:</span>
+<span class="crayon-h">        </span><span class="crayon-v">operation</span><span class="crayon-o">:</span> <span class="crayon-e">MERGE</span>
+<span class="crayon-e">        </span><span class="crayon-v">value</span><span class="crayon-o">:</span>
+<span class="crayon-h">          </span><span class="crayon-v">connection_balance_config</span><span class="crayon-o">:</span>
+<span class="crayon-h">            </span><span class="crayon-v">exact_balance</span><span class="crayon-o">:</span> <span class="crayon-sy">{</span><span class="crayon-sy">}</span></pre>
+</div>
+</div>
+<p>Surely, applying this resource would fix our issue and we would be able to achieve high QPS with both client and server sidecar proxies with sufficient CPUs allocated to them. Well, we ran the experiment again and saw no difference in the throughput numbers. Checking the listener metrics again, we saw that even with this EnvoyFilter resource applied, only one worker thread was handling all the connections. We also tried applying the exact balance config on both virtual outbound port 15001 and outbound port 8080, but the throughput was still limited to 20K QPS.</p>
+<p>This warranted the next round of investigations.</p>
+<h2>Original Destination Listeners, Exact Balance Issues</h2>
+<p>We went around looking in Envoy code and opened Github issues to understand why the client-side exact balance configuration was not taking effect, while the server side was working wonders. The key difference between the two listeners, other than the directionality, was that the virtual outbound listener “0.0.0.0:15001” was an original destination listener, which hands over connections to other listeners matched on the original destination address. With help from the Istio community (thanks, Yuchen Dai from Google), we found this <a class="ext-link" href="https://github.com/envoyproxy/envoy/issues/15146" rel="external ">open issue,</a> which explains this behavior in a rather cryptic way.</p>
+<p>Basically, the current exact balance implementation relies on connection counters per worker thread to fix the imbalance. When the original destination is enabled on the virtual outbound listener, the connection counter on the worker thread is incremented when a connection is received, but as the connection is immediately handed to the more specific listener like “0.0.0.0:8080,” it is decremented again. This quick increase and decrease in the internal count spoofs the exact balancer into thinking the balance is perfect as all these counters are always at zero. It also appears that applying the exact balance on the listener that handles the connection, “0.0.0.0:8080” in this case, but doesn’t accept the connection from the kernel has no effect due to current implementation limitations.</p>
+<p>Fortunately, the fix for this issue is in progress, and we’ll be working with the community to get this addressed as quickly as possible. In the meantime, if you’re getting hit by these performance issues on the client side, scaling out with a lower concurrency setting is a better approach to reach higher throughput QPS numbers than scaling up with higher concurrency and worker threads. We are also working with the Istio community to provide <a class="ext-link" href="https://github.com/istio/istio/issues/18152" rel="external ">configuration knobs</a> for enabling exact balance in Envoy to optionally switch default settings so that everyone can benefit from our findings.</p>
+<p>Working on this performance analysis was interesting and a challenge in its own way, like the small tractor next to the giant ship trying to make it move.</p>
+<p>Well, maybe not exactly, but it was a learning experience for me and my team, and I’m glad we are able to share our learnings with the rest of the community as this aspect of Istio is often overlooked by the broader vendor ecosystem. We will run and publish performance numbers related to the impact of turning on various features such as mTLS, access logging and tracing in high-throughout scenarios in future blogs, so if you’re interested in this topic, <a class="ext-link" href="https://aspenmesh.io/blog/" rel="external ">subscribe to our blog</a> to get updates or <a class="ext-link" href="https://aspenmesh.io/contact-us/" rel="external ">reach out to us with any questions</a>.</p>
+<p><em>Thank you Aspen Mesh team members Pawel and Bart who patiently and diligently ran various test scenarios, collected data and were uncompromising in their pursuit to get the last bit out of Istio and Aspen Mesh. It’s not surprising. After all, being part of <a class="ext-link" href="https://www.f5.com/" rel="external ">F5</a>, taking performance seriously is just part of our DNA. </em></p>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/sailing-faster-with-istio/">Sailing Faster with Istio</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://aspenmesh.io/sailing-faster-with-istio/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Installing Multicluster Aspen Mesh on KOPS Cluster</title>
+		<link>https://aspenmesh.io/installing-multicluster-aspen-mesh-on-kops-cluster/</link>
+					<comments>https://aspenmesh.io/installing-multicluster-aspen-mesh-on-kops-cluster/#respond</comments>
+		
+		<dc:creator><![CDATA[Siddharth Sah]]></dc:creator>
+		<pubDate>Fri, 21 May 2021 07:29:17 +0000</pubDate>
+				<category><![CDATA[Tutorials]]></category>
+		<guid isPermaLink="false">https://aspenmesh.io/?p=6864</guid>
+
+					<description><![CDATA[<p>I recently tried installing Aspen Mesh on multicluster, and it was easier that I anticipated. In this post, I will [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/installing-multicluster-aspen-mesh-on-kops-cluster/">Installing Multicluster Aspen Mesh on KOPS Cluster</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<article id="post-32" class="post-32 post type-post status-publish format-standard hentry category-aspen-mesh category-kops category-multicluster ast-article-single">
+<div class="ast-post-format- ast-no-thumb single-layout-1">
+<div class="entry-content clear">
+<p>I recently tried installing Aspen Mesh on multicluster, and it was easier that I anticipated. In this post, I will walk you through my process. You can read the <a href="https://siddharthsah.net/installing-multicluster-aspen-mesh-on-kops-cluster/" target="_blank" rel="noopener">original version of this process here</a>.</p>
+<p>Firstly, ensure that you have two Kubernetes clusters with same version of Aspen Mesh installed on each of them (if you need an Aspen Mesh account, you can <a href="http://aspenmesh.io/invite/" target="_blank" rel="noopener">get a free 30-day trial here</a>). Once you have an account, refer to the <a href="https://my.aspenmesh.io/client/docs/latest" target="_blank" rel="noopener">documentation</a> for installing Aspen Mesh on your cluster.</p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-dracula enlighter-hover ">
+<div class="enlighter">
+<div class="">
+<pre class="enlighter-clipboard">kops get cluster
+
+ssah-test1.dev.k8s.local        aws    us-west-2a
+ssah-test2.dev.k8s.local        aws    us-west-2a</pre>
+</div>
+</div>
+</div>
+<p class="has-text-align-justify">There are multiple ways to configure Aspen Mesh on a multicluster environment. In the following example, I have installed Aspen Mesh 1.9.1-am1 on both of my clusters, and the installation type is <a href="https://istio.io/latest/docs/setup/install/multicluster/multi-primary_multi-network/" target="_blank" rel="noreferrer noopener">Multi-Primary on different network</a>.</p>
+<p><strong>Pre-requisites for the Setup:</strong></p>
+<ul type="1">
+<li><strong>API</strong>: the server of each cluster must be able to access the API server of other cluster.</li>
+<li><strong>Trust</strong>: Trust must be established between all clusters in the mesh. This is achieved by having a common Root CA to generate intermediate certs for each clusters.</li>
+</ul>
+<p><strong>Configuring Trust:</strong></p>
+<p>I am creating an RSA type certificate for my root cert.  After I have downloaded and extracted the Aspen Mesh binary, I create a cert folder and add the folder to the directory stack.</p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-dracula enlighter-hover ">
+<div class="enlighter">
+<div class="">
+<pre class="enlighter-clipboard">mkdir -p certs
+pushd certs</pre>
+</div>
+</div>
+</div>
+<p class="has-text-align-justify">The binary downloaded should have a tools directory to create your certificate. You run the make command to create a root-ca folder, which will consist of four files: root-ca.conf, root-cert.csr, root-cert.pem and root-key.pem. For each of your clusters, you will need to generate an intermediate cert and key for Istio CA.</p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-dracula enlighter-hover ">
+<div class="enlighter">
+<div class="">
+<div>
+<pre class="enlighter-clipboard">make -f ../tools/certs/Makefile.selfsigned.mk root-ca
+make -f ../tools/certs/Makefile.selfsigned.mk cluster1-cacerts
+make -f ../tools/certs/Makefile.selfsigned.mk cluster2-cacerts
+</pre>
+</div>
+</div>
+</div>
+</div>
+<figure></figure>
+<figure class="wp-block-image size-large"><img class="wp-image-75" src="https://i0.wp.com/siddharthsah.net/wp-content/uploads/2021/05/cert.png?resize=974%2C311&amp;ssl=1" sizes="(max-width: 974px) 100vw, 974px" srcset="https://i0.wp.com/siddharthsah.net/wp-content/uploads/2021/05/cert.png?w=974&amp;ssl=1 974w, https://i0.wp.com/siddharthsah.net/wp-content/uploads/2021/05/cert.png?resize=300%2C96&amp;ssl=1 300w, https://i0.wp.com/siddharthsah.net/wp-content/uploads/2021/05/cert.png?resize=768%2C245&amp;ssl=1 768w" alt="" width="809" height="258" /></figure>
+<p class="has-text-align-justify">You will then have to create secrets for each of your clusters in the istio-system namespace with all the input files that we generated from the last step. These secrets at each of the clusters is what configures trust between them as the same root-cert.pem is used to create the intermediate cert.</p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-dracula enlighter-hover ">
+<div class="enlighter">
+<div class="">
+<pre class="enlighter-clipboard">kubectl  create secret generic cacerts -n istio-system \\n  --from-file=ca-cert.pem \\n  --from-file=ca-key.pem \\n  --from-file=root-cert.pem \\n  --from-file=cert-chain.pem --context="${CTX_CLUSTER1}"
+
+kubectl create secret generic cacerts -n istio-system \\n  --from-file=ca-cert.pem \\n  --from-file=ca-key.pem \\n  --from-file=root-cert.pem \\n  --from-file=cert-chain.pem --context="${CTX_CLUSTER2}"</pre>
+</div>
+</div>
+</div>
+<p class="has-text-align-justify">Next, we will move on to the Aspen Mesh configuration, where we are enabling multicluster for istiod and giving names to the network and cluster. Add following fields in your override file which will be used during Helm installation/upgrade. Create a separate file for each cluster. You will also need to label the istio-system namespace in both of your clusters with appropriate label.</p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-dracula enlighter-hover ">
+<div class="enlighter">
+<div class="">
+<pre class="enlighter-clipboard">kubectl --context="${CTX_CLUSTER1}" label namespace istio-system topology.istio.io/network=network1
+
+kubectl --context="${CTX_CLUSTER2}" label namespace istio-system topology.istio.io/network=network2</pre>
+</div>
+</div>
+</div>
+<p><strong>For Cluster 1</strong></p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-dracula enlighter-hover ">
+<div class="enlighter">
+<div class="">
+<pre class="enlighter-clipboard">#Cluster 1
+
+#In order to make the application service callable from any cluster, the DNS lookup must succeed in each cluster
+#This provides DNS interception for all workloads with a sidecar, allowing Istio to perform DNS lookup on behalf of the application.
+meshConfig:
+  defaultConfig:
+    proxyMetadata:
+    # Enable Istio agent to handle DNS requests for known hosts
+    # Unknown hosts will automatically be resolved using upstream dns servers in resolv.conf
+      ISTIO_META_DNS_CAPTURE: "true"
+
+global:
+  meshID: mesh1
+  multiCluster:
+    # Set to true to connect two kubernetes clusters via their respective
+    # ingressgateway services when pods in each cluster cannot directly
+    # talk to one another. All clusters should be using Istio mTLS and must
+    # have a shared root CA for this model to work.
+    enabled: true
+    # Should be set to the name of the cluster this installation will run in. This is required for sidecar injection
+    # to properly label proxies
+    clusterName: "cluster1"
+    globalDomainSuffix: "local"
+    # Enable envoy filter to translate `globalDomainSuffix` to cluster local suffix for cross cluster communication
+    includeEnvoyFilter: false
+  network: network1</pre>
+</div>
+</div>
+</div>
+<p><strong>For Cluster 2</strong></p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-dracula enlighter-hover ">
+<div class="enlighter">
+<div class="">
+<pre class="enlighter-clipboard">#Cluster 2
+
+#In order to make the application service callable from any cluster, the DNS lookup must succeed in each cluster
+#This provides DNS interception for all workloads with a sidecar, allowing Istio to perform DNS lookup on behalf of the application.
+meshConfig:
+  defaultConfig:
+    proxyMetadata:
+    # Enable Istio agent to handle DNS requests for known hosts
+    # Unknown hosts will automatically be resolved using upstream dns servers in resolv.conf
+      ISTIO_META_DNS_CAPTURE: "true"
+
+global:
+  meshID: mesh1
+  multiCluster:
+    # Set to true to connect two kubernetes clusters via their respective
+    # ingressgateway services when pods in each cluster cannot directly
+    # talk to one another. All clusters should be using Istio mTLS and must
+    # have a shared root CA for this model to work.
+    enabled: true
+    # Should be set to the name of the cluster this installation will run in. This is required for sidecar injection
+    # to properly label proxies
+    clusterName: "cluster2"
+    globalDomainSuffix: "local"
+    # Enable envoy filter to translate `globalDomainSuffix` to cluster local suffix for cross cluster communication
+    includeEnvoyFilter: false
+  network: network2</pre>
+</div>
+</div>
+</div>
+<p class="has-text-align-justify">Now we will upgrade/install the istiod manifest with the newly added configuration from the override file. As you can see, I have separate override files for each cluster.</p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-dracula enlighter-hover ">
+<div class="enlighter">
+<div class="">
+<pre class="enlighter-clipboard">helm upgrade istiod manifests/charts/istio-control/istio-discovery -n istio-system --values sample_overrides-aspenmesh_2.yaml
+
+helm upgrade istiod manifests/charts/istio-control/istio-discovery -n istio-system --values sample_overrides-aspenmesh.yaml</pre>
+</div>
+</div>
+</div>
+<p class="has-text-align-justify">Check the pods in the istio-system namespace to see if all are in a running state. Be sure to delete all your application pods in your default namespace for the new configuration to kick in when the new pods will be spun. You can also check to see if the root cert used for pods in each cluster is the same. I am using pods from the bookinfo sample application.</p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-dracula enlighter-hover ">
+<div class="enlighter">
+<div class="">
+<pre class="enlighter-clipboard">istioctl pc secrets details-v1-79f774bdb9-pqpjw -o json | jq '[.dynamicActiveSecrets[] | select(.name == "ROOTCA")][0].secret.validationContext.trustedCa.inlineBytes' -r | base64 -d | openssl x509 -noout -text | md5
+
+istioctl pc secrets details-v1-79c697d759-tw2l7 -o json | jq '[.dynamicActiveSecrets[] | select(.name == "ROOTCA")][0].secret.validationContext.trustedCa.inlineBytes' -r | base64 -d | openssl x509 -noout -text |md5</pre>
+</div>
+</div>
+</div>
+<p class="has-text-align-justify">Once the istiod is upgraded, we will move on to creating an ingress gateway used for communication between two clusters via installing an east-west gateway. Use the configuration below to create a yaml file which will be used with Helm to install in each of the clusters. I have created two yaml files: cluster1_gateway_config.yaml and cluster2_gateway_config.yaml which will be used with respective clusters.</p>
+<p><strong>For Cluster 1</strong></p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-dracula enlighter-hover ">
+<div class="enlighter">
+<div class="">
+<pre class="enlighter-clipboard">#This can be on separate override file as we will install a custom IGW
+gateways:
+  istio-ingressgateway:
+    name: istio-eastwestgateway
+    labels:
+      app: istio-eastwestgateway
+      istio: eastwestgateway
+      topology.istio.io/network: network1
+    ports:
+    ## You can add custom gateway ports in user values overrides, but it must include those ports since helm replaces.
+    # Note that AWS ELB will by default perform health checks on the first port
+    # on this list. Setting this to the health check port will ensure that health
+    # checks always work. https://github.com/istio/istio/issues/12503
+    - port: 15021
+      targetPort: 15021
+      name: status-port
+      protocol: TCP
+    - port: 80
+      targetPort: 8080
+      name: http2
+      protocol: TCP
+    - port: 443
+      targetPort: 8443
+      name: https
+      protocol: TCP
+    - port: 15012
+      targetPort: 15012
+      name: tcp-istiod
+      protocol: TCP
+    # This is the port where sni routing happens
+    - port: 15443
+      targetPort: 15443
+      name: tls
+      protocol: TCP
+    - name: tls-webhook
+      port: 15017
+      targetPort: 15017
+    env:
+      # A gateway with this mode ensures that pilot generates an additional
+      # set of clusters for internal services but without Istio mTLS, to
+      # enable cross cluster routing.
+      ISTIO_META_ROUTER_MODE: "sni-dnat"
+      ISTIO_META_REQUESTED_NETWORK_VIEW: "network1"
+    serviceAnnotations:
+      service.beta.kubernetes.io/aws-load-balancer-type: nlb
+
+global:
+  meshID: mesh1
+  multiCluster:
+    # Set to true to connect two kubernetes clusters via their respective
+    # ingressgateway services when pods in each cluster cannot directly
+    # talk to one another. All clusters should be using Istio mTLS and must
+    # have a shared root CA for this model to work.
+    enabled: true
+    # Should be set to the name of the cluster this installation will run in. This is required for sidecar injection
+    # to properly label proxies
+    clusterName: "cluster1"
+    globalDomainSuffix: "local"
+    # Enable envoy filter to translate `globalDomainSuffix` to cluster local suffix for cross cluster communication
+    includeEnvoyFilter: false
+  network: network1</pre>
+</div>
+</div>
+</div>
+<p><strong>For Cluster 2</strong></p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-dracula enlighter-hover ">
+<div class="enlighter">
+<div class="">
+<pre class="enlighter-clipboard">gateways:
+  istio-ingressgateway:
+    name: istio-eastwestgateway
+    labels:
+      app: istio-eastwestgateway
+      istio: eastwestgateway
+      topology.istio.io/network: network2
+    ports:
+    ## You can add custom gateway ports in user values overrides, but it must include those ports since helm replaces.
+    # Note that AWS ELB will by default perform health checks on the first port
+    # on this list. Setting this to the health check port will ensure that health
+    # checks always work. https://github.com/istio/istio/issues/12503
+    - port: 15021
+      targetPort: 15021
+      name: status-port
+      protocol: TCP
+    - port: 80
+      targetPort: 8080
+      name: http2
+      protocol: TCP
+    - port: 443
+      targetPort: 8443
+      name: https
+      protocol: TCP
+    - port: 15012
+      targetPort: 15012
+      name: tcp-istiod
+      protocol: TCP
+    # This is the port where sni routing happens
+    - port: 15443
+      targetPort: 15443
+      name: tls
+      protocol: TCP
+    - name: tls-webhook
+      port: 15017
+      targetPort: 15017
+    env:
+      # A gateway with this mode ensures that pilot generates an additional
+      # set of clusters for internal services but without Istio mTLS, to
+      # enable cross cluster routing.
+      ISTIO_META_ROUTER_MODE: "sni-dnat"
+      ISTIO_META_REQUESTED_NETWORK_VIEW: "network2"
+    serviceAnnotations:
+      service.beta.kubernetes.io/aws-load-balancer-type: nlb
+global:
+  meshID: mesh1
+  multiCluster:
+    # Set to true to connect two kubernetes clusters via their respective
+    # ingressgateway services when pods in each cluster cannot directly
+    # talk to one another. All clusters should be using Istio mTLS and must
+    # have a shared root CA for this model to work.
+    enabled: true
+    # Should be set to the name of the cluster this installation will run in. This is required for sidecar injection
+    # to properly label proxies
+    clusterName: "cluster2"
+    globalDomainSuffix: "local"
+    # Enable envoy filter to translate `globalDomainSuffix` to cluster local suffix for cross cluster communication
+    includeEnvoyFilter: false
+  network: network2</pre>
+<pre class="enlighter-clipboard">helm install istio-eastwestgateway manifests/charts/gateways/istio-ingress --namespace istio-system --values cluster1_gateway_config.yaml
+
+helm install istio-eastwestgateway manifests/charts/gateways/istio-ingress --namespace istio-system --values cluster2_gateway_config.yaml</pre>
+</div>
+</div>
+</div>
+<p class="has-text-align-justify">After adding the new east-west gateway, you will get an east-west gateway pod deployed in the istio-system namespace and the service which creates a Network Load Balancer specified in the annotations. You will need to resolve the IP address of the NLBs for the east-west gateways and then patch them into the service as spec.externalIPs in both of your clusters, until <a href="https://github.com/istio/istio/issues/29359">Multi-Cluster/Multi-Network – Cannot use a hostname-based gateway for east-west traffic · Issue #29359 · istio/istio</a>  is fixed. This is not an ideal situation because of the following <a href="https://github.com/istio/istio/issues/29359#issuecomment-767138214" target="_blank" rel="noreferrer noopener">reasons</a>.</p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-dracula enlighter-hover ">
+<div class="enlighter">
+<div class="">
+<pre class="enlighter-clipboard">k get svc -n istio-system istio-eastwestgateway
+NAME                    TYPE           CLUSTER-IP      EXTERNAL-IP                                                                                  PORT(S)                                                                                      AGE
+istio-eastwestgateway   LoadBalancer   100.71.211.32   a927e6&lt;TRUNCATED&gt;.elb.us-west-2.amazonaws.com 15021:32138/TCP,80:30420/TCP,443:31450/TCP,15012:30150/TCP,15443:30476/TCP,15017:32335/TCP   8d
+
+nslookup a927e6&lt;TRUNCATED&gt;.elb.us-west-2.amazonaws.com
+Server:        172.23.241.180
+Address:    172.23.241.180#53
+Non-authoritative answer:
+Name:    a927e6&lt;TRUNCATED&gt;.elb.us-west-2.amazonaws.com
+Address: 35.X.X.X
+
+kubectl patch svc -n istio-system istio-eastwestgateway -p '{"spec":{"externalIPs": ["35.X.X.X"]}}'
+
+k get svc -n istio-system istio-eastwestgateway
+NAME                    TYPE           CLUSTER-IP      EXTERNAL-IP                                                                                  PORT(S)                                                                                      AGE
+istio-eastwestgateway   LoadBalancer   100.71.211.32   a927e6&lt;TRUNCATED&gt;.elb.us-west-2.amazonaws.com,35.X.X.X   15021:32138/TCP,80:30420/TCP,443:31450/TCP,15012:30150/TCP,15443:30476/TCP,15017:32335/TCP   8d</pre>
+</div>
+<div class=""></div>
+</div>
+</div>
+<p class="has-text-align-justify">Now that the gateway is configured to communicate, you will have to make sure the API of each cluster is able to talk to the other cluster. You can do this in AWS by making sure API instances are accessible to each other by creating specific rules for their security group. We will then need to create a secret in cluster 1 that provides access to cluster 2’s API server and vice versa for endpoint discovery.</p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-dracula enlighter-hover ">
+<div class="enlighter">
+<div class="">
+<pre class="enlighter-clipboard">#Enable endpoint discovery Cluster 2
+istioctl x create-remote-secret --context="${CTX_CLUSTER1}" --name=cluster1 |kubectl apply -f - --context="${CTX_CLUSTER2}"
+
+#Enable endpoint discovery Cluster 1
+istioctl x create-remote-secret --context="${CTX_CLUSTER2}" --name=cluster2 |kubectl apply -f - --context="${CTX_CLUSTER1}"</pre>
+</div>
+</div>
+</div>
+<p class="has-text-align-justify">At this stage, the pilot (which is bundled in istiod binary) should have the new configuration, and when you tail the logs for the pod, you should be able see the log&#8217;s message “Number of remote cluster: 1”. With this version, you also would need to edit the ingress east-west gateway in the istio-system namespace that we created above as the selector label and the annotation added via Helm chart is different than expected. It shows “istio: ingressgateway” but should be “istio: eastwestgateway”. You can now create pods in each cluster and <a href="https://istio.io/latest/docs/setup/install/multicluster/verify/" target="_blank" rel="noreferrer noopener">verify</a> it is working as expected. Here is how the east-west gateway should look:</p>
+<div class="enlighter-default enlighter-v-standard enlighter-t-dracula enlighter-hover ">
+<div class="enlighter">
+<div class="">
+<pre class="enlighter-clipboard">apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  annotations:
+    meta.helm.sh/release-name: istio-eastwestgateway
+    meta.helm.sh/release-namespace: istio-system
+  creationTimestamp: "2021-05-13T01:56:50Z"
+  generation: 2
+  labels:
+    app: istio-eastwestgateway
+    app.kubernetes.io/managed-by: Helm
+    install.operator.istio.io/owning-resource: unknown
+    istio: eastwestgateway
+    istio.io/rev: default
+    operator.istio.io/component: IngressGateways
+    release: istio-eastwestgateway
+    topology.istio.io/network: network2
+  name: istio-multicluster-ingressgateway
+  namespace: istio-system
+  resourceVersion: "6777467"
+  selfLink: /apis/networking.istio.io/v1beta1/namespaces/istio-system/gateways/istio-multicluster-ingressgateway
+  uid: 618b2b5b-a2bb-4b37-a4a1-7f5ab7ef03d4
+spec:
+  selector:
+    istio: eastwestgateway
+  servers:
+  - hosts:
+    - '*.local'
+    port:
+      name: tls
+      number: 15443
+      protocol: TLS
+    tls:
+      mode: AUTO_PASSTHROUGH
+
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/installing-multicluster-aspen-mesh-on-kops-cluster/">Installing Multicluster Aspen Mesh on KOPS Cluster</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://aspenmesh.io/installing-multicluster-aspen-mesh-on-kops-cluster/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Improving Your Application with Service Mesh</title>
+		<link>https://aspenmesh.io/improve-your-app-service-mesh/</link>
+					<comments>https://aspenmesh.io/improve-your-app-service-mesh/#respond</comments>
+		
+		<dc:creator><![CDATA[Rose Sawvel]]></dc:creator>
+		<pubDate>Wed, 12 May 2021 14:05:44 +0000</pubDate>
+				<category><![CDATA[Service Mesh]]></category>
+		<guid isPermaLink="false">https://aspenmesh.io/?p=6851</guid>
+
+					<description><![CDATA[<p>Running Kubernetes-based applications at scale? You can boost value by increasing engineering efficiency and uptime adding a service mesh.</p>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/improve-your-app-service-mesh/">Improving Your Application with Service Mesh</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<h2 aria-level="2"><b><span data-contrast="none">Engineering + Technology</span></b><b><span data-contrast="none"> </span></b><b><span data-contrast="none">= Uptime</span></b><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:40,&quot;335559739&quot;:0,&quot;335559740&quot;:259}"> </span></h2>
+<p><span data-contrast="auto">Ha</span><span data-contrast="auto">ve</span><span data-contrast="auto"> you</span><span data-contrast="auto"> come across the term “application value” lately</span><span data-contrast="auto">?</span><span data-contrast="auto"> </span><span data-contrast="auto">S</span><span data-contrast="auto">oftware-first organizations are using it as a new form of currency. </span><span data-contrast="auto">Businesses delivering</span><span data-contrast="auto"> a product or service to its customers through an application understand</span><span data-contrast="auto"> the </span><span data-contrast="auto">growing </span><span data-contrast="auto">importance of </span><span data-contrast="auto">their </span><span data-contrast="auto">application</span><span data-contrast="auto">’s</span><span data-contrast="auto"> security, reliability and feature velocity. A</span><span data-contrast="auto">nd, a</span><span data-contrast="auto">s applications </span><span data-contrast="auto">that people use </span><span data-contrast="auto">become increasingly important to enterprises, so do engineering teams</span><span data-contrast="auto"> and the right tools</span><span data-contrast="auto">. </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
+<h2><b><span data-contrast="none">The </span></b><b><span data-contrast="none">Right People for the Job: Efficient</span></b><b><span data-contrast="none"> Engineering Teams </span></b></h2>
+<p><span data-contrast="auto">Access to engineering talent is now more important to </span><span data-contrast="auto">some </span><span data-contrast="auto">companies than access to capital. </span><a href="https://stripe.com/files/reports/the-developer-coefficient.pdf"><span data-contrast="none">61% of executives</span></a><span data-contrast="auto"> consider this a potential threat to their business. </span><span data-contrast="auto">With t</span><span data-contrast="auto">he average developer spe</span><span data-contrast="auto">nding </span><span data-contrast="auto">more than 17 hours </span><span data-contrast="auto">each</span><span data-contrast="auto"> week dealing with maintenance issues, such as debugging and refactoring</span><span data-contrast="auto">, plus</span><span data-contrast="auto"> approximately four hours a week on “bad code” </span><span data-contrast="auto">(</span><span data-contrast="auto">representing</span><span data-contrast="auto"> </span><span data-contrast="auto">nearly </span><a href="https://stripe.com/files/reports/the-developer-coefficient.pdf"><span data-contrast="none">$85 billion</span></a><span data-contrast="auto"> worldwide in opportunity cost lost annually</span><span data-contrast="auto">), </span><span data-contrast="auto">the necessity of driving business value with applications increases</span><span data-contrast="auto">. And who is it that can help to solve these puzzles? The right engineering team, in combination with the right technologies and tools. </span><span data-contrast="auto">Regarding</span><span data-contrast="auto"> the piece of the puzzle that can solved by your engineering team, </span><span data-contrast="auto">enterprises have two options </span><span data-contrast="auto">as customer demands on applications increase: </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
+<ol>
+<li><span data-contrast="auto">I</span><span data-contrast="auto">ncrease the size and cost of engineering </span><span data-contrast="auto">teams, or</span><span data-contrast="auto"> </span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></li>
+<li><span data-contrast="auto">I</span><span data-contrast="auto">ncrease </span><span data-contrast="auto">your </span><span data-contrast="auto">engineering efficiency. </span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></li>
+</ol>
+<p><span data-contrast="auto">Couple the need to increase </span><span data-contrast="auto">the efficiency of your </span><span data-contrast="auto">engineering </span><span data-contrast="auto">team </span><span data-contrast="auto">with the challenges around growing revenue in increasingly competitive and low margin businesses</span><span data-contrast="auto">, </span><span data-contrast="auto">and the importance of driving value through applications is top of mind for any business. </span><span data-contrast="auto">One way to help make your team more efficient is by providing the right technologies and tools.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
+<h2 aria-level="2"><b><span data-contrast="none">The </span></b><b><span data-contrast="none">Right T</span></b><b><span data-contrast="none">echnology </span></b><b><span data-contrast="none">for the Job:</span></b><b><span data-contrast="none"> Microservices </span></b><b><span data-contrast="none">and Service Mesh</span></b><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:40,&quot;335559739&quot;:0,&quot;335559740&quot;:259}"> </span></h2>
+<p><span data-contrast="auto">Using m</span><span data-contrast="auto">icroservices architectures </span><span data-contrast="auto">allows enterprises to more quickly deliver new features to customers</span><span data-contrast="auto">, keeping them happy and providing </span><span data-contrast="auto">them with </span><span data-contrast="auto">more value over time</span><span data-contrast="auto">. </span><span data-contrast="auto">In addition, w</span><span data-contrast="auto">ith microservices,</span><span data-contrast="auto"> businesses </span><span data-contrast="auto">can more easily</span><span data-contrast="auto"> </span><span data-contrast="auto">keep pace with the competition in their space through </span><span data-contrast="auto">better </span><span data-contrast="auto">application scalability, resiliency and agility</span><span data-contrast="auto">. Of course</span><span data-contrast="auto">, as</span><span data-contrast="auto"> with any shift in technology,</span><span data-contrast="auto"> there can be</span><span data-contrast="auto"> new challenges. </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
+<p><span data-contrast="auto">One </span><span data-contrast="auto">challenge our customers </span><span data-contrast="auto">sometimes </span><span data-contrast="auto">face is difficulty </span><span data-contrast="auto">with</span><span data-contrast="auto"> </span><span data-contrast="auto">debugging or </span><span data-contrast="auto">resolving problems </span><span data-contrast="auto">with</span><span data-contrast="auto">in </span><span data-contrast="auto">these</span><span data-contrast="auto"> microservices environment</span><span data-contrast="auto">s</span><span data-contrast="auto">. It can be challenging to </span><span data-contrast="auto">fix </span><span data-contrast="auto">issues </span><span data-contrast="auto">fast</span><span data-contrast="auto">, especially when there are cascading failures </span><span data-contrast="auto">that </span><span data-contrast="auto">can </span><span data-contrast="auto">cause your users to have a bad experience on your application</span><span data-contrast="auto">. </span><span data-contrast="auto">That’s where a service mesh can help.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
+<p><span data-contrast="auto">Service mesh provides ways to see, identify, trace and log when errors occurred and pinpoint their sources. It brings </span><span data-contrast="auto">all of</span><span data-contrast="auto"> your data together into a single source of truth, removing error-prone processes, and enabling you to get fast, reliable information around downtime, failures and outages. More uptime means happy users and more revenue, and the agility with stability that you need for a competitive edge.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
+<h2 aria-level="2"><b><span data-contrast="none">Increasing Your</span></b><b><span data-contrast="none"> </span></b><b><span data-contrast="none">Application</span></b><b><span data-contrast="none"> Value</span></b><b><span data-contrast="none"> </span></b><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:40,&quot;335559739&quot;:0,&quot;335559740&quot;:259}"> </span></h2>
+<p><span data-contrast="auto">Service mesh</span><span data-contrast="auto"> allow</span><span data-contrast="auto">s</span><span data-contrast="auto"> </span><span data-contrast="auto">engineering</span><span data-contrast="auto"> teams to address </span><span data-contrast="auto">many issues, but especially these </span><span data-contrast="auto">three critical areas:</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
+<ul>
+<li data-leveltext="" data-font="Symbol" data-listid="1" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1"><span data-contrast="auto">Proactive</span><span data-contrast="auto"> </span><span data-contrast="auto">issue detection,</span><span data-contrast="auto"> quick incident response, and workflows that </span><span data-contrast="auto">accelerate fixing issues</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="1" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1"><span data-contrast="auto">A unified source of multi-dimensional insights into application and infrastructure health and performance that provides context about the entire software system</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="1" aria-setsize="-1" data-aria-posinset="4" data-aria-level="1"><span data-contrast="auto">Line of sight into weak points in environments, enabling engineering teams to </span><span data-contrast="auto">build </span><span data-contrast="auto">more resilient systems in the future </span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></li>
+</ul>
+<p><span data-contrast="auto">If you or your team are running Kubernetes-based applications at scale and are seeing the </span><span data-contrast="auto">advantages, but</span><span data-contrast="auto"> know you can get more value out of them by increasing </span><span data-contrast="auto">your engineering </span><span data-contrast="auto">efficiency and </span><span data-contrast="auto">uptime for your application&#8217;s’ users</span><span data-contrast="auto">, it’s probably time to check out a service mesh. You can reach out to the Aspen Mesh team on how to easily get started or how to best integrate service mesh into your existing stack at </span><a href="mailto:hello@aspenmesh.io"><span data-contrast="none">hello@aspenmesh.io</span></a><span data-contrast="auto">. Or you can get started yourself with a </span><a href="https://aspenmesh.io/invite/"><span data-contrast="none">30-day free trial of Aspen Mesh</span></a><span data-contrast="auto">.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/improve-your-app-service-mesh/">Improving Your Application with Service Mesh</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://aspenmesh.io/improve-your-app-service-mesh/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Learn How To Securely Deploy Your Application with Istio in this New liveProject from Manning</title>
+		<link>https://aspenmesh.io/istio-kubernetes-manning-liveproject/</link>
+					<comments>https://aspenmesh.io/istio-kubernetes-manning-liveproject/#respond</comments>
+		
+		<dc:creator><![CDATA[Rose Sawvel]]></dc:creator>
+		<pubDate>Mon, 12 Apr 2021 20:18:29 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">https://aspenmesh.io/?p=6781</guid>
+
+					<description><![CDATA[<p>We are excited to announce that a new liveProject from Manning Publications is now available. A liveProject is a project for you to complete [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/istio-kubernetes-manning-liveproject/">Learn How To Securely Deploy Your Application with Istio in this New liveProject from Manning</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><span data-contrast="none">We are excited to announce that a new </span><span data-contrast="none">liveProject</span><span data-contrast="none"> from Manning Publications is now available. A </span><span data-contrast="none">liveProject</span><span data-contrast="none"> is a project for you to complete where you can tackle a real-world scenario learning new skills as you go. You’ll develop your own solution and get just enough help to succeed.</span></p>
+<p><span data-contrast="none">In </span><a href="https://www.manning.com/liveproject/secure-application-deployment-with-istio-on-Kubernetes"><span data-contrast="none">“Secure Application Deployment with Istio on Kubernetes”</span></a><span data-contrast="none"> created by Neeraj Poddar, our Co-Founder and Chief Architect, you will get an overview of Istio’s service mesh, learn how to expose your application to users securely via HTTPS, learn how to protect sensitive user information by utilizing Istio Auth policies, understand application behavior by using Istio telemetry, and efficiently debug your service mesh. </span></p>
+<p><span data-contrast="none">In addition, you’ll have the opportunity to:</span></p>
+<ol>
+<li><span data-contrast="none">Get hands-on experience of safely and securely exposing an ecommerce microservices-based store using Istio </span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></li>
+<li><span data-contrast="none">Iteratively build in new security features step-by-step, mastering Istio as you go </span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></li>
+<li><span data-contrast="none">Handle deploying your application with Istio and Kubernetes, encrypting traffic to your application via self-managed TLS certificate, understanding application behavior by using Istio telemetry</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></li>
+<li><span data-contrast="none">Finish up with an efficient debug of your app using the Istio service </span><span data-contrast="none">mesh</span><span data-contrast="none"> </span><br />
+<span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></li>
+</ol>
+<p><span data-contrast="none">Istio service mesh gives you complete visibility over your large scale microservices applications, making it easy to enforce security, manage traffic, spot and debug errors, and improve user experience. </span></p>
+<p><span data-contrast="none">By the time you’re done with this </span><span data-contrast="none">liveProject</span><span data-contrast="none">, you’ll have the skills to ensure the security of your app, and start making the move away from error-prone manual management of microservices.</span> <span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
+<p><a href="https://www.manning.com/liveproject/secure-application-deployment-with-istio-on-Kubernetes"><span data-contrast="none">Head over to Manning’s website</span></a><span data-contrast="none"> to get access to this project.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
+<p><span data-contrast="none">If you’re looking for even more power for your service mesh, </span><a href="https://aspenmesh.io/what-aspen-mesh-adds-to-istio/"><span data-contrast="none">check out what</span><span data-contrast="none"> </span><span data-contrast="none">Aspen Mesh</span><span data-contrast="none"> adds to Istio</span></a><span data-contrast="none">. From policy frameworks, an </span><span data-contrast="none">easy to use</span><span data-contrast="none"> UI, analytics and ale</span><span data-contrast="none">rting as well as first-class support, Aspen Mesh can help your service mesh accomplish even more.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/istio-kubernetes-manning-liveproject/">Learn How To Securely Deploy Your Application with Istio in this New liveProject from Manning</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://aspenmesh.io/istio-kubernetes-manning-liveproject/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Top 9 Takeaways from IstioCon 2021</title>
+		<link>https://aspenmesh.io/istiocon-takeaways-2021/</link>
+					<comments>https://aspenmesh.io/istiocon-takeaways-2021/#respond</comments>
+		
+		<dc:creator><![CDATA[Rose Sawvel]]></dc:creator>
+		<pubDate>Thu, 11 Mar 2021 20:41:06 +0000</pubDate>
+				<category><![CDATA[Istio]]></category>
+		<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">https://aspenmesh.io/?p=6704</guid>
+
+					<description><![CDATA[<p>IstioCon 2021 was a huge success with a record number of participants. Here the the Top 9 things we think matter that were discussed at the virtual event.</p>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/istiocon-takeaways-2021/">Top 9 Takeaways from IstioCon 2021</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><span style="font-weight: 400;">At the beginning of last year, we predicted the </span><a href="https://aspenmesh.io/top-service-mesh-2020-developments/"><span style="font-weight: 400;">top three developments around service mesh</span></a><span style="font-weight: 400;"> in 2020 would be:</span></p>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">A quickly growing need for service mesh</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Istio will be hard to beat</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Core service mesh use cases will emerge that will be used as models for the next wave of adopters</span></li>
+</ol>
+<p><span style="font-weight: 400;">And we were right about all three, as evidenced by what we learned at IstioCon.</span></p>
+<p><span style="font-weight: 400;">As a new community-led event, </span><a href="https://events.istio.io/istiocon-2021/" target="_blank" rel="noopener"><span style="font-weight: 400;">IstioCon 2021</span></a><span style="font-weight: 400;"> provided the first organized opportunity for Istio’s community members to gather together on a large, worldwide scale, to present, learn and discuss the many features and benefits of the Istio service mesh. And this event was a resounding success.</span></p>
+<p><span style="font-weight: 400;">With over 4,000 attendees — in its first year, and as a virtual event — IstioCon attendance exceeded expectations by multiples. The event showcased the lessons learned from running Istio in production, first-hand experiences from the Istio community, and featured maintainers from across the Istio ecosystem including Lin Sun, John Howard, Christian Posta, Neeraj Poddar, and more. With sessions presented across five days in English, as well as keynotes and sessions in Chinese, this was indeed a worldwide effort. It is well-known that the Istio community reaches far and wide, but it was fantastic to see that so many people interested in, considering, and even using Istio in production at scale were ready to show up and share.</span></p>
+<p><span style="font-weight: 400;">But apart from the outstanding response of the Istio community, we were particularly excited to dig into what people are really using this service mesh for and how they’re interacting with it. So, we’ve pulled together the below curated list of top Istio trends, hot topics, and our top three list of sessions you don’t want to miss.</span></p>
+<h2><span style="font-weight: 400;">Top 3 Istio Service Mesh Trends to Watch</span></h2>
+<p><span style="font-weight: 400;">After watching </span><a href="https://events.istio.io/istiocon-2021/sessions/" target="_blank" rel="noopener"><span style="font-weight: 400;">each session</span></a><span style="font-weight: 400;"> (so you don’t have to!), we’ve distilled the top three service mesh and Istio industry takeaways that came out of IstioCon that you should keep on your radar.</span></p>
+<p><b>1. Istio is production-ready.</b><span style="font-weight: 400;"> No longer just a shiny new object, this nascent technology has transformed over the past few years from a new infrastructure technology into the microservices management technology that people are using, now, in production and at scale at real companies. We saw insightful user story presentations from T-Mobile, Airbnb, <a href="https://tech.ebayinc.com/?utm_content=inline-mention" target="_blank" rel="noopener">eBay</a>,</span><span style="font-weight: 400;"> </span><a href="https://youtu.be/upYyX0E6Wwk" target="_blank" rel="noopener"><span style="font-weight: 400;">Salesforce</span></a><span style="font-weight: 400;">, </span><a href="https://youtu.be/1iueSRNsUww" target="_blank" rel="noopener"><span style="font-weight: 400;">FICO</span></a><span style="font-weight: 400;">, and more.</span></p>
+<p><b>2. Istio is more versatile than you thought.</b><span style="font-weight: 400;"> Did you know that Istio is being used right now by users and companies to manage everything from user-facing applications like Airbnb to behind-the-scenes infrastructure like running 5G?</span></p>
+<p><b>3. Istio and Kubernetes have a lot in common.</b><span style="font-weight: 400;"> There are lots of similarities between Istio and Kubernetes in terms of how these technologies have developed, and how they are being adopted. It’s well known that Kubernetes is “</span><a href="https://thenewstack.io/7-key-considerations-for-kubernetes-in-production/" target="_blank" rel="noopener"><span style="font-weight: 400;">the defacto standard for cloud native applications</span></a><span style="font-weight: 400;">.” Istio is being called ”</span><span style="font-weight: 400;">the most popular service mesh</span><span style="font-weight: 400;">” according to the </span><a href="https://www.sdxcentral.com/articles/news/cncf-survey-underscores-cloud-native-popularity/2020/03/" target="_blank" rel="noopener"><span style="font-weight: 400;">CNCF annual user survey</span></a><span style="font-weight: 400;">. But more than this, the two are growing closer together in terms of the technologies themselves. We look forward to the growth of both technologies.</span></p>
+<h2><span style="font-weight: 400;">Top 3 Hot Topics</span></h2>
+<p><span style="font-weight: 400;">In addition to higher level industry trends, there were many other hot topics that surfaced as part of this conference. From security to Wasm, multicluster, integrations, policies, ORAS, and more, there is a lot going on in the service mesh marketplace that many folks may not have realized. Here are the three hot topics we’d like you to know about:</span></p>
+<p><b>1. Mulitcluster</b><span style="font-weight: 400;">. You can configure a single mesh to include multiple clusters. Using a </span><a href="https://www.infoq.com/articles/kubernetes-multicluster-comms/" target="_blank" rel="noopener"><span style="font-weight: 400;">multicluster</span></a><span style="font-weight: 400;"> deployment within a single mesh affords capabilities beyond that of a single cluster deployment, including fault isolation and fail over, location-aware routing, various control plane models, and team or project isolation. It was indeed a hot topic at IstioCon, with an entire </span><a href="https://youtu.be/aGGZmxXuLnE" target="_blank" rel="noopener"><span style="font-weight: 400;">workshop devoted to Istio Multicluster</span></a><span style="font-weight: 400;">, plus two additional individual sessions and a dedicated office-hours session about multicluster.</span></p>
+<p><b>2. Wasm</b><span style="font-weight: 400;">. WebAssembly (Wasm) is a sandboxing technology that can be used to extend the Istio proxy (Envoy). The Proxy-Wasm sandbox API replaces Mixer as the primary extension mechanism in Istio. Over the past year, Wasm has come further to the forefront in terms of interest, as seen here by garnering two sessions plus its own office-hours session.</span></p>
+<p><b>3. Security</b><span style="font-weight: 400;">. Let’s face it, we’re all concerned about security, and with good reason. Istio has decided to face security challenges head on, and while not exactly a new topic, it’s one worth reiterating. The Istio </span><a href="https://youtu.be/ejRLkVXtoV8" target="_blank" rel="noopener"><span style="font-weight: 400;">Product Security Working Group had a session</span></a><span style="font-weight: 400;">, plus we saw two more sessions featuring security as a headliner, and a dedicated office-hours session. </span></p>
+<p><span style="font-weight: 400;">Side note: Aspen Mesh had a tie with one another hot topic; debugging Istio. If you get a chance, check out the three recorded </span><a href="https://events.istio.io/istiocon-2021/sessions/" target="_blank" rel="noopener"><span style="font-weight: 400;">sessions on debugging as well</span></a><span style="font-weight: 400;">.</span></p>
+<h2><span style="font-weight: 400;">Top 3 Sessions You Will Want to Watch On-demand</span></h2>
+<p><span style="font-weight: 400;">Not everyone has time to watch a conference for five days in a row. And that’s ok. There are about 77 sessions we wish you could watch, but we’ve also identified the top three we think you’ll get the most out of. Check these out:</span></p>
+<p><b>1. Using Istio to Build the Next Generation 5G Platform</b><span style="font-weight: 400;">. As </span><a href="https://youtu.be/D-Dgn1tNFkg" target="_blank" rel="noopener"><span style="font-weight: 400;">the most-watched session at this event</span></a><span style="font-weight: 400;">, we have to start here. In this session, Aspen Mesh’s Co-founder and Chief Architect Neeraj Poddar and David Lenrow, Senior Principal Cloud Security Architect at Verizon, covered what 5G is and why it matters, architecture options with Istio, platform requirements, security, and more.</span></p>
+<p><b>2. User story from Salesforce &#8211; The Salesforce Service Mesh: Our Istio Journey</b><span style="font-weight: 400;">. In </span><a href="https://youtu.be/upYyX0E6Wwk" target="_blank" rel="noopener"><span style="font-weight: 400;">this session</span></a><span style="font-weight: 400;">, Salesforce Software Architect Pratima Nambiar talked us through their background around why they needed a service mesh, their initial implementation, Istio’s value, progressive adoption of Istio, and features they are watching and expect to adopt. </span></p>
+<p><b>3. User story from eBay &#8211; Istio at Scale: How eBay is Building a Massive Multitenant Service Mesh Using Istio</b><span style="font-weight: 400;">. In </span><a href="https://youtu.be/Yo6x5Knv7Kc" target="_blank" rel="noopener"><span style="font-weight: 400;">this session</span></a><span style="font-weight: 400;">, Sudheendra Murthy covered eBay’s story, from their applications deployment to service mesh journey, scale testing, and future direction.</span></p>
+<h2><span style="font-weight: 400;">What’s Next for Istio?</span></h2>
+<p><span style="font-weight: 400;">We were excited to be </span><a href="https://events.istio.io/istiocon-2021/organizers/" target="_blank" rel="noopener"><span style="font-weight: 400;">part of this year’s IstioCon</span></a><span style="font-weight: 400;">, and it was wonderful to see the Istio community come together for this new event. As our team members have been </span><a href="https://aspenmesh.io/steering-the-future-of-istio/"><span style="font-weight: 400;">key contributors </span></a><span style="font-weight: 400;">to the Istio project over the past few years, we’ve had a front row seat at the growth of the project itself along with the community.</span></p>
+<p><span style="font-weight: 400;">To learn more about what the Istio project has coming up on the horizon, </span><a href="https://youtu.be/WmjTeN-jtdY" target="_blank" rel="noopener"><span style="font-weight: 400;">check out this project roadmap session</span></a><span style="font-weight: 400;">. We’re looking forward to the continued growth of this open source technology, so that more companies — and people — can benefit from what it has to offer.</span></p>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/istiocon-takeaways-2021/">Top 9 Takeaways from IstioCon 2021</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://aspenmesh.io/istiocon-takeaways-2021/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Aspen Mesh to Sponsor IstioCon 2021</title>
+		<link>https://aspenmesh.io/istiocon-2021/</link>
+					<comments>https://aspenmesh.io/istiocon-2021/#respond</comments>
+		
+		<dc:creator><![CDATA[Rose Sawvel]]></dc:creator>
+		<pubDate>Mon, 11 Jan 2021 18:28:57 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">https://aspenmesh.io/?p=6671</guid>
+
+					<description><![CDATA[<p>Aspen Mesh is excited to join the Istio community as a Platinum sponsor of the very first conference dedicated to Istio; IstioCon 2021.   IstioCon is a new, community-led event [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/istiocon-2021/">Aspen Mesh to Sponsor IstioCon 2021</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><span data-contrast="auto">Aspen Mesh is excited to join the Istio community as a Platinum sponsor</span><span data-contrast="auto"> of</span><span data-contrast="auto"> </span><span data-contrast="auto">the </span><span data-contrast="auto">very first conference dedicated to Istio;</span><span data-contrast="auto"> </span><a href="https://events.istio.io/istiocon-2021/"><span data-contrast="auto">IstioCon</span></a><span data-contrast="auto"> 2021. </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
+<p><span data-contrast="auto">IstioCon</span><span data-contrast="auto"> is a </span><span data-contrast="auto">new, </span><span data-contrast="auto">community-led event showcasing the lessons learned from running Istio in production, hands-on experiences from the Istio community, and featuring maintainers from across the Istio ecosystem. </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
+<p><span data-contrast="auto">The conference </span><span data-contrast="auto">will</span><span data-contrast="auto"> </span><span data-contrast="auto">offer </span><span data-contrast="auto">a mix of keynotes, technical talks, lightning talks, workshops and roadmap sessions. </span></p>
+<p>We&#8217;re excited for this new Istio community event and we hope you can join us. You&#8217;ll find several Aspen Meshers <a href="https://events.istio.io/istiocon-2021/schedule/?utm_campaign=Events&amp;utm_source=hs_email&amp;utm_medium=email&amp;_hsenc=p2ANqtz-9hAUnK-1Uv3366vzgh3UV_4aW6j72VYGLiAOIJw7Cu3p3hZ4P56_pKfSDkLqUAXXWiklqz" target="_blank" rel="noopener" data-hs-link-id="0">scheduled</a> to give presentations, so be sure to stop by:</p>
+<ul>
+<li><strong>&#8220;Using Istio to Build the Next Generation 5G Platform&#8221;</strong> with Neeraj Poddar (Aspen Mesh) and David Lenrow (Verizon)</li>
+<li><strong>&#8220;Simple Certificate Management (Pilot-Agent Environmental Variables)&#8221;</strong> with Jacob Delgado (Aspen Mesh)</li>
+<li><strong>&#8220;Istio Project Roadmap&#8221;</strong> with Neeraj Poddar (Aspen Mesh) and Louis Ryan (Google)</li>
+<li><strong>&#8220;Istio Product Security Working Group &#8211; What It Is and Why It&#8217;s Important&#8221;</strong> with Jacob Delgado (Aspen Mesh) and Brian Avery (Red Hat)</li>
+</ul>
+<p><a href="https://events.istio.io/istiocon-2021/" target="_blank" rel="noopener"><span data-contrast="none">Find more </span><span data-contrast="none">information</span><span data-contrast="none"> about </span><span data-contrast="none">IstioCon</span><span data-contrast="none"> here</span></a><span data-contrast="auto">.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
+<p><img class="alignleft wp-image-6669 size-medium" src="https://aspenmesh.io/wp-content/uploads/2021/01/IstioCon-2021-300x260.png" alt="IstioCon 2021" width="300" height="260" srcset="https://aspenmesh.io/wp-content/uploads/2021/01/IstioCon-2021-300x260.png 300w, https://aspenmesh.io/wp-content/uploads/2021/01/IstioCon-2021-768x665.png 768w, https://aspenmesh.io/wp-content/uploads/2021/01/IstioCon-2021-1024x887.png 1024w, https://aspenmesh.io/wp-content/uploads/2021/01/IstioCon-2021.png 1406w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/istiocon-2021/">Aspen Mesh to Sponsor IstioCon 2021</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://aspenmesh.io/istiocon-2021/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How Service Mesh Helps Application Management</title>
+		<link>https://aspenmesh.io/how-service-mesh-helps-application-management/</link>
+					<comments>https://aspenmesh.io/how-service-mesh-helps-application-management/#respond</comments>
+		
+		<dc:creator><![CDATA[Rose Sawvel]]></dc:creator>
+		<pubDate>Mon, 14 Dec 2020 16:05:43 +0000</pubDate>
+				<category><![CDATA[Service Mesh]]></category>
+		<guid isPermaLink="false">https://aspenmesh.io/?p=6258</guid>
+
+					<description><![CDATA[<p>Manage Microservices More Efficiently Microservice-based applications come with some serious upside, but keeping track of every single service is a [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/how-service-mesh-helps-application-management/">How Service Mesh Helps Application Management</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<h2><b>Manage Microservices More Efficiently</b></h2>
+<p><span style="font-weight: 400;">Microservice-based applications come with some serious upside, but keeping track of every single service is a challenge — especially for the platform teams that can&#8217;t narrow their vision to a single microservice. If you’re operating or developing in a microservices architecture, there’s a good chance part of your days are spent wondering what your services are up to. It&#8217;s frustrating to move from service to service and have to relearn everything; how it&#8217;s configured, what telemetry you&#8217;ll have, how it manages certs and keys.</span></p>
+<p><span style="font-weight: 400;">With the adoption of microservices, problems can also emerge due to the sheer number of services that exist in large systems. For a monolith, issues like security, load balancing, monitoring and rate limiting only had to be solved once, but for microservices, those issues now have to be handled separately for each service. </span></p>
+<p><span style="font-weight: 400;">The good news though? A service mesh helps address many of these challenges so engineering teams – and businesses – can deliver applications more quickly and securely.</span></p>
+<p>&nbsp;</p>
+<h2><b>Take Your Digital Transformation Further</b></h2>
+<p><span style="font-weight: 400;">There are many things to think about as companies embrace digital transformation by migrating from legacy or monolithic systems to microservices. Starting with, well, microservices. It’s easy to understand why microservice-based applications are becoming more and more common. Through microservice architectures, enterprises are seeing: </span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Improved scalability</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Increased development velocity</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Easier debugging</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Rapid alignment between development and user requirements </span></li>
+</ul>
+<p><span style="font-weight: 400;">As companies build or convert to more modern applications, they’re leveraging microservices to drive differentiation and market leadership. As a side effect, they realize that they are increasing complexity and decentralizing ownership and control. These new challenges require new solutions to effectively monitor, manage and control microservice-based applications at runtime.</span></p>
+<p><span style="font-weight: 400;">Keep in mind that <a href="https://kubernetes.io/" target="_blank" rel="noopener">Kubernetes</a> has become the defacto method for enterprises to orchestrate containers. Kubernetes is a superb tool when it comes to deploying, scheduling and running containerized applications through a basic approach to networking that doesn&#8217;t provide rich service-to-service communication.</span></p>
+<p><span style="font-weight: 400;">That’s where service mesh comes in. A service mesh like Aspen Mesh adds <a href="https://aspenmesh.io/what-service-mesh-provides/">observability</a>, <a href="https://aspenmesh.io/microservices-security-compliance/">security</a> and <a href="https://aspenmesh.io/service-mesh-policy/">policy capabilities</a> to Kubernetes. A service mesh helps to ensure <a href="https://aspenmesh.io/rapid-resolve/">resiliency and uptime</a> – it provides solutions that enable engineering teams to more effectively monitor, control and secure the modern application at runtime. Companies are adopting service mesh as a way to enhance Kubernetes, as it provides a toolbox of features that address various microservices challenges that modern enterprises are facing.</span></p>
+<p>&nbsp;</p>
+<h3>Get the Most Out of Your Service Mesh</h3>
+<p>Fill out the form below to get the free eBook &#8220;Getting the Most Out of Your Service Mesh&#8221; to keep learning about what a service mesh can do to help, and how to get the most out of it.</p>
+<p><!-- [if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]--><br />
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script><br />
+<script>
+hbspt.forms.create({
+portalId: "5464721",
+formId: "d118bb35-30cb-4c7a-a64e-3089615ed5b7"
+});
+</script></p>
+<p>The post <a rel="nofollow" href="https://aspenmesh.io/how-service-mesh-helps-application-management/">How Service Mesh Helps Application Management</a> appeared first on <a rel="nofollow" href="https://aspenmesh.io">Aspen Mesh</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://aspenmesh.io/how-service-mesh-helps-application-management/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

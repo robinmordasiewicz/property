@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>NGINX</title>
+	<atom:link href="https://www.nginx.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.nginx.com</link>
+	<description>The High Performance Reverse Proxy, Load Balancer, Edge Cache, Origin Server</description>
+	<lastBuildDate>Mon, 31 Jan 2022 22:04:21 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>Supporting Open Source for a More Secure World: F5 NGINX Announces Sponsorships of Let’s Encrypt and OpenSSL</title>
+		<link>https://www.nginx.com/blog/supporting-open-source-f5-nginx-sponsorships-of-lets-encrypt-openssl/</link>
+		
+		<dc:creator><![CDATA[Libby Meren of F5]]></dc:creator>
+		<pubDate>Mon, 24 Jan 2022 19:52:59 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[OpenSSL]]></category>
+		<category><![CDATA[Let's Encrypt]]></category>
+		<guid isPermaLink="false">https://www.nginx.com/?p=68568</guid>
+
+					<description><![CDATA[<p>Our goals at F5&#160;NGINX include not only building great open source software that enables modern applications and Platforms Ops practices, but also making the technology world more secure. We take great pride in our security efforts, and also recognize that it takes a broader team to secure the technology fabric we all increasingly rely on [...]</p>
+<p><a class="btn btn-secondary understrap-read-more-link" href="https://www.nginx.com/blog/supporting-open-source-f5-nginx-sponsorships-of-lets-encrypt-openssl/">Read More...</a></p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/supporting-open-source-f5-nginx-sponsorships-of-lets-encrypt-openssl/">Supporting Open Source for a More Secure World: F5 NGINX Announces Sponsorships of Let’s Encrypt and OpenSSL</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>Our goals at F5&nbsp;NGINX include not only building great open source software that enables modern applications and Platforms Ops practices, but also making the technology world more secure. We take great pride in our security efforts, and also recognize that it takes a broader team to secure the technology fabric we all increasingly rely on in our daily lives. We are proud to announce our sponsorship of two of the open source projects that are crucial in securing technology across the globe&nbsp;&ndash; <a target="_blank" href="https://letsencrypt.org/sponsors/" rel="noopener noreferrer">Let’s&nbsp;Encrypt</a> and <a target="_blank" href="https://www.openssl.org/support/acks.html" rel="noopener noreferrer">OpenSSL</a>. </p>
+<h2>Let&#8217;s Encrypt</h2>
+<p><a target="_blank" href="https://letsencrypt.org/" rel="noopener noreferrer">Let’s&nbsp;Encrypt</a> has lowered the barrier to security by making it, quite literally, free to obtain and deploy digital certificates. More specifically, the mission of Let’s&nbsp;Encrypt is to create a more secure World Wide Web by promoting the widespread adoption of HTTPS. To do this, Let’s&nbsp;Encrypt runs the world’s largest certificate authority, <a target="_blank" href="https://www.abetterinternet.org/documents/2021-ISRG-Annual-Report.pdf" rel="noopener noreferrer">securing more than&nbsp;260 million websites</a> and simplifying certificate management by automating many of the tedious manual steps, such as payment, web server config, email validation, and certificate renewal. </p>
+<p>It is not an overstatement to say that Let’s&nbsp;Encrypt has been one of the major reasons why the rollout of TLS encryption has been so successful. We like Let’s&nbsp;Encrypt so much that we recommend it to our customers and have even built some <a href="https://www.nginx.com/blog/using-free-ssltls-certificates-from-lets-encrypt-with-nginx/">recipes</a> to automate the process of using Let’s&nbsp;Encrypt as a certificate authority with NGINX Ingress Controller and NGINX Service Mesh.</p>
+<h2>OpenSSL</h2>
+<p><a target="_blank" href="https://www.openssl.org/" rel="noopener noreferrer">OpenSSL</a> is another unsung hero of global technology security. A small core team builds and maintains “a robust, commercial&#8209;grade, and full&#8209;featured toolkit” for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols. OpenSSL publishes a free and open source cryptography library under a permissive Apache&#8209;style license, as an alternative to proprietary cryptography libraries which can cost tens or hundreds of thousands of dollars per year. By removing this cost barrier, OpenSSL has enabled millions of organizations to implement stronger security than they could have otherwise.</p>
+<h2>Join Us in Supporting Open Source Software</h2>
+<p>NGINX believes that open source is the way and the future of global technology security. We in the open source community are all in this together. Encouraging the broader use of core foundational security benefits us all by reducing the attack surface of the global application infrastructure. The real heroes here, of course, are the project maintainers and contributors. They are selfless and awesome.</p>
+<p>We hope that our support makes it easier for Let’s&nbsp;Encrypt and OpenSSL to do their important work. Please join us in supporting them&nbsp;&ndash; and other open source projects&nbsp;&ndash; in any way you can. If you know of other projects that deserve support, please let us know in the comments section. </p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/supporting-open-source-f5-nginx-sponsorships-of-lets-encrypt-openssl/">Supporting Open Source for a More Secure World: F5 NGINX Announces Sponsorships of Let’s Encrypt and OpenSSL</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>F5 and NGINX Together Extend Robust Security Across Your Hybrid Environment</title>
+		<link>https://www.nginx.com/blog/f5-nginx-together-extend-robust-security-across-your-hybrid-environment/</link>
+		
+		<dc:creator><![CDATA[Thelen Blum of F5]]></dc:creator>
+		<pubDate>Thu, 20 Jan 2022 17:52:09 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[F5 BIG-IP]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[WAF]]></category>
+		<category><![CDATA[NGINX App Protect]]></category>
+		<category><![CDATA[NGINX App Protect WAF]]></category>
+		<guid isPermaLink="false">https://www.nginx.com/?p=68610</guid>
+
+					<description><![CDATA[<p>When one of the world’s most successful premium car makers picks an application security solution, you can be confident they’ve made sure it meets their standards for performance and reliability. That’s why we’re proud that the Audi Group&#160;&#8211; active in more than&#160;100 markets worldwide&#160;&#8211; recently chose F5 NGINX App Protect WAF to secure its Kubernetes&#8209;based [...]</p>
+<p><a class="btn btn-secondary understrap-read-more-link" href="https://www.nginx.com/blog/f5-nginx-together-extend-robust-security-across-your-hybrid-environment/">Read More...</a></p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/f5-nginx-together-extend-robust-security-across-your-hybrid-environment/">F5 and NGINX Together Extend Robust Security Across Your Hybrid Environment</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><a href="https://www.nginx.com/success-stories/audi-future-proofs-tech-vision-app-innovation-with-nginx/"><img src="https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_audi.png" alt="" width="2048" height="861" class="aligncenter size-full wp-image-68634" srcset="https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_audi.png 2048w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_audi-300x126.png 300w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_audi-1024x431.png 1024w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_audi-768x323.png 768w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_audi-1536x646.png 1536w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_audi-150x63.png 150w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_audi-640x269.png 640w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_audi-320x135.png 320w" sizes="(max-width: 2048px) 100vw, 2048px" /></a></p>
+<p>When one of the world’s most successful premium car makers picks an application security solution, you can be confident they’ve made sure it meets their standards for performance and reliability. That’s why we’re proud that the Audi Group&nbsp;&ndash; active in more than&nbsp;100 markets worldwide&nbsp;&ndash; <a href="https://www.nginx.com/success-stories/audi-future-proofs-tech-vision-app-innovation-with-nginx/">recently chose F5 NGINX App Protect WAF</a> to secure its Kubernetes&#8209;based platform for modern application development. </p>
+<p><a href="https://www.nginx.com/products/nginx-app-protect/">NGINX App Protect</a> is a prime example of how F5 enables customers on their digital transformation journeys by integrating its industry&#8209;leading security expertise into tools for modern apps. In this case, we’ve ported the security engine from <a target="_blank" href="https://www.f5.com/products/security/advanced-waf" rel="noopener noreferrer">F5 Advanced Web Application Firewall</a> (WAF)&nbsp;&ndash; tried and tested over decades by our BIG&#8209;IP customers&nbsp;&ndash; into NGINX, known as an ideal platform for modern app delivery thanks to its exceptional performance, flexible programmability, and ease of deployment in any environment.</p>
+<p>Like many F5 customers, Audi relies on both BIG&#8209;IP and NGINX. By leveraging a common security engine in products with the right form factor for different environments, Audi can be confident that its entire infrastructure is protected from the <a target="_blank" href="https://owasp.org/www-project-top-ten/" rel="noopener noreferrer">OWASP Top 10</a> and other advanced threats. It also means that Audi’s DevOps and SecOps teams can operate in harmony with robust support from F5.</p>
+<p>F5 acquired NGINX in&nbsp;2019 because it recognized the changes it was seeing in the app&#8209;delivery landscape as inexorable. NGINX App Protect is one of the first demonstrations of the synergy that makes F5 and NGINX better together. We look forward to building further on that synergy, strengthening both F5’s security portfolio and its role in the modern application landscape.</p>
+<p><img src="https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_teamwork.png" alt="" width="2049" height="1681" class="aligncenter size-full wp-image-68617" srcset="https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_teamwork.png 2049w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_teamwork-300x246.png 300w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_teamwork-1024x840.png 1024w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_teamwork-768x630.png 768w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_teamwork-1536x1260.png 1536w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_teamwork-150x123.png 150w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_teamwork-640x525.png 640w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_teamwork-320x263.png 320w" sizes="(max-width: 2049px) 100vw, 2049px" /></p>
+<h2>How NGINX Helps Make F5 Better</h2>
+<p>In the mid&#8209;2010s, F5 realized that to continue succeeding in the modern app&#8209;delivery landscape it needed to build out its product portfolio. Today we see those changes accelerating, as evidenced by these trends:</p>
+<ul>
+<li>Enterprises are adopting <a href="https://www.nginx.com/resources/library/cloud-native-devops-with-kubernetes/">Kubernetes</a> for modern app environments</li>
+<li>Enterprises are adopting <a href="https://www.nginx.com/blog/securely-set-devops-free-nginx-modern-application-security/">DevSecOps</a>, which shifts security left, closer to developers</li>
+<li>Developers prefer&nbsp;&ndash; and often insist on&nbsp;&ndash; open source software</li>
+</ul>
+<p>As enterprises move to modern app deployments and architectures, the world of application security is also witnessing a shift away from models that treat infrastructure as a shared service. Increasingly, microservices and Kubernetes dominate the modern app landscape, with security tools fully integrated into the delivery process. According to the&nbsp;<a target="_blank" href="https://containerjournal.com/features/findings-from-the-2021-kubernetes-adoption-report/" rel="noopener noreferrer">2021 Kubernetes Adoption report</a>,&nbsp;89% of IT professionals expect Kubernetes to expand its role in infrastructure management over the next two to three years as Kubernetes adoption and functionality continue to grow. </p>
+<p>BIG&#8209;IP and NGINX provide similar core application&#8209;delivery functionality but are suited to different app development and delivery environments. BIG&#8209;IP’s relatively large footprint isn&#8217;t ideal for all application types, especially highly distributed and dynamic ones. Particularly as <a href="https://www.nginx.com/blog/shifting-security-tools-left-for-safer-apps/">DevSecOps shifts security left</a>&nbsp;&ndash; and  developers deploy new and updated software faster than ever&nbsp;&ndash; enterprises need a solution with a smaller footprint that integrates easily into DevOps workflows. </p>
+<p>F5 provides that solution in the form of NGINX App Protect and other NGINX products. Additionally, NGINX satisfies the craving of today’s modern app developers&nbsp;&ndash; and anyone who focuses on building applications rather than managing networks and security&nbsp;&ndash; for open source technology. The DevSecOps culture also leans towards open source, and NGINX brought to F5 its large, enthusiastic open source community and modern mindset. Beyond that, NGINX’s modern modular architecture makes it easy to incorporate F5 security technology in the form of modules. </p>
+<p>With its open source roots, NGINX has put a community&#8209;forward mindset front and center in its app development and microservices architectures. Now NGINX is helping influence F5 to extend its more traditional culture and embrace open source as part of product development. As a clear example, at Sprint&nbsp;2.0, <a href="https://www.nginx.com/blog/nginx-sprint-2-0-clear-vision-fresh-code-new-commitments-to-open-source/">F5 announced its expanded participation</a> in open source projects like the Kubernetes Gateway API SIG and community.</p>
+<h2>How F5 Helps Make NGINX Better</h2>
+<p>The F5 Advanced WAF is a perfect fit for security&#8209;focused organizations that wish to self&#8209;manage and tailor granular controls for traditional apps. Its WAF and DoS security engines have long been available to BIG&#8209;IP customers as modules in Advanced WAF, but not in a lightweight form factor suitable for microservices architectures and environments. NGINX customers, on the other hand, had trouble finding a WAF with the rich feature set of Advanced WAF that didn’t drive up latency. </p>
+<p>After the NGINX acquisition, F5 made it a top priority to port its trusted application security solutions to NGINX, offering enterprise&#8209;grade security expertise in a high&#8209;performance and lightweight form factor that <a href="https://www.nginx.com/blog/securely-set-devops-free-nginx-modern-application-security/">serves the needs of DevOps and DevSecOps teams</a> building modern applications. NGINX App Protect is the result.  Immediately upon its release in&nbsp;2020, it set new benchmarks for low latency, high performance, and resistance to bypass techniques.</p>
+<p>The many benefits from integrating Advanced WAF’s power into NGINX include:</p>
+<ul>
+<li>Protecting and scaling mission&#8209;critical, advanced front&#8209;end services in your modern application stack</li>
+<li>Achieving the <span style="white-space: nowrap;">time-to-market</span> benefits of a microservices architecture without compromising reliability and security controls</li>
+<li>Providing consistent, robust, and high&#8209;performance application security wherever application traffic moves&nbsp;&ndash; whether through BIG&#8209;IP or through microservices architectures enabled by NGINX</li>
+</ul>
+<p><a href="https://www.nginx.com/products/nginx-app-protect/web-application-firewall">NGINX App Protect WAF</a> provides high performance in a small footprint, optimized for microservices architectures, cloud, and containers. <a href="https://www.nginx.com/products/nginx-app-protect/denial-of-service/">NGINX App Protect DoS</a> defends against <span style="white-space: nowrap;">hard-to-detect</span> Layer&nbsp;7 attacks.</p>
+<p>And how does F5 serve enterprises who want to shift left? By enabling them to inject battle&#8209;tested and superior application security into their CI/CD pipelines, reducing the inherent risks of rapid and frequent releases. The <a href="https://www.nginx.com/products/nginx-controller">F5 NGINX  Controller</a> App Security add&#8209;on for both <a href="https://www.nginx.com/blog/fortifying-apis-with-advanced-security/">API management</a> and <a href="https://www.nginx.com/blog/introducing-nginx-controller-app-security-for-delivery/">application delivery</a> enable AppDev and DevOps teams to implement WAF protection in their development pipelines in a self&#8209;service manner while still complying with corporate security requirements. You can also apply consistent policies across all of your BIG&#8209;IP and NGINX deployment environments with the <a href="https://www.nginx.com/blog/bringing-f5-and-nginx-waf-policies-into-controller-app-security/">NGINX App Protect Policy Converter</a>.</p>
+<p><img src="https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_future-vision.png" alt="" width="2049" height="1153" class="aligncenter size-full wp-image-68616" srcset="https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_future-vision.png 2049w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_future-vision-300x169.png 300w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_future-vision-1024x576.png 1024w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_future-vision-768x432.png 768w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_future-vision-1536x864.png 1536w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_future-vision-150x84.png 150w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_future-vision-640x360.png 640w, https://www.nginx.com/wp-content/uploads/2022/01/F5-NGINX-extend-robust-security_future-vision-320x180.png 320w" sizes="(max-width: 2049px) 100vw, 2049px" /></p>
+<h2>Improving Governance and Observability with Machine Learning and Portable Policies</h2>
+<p>Of course, technology never stops evolving, and F5 and NGINX plan to continue innovating.</p>
+<h3>F5&#8217;s “Adaptive Applications” Vision Promises Comprehensive Security</h3>
+<p>As <a href="https://www.nginx.com/blog/defending-applications-complex-modern-attacks/">modern threats become increasingly complex</a>, an app’s ability to adapt to threats and other changes becomes ever more crucial. In an ideal world, app services independently scale based on demand. F5 sees this as entering <a target="_blank" href="https://www.f5.com/company/blog/adaptive-applications" rel="noopener noreferrer">a new world of “Adaptive Applications”</a>&nbsp;&ndash; one where a consistent, declarative API layer enables easy management of applications that learn to take care of themselves and avoid evolving security threats, allowing customers to safely deliver modernized experiences.</p>
+<h3>Acquisitions like Shape and Threat Stack Enrich F5 with ML and Observability</h3>
+<p>Further expanding its world&#8209;class portfolio of application security and delivery technology, F5 acquired <a target="_blank" href="https://www.f5.com/company/news/press-releases/f5-completes-acquisition-of-shape-security" rel="noopener noreferrer">Shape Security</a>, a leader in online fraud and abuse prevention, in&nbsp;2020, and <a target="_blank" href="https://investors.f5.com/news/press-release-details/2021/F5-Enhances-Cloud-Security-Portfolio-with-Acquisition-of-Threat-Stack/default.aspx" rel="noopener noreferrer">Threat Stack</a>, a cloud&#8209; and container&#8209;native observability solution, in&nbsp;2021. Incorporating Shape and Threat Stack technology gives F5 an <span style="white-space: nowrap;">end-to-end</span> application security solution with proactive risk identification and real&#8209;time threat mitigation, plus enhanced visibility across application infrastructures and workloads. Dashboards and monitoring are already in the works, along with projects focusing on machine learning (ML). F5 sees the need for sophisticated, adaptive protection and is dedicated to expanding its offerings in that area.</p>
+<h3>One WAF Engine Across Platforms Ensures Effective Security Everywhere</h3>
+<p>Using common WAF technology, F5 customers can maintain their standardized security policies when migrating from traditional environments to containerized and cloud environments, and from the F5 Advanced WAF to NGINX App Protect. Portability across our WAF products ensures continued security and confidence for F5 customers by use of a shared declarative API for WAF policy. Staying close to the application workloads, F5 is committed to enabling WAF capabilities in form factors best able to meet the needs of the application and its architecture.  </p>
+<h2>Get Started with F5 NGINX Today</h2>
+<p>To stay up to date with F5 NGINX, engage with your trusted technology advisors&nbsp;&ndash; whether that be your account team or partner. Environments are constantly being streamlined for better management, and it’s easier than ever to stay plugged&#8209;in and subscribe, especially with our focus on <a href="https://www.nginx.com/resources/wiki/community/">community</a>. Whether you’re shifting left, requiring complex protection, or looking for <span style="white-space: nowrap;">time-to-market</span> benefits, F5 NGINX’s tested technology, smaller footprint, and high&#8209;performance solutions ensure agile and lightweight security both now and for the future. </p>
+<p>Regardless of where you are in your app development journey, you can get started with <span style="white-space: nowrap;">free 30-day</span> trials of our commercial security solutions:</p>
+<ul>
+<li><a href="https://www.nginx.com/free-trial-request/">NGINX App Protect WAF and DoS with NGINX Plus</a></li>
+<li><a href="https://www.nginx.com/free-trial-request-nginx-controller/">NGINX Controller</a></li>
+</ul>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/f5-nginx-together-extend-robust-security-across-your-hybrid-environment/">F5 and NGINX Together Extend Robust Security Across Your Hybrid Environment</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Do Svidaniya, Igor, and Thank You for NGINX</title>
+		<link>https://www.nginx.com/blog/do-svidaniya-igor-thank-you-for-nginx/</link>
+		
+		<dc:creator><![CDATA[Rob Whiteley of F5]]></dc:creator>
+		<pubDate>Tue, 18 Jan 2022 14:55:30 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">https://www.nginx.com/?p=68609</guid>
+
+					<description><![CDATA[<p>With profound appreciation and gratitude, we announce today that Igor&#160;Sysoev&#160;&#8211; author of NGINX and co&#8209;founder of NGINX, Inc.&#160;&#8211; has chosen to step back from NGINX and F5 in order to spend more time with his friends and family and to pursue personal projects. Igor began developing NGINX in the spring of&#160;2002. He watched the meteoric [...]</p>
+<p><a class="btn btn-secondary understrap-read-more-link" href="https://www.nginx.com/blog/do-svidaniya-igor-thank-you-for-nginx/">Read More...</a></p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/do-svidaniya-igor-thank-you-for-nginx/">Do Svidaniya, Igor, and Thank You for NGINX</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>With profound appreciation and gratitude, we announce today that Igor&nbsp;Sysoev&nbsp;&ndash; author of NGINX and co&#8209;founder of NGINX, Inc.&nbsp;&ndash; has chosen to step back from NGINX and F5 in order to spend more time with his friends and family and to pursue personal projects.</p>
+<p>Igor began developing NGINX in the spring of&nbsp;2002. He watched the meteoric growth of the early Internet and envisioned a better way to handle web traffic, a novel architecture that would allow high&#8209;traffic sites to better handle tens of thousands of concurrent connections and cache rich content such as photos or videos that was slowing down page loads. </p>
+<p>Fast forward&nbsp;20 years, and the code that Igor created <a target="_blank" href="https://w3techs.com/technologies/cross/web_server/ranking" rel="noopener noreferrer">now powers the majority of websites running on the planet</a>&nbsp;&ndash; both directly and as the software underlying popular servers like Cloudflare, OpenResty, and Tengine. In fact, one could easily argue that Igor’s vision is a key part of what makes the web what it is today. Igor’s vision and values then shaped the company NGINX,&nbsp;Inc., fostering a commitment to code excellence and transparency powered by open source and community, while simultaneously creating commercial products that customers loved. </p>
+<p>This is not an easy balancing act. That Igor is held in such high esteem by community and developers, enterprise customers, and NGINX engineers is a testament to his leadership by example with humility, curiosity, and an insistence on making great software.</p>
+<h2>A Brief History of Igor and NGINX</h2>
+<p>Igor came from humble beginnings. The son of a military officer, he was born in a small town in Kazakhstan (then a Soviet republic). His family moved to the capital Almaty when he was a year old. From a young age, Igor was fascinated with computers. He wrote his first lines of code on a Yamaha MSX as a high schooler in the mid&#8209;1980s. Igor later graduated with a degree in computer science from the prestigious Bauman Moscow State Technical University as the early Internet was beginning to take shape. </p>
+<p>Igor started working as a systems administrator but continued to write code on the side. He released his first program in assembly language in&nbsp;1999, the AV antivirus program which guarded against the&nbsp;10 most common computer viruses of the time. Igor freely shared the binaries, and the program was widely used in Russia for several years. He started work on what would become NGINX after he realized that the way the original Apache HTTP Server handled connections could not scale to meet the needs of the evolving World Wide Web.</p>
+<p>In particular, Igor sought to solve the <a target="_blank" href="https://en.wikipedia.org/wiki/C10k_problem" rel="noopener noreferrer">C10k problem</a>&nbsp;&ndash; handling&nbsp;10,000 concurrent connections on a single server&nbsp;&ndash; by building a web server that not only handled massive concurrency but could also serve bandwidth&#8209;hogging elements such as photos or music files more quickly and efficiently. After several companies in Russia and abroad began using NGINX, Igor open sourced the project with a permissive license on <span style="white-space: nowrap;">October 4, 2004</span>&nbsp;&ndash; the&nbsp;47th anniversary of the day the USSR launched <a target="_blank" href="https://en.wikipedia.org/wiki/Sputnik_1" rel="noopener noreferrer">Sputnik</a>, the world’s first artificial satellite. </p>
+<p>For seven years, Igor was the sole developer of NGINX code. During that period, he wrote hundreds of thousands of lines of code and grew NGINX from a web server and reverse proxy into a true Swiss Army Knife&trade; for web applications and services, adding key capabilities for load balancing, caching, security, and content acceleration. </p>
+<p>NGINX rapidly gained market share, even though Igor spent zero time evangelizing the project and documentation was limited. Even with a missing manual, NGINX worked and word spread. More and more developers and sysadmins used it to solve their problems and accelerate their websites. Igor didn’t need praise or promotion. His code spoke for itself. </p>
+<h2>NGINX Goes Commercial But Stays True to Open Source</h2>
+<p>In&nbsp;2011, Igor formed the company NGINX, Inc. with co&#8209;founders <a href="https://www.nginx.com/people/maxim-konovalov">Maxim Konovalov</a> and <a href="https://www.nginx.com/people/andrew-alexeev/">Andrew Alexeev</a>, in order to accelerate development velocity. Even though Igor understood that now he and his team needed to figure out ways to make money, they made a vow to maintain the integrity of the open source version of NGINX and to keep its permissive license. He has been true to his word. Under Igor’s direction, NGINX has consistently improved its open source product in more than&nbsp;<a target="_blank" href="https://nginx.org/en/CHANGES" rel="noopener noreferrer">140 releases</a> since the company’s founding. Today NGINX software powers <a target="_blank" href="https://news.netcraft.com/archives/category/web-server-survey/" rel="noopener noreferrer">hundreds of millions of websites</a>. </p>
+<figure id="attachment_68629" aria-describedby="caption-attachment-68629" style="width: 1024px" class="wp-caption aligncenter"><img src="https://www.nginx.com/wp-content/uploads/2022/01/Do-svidaniya-Igor_with-founders.png" alt="" width="600" height="450" class="aligncenter size-full wp-image-68629" srcset="https://www.nginx.com/wp-content/uploads/2022/01/Do-svidaniya-Igor_with-founders.png 600w, https://www.nginx.com/wp-content/uploads/2022/01/Do-svidaniya-Igor_with-founders-300x225.png 300w, https://www.nginx.com/wp-content/uploads/2022/01/Do-svidaniya-Igor_with-founders-150x113.png 150w, https://www.nginx.com/wp-content/uploads/2022/01/Do-svidaniya-Igor_with-founders-320x240.png 320w" sizes="(max-width: 600px) 100vw, 600px" /><figcaption id="caption-attachment-68629" class="wp-caption-text">On the road raising venture capital for NGINX, Inc.&nbsp;&ndash; (from <strong>right</strong>) Igor, CEO Gus Robertson, co&#8209;founders Andrew&nbsp;Alexeev and Maxim&nbsp;Konovalov</figcaption></figure>
+<p>In&nbsp;2011, the idea of adding functionality to a commercial version in the form of proprietary modules was novel thinking; today, numerous open source startups follow this path. When that commercial version, NGINX&nbsp;Plus, launched in&nbsp;2013, it was warmly received. Four years later, NGINX had over&nbsp;1,000 paying customers and tens of millions in revenues, even as NGINX Open Source and the NGINX community continued to grow and prosper. By the end of&nbsp;2019, NGINX was powering more than&nbsp;<a target="_blank" href="https://news.netcraft.com/archives/2019/12/10/december-2019-web-server-survey.html" rel="noopener noreferrer">475 million websites</a> and in&nbsp;2021, NGINX became the <a href="https://www.nginx.com/blog/now-worlds-1-web-server-nginx-looks-forward-to-even-brighter-future">most widely used web server in the world</a>. </p>
+<p>Always looking to the future, Igor has overseen the rapid development of other popular NGINX projects, including <a target="_blank" href="https://nginx.org/en/docs/njs/" rel="noopener noreferrer">NGINX JavaScript</a> (njs) and <a target="_blank" href="https://unit.nginx.org/" rel="noopener noreferrer">NGINX Unit</a>. He also architected a new implementation of the <code>sendfile(2)</code> system call which was <a href="https://www.nginx.com/blog/nginx-and-netflix-contribute-new-sendfile2-to-freebsd/">incorporated into the open source FreeBSD operating system</a>. And as the ranks of NGINX engineers have grown and the company has joined F5, Igor has remained a steady <span style="white-space: nowrap;">behind-the-scenes</span> presence, providing vision and guidance that has kept NGINX on the right path. </p>
+<h2>Carrying On Igor’s Legacy of Excellence</h2>
+<p>Today, our paths diverge with Igor stepping back for a well&#8209;deserved break. Fortunately, his ethos and the culture he created are not going anywhere. In great companies, products, and projects, the DNA of the founder is persistent and immutable. Our approach to products, community, transparency, open source, and innovation have all been shaped by Igor and will continue with Maxim and the NGINX leadership team. </p>
+<p>The ultimate legacy of Igor’s time with NGINX and F5 is, of course, the code itself. Igor wrote much of the code that is still in use today. The test of time will be whether we can continue to write code as timeless and create products as useful and widely respected as Igor has. It’s a high bar, but Igor has left us in a good place to live up to these aspirations. Igor&nbsp;&ndash; thank you so much for all the years working with us and we wish you the very best in your next chapter. </p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/do-svidaniya-igor-thank-you-for-nginx/">Do Svidaniya, Igor, and Thank You for NGINX</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>What’s New with the NGINX Controller Application Delivery Module for 2022</title>
+		<link>https://www.nginx.com/blog/whats-new-nginx-controller-application-delivery-module-2022/</link>
+		
+		<dc:creator><![CDATA[Robert Haynes of F5]]></dc:creator>
+		<pubDate>Wed, 12 Jan 2022 20:36:58 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[application delivery platform]]></category>
+		<category><![CDATA[NGINX Controller]]></category>
+		<guid isPermaLink="false">https://www.nginx.com/?p=68565</guid>
+
+					<description><![CDATA[<p>Said another way, a series of small, incremental changes, delivered often, can have a very large impact. This thinking is the basis for modern apps that are commonly developed using CI/CD pipelines. While daily integration of new code into the mainline might not be a silver bullet, the accumulation of many small submissions can result [...]</p>
+<p><a class="btn btn-secondary understrap-read-more-link" href="https://www.nginx.com/blog/whats-new-nginx-controller-application-delivery-module-2022/">Read More...</a></p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/whats-new-nginx-controller-application-delivery-module-2022/">What’s New with the NGINX Controller Application Delivery Module for 2022</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<div class="ngx_blockquote_wrap">
+<div class="ngx_blockquote"><span class="left-quote">&#8220;</span>“The man who moves a mountain begins by carrying away small stones.<span class="right-quote">&#8221;</span></div>
+<div class="ngx_blockquote_author">&ndash; Confucius</div>
+</div>
+<p>Said another way, a series of small, incremental changes, delivered often, can have a very large impact. This thinking is the basis for modern apps that are <a href="https://www.nginx.com/blog/introducing-cicd-with-nginx-and-nginx-plus/">commonly developed using CI/CD pipelines</a>. While daily integration of new code into the mainline might not be a silver bullet, the accumulation of many small submissions can result in the next killer application. </p>
+<p>Like those who aspire to move a mountain, over the past few months NGINX released new versions of the <a href="https://www.nginx.com/products/nginx-controller/load-balancer-application-delivery/">NGINX Controller Application Delivery Module</a> (ADM) that combine dramatically to improve the product&nbsp;&ndash; already a powerful governance, observability, and simplified operations platform for NGINX Plus deployments and the applications they support.</p>
+<p>Specifically, <span style="white-space: nowrap;">Releases 3.20, 3.21, and 3.22</span> of the ADM together offer both significant new features and enhanced functionality, <strong>much of it the result of your feedback</strong>. In this blog we take a look at highlights in each release that help you keep your apps available, secure, and performing optimally. </p>
+<h2>New Features and Enhancements in Release 3.22</h2>
+<p>Released on December 20, 2021, <a target="_blank" href="https://docs.nginx.com/nginx-controller/releases/adc/adc-release-notes-3.22/" rel="noopener noreferrer">Release&nbsp;3.22</a> includes these new features and enhancements:</p>
+<ul>
+<li>
+<p><strong>Snippets</strong>&nbsp;&ndash; A core mission of NGINX Controller is simplifying workflows and aligning to an app&#8209;centric model for observability, governance, and operations. By design, implementing this model comes with tradeoffs in the form of a more “opinionated” view of configuration and slight limitations on how much you can customize your NGINX deployment&nbsp;&ndash; especially when compared with direct configuration and management of NGINX Plus instances. But we understand that sometimes you really need to tailor configurations for specific use cases.</p>
+<p>With snippets, you can now insert custom NGINX configuration that isn’t natively supported by the Controller API into the main, <code>http</code>, <code>stream</code>, <code>server</code>, <code>location</code>, and <code>upstream</code> contexts in an NGINX configuration.  For best practices and examples, see <a target="_blank" href="https://docs.nginx.com/nginx-controller/app-delivery/about-snippets/" rel="noopener noreferrer">About Snippets</a> in the Controller documentation.</p>
+</li>
+<li>
+<p><strong>Workload health&#8209;check events</strong>&nbsp;&ndash; A primary use case for NGINX Controller is app&#8209;centric visibility and insight, which helps you ensure your apps stay healthy and available. Release&nbsp;3.22 enhances this functionality with two additional workload health&#8209;check events generated per component per instance:</p>
+<ul>
+<li>A triggered event that signifies changes in state of workload group members from “Healthy” to “Unhealthy”</li>
+<li>An event that provides a snapshot of the current state of workload group members, sent every few minutes</li>
+</ul>
+</li>
+<li>
+<p><strong>Workload health&#8209;check probe programmability</strong>&nbsp;&ndash; You can configure the headers in health&#8209;check probes sent by the NGINX Plus data plane to the workload or upstream servers hosting applications.</p>
+</li>
+<li>
+<p><strong>Caching</strong>&nbsp;&ndash; One of the key differentiators of NGINX Plus is its ability to <a href="https://nginx.com/products/nginx/caching/">cache both static and dynamic HTTP content</a> from proxied web and application servers. Caching improves app performance by reducing both the load on the servers and the latency of responses sent to clients, ultimately driving better digital experiences for customers.</p>
+<p>In Release&nbsp;3.22 you can configure <a target="_blank" href="https://docs.nginx.com/nginx/admin-guide/content-cache/content-caching/" rel="noopener noreferrer">caching</a> via the API or UI, and dive into performance metrics and dashboards for cached content. You can also use the new snippet functionality described above for the advanced caching configurations that NGINX supports, such as different cache locations based on content type. For more information, see <a target="_blank" href="https://docs.nginx.com/nginx-controller/app-delivery/about-caching/" rel="noopener noreferrer">About Caching</a> in the Controller documentation.</p>
+</li>
+<li>
+<p><strong>Worker process tuning</strong>&nbsp;&ndash; You can tune NGINX Plus worker processes to better leverage the capabilities of the underlying machine, using the <a target="_blank" href="https://docs.nginx.com/nginx-controller/api/reference/ctlr-v1/adc/docs/instances/v1/paths/PUT/infrastructure/locations/(locationName)/instances/(instanceName)" rel="noopener noreferrer">Controller API</a> to set the following <a target="_blank" href="https://nginx.org/en/docs/ngx_core_module.html" rel="noopener noreferrer">directives</a>: <code>multi_accept</code>, <code>worker_connections</code>, <code>worker_priority</code>, <code>worker_processes</code>, and <code>worker_rlimit_nofile</code>.</p>
+</li>
+<li>
+<p><strong>Instance groups</strong>&nbsp;&ndash; You can now create a logical group of NGINX Plus instances which then receive identical configuration. This enables at&#8209;scale configuration of multiple instances in a single step.</p>
+</li>
+<li>
+<p><strong>Additional enhancements</strong></p>
+<ul>
+<li>Support for enabling proxying to upstream servers with NTLM authentication.</li>
+<li>UI enhancements for configuring rate limiting and JWT authentication for ADC web components.</li>
+<li>Support for OpenID Connect (OIDC) authentication with Azure AD as the  Identity Provider.</li>
+<li>Support for SELinux&nbsp;&ndash; You can now run both Controller and Controller Agents on Linux machines where SELinux is enabled.</li>
+<li>Support for NGINX App Protect WAF&nbsp;3.7.</li>
+<li>Technology preview of Red Hat Enterprise Linux (RHEL)&nbsp;8&nbsp;&ndash;  You can run both Controller and Controller Agents on RHEL&nbsp;8 as a proof of concept. We have tested this functionality in small&#8209;scale deployments only. Performance and stability issues are possible, so we strongly recommend experimenting with scaling in a test environment before deploying to production.</li>
+</ul>
+</li>
+</ul>
+<p>For more details, see the <a target="_blank" href="https://docs.nginx.com/nginx-controller/releases/adc/adc-release-notes-3.22/" rel="noopener noreferrer">Release Notes</a>.</p>
+<h2>New Features and Enhancements in Release 3.21</h2>
+<p>Released on October 27, 2021, <a target="_blank" href="https://docs.nginx.com/nginx-controller/releases/adc/adc-release-notes-3.21/" rel="noopener noreferrer">Release&nbsp;3.21</a> includes these new features and enhancements:</p>
+<ul>
+<li>
+<p>Initial support for snippets as an experimental feature. Customer feedback enabled us to tune the feature for the GA delivery in Release&nbsp;3.22 as described above.</p>
+</li>
+<li>
+<p>Initial support for instance groups as described above.</p>
+</li>
+<li>
+<p>Support for NGINX Plus R19 through R25.</p>
+</li>
+<li>
+<p>Support for NGINX App Protect WAF&nbsp;3.6 and earlier.</p>
+</li>
+</ul>
+<p>For details, see the <a target="_blank" href="https://docs.nginx.com/nginx-controller/releases/adc/adc-release-notes-3.21/" rel="noopener noreferrer">Release Notes</a>.</p>
+<h2>New Features and Enhancements in Release 3.20</h2>
+<p>Released on September 14, 2021, <a target="_blank" href="https://docs.nginx.com/nginx-controller/releases/adc/adc-release-notes-3.20/" rel="noopener noreferrer">Release&nbsp;3.20</a> introduced greater scale, better stability, and a big leap forward in overall product quality, making possible many of the innovations in Releases&nbsp;3.21 and&nbsp;3.22. Features and enhancements include:</p>
+<ul>
+<li>
+<p><strong>Introduction of Data Plane Manager (DPM)</strong>&nbsp;&ndash; This internal enhancement increases the overall scalability and resiliency of NGINX Controller as a whole. With DPM, you can now holistically manage significantly more NGINX Plus instances and application services from a single pane of glass and rest assured that your Controller deployments remain available (the degree of  scale varies by deployment, depending on configuration).</p>
+</li>
+<li>
+<p><strong>Data Explorer</strong>&nbsp;&ndash; You can more easily <a target="_blank" href="https://docs.nginx.com/nginx-controller/analytics/data-explorer/how-to-use/" rel="noopener noreferrer">double&#8209;click into the vast stream of data</a> and metrics produced by the NGINX Plus instances managed by Controller. Data Explorer provides powerful, actionable insights from metrics such as the amount of data generated by HTTP <code>POST</code> requests for a particular app this week compared to last week, or the average CPU utilization trends for an environment. Through better filtering, data dimensions, and the ability to overlay events and time scales on top of raw NGINX Plus data, you can create your own customized view of NGINX Plus data as well as generate alerts to stay in the know.</p>
+</li>
+<li>
+<p><strong>Additional enhancements</strong></p>
+<ul>
+<li>A high&#8209;performance communication path between NGINX Controller and the Controller Agent</li>
+<li>Support for NGINX App Protect WAF&nbsp;3.3 through&nbsp;3.5</li>
+<li>Support for NGINX Plus R19 through R24</li>
+</ul>
+</li>
+</ul>
+<p>For details, see the <a target="_blank" href="https://docs.nginx.com/nginx-controller/releases/adc/adc-release-notes-3.20/" rel="noopener noreferrer">Release Notes</a>.</p>
+<h2>Keep Your Feedback Coming</h2>
+<p>The NGINX Controller Application Delivery Module (and the Controller platform in general) continues to evolve. Together, Releases&nbsp;3.20 through&nbsp;3.22 improve the platform, further simplify and streamline administration and management tasks, make extracting meaningful application insight easier, and help harden security postures. Many of these new features and enhancements are the direct result of conversations we’ve had and feedback we’ve received from you, our customers. So please keep it coming by engaging with your F5 representative. </p>
+<p>If you haven’t had a chance to give NGINX Controller a try, now is a great time! Start a <span style="white-space: nowrap;"><a href="https://www.nginx.com/free-trial-request-nginx-controller">free 30-day trial</a></span> of NGINX&nbsp;Controller today or <a href="https://www.nginx.com/contact-sales/">contact us to discuss your use cases</a>.</p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/whats-new-nginx-controller-application-delivery-module-2022/">What’s New with the NGINX Controller Application Delivery Module for 2022</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Performance Testing NGINX Ingress Controller and Red Hat OpenShift Router</title>
+		<link>https://www.nginx.com/blog/performance-testing-nginx-ingress-controller-red-hat-openshift-router/</link>
+		
+		<dc:creator><![CDATA[Amir Rawdat of F5]]></dc:creator>
+		<pubDate>Mon, 10 Jan 2022 19:00:15 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[Kubernetes]]></category>
+		<category><![CDATA[Red Hat]]></category>
+		<category><![CDATA[OpenShift]]></category>
+		<category><![CDATA[Ingress controller]]></category>
+		<category><![CDATA[performance testing]]></category>
+		<category><![CDATA[NGINX Ingress Controller]]></category>
+		<category><![CDATA[production-grade Kubernetes]]></category>
+		<guid isPermaLink="false">https://www.nginx.com/?p=68564</guid>
+
+					<description><![CDATA[<p>Red Hat OpenShift Container Platform (OCP) is one of the most popular managed Kubernetes platforms, and like its competitors, OCP includes default traffic management tooling to help users get started quickly. The OCP Router&#160;&#8211; based on HAProxy&#160;&#8211; is the default entry point for OCP clusters. It can load balance HTTP and WebSocket traffic, supports TLS [...]</p>
+<p><a class="btn btn-secondary understrap-read-more-link" href="https://www.nginx.com/blog/performance-testing-nginx-ingress-controller-red-hat-openshift-router/">Read More...</a></p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/performance-testing-nginx-ingress-controller-red-hat-openshift-router/">Performance Testing NGINX Ingress Controller and Red Hat OpenShift Router</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>Red Hat OpenShift Container Platform (OCP) is one of the most popular managed Kubernetes platforms, and like its competitors, OCP includes default traffic management tooling to help users get started quickly. The  <a target="_blank" href="https://docs.openshift.com/container-platform/3.3/install_config/router/index.html" rel="noopener noreferrer">OCP Router</a>&nbsp;&ndash; based on <a target="_blank" href="https://www.haproxy.org/" rel="noopener noreferrer">HAProxy</a>&nbsp;&ndash; is the default entry point for OCP clusters. It can load balance HTTP and WebSocket traffic, supports TLS termination and TLS between the Router and application instances, and can load balance TLS connections in a passthrough mode. </p>
+<p>Customers often ask us, “Why should I use NGINX Ingress Controller in OpenShift when the Router is available for free?” In <a href="https://www.nginx.com/blog/why-you-need-enterprise-grade-ingress-controller-on-openshift/">Why You Need an Enterprise&#8209;Grade Ingress Controller on OpenShift</a>, guest blogger Max&nbsp;Mortillaro of GigaOm shares some qualitative reasons you might want to use <a href="https://www.nginx.com/products/nginx-ingress-controller/">NGINX Ingress Controller</a>: advanced traffic management, ease of use, JWT validation, and WAF integration. But it’s also important to answer that question from a quantitative viewpoint, which is why we performance tested the Router and the <span style="white-space: nowrap;">NGINX Plus-based</span> NGINX Ingress Controller <span style="white-space: nowrap;">( <a target="_blank" href="https://github.com/nginxinc/kubernetes-ingress" rel="noopener noreferrer">nginxinc/kubernetes-ingress</a>)</span> in the OCP environment, in a dynamic deployment in which we scaled the number of upstream (backend) servers up and down during the test.</p>
+<p>When we conduct performance tests, we look at two factors to assess how the tools perform:</p>
+<ul>
+<li>
+<p><strong>Factor 1: Latency Results for Dynamic Deployments</strong></p>
+<p>We find that the most effective metric for measuring end user experience in a dynamic deployment is the latency percentile distribution. The more latency added by a system, the more the user experience is affected. We&#8217;ve also found that to get a true picture of user experience, latencies at upper percentiles in the distribution need to be included; for a detailed explanation, see the <strong>Performance Results</strong> section of <a href="https://www.nginx.com/blog/nginx-and-haproxy-testing-user-experience-in-the-cloud/#Performance-Results">NGINX and HAProxy: Testing User Experience in the Cloud</a> on our blog.</p>
+</li>
+<li>
+<p><strong>Factor 2: Timeouts and Errors</strong></p>
+<p>When a system under test causes latency in a dynamic deployment, it’s typically because the system has trouble handling dynamic reloads, experiencing timeouts or errors.</p>
+</li>
+</ul>
+<h2>Performance Testing Results</h2>
+<p>Let’s get right to the interesting part and review the results. Details about the <a href="#Testing-Setup-and-Methodology">testing topology and method</a> follow.</p>
+<p>As discussed above, we consider two factors when assessing performance: latency and timeouts/errors.</p>
+<h3>Factor 1: Latency Percentile Distribution</h3>
+<p>As the following chart illustrates, NGINX Ingress Controller added negligible latency throughout the test, reaching a maximum of less than&nbsp;700ms at the&nbsp;99.999th percentile. In contrast, the OCP Router added latency at fairly low percentiles, and latency increased exponentially until it plateaued at a bit more than&nbsp;25,000ms (25&nbsp;seconds) at the&nbsp;99.99th percentile. This demonstrates that, when under load while changes in the cluster environment are applied frequently, the Router can cause a poor user experience.</p>
+<p><a href="https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_results.png"><img src="https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_results.png" alt="" width="2048" height="1340" class="aligncenter size-full wp-image-68721" srcset="https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_results.png 2048w, https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_results-300x196.png 300w, https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_results-1024x670.png 1024w, https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_results-768x503.png 768w, https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_results-1536x1005.png 1536w, https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_results-150x98.png 150w, https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_results-640x419.png 640w, https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_results-320x209.png 320w" sizes="(max-width: 2048px) 100vw, 2048px" /></a></p>
+<h3>Factor 2: Timeouts and Errors</h3>
+<p>The latency observed above can be attributed to timeouts and errors: the OCP Router produced&nbsp;260 connection timeouts and&nbsp;85 read&#8209;socket errors, while NGINX Ingress Controller produced none. As we’ve seen with other performance tests (see <a href="https://www.nginx.com/blog/performance-testing-nginx-ingress-controllers-dynamic-kubernetes-cloud-environment/">Performance Testing NGINX Ingress Controllers in a Dynamic Kubernetes Cloud Environment</a>), the Router’s timeouts and errors are caused by the way HAproxy handles dynamic reloads. The <span style="white-space: nowrap;">NGINX Plus-based</span> NGINX Ingress Controller doesn’t cause timeouts or errors because it uses the <span style="white-space: nowrap;">NGINX Plus API</span> to dynamically update the NGINX configuration when endpoints change.</p>
+<h2>Testing Setup and Methodology</h2>
+<h3>Testing Topology</h3>
+<p>We ran the same tests on both the NGINX Ingress Controller and the OpenShift Router as the system under test (SUT). The SUT terminated TLS&nbsp;1.3 connections from the client and forwarded the client request over a separate connection to the backend deployment. </p>
+<p>The client was hosted on a separate machine running CentOS&nbsp;7, located on the same LAN as the OpenShift cluster. </p>
+<p>The SUT and backend deployment ran in an OCP cluster hosted on VMware vSphere&nbsp;6.7.0.45100.</p>
+<p><a href="https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_topology.png"><img src="https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_topology.png" alt="" width="2048" height="860" class="aligncenter size-full wp-image-68720" srcset="https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_topology.png 2048w, https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_topology-300x126.png 300w, https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_topology-1024x430.png 1024w, https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_topology-768x323.png 768w, https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_topology-1536x645.png 1536w, https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_topology-150x63.png 150w, https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_topology-640x269.png 640w, https://www.nginx.com/wp-content/uploads/2022/01/performance-test-NGINX-IC-Red-Hat-Router_topology-320x134.png 320w" sizes="(max-width: 2048px) 100vw, 2048px" /></a></p>
+<p>For TLS encryption, we used RSA with <span style="white-space: nowrap;">a 2048-bit</span> key size and Perfect Forward Secrecy. </p>
+<p>Each response from the backend application consisted of <span style="white-space: nowrap;">about 1 KB</span> of basic server metadata, along with <span style="white-space: nowrap;">the <code>200</code> <code>OK</code></span> HTTP status code.</p>
+<h3>Testing Methodology</h3>
+<h4>Client Deployment</h4>
+<p>Using  <a target="_blank" href="https://github.com/giltene/wrk2" rel="noopener noreferrer">wrk2</a> (version&nbsp;4.0.0), we ran the following script on the client machine, running the test for&nbsp;60 seconds (set with <span style="white-space: nowrap;">the <code>-d</code></span> option) at a constant throughput of&nbsp;1000 requests per second (RPS, set with <span style="white-space: nowrap;">the <code>-R</code></span> option):</p>
+<pre><code class="terminal"><strong>./wrk -t 2 -c 50 -d 60s -R 1000 -L https://<em>ingress-URL</em>:443/</strong></code></pre>
+<h4>SUT Deployment</h4>
+<ul>
+<li>OpenShift Platform version&nbsp;4.8, which includes the HAProxy&#8209;based Router by default</li>
+<li>NGINX Ingress Controller Version&nbsp;1.11.0 <span style="white-space: nowrap;">(NGINX Plus R22)</span></li>
+</ul>
+<h4>Backend Deployment</h4>
+<p>We conducted test runs with a dynamic deployment of the backend application, using the following script to scale the number of backend replicas up and down periodically. This emulates a dynamic OpenShift environment and measures how effectively the NGINX Ingress Controller or OCP Router adapts to endpoint changes.</p>
+<pre><code class="config">while [ 1 -eq 1 ]
+do
+  oc scale deployment nginx-backend --replicas=4  
+  sleep 10 
+  oc scale deployment nginx-backend --replicas=2
+  sleep 10
+done</code></pre>
+<h2>Conclusion</h2>
+<p>Most companies adopting microservices methodologies are pushing new developments through their CI/CD pipelines at higher frequencies than ever. For this reason, it is crucial that you leverage a data plane that grows with these new methodologies in capability and performance, without disrupting the end&#8209;user experience. Delivering optimal end&#8209;user experience involves consistently delivering low latency for all client connections, under all circumstances.</p>
+<p>Based on the performance results, the NGINX Ingress Controller delivers the optimal end&#8209;user experience in containerized environments where the need to iterate and improve development is high. </p>
+<p>To get started, download a <a href="https://www.nginx.com/free-trial-request-nginx-ingress-controller/">free trial of NGINX Ingress Controller</a> and deploy it in OCP using the <a href="https://www.nginx.com/blog/getting-started-nginx-ingress-operator-red-hat-openshift/">NGINX Ingress Operator</a>. </p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/performance-testing-nginx-ingress-controller-red-hat-openshift-router/">Performance Testing NGINX Ingress Controller and Red Hat OpenShift Router</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Kubernetes Networking 101</title>
+		<link>https://www.nginx.com/blog/kubernetes-networking-101/</link>
+		
+		<dc:creator><![CDATA[Brian Ehlert of F5]]></dc:creator>
+		<pubDate>Tue, 04 Jan 2022 17:46:43 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[Kubernetes]]></category>
+		<category><![CDATA[Ingress controller]]></category>
+		<category><![CDATA[NGINX Ingress Controller]]></category>
+		<category><![CDATA[production-grade Kubernetes]]></category>
+		<guid isPermaLink="false">https://www.nginx.com/?p=68529</guid>
+
+					<description><![CDATA[<p>NodePort, LoadBalancer, Ingress controller&#8230;oh my! When we talk with customers and the community about making Kubernetes production&#8209;grade, one of the most common questions is: do I need an Ingress controller? The answer to this question is rarely a simple yes or no, but instead involves some education on the different ways you can get traffic [...]</p>
+<p><a class="btn btn-secondary understrap-read-more-link" href="https://www.nginx.com/blog/kubernetes-networking-101/">Read More...</a></p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/kubernetes-networking-101/">Kubernetes Networking 101</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>NodePort, LoadBalancer, Ingress controller&#8230;oh my!</p>
+<p>When we talk with customers and the community about making Kubernetes production&#8209;grade, one of the most common questions is: do I need an Ingress controller? The answer to this question is rarely a simple yes or no, but instead involves some education on the different ways you can get traffic to your pods. In this blog, we cover the basics of Kubernetes networking so you can make an informed decision about if&nbsp;&ndash; and when&nbsp;&ndash; you need an Ingress controller.</p>
+<p>Kubernetes supports several possible approaches and layers to routing external traffic to a pod&nbsp;&ndash; but they aren’t all created equal. The default model is <span style="white-space: nowrap;"><a target="_blank" href="https://kubernetes.io/docs/concepts/overview/components/#kube-proxy" rel="noopener noreferrer"><code>kube-proxy</code></a></span>, which is not actually a proxy and isn’t designed to load balance traffic, control APIs, or monitor service behaviors. </p>
+<p>Fortunately, there are other way to manage external traffic, but before we continue, let’s do a quick review of Kubernetes components: </p>
+<ul>
+<li>Kubernetes deployments are made up of <a target="_blank" href="https://kubernetes.io/docs/concepts/architecture/nodes/" rel="noopener noreferrer">nodes</a>, which are physical or virtual machines.</li>
+<li>Nodes join together to form a <a target="_blank" href="https://kubernetes.io/docs/concepts/overview/components/" rel="noopener noreferrer">cluster</a>.</li>
+<li>Each cluster manages <a target="_blank" href="https://kubernetes.io/docs/concepts/workloads/pods/" rel="noopener noreferrer">pods</a>, which are the lowest common denominator at the networking and infrastructure level in Kubernetes. One or more pods together make up a <a href="#kubernetes-service">service</a>.</li>
+<li>Inside each pod resides one or more containers (depending on the application size).</li>
+</ul>
+<p>Kubernetes watches the pods that make up a service and scales them as necessary to match app requirements. But how do you get traffic to the pods? This is where two types of Kubernetes objects come in: services and Ingress controllers. </p>
+<h2 id="kubernetes-service">What’s a Kubernetes Service?</h2>
+<p>According to the <a target="_blank" href="https://kubernetes.io/docs/concepts/services-networking/service/" rel="noopener noreferrer">Kubernetes docs</a>, a service is “an abstract way to expose an app running on a set of Pods”. A service connects pods in a cluster or network of containers such that their location on a specific node is not relevant. This means external traffic can be routed to specific pods even as their locations change, or even when they are destroyed and restarted. In this way, a service acts much like a very basic reverse proxy. </p>
+<p>There are multiple types of services and service object types relevant to routing external traffic into Kubernetes. They often get confused for each other, but in fact each does very different things, so it’s worth going over their functions, uses, and drawbacks. </p>
+<h3>ClusterIP</h3>
+<p>ClusterIP is the default service that provides a service within Kubernetes that other services within the cluster can access. It is not accessible from outside the cluster. The only way to expose a ClusterIP service is to use something like <span style="white-space: nowrap;"><code>kube-proxy</code></span>, but there are few scenarios where this makes sense. The limited examples include accessing a service on your laptop, debugging a service, or looking at some monitoring and metrics.</p>
+<h3>NodePort</h3>
+<p>A NodePort service opens a specific port on every node in the cluster, and forwards any traffic sent to the node on that port to the corresponding app. This is a very basic way to get traffic to your apps and it has many limitations in actual traffic&#8209;management use cases. You can have only one service per NodePort, and you can only use ports in the range&nbsp;30000 through&nbsp;32767. While&nbsp;2768 ports may <em>sound</em> like a lot, organizations running Kubernetes at scale will quickly run out. Also, NodePort uses Layer&nbsp;4 routing rules and the Linux <a target="_blank" href="https://en.wikipedia.org/wiki/Iptables" rel="noopener noreferrer"><code>iptables</code></a> utility, which limits Layer&nbsp;7 routing. </p>
+<p>In addition to routing limitations, there are three other big drawbacks to using NodePort:</p>
+<ul>
+<li>
+<p>Downstream clients must know the IP address of a node to connect with it&nbsp;&ndash; this becomes problematic if the node’s IP address or virtual machine host changes.</p>
+</li>
+<li>
+<p>NodePort cannot proxy traffic to multiple IP addresses.</p>
+</li>
+<li>
+<p>As shown in the diagram, NodePort doesn’t provide load balancing within Kubernetes clusters, so traffic is distributed randomly across the services. This can result in service overload and port exhaustion.</p>
+<p><a href="https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_NodePort.png"><img src="https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_NodePort.png" alt="" width="2048" height="1592" class="aligncenter size-full wp-image-68726" srcset="https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_NodePort.png 2048w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_NodePort-300x233.png 300w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_NodePort-1024x796.png 1024w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_NodePort-768x597.png 768w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_NodePort-1536x1194.png 1536w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_NodePort-150x117.png 150w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_NodePort-640x498.png 640w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_NodePort-320x249.png 320w" sizes="(max-width: 2048px) 100vw, 2048px" /></a>
+</li>
+</ul>
+<h3>LoadBalancer</h3>
+<p>A LoadBalancer service accepts external traffic but requires an external load balancer as an interface for that traffic. This supports Layer&nbsp;7 routing (to pod IP addresses), provided the external load balancer is properly tuned and reconfigured to map to running pods. LoadBalancer is one of the most popular ways to expose services externally. It’s most often used in a cloud platform and is a good choice for small, static deployments.</p>
+<p>If you are using a managed Kubernetes service, you automatically get the load balancer selected by the cloud provider. For example, on Google Cloud Platform you can spin up a Network Load Balancer using the LoadBalancer service type, while Application Load Balancer (ALB) is the default in AWS. Each service you expose gets its own public IP address that forwards all traffic, but without any filtering or routing, meaning you can send almost any type of traffic (HTTP, TCP/UDP, WebSocket, etc). </p>
+<p>If you don’t want to use the cloud provider’s tooling&nbsp;&ndash; for example if you need greater functionality or a platform&#8209;agnostic tool&nbsp;&ndash; the alternative is to replace it with something like <span style="white-space: nowrap;"><a target="_blank" href="https://www.f5.com/products/big-ip-services" rel="noopener noreferrer">F5 BIG-IP</a></span> (as the external load balancer) and <a target="_blank" href="https://clouddocs.f5.com/containers/latest/userguide/what-is.html" rel="noopener noreferrer">F5 Container Ingress Services</a> (as an operator acting in the LoadBalancer capacity). For further discussion of this pattern, see <a href="https://www.nginx.com/blog/deploying-big-ip-nginx-ingress-controller-same-architecture/">Deploying BIG-IP and NGINX Ingress Controller in the Same Architecture</a> on our blog.</p>
+<p>Using LoadBalancer to expose your apps becomes challenging in dynamic environments where your app pods need to scale to meet changing levels of demand. Because each service gets its own IP address, a popular app can have hundreds&nbsp;&ndash; or even thousands&nbsp;&ndash; of IP addresses to manage. In most cases, the external load balancer connects to the services via NodePort as shown in the following diagram. While this guarantees traffic is distributed evenly across the nodes, load balancing to the services still isn’t possible, so you still encounter service overload and port exhaustion.</p>
+<p><a href="https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-NodePort.png"><img src="https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-NodePort.png" alt="" width="2048" height="1592" class="aligncenter size-full wp-image-68725" srcset="https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-NodePort.png 2048w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-NodePort-300x233.png 300w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-NodePort-1024x796.png 1024w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-NodePort-768x597.png 768w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-NodePort-1536x1194.png 1536w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-NodePort-150x117.png 150w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-NodePort-640x498.png 640w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-NodePort-320x249.png 320w" sizes="(max-width: 2048px) 100vw, 2048px" /></a></p>
+<h2>What’s a Kubernetes Ingress Controller?</h2>
+<p>According to the <a target="_blank" href="https://kubernetes.io/docs/concepts/architecture/controller/" rel="noopener noreferrer">Kubernetes docs</a>, “controllers are control loops that watch the state of your cluster, then make or request changes where needed. Each controller tries to move the current cluster state closer to the desired state.” Controllers are used to manage state in Kubernetes for many tasks: properly assigning resources, designating persistent storage, and managing cron jobs. </p>
+<p>In the context of routing, an <a href="https://www.nginx.com/resources/glossary/kubernetes-ingress-controller">Ingress controller</a> is the way to overcome the limitations of NodePort and LoadBalancer.</p>
+<p>An Ingress controller is used to configure and manage external interactions with pods that are labeled to a specific service. Ingress controllers are designed to treat dynamic Layer&nbsp;7 routing as a first&#8209;class citizen. This means that Ingress controllers provide far more granular control and management with less toil. You can easily use an Ingress controller not only to control ingress traffic but also to deliver service&#8209;level performance metrics and as part of a security policy. Ingress controllers have many features of traditional external load balancers, like TLS termination, handling multiple domains and namespaces, and of course, load balancing traffic. Ingress controllers can load balance traffic at the per&#8209;request rather than per&#8209;service level, a more useful view of Layer&nbsp;7 traffic and a far better way to enforce SLAs.</p>
+<p>And there’s another bonus! Ingress controllers can also enforce egress rules which permit outgoing traffic from certain pods only to specific external services, or ensure that traffic is mutually encrypted using mTLS. Requiring mTLS is crucial for delivering regulated services in industries such as healthcare, finance, telecommunications, and government&nbsp;&ndash; and it’s a key component in an <span style="white-space: nowrap;">end-to-end</span> encryption (E2EE) strategy. Controlling outgoing traffic from the same tool also simplifies the application of business logic to services. It is far easier to set up appropriate resource rules when both ingress and egress are linked in the same control plane. </p>
+<p>The following diagram shows how an Ingress controller reduces complexity for the client, which no longer needs to know a service’s IP address or port. Distribution of traffic across the services is guaranteed. Some Ingress controllers support multiple load&#8209;balancing algorithms for more flexibility and control.</p>
+<p><a href="https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_IC.png"><img src="https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_IC.png" alt="" width="2048" height="1592" class="aligncenter size-full wp-image-68724" srcset="https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_IC.png 2048w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_IC-300x233.png 300w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_IC-1024x796.png 1024w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_IC-768x597.png 768w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_IC-1536x1194.png 1536w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_IC-150x117.png 150w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_IC-640x498.png 640w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_IC-320x249.png 320w" sizes="(max-width: 2048px) 100vw, 2048px" /></a></p>
+<h2>Deploying a Load Balancer with an Ingress Controller</h2>
+<p>As we discuss in <a href="https://www.nginx.com/blog/deploying-big-ip-nginx-ingress-controller-same-architecture/">Deploying BIG-IP and NGINX Ingress Controller in the Same Architecture</a>, many organizations have use cases that benefit from deploying an external load balancer with an Ingress controller (or in most cases, multiple Ingress controller instances). This is especially common when organizations need to scale Kubernetes or operate in high&#8209;compliance environments. The tools are typically managed by different teams and used for different purposes:</p>
+<ul>
+<li>
+<p>Load balancer (or ADC):</p>
+<ul>
+<li>Owner: A NetOps (or maybe SecOps) team
+<li>Use case: Outside Kubernetes as the only public&#8209;facing endpoint for services and apps delivered to users outside the cluster. Used as a more generic appliance designed to facilitate security and deliver higher&#8209;level network management.
+</ul>
+</li>
+<li>
+<p>Ingress controller:</p>
+<ul>
+<li>Owner: A Platform Ops or DevOps team</li>
+<li>Use case: Inside Kubernetes for fine&#8209;grained load balancing of north&#8209;south traffic (HTTP2, HTTP/HTTPS, SSL/TLS termination, TCP/UDP, WebSocket, gRPC), API gateway functions, and centralized security and identity.</li>
+</ul>
+</li>
+</ul>
+<p>This diagram shows the load balancer handling distribution of the traffic across multiple clusters, while the clusters have Ingress controllers to ensure equal distribution to the services.</p>
+<p><a href="https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-fronts-ICs.png"><img src="https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-fronts-ICs.png" alt="" width="2048" height="1672" class="aligncenter size-full wp-image-68723" srcset="https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-fronts-ICs.png 2048w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-fronts-ICs-300x245.png 300w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-fronts-ICs-1024x836.png 1024w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-fronts-ICs-768x627.png 768w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-fronts-ICs-1536x1254.png 1536w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-fronts-ICs-150x122.png 150w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-fronts-ICs-640x523.png 640w, https://www.nginx.com/wp-content/uploads/2022/01/Kubernetes-networking-101_LB-fronts-ICs-320x261.png 320w" sizes="(max-width: 2048px) 100vw, 2048px" /></a></p>
+<h2>Next Steps</h2>
+<p>If you’ve read all this and are still scratching your head, check out the Linux Foundation webinar <a target="_blank" href="https://www.youtube.com/watch?v=Mxh-zB9CJ0Q" rel="noopener noreferrer">Why You Need An Ingress Controller and How to Pick One</a>, where experts from NGINX provide a primer on Kubernetes networking, dive deep into Ingress controllers, and discuss the Ingress controller landscape.</p>
+<p>For more on how you can use an Ingress controller&nbsp;&ndash; and how to choose one that works best for your requirements&nbsp;&ndash; read <a href="https://www.nginx.com/blog/guide-to-choosing-ingress-controller-part-1-identify-requirements/">A Guide to Choosing an Ingress Controller, Part&nbsp;1: Identify Your Requirements</a> on our blog.</p>
+<p>And for an in&#8209;depth discussion of everything an Ingress controller can do, see <a target="_blank" href="https://thenewstack.io/ingress-controllers-the-swiss-army-knife-of-kubernetes/" rel="noopener noreferrer">Ingress Controllers: The Swiss Army Knife of Kubernetes</a>.</p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/kubernetes-networking-101/">Kubernetes Networking 101</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>NGINX Ingress Controller Version 2.0: What You Need to Know</title>
+		<link>https://www.nginx.com/blog/nginx-ingress-controller-version-2-0-what-you-need-to-know/</link>
+		
+		<dc:creator><![CDATA[Brian Ehlert of F5]]></dc:creator>
+		<pubDate>Mon, 27 Dec 2021 16:00:59 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[Kubernetes]]></category>
+		<category><![CDATA[Ingress controller]]></category>
+		<category><![CDATA[NGINX Ingress Controller]]></category>
+		<category><![CDATA[production-grade Kubernetes]]></category>
+		<guid isPermaLink="false">https://www.nginx.com/?p=68479</guid>
+
+					<description><![CDATA[<p>In October, we launched F5 NGINX Ingress Controller version&#160;2.0 (nginxinc/kubernetes-ingress), adding support for Kubernetes&#160;1.22 and version&#160;1 of the Ingress API (networking.k8s.io/v1). You might be wondering&#160;&#8211; so what? That “so what” is nuanced and we’ll answer it by answering three interrelated questions: Why are Kubernetes releases a big deal? What is the Ingress API and why [...]</p>
+<p><a class="btn btn-secondary understrap-read-more-link" href="https://www.nginx.com/blog/nginx-ingress-controller-version-2-0-what-you-need-to-know/">Read More...</a></p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/nginx-ingress-controller-version-2-0-what-you-need-to-know/">NGINX Ingress Controller Version 2.0: What You Need to Know</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>In October, we launched F5 NGINX Ingress Controller version&nbsp;2.0 <span style="white-space: nowrap;">(<a target="_blank" href="https://github.com/nginxinc/kubernetes-ingress" rel="noopener noreferrer">nginxinc/kubernetes-ingress</a>)</span>, adding support for <a target="_blank" href="https://kubernetes.io/blog/2021/08/04/kubernetes-1-22-release-announcement/" rel="noopener noreferrer">Kubernetes&nbsp;1.22</a> and version&nbsp;1 of the <a target="_blank" href="https://kubernetes.io/docs/concepts/services-networking/ingress/" rel="noopener noreferrer">Ingress API</a> (<code>networking.k8s.io/v1</code>). You might be wondering&nbsp;&ndash; <em>so what?</em></p>
+<p>That “so what” is nuanced and we’ll answer it by answering three interrelated questions:</p>
+<ul>
+<li><a href="#Why-Are-Kubernetes-Releases-a-Big-Deal?">Why are Kubernetes releases a big deal?</a></li>
+<li><a href="#What-Is-the-Ingress-API-and-Why-Does-networking.k8s.io/v1-Matter?">What is the Ingress API and why does the upgrade to <code>networking.k8s.io/v1</code> matter?</a></li>
+<li><a href="#How-Does-NGINX-Ingress-Controller-2-0-Affect-Current-Customers?">How does NGINX Ingress Controller&nbsp;2.0 impact current customers?</a></li>
+</ul>
+<p>Read on for the answers and tune in for <a target="_blank" href="https://www.youtube.com/watch?v=IUsAr_d266c" rel="noopener noreferrer">Your Battle Plan for When Kubernetes Versions Attack</a> on <span style="white-space: nowrap;">January 11, 2022</span>.</p>
+<p>    <iframe width="770" height="433" src="https://www.youtube.com/embed/IUsAr_d266c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p>
+<h2>Why Are Kubernetes Releases a Big Deal?</h2>
+<p>The answer to this question is simple yet complicated. Compatibility management for Kubernetes is challenging because Kubernetes operators have to manage <em>three</em> categories of versioning:</p>
+<ol>
+<li>
+<p><strong>The Kubernetes platform itself</strong>&nbsp;&ndash; At each new release, the Kubernetes team stops maintaining an older version. Continuing to use such a version is problematic for your risk management strategy and makes troubleshooting harder because help from the Kubernetes team is no longer available. At present, the Kubernetes project maintains release branches for the most recent three minor releases&nbsp;(1.20, 1.21, and&nbsp;1.22)</span>. Kubernetes&nbsp;1.19 and later receive approximately&nbsp;1 year of patch support, while&nbsp;1.18 and earlier received approximately&nbsp;9 months of patch support. (The shorter timespan for&nbsp;1.18 and earlier is because Kubernetes used to release four times per year, rather than the current three).</p>
+</li>
+<li>
+<p><strong>The Kubernetes APIs</strong>&nbsp;&ndash; New APIs are born and obsolete ones deprecated at each Kubernetes release, and the changes to APIs impact corresponding resources and tools. When you upgrade your Kubernetes platform, you may have to upgrade APIs as well.</p>
+</li>
+<li>
+<p><strong>The tools you’ve deployed in Kubernetes</strong>&nbsp;&ndash; A major change to Kubernetes or its APIs can affect whether your tools&nbsp;&ndash; such as an Ingress controller&nbsp;&ndash; and corresponding resources continue to function properly.</p>
+</li>
+</ol>
+<p>So you need to track three timelines&nbsp;&ndash; one for Kubernetes, one for the Ingress API, and one for NGINX Ingress Controller. To avoid breaking Kubernetes, you have to find the sweet spot where the Kubernetes version is compatible with the APIs and NGINX Ingress Controller. Upgrading any one of the three components without checking for compatibility can have drastic consequences. If all three components aren’t compatible with each other&nbsp;&#8230; congratulations, you&#8217;ve broken your apps!</p>
+<p><a href="https://www.nginx.com/wp-content/uploads/2021/12/NGINX-IC-version-2-0_history.png"><img src="https://www.nginx.com/wp-content/uploads/2021/12/NGINX-IC-version-2-0_history.png" alt="" width="2048" height="1249" class="aligncenter size-full wp-image-68483"  style="border:2px solid #666666; padding:2px; margin:2px;" srcset="https://www.nginx.com/wp-content/uploads/2021/12/NGINX-IC-version-2-0_history.png 2048w, https://www.nginx.com/wp-content/uploads/2021/12/NGINX-IC-version-2-0_history-300x183.png 300w, https://www.nginx.com/wp-content/uploads/2021/12/NGINX-IC-version-2-0_history-1024x625.png 1024w, https://www.nginx.com/wp-content/uploads/2021/12/NGINX-IC-version-2-0_history-768x468.png 768w, https://www.nginx.com/wp-content/uploads/2021/12/NGINX-IC-version-2-0_history-1536x937.png 1536w, https://www.nginx.com/wp-content/uploads/2021/12/NGINX-IC-version-2-0_history-150x91.png 150w, https://www.nginx.com/wp-content/uploads/2021/12/NGINX-IC-version-2-0_history-640x390.png 640w, https://www.nginx.com/wp-content/uploads/2021/12/NGINX-IC-version-2-0_history-320x195.png 320w" sizes="(max-width: 2048px) 100vw, 2048px" /></a></p>
+<h2 id="What-Is-the-Ingress-API-and-Why-Does-networking.k8s.io/v1-Matter?">What Is the Ingress API and Why Does <code>networking.k8s.io/v1</code> Matter?</h2>
+<p>The Ingress API makes it possible for an Ingress controller to safely expose your Kubernetes apps. The <code>networking.k8s.io/v1</code> API (a.k.a. Ingress API&nbsp;v1) was introduced with Kubernetes&nbsp;1.19. At that time, Kubernetes supported both <code>v1beta1</code> and <code>v1</code>&nbsp;&ndash; and automatically presented one version as the other. This &#8220;under the covers&#8221; compatibility of API versions benefits you operationally but can hinder your planning efforts.</p>
+<p>With the release of Kubernetes&nbsp;1.22, <code>v1</code> became the only version of the Ingress API. This is significant because as Ingress API&nbsp;v1 becomes “the one”, all beta versions (<code>extensions/v1beta1</code> and <code>networking.k8s.io/v1beta1</code>) become deprecated. While that&#8217;s disruptive for organizations that haven’t yet adopted Ingress API&nbsp;v1, at NGINX we see this change as a good sign. The promotion of the Ingress API out of beta signals graduation to a mature and fully realized API. Now, why does this change matter? Well, that relates back to version management. Let’s say you upgrade an existing cluster to Kubernetes&nbsp;1.22, but keep using <code>v1beta1</code> Ingress&#8209;related resources&nbsp;&#8230; congratulations, you&#8217;ve broken your Ingress resources!</p>
+<h2 id="How-Does-NGINX-Ingress-Controller-2-0-Affect-Current-Customers?">How Does NGINX Ingress Controller 2.0 Affect Current Customers?</h2>
+<p>Because NGINX Ingress Controller is tightly coupled to the Ingress API, the release of <code>v1</code> significantly impacted us as a product&nbsp;&ndash; and also you as our customers&nbsp;&ndash; which is why we have jumped the NGINX Ingress Controller version number from&nbsp;1.<em>x</em> to&nbsp;2.<em>x</em>. We rearchitected NGINX Ingress Controller&nbsp;2.0 to leverage Ingress API&nbsp;v1, making it fully compatible with Kubernetes&nbsp;1.22. </p>
+<p>If you use NGINX Ingress Controller, you need to take some version&#8209;dependent actions immediately to avoid breaking Kubernetes, your Ingress resources, or NGINX Ingress Controller:</p>
+<ul>
+<li>
+<p><strong>Kubernetes 1.18 and earlier:</strong></p>
+<ul>
+<li>
+<p>Ensure you&#8217;re using NGINX Ingress Controller&nbsp;1.12 so you can take advantage of the fullest feature set available. (When you upgrade to NGINX Ingress Controller&nbsp;2.0, you&#8217;ll also need to upgrade to Kubernetes&nbsp;1.19 or later.)</p>
+</li>
+<li>
+<p>Make a plan for migrating to a newer version of Kubernetes (and NGINX Ingress Controller) within the coming months, as Kubernetes&nbsp;1.18 won’t be supported after the next Kubernetes release.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Kubernetes 1.19&ndash;1.21:</strong></p>
+<ul>
+<li>
+<p>Upgrade to NGINX Ingress Controller&nbsp;2.0.</p>
+</li>
+<li>
+<p>If you haven’t yet migrated your Ingress&#8209;related resources to <code>networking.k8s.io/v1</code> (see the <a target="_blank" href="https://docs.nginx.com/nginx-ingress-controller/releases/#nginx-ingress-controller-200" rel="noopener noreferrer">NGINX Ingress Controller&nbsp;2.0 release notes</a>), create your plan now. Kubernetes&nbsp;1.19&ndash;1.21 supports all current versions of the Ingress API (both the <code>v1beta1</code>s and <code>v1</code>), giving you the opportunity to convert in place.</p>
+</li>
+<li>
+<p>If you haven’t already done so, immediately move your Ingress and IngressClass resources to <code>networking.k8s.io/v1</code>.</p>
+<ul>
+<li>
+<p>If you are using the deprecated <code>kubernetes.io/ingress.class</code> annotation in your Ingress resources, we recommend switching to the <code>ingressClassName</code> field.</p>
+</li>
+<li>
+<p>Use our <a target="_blank" href="https://docs.nginx.com/nginx-ingress-controller/" rel="noopener noreferrer">documentation and examples</a> (available with <code>networking.k8s.io/v1</code> and the <code>ingressClassName</code> field of the Ingress resource) to plan your updates.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Kubernetes 1.22:</strong></p>
+<ul>
+<li>
+<p>Ensure you are already running NGINX Ingress Controller&nbsp;2.0, as previous versions of NGINX Ingress Controller are not compatible with Kubernetes&nbsp;1.22 and don’t support Ingress API&nbsp;v1.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2>A (Not So) Brief History of the NGINX Ingress Controller</h2>
+<p>Since its first release in&nbsp;2016, NGINX Ingress Controller has grown from a nascent tool to a powerhouse for Kubernetes networking. Here’s a look at its evolution from launch to present.</p>
+<h3>2016 (<a target="_blank" href="https://github.com/nginxinc/kubernetes-ingress/releases/tag/v0.5.0" rel="noopener noreferrer">v0.5.0</a>)</h3>
+<p>NGINX engineer Michael&nbsp;Pleshakov publishes the first entry in our GitHub repo <span style="white-space: nowrap;">(<a target="_blank" href="https://github.com/nginxinc/kubernetes-ingress" rel="noopener noreferrer">nginxinc/kubernetes-ingress</a>)</span>, making it possible to use NGINX and <span style="white-space: nowrap;">F5 NGINX Plus</span> as a Kubernetes Ingress controller (KIC). </p>
+<p>NGINX Ingress Controller makes its first public appearance, at <span style="white-space: nowrap;">KubeCon EU 2016</span>. Check out the recording: <a target="_blank" href="https://www.youtube.com/watch?v=u-CE4c3fSfg" rel="noopener noreferrer">Day&nbsp;1, Creating an Advanced Load Balancing Solution for Kubernetes with NGINX; <span style="white-space: nowrap;">KubeCon EU 2016</span></a>.</p>
+<p>    <iframe width="770" height="433" src="https://www.youtube.com/embed/u-CE4c3fSfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<h3>2017 (<a target="_blank" href="https://github.com/nginxinc/kubernetes-ingress/releases/tag/v1.0.0" rel="noopener noreferrer">v1.0.0</a>)</h3>
+<p>The project achieves production&#8209;readiness, including key support for JSON Web Tokens&nbsp;(JWTs) in the <span style="white-space: nowrap;">NGINX Plus-based</span> version.</p>
+<p>At NGINX Conf&nbsp;2017, Michael&nbsp;Pleshakov demonstrates production capabilities including advanced load balancing in <a target="_blank" href="https://www.youtube.com/watch?v=K-1mVPCT7SM" rel="noopener noreferrer">Using NGINX&nbsp;Plus as an Ingress Controller for Load Balancing Applications on Kubernetes</a>.</p>
+<p>    <iframe width="770" height="433" src="https://www.youtube.com/embed/K-1mVPCT7SM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<h3>2018</h3>
+<p>NGINX Ingress Controller sees big enhancements in the areas of visibility, ease of use, and flexibility:</p>
+<ul>
+<li><strong>May (<a target="_blank" href="https://github.com/nginxinc/kubernetes-ingress/releases/tag/v1.2.0" rel="noopener noreferrer">v1.2.0</a>)</strong>&nbsp;&ndash; The project adopts the new <span style="white-space: nowrap;">NGINX Plus API</span> and the <span style="white-space: nowrap; font-weight:bold;">nginx-ingress</span> images move to the official <a target="_blank" href="https://hub.docker.com/r/nginx/nginx-ingress" rel="noopener noreferrer">NGINX Docker Hub</a>. This version debuts support for gRPC, passive health checks, Helm charts, and Prometheus.</li>
+<li><strong>August (<a target="_blank" href="https://github.com/nginxinc/kubernetes-ingress/releases/tag/v1.3.0" rel="noopener noreferrer">v1.3.0</a>)</strong>&nbsp;&ndash; NGINX&nbsp;Plus customers can now export metrics to Prometheus and take advantage of <a href="https://www.nginx.com/products/nginx/load-balancing/#health-checks">active health checks</a>, and everyone benefits from improvements to Helm charts, mergeable Ingress resources, and easier management of custom templates (see <a href="https://www.nginx.com/blog/announcing-nginx-ingress-controller-for-kubernetes-release-1-3-0/">Announcing NGINX Ingress Controller for Kubernetes Release&nbsp;1.3.0</a>).</li>
+<li><strong>November (<a target="_blank" href="https://github.com/nginxinc/kubernetes-ingress/releases/tag/v1.4.0" rel="noopener noreferrer">v1.4.0</a>)</strong>&nbsp;&ndash; Support for TCP/UDP is added, making Layer&nbsp;4 traffic management possible. Other features include easier development of custom annotations and support for the Random with Two Choices load&#8209;balancing algorithm (see <a href="https://www.nginx.com/blog/announcing-nginx-ingress-controller-for-kubernetes-release-1-4-0/">Announcing NGINX Ingress Controller for Kubernetes Release&nbsp;1.4.0</a>).</li>
+</ul>
+<p>At NGINX Conf&nbsp;2018, Michael&nbsp;Pleshakov takes the stage for <a target="_blank" href="https://www.youtube.com/watch?v=AXZr2OC8Unc" rel="noopener noreferrer">Using NGINX as a Kubernetes Ingress Controller</a>, where he shares how to deploy NGINX Ingress Controller with Helm, configure HTTP and TCP/UDP load balancing, monitor with Prometheus, and troubleshoot.</p>
+<p>    <iframe width="770" height="433" src="https://www.youtube.com/embed/AXZr2OC8Unc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<h3>2019</h3>
+<p>We debut our alternative to standard Kubernetes Ingress resources, making it easier and more reliable to execute advanced capabilities. </p>
+<ul>
+<li><strong>May (<a target="_blank" href="https://github.com/nginxinc/kubernetes-ingress/releases/tag/v1.5.0" rel="noopener noreferrer">v1.5.0</a>)</strong>&nbsp;&ndash; VirtualServer and VirtualServerRoute (VS/VSR) resources are introduced as a new configuration approach. VS/VSR are the first <a href="https://www.nginx.com/products/nginx-ingress-controller/nginx-ingress-resources/">NGINX Ingress resources</a>, providing a native, type&#8209;safe, and indented configuration style which simplifies implementation of Ingress load balancing (see <a href="https://www.nginx.com/blog/announcing-nginx-ingress-controller-for-kubernetes-release-1-5-0">Announcing NGINX Ingress Controller for Kubernetes Release&nbsp;1.5.0</a>).</li>
+<li><strong>December (<a target="_blank" href="https://docs.nginx.com/nginx-ingress-controller/releases/#nginx-ingress-controller-160" rel="noopener noreferrer">v1.6.0</a>)</strong>&nbsp;&ndash; Documentation is established on <strong><a target="_blank" href="https://docs.nginx.com/nginx-ingress-controller/" rel="noopener noreferrer">docs.nginx.com</a></a></strong>. VS/VSR resources add richer load balancing support and reach production&#8209;readiness. OpenTracing support is added for better monitoring and debugging use cases, and the ability to run as a non&#8209;<code>root</code> user is added to improve security (see <a href="https://www.nginx.com/blog/announcing-nginx-ingress-controller-for-kubernetes-release-1-6-0/">Announcing NGINX Ingress Controller for Kubernetes Release&nbsp;1.6.0</a>).</li>
+</ul>
+<p>In <a target="_blank" href="https://www.youtube.com/watch?v=k7mpY0YTe7U" rel="noopener noreferrer">The Next Generation of NGINX Ingress Controller</a>, Michael&nbsp;Pleshakov returns to NGINX Conf&nbsp;2019 to demonstrate VS/VSR for use cases including blue&#8209;green deployments and A/B testing.</p>
+<p>    <iframe width="770" height="433" src="https://www.youtube.com/embed/k7mpY0YTe7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<h3>2020</h3>
+<p>In addition to numerous enhancements to NGINX Ingress resources, the main theme this year is integration with ecosystem tools and NGINX products.</p>
+<ul>
+<li><strong>April (<a target="_blank" href="https://docs.nginx.com/nginx-ingress-controller/releases/#nginx-ingress-controller-170" rel="noopener noreferrer">v1.7.0</a>)</strong>&nbsp;&ndash; We release the NGINX Ingress Operator to provide a fast, easy, and certified way to deploy NGINX Ingress Controller in OpenShift&nbsp;4.<em>x</em> environments. NGINX Ingress resources continue to grow with support for additional protocols, circuit breakers, and improved validation and reporting (see <a href="https://www.nginx.com/blog/announcing-nginx-ingress-controller-for-kubernetes-release-1-7-0/">Announcing NGINX Ingress Controller for Kubernetes Release&nbsp;1.7.0</a>).</li>
+<li><strong>July (<a target="_blank" href="https://docs.nginx.com/nginx-ingress-controller/releases/#nginx-ingress-controller-180" rel="noopener noreferrer">v1.8.0</a>)</strong>&nbsp;&ndash; Integration with <a href="https://www.nginx.com/products/nginx-app-protect/web-application-firewall/">F5 NGINX App Protect WAF</a> allows customers to deploy a lightweight, flexible WAF in the same container as the Ingress controller. Customization of NGINX Ingress resources via snippets or custom templates is added, and features including URI rewrites and access control lists provide more granular control (see <a href="https://www.nginx.com/blog/announcing-nginx-ingress-controller-for-kubernetes-release-1-8-0/">Announcing NGINX Ingress Controller for Kubernetes Release&nbsp;1.8.0</a>).</li>
+<li><strong>October (<a target="_blank" href="https://docs.nginx.com/nginx-ingress-controller/releases/#nginx-ingress-controller-190" rel="noopener noreferrer">v1.9.0</a>)</strong>&nbsp;&ndash; Integration with <a href="https://www.nginx.com/products/nginx-service-mesh/">F5 NGINX Service Mesh</a> makes it possible to manage north&#8209;south and east&#8209;west traffic in the same configuration. Grafana dashboards are added for easy visualization of historic data (see <a href="https://www.nginx.com/blog/announcing-nginx-ingress-controller-release-1-9-0/">Announcing NGINX Ingress Controller Release&nbsp;1.9.0</a>).</li>
+</ul>
+<p>In <a target="_blank" href="https://www.youtube.com/watch?v=cJBsCNZksGE" rel="noopener noreferrer">Secure Production Apps with NGINX and OpenShift</a>, Technical Marketing Engineer Amir&nbsp;Rawdat demonstrates how to use the NGINX Ingress Operator, leverage role&#2809;based access control (RBAC) for cross&#8209;functional provisioning, secure containerized apps with NGINX App Protect, and validate clients with JWTs.<br />
+    <iframe width="770" height="433" src="https://www.youtube.com/embed/cJBsCNZksGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<h3>2021</h3>
+<p>Security is a main theme, along with more ecosystem integrations.</p>
+<ul>
+<li><strong>February (<a target="_blank" href="https://docs.nginx.com/nginx-ingress-controller/releases/#nginx-ingress-controller-1100" rel="noopener noreferrer">v1.10.0</a>)</strong>&nbsp;&ndash; OpenID Connect (OIDC) authentication is the major addition, making it easy to use JWT authentication to provide a robust single sign&#8209;on (SSO) option (see <a href="https://www.nginx.com/blog/easy-robust-sso-openid-connect-nginx-ingress-controller/">Easy and Robust Single Sign&#8209;On with OpenID Connect and NGINX Ingress Controller</a>).</li>
+<li><strong>March (<a target="_blank" href="https://docs.nginx.com/nginx-ingress-controller/releases/#nginx-ingress-controller-1110" rel="noopener noreferrer">v1.11.0</a>)</strong>&nbsp;&ndash; Major enhancements to the WAF and load&#8209;balancing policies provide additional power and flexibility, including health checks and status reporting (see <a href="https://www.nginx.com/blog/enhanced-tcp-udp-load-balancing-waf-configuration-nginx-ingress-controller/">Enhanced TCP/UDP Load Balancing and WAF Configuration with NGINX Ingress Controller</a>).</li>
+<li><strong>July (<a target="_blank" href="https://docs.nginx.com/nginx-ingress-controller/releases/#nginx-ingress-controller-1120" rel="noopener noreferrer">v1.12.0</a>)</strong>&nbsp;&ndash; The highlights for this release are all about ease of deployment. In addition to purchase via the AWS Container Marketplace, we make it possible to <a target="_blank" href="https://docs.nginx.com/nginx-ingress-controller/installation/pulling-ingress-controller-image/" rel="noopener noreferrer">pull prebuilt images</a> from the F5 Container Registry (see <a href="https://www.nginx.com/blog/nginx-available-aws-marketplace-for-containers/">NGINX Is Available in AWS Marketplace for Containers</a>).</li>
+<li><strong>October (<a target="_blank" href="https://docs.nginx.com/nginx-ingress-controller/releases/#nginx-ingress-controller-203" rel="noopener noreferrer">v2.0.3</a>)</strong>&nbsp;&ndash; Though not a major milestone in terms of capabilities, this release represents a milestone for interoperation with the Kubernetes API and the evolution of the Ingress object. This change means NGINX Ingress Controller&nbsp;2.0 (and later) is compatible with Kubernetes&nbsp;1.19 and later.  NGINX Ingress Controller&nbsp;2.0 is also the only version you can deploy with Kubernetes&nbsp;1.22 and later.</li>
+</ul>
+<p>In his <span style="white-space: nowrap;">NGINX Sprint 2.0</span> session, <a target="_blank" href="https://www.youtube.com/watch?v=52tlLfP2JGg" rel="noopener noreferrer">Master Microservices with <span style="white-space: nowrap;">End-to-End</span> Encryption</a>, Software Engineer Aidan&nbsp;Carson demonstrates how to secure the edge with NGINX Ingress Controller, set up secure access control between services with NGINX Service Mesh, and use both products to secure egress traffic with mTLS.</p>
+<p>    <iframe width="770" height="433" src="https://www.youtube.com/embed/52tlLfP2JGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<h2>Next Step: Try NGINX Ingress Controller</h2>
+<p>If you’ve decided that an open source Ingress controller is the right choice for your apps, then you can get started quickly with the NGINX Open Source&#8209;based NGINX Ingress Controller at our <a target="_blank" href="https://github.com/nginxinc/kubernetes-ingress" rel="noopener noreferrer">GitHub repo</a>.</p>
+<p>For large production deployments, we hope you’ll try our commercial NGINX Ingress Controller based on NGINX&nbsp;Plus. It’s available for a <span style="white-space: nowrap;"><a href="https://www.nginx.com/free-trial-request-nginx-ingress-controller">free 30-day trial</a></span> that includes NGINX App Protect.</p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/nginx-ingress-controller-version-2-0-what-you-need-to-know/">NGINX Ingress Controller Version 2.0: What You Need to Know</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Greatest Hits of 2021 on the NGINX Blog</title>
+		<link>https://www.nginx.com/blog/greatest-hits-of-2021-nginx-blog/</link>
+		
+		<dc:creator><![CDATA[Scott De Buitléir of F5]]></dc:creator>
+		<pubDate>Wed, 22 Dec 2021 16:00:22 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Tech]]></category>
+		<guid isPermaLink="false">https://www.nginx.com/?p=68499</guid>
+
+					<description><![CDATA[<p>As the turmoil caused by the COVID&#8209;19 pandemic continued throughout&#160;2021, we at NGINX tried to rise to the challenge and keep driving forward to make positive changes for our community, partners, and customers. Approaching the end of the year, we take this opportunity to look back at a selection of the biggest and most popular [...]</p>
+<p><a class="btn btn-secondary understrap-read-more-link" href="https://www.nginx.com/blog/greatest-hits-of-2021-nginx-blog/">Read More...</a></p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/greatest-hits-of-2021-nginx-blog/">The Greatest Hits of 2021 on the NGINX Blog</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>As the turmoil caused by the COVID&#8209;19 pandemic continued throughout&nbsp;2021, we at NGINX tried to rise to the challenge and keep driving forward to make positive changes for our community, partners, and customers. </p>
+<p>Approaching the end of the year, we take this opportunity to look back at a selection of the biggest and most popular blog articles we published, as voted by you, our community. Read on to see what major events we covered, and to catch up on interesting news and topics you may have missed! </p>
+<h2>How to Choose a Service Mesh</h2>
+<p>As your Kubernetes deployment matures, it can be a challenge to know when a service mesh will yield benefits and not just additional complexity. And once you know you need a service mesh, choosing the right one isn’t always straightforward either. In this post <a href="https://www.nginx.com/people/jenn-gile/">Jenn&nbsp;Gile</a> provides a six&#8209;point checklist for determining whether you need a service mesh, and a <a href="https://www.nginx.com/blog/how-to-choose-a-service-mesh/">conversation guide</a> for facilitating the strategic decision&#8209;making session that we recommend you have with your team and stakeholders about which service mesh is right for you.</p>
+<h2>NGINX and HAProxy: Testing User Experience in the Cloud</h2>
+<p>Many performance benchmarks measure peak throughput or requests per second (RPS), but those metrics might not tell the whole performance story at real&#8209;world sites. This leads us to the observation that what matters most is that you deliver consistent, low&#8209;latency performance to all of your users, even under high load. In comparing NGINX and HAProxy running on Amazon Elastic Compute Cloud&nbsp;(EC2) as reverse proxies, <a href="https://www.nginx.com/people/amir-rawdat/">Amir&nbsp;Rawdat</a> set out to do two things:</p>
+<ol>
+<li>Determine what level of load each proxy comfortably handles</li>
+<li>Collect the latency percentile distribution, which we find is the metric most directly correlated with user experience</li>
+</ol>
+<p><a href="https://www.nginx.com/blog/nginx-and-haproxy-testing-user-experience-in-the-cloud/">Get the results and all the testing details</a>. </p>
+<h2>Introducing NGINX Instance Manager</h2>
+<p>NGINX really can be considered as a Swiss Army Knife&trade; that accelerates your IT infrastructure and application modernization efforts. This wide&#8209;ranging, versatile functionality can, however, lead to many NGINX instances spread across an organization, sometimes with NGINX Open Source and NGINX&nbsp;Plus managed by different groups. How do you track all the instances? How do you ensure they have <span style="white-space: nowrap;">up-to-date</span> configuration and security settings? That’s where <a href="https://www.nginx.com/products/nginx-instance-manager/">F5 NGINX Instance Manager</a> comes in.</p>
+<p>Ideal for DevOps users who are NGINX experts and have a lot of experience with NGINX configurations, NGINX Instance Manager simplifies NGINX management, configuration, and visibility. In this post, <a href="https://www.nginx.com/people/karthik-krishnaswamy/">Karthik&nbsp;Krishnaswamy</a> explains how <a href="http://www.nginx.com/blog/introducing-nginx-instance-manager">NGINX Instance Manager can benefit you</a>.</p>
+<h2>What Are Namespaces and cgroups, and How Do They Work?</h2>
+<p><a href="https://www.nginx.com/products/nginx-unit/">NGINX&nbsp;Unit</a> supports both namespaces and cgroups, which enables process isolation. In this post, <a href="https://www.nginx.com/people/scott-van-kalken/"><span style="white-space: nowrap;">Scott van Kalken</span></a> looks at these <a href="https://www.nginx.com/blog/what-are-namespaces-cgroups-how-do-they-work/">two major Linux technologies</a>, which also underlie containers. Learn about these underlying technologies and how to create them. </p>
+<h2>Comparing NGINX Performance in Bare Metal and Virtual Environments</h2>
+<p>While there was an explosive growth in public cloud adoption due to the COVID&#8209;19 pandemic, enterprises are also embracing hybrid cloud, where they run workloads in both public clouds and on premises. To help you determine the optimal and most affordable solution that satisfies your performance and scaling needs, we provide a <a href="https://www.nginx.com/resources/datasheets/nginx-plus-sizing-guide-virtualized-environments/">sizing guide</a> that compares NGINX performance in the two environments.</p>
+<p>In this post Amir&nbsp;Rawdat describes <a href="http://www.nginx.com/blog/comparing-nginx-performance-bare-metal-and-virtual-environments/">how we tested NGINX</a> to arrive at the values published in the sizing guide. Because many of our customers also deploy apps in Kubernetes, we also step through our testing of NGINX Ingress Controller on the Rancher Kubernetes Engine&nbsp;(RKE) platform, and discuss how the results compare to NGINX running in traditional on&#8209;premises architectures.</p>
+<h2>How to Simplify Kubernetes Ingress and Egress Traffic Management</h2>
+<p>One of the ways a service mesh can actually make it more complicated to manage a Kubernetes environment is when it must be configured separately from the Ingress controller. You can avoid these problems&nbsp;&ndash; and save time&nbsp;&ndash; by integrating the <span style="white-space: nowrap;">NGINX Plus-based</span> <a href="https://www.nginx.com/products/nginx-ingress-controller/">F5 NGINX Ingress Controller</a> with <a href="https://www.nginx.com/products/nginx-service-mesh/">F5 NGINX Service Mesh</a> to control both ingress and egress mTLS traffic. In this post, <a href="https://www.nginx.com/people/kate-osborn/">Kate&nbsp;Osborn</a> covers the <a href="http://www.nginx.com/blog/how-to-simplify-kubernetes-ingress-egress-traffic-management/">complete steps</a> from the companion <a target="_blank" href="https://www.youtube.com/watch?v=dG-E4YxQk0I&#038;t=6s" rel="noopener noreferrer">video demo</a>.</p>
+<h2>Easy and Robust Single Sign-On with OpenID Connect and NGINX Ingress Controller</h2>
+<p>With the release of NGINX Ingress Controller&nbsp;1.10.0, we were happy to announce a major enhancement: a <a target="_blank" href="https://docs.nginx.com/nginx-ingress-controller/configuration/policy-resource/#oidc" rel="noopener noreferrer">technology preview of OpenID Connect (OIDC) authentication</a>. OIDC is the identity layer built on top of the OAuth&nbsp;2.0 framework which provides an authentication and single sign&#8209;on (SSO) solution for modern apps. Our OIDC policy is a <a href="https://www.nginx.com/blog/easy-robust-sso-openid-connect-nginx-ingress-controller/">full&#8209;fledged SSO solution enabling users to securely authenticate</a> with multiple applications and Kubernetes services. Significantly, it enables apps to use an external identity provider (IdP) to authenticate users and frees the apps from having to handle usernames or passwords. Amir&nbsp;Rawdat explains it all for you in this popular post. </p>
+<h2>Deploying NGINX Ingress Controller on Amazon EKS: How We Tested</h2>
+<p>Last, but by no means least, in our&nbsp;2021 blog round&#8209;up, earlier this year we updated our <a href="https://www.nginx.com/resources/datasheets/nginx-ingress-controller-kubernetes/">NGINX Ingress Controller solution brief</a> with sizing guidelines for Amazon Elastic Kubernetes Service (EKS). The brief outlines the performance you can expect to achieve with the NGINX Ingress Controller running on various instance types in Amazon EKS, along with the estimated monthly total cost of ownership (TCO). In this post, Amir&nbsp;Rawdat returns to explain <a href="https://www.nginx.com/blog/deploying-nginx-ingress-controller-on-amazon-eks-how-we-tested/">how we came up with those numbers</a>, including all the information you need to do similar testing of your own.</p>
+<h2>Give NGINX a Try</h2>
+<p><span style="white-space: nowrap;">Free 30-day</span> trials are available for all of the commercial solutions mentioned in this post (and a couple more!):</p>
+<ul>
+<li><a href="https://www.nginx.com/free-trial-request/">NGINX&nbsp;Plus and NGINX App Protect</a></li>
+<li><a href="https://www.nginx.com/free-trial-request-nginx-ingress-controller/">NGINX Ingress Controller and NGINX App Protect</a></li>
+<li><a href="https://www.nginx.com/free-trial-request-nginx-controller/">NGINX Controller</a></li>
+<li><a target="_blank" href="https://my.f5.com/manage/s/" rel="noopener noreferrer">NGINX Instance Manager</a></li>
+<li><a target="_blank" href="https://portal.cloudservices.f5.com/register?subscribe=c-aaQnOrPjGu" rel="noopener noreferrer">F5 DNS Load Balancer Cloud Service</a> and <a target="_blank" href="https://portal.cloudservices.f5.com/register?subscribe=c-aaxBJkfg8u" rel="noopener noreferrer">F5 Secondary DNS Cloud Service</a></li>
+</ul>
+<p>Or get started with free and open source offerings:</p>
+<ul>
+<li><a target="_blank" href="https://nginx.org/en/download.html" rel="noopener noreferrer">NGINX Open Source</a></li>
+<li><a target="_blank" href="https://login.f5.com/resource/login.jsp?ctx=719748" rel="noopener noreferrer">NGINX Service Mesh</a></li>
+<li><a target="_blank" href="https://unit.nginx.org/installation/#obtaining-sources" rel="noopener noreferrer">NGINX Unit</a></li>
+</ul>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/greatest-hits-of-2021-nginx-blog/">The Greatest Hits of 2021 on the NGINX Blog</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Six Ways to Secure Kubernetes Using Traffic Management Tools</title>
+		<link>https://www.nginx.com/blog/six-ways-to-secure-kubernetes-using-traffic-management-tools/</link>
+		
+		<dc:creator><![CDATA[Jenn Gile of F5]]></dc:creator>
+		<pubDate>Mon, 20 Dec 2021 19:59:26 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[Kubernetes]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[WAF]]></category>
+		<category><![CDATA[Ingress controller]]></category>
+		<category><![CDATA[NGINX Ingress Controller]]></category>
+		<category><![CDATA[NGINX Service Mesh]]></category>
+		<category><![CDATA[production-grade Kubernetes]]></category>
+		<category><![CDATA[NGINX App Protect WAF]]></category>
+		<guid isPermaLink="false">https://www.nginx.com/?p=68486</guid>
+
+					<description><![CDATA[<p>Editor&#160;&#8211; This post is part of a 10-part series: Reduce Complexity with Production-Grade Kubernetes How to Improve Resilience in Kubernetes with Advanced Traffic Management How to Improve Visibility in Kubernetes Six Ways to Secure Kubernetes Using Traffic Management Tools (this post) A Guide to Choosing an Ingress Controller, Part 1: Identify Your Requirements A Guide [...]</p>
+<p><a class="btn btn-secondary understrap-read-more-link" href="https://www.nginx.com/blog/six-ways-to-secure-kubernetes-using-traffic-management-tools/">Read More...</a></p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/six-ways-to-secure-kubernetes-using-traffic-management-tools/">Six Ways to Secure Kubernetes Using Traffic Management Tools</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><em><strong>Editor</strong>&nbsp;&ndash; This post is part of <span style="white-space: nowrap;">a 10-part series</a>:</p>
+<ol>
+<li><a href="https://www.nginx.com/blog/reduce-complexity-with-production-grade-kubernetes/">Reduce Complexity with Production-Grade Kubernetes</a></li>
+<li><a href="https://www.nginx.com/blog/improve-kubernetes-resilience-with-advanced-traffic-management/">How to Improve Resilience in Kubernetes with Advanced Traffic Management</a></li>
+<li><a href="https://www.nginx.com/blog/how-to-improve-visibility-in-kubernetes/">How to Improve Visibility in Kubernetes</a></li>
+<li>Six Ways to Secure Kubernetes Using Traffic Management Tools (this post)</li>
+<li><a href="https://www.nginx.com/blog/guide-to-choosing-ingress-controller-part-1-identify-requirements/">A Guide to Choosing an Ingress Controller, Part 1: Identify Your Requirements</a></li>
+<li><a href="https://www.nginx.com/blog/guide-to-choosing-ingress-controller-part-2-risks-future-proofing/">A Guide to Choosing an Ingress Controller, Part 2: Risks and Future-Proofing</a></li>
+<li><a href="https://www.nginx.com/blog/guide-to-choosing-ingress-controller-part-3-open-source-default-commercial/">A Guide to Choosing an Ingress Controller, Part 3: Open Source vs. Default vs. Commercial</a></li>
+<li><a href="https://www.nginx.com/blog/guide-to-choosing-ingress-controller-part-4-nginx-ingress-controller-options/">A Guide to Choosing an Ingress Controller, Part 4: NGINX Ingress Controller Options</a></li>
+<li><a href="https://www.nginx.com/blog/how-to-choose-a-service-mesh/">How to Choose a Service Mesh</a></li>
+<li><a href="https://www.nginx.com/blog/performance-testing-nginx-ingress-controllers-dynamic-kubernetes-cloud-environment/">Performance Testing NGINX Ingress Controllers in a Dynamic Kubernetes Cloud Environment</a></li>
+</ol>
+<p>You can also download the complete set of blogs as a free eBook&nbsp;&ndash; <a href="https://www.nginx.com/resources/library/taking-kubernetes-from-test-to-production/">Taking Kubernetes from Test to Production</a>.</em></p>
+<p>As discussed in <a href="https://www.nginx.com/blog/secure-cloud-native-apps-without-losing-speed/">Secure Cloud&#8209;Native Apps Without Losing Speed</a>, we have observed three factors that make <a href="https://www.nginx.com/resources/glossary/cloud-native-app-delivery/">cloud&#8209;native apps</a> more difficult to secure than traditional apps:</p>
+<ol>
+<li>Cloud‑native app delivery causes tool sprawl and offers inconsistent enterprise‑grade services</li>
+<li>Cloud‑native app delivery costs can be unpredictable and high</li>
+<li>SecOps teams struggle to protect cloud‑native apps and are at odds with DevOps</li>
+</ol>
+<p>While all three factors can equally impact security, the third factor can be the most difficult problem to solve, perhaps because it’s the most “human”. When SecOps isn&#8217;t able or empowered to protect cloud&#8209;native apps, some of the consequences are obvious (vulnerabilities and breaches), but others are hidden, including slowed agility and stalled digital transformation. </p>
+<p>Let’s dig deeper into those hidden costs. Organizations choose <a href="https://www.nginx.com/resources/glossary/kubernetes">Kubernetes</a> for its promise of agility and cost savings. But when there are security incidents in a Kubernetes environment, <a target="_blank" href="https://www.redhat.com/rhdc/managed-files/cl-state-kubernetes-security-report-ebook-f29117-202106-en.pdf" rel="noopener noreferrer">most organizations  pull their Kubernetes deployments out of production</a>. That slows down digital transformation initiatives that are essential for the future of the organization&nbsp;&ndash; never mind the wasted engineering efforts and money. The logical conclusion is: if you’re going to try to get Kubernetes from test to production, then security must be considered a strategic component that is owned by everyone in the organization.</p>
+<p>In this post, we cover six security use cases that you can solve with Kubernetes traffic&#8209;management tools, enabling SecOps to collaborate with DevOps and NetOps to better protect your cloud&#8209;native apps and APIs. A combination of these techniques is often used to create a comprehensive security strategy designed to keep apps and APIs safe while minimizing the impact to customers.</p>
+<ol>
+<li><a href="#Resolve-CVEs-Quickly-to-Avoid-Cyberattacks">Resolve CVEs quickly to avoid cyberattacks</a></li>
+<li><a href="#Stop-OWASP-Top-10-and-DoS-Attacks">Stop OWASP Top&nbsp;10 and <span style="white-space: nowrap;">denial-of-service</span> attacks</a></li>
+<li><a href="#Offload-Authentication-and-Authorization-from-the-Apps">Offload authentication and authorization from apps</a></li>
+<li><a href="#Set-Up-Self-Service-with-Guardrails">Set up self&#8209;service with guardrails</a></li>
+<li><a href="#Implement-End-to-End-Encryption">Implement <span style="white-space: nowrap;">end-to-end</span> encryption</a></li>
+<li><a href="#Ensure-Clients-Are-Using-a-Strong-Cipher-with-a-Trusted-Implementation">Ensure clients are using a strong cipher with a trusted implementation</a></li>
+</ol>
+<h2>Security and Identity Terminology</h2>
+<p>Before we jump into the use cases, here’s a quick overview of some security and identity terms you’ll encounter throughout this post. </p>
+<ul>
+<li>
+<p><strong>Authentication and authorization</strong>&nbsp;&ndash; Functions required to ensure only the “right” users and services can gain access to backends or application components:</p>
+<ul>
+<li>
+<p><strong>Authentication</strong>&nbsp;&ndash; Verification of <em>identity</em> to ensure that clients making requests are who they claim to be. Accomplished through ID tokens, such as passwords or JSON Web Tokens (JWTs).</li>
+<li>
+<p><strong>Authorization</strong>&nbsp;&ndash; Verification of <em>permission</em> to access a resource or function. Accomplished through access tokens, such as Layer&nbsp;7 attributes like session cookies, session IDs, group IDs, or token contents.</li>
+</ul>
+</li>
+<li>
+<p><strong>Critical Vulnerabilities and Exposures (CVEs)</strong>&nbsp;&ndash; A database of publicly disclosed flaws “in a software, firmware, hardware, or service component resulting from a weakness that can be exploited, causing a negative impact to the confidentiality, integrity, or availability of an impacted component or components” (<a target="_blank" href="https://www.cve.org/ResourcesSupport/Glossary?activeTerm=glossaryVulnerability" rel="noopener noreferrer">https://www.cve.org/</a>). CVEs may be discovered by the developers who manage the tool, a penetration tester, a user or customer, or someone from the community (such as a “bug hunter”). It’s common practice to give the software owner time to develop a patch before the vulnerability is publicly disclosed, so as not to give bad actors an advantage.</p>
+</li>
+<li>
+<p><strong>Denial-of-service (DoS) attack</strong>&nbsp;&ndash; An attack in which a bad actor floods a website with requests (TCP/UDP or HTTP/HTTPS) with the goal of making the site crash. Because DoS attacks impact availability, their primary outcome is damage to the target’s reputation. A <strong>distributed <span style="white-space: nowrap;">denial-of-service (DDoS)</span> attack</strong>, in which multiple sources target the same network or service, is more difficult to defend against due to the potentially large network of attackers. DoS protection requires a tool that adaptively identifies and prevents attacks. Learn more in <a href="https://www.nginx.com/resources/glossary/distributed-denial-of-service/">What is Distributed Denial of Service (DDoS)?</a></p>
+</li>
+<li>
+<p><strong>End-to-end encryption (E2EE)</strong>&nbsp;&ndash; The practice of fully encrypting data as it passes from the user to the app and back. E2EE requires SSL certificates and potentially mTLS.</p>
+</li>
+<li>
+<p><strong>Mutual TLS (mTLS)</strong>&nbsp;&ndash; The practice of requiring authentication (via SSL/TLS certificate) for both the client and the host. Use of mTLS also protects the confidentiality and integrity of the data passing between the client and the host.  mTLS can be accomplished all the way down to the Kubernetes pod level, between two services in the same cluster. For an excellent introduction to SSL/TLS and mTLS, see <a target="_blank" href="https://www.f5.com/labs/articles/education/what-is-mtls" rel="noopener noreferrer">What is mTLS?</a> at F5 Labs.</p>
+</li>
+<li>
+<p><strong>Single sign&#8209;on (SSO)</strong>&nbsp;&ndash; SSO technologies (including SAML, OAuth, and OIDC) make it easier to manage authentication and authorization.</p>
+<ul>
+<li>
+<p><strong>Simplified authentication</strong>&nbsp;&ndash; SSO eliminates the need for a user to have a unique ID token for each different resource or function.</p>
+</li>
+<li>
+<p><strong>Standardized authorization</strong>&nbsp;&ndash; SSO facilitates setting of user access rights based on role, department, and level of seniority, eliminating the need to configure permissions for each user individually.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>SSL (Secure Sockets Layer)/TLS (Transport Layer Security)</strong>&nbsp;&ndash; A protocol for establishing authenticated and encrypted links between networked computers. SSL/TLS certificates authenticate a website’s identity and establish an encrypted connection. Although the SSL protocol was deprecated in&nbsp;1999 and replaced with the TLS protocol, it is still common to refer to these related technologies as “SSL” or “SSL/TLS”&nbsp;&ndash; for the sake of consistency, we’ll use <em>SSL/TLS</em> for the remainder of this post.</p>
+</li>
+<li>
+<p><strong>Web application firewall (WAF)</strong>&nbsp;&ndash; A <a href="https://www.nginx.com/resources/glossary/reverse-proxy-server">reverse proxy</a> that detects and blocks sophisticated attacks against apps and APIs (including <a target="_blank" href="https://owasp.org/www-project-top-ten" rel="noopener noreferrer">OWASP Top&nbsp;10</a> and other advanced threats) while letting “safe” traffic through. WAFs defend against attacks that try to harm the target by stealing sensitive data or hijacking the system. Some vendors consolidate WAF and DoS protection in the same tool, whereas others offer separate WAF and DoS tools.</p>
+</li>
+<li>
+<p><strong>Zero trust</strong>&nbsp;&ndash; A security concept that is frequently used in higher security organizations, but is relevant to everyone, in which data must be secured at all stages of storage and transport. This means that the organization has decided not to “trust” any users or devices by default, but rather require that all traffic is thoroughly vetted. A zero&#8209;trust architecture typically includes a combination of authentication, authorization, and mTLS with a high probability that the organization implements E2EE.</p>
+</li>
+</ul>
+<h2 id="Resolve-CVEs-Quickly-to-Avoid-Cyberattacks">Use Case: Resolve CVEs Quickly to Avoid Cyberattacks</h2>
+<p><strong>Solution:</strong> Use tools with timely and proactive patch notifications</p>
+<p>According to a <a target="_blank" href="https://media.bitpipe.com/io_15x/io_152272/item_2184126/ponemon-state-of-vulnerability-response-.pdf" rel="noopener noreferrer">study by the Ponemon Institute</a>, in&nbsp;2019 there was an average &#8220;grace period&#8221; of&nbsp;43 days between the release of a patch for a critical or high&#8209;priority vulnerability and organizations seeing  attacks that tried to exploit the vulnerability. At F5 NGINX, we&#8217;ve seen that window narrow significantly in the following years (even down to <a target="_blank" href="https://therecord.media/researcher-discloses-iphone-lock-screen-bypass-on-ios-15-launch-day/" rel="noopener noreferrer">day zero in the case of Apple iOS&nbsp;15 in&nbsp;2021</a>), which is why we recommend patching as soon as possible. But what if patches for your traffic management tools aren&#8217;t available for weeks, or even months, after a CVE is announced?</p>
+<p>Tools that are developed and maintained by community contributors (rather than a dedicated engineering team) have the potential to lag weeks or months behind CVE announcements, making it unlikely that organizations can patch within <span style="white-space: nowrap;">that 43-day</span> window. <a href="https://www.nginx.com/blog/mitigating-security-vulnerabilities-quickly-easily-nginx-plus/#immediate-patches">In one case</a>, it took OpenResty four months to apply an NGINX&#8209;related security patch. That left anyone using an OpenResty&#8209;based Ingress controller vulnerable for at least four months, but realistically there&#8217;s usually additional delay before patches are available for software that depends on an open source project.</p>
+<p><a href="https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_patch-delay.png"><img src="https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_patch-delay.png" alt="" width="2048" height="594" class="aligncenter size-full wp-image-68731" srcset="https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_patch-delay.png 2048w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_patch-delay-300x87.png 300w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_patch-delay-1024x297.png 1024w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_patch-delay-768x223.png 768w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_patch-delay-1536x446.png 1536w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_patch-delay-150x44.png 150w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_patch-delay-640x186.png 640w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_patch-delay-320x93.png 320w" sizes="(max-width: 2048px) 100vw, 2048px" /></a></p>
+<p>To get the fastest CVE patching, look for two characteristics when selecting traffic management tools:</p>
+<ul>
+<li><strong>A dedicated engineering team</strong>&nbsp;&ndash; When tool development is managed by an engineering team instead of community volunteers, you know there&#8217;s a group of people who are dedicated to the health of the tool and can prioritize release of a patch as soon as possible.</li>
+<li><strong>An integrated code base</strong>&nbsp;&ndash; Without any external dependencies (like we discussed with OpenResty), patches are just an agile sprint away.</li>
+</ul>
+<p>For more on CVE patching, read <a href="https://www.nginx.com/blog/mitigating-security-vulnerabilities-quickly-easily-nginx-plus/">Mitigating Security Vulnerabilities Quickly and Easily with NGINX&nbsp;Plus</a>. </p>
+<h2 id="Stop-OWASP-Top-10-and-DoS-Attacks">Use Case: Stop OWASP Top 10 and DoS Attacks</h2>
+<p><strong>Solution:</strong> Deploy flexible, Kubernetes&#8209;friendly WAF and DoS protection</p>
+<p>Choosing the right WAF and DoS protection for Kubernetes apps depends on two factors (in addition to features):</p>
+<ul>
+<li><strong>Flexibility</strong>&nbsp;&ndash; There are scenarios when it’s best to deploy tools inside Kubernetes, so you want infrastructure&#8209;agnostic tools that can run within or outside Kubernetes. Using the same tool for all your deployments enables you to reuse policies and lowers the learning curve for your SecOps teams.</li>
+<li><strong>Footprint</strong>&nbsp;&ndash; The best Kubernetes tools have a small footprint, which allows for appropriate resource consumption with minimal impact to throughput, requests per second, and latency. Given that DevOps teams often resist security tools because of a perception that they slow down apps, choosing a high&#8209;performance tool with a small footprint can increase the probability of adoption.</li>
+</ul>
+<p>While a tool that consolidates WAF and DoS protection may seem more efficient, it’s actually expected to have issues around both CPU usage (due to a larger footprint) and flexibility. You’re forced to deploy the WAF and DoS protection together, even when you don’t need both. Ultimately, both issues can drive up the total cost of ownership for your Kubernetes deployments while creating budget challenges for other essential tools and services.</p>
+<p>Once you’ve chosen the right security tools for your organization, it’s time to decide where to deploy those tools. There are four locations where application services can typically be deployed to protect Kubernetes apps:</p>
+<ul>
+<li><strong>At the front door</strong> (on an external <a href="https://www.nginx.com/resources/glossary/load-balancing/">load balancer</a> such as <span style="white-space: nowrap;"><a href="https://www.nginx.com/products/nginx/">F5 NGINX Plus</a></span> or <span style="white-space: nowrap;"><a target="_blank" href="https://www.f5.com/products/big-ip-services" rel="noopener noreferrer">F5 BIG&#8209;IP</a></span>)&nbsp;&ndash; Good for “coarse&#8209;grained” global protection because it allows you to apply global policies across multiple clusters</li>
+<li><strong>At the edge</strong> (on an <a href="https://www.nginx.com/resources/glossary/kubernetes-ingress-controller/">Ingress controller</a> such as <a href="https://www.nginx.com/products/nginx-ingress-controller/">F5 NGINX Ingress Controller</a>)&nbsp;&ndash; Ideal for providing “fine&#8209;grained” protection that’s standard across a single cluster</li>
+<li><strong>At the service</strong> (on a lightweight load balancer like NGINX&nbsp;Plus)&nbsp;&ndash; Can be a necessary approach when there are a small number of services within a cluster that have a shared need for unique policies</li>
+<li><strong>At the pod</strong> (as part of the application)&nbsp;&ndash; A very custom approach that might be used when the policy is specific to the app</li>
+</ul>
+<p><a href="https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_four-app-svcs-locations.png"><img src="https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_four-app-svcs-locations.png" alt="" width="2048" height="1312" class="aligncenter size-full wp-image-68730" srcset="https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_four-app-svcs-locations.png 2048w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_four-app-svcs-locations-300x192.png 300w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_four-app-svcs-locations-1024x656.png 1024w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_four-app-svcs-locations-768x492.png 768w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_four-app-svcs-locations-1536x984.png 1536w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_four-app-svcs-locations-150x96.png 150w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_four-app-svcs-locations-640x410.png 640w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_four-app-svcs-locations-320x205.png 320w" sizes="(max-width: 2048px) 100vw, 2048px" /></a></p>
+<p>So, out of the four options, which is best? Well&#8230;that depends! </p>
+<h3>Where to Deploy a WAF</h3>
+<p>First, we’ll look at WAF deployment options since that tends to be a more nuanced choice.</p>
+<ul>
+<li><strong>Front door and edge</strong>&nbsp;&ndash; If your organization prefers a &#8220;defense in depth” security strategy, then we recommend deploying a WAF at both the external load balancer and the Ingress controller to deliver an efficient balance of global and custom protections.</li>
+<li><strong>Front door or edge</strong>&nbsp;&ndash; In the absence of a “defense in depth” strategy, a single location is acceptable, and the deployment location depends on ownership. When a traditional NetOps team owns security, they may be more comfortable managing it on a traditional proxy (the external load balancer). However, DevSecOps teams that are comfortable with Kubernetes (and prefer having their security configuration in the vicinity of their cluster configs) may choose to deploy a WAF at the ingress level.</li>
+<li><strong>Per service or pod</strong>&nbsp;&ndash; If your teams have specific requirements for their services or apps, then they can deploy additional WAFs in an à la carte fashion. But be aware: these locations come with higher costs. In addition to increased development time and a higher cloud budget, this choice can also increase operational costs related to troubleshooting efforts&nbsp;&ndash; such as when determining &#8220;Which of our WAFs is unintentionally blocking traffic?&#8221;</li>
+</ul>
+<h3>Where to Deploy DoS Protection</h3>
+<p>Protection against DoS attacks is more straightforward since it’s only needed at <em>one</em> location&nbsp;&ndash; either at the front door or at the Ingress controller. If you deploy a WAF both at the front door and the edge, then we recommend that you deploy DoS protection in front of the front&#8209;door WAF, as it&#8217;s the most global. That way, unwanted traffic can be thinned out before hitting the WAF, allowing you to make more efficient use of compute resources. </p>
+<p>For more details on each of these deployment scenarios, read <a href="https://www.nginx.com/blog/deploying-application-services-in-kubernetes-part-2/">Deploying Application Services in Kubernetes, Part&nbsp;2</a>.</p>
+<h2 id="Offload-Authentication-and-Authorization-from-the-Apps">Use Case: Offload Authentication and Authorization from Apps</h2>
+<p><strong>Solution:</strong> Centralize authentication and authorization at the point of ingress</p>
+<p>A common non&#8209;functional requirement that gets built into apps and services is authentication and authorization. On a small scale, this practice adds a manageable amount of complexity that’s acceptable when the app doesn’t require frequent updates. But with faster release velocities at larger scale, integrating authentication and authorization into your apps becomes untenable. Ensuring that each app maintains the appropriate access protocols can distract from the business logic of the app, or worse, can get overlooked and lead to an information breach. While use of SSO technologies can improve security by eliminating separate usernames and passwords in favor of one set of credentials, developers still have to include code in their apps to interface with the SSO system.</p>
+<p>There’s a better way: offload authentication and authorization to an Ingress controller.</p>
+<p><a href="https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_authenticate-authorize.png"><img src="https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_authenticate-authorize.png" alt="" width="2048" height="1012" class="aligncenter size-full wp-image-68729" srcset="https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_authenticate-authorize.png 2048w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_authenticate-authorize-300x148.png 300w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_authenticate-authorize-1024x506.png 1024w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_authenticate-authorize-768x380.png 768w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_authenticate-authorize-1536x759.png 1536w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_authenticate-authorize-150x74.png 150w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_authenticate-authorize-640x316.png 640w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_authenticate-authorize-320x158.png 320w" sizes="(max-width: 2048px) 100vw, 2048px" /></a></p>
+<p>Because the Ingress controller is already scrutinizing all traffic entering the cluster and routing it to the appropriate services, it’s an efficient choice for centralized authentication and authorization. This removes the burden from developers of building, maintaining, and replicating the logic in the application code; instead, they can quickly leverage SSO technologies at the ingress layer using the native Kubernetes API. </p>
+<p>For more on this topic, read <a href="https://www.nginx.com/blog/implementing-openid-connect-authentication-kubernetes-okta-and-nginx-ingress-controller/">Implementing OpenID Connect Authentication for Kubernetes with Okta and NGINX Ingress Controller</a>.</p>
+<h2 id="Set-Up-Self-Service-with-Guardrails">Use Case: Set Up Self-Service with Guardrails</h2>
+<p><strong>Solution:</strong> Implement role&#8209;based access control (RBAC)</p>
+<p>Kubernetes uses RBAC to control the resources and operations available to different types of users. This is a valuable security measure as it allows an administrator or superuser to determine how users, or groups of users, can interact with any Kubernetes object or specific namespace in the cluster. </p>
+<p>While Kubernetes RBAC is enabled by default, you need to take care that your Kubernetes traffic management tools are also RBAC&#8209;enabled and can align with your organization’s security needs. With RBAC in place, users get gated access to the functionality they need to do their jobs without waiting around for a ticket to be fulfilled. But without RBAC configured, users can gain permissions they don&#8217;t need or aren&#8217;t entitled to, which can lead to vulnerabilities if the permissions are misused.</p>
+<p>An Ingress controller is a prime example of a tool that can serve numerous people and teams when configured with RBAC. When the Ingress controller allows for fine&#8209;grained access management&nbsp;&ndash; even down to a single namespace&nbsp;&ndash; you can use RBAC to enable efficient use of resources through multi&#8209;tenancy. </p>
+<p>As an example, multiple teams might use the Ingress controller as follows:</p>
+<ul>
+<li><strong>NetOps Team</strong>&nbsp;&ndash; Configures external entry point of the application (like the hostname and TLS certificates) and delegates traffic control policies to various teams</li>
+<li><strong>DevOps Team A</strong>&nbsp;&ndash; Provisions TCP/UDP load balancing and routing policies</li>
+<li><strong>DevOps Team B</strong>&nbsp;&ndash; Configures rate&#8209;limiting policies to protect services from excessive requests</li>
+<li><strong>Identity Team</strong>&nbsp;&ndash; Manages authentication and authorization components while configuring mTLS policies as part of an <span style="white-space: nowrap;">end-to-end</span> encryption strategy</li>
+<li><strong>DevSecOps Team</strong>&nbsp;&ndash; Sets WAF policies</li>
+</ul>
+<p><a href="https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_IC-roles.png"><img src="https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_IC-roles.png" alt="" width="2048" height="650" class="aligncenter size-full wp-image-68728" srcset="https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_IC-roles.png 2048w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_IC-roles-300x95.png 300w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_IC-roles-1024x325.png 1024w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_IC-roles-768x244.png 768w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_IC-roles-1536x488.png 1536w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_IC-roles-150x48.png 150w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_IC-roles-640x203.png 640w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_IC-roles-320x102.png 320w" sizes="(max-width: 2048px) 100vw, 2048px" /></a></p>
+<p>To learn how to leverage RBAC in NGINX Ingress Controller, watch <a target="_blank" href="https://www.devnetwork.com/online-learning/advanced-kubernetes-deployments-with-nginx-ingress-controller/" rel="noopener noreferrer">Advanced Kubernetes Deployments with NGINX Ingress Controller</a>.  Starting at&nbsp;13:50, our experts explain how to leverage RBAC and resource allocation for security, self&#8209;service, and multi&#8209;tenancy. </p>
+<h2 id="Implement-End-to-End-Encryption">Use Case: Implement End-to-End Encryption</h2>
+<p><strong>Solution:</strong> Use traffic management tools</p>
+<p>End-to-end encryption (E2EE) is becoming an increasingly common requirement for organizations that handle sensitive or personal information. Whether it’s financial data or social media messaging, consumer privacy expectations combined with regulations like GDPR and HIPAA are driving demand for this type of protection. The first step in achieving E2EE is either to architect your backend apps to accept SSL/TLS traffic or to use a tool that offloads SSL/TLS management from your apps (the preferred option for separation of security function, performance, key management, etc.). Then, you configure your traffic management tools depending on the complexity of your environment.</p>
+<h3>Most Common Scenario: E2EE Using an Ingress Controller</h3>
+<p>When you have apps with just one endpoint (simple apps, or monolithic apps that you’ve “lifted and shifted” into Kubernetes) or there’s no <span style="white-space: nowrap;">service-to-service</span> communication, then you can use an Ingress controller to implement E2EE within Kubernetes. </p>
+<p><strong>Step 1:</strong> Ensure your Ingress controller only allows encrypted SSL/TLS connections using either service&#8209;side or mTLS certificates, ideally for both ingress and egress traffic. </p>
+<p><strong>Step 2:</strong> Address the typical default setting that requires the Ingress controller to decrypt and re&#8209;encrypt traffic before sending it to the apps. This can be accomplished in a couple of ways&nbsp;&ndash; the method you choose depends on your Ingress controller and requirements:</p>
+<ul>
+<li>If your Ingress controller supports SSL/TLS passthrough, it can route SSL/TLS‑encrypted connections based on the Service Name Indication (SNI) header, without decrypting them or requiring access to the SSL/TLS certificates or keys.</li>
+<li>Alternately, you can set up SSL/TLS termination, where the Ingress controller terminates the traffic, then proxies it to the backends or upstreams&nbsp;&ndash; either in clear&#8209;text or by re&#8209;encrypting the traffic with mTLS or service&#8209;side SSL/TLS to your Kubernetes services.</li>
+</ul>
+<h3>Less Common Scenario: E2EE Using an Ingress Controller and Service Mesh</h3>
+<p>If there&#8217;s <span style="white-space: nowrap;">service-to-service</span> communication within your cluster, you need to implement E2EE on two planes: ingress&#8209;egress traffic with the Ingress controller <em>and</em> <span style="white-space: nowrap;">service-to-service</span> traffic with a <a href="https://www.nginx.com/resources/glossary/service-mesh/">service mesh</a>. In E2EE, a service mesh’s role is to ensure that only specific services are allowed to talk to each other and that they do so in a secure manner. When you’re setting up a service mesh for E2EE, you need to enable a zero&#8209;trust environment through two factors: mTLS between services (set to require a certificate) and traffic access control between services (dictating which services are authorized to communicate). Ideally, you also implement mTLS between the applications (managed by a service mesh and the ingress&#8209;egress controller) for true E2EE security throughout the Kubernetes cluster.</p>
+<p>For more on encrypting data that’s been exposed on the wire, read <a href="https://www.nginx.com/blog/mtls-architecture-nginx-service-mesh/">The mTLS Architecture in NGINX Service Mesh</a>.</p>
+<h2 id="Ensure-Clients-Are-Using-a-Strong-Cipher-with-a-Trusted-Implementation">Use Case: Ensure Clients Are Using a Strong Cipher with a Trusted Implementation</h2>
+<p><strong>Solution:</strong> Comply with the Federal Information Processing Standards (FIPS) </p>
+<p>In the software industry, FIPS usually refers to the publication specifically about cryptography, <span style="white-space: nowrap;"><a target="_blank" href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf" rel="noopener noreferrer">FIPS PUB 140-2</span> Security Requirements for Cryptographic Modules</a>, which is a joint effort between the United States and Canada. It standardizes the testing and certification of cryptographic modules that are accepted by the federal agencies of both countries for the protection of sensitive information. <em>“But wait!”</em> you say. <em>“I don’t care about FIPS because I don’t work with North American government entities.”</em> Becoming FIPS&#8209;compliant can be a smart move regardless of your industry or geography, because FIPS is also the de facto global cryptographic baseline.</p>
+<p>Complying with FIPS doesn’t have to be difficult, but it does require that both your operating system and relevant traffic management tools can operate in FIPS mode. There’s a common misconception that FIPS compliance is achieved simply by running the operating system in FIPS mode. Even with the operating system in FIPS mode, it’s still possible that clients communicating with your Ingress controller aren’t using a strong cipher. When operating in FIPS mode, your operating system and Ingress controller may use only a subset of the typical SSL/TLS ciphers.</p>
+<p>Setting up FIPS for your Kubernetes deployments is a four&#8209;step process:</p>
+<ul>
+<li><strong>Step 1:</strong> Configure your operating system for FIPS mode</li>
+<li><strong>Step 2:</strong> Verify the operating system and OpenSSL are in FIPS mode</li>
+<li><strong>Step 3:</strong> Install the Ingress controller</li>
+</li>
+<li><strong>Step 4:</strong> Verify compliance with <span style="white-space: nowrap;">FIPS 140-2</span> by performing a FIPS status check</li>
+</ul>
+<p>In the example below, when FIPS mode is enabled for both the operating system and the OpenSSL implementation used by NGINX&nbsp;Plus, all end&#8209;user traffic to and from NGINX&nbsp;Plus is decrypted and encrypted using a validated, FIPS‑enabled crypto engine.</p>
+<p><a href="https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_fips.png"><img src="https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_fips.png" alt="" width="2048" height="1290" class="aligncenter size-full wp-image-68727" srcset="https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_fips.png 2048w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_fips-300x189.png 300w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_fips-1024x645.png 1024w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_fips-768x484.png 768w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_fips-1536x968.png 1536w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_fips-150x94.png 150w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_fips-640x403.png 640w, https://www.nginx.com/wp-content/uploads/2022/01/six-ways-secure-Kubernetes_fips-320x202.png 320w" sizes="(max-width: 2048px) 100vw, 2048px" /></a></p>
+<p>Read more about FIPS in <a href="https://www.nginx.com/blog/achieving-fips-compliance-nginx-plus/">Achieving FIPS Compliance with NGINX&nbsp;Plus</a>.</p>
+<h2>Make Kubernetes More Secure with NGINX</h2>
+<p>If you’re ready to implement some (or all) of these security methods, you need to make sure your tools have the right features and capabilities to support your use cases. NGINX can help with our suite of production&#8209;ready Kubernetes traffic management tools:</p>
+<ul>
+<li>
+<p><a href="https://www.nginx.com/products/nginx-ingress-controller/">NGINX Ingress Controller</a>&nbsp;&ndash; <span style="white-space: nowrap;">NGINX Plus-based</span> Ingress controller for Kubernetes that handles advanced traffic control and shaping, monitoring and visibility, authentication and SSO, and acts as an API gateway.</p>
+</li>
+<li>
+<p><a href="https://www.nginx.com/products/nginx-app-protect/">F5 NGINX App Protect</a>&nbsp;&ndash; Holistic protection for modern apps and APIs, built on F5’s market&#8209;leading security technologies, that integrates with NGINX Ingress Controller and NGINX&nbsp;Plus. Use a modular approach for flexibility in deployment scenarios and optimal resource utilization:</p>
+<ul>
+<li>
+<p><a href="https://www.nginx.com/products/nginx-app-protect/web-application-firewall/">NGINX App Protect WAF</a>&nbsp;&ndash; A strong, lightweight WAF that protects against OWASP Top&nbsp;10 and beyond with PCI DDS compliance.</p>
+</li>
+<li>
+<p><a href="https://www.nginx.com/products/nginx-app-protect/denial-of-service/">NGINX App Protect DoS</a>&nbsp;&ndash; Behavioral DoS detection and mitigation with consistent and adaptive protection across clouds and architectures.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.nginx.com/products/nginx-service-mesh/">F5 NGINX Service Mesh</a>&nbsp;&ndash; Lightweight, turnkey, and developer&#8209;friendly service mesh featuring NGINX&nbsp;Plus as an enterprise sidecar.</p>
+</li>
+</ul>
+<p>Get started by requesting your  <span style="white-space: nowrap;"><a href="https://www.nginx.com/free-trial-request-nginx-ingress-controller">free 30-day trial</a></span> of NGINX Ingress Controller with NGINX App Protect WAF and DoS, and <a target="_blank" href="https://downloads.f5.com/" rel="noopener noreferrer">download</a> the always&#8209;free NGINX Service Mesh.</p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/six-ways-to-secure-kubernetes-using-traffic-management-tools/">Six Ways to Secure Kubernetes Using Traffic Management Tools</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Rewinding 2021: The Year’s Top 5 NGINX Videos</title>
+		<link>https://www.nginx.com/blog/rewinding-2021-years-top-5-nginx-videos/</link>
+		
+		<dc:creator><![CDATA[Marco Martinez of F5]]></dc:creator>
+		<pubDate>Thu, 16 Dec 2021 22:22:03 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Tech]]></category>
+		<guid isPermaLink="false">https://www.nginx.com/?p=68467</guid>
+
+					<description><![CDATA[<p>Despite any offline disruptions we all experienced during&#160;2021, it was a fantastic year for video, livestreams, and webinars here at NGINX. We enjoyed great conversations with our community of users, customers, and partners, and took a look at trends and topics of interest in the world of digital transformation, app security, open source, DevOps, and [...]</p>
+<p><a class="btn btn-secondary understrap-read-more-link" href="https://www.nginx.com/blog/rewinding-2021-years-top-5-nginx-videos/">Read More...</a></p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/rewinding-2021-years-top-5-nginx-videos/">Rewinding 2021: The Year’s Top 5 NGINX Videos</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>Despite any offline disruptions we all experienced during&nbsp;2021, it was a fantastic year for video, livestreams, and webinars here at NGINX. We enjoyed great conversations with our community of users, customers, and partners, and took a look at trends and topics of interest in the world of digital transformation, app security, open source, DevOps, and Kubernetes. </p>
+<p>In this blog post, we review the five video broadcasts that were most popular with our viewers over the past year, giving you a second chance to learn from our leading experts on current topics of interest. (You might notice that some videos first appeared in previous years&nbsp;&ndash; we like to think that means we’re ahead of the curve!) We hope you enjoy.<br />
+liv</p>
+<h2>How to Improve Visibility in Kubernetes with Prometheus, Grafana, and NGINX</h2>
+<p>Kubernetes is complex, and to get control you need robust visibility and monitoring. In this livestream, our microservices experts demonstrated several techniques for boosting visi  bility:</p>
+<ul>
+<li>Leverage the NGINX&nbsp;Plus live activity monitoring dashboard for real&#8209;time tracking of key load&#8209;balancing and performance metrics</li>
+<li>Export the metrics to Prometheus</li>
+<li>Create Grafana dashboards to view cumulative performance in time&#8209;series graphs</li>
+</ul>
+<p>For more tips, see <a href="https://www.nginx.com/blog/how-to-improve-visibility-in-kubernetes/">How to Improve Visibility in Kubernetes</a> on our blog.</p>
+<p>    <iframe width="770" height="433" src="https://www.youtube.com/embed/hJoH7J0un5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<h2>Modern App Delivery with Red Hat and NGINX (Podcast)</h2>
+<p>We’re making one of our biggest partnership investments by broadening our integrations with Red Hat solutions. NGINX Product Marketing Manager Jenn&nbsp;Gile shows how fully supported Red Hat and NGINX solutions make application delivery secure and scalable for organizations at every point along the journey from monolithic to microservices. The partnership spans six products: Red Hat Enterprise Linux, Red Hat Ansible Automation Platform, Red Hat OpenShift, NGINX&nbsp;Plus, NGINX&nbsp;Controller, and NGINX Kubernetes Ingress Controller. Learn more on our <a href="http://www.nginx.com/partners/red-hat">website</a>.</p>
+<p>    <iframe width="770" height="433" src="https://www.youtube.com/embed/n39NKvK4Tv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<h2>Using NGINX Open Source for Video Streaming and Storage</h2>
+<p>The COVID&#8209;19 pandemic sent demand for stable and secure video streaming through the roof. NGINX Systems Engineer James&nbsp;Jones shows how to get started with NGINX Open Source for both livestreaming and video storage. Learn how to install build tools and dependencies, configure HLS or DASH, and set your playback method of choice.</p>
+<p>    <iframe width="770" height="433" src="https://www.youtube.com/embed/Js1OlvRNsdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<h2>How to Set Up SSL with NGINX</h2>
+<p>This popular video from&nbsp;2018 covers the basics of setting up NGINX for SSL/TLS and shows how to redirect HTTP traffic on port&nbsp;80 to HTTPS on port&nbsp;443. For information and complete configuration examples on more advanced topics&nbsp;&ndash; offloading cryptographic processing from backend servers, certificate handling, <span style="white-space: nowrap;">end-to-end</span> encryption, and more&nbsp;&ndash; see <a href="https://www.nginx.com/blog/nginx-ssl/">SSL/TLS Offloading, Encryption, and Certificates with NGINX and NGINX&nbsp;Plus</a> on our blog.</p>
+<p>    <iframe width="770" height="433" src="https://www.youtube.com/embed/X3Pr5VATOyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<h2>What Is an API Gateway?</h2>
+<p>Finally, application programming interfaces (APIs) are an increasingly popular way to communicate with applications, both for clients and other apps. Most modern apps are built using APIs. Learn more in this overview of API gateways. </p>
+<p>    <iframe width="770" height="433" src="https://www.youtube.com/embed/hYgP0cBORVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p>That’s our roundup of the five most popular videos from NGINX during&nbsp;2021. Let us know what you’d like to see from us in&nbsp;2022 by commenting below, or get in touch with us on social media!</p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/rewinding-2021-years-top-5-nginx-videos/">Rewinding 2021: The Year’s Top 5 NGINX Videos</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

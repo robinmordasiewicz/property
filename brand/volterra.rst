@@ -7,9 +7,7 @@ Volterra
    :titlesonly:
    :glob:
 
-Get the latest news at `Volterra`_.
-
-.. _Volterra: https://www.volterra.io
+https://www.volterra.io
 
 .. raw:: html
 

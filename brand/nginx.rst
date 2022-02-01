@@ -7,9 +7,7 @@ NGINX
    :titlesonly:
    :glob:
 
-Get the latest news at `NGINX`_.
-
-.. _NGINX: https://www.nginx.com
+https://www.nginx.com
 
 .. raw:: html
 

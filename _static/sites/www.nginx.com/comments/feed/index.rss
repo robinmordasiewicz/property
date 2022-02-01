@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments for NGINX	</title>
+	<atom:link href="https://www.nginx.com/comments/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.nginx.com</link>
+	<description>The High Performance Reverse Proxy, Load Balancer, Edge Cache, Origin Server</description>
+	<lastBuildDate>Thu, 22 Jul 2021 22:49:45 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>
+		Comment on Full Business Partner by Tony Mauro		</title>
+		<link>https://www.nginx.com/partners/full-business-partner/#comment-180</link>
+
+		<dc:creator><![CDATA[Tony Mauro]]></dc:creator>
+		<pubDate>Wed, 13 Jan 2021 03:55:36 +0000</pubDate>
+		<guid isPermaLink="false">https://www.nginx.com/?post_type=nx_partner_module&#038;p=62113#comment-180</guid>
+
+					<description><![CDATA[t.mauro 12-January-2021 removed https://www.facebook.com/fullbp/ from the &quot;Partner Facebook&quot; field because is 404]]></description>
+			<content:encoded><![CDATA[<p>t.mauro 12-January-2021 removed <a href="https://www.facebook.com/fullbp/" rel="nofollow ugc">https://www.facebook.com/fullbp/</a> from the &#8220;Partner Facebook&#8221; field because is 404</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>
