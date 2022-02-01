@@ -270,7 +270,7 @@
                                     <li class="meta-nav__menu-item">
                                         
                                             
-                                            <a class="meta-nav__menu-link" href="https://www.f5.com/ja_jp/company/blog/the-art-of-scaling-containers-distribution">
+                                            <a class="meta-nav__menu-link" href="../../../ja_jp/company/blog/the-art-of-scaling-containers-distribution.html">
                                                 日本語
                                             </a>
                                             
@@ -3267,7 +3267,7 @@
                                 
                                     
                                     
-                                    <a class="nav-list__link" href="https://www.f5.com/content/f5-com/de_de/company/blog/the-art-of-scaling-containers-distribution">
+                                    <a class="nav-list__link" href="../../../de_de/company/blog/the-art-of-scaling-containers-distribution.html">
                                         DE
                                     </a>
                                     
@@ -3280,7 +3280,7 @@
                                 
                                     
                                     
-                                    <a class="nav-list__link" href="https://www.f5.com/content/f5-com/fr_fr/company/blog/the-art-of-scaling-containers-distribution">
+                                    <a class="nav-list__link" href="../../../fr_fr/company/blog/the-art-of-scaling-containers-distribution.html">
                                         FR
                                     </a>
                                     
@@ -3302,7 +3302,7 @@
                                 
                                     
                                     
-                                    <a class="nav-list__link" href="https://www.f5.com/content/f5-com/ja_jp/company/blog/the-art-of-scaling-containers-distribution">
+                                    <a class="nav-list__link" href="../../../ja_jp/company/blog/the-art-of-scaling-containers-distribution.html">
                                         日本語
                                     </a>
                                     
@@ -3538,7 +3538,7 @@
 
 
 
-<div id="article-2004967519" class="a01 "><p><b>Scaling containers is more than just slapping a proxy in front of a service and walking away. There’s more to scale than just distribution, and in the fast-paced world of containers there are five distinct capabilities required to ensure scale: retries, circuit breakers, <a href="https://www.f5.com/es_es/company/blog/the-art-of-scaling-containers-discovery">discovery</a>, distribution, and monitoring.</b></p>
+<div id="article-2004967519" class="a01 "><p><b>Scaling containers is more than just slapping a proxy in front of a service and walking away. There’s more to scale than just distribution, and in the fast-paced world of containers there are five distinct capabilities required to ensure scale: retries, circuit breakers, <a href="the-art-of-scaling-containers-discovery.html">discovery</a>, distribution, and monitoring.</b></p>
 <p>In this post on the art of scaling containers, we’ll dig into distribution.</p>
 <h3>Distribution</h3>
 <p>The secret sauce of scaling anything has always relied, in part, on how requests are distributed across a finite set of resources. Not even cloud and its seemingly infinite supply of compute changes that recipe. At the moment a request is received, the possible list of resources which can accept that request and process it is finite. Period.</p>
@@ -3568,7 +3568,7 @@
 <figure id="article1750039366" class="a11">
     
     
-      <img src="https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/company/blog/2018/distribution-tiers-containers.jpg" alt="distribution-tiers-containers" class="img-fluid"/>
+      <img src="../../../content/dam/f5-com/page-assets-en/home-en/company/blog/2018/distribution-tiers-containers.jpg" alt="distribution-tiers-containers" class="img-fluid"/>
       
     
     
@@ -3585,7 +3585,7 @@
 
 
 
-<div id="article-1073516985" class="a01 "><p>Distribution today requires a tiered, architectural approach. The deeper in the app architecture you go, the less granular you get. By the time a proxy is making a load balancing decision between X clones of the same microservice, it may well be using nothing more than traditional algorithmic-driven equations. Meanwhile, at the outer edges of the environment, <a href="https://www.f5.com/es_es/company/blog/ingress-controllers-new-name-familiar-function">ingress controllers</a> make sometimes complex decisions based on HTTP layer variables.</p>
+<div id="article-1073516985" class="a01 "><p>Distribution today requires a tiered, architectural approach. The deeper in the app architecture you go, the less granular you get. By the time a proxy is making a load balancing decision between X clones of the same microservice, it may well be using nothing more than traditional algorithmic-driven equations. Meanwhile, at the outer edges of the environment, <a href="ingress-controllers-new-name-familiar-function.html">ingress controllers</a> make sometimes complex decisions based on HTTP layer variables.</p>
 <p>On the outside, distribution is driven by <i>architecture</i>. On the inside, by <i>algorithms</i>.</p>
 <p>Both are critical components – the most critical, perhaps – of scaling containers.</p>
 <p>Both rely on accurate, real-time information on the status (health) of the resources it might distribute requests to. We'll get to monitoring in the next few posts in this series. </p>

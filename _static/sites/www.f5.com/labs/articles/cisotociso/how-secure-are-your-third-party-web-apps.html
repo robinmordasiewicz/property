@@ -189,7 +189,7 @@
      
         
 
-       	<div class="background-cut " style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a02/optimize/article-background-image.jpg);"></div>
+       	<div class="background-cut " style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a02/optimize/article-background-image.jpg);"></div>
         
 
 
@@ -315,13 +315,13 @@
         
        
         <section class="container-fluid c02-header-area__main-article details fill-main-container">
-            <div class="c02-header-area__heroImageBackground" style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a02/optimize/article-background-image.jpg);"></div>
+            <div class="c02-header-area__heroImageBackground" style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a02/optimize/article-background-image.jpg);"></div>
             <div class="c02-header-area__main-article-overlay"></div>
            
             <div class="row">
                 <div class="align-bottom c02-header-area__article-wrap">
                     <div class="info-row clearfix">
-                    	<a href="https://www.f5.com/labs/search?q=Controls">
+                    	<a href="../../search%EF%B9%96q=Controls.html">
 	                        <div class="category">
 	                            <span class="badge badge-secondary c02-header-area__badge">Controls</span>
 	                        </div>
@@ -418,7 +418,7 @@
 </ul>
 <p>So, essential apps are holding essential data, and they’re out of direct oversight. Obviously, it’s not enough to just trust that things are going to be fine.</p>
 <h3>Assessing the Security of a Third-Party App</h3>
-<p>Assessing the security of your outsourced applications requires multiple steps. The first is to assess the security of the organization itself. A key way to look at the organization is through its third-party audits and security assessments. We explored that in our article <a href="https://f5.com/labs/articles/cisotociso/compliance/can-audits-help-us-trust-third-parties-25689" target="_blank" rel="noreferrer">Can Audits Help Us Trust Third Parties?</a></p>
+<p>Assessing the security of your outsourced applications requires multiple steps. The first is to assess the security of the organization itself. A key way to look at the organization is through its third-party audits and security assessments. We explored that in our article <a href="can-audits-help-us-trust-third-parties-25689.html" target="_blank" rel="noreferrer">Can Audits Help Us Trust Third Parties?</a></p>
 <p>The second step is look at the security of the app itself, but before we delve deeply into that, it’s worth looking at how the third-party itself handles vulnerability submissions from outside. If the vendor’s response to reports of security holes is to ignore the submitter or worse, sue the submitter,<a href="#_ftn1"><sup>1</sup></a><a id="_ftnref1"></a> then you know that security isn’t going to be a high priority for them. If they are open to security submissions, is there a formal mechanism for collecting and scoring discovered vulnerabilities? Is there a dedicated department or a named point of contact? Even better, is there a bug bounty program? At the very least, you want to make sure that externally discovered holes are investigated and risk analyzed.</p>
 <h4>How Does the Vendor Handle Vulnerabilities?</h4>
 <p>As a customer, you should expect to have some say in the vulnerability remediation process. One thing to inquire about is how the organization prioritizes discovered vulnerabilities. Do they use a standardized risk-based process? Common Vulnerability Scoring System v3.0 (CVSSv3)?<a href="#_ftn2"><sup>2</sup></a><a id="_ftnref2"></a> OWASP risk rating?<a href="#_ftn3"><sup>3</sup></a><a id="_ftnref3"></a> Or is the process arbitrary? Do you get a vote in the prioritization? How are status updates on remediations communicated? Are all open vulnerabilities available for your review? What are the escalation paths if you’re not satisfied with this process? It would be best if this is spelled out in the contract or support agreement for the greatest clarity amongst all parties.</p>
@@ -450,8 +450,8 @@
 </ul>
 <p>If an organization does have an audit report, it’s likely that some or most of these processes will be assessed as control objectives.</p>
 <h4>Security Features of the Application Itself</h4>
-<p>One area we haven’t focused on yet are the security features of the app itself. Of course, you need to look at the security features, starting with <a href="https://f5.com/labs/articles/threat-intelligence/identity-threats/the-credential-crisis-its-really-happening" target="_blank" rel="noreferrer">how users log in</a>. Does the app support enhanced authentication beyond a local username and password? Single sign-on, multifactor authentication and federation support are all basic expectations for application access. And regarding access, what do the password reset mechanisms look like? Hopefully they don’t rely on something weak like <a href="https://f5.com/labs/articles/threat-intelligence/cyber-security/if-your-security-question-list-looks-like-a-facebook-favorite-list-start-over-now" target="_blank" rel="noreferrer">secret questions</a>.</p>
-<p>Beyond access, what does the encryption look like? What forms of transport encryption are in place and are they <a href="https://f5.com/labs/articles/threat-intelligence/ssl-tls/bleichenbacher-rears-its-head-again-with-the-robot-attack" target="_blank" rel="noreferrer">up to date</a>? Are the TLS certificates issued from a reputable authority? Are good TLS practices in place such as HTTP Strict Transport Security (HSTS) and Online Certificate Status Protocol (OCSP) stapling? Beyond transport encryption, is user data stored in an encrypted format?</p>
+<p>One area we haven’t focused on yet are the security features of the app itself. Of course, you need to look at the security features, starting with <a href="../threat-intelligence/the-credential-crisis-its-really-happening.html" target="_blank" rel="noreferrer">how users log in</a>. Does the app support enhanced authentication beyond a local username and password? Single sign-on, multifactor authentication and federation support are all basic expectations for application access. And regarding access, what do the password reset mechanisms look like? Hopefully they don’t rely on something weak like <a href="../threat-intelligence/if-your-security-question-list-looks-like-a-facebook-favorite-list-start-over-now.html" target="_blank" rel="noreferrer">secret questions</a>.</p>
+<p>Beyond access, what does the encryption look like? What forms of transport encryption are in place and are they <a href="../threat-intelligence/bleichenbacher-rears-its-head-again-with-the-robot-attack.html" target="_blank" rel="noreferrer">up to date</a>? Are the TLS certificates issued from a reputable authority? Are good TLS practices in place such as HTTP Strict Transport Security (HSTS) and Online Certificate Status Protocol (OCSP) stapling? Beyond transport encryption, is user data stored in an encrypted format?</p>
 <h3>Conclusion</h3>
 <p>All of these questions are important to answer before you find yourself wedded to a critical outsource application that holds critical data. It’s just as important to revisit these questions at least annually to ensure threats are being mitigated to an acceptable level. In fact, it would be a good idea to keep raising the bar on security expectations because attackers are always evolving to work around our defenses. These kinds of assessments are critical not only to maintaining the security of your outsourced apps but to improving the app community as a whole. If enough customers insist that a vendor improves their security, then everyone benefits. Whatever you do, don’t assume app security is “just taken care of.” You rarely get what you expect—you get what you inspect.</p>
 <p><b>More to come in our Application Protection Report July 25th</b></p>
@@ -535,7 +535,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=Controls">
+                        <a href="../../search%EF%B9%96q=Controls.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">Controls</span>
                             </div>
@@ -544,7 +544,7 @@
                             <span class="U:align-self-center">January 17, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/security-lessons-from-across-the-pond--local-government-ransomwa" class="a07-related-articles__link">
+                    <a href="../bylines/security-lessons-from-across-the-pond--local-government-ransomwa.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Security Lessons from Across the Pond: Local Government Ransomware Attacks
                         </div>
@@ -562,7 +562,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=Controls">
+                        <a href="../../search%EF%B9%96q=Controls.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">Controls</span>
                             </div>
@@ -571,7 +571,7 @@
                             <span class="U:align-self-center">May 31, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/permission-to-intrude--hiring-hackers-to-bolster-cyber-defenses" class="a07-related-articles__link">
+                    <a href="../bylines/permission-to-intrude--hiring-hackers-to-bolster-cyber-defenses.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Permission to Intrude: Hiring Hackers to Bolster Cyber Defenses
                         </div>
@@ -589,7 +589,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=Controls">
+                        <a href="../../search%EF%B9%96q=Controls.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">Controls</span>
                             </div>
@@ -598,7 +598,7 @@
                             <span class="U:align-self-center">May 08, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/putting-application-threat-intelligence-into-action" class="a07-related-articles__link">
+                    <a href="../bylines/putting-application-threat-intelligence-into-action.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Putting Application Threat Intelligence Into Action
                         </div>
@@ -841,31 +841,31 @@
 
         <div class="a05-article-tags__tags-box">
             <strong class="a05-article-tags__strong">TAGS: </strong>
-            <a href="https://www.f5.com/labs/search?q=%22third+party+security%22" class="a05-article-tags__a">third party security</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22third+party+security%22.html" class="a05-article-tags__a">third party security</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=CISO.html" class="a05-article-tags__a">CISO</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=audit" class="a05-article-tags__a">audit</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=audit.html" class="a05-article-tags__a">audit</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22security+training%22" class="a05-article-tags__a">security training</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22security+training%22.html" class="a05-article-tags__a">security training</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Threat+Modeling%22" class="a05-article-tags__a">Threat Modeling</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Threat+Modeling%22.html" class="a05-article-tags__a">Threat Modeling</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=MFA" class="a05-article-tags__a">MFA</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=MFA.html" class="a05-article-tags__a">MFA</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=Controls" class="a05-article-tags__a">Controls</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=Controls.html" class="a05-article-tags__a">Controls</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=%22vulnerability+management%22.html" class="a05-article-tags__a">vulnerability management</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22risk+assessment%22" class="a05-article-tags__a">risk assessment</a>
+            <a href="../../search%EF%B9%96q=%22risk+assessment%22.html" class="a05-article-tags__a">risk assessment</a>
         </div>
 
     
@@ -890,7 +890,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=Controls">
+                        <a href="../../search%EF%B9%96q=Controls.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">Controls</span>
                             </div>
@@ -899,7 +899,7 @@
                             <span class="U:align-self-center">January 17, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/security-lessons-from-across-the-pond--local-government-ransomwa" class="a07-related-articles__link">
+                    <a href="../bylines/security-lessons-from-across-the-pond--local-government-ransomwa.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Security Lessons from Across the Pond: Local Government Ransomware Attacks
                         </div>
@@ -917,7 +917,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=Controls">
+                        <a href="../../search%EF%B9%96q=Controls.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">Controls</span>
                             </div>
@@ -926,7 +926,7 @@
                             <span class="U:align-self-center">May 31, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/permission-to-intrude--hiring-hackers-to-bolster-cyber-defenses" class="a07-related-articles__link">
+                    <a href="../bylines/permission-to-intrude--hiring-hackers-to-bolster-cyber-defenses.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Permission to Intrude: Hiring Hackers to Bolster Cyber Defenses
                         </div>
@@ -944,7 +944,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=Controls">
+                        <a href="../../search%EF%B9%96q=Controls.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">Controls</span>
                             </div>
@@ -953,7 +953,7 @@
                             <span class="U:align-self-center">May 08, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/putting-application-threat-intelligence-into-action" class="a07-related-articles__link">
+                    <a href="../bylines/putting-application-threat-intelligence-into-action.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Putting Application Threat Intelligence Into Action
                         </div>
@@ -1001,7 +1001,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=Controls">
+                        <a href="../../search%EF%B9%96q=Controls.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">Controls</span>
                             </div>
@@ -1010,7 +1010,7 @@
                             <span class="U:align-self-center">January 17, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/security-lessons-from-across-the-pond--local-government-ransomwa" class="a07-related-articles__link">
+                    <a href="../bylines/security-lessons-from-across-the-pond--local-government-ransomwa.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Security Lessons from Across the Pond: Local Government Ransomware Attacks
                         </div>
@@ -1028,7 +1028,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=Controls">
+                        <a href="../../search%EF%B9%96q=Controls.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">Controls</span>
                             </div>
@@ -1037,7 +1037,7 @@
                             <span class="U:align-self-center">May 31, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/permission-to-intrude--hiring-hackers-to-bolster-cyber-defenses" class="a07-related-articles__link">
+                    <a href="../bylines/permission-to-intrude--hiring-hackers-to-bolster-cyber-defenses.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Permission to Intrude: Hiring Hackers to Bolster Cyber Defenses
                         </div>
@@ -1055,7 +1055,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=Controls">
+                        <a href="../../search%EF%B9%96q=Controls.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">Controls</span>
                             </div>
@@ -1064,7 +1064,7 @@
                             <span class="U:align-self-center">May 08, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/putting-application-threat-intelligence-into-action" class="a07-related-articles__link">
+                    <a href="../bylines/putting-application-threat-intelligence-into-action.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Putting Application Threat Intelligence Into Action
                         </div>

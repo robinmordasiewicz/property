@@ -3455,7 +3455,7 @@
 
 
 <div id="article-840810189" class="a01 "><p>NTPとは「Network Time Protocol」の略で、ネットワークに接続される機器の時刻を、正しい時刻に同期するためのプロトコルです。OSI参照モデルでは第7層のアプリケーション レイヤに位置し、インターネット技術の標準化推進団体であるIETFが公開した「RFC 1305」で規定されています。</p>
-<p>NTPで時刻合わせを行う場合には、NTPクライアントがNTPサーバに問い合わせを行います。この時、下位プロトコルとしては<a href="https://f5.com/jp/education/glossary/glossary041-21523" rel="noreferrer">UDP</a>が使用され、サーバ側のポートとしてはUDP 123番が使用されます。この問い合わせに対し、NTPサーバは協定世界時（UTC：Universal Time, Coordinated）を返します。UTCはセシウム原子時計によって刻まれている国際原子時をもとにした時刻のことです。世界時としては他にも、地球の自転スピードもとにしたGMT（Greenwich Mean Time：グリニッジ標準時）から派生したUT1がありますが、現在ではUTCを使用するのが一般的です。なおUTCとUT1の間にはズレが生じるため、UTCにはこのズレを調整するために適宜、閏秒が挿入されます。</p>
+<p>NTPで時刻合わせを行う場合には、NTPクライアントがNTPサーバに問い合わせを行います。この時、下位プロトコルとしては<a href="user-datagram-protocol-udp.html" rel="noreferrer">UDP</a>が使用され、サーバ側のポートとしてはUDP 123番が使用されます。この問い合わせに対し、NTPサーバは協定世界時（UTC：Universal Time, Coordinated）を返します。UTCはセシウム原子時計によって刻まれている国際原子時をもとにした時刻のことです。世界時としては他にも、地球の自転スピードもとにしたGMT（Greenwich Mean Time：グリニッジ標準時）から派生したUT1がありますが、現在ではUTCを使用するのが一般的です。なおUTCとUT1の間にはズレが生じるため、UTCにはこのズレを調整するために適宜、閏秒が挿入されます。</p>
 <p>NTPサーバはインターネット上に複数存在し、これらは階層構造をなしています。最上位となるNTPサーバを「Stratum 1」と呼び、階層が下がる毎に数字が大きくなっていきます。NTPサーバは複数の上位サーバを利用し、自分自身の時刻を合わせます。Stratum 1の上位には、GPSや原子時計等の正確な時刻源があり、これを「Stratum 0」と呼びます。これらの時刻源は誤差100万分の1秒未満という非常に正確な時刻を保持しており、Stratum 1に直結されています。</p>
 <p>NTPではネットワーク経由で時刻データをやり取りするため、通信遅延時間を計測し、それを補正する必要があります。NTPでは往復の通信時間を計測し、これによって遅延時間の補正を行っています。ただしこれは、往路と復路の遅延が一致することを前提としており、両者に差がある場合には、その差の1/2が誤差になります。</p>
 </div></div>
@@ -3523,7 +3523,7 @@
 <div id="article-705248391" class="a01 "><div style="background: rgb(241,241,241);padding: 40.0px;overflow: hidden;"><div style="float: left;"><h3 style="line-height: 1.4;">20種類以上にわたる<br />
 ITセキュリティお役立ち資料</h3>
 <a href="../../../solutions/special/jp-download.html" target="_blank" style="padding: 10.0px;display: block;width: 220.0px;text-align: center;color: rgb(255,255,255);background: rgb(226,29,56);text-decoration: none;margin: 40.0px auto 20.0px;">ダウンロードはこちら</a></div>
-<div style="float: right;"><img style="display: block;margin: 0 auto;" src="https://www.f5.com/content/dam/f5-com/page-assets-jp/home-jp/services/resources/img_211118.jpg" alt="F5" width="100%"/></div>
+<div style="float: right;"><img style="display: block;margin: 0 auto;" src="../../../../content/dam/f5-com/page-assets-jp/home-jp/services/resources/img_211118.jpg" alt="F5" width="100%"/></div>
 </div>
 </div></div>
 <div data-component-type="article" class="a01 aem-GridColumn aem-GridColumn--default--12" data-component-title="Article text">

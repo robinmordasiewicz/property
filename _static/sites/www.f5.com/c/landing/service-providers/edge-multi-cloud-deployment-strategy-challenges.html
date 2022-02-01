@@ -1,0 +1,3860 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8"/>
+    <title>Edge &amp; Multi-Cloud Deployment Strategy Challenges</title>
+    <meta name="robots"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <meta name="description" content="Edge and multi-cloud deployments come with security and implementation challenges that any multi-cloud strategy should address. Learn what to look out for!"/>
+    <meta name="template" content="article-template-02"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <script>window.F5=window.F5||{};window.F5.VisitorTracking=window.F5.VisitorTracking||{"isConfigEnabled":true,"tealiumScriptAsyncUrl":"//mktg.tags.f5.com/main/prod/utag.js","tealiumScriptSyncUrl":"//mktg.tags.f5.com/main/prod/utag.sync.js","visitorTrackingService":"tealium","isTealiumActive":true,"isLegacyActive":false,"legacyLibWarmingUrls":["https://assets.adobedtm.com","https://www.google-analytics.com","https://www.googletagmanager.com"]}</script>
+
+    <script src="../../../../mktg.tags.f5.com/main/prod/utag.sync.js"></script>
+    
+    
+        <meta property="og:locale" content="en_US"/>
+    
+        <meta property="og:type" content="website"/>
+    
+        <meta property="og:title" content="Edge &amp; Multi-Cloud Deployment Strategy Challenges"/>
+    
+        <meta property="og:description" content="Edge and multi-cloud deployments come with security and implementation challenges that any multi-cloud strategy should address. Learn what to look out for!"/>
+    
+        <meta property="og:site_name" content="F5 Networks"/>
+    
+        <meta property="og:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/favicons/touch-icon_180.png"/>
+    
+        <meta property="og:image_secure_url" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/favicons/touch-icon_180.png"/>
+    
+        <meta property="og:url" content="https://www.f5.com/c/landing/service-providers/edge-multi-cloud-deployment-strategy-challenges"/>
+    
+    
+        <meta property="fb:app_id" content="302184056577324"/>
+    
+    
+        <meta property="twitter:card" content="summary_large_image"/>
+    
+        <meta property="twitter:title" content="Edge &amp; Multi-Cloud Deployment Strategy Challenges"/>
+    
+        <meta property="twitter:description" content="Edge and multi-cloud deployments come with security and implementation challenges that any multi-cloud strategy should address. Learn what to look out for!"/>
+    
+        <meta property="twitter:site" content="@F5networks"/>
+    
+        <meta property="twitter:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/favicons/touch-icon_180.png"/>
+    
+        <meta property="twitter:creator" content="@F5networks"/>
+    
+    
+    <link rel="canonical" href="edge-multi-cloud-deployment-strategy-challenges.html"/>
+
+
+    
+       	
+        <link href="https://assets.adobedtm.com" rel="preconnect" crossorigin/>
+       	
+        <link href="https://static.cloud.coveo.com" rel="preconnect" crossorigin/>
+       	
+        <link href="https://consent.trustarc.com" rel="preconnect" crossorigin/>
+       	
+        <link href="https://653-smc-783.mktoresp.com" rel="preconnect" crossorigin/>
+       	
+        <link href="https://f5networks.tt.omtrdc.net" rel="preconnect" crossorigin/>
+       	
+        <link href="../../../../f5networks.sc.omtrdc.net/index" rel="preconnect" crossorigin/>
+       	
+        <link href="https://munchkin.marketo.net" rel="preconnect" crossorigin/>
+       	
+        <link href="https://www.google-analytics.com" rel="preconnect" crossorigin/>
+       	
+        <link href="https://www.googletagmanager.com" rel="preconnect" crossorigin/>
+       	
+        <link href="https://stats.g.doubleclick.net" rel="preconnect" crossorigin/>
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/touch-icon_180.png"/>
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-16x16.png"/>
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-32x32.png"/>
+    
+    <link rel="mask-icon" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/safari-pinned-tab.svg" color="#e21d38"/>
+
+    
+<link rel="preload" as="font" type="font/woff2" href="../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Proxima-Bold.woff2" crossorigin/> 
+<link rel="preload" as="font" type="font/woff2" href="../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Neusa.woff2" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Proxima.woff2" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Neusa-LightV2.woff2" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Neusa-Medium.woff2" crossorigin/>
+
+<link rel="preload" as="font" type="font/woff2" href="../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Proxima-Medium.woff2" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Neusa-Bold.woff2" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Proxima-SemiBold.woff2" crossorigin/>
+
+
+
+
+     
+    
+<link rel="stylesheet" href="../../../etc.clientlibs/f5-app-security/clientlibs/clientlib-base.f8a45b5dae215e14f8ea3e14c49de2de.css" type="text/css">
+
+
+
+     
+     
+    
+<link rel="stylesheet" href="../../../etc.clientlibs/f5-com/clientlibs/clientlib-base.73d77c51fbcf42c93b7630cd1bd65351.css" type="text/css">
+
+
+
+
+    
+<link rel="stylesheet" href="../../../etc.clientlibs/f5-com/clientlibs/clientlib-components.d8c6e09fec6fb9b3d9ff7d0a01cdb356.css" type="text/css">
+
+
+
+    
+    
+
+<script>
+    window.digitalData = {"page":{"pageInfo":{"pageName":"www:f5.com:appsecurity:en:service-providers:edge-multi-cloud-deployment-strategy-challenges","destinationUrl":"https://www.f5.com/c/landing/service-providers/edge-multi-cloud-deployment-strategy-challenges.html","subDomain":"www","referringUrl":"https://www.f5.com/solutions/service-providers/5g-edge-telco-cloud","referringPageName":"www:f5.com:solutions:service-providers:5g-edge-telco-cloud","language":"en","version":""},"category":{"primaryCategory":"appsecurity","subCategory1":"en","subCategory2":"service-providers","subCategory3":"edge-multi-cloud-deployment-strategy-challenges"},"contentInfo":{"articleSolution":[],"articleProduct":[]}}};
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmContentParam = urlParams.get("utm_content");
+    if (utmContentParam && window.digitalData.user != undefined && window.digitalData.user.userInfo) {
+        const utmContentParamArray = utmContentParam.split("-");
+        if (utmContentParamArray.length >= 3) {
+            window.digitalData.user.userInfo.digitalSignal = utmContentParamArray[2];
+        }
+    }
+</script>
+<script>
+    window.utag_data = {"page.pageInfo.pageName":"www:f5.com:appsecurity:en:service-providers:edge-multi-cloud-deployment-strategy-challenges","page.pageInfo.destinationUrl":"https://www.f5.com/c/landing/service-providers/edge-multi-cloud-deployment-strategy-challenges.html","page.pageInfo.subDomain":"www","page.pageInfo.referringUrl":"https://www.f5.com/solutions/service-providers/5g-edge-telco-cloud","page.pageInfo.referringPageName":"www:f5.com:solutions:service-providers:5g-edge-telco-cloud","page.pageInfo.language":"en","page.pageInfo.version":"","page.category.primaryCategory":"appsecurity","page.category.subCategory1":"en","page.category.subCategory2":"service-providers","page.category.subCategory3":"edge-multi-cloud-deployment-strategy-challenges","page.contentInfo.articleSolution":[],"page.contentInfo.articleProduct":[]};
+</script>
+
+
+    
+    <script>
+        ;(function(win, doc, style, timeout) {
+            var STYLE_ID = 'at-body-style';
+
+            function getParent() {
+                return doc.getElementsByTagName('head')[0];
+            }
+
+            function addStyle(parent, id, def) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.createElement('style');
+                style.id = id;
+                style.innerHTML = def;
+                parent.appendChild(style);
+            }
+
+            function removeStyle(parent, id) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.getElementById(id);
+
+                if (!style) {
+                    return;
+                }
+
+                parent.removeChild(style);
+            }
+
+            addStyle(getParent(), STYLE_ID, style);
+            setTimeout(function() {
+                removeStyle(getParent(), STYLE_ID);
+            }, timeout);
+        }(window, document, "body {opacity: 0 !important}", 3000));
+    </script>
+
+    <script src="../../../../assets.adobedtm.com/launch-EN37b07f3d0fa64d53b299e28194b30e0a.min.js" async></script>
+
+
+</head>
+    <body id="articleBody" class="article-page-02 preview-mode">
+        
+    <script>
+    (function(a,b,c,d){
+        a='//mktg.tags.f5.com/main/prod/utag.js';
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+    </script>
+
+        
+       	
+
+<div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div data-component-type="structure" class="u01 aem-GridColumn aem-GridColumn--default--12" data-component-title="Mega Nav">
+
+
+
+
+
+<!-- Standard F5 Navigation Option -->
+
+    <header data-type="standard" class="u01-mega-nav">
+        <div class="u01-mega-nav__wrap">
+            <div class="u01-mega-nav__container container">
+                <div class="main-row row">
+                    <div class="main-nav__wrap outside">
+                        <div class="brand">
+                            <a class="brand-main" href="../../../index.html" target="_self">
+                                
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88">
+        <circle r="44" cy="44" cx="44" fill="#E21D38"></circle>
+        <path stroke="null" d="M43.02 48.22c21.63 1.8 29.95 7.75 29.56 15.88-.4 4.36-4.57 8.52-9.92 8.93-6.34.4-9.33-2.2-11.1-4.97-1.6-2.57-3.38-5.16-5.17-7.94-.4-.8-1.2-.2-1.8.2-1.4 1.2-2.6 2.58-3.8 3.78-.7.78-.5 1.4-.3 1.98 1.2 2.78 2.4 5.56 3.6 8.13 1.9 1.2 10.8 2.8 17.4 2.2 4.6-.4 10.1-2.2 14.9-5.5 4.6-3.6 7.9-8.3 8.5-16.1.2-4.7-.6-9.6-4.78-14.2s-11.3-8.3-25.8-9.3c.8-2.3 1.4-4.5 2.2-6.73 8.75.4 16.5 1 23.04 1.8.6-2.5.8-4.95 1.4-7.36l-1.8-2.1c-3.36-.42-6.55-1.22-10.1-1.62-4.55-.6-9.3-1-14.46-1.2-3.4 9.57-7.4 21.64-11.6 34.3m-5.8-37.1c-1.6 0-3.76.4-7.33 1.2-7.73 2.2-17.24 7.54-18.24 16.45-.2 1.4-.2 3-.4 4.3l-6.13.6C5 35.6 5 37.2 4.8 39c2-.2 3.97-.2 6.15-.4-.4 9.36 0 18.7.8 27.37.2 1.4.2 2.6.2 3.4-.2.82-1.6 1.22-3.57 1.22l2.6 3.1c7.56 1.4 17.1 2.4 27.18 2.6v-3c-5.97-.4-8.7-1.2-9.1-2.4-.4-1-.4-2.4-.6-3.8-.4-9.1-.6-19.1-.4-29.2 3.43 0 6.75 0 10.17-.2 1.8-.8 3.4-1.6 5-2.4v-3.4c-5.17 0-10.13.2-15.1.2l.6-11.9c.2-2.6 1.98-4.4 3.57-4.4 2.77-.2 5.33.98 7.92 2.17 1.4.6 2.8 1.4 4.18 2 .6.2 1.4.4 2-.23.8-.97 1.6-1.97 2.38-2.76.4-.6.2-1 0-1.2l-5.38-4c-1-.8-2.8-.8-4.4-.8-.6-.2-1.2 0-1.8 0" fill="#FFF"></path>
+        <text x="80" y="85" font-size="14" font-face="sans-serif" fill="#E21D38">®</text>
+    </svg>
+
+                            </a>
+                        </div>
+                        <ul class="main-nav list-unstyled">
+                            
+                            <li>
+                                <a href="../../../solutions.html" target="_self" class="main-nav__lvl-1-link text-uppercase  " data-mega-panel="solutions">
+                                    <span>Solutions &amp; Products</span>
+                                </a>
+                            </li>
+                        
+                            
+                            <li>
+                                <a href="../../../partners.html" target="_self" class="main-nav__lvl-1-link text-uppercase  " data-mega-panel="partners">
+                                    <span>Partners</span>
+                                </a>
+                            </li>
+                        
+                            
+                            <li>
+                                <a href="../../../services/resources.html" target="_self" class="main-nav__lvl-1-link text-uppercase  " data-mega-panel="services">
+                                    <span>Resources</span>
+                                </a>
+                            </li>
+                        
+                            
+                            <li>
+                                <a href="../../../services/support.html" target="_self" class="main-nav__lvl-1-link text-uppercase  " data-mega-panel="customers">
+                                    <span>Support</span>
+                                </a>
+                            </li>
+                        
+                            
+                            <li>
+                                <a href="../../../company.html" target="_self" class="main-nav__lvl-1-link text-uppercase  " data-mega-panel="company">
+                                    <span>Company</span>
+                                </a>
+                            </li>
+                        
+                            
+                            <li>
+                                <a href="../../../products/get-f5.html" target="_self" class="main-nav__lvl-1-link text-uppercase  " data-mega-panel="community">
+                                    <span>Get F5</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="utility-nav list-unstyled">
+                            <li class="utility-nav__item language-select language-select--desktop">
+                                
+                                
+                                    
+                                        <a class="utility-nav__link language-select__link text-uppercase" href="#">
+                                            EN
+                                        </a>
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+
+                                    <ul class="language-select__list list-unstyled" hidden>
+                                        
+                                        <li>
+                                            <a href="#" class="language-select__list-link">EN</a>
+                                        </li>
+                                    
+                                        
+                                        <li>
+                                            <a href="../../../de_de.html" class="language-select__list-link">DE</a>
+                                        </li>
+                                    
+                                        
+                                        <li>
+                                            <a href="../../../es_es.html" class="language-select__list-link">ES</a>
+                                        </li>
+                                    
+                                        
+                                        <li>
+                                            <a href="../../../fr_fr.html" class="language-select__list-link">FR</a>
+                                        </li>
+                                    
+                                        
+                                        <li>
+                                            <a href="https://www.f5.com/zh_cn" class="language-select__list-link">中文</a>
+                                        </li>
+                                    
+                                        
+                                        <li>
+                                            <a href="../../../ja_jp.html" class="language-select__list-link">日本語</a>
+                                        </li>
+                                    </ul>
+                                
+                            </li>
+                            <li class="utility-nav__item hamburger__item">
+                                <button class="hamburger hamburger--boring utility-nav__link hamburger__link">
+                                    <span hidden>Mobile Nav Open</span>
+                                    <div class="hamburger-box">
+                                        <div class="hamburger-inner"></div>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="utility-nav__item">
+                                <a href="#" class="utility-nav__link search-link">
+                                    <img src="../../../etc.clientlibs/base/clientlibs/base-resources/resources/icons/UI/global-search-close.svg" class="utility-nav__link close-search" alt="Close Search"/>
+                                    
+    <svg viewbox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="#e30f37" fill="none" d="M7 13a6 6 0 1 0-5-7 6 6 0 0 0 5 7z"/>
+        <path stroke="#e30f37" stroke-linecap="round" d="M12 12l5 5"/>
+    </svg>
+
+                                    <span hidden>Search</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="meta-row piped pull-right list-unstyled">
+                    
+                    <li class="meta-row__item">
+                        <a class="meta-row__link" href="https://devcentral.f5.com" rel="noreferrer">DevCentral</a>
+                    </li>
+                
+                    
+                    <li class="meta-row__item">
+                        <a class="meta-row__link" href="https://support.f5.com" rel="noreferrer">Support</a>
+                    </li>
+                
+                    
+                    <li class="meta-row__item">
+                        <a class="meta-row__link" href="https://partnercentral.f5.com" rel="noreferrer">Partners</a>
+                    </li>
+                
+                    
+                    <li class="meta-row__item">
+                        <a class="meta-row__link" href="../../../myf5.html">MyF5</a>
+                    </li>
+                
+                    
+                    <li class="meta-row__item">
+                        <a class="meta-row__link" href="../../../products/get-f5%EF%B9%96ls=meta.html#contactsales">Contact F5</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mega-nav">
+            <ul class="lvl-1-group list-unstyled">
+                
+                <li class="lvl-1-item" data-mega-item="solutions">
+                    <div class="mega-nav__link-wrap">
+                        <a href="../../../solutions.html" target="_self" class="lvl-1 mega-nav__link ">
+                            <span>Solutions &amp; Products</span>
+                        </a>
+                        
+                    </div>
+                    
+    <div class="mega-panel container" data-mobile-hidden="true">
+        <div class="mega-panel__row">
+            <div class="mega-panel__nav-col-container">
+                <div class="mega-panel__nav-col-wrap">
+                    
+                
+                    
+                
+                    
+                </div>
+            </div>
+            
+    
+    
+
+        </div>
+    </div>
+
+                </li>
+            
+                
+                <li class="lvl-1-item" data-mega-item="partners">
+                    <div class="mega-nav__link-wrap">
+                        <a href="../../../partners.html" target="_self" class="lvl-1 mega-nav__link ">
+                            <span>Partners</span>
+                        </a>
+                        
+                    </div>
+                    
+    <div class="mega-panel container" data-mobile-hidden="true">
+        <div class="mega-panel__row">
+            <div class="mega-panel__nav-col-container">
+                <div class="mega-panel__nav-col-wrap">
+                    
+                
+                    
+                
+                    
+                </div>
+            </div>
+            
+    
+    
+
+        </div>
+    </div>
+
+                </li>
+            
+                
+                <li class="lvl-1-item" data-mega-item="services">
+                    <div class="mega-nav__link-wrap">
+                        <a href="../../../services/resources.html" target="_self" class="lvl-1 mega-nav__link ">
+                            <span>Resources</span>
+                        </a>
+                        
+                    </div>
+                    
+    <div class="mega-panel container" data-mobile-hidden="true">
+        <div class="mega-panel__row">
+            <div class="mega-panel__nav-col-container">
+                <div class="mega-panel__nav-col-wrap">
+                    
+                
+                    
+                
+                    
+                </div>
+            </div>
+            
+    
+    
+
+        </div>
+    </div>
+
+                </li>
+            
+                
+                <li class="lvl-1-item" data-mega-item="customers">
+                    <div class="mega-nav__link-wrap">
+                        <a href="../../../services/support.html" target="_self" class="lvl-1 mega-nav__link ">
+                            <span>Support</span>
+                        </a>
+                        
+                    </div>
+                    
+    <div class="mega-panel container" data-mobile-hidden="true">
+        <div class="mega-panel__row">
+            <div class="mega-panel__nav-col-container">
+                <div class="mega-panel__nav-col-wrap">
+                    
+                
+                    
+                </div>
+            </div>
+            
+    
+    
+
+        </div>
+    </div>
+
+                </li>
+            
+                
+                <li class="lvl-1-item" data-mega-item="company">
+                    <div class="mega-nav__link-wrap">
+                        <a href="../../../company.html" target="_self" class="lvl-1 mega-nav__link ">
+                            <span>Company</span>
+                        </a>
+                        
+                    </div>
+                    
+    <div class="mega-panel container" data-mobile-hidden="true">
+        <div class="mega-panel__row">
+            <div class="mega-panel__nav-col-container">
+                <div class="mega-panel__nav-col-wrap">
+                    
+                
+                    
+                
+                    
+                </div>
+            </div>
+            
+    
+    
+
+        </div>
+    </div>
+
+                </li>
+            
+                
+                <li class="lvl-1-item" data-mega-item="community">
+                    <div class="mega-nav__link-wrap">
+                        <a href="../../../products/get-f5.html" target="_self" class="lvl-1 mega-nav__link ">
+                            <span>Get F5</span>
+                        </a>
+                        
+                    </div>
+                    
+    <div class="mega-panel container" data-mobile-hidden="true">
+        <div class="mega-panel__row">
+            <div class="mega-panel__nav-col-container">
+                <div class="mega-panel__nav-col-wrap">
+                    
+                
+                    
+                </div>
+            </div>
+            
+    
+    
+
+        </div>
+    </div>
+
+                </li>
+            </ul>
+            <ul class="meta-row-mobile list-unstyled">
+                
+                <li class="meta-row-mobile__item">
+                    <a class="meta-row-mobile__link" href="https://devcentral.f5.com" rel="noreferrer">DevCentral</a>
+                </li>
+            
+                
+                <li class="meta-row-mobile__item">
+                    <a class="meta-row-mobile__link" href="https://support.f5.com" rel="noreferrer">Support</a>
+                </li>
+            
+                
+                <li class="meta-row-mobile__item">
+                    <a class="meta-row-mobile__link" href="https://partnercentral.f5.com" rel="noreferrer">Partners</a>
+                </li>
+            
+                
+                <li class="meta-row-mobile__item">
+                    <a class="meta-row-mobile__link" href="../../../myf5.html">MyF5</a>
+                </li>
+            
+                
+                <li class="meta-row-mobile__item">
+                    <a class="meta-row-mobile__link" href="../../../products/get-f5%EF%B9%96ls=meta.html#contactsales">Contact F5</a>
+                </li>
+            </ul>
+            <div class="language-select-mobile">
+                
+                
+                    <a href="#" class="language-select-mobile__link">
+                        
+                            EN
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    </a>
+                    <ul class="language-select-mobile__list list-unstyled" hidden>
+                        
+                        <li>
+                            <a href="#" class="language-select-mobile__list-link">EN</a>
+                        </li>
+                    
+                        
+                        <li>
+                            <a href="../../../de_de.html" class="language-select-mobile__list-link">DE</a>
+                        </li>
+                    
+                        
+                        <li>
+                            <a href="../../../es_es.html" class="language-select-mobile__list-link">ES</a>
+                        </li>
+                    
+                        
+                        <li>
+                            <a href="../../../fr_fr.html" class="language-select-mobile__list-link">FR</a>
+                        </li>
+                    
+                        
+                        <li>
+                            <a href="https://www.f5.com/zh_cn" class="language-select-mobile__list-link">中文</a>
+                        </li>
+                    
+                        
+                        <li>
+                            <a href="../../../ja_jp.html" class="language-select-mobile__list-link">日本語</a>
+                        </li>
+                    </ul>
+                
+            </div>
+        </div>
+        <div class="tablet-close-target"></div>
+    </header>
+
+<!-- Agility Navigation Option -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div data-component-type="platter" class="c20 aem-GridColumn aem-GridColumn--default--12" data-component-title="Page Header">
+
+
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="c20__grid" id="platter293182861">
+    
+    <div class="bg-default c20__background c20__background-true bg-dark" data-bg-sizes="xs|sm|md|lg|xl|hd|fhd" data-bg-skip="None" data-bg-src-xs="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-HERO-C20-xs.jpg" data-bg-src-sm="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-HERO-C20-sm.jpg" data-bg-src-md="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-HERO-C20-md.jpg" data-bg-src-lg="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-HERO-C20-lg.jpg" data-bg-src-xl="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-HERO-C20-xl.jpg" data-bg-src-hd="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-HERO-C20-hd.jpg" data-bg-src-fhd="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-HERO-C20-hd.jpg">
+    </div>
+    <div class="c20__content">
+        <div class="c20__text-wrap">
+            <div class="eyebrow text-inverse">
+                SERVICE PROVIDERS VOLTERRA
+            </div>
+            <h1 class="display-1 c20__headline text-inverse">
+                Infrastructure and Security Challenges That Should Inform Your Multi-Cloud and Edge Strategy
+            </h1>
+        </div>
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+<div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp220554984" class="js-bg-lozad c01-columns__wrap bg-col  " style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--1">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="c02-floating aem-GridColumn aem-GridColumn--default--12">
+
+<div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div data-component-type="article" class="a03-social-sharing aem-GridColumn aem-GridColumn--default--12">
+    
+    
+
+        
+
+        
+        <div class="addthis_share a03-social-sharing__links">
+            <span class="addthis_share_button twitter addthis_sharing_toolbox" data-service="twitter" data-url="https://www.f5.com/c/landing/service-providers/edge-multi-cloud-deployment-strategy-challenges.html" data-description="Edge and multi-cloud deployments come with security and implementation challenges that any multi-cloud strategy should address. Learn what to look out for!" data-title="Edge &amp; Multi-Cloud Deployment Strategy Challenges">
+                <span class="social-bulb xs-mr-15 twitter"></span>
+            </span>
+            <span class="addthis_share_button linkedin addthis_sharing_toolbox" data-service="linkedin" data-url="https://www.f5.com/c/landing/service-providers/edge-multi-cloud-deployment-strategy-challenges.html" data-title="Edge &amp; Multi-Cloud Deployment Strategy Challenges" data-description="Edge and multi-cloud deployments come with security and implementation challenges that any multi-cloud strategy should address. Learn what to look out for!" data-media="none">
+                <span class="social-bulb xs-mr-15 linkedin"></span>
+            </span>
+            <span class="addthis_share_button facebook addthis_button_facebook addthis_sharing_toolbox" data-service="facebook" data-url="https://www.f5.com/c/landing/service-providers/edge-multi-cloud-deployment-strategy-challenges.html" data-description="Edge and multi-cloud deployments come with security and implementation challenges that any multi-cloud strategy should address. Learn what to look out for!" data-title="Edge &amp; Multi-Cloud Deployment Strategy Challenges" data-media="none">
+                <span class="social-bulb xs-mr-15 facebook"></span>
+            </span>
+            <a class="mail" target="_blank" href="mailto:?subject=Edge%20&amp;%20Multi-Cloud%20Deployment%20Strategy%20Challenges&amp;body=Checkout%20this%20great%20article%20I%20read%20on%20F5%20App%20Security%20https://www.f5.com/c/landing/service-providers/edge-multi-cloud-deployment-strategy-challenges" rel="noreferrer">
+                <span class="social-bulb xs-mr-15 mail"></span>
+            </a>
+        </div>
+    
+
+    
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="a02-download-button aem-GridColumn aem-GridColumn--default--12">
+
+
+    
+        
+        
+    
+
+    
+</div>
+
+    
+</div>
+</div>
+
+    
+</div>
+</div>
+           </div>
+
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--11">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp1776052941" class="js-bg-lozad c01-columns__wrap bg-col  " style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--9">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="a03-executive-summary aem-GridColumn aem-GridColumn--default--12">
+    
+    
+        
+        <div class="a03-executive-summary__article-summary auto">        		
+            <div class="a03-executive-summary__summary-content">
+                <h3 class="a03-executive-summary__title">Introduction</h3>
+                <div class="a03-executive-summary__summary"><p>With the 5G era commencing, each service provider must ensure that its infrastructure has the cloud-native, containerized, service-based architecture necessary to capitalize on the opportunities 5G presents. To outperform competitors, a service provider will need the right security, visibility, and control to protect its 5G network and customers, and to enable the adaptive applications that will underly the future of 5G. </p>
+</div>
+            </div>
+        </div>
+    
+   
+    
+</div>
+<div class="c07-related-content-mobile aem-GridColumn aem-GridColumn--default--12">
+ 
+
+ 
+<div class="a09-related-article__content hide-on-embed auto ">
+	<div class="only-single-related">RELATED CONTENT</div>
+	<div class="a09-related-article__img-wrap">
+		<div class="img-placeholder"></div>
+		<img class="js-bg-lozad" data-src="https://www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion_RelatedArticle.jpg" alt="&lt;p>Blog&lt;/p>
+"/>
+		<div class="a09-related-article__ico js-bg-lozad" data-background-image="/etc/images/f5-app-security/f5logo.png"></div>
+	</div>
+	<div class="a09-related-article__article-data">
+		<div class="a09-related-article__content-type U:display-flex">
+			<span>Article</span>
+		</div>
+		<a class="a09-related-article__title add-mark link-cta" href="../../../company/blog/f5-softbank-multi-access-edge-computing.html"><p>Blog</p>
+</a>
+		<div class="a09-related-article__desc only-single-related"><p>SoftBank Corp. and F5 Head to Sea to Test Live Video Broadcasting with Multi-access Edge Computing</p>
+</div>
+		<div class="a09-related-article__mobile-button">
+			<a class="btn btn-blue btn-medium">Read the article</a>
+		</div>
+		
+		<a class="a09-related-article__cta link-cta" target="_self" href="../../../company/blog/f5-softbank-multi-access-edge-computing.html">Learn more</a>
+		
+	</div>
+</div>
+
+
+ </div>
+
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--3">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+            </div>
+        </div>
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp-1794819282" class="js-bg-lozad c01-columns__wrap bg-col false bg-default" style="   background-color: #0C5C8D !important;;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--12">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp1241329144" class="js-bg-lozad c01-columns__wrap bg-col no-content-padding bg-secondary" style="   background-color: #0C5C8D !important;;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--1">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--11">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line two-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+<div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp867280796" class="js-bg-lozad c01-columns__wrap bg-col false bg-default" style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--9">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp1531978743" class="js-bg-lozad c01-columns__wrap bg-col false bg-default" style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--12">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p style="color: rgb(255,255,255);">As service providers migrate to 5G, they must continuously transform to accommodate new innovations and opportunities. In preparing for 5G and edge computing deployments, it’s not possible to simply upgrade existing monolithic, appliance-based network architectures. You need to redesign your mobile network and IT architectures from the ground up, leveraging horizontal IT architectures.  </p>
+<p style="color: rgb(255,255,255);">Cloud computing resources can now be deployed in distributed data centers at the edge of the network, providing a platform for modern applications and services. This opportunity has led service providers to embark on a digital transformation journey to implement a cloud-native infrastructure, allowing them to transition from their existing networks to hybrid, multi-cloud, and distributed networks that are designed for agility and that enable edge cloud services to run at tremendous scale. <br />
+ </p>
+
+</div>
+
+    
+
+</div>
+<div class="a02-image aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class="img-full a02-image__image auto">
+	<!-- link  -->
+    
+    
+    <!-- no link, no lightbox -->
+    <a>
+        <img class="js-bg-lozad" data-img-sizes="xs|sm|md|lg|xl|hd|fhd" data-bg-skip-lazy="false" data-img-src-xs="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-IMAGE-Figure1-768.png" data-img-src-sm="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-IMAGE-Figure1-768.png" data-img-src-md="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Figure1-1200.png" data-img-src-lg="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Figure1-1200.png" data-img-src-xl="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Figure1-1600.png" data-img-src-hd="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Figure1-1600.png" data-img-src-fhd="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Figure1-1600.png"/>
+    </a>
+        
+        <!-- no link, lightbox -->
+    
+           
+       
+</figure>
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line two-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p style="color: rgb(255,255,255);"><b><sup></sup>Figure 1: </b>The convergence of telco, IT, and B2B systems creates differentiated business services in a hybrid, multi-cloud and distributed ecosystem.</p>
+
+</div>
+
+    
+
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line one-rem-margin show-line-true">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line one-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p style="color: rgb(255,255,255);">The new technological infrastructure required for 5G is a result of the convergence of telco, IT and B2B systems. This creates transformative business services for industry verticals in a hybrid multi-cloud distributed ecosystem. 5G and edge computing are critical drivers for enterprise applications. The convergence of IT and telco cloud infrastructure enables telco cloud expansion into the enterprise edge. This combination of 5G, edge computing, and hybrid multi-cloud represents a new computing model capable of transforming a wide range of industries.</p>
+<p style="color: rgb(255,255,255);">Technological advances always bring new security concerns. Volterra commissioned Propeller Insights to conduct a survey amongst 400 CIOs, CTOs, Enterprise Architects, Directors and Vice Presidents of IT and Engineering, and DevOps professionals. Research was conducted throughout North America, Europe, and Asia. Let’s examine some critical security challenges that threaten multi-cloud and edge deployments as service providers gear up to enable greater business agility with the convergence of telco, IT and B2B systems.</p>
+<p style="color: rgb(255,255,255);"> </p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--3">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="a09-related-article aem-GridColumn aem-GridColumn--default--12">
+
+ 
+<div class="a09-related-article__content hide-on-embed auto ">
+	<div class="only-single-related">RELATED CONTENT</div>
+	<div class="a09-related-article__img-wrap">
+		<div class="img-placeholder"></div>
+		<img class="js-bg-lozad" data-src="https://www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion_RelatedArticle.jpg" alt="&lt;p>Blog&lt;/p>
+"/>
+		<div class="a09-related-article__ico js-bg-lozad" data-background-image="/etc/images/f5-app-security/f5logo.png"></div>
+	</div>
+	<div class="a09-related-article__article-data">
+		<div class="a09-related-article__content-type U:display-flex">
+			<span>Article</span>
+		</div>
+		<a class="a09-related-article__title add-mark link-cta" href="../../../company/blog/f5-softbank-multi-access-edge-computing.html"><p>Blog</p>
+</a>
+		<div class="a09-related-article__desc only-single-related"><p>SoftBank Corp. and F5 Head to Sea to Test Live Video Broadcasting with Multi-access Edge Computing</p>
+</div>
+		<div class="a09-related-article__mobile-button">
+			<a class="btn btn-blue btn-medium">Read the article</a>
+		</div>
+		
+		<a class="a09-related-article__cta link-cta" target="_self" href="../../../company/blog/f5-softbank-multi-access-edge-computing.html">Learn more</a>
+		
+	</div>
+</div>
+
+
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+<div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp-957311354" class="js-bg-lozad c01-columns__wrap bg-col false bg-default" style="   background-color: #003963 !important;;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--12">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp962831949" class="js-bg-lozad c01-columns__wrap bg-col false bg-default" style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--1">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--11">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp1848810230" class="js-bg-lozad c01-columns__wrap bg-col no-content-padding bg-default" style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--9">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp96276445" class="js-bg-lozad c01-columns__wrap bg-col false bg-default" style="   background-color: #0C5C8D !important;;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--12">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line one-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--3">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+            </div>
+        </div>
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line two-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+<div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp-478526489" class="js-bg-lozad c01-columns__wrap bg-col false bg-default" style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--9">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="a05-pull-quote aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+<div class="a05-pull-quote__wrapper js-bg-lozad force-vertical-display auto all no-bg" data-bg-skip-lazy="false">
+		
+	
+	
+	<div class="a05-pull-quote__pullquote-content auto-height" style="height: px">
+		
+			<div class="a05-pull-quote__pullquote-content-wrapper">
+				<div class="a05-pull-quote__text  ">
+					<span class="quote-first">&#8220;</span> <p style="color: rgb(29,156,211);">70% of IT leaders think it’s very important to have a consistent operational experience between the edge and public and private clouds</p>
+
+				</div>
+
+				
+			</div>
+		
+	</div>
+</div>
+
+
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line one-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <h2 style="color: rgb(255,255,255);">Infrastructure and Security Challenges</h2>
+
+</div>
+
+    
+
+</div>
+<div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp-1324333300" class="js-bg-lozad c01-columns__wrap bg-col false bg-default" style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--6">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text inverse-theme">
+    <p>Distributing workloads across multiple clouds has strong benefits. Respondents to this survey identified these key benefits:</p>
+<p><b>63% — Maximizes availability and reliability</b></p>
+<p><b>47% — Fulfills regulatory and compliance requirements</b></p>
+<p><b>42% — Leverages best of breed services from each provider</b></p>
+<p><br />
+However, there are still challenges to managing workloads across multiple providers. These were our respondents’ top three concerns:</p>
+<p><b>60% — Secure and reliable connectivity between providers</b></p>
+<p><b>54% — Different support and consulting processes</b></p>
+<p><b>53% — Different platform services</b></p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--6">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p style="text-align: center;"><img src="https://www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-DonutChart-L.png" width="275" height="275"/></p>
+<p style="color: rgb(255,255,255);text-align: center;"><i>of IT leaders plan to distribute workloads <br />
+ across two or more clouds.</i></p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line half-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+<div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp1896634140" class="js-bg-lozad c01-columns__wrap bg-col false bg-default" style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        <div class="row c01-columns__row two-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--6">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <h4><p style="color: rgb(255,255,255);">WHAT’S THE IMPACT?</p>
+</h4>
+<p style="color: rgb(255,255,255);">TIC 3.0 removes many former barriers to federal agency cloud adoption. It lets you adopt a more flexible approach to securing data and moving to the cloud.</p>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--6">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+            </div>
+        </div>
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line one-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--3">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+            </div>
+        </div>
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+<div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp-1097187232" class="js-bg-lozad c01-columns__wrap bg-col no-content-padding bg-secondary" style="   background-color: #003963 !important;;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--12">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line half-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line one-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+<div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp1109078840" class="js-bg-lozad c01-columns__wrap bg-col false bg-default" style="   background-color: #0C5C8D !important;;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--12">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp-894188581" class="js-bg-lozad c01-columns__wrap bg-col false bg-default" style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--1">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--11">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp-178273532" class="js-bg-lozad c01-columns__wrap bg-col no-content-padding bg-default" style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--9">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp-1451276913" class="js-bg-lozad c01-columns__wrap bg-col false bg-default" style="   background-color: #003963 !important;;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--12">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line half-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line one-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line one-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line two-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+<div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp-2017286418" class="js-bg-lozad c01-columns__wrap bg-col false bg-default" style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--12">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <h2 style="color: rgb(255,255,255);">Deploying Apps at the Edge: Challenges</h2>
+
+</div>
+
+    
+
+</div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p style="color: rgb(255,255,255);">While technology executives say deploying apps at the edge supports IoT (57%), manufacturing (52%), and content delivery (46%), business concerns and technical challenges are prominent issues.</p>
+<p style="color: rgb(255,255,255);"><b>Among our respondents:</b></p>
+<ul>
+<li style="color: rgb(255,255,255);"><b>69% are worried about the difficulty of integrating cloud-native workflows like automation, CI/CD, and performance management</b></li>
+<li style="color: rgb(255,255,255);"><b>67% expressed concern about trouble installing a full set of application infrastructure</b></li>
+<li style="color: rgb(255,255,255);"><b>44% report difficulty in managing apps across multiple edge locations</b></li>
+<li style="color: rgb(255,255,255);"><b>38% are concerned about an inability to accommodate the IT infrastructure needed to host and operate at the edge</b></li>
+</ul>
+
+</div>
+
+    
+
+</div>
+<div class="a02-image aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class="img-full a02-image__image auto">
+	<!-- link  -->
+    
+    
+    <!-- no link, no lightbox -->
+    <a>
+        <img class="js-bg-lozad" data-img-sizes="xs|sm|md|lg|xl|hd|fhd" data-bg-skip-lazy="false" data-img-src-xs="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Servers-768.png" data-img-src-sm="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Servers-768.png" data-img-src-md="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Servers-1200.png" data-img-src-lg="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Servers-1200.png" data-img-src-xl="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Servers-1200.png" data-img-src-hd="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Servers-1200.png" data-img-src-fhd="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Servers-1200.png"/>
+    </a>
+        
+        <!-- no link, lightbox -->
+    
+           
+       
+</figure>
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line one-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text inverse-theme">
+    <h2>5G Enterprise Opportunities Outweigh Challenges</h2>
+
+</div>
+
+    
+
+</div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text inverse-theme">
+    <p>The challenges highlighted by our survey respondents suggest that successful multi-cloud and edge 5G deployments will require a thorough and thoughtful digital transformation strategy. This strategy must incorporate lessons learned from telco, IT, and B2B, and include security throughout the architecture.</p>
+
+</div>
+
+    
+
+</div>
+<div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line two-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--3">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+            </div>
+        </div>
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+<div name="Columns" class="c01-columns aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="comp-2128124105" class="js-bg-lozad c01-columns__wrap bg-col  " style="   ;">
+
+    <div class="c01-columns__container  ">
+        
+        
+        
+        
+
+          
+                  
+
+        
+        
+         
+         
+             
+         
+            
+
+          
+            
+
+
+        
+
+           
+           
+              
+           
+        
+        
+
+      
+        
+        
+
+
+         
+         
+
+      
+        
+        
+
+
+
+        
+          
+          <div class="row c01-columns__row one-tablet one-mobile">
+            <div class="c01-columns__col col c01-columns__col--1">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+            </div>
+            <div class="c01-columns__col col c01-columns__col--11">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="c05-separation-line aem-GridColumn aem-GridColumn--default--12">
+<div class="c05-separation-line two-rem-margin show-line-">
+	
+	
+	<div class="c05-separation-line__line" style="border-top: 1px solid #ffffff;"></div>
+</div></div>
+<div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <h2>DISCOVER MORE</h2>
+
+</div>
+
+    
+
+</div>
+<div data-component-type="Platter" class="c04 aem-GridColumn aem-GridColumn--default--12" data-component-title="Featured Articles">
+
+
+
+                              
+
+
+
+
+
+<div id="Platter-723435550" class="container">
+    <div class="row c04--2">
+        
+        <div class="c04__column">
+            <div><div data-component-type="Molecule" class="m10" data-component-title="Featured Article">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="Molecule360340670" class="m10__wrap m10__embedded-article-btn">
+    <a class="m10__bgImage-wrap cq-dd-image js-bg-lozad  " data-bg-sizes="xs" data-bg-src-xs="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion_DiscoverMore1.jpg" href="../../../pdf/solution-profiles/volterra-edge-distributed-cloud-solution-overview.pdf">
+        
+    </a>
+    
+    <div class="m10__content-wrap U:margin-top-md">
+        <div class="eyebrow ">SOLUTION BRIEF</div>
+        <h2 class="display-4  m10__headline ">
+            <a class=" m10__headline--link " href="../../../pdf/solution-profiles/volterra-edge-distributed-cloud-solution-overview.pdf">F5 Volterra Edge Cloud</a>
+            
+        </h2>
+        <div class="U:margin-top-md m10__text ">
+            <p><br />
+ </p>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+        </div>
+<div class="c04__column">
+            <div><div data-component-type="Molecule" class="m10" data-component-title="Featured Article">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="Molecule360340671" class="m10__wrap m10__embedded-article-btn">
+    <a class="m10__bgImage-wrap cq-dd-image js-bg-lozad  " data-bg-sizes="xs" data-bg-src-xs="/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion_DiscoverMore2.jpg" href="../../../pdf/solution-profiles/a-global-network-for-maximum-cloud-performance-overview.pdf">
+        
+    </a>
+    
+    <div class="m10__content-wrap U:margin-top-md">
+        <div class="eyebrow ">SOLUTION BRIEF</div>
+        <h2 class="display-4  m10__headline ">
+            <a class=" m10__headline--link " href="../../../pdf/solution-profiles/a-global-network-for-maximum-cloud-performance-overview.pdf">A Global Network for Maximum Cloud Performance</a>
+            
+        </h2>
+        <div class="U:margin-top-md m10__text ">
+            <p><br />
+<br />
+ </p>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+        
+        
+          
+          
+        
+        
+         
+         
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+<div data-component-type="Structure" class="u02 aem-GridColumn aem-GridColumn--default--12" data-component-title="Footer">
+
+
+
+
+
+
+
+<footer class="u02__container U:gapper-top">
+    <div class="container">
+        <div class="row">
+            <div class="u02__text-wrap u02__text-wrap--border">
+                <h4 class="display-3 u02__headline">SECURE AND DELIVER EXTRAORDINARY DIGITAL EXPERIENCES</h4>
+                <p class="u02__text">F5’s portfolio of automation, security, performance, and insight capabilities empowers our customers to create, secure, and operate adaptive applications that reduce costs, improve operations, and better protect users.</p>
+            </div>
+        </div>
+        <div class="row">
+            <hr class="u02__text-border"/>
+        </div>
+        <div class="row">
+            <div class="u02__contact-overall">
+                <div class="u02__contact-wrap">
+                    <h4 class="display-4 text-uppercase u02__contact">
+                        HAVE A QUESTION?</h4>
+
+                    <p class="u02__contact">
+                        <a>   <a href="../../../company/contact.html">Support and Sales ›</a></a>
+                    </p>
+
+                </div>
+                <div class="u02__contact-wrap">
+                    <h4 class="display-4 text-uppercase u02__contact">
+                        Follow Us</h4>
+
+                    <div class="u02__contact">
+                        <ul class="u02__social-links">
+                            <li><a href="https://twitter.com/f5networks" target="_blank" rel="noreferrer">
+                                <svg class="svg-icon svg-n-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <path class="svg-fill" d="M95 23.3s-3.5 5.4-9.2 9C87 57.3 67.8 85 33.3 85 16 85 5 77 5 77s13.6 2.7 27.3-7.2C18.3 69 15 57.5 15 57.5s3.8 1 8.4-.3c-15.6-3.7-15-17.6-15-17.6s4 2.2 8.5 2.2C2.6 31.4 11 18 11 18s12.7 17.2 38 18.7C45.8 17.3 69 8.4 81 20.5c6.2-1 12-4.3 12-4.3s-2 6.6-8.3 9.8c5-.3 10.5-2.7 10.5-2.7z">
+                                    </path>
+                                </svg>
+                                Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/companies/f5-networks" target="_blank" rel="noreferrer">
+                                <svg class="svg-icon svg-n-linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.99 22.131">
+                                    <defs>
+                                        <style>.link-cls-1 {
+                                                fill: none
+                                            }
+
+                                        </style>
+                                        <clipPath id="link-clip-path">
+                                            <path id="Path_131" data-name="Path 131" class="link-cls-1" d="M1403.535-522.583h-18.741a1.605 1.605 0 0 0-1.624 1.583v18.96a1.605 1.605 0 0 0 1.624 1.585h18.741a1.606 1.606 0 0 0 1.625-1.585V-521a1.606 1.606 0 0 0-1.625-1.583zm-13.7 18.526h-3.321v-9.993h3.321zm-1.661-11.358h-.022a1.719 1.719 0 0 1-1.835-1.726 1.733 1.733 0 0 1 1.879-1.726 1.726 1.726 0 0 1 1.857 1.726 1.733 1.733 0 0 1-1.878 1.725zm13.637 11.358h-3.322v-5.343c0-1.343-.48-2.259-1.682-2.259a1.819 1.819 0 0 0-1.7 1.215 2.28 2.28 0 0 0-.109.81v5.581h-3.321s.043-9.056 0-9.993H1395v1.414a3.3 3.3 0 0 1 2.993-1.65c2.185 0 3.824 1.429 3.824 4.5v5.731z" transform="translate(-1383.17 522.583)"/>
+                                        </clipPath>
+                                        <clipPath id="link-clip-path-2">
+                                            <path id="Path_130" data-name="Path 130" class="link-cls-1" d="M0-117.436h1619.358V-750H0z" transform="translate(0 750)"/>
+                                        </clipPath>
+                                    </defs>
+                                    <g id="Icon_LinkedIn" clip-path="url(#link-clip-path)">
+                                        <g id="Group_241" data-name="Group 241" transform="translate(-1166.587 -191.807)" clip-path="url(#link-clip-path-2)">
+                                            <path id="Path_129" data-name="Path 129" d="M1378.17-497.019h30.43v-30.564h-30.43z" transform="translate(-215.8 715.174)" fill="#fff"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                                LinkedIn</a></li>
+                            <li><a href="https://www.facebook.com/f5networksinc" target="_blank" rel="noreferrer">
+                                <svg class="svg-icon svg-n-facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 100">
+                                    <path class="svg-fill" d="M45,95H27.3V53.9H12.5v-16h14.8V26.1c0-6.7,2.1-12,6.3-15.8C37.5,6.8,42.7,5,49.3,5c3.7,0,8.1,0.2,13.2,0.6v14.3h-9.3 c-5.5,0-8.3,2.3-8.3,7v11h16.9l-2.2,16H45V95z">
+                                    </path>
+                                </svg>
+                                Facebook</a></li>
+                            <li><a href="https://www.youtube.com/f5networksinc" target="_blank" rel="noreferrer">
+                                <svg class="svg-icon svg-n-youtube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.516 23" height="23px">
+                                    <path class="svg-fill" data-name="Union 1" d="M4.299 22.998a4.3 4.3 0 0 1-4.3-4.3v-3.45a4.3 4.3 0 0 1 4.3-4.3h14.919a4.3 4.3 0 0 1 4.3 4.3v3.45a4.3 4.3 0 0 1-4.3 4.3zm12.5-8.075a1.682 1.682 0 0 0-.506 1.261v2.674a1.9 1.9 0 0 0 .461 1.35 1.643 1.643 0 0 0 1.258.489 1.773 1.773 0 0 0 1.335-.461 1.912 1.912 0 0 0 .447-1.379v-.305h-1.229v.271a1.289 1.289 0 0 1-.117.679.493.493 0 0 1-.412.153.447.447 0 0 1-.406-.181 1.3 1.3 0 0 1-.116-.651v-1.125h2.275v-1.514a1.785 1.785 0 0 0-.438-1.3 1.669 1.669 0 0 0-1.255-.449 1.793 1.793 0 0 0-1.297.488zM7.95 19.558a1.284 1.284 0 0 0 .21.8.743.743 0 0 0 .622.268 1.432 1.432 0 0 0 .691-.19 2.692 2.692 0 0 0 .688-.55v.651h1.186v-5.954h-1.186v4.515a1.614 1.614 0 0 1-.372.32.667.667 0 0 1-.331.124.294.294 0 0 1-.244-.092.524.524 0 0 1-.072-.305v-4.562H7.95zm6.006.924a1.408 1.408 0 0 0 .622.13.994.994 0 0 0 .809-.337 1.5 1.5 0 0 0 .28-.97v-3.307a1.777 1.777 0 0 0-.3-1.111 1.034 1.034 0 0 0-.864-.38 1.159 1.159 0 0 0-.546.141 1.862 1.862 0 0 0-.51.414v-2.6h-1.2v8.067h1.2v-.455a1.5 1.5 0 0 0 .509.408zM3.315 13.639h1.384v6.9h1.343v-6.9H7.43v-1.172H3.315zm10.558 5.977a.979.979 0 0 1-.282-.213v-3.705a.86.86 0 0 1 .244-.184.6.6 0 0 1 .25-.058.468.468 0 0 1 .375.155.716.716 0 0 1 .124.458v3.075a.636.636 0 0 1-.1.409.378.378 0 0 1-.319.127.7.7 0 0 1-.292-.065zm3.786-2.839v-.6a.884.884 0 0 1 .123-.533.48.48 0 0 1 .406-.164.455.455 0 0 1 .394.164.853.853 0 0 1 .127.533v.6zm-8.06-8.223a1.735 1.735 0 0 1-.527-1.327v-3.4a1.494 1.494 0 0 1 .541-1.212 2.192 2.192 0 0 1 1.454-.452 1.979 1.979 0 0 1 1.365.475 1.581 1.581 0 0 1 .527 1.226v3.389a1.711 1.711 0 0 1-.519 1.318 2.038 2.038 0 0 1-1.434.478 1.97 1.97 0 0 1-1.407-.495zm1.006-5.125a.443.443 0 0 0-.153.348v3.574a.571.571 0 0 0 .144.415.53.53 0 0 0 .408.15.6.6 0 0 0 .429-.15.537.537 0 0 0 .164-.415V3.778a.428.428 0 0 0-.164-.348.675.675 0 0 0-.429-.13.6.6 0 0 0-.396.13zm3.677 5.254a1.388 1.388 0 0 1-.234-.875V2.33h1.336v5.027a.537.537 0 0 0 .089.334.316.316 0 0 0 .27.107.8.8 0 0 0 .375-.138 1.822 1.822 0 0 0 .412-.354V2.33h1.338v6.555h-1.336V8.16a2.851 2.851 0 0 1-.772.61 1.675 1.675 0 0 1-.774.21.84.84 0 0 1-.702-.296zm-8.58.2V5.364L3.911-.002h1.517l.979 3.553h.1l.928-3.553h1.532l-1.754 5.2v3.687z" fill="#fff"/>
+                                </svg>
+                                YouTube</a></li>
+                            <li><a href="https://devcentral.f5.com/" target="_blank" rel="noreferrer">
+                                <svg class="svg-icon svg-n-devcentral" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <g class="svg-fill">
+                                        <path transform="scale(2) rotate(-45 12.5 42.2)" d="M20.2 54.6h19.5v5.3H20.2z"/>
+                                        <path transform="scale(2) rotate(-45 -5 24.7)" d="M2.7 37.1h19.5v5.3H2.7z"/>
+                                        <path transform="scale(2) rotate(-45 -5 42.2)" d="M9.7 47.6h5.4v19.5H9.7z"/>
+                                        <path transform="scale(2) rotate(-45 -8.8 11)" d="M-1.1 23.4h19.5v5.3H-1.1z"/>
+                                        <path transform="scale(2) rotate(-45 8.7 28.5)" d="M16.4 40.9h19.5v5.3H16.4z"/>
+                                        <path transform="scale(2) rotate(-45 8.8 11)" d="M23.5 16.2h5.4v19.5h-5.4z"/>
+                                    </g>
+                                </svg>
+                                DevCentral</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="u02__border"/>
+
+    <div class="container">
+        <div class="row">
+            <div class="u02-stats">
+                <div class="u02-stats__col">
+                    
+                    <p class="u02-stats__number">48</p>
+                    <p class="u02-stats__text">of the Fortune 50 rely on F5</p>
+                </div>
+                <div class="u02-stats__col">
+                    
+                    <p class="u02-stats__number">76</p>
+                    <p class="u02-stats__text">offices in 43 countries</p>
+                </div>
+                <div class="u02-stats__col">
+                    
+                    <p class="u02-stats__number">20</p>
+                    <p class="u02-stats__text">plus years protecting apps</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="u02__border"/>
+
+    <div class="container">
+        <div class="row">
+            <div class="u02-nav isCollapsible">
+                <div class="u02-nav__col collapsibleOverall">
+                    
+                        <h4 class="u02-nav__title display-4 collapsibleTarget">About F5</h4>
+                    
+                    <ul class="u02-nav__list collapsibleContainer">
+                        
+                        <li><a class="u02-nav__link" href="../../../company.html">Corporate Information</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="../../../company/news.html"> Newsroom</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="https://investors.f5.com/home/default.aspx" target="_blank" rel="noreferrer"> Investor Relations</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="../../../company/careers.html"> Careers</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="../../../company/contact.html">Contact Information</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="https://interact.f5.com/F5-Preference-Center.html?utm_source=optin-f5footer" rel="noreferrer">Communication Preferences</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="../../../company/certifications.html">Product Certifications</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="../../../company/diversity-inclusion.html">Diversity &amp; Inclusion</a></li>
+                    </ul>
+                </div>
+            
+                <div class="u02-nav__col collapsibleOverall">
+                    
+                        <h4 class="u02-nav__title display-4 collapsibleTarget">Education</h4>
+                    
+                    <ul class="u02-nav__list collapsibleContainer">
+                        
+                        <li><a class="u02-nav__link" href="../../../services/training.html">Training</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="../../../services/certification.html">Professional Certification</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="https://account.f5.com/learnf5" target="_blank" rel="noreferrer">LearnF5</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="../../../services/training/free-training-courses.html"> Free Online Training</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link"></a></li>
+                    </ul>
+                </div>
+            
+                <div class="u02-nav__col collapsibleOverall">
+                    
+                        <h4 class="u02-nav__title display-4 collapsibleTarget">F5 Sites</h4>
+                    
+                    <ul class="u02-nav__list collapsibleContainer">
+                        
+                        <li><a class="u02-nav__link" href="../../../index.html">F5.com</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="https://devcentral.f5.com/" rel="noreferrer">DevCentral</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="https://support.f5.com/" rel="noreferrer">Support Portal</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="https://partners.f5.com/" rel="noreferrer">Partner Central</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="../../../labs.html" target="_blank">F5 Labs</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="https://www.nginx.com/" target="_blank" rel="noreferrer">NGINX</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="../../../products/security/shape-security.html" target="_blank" rel="noreferrer">Shape Security</a></li>
+                    
+                        
+                        <li><a class="u02-nav__link" href="https://www.volterra.io/" target="_blank" rel="noreferrer">Volterra</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="u02-legal display-8">
+                <p>&copy;2022 F5, Inc. All rights reserved.</p>
+                <ul class="u02-legal__links">
+                    <li class="u02-legal__list-item U:nudge-top-sm">
+                        <a href="../../../company/policies/trademarks.html">Trademarks</a>
+                    </li>
+                    <li class="u02-legal__list-item U:nudge-top-sm">
+                        <a href="../../../company/policies.html">Policies</a>
+                    </li>
+                    <li class="u02-legal__list-item U:nudge-top-sm">
+                        <a href="../../../company/policies/privacy-notice.html">Privacy</a>
+                    </li>
+                    <li class="u02-legal__list-item U:nudge-top-sm">
+                        <a href="../../../company/policies/F5-California-privacy-summary.html">California Privacy</a>
+                    </li>
+                    <li class="u02-legal__list-item U:nudge-top-sm">
+                        <a href="../../../company/policies/privacy-notice.html#no-sell">Do Not Sell My Personal Information</a>
+                    </li>
+                    <li class="u02-legal__list-item U:nudge-top-sm">
+                        <span id="teconsent"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+    
+</div>
+</div>
+
+
+     
+        
+    
+     
+    
+<script src="../../../etc.clientlibs/base/clientlibs/libs/jquery/v3.6.0.abec7e706514e7e243d79b097790f71b.js"></script>
+<script src="../../../etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.68e8a508c100f218cc66bb13a94d1002.js"></script>
+<script src="../../../etc.clientlibs/f5-app-security/clientlibs/clientlib-base.a04729916a75295191194ab12b98c435.js"></script>
+
+
+ 
+
+    
+<script src="../../../etc.clientlibs/f5-com/clientlibs/clientlib-components.811851762dbe028ba94f2af6c4540d4a.js"></script>
+
+
+
+
+    
+<script src="../../../etc.clientlibs/f5-com/clientlibs/clientlib-base.c125322a681df38e36d43f5655fd7c7a.js"></script>
+
+
+
+
+ <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5095d30f38626622"></script> 
+
+    
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+<section class="u03 CoveoSearchInterface" id="CoveoSearch" data-enable-history="true" data-enable-debug-info="true" data-cmp-name="u03" data-search-page-path="/content/f5-com/en_us/search.html" data-page-path="/content/f5-com/landing-pages/appsecurity/en/service-providers/edge-multi-cloud-deployment-strategy-challenges" data-node-name="jcr:content" data-auto-trigger-query='false' data-global-search-url="https://api-u.f5.com/support/fedsearch" data-global-coveo-token="xx72b884cd-c3eb-4428-aa1b-6440a04643c1" data-global-search-nextalt="Next Page" data-global-search-prevalt="Previous Page" data-lang="en" data-coveo-error-message="Sorry, there was a technical error with this search" data-headline-error-message="No relevant results were found for this search." data-subheadline-error-message="Please refine your search terms or consider searching on one of our other portals" data-repeat-en-search-page="Repeat your search in English on F5.com for additional resources." data-ask-f5-portal="AskF5 for support and documentation" data-my-f5-portal="MyF5 for subscription licensing and keys" data-dev-central-portal="DevCentral for community and peer content" data-nginx-portal="NGINX for related documentation and community">
+    <div class="CoveoAnalytics" data-anonymous='true' data-search-hub="f5com"></div>
+    <div class="u03__close-target"></div>
+    <div class="u03__search-page-overlay U:padding-top-lg U:padding-bot-lg">
+        <div class="u03__search container">
+
+            <!-- Search Input container rendered by coveo engine dedicated for search page -->
+            
+
+            <!-- Search Input container dedicated for non search page -->
+            <div class="CoveoOmnibox CoveoSearchbox custom-search-box">
+                <div class="magic-box-input">
+                    <input spellcheck="false" form="coveo-dummy-form" role="combobox" autocomplete="off" aria-autocomplete="list" title="Insert a query. Press enter to send" aria-label="Search" placeholder="Search" class="u03__search-input U:margin-x"/>
+                </div>
+                <div class="magic-box-suggestions"></div>
+            </div>
+
+            
+        </div>
+        
+    </div>
+    <div class="CoveoTriggers"></div>
+    
+</section>
+
+
+    </body>
+</html>

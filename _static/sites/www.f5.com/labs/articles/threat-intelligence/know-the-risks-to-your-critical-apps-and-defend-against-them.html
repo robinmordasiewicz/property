@@ -189,7 +189,7 @@
      
         
 
-       	<div class="background-cut " style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a08/optimize/article-background-image.jpg);"></div>
+       	<div class="background-cut " style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a08/optimize/article-background-image.jpg);"></div>
         
 
 
@@ -315,7 +315,7 @@
         
        
         <section class="container-fluid c02-header-area__main-article details fill-main-container">
-            <div class="c02-header-area__heroImageBackground" style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a08/optimize/article-background-image.jpg);"></div>
+            <div class="c02-header-area__heroImageBackground" style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a08/optimize/article-background-image.jpg);"></div>
             <div class="c02-header-area__main-article-overlay"></div>
            
             <div class="row">
@@ -412,7 +412,7 @@
 <p>Despite their appearance, hospitals are rarely singular entitles. Most of the time they are assemblages of independent, smaller clinics, doctor’s offices, diagnostic facilities, and service organizations. Their applications exist in the same manner: deeply vertical and highly variable, yet all woven together into a common shared system. This means lots of applications with different levels of security and reliability all sitting side-by-side exchanging essential confidential medical data. Some of these systems are so old, that it’s not surprising for an old Windows XP box to be connected to a drug dispenser machine. Some systems are so specialized that you may have software developed by a singular researcher, who maintains the program as a side project (if ever)<a href="#_ftn1"><sup>1</sup></a><a id="_ftnref1"></a>. This is also an environment where patient safety trumps all other requirements, sometimes even security. So, you can see things like the network protocols that embed patient identification into the network packet itself to ensure medical information is never mixed up.<a href="#_ftn2"><sup>2</sup></a><a id="_ftnref2"></a> This is great for reliability and patient care but not so great for maintaining confidentiality on a shared network.</p>
 <h4>Messaging Systems</h4>
 <p>Another overlooked but critical application is email and communication systems. By their very nature, messaging systems need to touch every single person within an organization as well as accept connections from the outside world. Mail systems are notorious dumping grounds for years and years of yet-to-be-classified-but-probably-should-be-secret documents and private conversation threads.</p>
-<p>Email systems are also often the gateway to authentication with password resets landing in people inboxes. An analysis of the California Attorney General breach notifications for 2017 showed that 5% of reported significant data breaches were directly attributed to credential exposure via email compromise. Email messages often stand in as the primary identity on the Internet. When you send an email, people naturally assume it’s you that’s speaking. So a compromised email account can be leverage point for a variety of insidious scams, targeting both your <a href="https://f5.com/labs/articles/threat-intelligence/identity-threats/the-email-that-could-steal-your-life-savings-and-leave-you-homeless" target="_blank" rel="noreferrer">customers</a> and internal employees.<a href="#_ftn3"><sup>3</sup></a><a id="_ftnref3"></a></p>
+<p>Email systems are also often the gateway to authentication with password resets landing in people inboxes. An analysis of the California Attorney General breach notifications for 2017 showed that 5% of reported significant data breaches were directly attributed to credential exposure via email compromise. Email messages often stand in as the primary identity on the Internet. When you send an email, people naturally assume it’s you that’s speaking. So a compromised email account can be leverage point for a variety of insidious scams, targeting both your <a href="the-email-that-could-steal-your-life-savings-and-leave-you-homeless.html" target="_blank" rel="noreferrer">customers</a> and internal employees.<a href="#_ftn3"><sup>3</sup></a><a id="_ftnref3"></a></p>
 <h4>Legacy Systems</h4>
 <p>Legacy systems are the most embedded yet the most difficult for IT to manage. Their function could fit into any of the previous categories, although a majority of them are specialized applications, often heavily customized by the organization. Think of airline reservation systems,<a href="#_ftn4"><sup>4</sup></a><a id="_ftnref4"></a> customer management software,<a href="#_ftn5"><sup>5</sup></a><a id="_ftnref5"></a> and one-off unique software.<a href="#_ftn6"><sup>6</sup></a><a id="_ftnref6"></a> Legacy systems exact an excessive burden in their high operating cost and incompatibility with modern systems and security tools. The most difficult and insecure of these systems have existed in a long period of stasis, rarely updated due to their being written in archaic programming languages like COBOL.<a href="#_ftn7"><sup>7</sup></a><a id="_ftnref7"></a> Legacy systems often have limited network facilities and when they do, they often run an excess of exploitable services like Telnet, FTP, Chargen, and Finger. Often these vulnerable services aren’t easily disabled and may even factor into dependent functions within the legacy application.</p>
 <h3>Managing the Common Risks</h3>
@@ -424,7 +424,7 @@
 <h4>Segregation from Exploits and Denial-of-Service Attacks</h4>
 <p>Even if everyone in the enterprise and the Internet needs access to a critical app, you should apply some method of segregation. This can be done with firewalls and virtual LANs, which reduce inbound network traffic to the few limited protocols necessary for the application to function. Not only does this help with funneling authentication traffic through gateways, but it also can block other kinds of attacks. Considering that some legacy or specialized apps aren’t patchable and have limited hardening capability, a firewall can at least restrict connection attempts to those vulnerable services. Easily exploited services such as Telnet, FTP, Chargen, and Finger can all be blocked from external access. It’s not perfect because other traffic may still be required to traverse the firewall to the critical app, but at least you’ve reduced your attack surface from intruders moving laterally through your network. In some cases, smarter firewalls with intrusion prevention capability or virtual patching can also block attacks.</p>
 <h4>Encryption to Prevent Network Interception</h4>
-<p>With all these network connections to critical apps running around your enterprise network, it’s a good idea to secure the transmission, as well. A malicious insider or an attacker that’s <a href="https://f5.com/labs/articles/cisotociso/strategy/everything-is-compromisednow-what" target="_blank" rel="noreferrer">already breached your network</a> is a viable potential threat, so any internal traffic carrying confidential information should be protected. If the critical app doesn’t support a secure transport protocol, then a TLS or VPN gateway can be used. Like the authentication gateway, these sit in front of the critical app and encapsulate all traffic passing through into an encrypted tunnel. These should also be used for all external links from the application, even to trusted third parties.</p>
+<p>With all these network connections to critical apps running around your enterprise network, it’s a good idea to secure the transmission, as well. A malicious insider or an attacker that’s <a href="../cisotociso/everything-is-compromisednow-what.html" target="_blank" rel="noreferrer">already breached your network</a> is a viable potential threat, so any internal traffic carrying confidential information should be protected. If the critical app doesn’t support a secure transport protocol, then a TLS or VPN gateway can be used. Like the authentication gateway, these sit in front of the critical app and encapsulate all traffic passing through into an encrypted tunnel. These should also be used for all external links from the application, even to trusted third parties.</p>
 <h4>Defend Those Critical Apps</h4>
 <p>In time, the operational cost of managing and securing older but critical apps will probably mean they will be replaced, likely by software-as-a-service or cloud offerings. However, for a lot of organizations, these systems still exist as stark risks to operations and security requirements. Since these critical apps are well, <i>critical</i>, security teams should work to defend them against attacks that could cripple them, tamper with them, or take them down.</p>
 
@@ -528,35 +528,35 @@
                                 </div>
 
                                 <div class="layer-1 active">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1-active.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1-active.png" style="max-width: 80px;"/></div>
                                     <span>Services</span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-2 ">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3.png" style="max-width: 80px;"/></div>
                                     <span>Access</span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-3 active">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2-active.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2-active.png" style="max-width: 80px;"/></div>
                                     <span>TLS </span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-4  active">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4-active.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4-active.png" style="max-width: 80px;"/></div>
                                     <span>DNS</span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-5 ">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
                                     <span>Network</span>
                                 </div>
                                 <div class="stack-bottom">
@@ -602,7 +602,7 @@
                             </div>
 
                             <div class="layer-1 active">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1-active.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1-active.png"/>
                                 </div>
                                 <span>Services</span>
                                 <i class="icon-bolt"></i>
@@ -610,7 +610,7 @@
                             </div>
 
                             <div class="layer-2 ">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2.png"/>
                                 </div>
                                 <span>Access</span>
                                 <i class="icon-bolt"></i>
@@ -618,7 +618,7 @@
                             </div>
 
                             <div class="layer-3 active">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3-active.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3-active.png"/>
                                 </div>
                                 <span>TLS </span>
                                 <i class="icon-bolt"></i>
@@ -626,7 +626,7 @@
                             </div>
 
                             <div class="layer-4  active">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4-active.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4-active.png"/>
                                 </div>
                                 <span>DNS</span>
                                 <i class="icon-bolt"></i>
@@ -634,7 +634,7 @@
                             </div>
 
                             <div class="layer-5 ">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
                                 </div>
                                 <span>Network</span>
                                 <i class="icon-bolt"></i>
@@ -764,35 +764,35 @@
                                 </div>
 
                                 <div class="layer-1 active">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1-active.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1-active.png" style="max-width: 80px;"/></div>
                                     <span>Services</span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-2 ">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3.png" style="max-width: 80px;"/></div>
                                     <span>Access</span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-3 active">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2-active.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2-active.png" style="max-width: 80px;"/></div>
                                     <span>TLS </span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-4  active">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4-active.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4-active.png" style="max-width: 80px;"/></div>
                                     <span>DNS</span>
                                 </div>
                                 <div class="red-dots">
                                     <div class="bg"></div>
                                 </div>
                                 <div class="layer-5 ">
-                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
                                     <span>Network</span>
                                 </div>
                                 <div class="stack-bottom">
@@ -838,7 +838,7 @@
                             </div>
 
                             <div class="layer-1 active">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1-active.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1-active.png"/>
                                 </div>
                                 <span>Services</span>
                                 <i class="icon-bolt"></i>
@@ -846,7 +846,7 @@
                             </div>
 
                             <div class="layer-2 ">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2.png"/>
                                 </div>
                                 <span>Access</span>
                                 <i class="icon-bolt"></i>
@@ -854,7 +854,7 @@
                             </div>
 
                             <div class="layer-3 active">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3-active.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3-active.png"/>
                                 </div>
                                 <span>TLS </span>
                                 <i class="icon-bolt"></i>
@@ -862,7 +862,7 @@
                             </div>
 
                             <div class="layer-4  active">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4-active.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4-active.png"/>
                                 </div>
                                 <span>DNS</span>
                                 <i class="icon-bolt"></i>
@@ -870,7 +870,7 @@
                             </div>
 
                             <div class="layer-5 ">
-                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
                                 </div>
                                 <span>Network</span>
                                 <i class="icon-bolt"></i>
@@ -944,7 +944,7 @@
                             <span class="U:align-self-center">September 23, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/jwt--a-how-not-to-guide" class="a07-related-articles__link">
+                    <a href="jwt--a-how-not-to-guide.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             JWT: A How Not to Guide
                         </div>
@@ -1230,25 +1230,25 @@
 
         <div class="a05-article-tags__tags-box">
             <strong class="a05-article-tags__strong">TAGS: </strong>
-            <a href="https://www.f5.com/labs/search?q=Threats" class="a05-article-tags__a">Threats</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=Threats.html" class="a05-article-tags__a">Threats</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=%22Top+Risks%22.html" class="a05-article-tags__a">Top Risks</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22DNS+Tier%22" class="a05-article-tags__a">DNS Tier</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22DNS+Tier%22.html" class="a05-article-tags__a">DNS Tier</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Credential+theft%22" class="a05-article-tags__a">Credential theft</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Credential+theft%22.html" class="a05-article-tags__a">Credential theft</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22TLS+Tier%22" class="a05-article-tags__a">TLS Tier</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22TLS+Tier%22.html" class="a05-article-tags__a">TLS Tier</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Web+Application+Attacks%22" class="a05-article-tags__a">Web Application Attacks</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Web+Application+Attacks%22.html" class="a05-article-tags__a">Web Application Attacks</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Services+Tier%22" class="a05-article-tags__a">Services Tier</a>
+            <a href="../../search%EF%B9%96q=%22Services+Tier%22.html" class="a05-article-tags__a">Services Tier</a>
         </div>
 
     
@@ -1309,7 +1309,7 @@
                             <span class="U:align-self-center">September 23, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/jwt--a-how-not-to-guide" class="a07-related-articles__link">
+                    <a href="jwt--a-how-not-to-guide.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             JWT: A How Not to Guide
                         </div>
@@ -1420,7 +1420,7 @@
                             <span class="U:align-self-center">September 23, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/threat-intelligence/jwt--a-how-not-to-guide" class="a07-related-articles__link">
+                    <a href="jwt--a-how-not-to-guide.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             JWT: A How Not to Guide
                         </div>

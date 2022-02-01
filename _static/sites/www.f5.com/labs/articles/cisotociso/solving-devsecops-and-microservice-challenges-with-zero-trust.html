@@ -189,7 +189,7 @@
      
         
 
-       	<div class="background-cut " style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a13/optimize/article-background-image.jpg);"></div>
+       	<div class="background-cut " style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a13/optimize/article-background-image.jpg);"></div>
         
 
 
@@ -315,7 +315,7 @@
         
        
         <section class="container-fluid c02-header-area__main-article details fill-main-container">
-            <div class="c02-header-area__heroImageBackground" style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a13/optimize/article-background-image.jpg);"></div>
+            <div class="c02-header-area__heroImageBackground" style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a13/optimize/article-background-image.jpg);"></div>
             <div class="c02-header-area__main-article-overlay"></div>
            
             <div class="row">
@@ -352,7 +352,7 @@
                         
                     </div>
                     <div class="c02-header-area__author-name tags">
-                        By <a class="c02-header-area__author-name tag-item" href="https://www.f5.com/labs/search.author_Raymond%2BPompon">Raymond Pompon</a>
+                        By <a class="c02-header-area__author-name tag-item" href="../../search.author_Raymond+Pompon.html">Raymond Pompon</a>
                     </div>
                     
                 </div>
@@ -443,17 +443,17 @@
 <p>One powerful tool in the microservice arsenal is the ability to silently replace a monolithic app running in place. The new microservice app acts as a new front end for the users, and any legacy services that haven’t been replaced yet are called via proxy from the old app. Meanwhile, the user is unaware of which system they are interacting with, as their experience is the same as the old system. It’s akin to rebuilding an airplane while in mid-flight. It’s called the “strangler pattern” because the microservices’ deployment slowly strangles the old app.</p>
 <p>Another advantage of microservices is that applications can be built in a hybrid manner, integrating external services. For example, an internally developed vehicle-tracking microservice can pull in weather data from an external SaaS. Conversely, services can be pushed out externally. At the same time, you could offer that vehicle tracking service to other organizations or departments.</p>
 <h2>Security and Compliance Challenges of Microservices</h2>
-<p>One big problem with microservices is visibility. As applications exist as a business flow defined by <a href="https://www.f5.com/labs/articles/education/still-mystified-by-apis-what-they-are-really-and-why-they-matter" target="_blank" rel="no-opener no-referrer">services connected by APIs</a>, they are fluid and abstract. All that communications overhead can also create a lot of wide attack surface and latency, adding to the noise and opaqueness of the system. This makes it hard to see the big picture, which can create gaps and blind spots in the security and stability of the system.</p>
-<p>Defenders should also remember that even though microservices are smaller than traditional applications, they can still have security vulnerabilities. All the API connectivity also means that authentication and authorization need to be as tight as possible. Given <a href="https://www.f5.com/labs/articles/threat-intelligence/2020-apr-vol1-apis-architecture" target="_blank" rel="no-opener no-referrer">the prevalence of API leaks</a>, misconfigurations of access control settings should be a large concern for security teams. Each type of microservice should have its own unique lockdown rule to match its intended functional role within the system.</p>
+<p>One big problem with microservices is visibility. As applications exist as a business flow defined by <a href="../education/still-mystified-by-apis-what-they-are-really-and-why-they-matter.html" target="_blank" rel="no-opener no-referrer">services connected by APIs</a>, they are fluid and abstract. All that communications overhead can also create a lot of wide attack surface and latency, adding to the noise and opaqueness of the system. This makes it hard to see the big picture, which can create gaps and blind spots in the security and stability of the system.</p>
+<p>Defenders should also remember that even though microservices are smaller than traditional applications, they can still have security vulnerabilities. All the API connectivity also means that authentication and authorization need to be as tight as possible. Given <a href="../threat-intelligence/2020-apr-vol1-apis-architecture.html" target="_blank" rel="no-opener no-referrer">the prevalence of API leaks</a>, misconfigurations of access control settings should be a large concern for security teams. Each type of microservice should have its own unique lockdown rule to match its intended functional role within the system.</p>
 <h2>Dual Challenge of Microservices and DevSecOps</h2>
 <p>We’ve got two big, new, and complex methods to reimagine traditional IT processes, and to complicate matters, DevSecOps and microservices are often implemented together since they complement each other. With all these different users and app services requiring varying levels of access to different things, there are a lot of moving parts to track and secure. It’s enough to make IT folks want to throw in the towel and return to COBOL on the mainframe. But don’t lose hope. The integration of these monster methodologies can be done, and it can be done well.</p>
 <h2>A Zero Trust Approach</h2>
 <p>F5 Labs interviewed Nicolas Chaillan, the chief software officer for the United States Air Force.<a id="_ftnrefAutoIncr1" class="footnote-ref" title="1" href="#_ftnAutoIncr1"><sup>1</sup></a> He shared with us how his IT team managed an enormous DevSecOps system within the USAF. The simplified version: use a “Zero Trust” approach for both the users and microservices, leveraging as much automation as possible. What’s the longer version? Read on.</p>
 <h2>Zero Trust Concepts</h2>
-<p><a href="using-zero-trust-to-secure-your-company-when-going-remote.html" target="_blank" rel="no-opener no-referrer">Zero Trust</a>, or the <a href="https://www.f5.com/labs/articles/cisotociso/wait-dont-throw-out-your-firewalls-25982" target="_blank" rel="no-opener no-referrer">Beyond Corp model</a>, is a strategy for security that’s been around for a while—especially for remote user access. The basic concept is that for any given service, access is denied by default. Zero Trust is simply that: don’t trust anyone, no matter their log-in location, inside the network or out. It means before you give them access, you need to:</p>
+<p><a href="using-zero-trust-to-secure-your-company-when-going-remote.html" target="_blank" rel="no-opener no-referrer">Zero Trust</a>, or the <a href="wait-dont-throw-out-your-firewalls-25982.html" target="_blank" rel="no-opener no-referrer">Beyond Corp model</a>, is a strategy for security that’s been around for a while—especially for remote user access. The basic concept is that for any given service, access is denied by default. Zero Trust is simply that: don’t trust anyone, no matter their log-in location, inside the network or out. It means before you give them access, you need to:</p>
 <ol class="list-paragraph">
 <li>Verify their identity,</li>
-<li>Apply <a href="https://www.f5.com/labs/articles/education/what-is-the-principle-of-least-privilege-and-why-is-it-important" target="_blank" rel="no-opener no-referrer">least privilege</a>, and</li>
+<li>Apply <a href="../education/what-is-the-principle-of-least-privilege-and-why-is-it-important.html" target="_blank" rel="no-opener no-referrer">least privilege</a>, and</li>
 <li>Keep an eye on them the whole time.</li>
 </ol>
 <p>But Zero Trust can apply to more than just remote users. The concept can be used with service-to-service interaction as well as software object communications. It’s the opposite way many traditional local area networks and device groupings function, which is usually default open-access to everything locally. Zero Trust says lock it all down, even your so-called friends and neighbors. It forces the IT folks to be explicit and intentional with how they define access between entities. It’s a little more work and a little more discipline, but it provides a lot more security and clarity.</p>
@@ -463,9 +463,9 @@
 <h2>Service Mesh and Zero Trust</h2>
 <p>In older monolithic applications, each internal code function has direct access to every other code function. This is how a remote code compromise of any component of a monolithic app entails compromise of the entire app. Root shell the web server, and now you have access to the file system, local user databases, and database connections. But with microservices, you can segregate all those services within a service mesh. Just like applying Zero Trust to users, Chaillan also applies it to internal services. Service mesh can enforce that with granular access provisioning by service. In addition, each service can be required to provide identification information to the service mesh control plane, adding a level of security into an application that was never possible before.</p>
 <h2>API Security in Microservices</h2>
-<p>There are also power <a href="https://www.f5.com/labs/articles/cisotociso/securing-apis-in-banking-with-oauth-and-pkce" target="_blank" rel="no-opener no-referrer">API authentication standards like OAuth and OpenID Connect</a> that can be used here. Limiting the allowed API methods is a good way to use least privilege and <a href="https://www.f5.com/labs/articles/education/securing-apis--10-best-practices-for-keeping-your-data-and-infra" target="_blank" rel="no-opener no-referrer">prevent leaks and unauthorized command injections</a>. Within the microservices’ architecture, segmentation (sometimes called micro-segregation) is a way to add another layer of security. Chaillan also includes DevSecOps vulnerability and code scans in the pipeline as packages are handed off.</p>
+<p>There are also power <a href="securing-apis-in-banking-with-oauth-and-pkce.html" target="_blank" rel="no-opener no-referrer">API authentication standards like OAuth and OpenID Connect</a> that can be used here. Limiting the allowed API methods is a good way to use least privilege and <a href="../education/securing-apis--10-best-practices-for-keeping-your-data-and-infra.html" target="_blank" rel="no-opener no-referrer">prevent leaks and unauthorized command injections</a>. Within the microservices’ architecture, segmentation (sometimes called micro-segregation) is a way to add another layer of security. Chaillan also includes DevSecOps vulnerability and code scans in the pipeline as packages are handed off.</p>
 <p>“We know about a vulnerability before anyone deploys it,” he says. “Even if a developer makes a mistake, which they will, we have gates in place to detect it.”</p>
-<p>By tracking the service connections, the system can ensure that the connection’s validity over time remains important. API gateways and <a href="https://www.f5.com/labs/articles/threat-intelligence/jwt--a-how-not-to-guide" target="_blank" rel="no-opener no-referrer">JWT tokens</a> can be used to do this. Service mesh access controls limit lateral movement. Program integrity is enforced with drift checking. This refers to rescanning application instances for deviations from the configured builds. These “drifts,” when found, are rapidly terminated and rebuilt from known and trusted configurations.</p>
+<p>By tracking the service connections, the system can ensure that the connection’s validity over time remains important. API gateways and <a href="../threat-intelligence/jwt--a-how-not-to-guide.html" target="_blank" rel="no-opener no-referrer">JWT tokens</a> can be used to do this. Service mesh access controls limit lateral movement. Program integrity is enforced with drift checking. This refers to rescanning application instances for deviations from the configured builds. These “drifts,” when found, are rapidly terminated and rebuilt from known and trusted configurations.</p>
 <p>Since Zero Trust requires that connections be verified and authenticated, all API container connections are wrapped in encryption with a mutual TLS tunnel. The TLS connection adds certificate authentication and ensures confidentiality and integrity in transport, regardless of whether the connection is internal or external. Also, pre-approved allow lists of network addresses should be used instead of deny lists.</p>
 <h2>Conclusion</h2>
 <p>The transition to faster, more flexible patterns like DevSecOps and microservices can be challenging for cybersecurity teams. Zero Trust offers a powerful method to manage the security of the constantly moving river of changes and access control handoffs.</p>
@@ -594,7 +594,7 @@
                             <span class="U:align-self-center">July 12, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/get-cross-functional--learn-to-let-go-and-embrace-devsecops" class="a07-related-articles__link">
+                    <a href="../bylines/get-cross-functional--learn-to-let-go-and-embrace-devsecops.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Get Cross-Functional: Learn to Let Go and Embrace DevSecOps
                         </div>
@@ -612,7 +612,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=Controls">
+                        <a href="../../search%EF%B9%96q=Controls.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">Controls</span>
                             </div>
@@ -648,7 +648,7 @@
                             <span class="U:align-self-center">January 28, 2021</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/cisotociso/privacy-by-design-for-ethical-applications" class="a07-related-articles__link">
+                    <a href="privacy-by-design-for-ethical-applications.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Privacy by Design for Ethical Applications
                         </div>
@@ -802,7 +802,7 @@
                     <div class="row">
                         <div class="a04-article-author-bio__content__image-wrap">
                             <div class="a04-article-author-bio__content__img-container">
-                                <img data-src="https://www.f5.com/content/dam/f5-labs-v2/_author-headshots/Ray_Pompon.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                                <img data-src="../../../content/dam/f5-labs-v2/_author-headshots/Ray_Pompon.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
                             </div>
                         </div>
                         <div class="a04-article-author-bio__content__data-wrap">
@@ -813,7 +813,7 @@
                             <div class="a04-article-author-bio__content__author-descr"><p>Raymond Pompon is the Director of F5 Labs. With over 20 years of experience in Internet security, he has worked closely with federal law enforcement in cyber-crime investigations. He was directly involved in several major intrusion cases, including the FBI undercover Flyhook operation and the NW Hospital botnet prosecution. He is the author of IT Security Risk Control Management: An Audit Preparation Plan published by Apress books.</p>
 </div>
                             <div>
-                                <a class="a04-article-author-bio__content__author-more-articles" href="https://www.f5.com/labs/search.author_Raymond%2BPompon">More articles from Raymond Pompon</a>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="../../search.author_Raymond+Pompon.html">More articles from Raymond Pompon</a>
                             </div>
                         </div>
                     </div>
@@ -839,8 +839,8 @@
                                     Footnotes
                                 </h4>
                                 <div class="button-container">
-                                    <img alt="" class="js-bg-lozad expand-btn" data-src="https://www.f5.com/content/dam/f5-labs-v2/components/footnotes/expand-button.png"/>
-                                    <img alt="" class="js-bg-lozad close-btn" data-src="https://www.f5.com/content/dam/f5-labs-v2/components/footnotes/close-button.png"/>
+                                    <img alt="" class="js-bg-lozad expand-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/expand-button.png"/>
+                                    <img alt="" class="js-bg-lozad close-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/close-button.png"/>
                                 </div>
                             </a>
                         </div>
@@ -877,22 +877,22 @@
 
         <div class="a05-article-tags__tags-box">
             <strong class="a05-article-tags__strong">TAGS: </strong>
-            <a href="https://www.f5.com/labs/search?q=DevSecOps" class="a05-article-tags__a">DevSecOps</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=DevSecOps.html" class="a05-article-tags__a">DevSecOps</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22Zero+Trust%22" class="a05-article-tags__a">Zero Trust</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22Zero+Trust%22.html" class="a05-article-tags__a">Zero Trust</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=devops" class="a05-article-tags__a">devops</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=devops.html" class="a05-article-tags__a">devops</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=CISO" class="a05-article-tags__a">CISO</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=CISO.html" class="a05-article-tags__a">CISO</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=Microservices" class="a05-article-tags__a">Microservices</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=Microservices.html" class="a05-article-tags__a">Microservices</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22New+Approach%22" class="a05-article-tags__a">New Approach</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22New+Approach%22.html" class="a05-article-tags__a">New Approach</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=Strategies.html" class="a05-article-tags__a">Strategies</a>
@@ -936,7 +936,7 @@
                             <span class="U:align-self-center">July 12, 2019</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/get-cross-functional--learn-to-let-go-and-embrace-devsecops" class="a07-related-articles__link">
+                    <a href="../bylines/get-cross-functional--learn-to-let-go-and-embrace-devsecops.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Get Cross-Functional: Learn to Let Go and Embrace DevSecOps
                         </div>
@@ -954,7 +954,7 @@
                 <div id="related-article-hidden-item" class="a07-related-articles__article">
 
                     <div class="U:display-flex U:align-items-center">
-                        <a href="https://www.f5.com/labs/search?q=Controls">
+                        <a href="../../search%EF%B9%96q=Controls.html">
                             <div class="a07-related-articles__category">
                                 <span class="badge badge-secondary">Controls</span>
                             </div>
@@ -990,7 +990,7 @@
                             <span class="U:align-self-center">January 28, 2021</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/cisotociso/privacy-by-design-for-ethical-applications" class="a07-related-articles__link">
+                    <a href="privacy-by-design-for-ethical-applications.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Privacy by Design for Ethical Applications
                         </div>
@@ -1119,7 +1119,7 @@
 						<div class="image-article">
 							<div class="info-row clearfix">
 
-								<a class="category-link" href="https://www.f5.com/labs/search?q=Encryption">
+								<a class="category-link" href="../../search%EF%B9%96q=Encryption.html">
 									<div class="category">
 										<span class="badge badge-default badge-big">Encryption</span>
 									</div>
@@ -1166,7 +1166,7 @@
 								</div>
 							</div>
 							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cybersecurity-threats-to-the-covid-19-vaccine">
-								<a href="https://www.f5.com/labs/articles/threat-intelligence/cybersecurity-threats-to-the-covid-19-vaccine">
+								<a href="../threat-intelligence/cybersecurity-threats-to-the-covid-19-vaccine.html">
 									<div class="article-title">
 										<h2 class="header-small">Cybersecurity Threats to the COVID-19 Vaccine</h2>
 									</div>

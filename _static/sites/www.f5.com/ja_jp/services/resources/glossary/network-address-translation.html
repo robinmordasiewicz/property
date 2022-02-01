@@ -3458,7 +3458,7 @@
 <p>プライベートIPアドレスとは、IPv4が抱えているIPアドレス不足問題を、緩和するために導入された考え方です。IPv4ではIPアドレスを32ビットで表現しているため、最大約40億のアドレスを設定可能です。しかしインターネットが急速に普及した結果、IPアドレスを必要とする端末が急増し、この程度のIPアドレス数ではいずれ枯渇するだろうという議論が起きました。そこで全ての端末に固有のグローバルIPアドレスを割り当てるのではなく、グローバルIPアドレスは組織毎に割り当て、組織内ではグローバルIPアドレスを使用しないというアプローチが考えだされたのです。これにもとづき組織内で使用するためのIPアドレスとして割り当てられたのが、プライベートIPアドレスです。</p>
 <p>プライベートIPアドレスの範囲はRFC 1918で規定されており、大規模組織向けのクラスAでは10.0.0.0～10.255.255.255、中規模組織向けのクラスBでは172.16.0.0～172.31.255.255、小規模組織向けのクラスCでは192.168.0.0～192.168.255.255となっています。一般に組織内に設置された端末には、これらのプライベートIPアドレスが割り当てられています。</p>
 <p>しかし端末からインターネット経由で組織外のサーバにアクセスする場合、送信元のIPアドレスがプライベートIPのままでは、サーバは送信元の端末を特定できません。プライベートIPアドレスは複数の組織で共用されているIPアドレスだからです。そこで組織内のネットワークからインターネットへとIPパケットを送り出す際には、その組織固有のグローバルIPアドレスへと変換する必要があります。そのための技術がNATです。なおNATは内部ネットワークを外部から隠蔽する効果もあるので、ネットワークを分割しフィルタ効果によるセキュリティが期待されていたことがあります。トンネリングによるEnd to Endを接続する各種技術もあるので、NATがセキュリティの脅威の対応に万全であるということではありません。</p>
-<p>NATはアドレス変換を1対1で行うため、複数端末からの通信を同時に扱うことができません。この問題を解決するため、ポート番号の変換も行うものを<a href="https://f5.com/jp/education/glossary/glossary040-21522" rel="noreferrer">NAPT</a>（Network Address Port Translation）あるいはIPマスカレードと言います。現在ではNAPTも含めてNATと呼ぶことが多くなっています。</p>
+<p>NATはアドレス変換を1対1で行うため、複数端末からの通信を同時に扱うことができません。この問題を解決するため、ポート番号の変換も行うものを<a href="network-address-port-translation-napt.html" rel="noreferrer">NAPT</a>（Network Address Port Translation）あるいはIPマスカレードと言います。現在ではNAPTも含めてNATと呼ぶことが多くなっています。</p>
 </div></div>
 <div data-component-type="article" class="a01 aem-GridColumn aem-GridColumn--default--1" data-component-title="Article text">
 
@@ -3524,7 +3524,7 @@
 <div id="article-1192973476" class="a01 "><div style="background: rgb(241,241,241);padding: 40.0px;overflow: hidden;"><div style="float: left;"><h3 style="line-height: 1.4;">20種類以上にわたる<br />
 ITセキュリティお役立ち資料</h3>
 <a href="../../../solutions/special/jp-download.html" target="_blank" style="padding: 10.0px;display: block;width: 220.0px;text-align: center;color: rgb(255,255,255);background: rgb(226,29,56);text-decoration: none;margin: 40.0px auto 20.0px;">ダウンロードはこちら</a></div>
-<div style="float: right;"><img style="display: block;margin: 0 auto;" src="https://www.f5.com/content/dam/f5-com/page-assets-jp/home-jp/services/resources/img_211118.jpg" alt="F5" width="100%"/></div>
+<div style="float: right;"><img style="display: block;margin: 0 auto;" src="../../../../content/dam/f5-com/page-assets-jp/home-jp/services/resources/img_211118.jpg" alt="F5" width="100%"/></div>
 </div>
 </div></div>
 <div data-component-type="article" class="a01 aem-GridColumn aem-GridColumn--default--12" data-component-title="Article text">

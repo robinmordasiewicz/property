@@ -1,0 +1,356 @@
+<!DOCTYPE HTML>
+<html lang="en-US" class="js-off">
+    <head>
+    <meta charset="UTF-8"/>
+    <title>Defend Your E-Commerce Business | F5 Networks</title>
+    <meta name="robots"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <meta name="description" content="Learn about the scale of today’s dynamic online fraud and how F5 can help you defeat attackers without frustrating legitimate users."/>
+    <meta name="template" content="solution-guide-template"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <script>window.F5=window.F5||{};window.F5.VisitorTracking=window.F5.VisitorTracking||{"isConfigEnabled":true,"tealiumScriptAsyncUrl":"//mktg.tags.f5.com/main/prod/utag.js","tealiumScriptSyncUrl":"//mktg.tags.f5.com/main/prod/utag.sync.js","visitorTrackingService":"tealium","isTealiumActive":true,"isLegacyActive":false,"legacyLibWarmingUrls":["https://assets.adobedtm.com","https://www.google-analytics.com","https://www.googletagmanager.com"]}</script>
+
+    <script src="../../../../mktg.tags.f5.com/main/prod/utag.sync.js"></script>
+    
+    
+        <meta property="og:locale" content="en_US"/>
+    
+        <meta property="og:type" content="website"/>
+    
+        <meta property="og:title" content="Defend Your E-Commerce Business | F5 Networks"/>
+    
+        <meta property="og:description" content="Learn about the scale of today’s dynamic online fraud and how F5 can help you defeat attackers without frustrating legitimate users."/>
+    
+        <meta property="og:site_name" content="F5 Networks"/>
+    
+        <meta property="og:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/favicons/touch-icon_180.png"/>
+    
+        <meta property="og:image_secure_url" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/favicons/touch-icon_180.png"/>
+    
+        <meta property="og:url" content="https://www.f5.com/resources/library/security/ecommerce"/>
+    
+    
+        <meta property="fb:app_id" content="302184056577324"/>
+    
+    
+        <meta property="twitter:card" content="summary_large_image"/>
+    
+        <meta property="twitter:title" content="Defend Your E-Commerce Business | F5 Networks"/>
+    
+        <meta property="twitter:description" content="Learn about the scale of today’s dynamic online fraud and how F5 can help you defeat attackers without frustrating legitimate users."/>
+    
+        <meta property="twitter:site" content="@F5networks"/>
+    
+        <meta property="twitter:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/favicons/touch-icon_180.png"/>
+    
+        <meta property="twitter:creator" content="@F5networks"/>
+    
+    
+    <link rel="canonical" href="ecommerce.html"/>
+
+
+    
+    
+        
+    
+        <link href="https://static.cloud.coveo.com" rel="preconnect" crossorigin/>
+    
+        <link href="https://consent.trustarc.com" rel="preconnect" crossorigin/>
+    
+        <link href="https://653-smc-783.mktoresp.com" rel="preconnect" crossorigin/>
+    
+        <link href="https://f5networks.tt.omtrdc.net" rel="preconnect" crossorigin/>
+    
+        <link href="../../../../f5networks.sc.omtrdc.net/index" rel="preconnect" crossorigin/>
+    
+        <link href="https://munchkin.marketo.net" rel="preconnect" crossorigin/>
+    
+        
+    
+        
+    
+        <link href="https://stats.g.doubleclick.net" rel="preconnect" crossorigin/>
+    
+
+    <!-- If JS enable will change the HTML class tag to "js"-->
+<script>
+    document.documentElement.className = document.documentElement.className.replace("js-off","js-on");
+</script>
+<!-- If JS enable will change the HTML class tag to "js" -->
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="../../../etc.clientlibs/f5-library/clientlibs/clientlib-base.35f6f180b4038c0d6c97cec3a2bb143b.css" type="text/css">
+<link rel="stylesheet" href="../../../etc.clientlibs/f5-library/clientlibs/clientlib-solution-guide.45fbd80fd7923ddc754f6c96efbf1e6f.css" type="text/css">
+
+
+
+    
+
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/touch-icon_180.png"/>
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-16x16.png"/>
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-32x32.png"/>
+    
+    <link rel="mask-icon" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/safari-pinned-tab.svg" color="#e21d38"/>
+
+    
+<link rel="preload" as="font" type="font/woff2" href="../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Proxima-Bold.woff2" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Neusa.woff2" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Proxima.woff2" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Neusa-LightV2.woff2" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Neusa-Medium.woff2" crossorigin/>
+
+<link rel="preload" as="font" type="font/woff2" href="../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Proxima-Medium.woff2" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Neusa-Bold.woff2" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" href="../../../etc.clientlibs/base/clientlibs/base-resources/resources/fonts/Proxima-SemiBold.woff2" crossorigin/>
+
+
+
+    
+<script src="../../../etc.clientlibs/base/clientlibs/libs/jquery/v3.6.0.abec7e706514e7e243d79b097790f71b.js"></script>
+<script src="../../../etc.clientlibs/f5-library/clientlibs/clientlib-quickload.3318061ad39c765438d805cd2de9634f.js"></script>
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+<script async="async" src="../../../../consent.trustarc.com/notice%EF%B9%96domain=f5.com&amp;c=teconsent&amp;text=true&amp;gtm=1.js" crossorigin=""></script>
+
+    
+    
+
+<script>
+    window.digitalData = {"page":{"pageInfo":{"pageName":"www:f5.com:resources:library:security:ecommerce","destinationUrl":"https://www.f5.com/resources/library/security/ecommerce.breaking-down-bots-infographic.html","subDomain":"www","referringUrl":"https://www.f5.com/services/resources/use-cases/f5-bot-defense-for-salesforce-commerce-cloud-security","referringPageName":"www:f5.com:services:resources:use-cases:f5-bot-defense-for-salesforce-commerce-cloud-security","language":"en_US","version":""},"category":{"primaryCategory":"resources","subCategory1":"library","subCategory2":"security","subCategory3":"ecommerce"}}};
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmContentParam = urlParams.get("utm_content");
+    if (utmContentParam && window.digitalData.user != undefined && window.digitalData.user.userInfo) {
+        const utmContentParamArray = utmContentParam.split("-");
+        if (utmContentParamArray.length >= 3) {
+            window.digitalData.user.userInfo.digitalSignal = utmContentParamArray[2];
+        }
+    }
+</script>
+<script>
+    window.utag_data = {"page.pageInfo.pageName":"www:f5.com:resources:library:security:ecommerce","page.pageInfo.destinationUrl":"https://www.f5.com/resources/library/security/ecommerce.breaking-down-bots-infographic.html","page.pageInfo.subDomain":"www","page.pageInfo.referringUrl":"https://www.f5.com/services/resources/use-cases/f5-bot-defense-for-salesforce-commerce-cloud-security","page.pageInfo.referringPageName":"www:f5.com:services:resources:use-cases:f5-bot-defense-for-salesforce-commerce-cloud-security","page.pageInfo.language":"en_US","page.pageInfo.version":"","page.category.primaryCategory":"resources","page.category.subCategory1":"library","page.category.subCategory2":"security","page.category.subCategory3":"ecommerce"};
+</script>
+
+
+    
+    <script>
+        ;(function(win, doc, style, timeout) {
+            var STYLE_ID = 'at-body-style';
+
+            function getParent() {
+                return doc.getElementsByTagName('head')[0];
+            }
+
+            function addStyle(parent, id, def) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.createElement('style');
+                style.id = id;
+                style.innerHTML = def;
+                parent.appendChild(style);
+            }
+
+            function removeStyle(parent, id) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.getElementById(id);
+
+                if (!style) {
+                    return;
+                }
+
+                parent.removeChild(style);
+            }
+
+            addStyle(getParent(), STYLE_ID, style);
+            setTimeout(function() {
+                removeStyle(getParent(), STYLE_ID);
+            }, timeout);
+        }(window, document, "body {opacity: 0 !important}", 3000));
+    </script>
+
+    <script src="../../../../assets.adobedtm.com/launch-EN37b07f3d0fa64d53b299e28194b30e0a.min.js" async></script>
+
+
+</head>
+    <body>
+        
+    <script>
+    (function(a,b,c,d){
+        a='//mktg.tags.f5.com/main/prod/utag.js';
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+    </script>
+
+        
+        
+        
+        
+        
+
+
+
+
+<!-- NORMAL VIEW -->
+
+
+<!-- MODAL VIEW -->
+
+    
+    <style type="text/css">html, body {
+            overflow: hidden;
+        }
+
+        .back.bg-overwrite356631893 {
+            background-color:  !important;
+        }
+
+        .back.text-overwrite356631893 {
+            color:  !important;
+        }
+
+        .back.default-background-color {
+            background-color: #0C5C8D !important;
+        }
+
+        .btn.default-text-color {
+            color: #0C5C8D !important;
+        }
+    </style>
+    <div class="c04-article-extract c04-article-extract__modalview article">
+        <div class="c04-article-extract__lightbox show bg-dark-embed show-modal">
+            <div class="back slide-over-back default-background-color   ">
+                <div class="c04-article-extract__bar-container">
+                    
+                    <style type="text/css">a.btn.bg-overwrite356631893 {
+                            background-color:  !important;
+                        }
+
+                        a.btn.bg-hover-overwrite356631893:hover {
+                            background-color:  !important;
+                        }
+
+                        a.btn.text-overwrite356631893 {
+                            color:  !important;
+                        }
+
+                        a.btn.text-overwrite356631893 svg {
+                            fill:  !important;
+                        }
+
+                        a.btn.text-hover-overwrite356631893:hover {
+                            color:  !important;
+                        }
+
+                        a.btn.text-hover-overwrite356631893:hover svg {
+                            fill:  !important;
+                        }
+                    </style>
+                    
+                    <div class="bar-content-wrapper">
+                        <div class="f5-logo-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1009.7 933.3" overflow="visible" xml:space="preserve">
+                        <path fill="#E21D38" d="M955.2,770v-32.9h14.6c2.9,0,5.2,0.3,6.7,0.9c1.5,0.6,2.7,1.6,3.7,3.1c0.9,1.5,1.4,3.2,1.4,5
+                        c0,2.3-0.8,4.3-2.3,5.9s-3.8,2.6-7,3.1c1.2,0.6,2,1.1,2.6,1.6c1.3,1.2,2.5,2.6,3.6,4.4l5.7,9h-5.5l-4.4-6.8
+                        c-1.3-2-2.3-3.5-3.1-4.5s-1.6-1.8-2.2-2.2s-1.3-0.7-2-0.9c-0.5-0.1-1.3-0.2-2.4-0.2h-5.1V770H955.2z M959.5,751.6h9.4
+                        c2,0,3.5-0.2,4.7-0.6s2-1.1,2.6-2s0.9-1.9,0.9-3c0-1.6-0.6-2.8-1.7-3.8s-2.9-1.5-5.4-1.5h-10.4L959.5,751.6L959.5,751.6z"/>
+                                <path fill="#E21D38" d="M966.9,788.6c-19.2,0-34.8-15.6-34.8-34.8s15.6-34.8,34.8-34.8s34.8,15.6,34.8,34.8
+                        C1001.7,772.9,986.1,788.6,966.9,788.6z M966.9,724.6c-16.1,0-29.1,13.1-29.1,29.1c0,16.1,13.1,29.1,29.1,29.1s29.1-13.1,29.1-29.1
+                        S982.9,724.6,966.9,724.6z"/>
+                                <circle fill="#FFFFFF" fill-opacity="1" cx="501.9" cy="466.6" r="464"/>
+                                <path fill="#E21D38" d="M888.6,210.2c-5,22.7-7.2,45.5-12.9,70.1c-68.9-8.4-150.4-14.6-242.4-18.8c-8.4,23-14.6,46-23,71.1
+                        c152.6,10.4,227.8,50.2,271.7,98.2c43.9,48.1,52.3,100.3,50.2,150.5c-6.3,81.5-41.8,131.7-89.9,169.3
+                        c-50.1,35.5-108.6,54.3-156.7,58.5c-69,6.3-163-10.5-183.9-23c-12.5-27.2-25.1-56.4-37.6-85.7c-2.1-6.3-4.2-12.5,4.2-20.9
+                        c12.5-12.5,25.1-27.2,39.7-39.7c6.3-4.2,14.6-10.5,18.8-2.1c18.8,29.3,37.6,56.4,54.3,83.6c18.8,29.2,50.1,56.4,117,52.2
+                        c56.4-4.1,100.3-48,104.5-94c4.2-85.7-83.6-148.4-311.4-167.2c43.9-133.7,85.7-261.2,121.1-361.5c54.4,2.1,104.5,6.2,152.6,12.5
+                        c35.8,4,67.8,11.7,101.4,16C781.3,71.7,649.6,2.6,501.9,2.6c-256.3,0-464,207.7-464,464c0,105,34.9,201.8,93.7,279.6
+                        c17.6-0.7,29.6-4.8,31.5-12.4c0-8.3,0-20.9-2.1-35.5c-8.4-91.9-12.6-190.2-8.4-288.4c-23,2.1-43.9,2.1-64.8,4.2
+                        c2.1-18.8,2.1-35.5,4.2-54.3c20.9-2.1,41.8-4.2,64.8-6.3c2.1-14.7,2.1-31.4,4.2-46C171.5,213.4,271.8,157,353.3,134
+                        c37.6-8.3,60.6-12.5,77.3-12.5c6.3,0,12.5-2.1,18.9-0.1c16.7,0,35.6,0,46,8.4c18.8,14.6,35.5,27.2,54.3,41.8c2.1,2.1,4.2,6.2,0,12.5
+                        c-8.4,8.4-16.7,18.9-25.1,29.3c-6.3,6.3-14.6,4.2-20.9,2.1c-14.6-6.3-29.3-14.6-43.9-20.9c-27.2-12.6-54.3-25.1-83.6-23
+                        c-16.7,0-35.5,18.8-37.6,46c-2.1,39.7-4.2,81.5-6.3,125.4c52.2,0,104.5-2.1,158.8-2.1c0,10.4,0,23,0,35.5
+                        c-16.7,8.4-33.4,16.7-52.2,25.1c-35.5,2.1-71.1,2.1-106.6,2.1c-2.1,106.6,0,211.1,4.2,307.2c2.1,14.6,2.1,29.3,6.3,39.7
+                        c4.1,12.6,33.4,20.9,96.1,25.1c0,10.4,0,20.9,0,31.3c-103-2-200.1-11.9-278.2-25.7c84.8,91.9,206.2,149.4,341.1,149.4
+                        c256.3,0,464-207.7,464-464C965.8,371.8,937.4,283.7,888.6,210.2z"/>
+                    </svg>
+                        </div>
+                        <div class="bar-content-label">Presented as part of our series, <b>Defend Your E-Commerce Business | F5 Networks</b></div>
+
+                        <a class="btn
+                            bg-white
+                            
+                            
+                            
+
+                            default-text-color
+                            
+                            
+                            " href="https://www.f5.com/content/f5-com/en_us/resources/library/security/ecommerce#spa-2">
+
+                            Stop Fraud Without Friction ›<span class="c04-article-extract__solution-guide-title"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="c04-article-extract__article-wrapper">
+                <div class="c04-article-extract__article-embed-wrapper">
+                    <iframe src="https://www.f5.com/resources/library/security/breaking-down-bots-infographic.embed.html" class="c04-article-extract__overlaid-article data-loading" scrolling="no"></iframe>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        
+        
+    
+    
+<script src="../../../etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.68e8a508c100f218cc66bb13a94d1002.js"></script>
+<script src="../../../etc.clientlibs/f5-library/clientlibs/clientlib-base.c9cb6d372ad7b525852c466217faa5db.js"></script>
+
+
+
+     
+    
+
+
+ 
+
+
+ <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5095d30f38626622"></script> 
+
+    
+
+
+        
+        <div id="consent_blackbar" style="position:fixed;bottom:200px;width:100%"></div>
+    </body>
+</html>

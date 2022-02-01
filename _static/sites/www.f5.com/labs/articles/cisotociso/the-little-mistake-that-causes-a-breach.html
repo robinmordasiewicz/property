@@ -189,7 +189,7 @@
      
         
 
-       	<div class="background-cut " style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a01/optimize/article-background-image.jpg);"></div>
+       	<div class="background-cut " style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a01/optimize/article-background-image.jpg);"></div>
         
 
 
@@ -315,7 +315,7 @@
         
        
         <section class="container-fluid c02-header-area__main-article details fill-main-container">
-            <div class="c02-header-area__heroImageBackground" style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a01/optimize/article-background-image.jpg);"></div>
+            <div class="c02-header-area__heroImageBackground" style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a01/optimize/article-background-image.jpg);"></div>
             <div class="c02-header-area__main-article-overlay"></div>
            
             <div class="row">
@@ -423,9 +423,9 @@ Meepos — announced July 2017<a href="#_ftn4"><sup>4</sup></a><a id="_ftnref4">
 <h3>More Firewall Fails</h3>
 <p>One of the benefits for working for a large security company like F5 is that I can ask around about what leads to most of the reported customer security incidents. Overwhelmingly I was told “partially configured firewalls.” These are devices that were put in place with the basics setup, but not completed. This could be the “we’ll get back to it” syndrome, where no one ever has time to get back to it. But we’re seeing attacks succeed only because defense tools that could have stopped them haven’t been enabled. We’re seeing default configurations that haven’t been updated. We’re seeing a lack of testing on key features to ensure they function as intended in production environments. And, like everything else in the industry, we’re seeing some folks not updating or patching in a timely matter.</p>
 <h3>What Is Going On?</h3>
-<p>There are a number of reasons why this is happening. One is the continuing <a href="https://www.f5.com/labs/articles/cisotociso/cisos-look-to-machine-learning-to-augment-security-staffing-shortages" target="_blank" rel="no-opener no-referrer">talent shortage in cyber-security</a>. There just aren’t enough talented folks to go around. Our networks and deployed controls are also getting <a href="https://www.f5.com/labs/articles/cisotociso/can-engineers-build-networks-too-complicated-for-humans-to-operate-part-i-scope-of-the-problem" target="_blank" rel="no-opener no-referrer">more widespread and more complex</a>. So, we have fewer people trying to work on more things. Worse, a lot of IT staff are doing their work manually in an ad-hoc manner. That means without defined process and without automation, <a href="the-six-most-common-audit-failures.html" target="_blank" rel="no-opener no-referrer">which leads to more errors.</a> Also, as organizations expand into the cloud, there is more reliance on cloud provider controls but with the <a href="https://www.f5.com/labs/articles/threat-intelligence/friendly-reminder-app-security-in-the-cloud-is-your-responsibility-24894" target="_blank" rel="no-opener no-referrer">mistaken assumption that the cloud provider is taking care of all aspects of security.</a></p>
+<p>There are a number of reasons why this is happening. One is the continuing <a href="cisos-look-to-machine-learning-to-augment-security-staffing-shortages.html" target="_blank" rel="no-opener no-referrer">talent shortage in cyber-security</a>. There just aren’t enough talented folks to go around. Our networks and deployed controls are also getting <a href="can-engineers-build-networks-too-complicated-for-humans-to-operate-part-i-scope-of-the-problem.html" target="_blank" rel="no-opener no-referrer">more widespread and more complex</a>. So, we have fewer people trying to work on more things. Worse, a lot of IT staff are doing their work manually in an ad-hoc manner. That means without defined process and without automation, <a href="the-six-most-common-audit-failures.html" target="_blank" rel="no-opener no-referrer">which leads to more errors.</a> Also, as organizations expand into the cloud, there is more reliance on cloud provider controls but with the <a href="../threat-intelligence/friendly-reminder-app-security-in-the-cloud-is-your-responsibility-24894.html" target="_blank" rel="no-opener no-referrer">mistaken assumption that the cloud provider is taking care of all aspects of security.</a></p>
 <h3>Fix the Process and Close the Gap</h3>
-<p>As I’ve said <a href="https://www.f5.com/labs/articles/cisotociso/avoiding-the-epidemic-of-hospital-hacks" target="_blank" rel="no-opener no-referrer">before</a>, it’s always the simple things, but the simple things are hard. There are proven ways to eliminate IT errors,<a href="#_ftn6"><sup>6</sup></a><a id="_ftnref6"></a> starting with change control. Firewalls and any critical security devices should be subject to change control. This means all changes are planned, analyzed, tested, approved, documented, and verified. Then someone should audit that process to ensure that every change follows the process. This would have eliminated the firewall hole that I found at the startup company.</p>
+<p>As I’ve said <a href="avoiding-the-epidemic-of-hospital-hacks.html" target="_blank" rel="no-opener no-referrer">before</a>, it’s always the simple things, but the simple things are hard. There are proven ways to eliminate IT errors,<a href="#_ftn6"><sup>6</sup></a><a id="_ftnref6"></a> starting with change control. Firewalls and any critical security devices should be subject to change control. This means all changes are planned, analyzed, tested, approved, documented, and verified. Then someone should audit that process to ensure that every change follows the process. This would have eliminated the firewall hole that I found at the startup company.</p>
 <p>On top of that, there should be a security standard for how access control should be done. A security standard is below a policy (a general statement of purpose) but above a procedure (a step-by-step guide to performing a task). An access control standard would spell out how devices in general should be configured and include points like:</p>
 <ul class="loose">
 <li>Default deny, least privilege should be used for access control. This means, if possible, inbound firewall rules should be set to trustworthy IP addresses.</li>
@@ -434,7 +434,7 @@ Meepos — announced July 2017<a href="#_ftn4"><sup>4</sup></a><a id="_ftnref4">
 <li>Security signatures should be set up in an allowlist manner. Don’t block known bad; allow only known good. In some cases, this can mean all intrusion signatures are enabled except the known, documented, and approved false positives.</li>
 <li>All security administrators will have proper training in the usage of the device.</li>
 </ul>
-<p>Another way to reduce errors is to only <a href="https://www.f5.com/labs/articles/cisotociso/86-your-cyber-attackers-avoid-data-breaches-by-protecting-your-most-likely-attack-targets" target="_blank" rel="no-opener no-referrer">implement the controls you need to stop the most likely, most damaging threats.</a> This means picking defensive technology that is flexible and can reduce the highest risks. I’ve seen environments where the controls in use are a dog’s breakfast of whatever the last few auditors recommended on top of a stack of legacy controls. Controls should be laser-focused on the current significant risks to the organization. You can also reduce errors with controls that support automation and integration. Ideally, you’d have a single pane of glass to monitor and manage all your controls.</p>
+<p>Another way to reduce errors is to only <a href="86-your-cyber-attackers-avoid-data-breaches-by-protecting-your-most-likely-attack-targets.html" target="_blank" rel="no-opener no-referrer">implement the controls you need to stop the most likely, most damaging threats.</a> This means picking defensive technology that is flexible and can reduce the highest risks. I’ve seen environments where the controls in use are a dog’s breakfast of whatever the last few auditors recommended on top of a stack of legacy controls. Controls should be laser-focused on the current significant risks to the organization. You can also reduce errors with controls that support automation and integration. Ideally, you’d have a single pane of glass to monitor and manage all your controls.</p>
 <p>Lastly, if this is all too much for your team to manage, you can look at outsourcing security controls. Since managing controls is the entire job of a SaaS security vendor, you can bet they have robust and well-tested processes in place to reduce operational errors.</p>
 <p><b>More to come in our Application Protection Report July 25th</b></p>
 <p>The perspective to write this article was actually derived from some breach analysis done by Whatcom Community College for an upcoming security flagship report. Accidents are the cause of a number of breaches, so we decided to explore that here, but more in-depth analysis and findings to come in our Application Protection Report here on F5 Labs on July 25, 2018!</p>
@@ -526,7 +526,7 @@ Meepos — announced July 2017<a href="#_ftn4"><sup>4</sup></a><a id="_ftnref4">
                             <span class="U:align-self-center">June 19, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/coronavirus-data-privacy-the-new-online-social-contract" class="a07-related-articles__link">
+                    <a href="../bylines/coronavirus-data-privacy-the-new-online-social-contract.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Coronavirus, Data Privacy &amp; the New Online Social Contract
                         </div>
@@ -553,7 +553,7 @@ Meepos — announced July 2017<a href="#_ftn4"><sup>4</sup></a><a id="_ftnref4">
                             <span class="U:align-self-center">June 18, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/cisotociso/getting-audited-for-dod-cmmc" class="a07-related-articles__link">
+                    <a href="getting-audited-for-dod-cmmc.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Getting Audited for DoD CMMC
                         </div>
@@ -580,7 +580,7 @@ Meepos — announced July 2017<a href="#_ftn4"><sup>4</sup></a><a id="_ftnref4">
                             <span class="U:align-self-center">May 28, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/cisotociso/turing-in-his-grave--what-human-captcha-solvers-reveal-about-con" class="a07-related-articles__link">
+                    <a href="turing-in-his-grave--what-human-captcha-solvers-reveal-about-con.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Turing in His Grave: What Human CAPTCHA Solvers Reveal About Control Design
                         </div>
@@ -780,13 +780,13 @@ Meepos — announced July 2017<a href="#_ftn4"><sup>4</sup></a><a id="_ftnref4">
                             <div class="panel-body can-collapse collapsed">
                                 <p><div id="ftn1"><p><a id="_ftn1"></a><a href="#_ftnref1"><sup>1</sup></a> <a href="https://www.prnewswire.com/news-releases/global-university-provides-notice-of-data-breach-300644987.html" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.prnewswire.com/news-releases/global-university-provides-notice-of-data-breach-300644987.html</a></p>
 </div>
-<div id="ftn2"><p><a id="_ftn2"></a><a href="#_ftnref2"><sup>2</sup></a> <a href="https://www.doj.nh.gov/consumer/security-breaches/documents/rx-valet-20180504.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.doj.nh.gov/consumer/security-breaches/documents/rx-valet-20180504.pdf</a></p>
+<div id="ftn2"><p><a id="_ftn2"></a><a href="#_ftnref2"><sup>2</sup></a> <a href="../../../../www.doj.nh.gov/consumer/security-breaches/documents/rx-valet-20180504.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.doj.nh.gov/consumer/security-breaches/documents/rx-valet-20180504.pdf</a></p>
 </div>
-<div id="ftn3"><p><a id="_ftn3"></a><a href="#_ftnref3"><sup>3</sup></a> <a href="https://www.doj.nh.gov/consumer/security-breaches/documents/medwatch-20180413.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.doj.nh.gov/consumer/security-breaches/documents/medwatch-20180413.pdf</a></p>
+<div id="ftn3"><p><a id="_ftn3"></a><a href="#_ftnref3"><sup>3</sup></a> <a href="../../../../www.doj.nh.gov/consumer/security-breaches/documents/medwatch-20180413.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.doj.nh.gov/consumer/security-breaches/documents/medwatch-20180413.pdf</a></p>
 </div>
-<div id="ftn4"><p><a id="_ftn4"></a><a href="#_ftnref4"><sup>4</sup></a> <a href="https://oag.ca.gov/system/files/Meepos%20-%20notice%20only_0.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://oag.ca.gov/system/files/Meepos%20-%20notice%20only_0.pdf</a></p>
+<div id="ftn4"><p><a id="_ftn4"></a><a href="#_ftnref4"><sup>4</sup></a> <a href="../../../../oag.ca.gov/system/files/Meepos%20-%20notice%20only_0.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://oag.ca.gov/system/files/Meepos%20-%20notice%20only_0.pdf</a></p>
 </div>
-<div id="ftn5"><p><a id="_ftn5"></a><a href="#_ftnref5"><sup>5</sup></a> <a href="https://oag.ca.gov/system/files/Stanford%20Notification%20Letter_FINAL_11292017_0.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://oag.ca.gov/system/files/Stanford%20Notification%20Letter_FINAL_11292017_0.pdf</a></p>
+<div id="ftn5"><p><a id="_ftn5"></a><a href="#_ftnref5"><sup>5</sup></a> <a href="../../../../oag.ca.gov/system/files/Stanford%20Notification%20Letter_FINAL_11292017_0.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://oag.ca.gov/system/files/Stanford%20Notification%20Letter_FINAL_11292017_0.pdf</a></p>
 </div>
 <div id="ftn6"><p><a id="_ftn6"></a><a href="#_ftnref6"><sup>6</sup></a> <a href="http://realgenekim.squarespace.com/visible-ops/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">http://realgenekim.squarespace.com/visible-ops/</a></p>
 </div>
@@ -805,13 +805,13 @@ Meepos — announced July 2017<a href="#_ftn4"><sup>4</sup></a><a id="_ftnref4">
                 <div class="a09-article-footnotes__panel">
                     <p><div id="ftn1"><p><a id="_ftn1"></a><a href="#_ftnref1"><sup>1</sup></a> <a href="https://www.prnewswire.com/news-releases/global-university-provides-notice-of-data-breach-300644987.html" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.prnewswire.com/news-releases/global-university-provides-notice-of-data-breach-300644987.html</a></p>
 </div>
-<div id="ftn2"><p><a id="_ftn2"></a><a href="#_ftnref2"><sup>2</sup></a> <a href="https://www.doj.nh.gov/consumer/security-breaches/documents/rx-valet-20180504.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.doj.nh.gov/consumer/security-breaches/documents/rx-valet-20180504.pdf</a></p>
+<div id="ftn2"><p><a id="_ftn2"></a><a href="#_ftnref2"><sup>2</sup></a> <a href="../../../../www.doj.nh.gov/consumer/security-breaches/documents/rx-valet-20180504.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.doj.nh.gov/consumer/security-breaches/documents/rx-valet-20180504.pdf</a></p>
 </div>
-<div id="ftn3"><p><a id="_ftn3"></a><a href="#_ftnref3"><sup>3</sup></a> <a href="https://www.doj.nh.gov/consumer/security-breaches/documents/medwatch-20180413.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.doj.nh.gov/consumer/security-breaches/documents/medwatch-20180413.pdf</a></p>
+<div id="ftn3"><p><a id="_ftn3"></a><a href="#_ftnref3"><sup>3</sup></a> <a href="../../../../www.doj.nh.gov/consumer/security-breaches/documents/medwatch-20180413.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.doj.nh.gov/consumer/security-breaches/documents/medwatch-20180413.pdf</a></p>
 </div>
-<div id="ftn4"><p><a id="_ftn4"></a><a href="#_ftnref4"><sup>4</sup></a> <a href="https://oag.ca.gov/system/files/Meepos%20-%20notice%20only_0.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://oag.ca.gov/system/files/Meepos%20-%20notice%20only_0.pdf</a></p>
+<div id="ftn4"><p><a id="_ftn4"></a><a href="#_ftnref4"><sup>4</sup></a> <a href="../../../../oag.ca.gov/system/files/Meepos%20-%20notice%20only_0.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://oag.ca.gov/system/files/Meepos%20-%20notice%20only_0.pdf</a></p>
 </div>
-<div id="ftn5"><p><a id="_ftn5"></a><a href="#_ftnref5"><sup>5</sup></a> <a href="https://oag.ca.gov/system/files/Stanford%20Notification%20Letter_FINAL_11292017_0.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://oag.ca.gov/system/files/Stanford%20Notification%20Letter_FINAL_11292017_0.pdf</a></p>
+<div id="ftn5"><p><a id="_ftn5"></a><a href="#_ftnref5"><sup>5</sup></a> <a href="../../../../oag.ca.gov/system/files/Stanford%20Notification%20Letter_FINAL_11292017_0.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://oag.ca.gov/system/files/Stanford%20Notification%20Letter_FINAL_11292017_0.pdf</a></p>
 </div>
 <div id="ftn6"><p><a id="_ftn6"></a><a href="#_ftnref6"><sup>6</sup></a> <a href="http://realgenekim.squarespace.com/visible-ops/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">http://realgenekim.squarespace.com/visible-ops/</a></p>
 </div>
@@ -831,31 +831,31 @@ Meepos — announced July 2017<a href="#_ftn4"><sup>4</sup></a><a id="_ftnref4">
 
         <div class="a05-article-tags__tags-box">
             <strong class="a05-article-tags__strong">TAGS: </strong>
-            <a href="https://www.f5.com/labs/search?q=%22default+configuration%22" class="a05-article-tags__a">default configuration</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22default+configuration%22.html" class="a05-article-tags__a">default configuration</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=misconfiguration" class="a05-article-tags__a">misconfiguration</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=misconfiguration.html" class="a05-article-tags__a">misconfiguration</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22permissions+management%22" class="a05-article-tags__a">permissions management</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22permissions+management%22.html" class="a05-article-tags__a">permissions management</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=CISO.html" class="a05-article-tags__a">CISO</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=audit" class="a05-article-tags__a">audit</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=audit.html" class="a05-article-tags__a">audit</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=firewall" class="a05-article-tags__a">firewall</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=firewall.html" class="a05-article-tags__a">firewall</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22security+standards%22" class="a05-article-tags__a">security standards</a><span class="a05-article-tags__span">,</span>
+            <a href="../../search%EF%B9%96q=%22security+standards%22.html" class="a05-article-tags__a">security standards</a><span class="a05-article-tags__span">,</span>
         
             
             <a href="../../search%EF%B9%96q=Strategies.html" class="a05-article-tags__a">Strategies</a><span class="a05-article-tags__span">,</span>
         
             
-            <a href="https://www.f5.com/labs/search?q=%22control+failure%22" class="a05-article-tags__a">control failure</a>
+            <a href="../../search%EF%B9%96q=%22control+failure%22.html" class="a05-article-tags__a">control failure</a>
         </div>
 
     
@@ -889,7 +889,7 @@ Meepos — announced July 2017<a href="#_ftn4"><sup>4</sup></a><a id="_ftnref4">
                             <span class="U:align-self-center">June 19, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/coronavirus-data-privacy-the-new-online-social-contract" class="a07-related-articles__link">
+                    <a href="../bylines/coronavirus-data-privacy-the-new-online-social-contract.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Coronavirus, Data Privacy &amp; the New Online Social Contract
                         </div>
@@ -916,7 +916,7 @@ Meepos — announced July 2017<a href="#_ftn4"><sup>4</sup></a><a id="_ftnref4">
                             <span class="U:align-self-center">June 18, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/cisotociso/getting-audited-for-dod-cmmc" class="a07-related-articles__link">
+                    <a href="getting-audited-for-dod-cmmc.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Getting Audited for DoD CMMC
                         </div>
@@ -943,7 +943,7 @@ Meepos — announced July 2017<a href="#_ftn4"><sup>4</sup></a><a id="_ftnref4">
                             <span class="U:align-self-center">May 28, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/cisotociso/turing-in-his-grave--what-human-captcha-solvers-reveal-about-con" class="a07-related-articles__link">
+                    <a href="turing-in-his-grave--what-human-captcha-solvers-reveal-about-con.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Turing in His Grave: What Human CAPTCHA Solvers Reveal About Control Design
                         </div>
@@ -1000,7 +1000,7 @@ Meepos — announced July 2017<a href="#_ftn4"><sup>4</sup></a><a id="_ftnref4">
                             <span class="U:align-self-center">June 19, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/bylines/coronavirus-data-privacy-the-new-online-social-contract" class="a07-related-articles__link">
+                    <a href="../bylines/coronavirus-data-privacy-the-new-online-social-contract.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Coronavirus, Data Privacy &amp; the New Online Social Contract
                         </div>
@@ -1027,7 +1027,7 @@ Meepos — announced July 2017<a href="#_ftn4"><sup>4</sup></a><a id="_ftnref4">
                             <span class="U:align-self-center">June 18, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/cisotociso/getting-audited-for-dod-cmmc" class="a07-related-articles__link">
+                    <a href="getting-audited-for-dod-cmmc.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Getting Audited for DoD CMMC
                         </div>
@@ -1054,7 +1054,7 @@ Meepos — announced July 2017<a href="#_ftn4"><sup>4</sup></a><a id="_ftnref4">
                             <span class="U:align-self-center">May 28, 2020</span>
                         </div>
                     </div>
-                    <a href="https://www.f5.com/labs/articles/cisotociso/turing-in-his-grave--what-human-captcha-solvers-reveal-about-con" class="a07-related-articles__link">
+                    <a href="turing-in-his-grave--what-human-captcha-solvers-reveal-about-con.html" class="a07-related-articles__link">
                         <div class="a07-related-articles__article-title">
                             Turing in His Grave: What Human CAPTCHA Solvers Reveal About Control Design
                         </div>
