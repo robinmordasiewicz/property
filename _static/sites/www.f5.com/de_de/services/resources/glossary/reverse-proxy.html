@@ -243,7 +243,7 @@
                                     <li class="meta-nav__menu-item">
                                         
                                             
-                                            <a class="meta-nav__menu-link" href="https://www.f5.com/es_es/services/resources/glossary/reverse-proxy">
+                                            <a class="meta-nav__menu-link" href="../../../../es_es/services/resources/glossary/reverse-proxy.html">
                                                 ES
                                             </a>
                                             
@@ -253,7 +253,7 @@
                                     <li class="meta-nav__menu-item">
                                         
                                             
-                                            <a class="meta-nav__menu-link" href="https://www.f5.com/fr_fr/services/resources/glossary/reverse-proxy">
+                                            <a class="meta-nav__menu-link" href="../../../../fr_fr/services/resources/glossary/reverse-proxy.html">
                                                 FR
                                             </a>
                                             
@@ -273,7 +273,7 @@
                                     <li class="meta-nav__menu-item">
                                         
                                             
-                                            <a class="meta-nav__menu-link" href="https://www.f5.com/ja_jp/services/resources/glossary/reverse-proxy">
+                                            <a class="meta-nav__menu-link" href="../../../../ja_jp/services/resources/glossary/reverse-proxy.html">
                                                 日本語
                                             </a>
                                             
@@ -3270,7 +3270,7 @@
                                 
                                     
                                     
-                                    <a class="nav-list__link" href="https://www.f5.com/content/f5-com/es_es/services/resources/glossary/reverse-proxy">
+                                    <a class="nav-list__link" href="../../../../es_es/services/resources/glossary/reverse-proxy.html">
                                         ES
                                     </a>
                                     
@@ -3281,7 +3281,7 @@
                                 
                                     
                                     
-                                    <a class="nav-list__link" href="https://www.f5.com/content/f5-com/fr_fr/services/resources/glossary/reverse-proxy">
+                                    <a class="nav-list__link" href="../../../../fr_fr/services/resources/glossary/reverse-proxy.html">
                                         FR
                                     </a>
                                     
@@ -3303,7 +3303,7 @@
                                 
                                     
                                     
-                                    <a class="nav-list__link" href="https://www.f5.com/content/f5-com/ja_jp/services/resources/glossary/reverse-proxy">
+                                    <a class="nav-list__link" href="../../../../ja_jp/services/resources/glossary/reverse-proxy.html">
                                         日本語
                                     </a>
                                     
@@ -3465,7 +3465,7 @@
 <p>Ein Reverse-Proxy wird zur Bereitstellung von Lastenausgleichsdiensten für eine reibungslosere Benutzererfahrung und zunehmend auch zur Durchsetzung der Sicherheit von Webanwendungen an strategischen Integrationspunkten in einem Netzwerk durch Webanwendungs-Firewalls, Firewalls für Anwendungsbereitstellungen und die Überprüfung von tiefergehenden Inhalten eingesetzt.</p>
 <p>In Kombination mit Cloud-Implementierungen kann ein Reverse-Proxy Cloud-Bursting- und Split-Anwendungsarchitekturen ermöglichen, die die wirtschaftlichen Vorteile der Cloud bieten, ohne die Kontrolle oder Sicherheit einzuschränken.</p>
 <h2>Wie funktioniert ein Reverse-Proxy?</h2>
-<p>Während die gebräuchlichste Verwendung eines Reverse-Proxys der <a href="load-balancer.html">Lastenausgleich</a> für Webanwendungen und APIs ist, werden Reverse-Proxys auch zum Auslagern von Diensten aus Anwendungen eingesetzt, um die Leistung durch <a href="https://www.f5.com/de_de/services/resources/glossary/ssl-acceleration">SSL-Beschleunigung</a>, <a href="intelligent-compression.html">intelligente Komprimierung</a> und Caching zu verbessern. Reverse-Proxys ermöglichen außerdem föderierte Sicherheitsdienste für mehrere Anwendungen, indem sie die Sicherheit von Webanwendungen durchsetzen.</p>
+<p>Während die gebräuchlichste Verwendung eines Reverse-Proxys der <a href="load-balancer.html">Lastenausgleich</a> für Webanwendungen und APIs ist, werden Reverse-Proxys auch zum Auslagern von Diensten aus Anwendungen eingesetzt, um die Leistung durch <a href="ssl-acceleration.html">SSL-Beschleunigung</a>, <a href="intelligent-compression.html">intelligente Komprimierung</a> und Caching zu verbessern. Reverse-Proxys ermöglichen außerdem föderierte Sicherheitsdienste für mehrere Anwendungen, indem sie die Sicherheit von Webanwendungen durchsetzen.</p>
 <p>Ein Reverse-Proxy kann entweder als einfacher Weiterleitungsdienst fungieren oder aktiv am Austausch zwischen Client und Server teilnehmen. Wenn der Proxy den Client und den Server als separate Einheiten behandelt, indem er duale Netzwerkstapel implementiert, wird er als Vollproxy bezeichnet.</p>
 <p>Ein Vollproxy stellt eine TCP-Client-Verbindung her, zusammen mit einer separaten TCP-Server-Verbindung, wobei eine kleine Lücke in der Mitte entsteht. Der Client verbindet sich an einem Ende mit dem Proxy, und der Proxy stellt eine separate, unabhängige Verbindung zum Server her. Diese ist auf beiden Seiten bidirektional. Es kommt unter keinen Umständen zu einer Überschneidung der Verbindungen von der Client-Seite zur Server-Seite, da die Verbindungen unabhängig voneinander sind.</p>
 <h2>Wie geht F5 mit der Funktionalität von Reverse-Proxys um?</h2>
@@ -3473,7 +3473,7 @@
 <h3>Cloudnative Umgebungen</h3>
 <p><a href="https://www.nginx.com/products/nginx/" target="_blank" rel="noreferrer">NGINX Plus</a> ist ein softwarebasierter <a href="https://www.nginx.com/blog/reverse-proxy-using-nginx-plus/" target="_blank" rel="noreferrer">Reverse-Proxy</a>, der den Lastenausgleich, das Schicht-7-Routing und die Optimierung der Web-Performance ähnlich wie ein Hardware-Gerät übernimmt und sich ideal für cloudnative Umgebungen eignet. NGINX Plus kann sowohl in Public Clouds als auch in privaten Rechenzentren zu geringeren Kosten als ein Vollproxy eingesetzt werden.</p>
 <h3>Hybrid-Umgebungen</h3>
-<p>In komplexeren und hybriden Umgebungen fungiert das F5-<a href="../../../../pdf/products/big-ip-platforms-datasheet.pdf" target="_blank">BIG-IP-System</a> als Vollproxy. Das System kann als Reverse-Vollproxy-Server eingesetzt werden und ist in der Lage, Anfragen und Antworten abzufangen, zu prüfen und mit ihnen zu interagieren. Dazu gehören die grundlegenden Funktionen des Lastenausgleichs und der Optimierung der Web-Performance sowie fortschrittlichere Dienste zur <a href="../../../products/big-ip-services/diameter-traffic-management.html">Datenverkehrsverwaltung</a> wie die <a href="application-layer-security.html">Sicherheit auf Anwendungsebene</a>, die <a href="https://www.f5.com/de_de/services/resources/glossary/web-acceleration">Web-Beschleunigung</a>, das Seiten-Routing und ein <a href="https://www.f5.com/de_de/services/resources/glossary/secure-remote-access">sicherer Fernzugriff</a>.</p>
+<p>In komplexeren und hybriden Umgebungen fungiert das F5-<a href="../../../../pdf/products/big-ip-platforms-datasheet.pdf" target="_blank">BIG-IP-System</a> als Vollproxy. Das System kann als Reverse-Vollproxy-Server eingesetzt werden und ist in der Lage, Anfragen und Antworten abzufangen, zu prüfen und mit ihnen zu interagieren. Dazu gehören die grundlegenden Funktionen des Lastenausgleichs und der Optimierung der Web-Performance sowie fortschrittlichere Dienste zur <a href="../../../products/big-ip-services/diameter-traffic-management.html">Datenverkehrsverwaltung</a> wie die <a href="application-layer-security.html">Sicherheit auf Anwendungsebene</a>, die <a href="web-acceleration.html">Web-Beschleunigung</a>, das Seiten-Routing und ein <a href="secure-remote-access.html">sicherer Fernzugriff</a>.</p>
 </div></div>
 
     
@@ -3743,7 +3743,7 @@
 
 
 
-<div id="article1522197392" class="a01 "><p><a class="link-cta red-link at-element-click-tracking at-element-marker externalLink" href="https://youtu.be/jGQTS1CxZTE&amp;feature=youtu.be&amp;feature=emb_title" target="f5modal-video" rel="noreferrer"><img class="img-fluid" src="https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/services/resources/glossary/devcentral-video-what-is-a-roxy-play_950x534.jpg" alt="Video"/></a></p>
+<div id="article1522197392" class="a01 "><p><a class="link-cta red-link at-element-click-tracking at-element-marker externalLink" href="https://youtu.be/jGQTS1CxZTE&amp;feature=youtu.be&amp;feature=emb_title" target="f5modal-video" rel="noreferrer"><img class="img-fluid" src="../../../../content/dam/f5-com/page-assets-en/home-en/services/resources/glossary/devcentral-video-what-is-a-roxy-play_950x534.jpg" alt="Video"/></a></p>
 <p><span class="eyebrow">VIDEO</span></p>
 <p class="display-3 U:nudge-top-xs text-titlecase">Was ist ein Proxy?</p>
 <p><a class="link-cta red-link at-element-click-tracking at-element-marker externalLink" href="https://youtu.be/jGQTS1CxZTE&amp;feature=youtu.be&amp;feature=emb_title" target="f5modal-video" rel="noreferrer">Jetzt ansehen ›</a></p>
@@ -3769,7 +3769,7 @@
 
 
 
-<div id="article-515858897" class="a01 "><p><a href="https://www.nginx.com/resources/glossary/reverse-proxy-vs-load-balancer/" target="_blank" rel="noreferrer"><img class="img-fluid" src="https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/services/resources/glossary/app-security-codes-colors-screen_950x534.jpg"/></a></p>
+<div id="article-515858897" class="a01 "><p><a href="https://www.nginx.com/resources/glossary/reverse-proxy-vs-load-balancer/" target="_blank" rel="noreferrer"><img class="img-fluid" src="../../../../content/dam/f5-com/page-assets-en/home-en/services/resources/glossary/app-security-codes-colors-screen_950x534.jpg"/></a></p>
 <p><span class="eyebrow">Blog</span></p>
 <p class="display-3 U:nudge-top-xs text-titlecase">Was ist ein Reverse-Proxy im Gegensatz zu einem Load-Balancer?</p>
 <p><a class="link-cta red-link" href="https://www.nginx.com/resources/glossary/reverse-proxy-vs-load-balancer/" target="_blank" rel="noreferrer">Finden Sie es heraus ›</a></p>

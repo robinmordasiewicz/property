@@ -1,0 +1,1902 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8"/>
+    <title>The Ins and Outs of Digital Fraud | F5 Labs</title>
+    <meta name="robots"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Retail fraud, identity theft, account takeovers, stolen payment cards—it feels like digital fraud is everywhere. Understand it better to fight it more effectively."/>
+    <meta name="template" content="article-details-template"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>    
+    
+
+    <meta property="og:locale" content="en_US"/>
+
+    <meta property="og:type" content="website"/>
+
+    <meta property="og:title" content="The Ins and Outs of Digital Fraud | F5 Labs"/>
+
+    <meta property="og:description" content="Retail fraud, identity theft, account takeovers, stolen payment cards—it feels like digital fraud is everywhere. Understand it better to fight it more effectively."/>
+
+    <meta property="og:site_name" content="F5 Labs"/>
+
+    <meta property="og:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+    <meta property="og:image_secure_url" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+
+    <meta property="fb:app_id" content="302184056577324"/>
+
+
+    <meta property="twitter:card" content="summary_large_image"/>
+
+    <meta property="twitter:title" content="The Ins and Outs of Digital Fraud | F5 Labs"/>
+
+    <meta property="twitter:description" content="Retail fraud, identity theft, account takeovers, stolen payment cards—it feels like digital fraud is everywhere. Understand it better to fight it more effectively."/>
+
+    <meta property="twitter:site" content="@F5networks"/>
+
+    <meta property="twitter:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+    <meta property="twitter:creator" content="@F5networks"/>
+
+
+    <meta property="article:author" content="Sander Vinberg, Raymond Pompon"/>
+
+    <meta property="article:published_time" content="2021-11-18T07:23:00.000-10:00"/>
+
+    <meta property="article:tag" content="Fraud,Relevance,Risk,CISO,Retail Fraud"/>
+
+    <meta property="article:id" content="/content/f5-labs-v2/en/labs/articles/cisotociso/the-ins-and-outs-of-digital-fraud"/>
+
+    <meta property="article:read_time" content="15 min."/>
+
+    <meta property="article:topic" content="Strategies"/>
+
+    <meta property="article:type" content="article"/>
+
+    <meta property="article:title" content="The Ins and Outs of Digital Fraud"/>
+
+<meta name="keywords" content="ATO,Fraud,Relevance,Risk,CISO,Retail Fraud,Phishing,Identity Theft,Strategies,Bank Fraud,Defending Applications,Wire Fraud,account takeover,Credit Card Fraud"/> 
+<link rel="canonical" href="the-ins-and-outs-of-digital-fraud.html"/>
+
+
+
+
+<meta property="labs:article:search-tab" content="CISO"/>
+
+    
+       	
+        <link href="https://assets.adobedtm.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://consent.trustarc.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://static.cloud.coveo.com" rel="rel=preconnect" crossorigin/>
+    
+
+    <script>window.F5=window.F5||{};window.F5.VisitorTracking=window.F5.VisitorTracking||{"isConfigEnabled":true,"tealiumScriptAsyncUrl":"//mktg.tags.f5.com/main/prod/utag.js","tealiumScriptSyncUrl":"//mktg.tags.f5.com/main/prod/utag.sync.js","visitorTrackingService":"tealium","isTealiumActive":true,"isLegacyActive":false,"legacyLibWarmingUrls":["https://assets.adobedtm.com","https://www.google-analytics.com","https://www.googletagmanager.com"]}</script>
+
+    <script src="../../../../mktg.tags.f5.com/main/prod/utag.sync.js"></script>
+    <!-- If JS enable will change the HTML class tag to "js"-->
+<script>
+    document.documentElement.className = document.documentElement.className.replace("js-off","js-on");
+</script>
+<!-- If JS enable will change the HTML class tag to "js" -->
+    
+    
+    
+
+    
+    
+
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/apple-touch-icon.png"/>
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-16x16.png"/>
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-32x32.png"/>
+    
+    <link rel="mask-icon" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/safari-pinned-tab.svg" color="#e21d38"/>
+
+    
+    
+
+    
+    
+<link rel="stylesheet" href="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.4921b04fbcd148d027b0a9a0b7fb303c.css" type="text/css">
+
+
+
+
+    <script src="https://app-aba.marketo.com/js/forms2/js/forms2.min.js"></script>
+    
+    
+
+<script>
+    window.digitalData = {"labs":{"articleAuthor":["sander vinberg","raymond pompon"],"articlePostDate":"Nov 18, 2021","labsReadingTime":"15 min.","vitals":{},"labsTags":["CISO","Strategies","Risk","Relevance","Defending Applications","Fraud","Identity Theft","account takeover","Phishing","Credit Card Fraud","Wire Fraud","Bank Fraud","Retail Fraud"]},"page":{"pageInfo":{"pageName":"www:f5.labs.v2:labs:articles:cisotociso:the-ins-and-outs-of-digital-fraud","destinationUrl":"https://www.f5.com/labs/articles/cisotociso/the-ins-and-outs-of-digital-fraud.html","subDomain":"www","referringUrl":"https://www.f5.com/labs/articles/cisotociso/log4shell-rebooting-the-same-old-security-principles-in-its-wake","referringPageName":"www:f5.labs.v2:labs:articles:cisotociso:log4shell-rebooting-the-same-old-security-principles-in-its-wake","language":"en","version":""},"category":{"primaryCategory":"labs","subCategory1":"articles","subCategory2":"cisotociso","subCategory3":"the-ins-and-outs-of-digital-fraud"},"contentInfo":{"articleAuthor":["sander vinberg","raymond pompon"],"articlePostDate":"Nov 18, 2021","labsReadingTime":"15 min.","vitals":{},"labsTags":["CISO","Strategies","Risk","Relevance","Defending Applications","Fraud","Identity Theft","account takeover","Phishing","Credit Card Fraud","Wire Fraud","Bank Fraud","Retail Fraud"]}}};
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmContentParam = urlParams.get("utm_content");
+    if (utmContentParam && window.digitalData.user != undefined && window.digitalData.user.userInfo) {
+        const utmContentParamArray = utmContentParam.split("-");
+        if (utmContentParamArray.length >= 3) {
+            window.digitalData.user.userInfo.digitalSignal = utmContentParamArray[2];
+        }
+    }
+</script>
+<script>
+    window.utag_data = {"page.pageInfo.pageName":"www:f5.labs.v2:labs:articles:cisotociso:the-ins-and-outs-of-digital-fraud","page.pageInfo.destinationUrl":"https://www.f5.com/labs/articles/cisotociso/the-ins-and-outs-of-digital-fraud.html","page.pageInfo.subDomain":"www","page.pageInfo.referringUrl":"https://www.f5.com/labs/articles/cisotociso/log4shell-rebooting-the-same-old-security-principles-in-its-wake","page.pageInfo.referringPageName":"www:f5.labs.v2:labs:articles:cisotociso:log4shell-rebooting-the-same-old-security-principles-in-its-wake","page.pageInfo.language":"en","page.pageInfo.version":"","page.category.primaryCategory":"labs","page.category.subCategory1":"articles","page.category.subCategory2":"cisotociso","page.category.subCategory3":"the-ins-and-outs-of-digital-fraud","page.contentInfo.articleAuthor[0]":"sander vinberg","page.contentInfo.articleAuthor[1]":"raymond pompon","page.contentInfo.articlePostDate":"Nov 18, 2021","page.contentInfo.labsReadingTime":"15 min.","page.contentInfo.vitals":{},"page.contentInfo.labsTags[0]":"CISO","page.contentInfo.labsTags[1]":"Strategies","page.contentInfo.labsTags[2]":"Risk","page.contentInfo.labsTags[3]":"Relevance","page.contentInfo.labsTags[4]":"Defending Applications","page.contentInfo.labsTags[5]":"Fraud","page.contentInfo.labsTags[6]":"Identity Theft","page.contentInfo.labsTags[7]":"account takeover","page.contentInfo.labsTags[8]":"Phishing","page.contentInfo.labsTags[9]":"Credit Card Fraud","page.contentInfo.labsTags[10]":"Wire Fraud","page.contentInfo.labsTags[11]":"Bank Fraud","page.contentInfo.labsTags[12]":"Retail Fraud"};
+</script>
+
+
+    
+    <script>
+        ;(function(win, doc, style, timeout) {
+            var STYLE_ID = 'at-body-style';
+
+            function getParent() {
+                return doc.getElementsByTagName('head')[0];
+            }
+
+            function addStyle(parent, id, def) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.createElement('style');
+                style.id = id;
+                style.innerHTML = def;
+                parent.appendChild(style);
+            }
+
+            function removeStyle(parent, id) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.getElementById(id);
+
+                if (!style) {
+                    return;
+                }
+
+                parent.removeChild(style);
+            }
+
+            addStyle(getParent(), STYLE_ID, style);
+            setTimeout(function() {
+                removeStyle(getParent(), STYLE_ID);
+            }, timeout);
+        }(window, document, "body {opacity: 0 !important}", 3000));
+    </script>
+
+    <script src="../../../../assets.adobedtm.com/launch-EN37b07f3d0fa64d53b299e28194b30e0a.min.js" async></script>
+
+
+</head>
+    <body class="article-page preview-mode">
+        
+    <script>
+    (function(a,b,c,d){
+        a='//mktg.tags.f5.com/main/prod/utag.js';
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+    </script>
+
+        
+     
+        
+
+       	<div class="background-cut " style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a12/optimize/article-background-image.jpg);"></div>
+        
+
+
+<nav class="conf12-skip-links__nav" role="navigation">
+	<a href="#nav" class="conf12-skip-links__item">Skip to main navigation</a>
+
+	<a href="#content" class="conf12-skip-links__item">Skip to main content</a>
+
+	<a href="#footer" class="conf12-skip-links__item">Skip to footer</a>
+</nav>
+        
+
+<div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="megamenu-background"></div>
+
+	<div id="nav" class="fullscreen-wrapper header-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg labs-nav ">
+            <div class="container navbar-wrapper">
+                <a class="navbar-brand" href="../../../labs.html">
+                    <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <metadata>
+                            <rdf:RDF>
+                                <cc:Work rdf:about="">
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                    <dc:title/>
+                                </cc:Work>
+                            </rdf:RDF>
+                        </metadata>
+
+                        <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+                        <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+                        <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+                    </svg>
+                    <span>
+
+                        APPLICATION
+                        <br/> THREAT
+                        <br/> INTELLIGENCE
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  
+                    <div class="nav-wrap ml-lg-auto">
+                        <div class="upper-navigation">
+                            <div class="subscribe-item upper-nav-item">
+                                <a class="subscribe-link upper-nav-btn" href="../../subscribe.html">
+                                    <span class="upper-subscribe-ico ico"></span>
+                                    <span class="upper-navigation-content">Subscribe</span>
+                                </a>
+                            </div>
+                            <div class="search-item upper-nav-item">
+                                <a class="search-link upper-nav-btn">
+                                    <span class="upper-search-ico ico"></span>
+                                    <span class="upper-navigation-content">Search</span>
+                                </a>
+                                <form class="form-inline my-2 my-lg-0 search-form" method="get" action="../../search%EF%B9%96q=test.html" id="searchForm">
+                                    <div class="container">
+                                        <div class="search-input-container">
+                                            <a class="close-search-button"></a>
+                                            <input class="form-control mr-sm-2 " type="search" name="q" title="Cannot search for a blank query" placeholder="Search" required pattern="^(?!\s*$).+" aria-label="Search" id="search-input" lang="en"/>
+                                            <button class="btn btn-search  upper-nav-btn" type="submit"> <span class="upper-search-ico ico"></span> <span class="submit-text">Submit</span></button>
+                                        </div>
+    
+                                    </div>
+                                </form>
+                            </div>
+                            
+
+
+
+
+                        </div>
+                        
+<ul class="navbar-nav">
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../threat-intelligence.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Threats</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../ciso-to-ciso.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>CISO-to-CISO</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../application-protection.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Application Protection</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../rss-feeds.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>RSS Feeds</span>
+	</a></li>
+</ul>
+                     
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
+
+</div>
+<div>
+
+	
+    
+    
+
+
+</div><div class="c02-header-area aem-GridColumn aem-GridColumn--default--12"><div class="cq-placeholder section" data-emptytext="Article: Header area configuration"></div>
+
+    
+        
+       
+        <section class="container-fluid c02-header-area__main-article details fill-main-container">
+            <div class="c02-header-area__heroImageBackground" style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a12/optimize/article-background-image.jpg);"></div>
+            <div class="c02-header-area__main-article-overlay"></div>
+           
+            <div class="row">
+                <div class="align-bottom c02-header-area__article-wrap">
+                    <div class="info-row clearfix">
+                    	<a href="../../search%EF%B9%96q=Strategies.html">
+	                        <div class="category">
+	                            <span class="badge badge-secondary c02-header-area__badge">Strategies</span>
+	                        </div>
+                        </a>
+                        <div class="c02-header-area__additional-info">
+                            <div class="date U:padding-x">
+                                <span>November 18, 2021</span>
+                               
+                                
+                                
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="c02-header-area__main-articles-title">
+                        <h1>
+                            The Ins and Outs of Digital Fraud
+                        </h1>
+                    </div>
+                    <div class="c02-header-area__additional-info U:display-flex">
+                    	
+	                    	<div class="c02-header-area__type  U:display-flex article-ico-wrap big-ico-wrap mid-point">
+	                        	<span class="article"><i></i>article</span>
+	                        </div>
+	                    	<div class="c02-header-area__content-duration U:display-flex ">
+	                        	<span>15 min. read</span>
+	                        </div>
+                        
+                        
+                    </div>
+                    <div class="c02-header-area__author-name tags">
+                        By <a class="c02-header-area__author-name tag-item" href="../../search.author_Sander+Vinberg.html">Sander Vinberg</a><a class="c02-header-area__author-name tag-item" href="../../search.author_Raymond+Pompon.html">Raymond Pompon</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+   		<div id="content"></div>
+    
+    
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row">
+        <div class="a01-container section">
+    <div class="a01-container-col-left">
+        <div data-component-type="article" class="c06-social-sharing section">
+
+
+
+<div class="addthis_share c06-social-sharing__links ">
+	
+	
+    <span class="addthis_share_button twitter addthis_sharing_toolbox" data-service="twitter" data-url="https://www.f5.com/labs/articles/cisotociso/the-ins-and-outs-of-digital-fraud.html" data-description="Retail fraud, identity theft, account takeovers, stolen payment cards—it feels like digital fraud is everywhere. Understand it better to fight it more effectively." data-title="The Ins and Outs of Digital Fraud | F5 Labs- Sander Vinberg, Raymond Pompon">
+        <span class="social-bulb xs-mr-15 twitter"></span>
+    </span>
+    <span class="addthis_share_button linkedin addthis_sharing_toolbox" data-service="linkedin" data-url="https://www.f5.com/labs/articles/cisotociso/the-ins-and-outs-of-digital-fraud.html" data-description="Retail fraud, identity theft, account takeovers, stolen payment cards—it feels like digital fraud is everywhere. Understand it better to fight it more effectively." data-title="The Ins and Outs of Digital Fraud | F5 Labs- Sander Vinberg, Raymond Pompon">
+        <span class="social-bulb xs-mr-15 linkedin"></span>
+    </span>
+    <span class="addthis_share_button facebook addthis_button_facebook addthis_sharing_toolbox" data-service="facebook" data-url="https://www.f5.com/labs/articles/cisotociso/the-ins-and-outs-of-digital-fraud.html" data-description="Retail fraud, identity theft, account takeovers, stolen payment cards—it feels like digital fraud is everywhere. Understand it better to fight it more effectively." data-title="The Ins and Outs of Digital Fraud | F5 Labs- Sander Vinberg, Raymond Pompon">
+        <span class="social-bulb xs-mr-15 facebook"></span>
+    </span>
+    <a class="mail" target="_blank" href="mailto:?subject=The%20Ins%20and%20Outs%20of%20Digital%20Fraud%20%7C%20F5%20Labs-%20Sander%20Vinberg,%20Raymond%20Pompon&amp;body=Checkout%20this%20great%20article%20I%20read%20on%20F5%20Labs%20%20/content/f5-labs-v2/en/labs/articles/cisotociso/the-ins-and-outs-of-digital-fraud" rel="noreferrer">
+        <span class="social-bulb xs-mr-15 mail"></span>
+    </a>
+    
+</div></div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-center">
+        <div data-component-type="article" class="a03-article-body section">
+
+<div id="content">
+    <div class="a03-article-body__content">
+        
+    </div>
+    <div class="a22-include-vitals-on-mobile a04-include section">
+	
+    
+
+
+    
+        
+        
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        
+
+
+    
+
+    
+
+
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>Fraud has become a pervasive part of the discussion around cybersecurity. In part, this reflects a change in attacker motives, as cyber-attacks were not always as vicious as they are now. From the 1980s into the early 2000s, hacking was not really about profit. It was primarily about achieving fame in the hacker community by demonstrating knowledge and insight about information systems, while also having a bit of fun. While many of the early high-profile hacks were indeed illegal and were prosecuted as such, they were also comparatively whimsical and harmless, except to the IT staff who had to clean up the networks afterward.<span class="footnoteList"></span><a id="_ftnrefAutoIncr1" class="footnote-ref" title="1" href="#_ftnAutoIncr1"><sup>1</sup></a></p>
+<p>By comparison, the present threat landscape is broken down into two significant approaches. Although other kinds of attackers exist, most significant attacks fall into one of two categories. One is nation-state actors, whose motivations primarily make up the espionage and (cyber)warfare portions of the <a href="https://www.f5.com/labs/articles/bylines/chew-on-this--how-our-digital-lives-create-real-world-risks" target="_blank" rel="no-opener no-referrer">CHEW model</a> of attacker motives. However, North Korean <a href="advanced-attackers-stealthy-patient-dangerous.html" target="_blank" rel="no-opener no-referrer">advanced attackers</a> such as APT38 have notably included cybercrime in their repertoire to generate liquid funds for the heavily sanctioned and internationally isolated North Korean regime.<span class="footnoteList"></span><a id="_ftnrefAutoIncr2" class="footnote-ref" title="2" href="#_ftnAutoIncr2"><sup>2</sup></a> The other mode is crime, which is incorporating an increasingly diverse set of fraud strategies into the cybercrime toolbox.<span class="footnoteList"></span><a id="_ftnrefAutoIncr3" class="footnote-ref" title="3" href="#_ftnAutoIncr3"><sup>3</sup></a></p>
+<p>Fraud is, accordingly, on everyone’s lips, but some misunderstandings about it threaten to blur the concept, which can make fraud look—erroneously—like a vague synonym for cybercrime itself. This does us no good, for two reasons: it overlooks the experience and knowledge in detecting and preventing fraud that other parties—law enforcement, financial institutions, and governments—have, and it makes it unclear exactly how to fight it.</p>
+<p>This article is an attempt to clarify what forms digital fraud takes and to differentiate it from other attacker behaviors that are often related or adjacent to fraud. The goal here is to help security practitioners understand where antifraud efforts and security converge and where they diverge. So, no matter how any particular organization is structured, fraud teams and security teams can better understand their respective responsibilities, strengths, and weaknesses.</p>
+<h2>Defining Fraud</h2>
+<p>We start with the FBI’s definition of fraud, because it contains the key element we need to understand when a cyberattack is, or includes, fraud. The FBI defines <i>fraud</i> as:</p>
+<p>The intentional perversion of the truth for the purpose of inducing another person or other entity in reliance upon it to part with something of value or to surrender a legal right. Fraudulent conversion and obtaining of money or property by false pretenses<a id="_ftnrefAutoIncr4" class="footnote-ref" title="4" href="#_ftnAutoIncr4"><sup>4</sup></a>.</p>
+<p>Leaving aside the fact that the word <i>fraudulent</i> is part of the definition of <i>fraud</i>, this definition helps us because it emphasizes that fraud is a financial crime that hinges on a lie. Successful lying requires some kind of contact, some social interaction, even if the contact is abstract and digital in form.</p>
+<p>This observation is key because it lets us quickly eliminate several things that are often fraud-adjacent and part of mitigating fraud but aren’t really fraud. Theft is chief among them. Stealing something usually means avoiding direct contact with your target; if there is no contact, there can’t really be a lie. This means that most credential theft, whether it takes the form of keylogger malware or exfiltrating hashed passwords, can’t be fraud, even though it is a precursor to fraud and part of the antifraud umbra. The same goes for most account takeover (ATO) attacks, although that is a gray area which we’ll touch on later. Enrichment of stolen data, such as cracking hashed passwords, is also fraud-adjacent but not fraud. Those passwords might be used for fraud in the future, but because they don’t involve any deception, they don’t fit our criteria.</p>
+<p>These distinctions also illuminate some critical differences between cybercrime and real-world crime: in the real world, theft immediately results in a loss to the victim, even if an attacker hasn’t had time to monetize the theft. In the case of digital theft, the loss is not immediately apparent (even if the victim immediately knows the theft occurred, which is rare) and only materializes when fraud occurs. This distinction works in converse as well—not all digital theft is in pursuit of fraud. In the case of piracy or intellectual property theft, the path to extracting value from the stolen goods involves no contact at all. This distinction is part of the reason why understanding digital fraud is not intuitive.</p>
+<h2>Flavors of Untruth</h2>
+<p>Traditionally, when the world was a little smaller, and checking people’s stories was harder, fraud often hinged on fabricating a background, therefore misrepresenting the implicit financial risk of working with the fraudster. Even though the story is contemporary, fraudster Anna Sorokin’s success in impersonating a wealthy heiress in order to obtain lines of credit, both official and unofficial, is a surprisingly successful example.<a id="_ftnrefAutoIncr5" class="footnote-ref" title="5" href="#_ftnAutoIncr5"><sup>5</sup></a> In contrast, most digital fraud is about impersonating another identity completely, not just fabricating a background. This takes the form of asserting that you are indeed the person whose name is on that payment card or who earned those air miles.</p>
+<p>Although many subtypes of fraudulent attacks exist, and the following is not an exhaustive list, the lying that underpins fraud really has only three kinds of targets: customers (meaning the public), private organizations, and public organizations.</p>
+<h3>Lying to the Public</h3>
+<p>Fraud cases like these don’t refer to an event in which someone’s credit card number is used for a fraudulent transaction because, while the citizen is a victim of a crime, they aren’t the target for the lie. Fraud against regular people is really about things like:</p>
+<ul class="hex-dark rte-custom">
+<li><span class="hex-dark rte-custom"><b>Dating fraud</b>: This type of fraud tends to take one of two forms. One is the appearance of a young woman looking for a man who can transfer some funds to her, after which romance will, we are told, abound. The other form is fraudsters looking for “romantic partners” who don’t mind handing off a package to someone, that is, looking for mules. In both cases, a fraud ecosystem is built around identifying likely targets, preparing plausible-looking bank accounts to accept funds, and collecting dossiers of believable information, such as photographs (usually of young women), that can be used as bait.</span></li>
+<li><span class="hex-dark rte-custom"><b>Wire fraud</b>: This type straddles the line between defrauding the customer and defrauding the bank, but it is incumbent on the banking customer to confirm the wire instructions with the appropriate account and routing numbers; the bank’s ability to intervene is limited. The lie here is really about the validity of the financial account information, which is usually delivered in a spoofed email purporting to be from the receiving bank.</span></li>
+</ul>
+<h3>Lying to Private Organizations</h3>
+<p>These are fraud cases where an organization is defrauded, which means there is either a higher value to a singular fraud attempt or multiple, smaller on-going fraud attempts happening.</p>
+<ul class="hex-dark rte-custom">
+<li><b><span class="hex-dark rte-custom"></span>Bank fraud</b>: A lot of the fraud that happens around financial institutions is actually better understood as fraud against banking customers (discussed under “Wire fraud”) or fraud against retail organizations (more on that later). However, application fraud, in which attackers use stolen or spoofed personal information to open an account in a victim’s name, is an interesting example. Fraudulent bank accounts are used as logistical support for other criminal activities, such as money laundering or providing a landing place for funds from a dating fraud, as detailed earlier. Figure 1 shows a cybercriminal advertisement for bank fraud services for stolen banking information.</li>
+</ul>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    
+
+    <!-- no link, lightbox -->
+    <a data-lightbox="Image preview" data-title="Figure 1. Screenshot of a tutorial for depositing fraudulent checks in a mobile banking app." href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/26--2021-oct-dec/20211118_digital_fraud/check_fraud.png">
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/26--2021-oct-dec/20211118_digital_fraud/check_fraud.png" data-component-type="platter" alt="Screenshot of a tutorial for depositing fraudulent checks in a mobile banking app." class="js-bg-lozad"/>
+        
+    </a>
+
+    <div class="a02-image__caption">
+        Figure 1. Screenshot of a tutorial for depositing fraudulent checks in a mobile banking app.
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p style="padding-left: 2.0em;">Another prevalent form of bank fraud has, as a precondition, an ATO attack. Brute force, credential stuffing, malware, and phishing can all play a role in the initial account takeover necessary for these kinds of attacks. After the takeover of a bank account, the attacker can make purchases or transfer funds to another account. In these kinds of attacks, maintaining control over a designated email address belonging to the customer can help attackers control communications between the bank and the customer, thereby maintaining better secrecy. Figure 2 is a cybercriminal advertisement for payment “cashout” services on the PayPal on stolen accounts from an ATO.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    
+
+    <!-- no link, lightbox -->
+    <a data-lightbox="Image preview" data-title="Figure 2. Compromised PayPal accounts for sale on the dark web." href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/26--2021-oct-dec/20211118_digital_fraud/paypal_ATO.png">
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/26--2021-oct-dec/20211118_digital_fraud/paypal_ATO.png" data-component-type="platter" alt="Compromised PayPal accounts for sale on the dark web." class="js-bg-lozad"/>
+        
+    </a>
+
+    <div class="a02-image__caption">
+        Figure 2. Compromised PayPal accounts for sale on the dark web.
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <ul class="hex-dark rte-custom">
+<li><span class="hex-dark rte-custom"><b>Retail fraud</b>: A huge amount of the fraud discussion is around the use of stolen payment card information to make purchases. This kind of fraud is often listed under bank fraud, but since the retailer is responsible for vetting the buyer’s identity, they are the target of the lie, so we think it is better conceptualized as a form of retail fraud. Because of this responsibility, retail organizations are also the ones who bear the brunt in the event that the actual card owner requests a reversal of charges.<br />
+ <br />
+ </span>Numbers are difficult to come by on this subject, but it appears that this is one of the most damaging and prevalent forms of digital fraud. It is certainly a battlefield for an ongoing technical war between attackers and organizations seeking to use additional signals to help weed out malicious from benevolent users. As security organizations try to implement increasingly sophisticated fingerprinting techniques, attackers are turning to masquerading toolsets, such as antidetection browsers and <a href="../threat-intelligence/genesis-marketplace--a-digital-fingerprint-darknet-store.html" target="_blank" rel="no-opener no-referrer">digital identity marketplaces</a>, as shown in Figure 3.</li>
+</ul>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    
+
+    <!-- no link, lightbox -->
+    <a data-lightbox="Image preview" data-title="Figure 3. Screenshot of a dark web advertisement for compromised payment cards." href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/26--2021-oct-dec/20211118_digital_fraud/payment_cards_for_sale.png">
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/26--2021-oct-dec/20211118_digital_fraud/payment_cards_for_sale.png" data-component-type="platter" alt="Screenshot of a dark web advertisement for compromised payment cards." class="js-bg-lozad"/>
+        
+    </a>
+
+    <div class="a02-image__caption">
+        Figure 3. Screenshot of a dark web advertisement for compromised payment cards.
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <ul class="hex-dark rte-custom">
+<li><span class="hex-dark rte-custom"><b>Hospitality fraud</b>: Observers of dark web activities have noted two sorts of fraud that involve hospitality, travel, or customer loyalty programs. One entails using fraudulent travel or accommodations services to harvest credentials and financial information for other use. This form belongs in the earlier section about fraud against the public. However, in another form of hospitality fraud organizations are targets of the lie. This involves using previously harvested loyalty points, air miles, rewards points, and the like for the purpose of booking travel services for others. Sometimes, the customers of the fraudulent service are aware of the source of their low prices—there are travel “agencies” in the attacker community that advertise travel services with the markdown from retail explicitly stated.</span></li>
+<li><span class="hex-dark rte-custom"><b>SIM swaps</b>: In this type of fraud, attackers gain control over mobile phone accounts by convincing mobile carriers to switch an account from one associated SIM card to another. While this is often enough for attackers to gain access to a core email account and perform ATO on subsidiary accounts, including banking apps, it is also important in that it can allow attackers to circumvent multifactor authentication that is routed to the phone. Some SIM swaps are done with the knowledge of local staff at a mobile carrier’s store, but many are the result of fraud.</span></li>
+</ul>
+<h3>Lying to Public Organizations</h3>
+<ul class="hex-dark rte-custom">
+<li><span class="hex-dark rte-custom"><b>Tax return fraud</b>: The most high-profile digital fraud against public organizations is the filing of fraudulent tax returns. This is a specific form of identity theft. In this case, the attacker assumes the identity of an innocent member of the public, gains access to the necessary financial and demographic information, and files a return before the citizen can file their own.<br />
+ <br />
+ These attacks require comparatively greater amounts of victim information prior to executing the attack. They are often broken up into disparate steps that are handled by specialists in different tasks, such as exfiltrating tax forms, gathering credentials to online tax preparation software, and laundering money afterward.</span></li>
+</ul>
+<h3>Special Mention: Phishing</h3>
+<p>Phishing and other forms of technically dependent social engineering are interesting edge cases that hinge on your interpretation of the FBI’s phrase “something of value.” For the most part, phishing that does not deliver malware is used to harvest credentials, and while credentials aren’t exactly objects of currency, they are increasingly the only prerequisite for a host of digital financial activity, including ecommerce and online banking. Phishing is, therefore, fraud against a member of the public that is also a precondition for another form of fraud, usually against a private organization such as a bank or online retailer. Figure 4 shows a cybercriminal advertisement for phishing services to assist less cyber-savvy fraudsters.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    
+
+    <!-- no link, lightbox -->
+    <a data-lightbox="Image preview" data-title="Figure 4. Screenshot of a dark web advertisement for web development of a phishing site or similar spoofing sites." href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/26--2021-oct-dec/20211118_digital_fraud/phishing_site_ad.png">
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/26--2021-oct-dec/20211118_digital_fraud/phishing_site_ad.png" data-component-type="platter" alt="Screenshot of a dark web advertisement for web development of a phishing site or similar spoofing sites." class="js-bg-lozad"/>
+        
+    </a>
+
+    <div class="a02-image__caption">
+        Figure 4. Screenshot of a dark web advertisement for web development of a phishing site or similar spoofing sites.
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h2>Fraud-Adjacent Attacker Activities</h2>
+<p>It’s clear that many attacker activities that are part of the fraud ecosystem don’t have the characteristic element of untruth for profit that defines fraud. Much of this category makes up the bulk of what information security practitioners spend their days fighting. An inexhaustive list includes:</p>
+<ul class="hex-dark rte-custom">
+<li><span class="hex-dark rte-custom"><b>Malware for stealing sensitive information</b>: Importantly, this kind of attack doesn’t require any fraud (again, unless the malware was delivered by phishing) because it doesn’t involve any contact between attacker and victim.</span></li>
+<li><span class="hex-dark rte-custom"><b>Money laundering</b>: Money laundering is a big part of the attacker ecosystem, since it is key to attackers turning money into a form they can actually spend. It’s not fraud but does represent a fruitful potential avenue for law enforcement to disrupt the monetization process of fraud.</span></li>
+<li><span class="hex-dark rte-custom"><b>Transport, drops, and mules</b>: Just as with money laundering, these are crucial parts of the whole fraud ecosystem that don’t involve contact with a victim, except in the case of unwitting mules (see Figure 5), many of whom are recruited via dating scams.</span></li>
+</ul>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    
+
+    <!-- no link, lightbox -->
+    <a data-lightbox="Image preview" data-title="Figure 5. Screenshot of a dark web advertisement for mule services." href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/26--2021-oct-dec/20211118_digital_fraud/mule_services.png">
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/26--2021-oct-dec/20211118_digital_fraud/mule_services.png" data-component-type="platter" alt="Screenshot of a dark web advertisement for mule services." class="js-bg-lozad"/>
+        
+    </a>
+
+    <div class="a02-image__caption">
+        Figure 5. Screenshot of a dark web advertisement for mule services.
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <ul class="hex-dark rte-custom">
+<li><span class="hex-dark rte-custom"><b>Attacker training</b>: The attacker community has a rich training economy. Here, more experienced actors train newcomers in the various aspects of fraud—both the actual fraudulent contacts previously discussed and the fraud-adjacent logistical items listed in this section. This is particularly interesting because it represents a monetization path for attackers that depends on, but is separate from, actual fraud. This is the attacker community paying the attacker community for services, which makes the value of any actual fraud higher, but without any sort of contact.</span></li>
+<li><span class="hex-dark rte-custom"><b>Account takeover</b>: ATO that happens via brute force or credential stuffing is a huge part of the threat landscape and a significant challenge for organizations to mitigate (along with phishing, discussed earlier). One important thing to note when discussing ATO as a fraud-support mechanism is the degree to which this kind of attack is becoming a specialized service that attackers outsource to experts. The growing sophistication and diversification of the attacker economy could potentially tip the scales temporarily in attackers’ favor as ATO best practices become more widely disseminated.</span></li>
+</ul>
+<h2>Conclusion</h2>
+<p>We’ve spent as much time talking about what fraud is <i>not</i> as we have talking about what it <i>is</i>. This is because, while fraud is everywhere, all attacks are not themselves fraud. So why does that matter? Are we just splitting hairs?</p>
+<p>It matters for two reasons. One reason is organizational. As awareness about digital fraud has grown, security teams increasingly find themselves working closely with fraud teams, but the architecture of these teams, and the delineation of responsibilities therein, varies widely. We’ve spoken to CISOs who have a fraud team under them. We’ve spoken to technical security experts who are embedded in fraud departments that report to the CFO. In the middle are organizations that have both teams but no formal junction, who have to collaborate to mitigate the threat. And, of course, lots of organizations with a small security team but no fraud team.</p>
+<p>Because of this variability, it is important to understand how different kinds of attacks relate to one another to leverage different kinds of expertise. Fraud teams have a greater understanding of the ways that digital and nondigital criminal behaviors intersect as well as a better big-picture understanding of the impacts of financial crime. Security teams have a greater understanding of what they can accomplish with technical controls, whether they are preventive, detective, or corrective. Perhaps even more importantly, they understand the limitations of those controls.</p>
+<p>The second reason it is important to understand what fraud is not is that it helps us better understand the characteristics of attacker monetization. Many of the ways that attackers monetize attacks don’t involve fraud but instead involve offloading what they stole to a specialist in another arena. A network intrusion specialist might sell hashed passwords to a cracking specialist. A web exploit specialist might sell a foothold in an enterprise network to a malware specialist, and so on. This kind of internal value-generation is difficult to detect in a tactically meaningful way; it also means that information that might not appear sensitive or valuable on the surface might be enriched into something very useful to attackers. Some attack chains start with the fraud and end several steps later with monetization. Some start with several other kinds of attacks, each of which features some monetization, with the fraud coming only at the end.</p>
+<p>In sum, not all fraud is a monetization play in the short run, and not all monetization involves fraud. In a context where a great deal of attacker activity happens behind closed doors, fraud can be a clue to attackers’ proximate and long-term goals. Occasionally, the true victims of attacker activity on your network might be another organization’s customers’ customers. Understanding the ways that different attacker capabilities link up can help us put specific, observed behaviors into better context.</p>
+
+</div>
+
+    
+</div>
+
+
+</div>
+</div>
+<div class="c20-newsletter-signup-display section">
+
+
+
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display__wrapper in-body purple-bg benefits-visible c20-newsletter-signup-display__newsletter-form">
+    <div class="c20-newsletter-signup-display__row form-and-benefits-row hide-after-submit">
+        <div class="c20-newsletter-signup-display__col">
+            <div class="c20-newsletter-signup-display__title only-mobile">
+                F5 Labs Newsletter
+            </div>
+            <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="c20-newsletter-signup-display__col">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+                    <div class="c20-newsletter-signup-display__title  only-desktop">
+                        F5 Labs Newsletter
+                    </div>
+                </div>
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+                        <div class="form-loader small-loader  
+                               
+                               "><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                        <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                            <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SUCCESS MESSAGE -->
+    <div class="c20-newsletter-signup-display__success-message benefits-visible newsletter-success-message  U:display-none">
+        <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display__wrapper in-body purple-bg known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+    	
+	<!-- KNOW USER MESSAGE -->
+	<div class="c20-newsletter-signup-display__success-message ">
+        <div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>
+    </div>
+</div>
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-right">
+        <div class="vitalsarea section">
+
+
+    
+        
+        
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        
+
+
+    
+
+    
+
+</div>
+<div data-component-type="article" class="a07-related-articles section"><!--googleoff: all-->
+
+    
+
+    
+
+    <div class="a07-related-articles " data-id="relatedArticlesId">
+        <div class="a07-related-articles__container">
+            <h4 class="a07-related-articles__container-title">Related Articles</h4>
+
+            <div id="related-article-hidden-items">
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Strategies.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Strategies</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">October 12, 2021</span>
+                        </div>
+                    </div>
+                    <a href="prioritizing-vulnerability-management-using-machine-learning.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Prioritizing Vulnerability Management Using Machine Learning
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center blog a07-related-articles__type-ico "><i></i>blog</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">10 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Strategies.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Strategies</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">October 05, 2021</span>
+                        </div>
+                    </div>
+                    <a href="https://www.f5.com/labs/articles/cisotociso/bgp-dns-and-the-fragility-of-our-critical-systems" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            BGP, DNS, and the Fragility of our Critical Systems
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">5 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Strategies.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Strategies</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">June 30, 2021</span>
+                        </div>
+                    </div>
+                    <a href="https://www.f5.com/labs/articles/cisotociso/cybersecurity-compliance-failures-in-financial-services" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Cybersecurity Compliance Failures in Financial Services
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">4 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--googleon: all--></div>
+<div class="a11-separation-line section">
+
+<div>
+	<div></div>
+</div></div>
+<div class="c20-newsletter-signup-display section">
+
+
+
+
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display__wrapper purple-bg right-rail c20-newsletter-signup-display__newsletter-form">
+	<div class="c20-newsletter-signup-display__signup-wrap">
+		<div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+			<div class="c20-newsletter-signup-display__title">
+				F5 Labs Newsletter
+            </div>
+            <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+            </div>
+		</div>
+		<div class="c20-newsletter-signup-display__row-wrap">
+			<div class="c20-newsletter-signup-display__signup-form-wrap">
+                	<!-- LOADER -->
+				<div id="loader" class="form-loader small-loader     
+                  hide-after-submit"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+				<form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit"></form>
+
+				<!-- SUCCESS MESSAGE -->
+                <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+					<div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>					
+				</div>
+			</div>
+		</div>
+
+    </div>
+    <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+        <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display__wrapper purple-bg right-rail known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__row-wrap ">
+			<div class="c20-newsletter-signup-display__signup-form-wrap">
+				
+				<!-- KNOWN USER MESSAGE -->
+                <div class="c20-newsletter-signup-display__success-message ">
+					<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row container-bottom">
+        <div class="a01-container section">
+    <div class="a01-container-col-left">
+        
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-center">
+        <div class="a10-article-summary section">
+    
+    
+        
+    
+    
+</div>
+<div data-component-type="article" class="a02-article-actions-container section">
+
+    
+        
+        
+        <div class="a02-article-actions-container">
+            
+
+
+
+
+
+        </div>
+    
+
+    
+</div>
+<div data-component-type="article" class="a04-article-author-bio section"><!-- <div class="cq-placeholder section" data-emptytext="Article: Author Bio" data-sly-test="false"></div> -->
+
+
+
+        
+        
+            <div class="a04-article-author-bio__content">
+                <div class="a04-article-author-bio__content__author-box">
+                    <div class="row">
+                        <div class="a04-article-author-bio__content__image-wrap">
+                            <div class="a04-article-author-bio__content__img-container">
+                                <img data-src="../../../content/dam/f5-labs-v2/_author-headshots/Sander_Vinberg.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                            </div>
+                        </div>
+                        <div class="a04-article-author-bio__content__data-wrap">
+                            <div>
+                                <b>About the author</b>
+                            </div>
+                            <div class="a04-article-author-bio__content__author-name U:margin-top-md">Sander Vinberg</div>
+                            <div class="a04-article-author-bio__content__author-descr"><p>Sander Vinberg is a Threat Research Evangelist for F5 Labs. As the lead researcher on the Application Protection Research Series, he specializes in the evolution of the threat landscape over the long term. He holds a master’s degree from the University of Washington in Information Management, as well as bachelor’s degrees in History and African and African-American Studies from the University of Chicago.</p>
+</div>
+                            <div>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="../../search.author_Sander+Vinberg.html">More articles from Sander Vinberg</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="a04-article-author-bio__content">
+                <div class="a04-article-author-bio__content__author-box">
+                    <div class="row">
+                        <div class="a04-article-author-bio__content__image-wrap">
+                            <div class="a04-article-author-bio__content__img-container">
+                                <img data-src="../../../content/dam/f5-labs-v2/_author-headshots/Ray_Pompon.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                            </div>
+                        </div>
+                        <div class="a04-article-author-bio__content__data-wrap">
+                            <div>
+                                <b>About the author</b>
+                            </div>
+                            <div class="a04-article-author-bio__content__author-name U:margin-top-md">Raymond Pompon</div>
+                            <div class="a04-article-author-bio__content__author-descr"><p>Raymond Pompon is the Director of F5 Labs. With over 20 years of experience in Internet security, he has worked closely with federal law enforcement in cyber-crime investigations. He was directly involved in several major intrusion cases, including the FBI undercover Flyhook operation and the NW Hospital botnet prosecution. He is the author of IT Security Risk Control Management: An Audit Preparation Plan published by Apress books.</p>
+</div>
+                            <div>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="../../search.author_Raymond+Pompon.html">More articles from Raymond Pompon</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+    
+    
+</div>
+<div name="Footnotes" data-component-type="article" class="a09-article-footnotes section">
+
+
+    
+        
+        <div class="a09-article-footnotes U:padding-y-lg display-old-labs-only">
+            <div class="links-box border-bottom-dotted article-bottom-box">
+                <div class="panel-group accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-parent="#accordion" class="trigger-collapse collapsed" aria-expanded="false">
+                                <h4 class="panel-title display-3">
+                                    Footnotes
+                                </h4>
+                                <div class="button-container">
+                                    <img alt="" class="js-bg-lozad expand-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/expand-button.png"/>
+                                    <img alt="" class="js-bg-lozad close-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/close-button.png"/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="collapse-panel">
+                            <div class="panel-body can-collapse collapsed">
+                                <p><p class="footnote-container"><span><a href="#_ftnrefAutoIncr1" class="footnote-actual" title="1" id="_ftnAutoIncr1"><sup>1</sup></a> One attack that exemplifies both the whimsy and emphasis on cleverness of those early days is the cross-site scripting worm that Samy Kamkar deployed on Myspace in 2005. <a href="https://en.wikipedia.org/wiki/Samy_%28computer_worm%29" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://en.wikipedia.org/wiki/Samy_%28computer_worm%29</a>.</span></p>
+<p class="footnote-container"><span><a href="#_ftnrefAutoIncr2" class="footnote-actual" title="2" id="_ftnAutoIncr2"><sup>2</sup></a> MITRE Corporation notes that North Korean threat groups have significant overlaps and that some intelligence analysts choose not to differentiate groups based on motives, targets, or trusted third parties, lumping them all under the name Lazarus Group. However, North Korean cybercrime operations (as opposed to espionage or cyberwarfare operations) tend to be grouped under the threat actor designation APT38, whether that denotes a different set of actors or just a set of “playbooks” that the Lazarus Group uses to generate funds. <a href="https://attack.mitre.org/groups/G0082/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://attack.mitre.org/groups/G0082/</a>.</span></p>
+<p class="footnote-container"><span><a href="#_ftnrefAutoIncr3" class="footnote-actual" title="3" id="_ftnAutoIncr3"><sup>3</sup></a> We’ve neglected to cover hacktivism here—while hacktivism is still alive and kicking, and reserves the right to come back and be disruptive at any time, it does not currently present a material risk to organizations on the same level that cybercrime and nation-state actors do.</span></p>
+<p class="footnote-container"><span><a href="#_ftnrefAutoIncr4" class="footnote-actual" title="4" id="_ftnAutoIncr4"><sup>4</sup></a> <a href="https://ucr.fbi.gov/crime-in-the-u.s/2011/crime-in-the-u.s.-2011/11offensedefinitions_final.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://ucr.fbi.gov/crime-in-the-u.s/2011/crime-in-the-u.s.-2011/11offensedefinitions_final.pdf</a></span></p>
+<p class="footnote-container"><span><a href="#_ftnrefAutoIncr5" class="footnote-actual" title="5" id="_ftnAutoIncr5"><sup>5</sup></a> For the full story, see <a href="https://en.wikipedia.org/wiki/Anna_Sorokin" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://en.wikipedia.org/wiki/Anna_Sorokin</a>.</span></p>
+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="a09-article-footnotes display-LC-only">
+            <details id="-button" class="a09-article-footnotes__button cmp-accordion__button ">
+                <summary class="a09-article-footnotes__title  display-as-">
+                    <span> Footnotes </span> <span class="a09-article-footnotes__icon cmp-accordion__icon"></span>
+                </summary>
+                <div class="a09-article-footnotes__panel">
+                    <p><p class="footnote-container"><span><a href="#_ftnrefAutoIncr1" class="footnote-actual" title="1" id="_ftnAutoIncr1"><sup>1</sup></a> One attack that exemplifies both the whimsy and emphasis on cleverness of those early days is the cross-site scripting worm that Samy Kamkar deployed on Myspace in 2005. <a href="https://en.wikipedia.org/wiki/Samy_%28computer_worm%29" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://en.wikipedia.org/wiki/Samy_%28computer_worm%29</a>.</span></p>
+<p class="footnote-container"><span><a href="#_ftnrefAutoIncr2" class="footnote-actual" title="2" id="_ftnAutoIncr2"><sup>2</sup></a> MITRE Corporation notes that North Korean threat groups have significant overlaps and that some intelligence analysts choose not to differentiate groups based on motives, targets, or trusted third parties, lumping them all under the name Lazarus Group. However, North Korean cybercrime operations (as opposed to espionage or cyberwarfare operations) tend to be grouped under the threat actor designation APT38, whether that denotes a different set of actors or just a set of “playbooks” that the Lazarus Group uses to generate funds. <a href="https://attack.mitre.org/groups/G0082/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://attack.mitre.org/groups/G0082/</a>.</span></p>
+<p class="footnote-container"><span><a href="#_ftnrefAutoIncr3" class="footnote-actual" title="3" id="_ftnAutoIncr3"><sup>3</sup></a> We’ve neglected to cover hacktivism here—while hacktivism is still alive and kicking, and reserves the right to come back and be disruptive at any time, it does not currently present a material risk to organizations on the same level that cybercrime and nation-state actors do.</span></p>
+<p class="footnote-container"><span><a href="#_ftnrefAutoIncr4" class="footnote-actual" title="4" id="_ftnAutoIncr4"><sup>4</sup></a> <a href="https://ucr.fbi.gov/crime-in-the-u.s/2011/crime-in-the-u.s.-2011/11offensedefinitions_final.pdf" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://ucr.fbi.gov/crime-in-the-u.s/2011/crime-in-the-u.s.-2011/11offensedefinitions_final.pdf</a></span></p>
+<p class="footnote-container"><span><a href="#_ftnrefAutoIncr5" class="footnote-actual" title="5" id="_ftnAutoIncr5"><sup>5</sup></a> For the full story, see <a href="https://en.wikipedia.org/wiki/Anna_Sorokin" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://en.wikipedia.org/wiki/Anna_Sorokin</a>.</span></p>
+</p>
+                </div>
+            </details>
+        </div>
+    
+    
+
+</div>
+<div data-component-type="article" class="a05-article-tags section">
+
+
+    
+        
+
+        <div class="a05-article-tags__tags-box">
+            <strong class="a05-article-tags__strong">TAGS: </strong>
+            <a href="../../search%EF%B9%96q=Fraud.html" class="a05-article-tags__a">Fraud</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=Relevance" class="a05-article-tags__a">Relevance</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Risk.html" class="a05-article-tags__a">Risk</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=CISO.html" class="a05-article-tags__a">CISO</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Retail+Fraud%22" class="a05-article-tags__a">Retail Fraud</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Phishing.html" class="a05-article-tags__a">Phishing</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Identity+Theft%22" class="a05-article-tags__a">Identity Theft</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Strategies.html" class="a05-article-tags__a">Strategies</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Bank+Fraud%22" class="a05-article-tags__a">Bank Fraud</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Defending+Applications%22" class="a05-article-tags__a">Defending Applications</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Wire+Fraud%22" class="a05-article-tags__a">Wire Fraud</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=%22account+takeover%22.html" class="a05-article-tags__a">account takeover</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Credit+Card+Fraud%22" class="a05-article-tags__a">Credit Card Fraud</a>
+        </div>
+
+    
+
+	
+    
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-right">
+        <div class="a04-include section"><!--googleoff: all-->
+<!-- inline style for wce-edit-mode -->
+
+    <!--googleoff: all-->
+
+    
+
+    
+
+    <div class="a07-related-articles " data-id="relatedArticlesId">
+        <div class="a07-related-articles__container">
+            <h4 class="a07-related-articles__container-title">Related Articles</h4>
+
+            <div id="related-article-hidden-items">
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Strategies.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Strategies</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">October 12, 2021</span>
+                        </div>
+                    </div>
+                    <a href="prioritizing-vulnerability-management-using-machine-learning.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Prioritizing Vulnerability Management Using Machine Learning
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center blog a07-related-articles__type-ico "><i></i>blog</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">10 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Strategies.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Strategies</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">October 05, 2021</span>
+                        </div>
+                    </div>
+                    <a href="https://www.f5.com/labs/articles/cisotociso/bgp-dns-and-the-fragility-of-our-critical-systems" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            BGP, DNS, and the Fragility of our Critical Systems
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">5 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Strategies.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Strategies</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">June 30, 2021</span>
+                        </div>
+                    </div>
+                    <a href="https://www.f5.com/labs/articles/cisotociso/cybersecurity-compliance-failures-in-financial-services" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Cybersecurity Compliance Failures in Financial Services
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">4 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--googleon: all-->
+    
+    
+
+<!--googleon: all--></div>
+
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+<div class="a28-article-tile-list-dynamic aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+    
+<div class="a28-article-tile-list-dynamic__full-width-wrap xs-pt-20 xs-pb-20 container-fluid fill-main-container xs-mb-0 ">
+
+    
+        
+    
+<script src="../../../etc.clientlibs/base/clientlibs/libs/jquery/v3.6.0.abec7e706514e7e243d79b097790f71b.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-swiper.74571ff9ea0f905f582197d9e94ab140.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/components/articles/a28-article-tile-list-dynamic/clientlib.30cecdc12e1944d71b6a455f0740a7b6.js"></script>
+
+
+
+ 
+ 
+<!-- TEXT LAYOUT -->
+
+
+<!-- ALBUM COVER LAYOUT -->
+
+	<section class="a28-article-tile-list-dynamic__container a28-article-tile-list-dynamic-albumLayout a28-article-tile-list-dynamic-albumLayout__image-articles" data-numbersOfArticles="3" data-size="3" id="1684486191">
+
+		<div class="a28-article-tile-list-dynamic__section-title text-center xs-pt-20 xs-pb-20">
+			<h2>Need-to-Know</h2>
+			<span class="a28-article-tile-list-dynamic__text-bigger">Expertly picked stories on threat intelligence</span>
+		</div>
+
+		<div id="article-tile-items" class="a28-article-tile-list-dynamic-albumLayout__article-tiles-wrap U:justify-content-center swiper-container">
+
+			
+
+			<div class="swiper-wrapper">
+				<div id="1684486191_0" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a13/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Top Risks</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>May 18, 2021</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/2021-application-protection-report-of-ransom-and-redemption">
+								<a href="../threat-intelligence/2021-application-protection-report-of-ransom-and-redemption.html">
+									<div class="article-title">
+										<h2 class="header-small">2021 Application Protection Report</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center report a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>report</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>60 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">Sander Vinberg</span>
+									
+										<span class="author-item">Raymond Pompon</span>
+									
+										<span class="author-item">Shahnawaz Backer</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			
+				<div id="1684486191_1" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a15/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=Encryption.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Encryption</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>July 17, 2020</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cryptonice">
+								<a href="../threat-intelligence/cryptonice.html">
+									<div class="article-title">
+										<h2 class="header-small">Introducing the Cryptonice HTTPS Scanner</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center article a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>article</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>12 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">David Warburton</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			
+				<div id="1684486191_2" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a08/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Top Risks</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>February 01, 2021</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cybersecurity-threats-to-the-covid-19-vaccine">
+								<a href="../threat-intelligence/cybersecurity-threats-to-the-covid-19-vaccine.html">
+									<div class="article-title">
+										<h2 class="header-small">Cybersecurity Threats to the COVID-19 Vaccine</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center article a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>article</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>9 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">Raymond Pompon</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="loader_1684486191" class="big-loader U:margin-bot-xl U:display-none"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+		<button class="a28-article-tile-list-dynamic__load-more-button btn btn-outline-inverse U:display-none" id="load_1684486191">
+			Load more stories</button>
+	</section>
+
+  
+
+<!-- MUTED LAYOUT -->
+
+
+</div>
+
+
+</div>
+<div data-component-type="category" class="u03-static-data-points aem-GridColumn aem-GridColumn--default--12"><!--googleoff: all-->
+
+    
+        
+        
+        <section class="u03-static-data-points__container fill-main-container">
+            <div class="full-site-container info-container-two-columns">
+                <div class="row">
+                    <div class="u03-static-data-points__left-column-container border-right">
+                        <div class="u03-static-data-points__left-column-wrap">
+                            <h3 class="display-3 u03-static-data-points__headline">Hundreds of apps will be attacked by the time you read this.</h3>
+                            <p><p>So, we get to work. We obsess over effective attack methods. We monitor the growth of IoT and its evolving threats. We dive deep into the latest crypto-mining campaigns. We analyze banking Trojan targets. We dissect exploits. We hunt for the latest malware. And then our team of experts share it all with you. For more than 20 years, F5 has been leading the app delivery space. With our experience, we are passionate about educating the security community-providing the intel you need to stay informed so your apps can stay safe.</p>
+</p>
+                        </div>
+                    </div>
+                    <div class="u03-static-data-points__right-column-container">
+                        <div class="u03-static-data-points__right-column-wrap">
+                            <h4 class="display-6">
+                                Every
+                            </h4>
+                            <h3 class="f5labs-big-number">9 hrs</h3>
+                            a critical vulnerability—with the potential for remote code execution—is released.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    
+
+<!--googleon: all--></div>
+<div class="u02-footer aem-GridColumn aem-GridColumn--default--12"><div>
+	
+<footer id="footer" class="u02-footer_labs conf06-footer-configuration">
+    <div class="conf06-footer-configuration__footer-logo">
+        <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <metadata>
+                <rdf:RDF>
+                    <cc:Work rdf:about="">
+                        <dc:format>image/svg+xml</dc:format>
+                        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                        <dc:title/>
+                    </cc:Work>
+                </rdf:RDF>
+            </metadata>
+            <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+            <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+            <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+        </svg>
+    </div>
+
+    <div class="conf06-footer-configuration__newslettersignup">
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg c20-newsletter-signup-display__newsletter-form">
+    <div class="c20-newsletter-signup-display__wrapper purple-bg  benefits-visible">
+
+        <div class="c20-newsletter-signup-display__signup-wrap">
+
+            <div class="c20-newsletter-signup-display__row form-and-benefits-row hide-after-submit">
+                <div class="c20-newsletter-signup-display__col">
+                    <div class="c20-newsletter-signup-display__title only-mobile">
+                        F5 Labs Newsletter
+                    </div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+                    </div>
+                </div>
+                <div class="c20-newsletter-signup-display__col">
+
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <div class="c20-newsletter-signup-display__title only-desktop">
+                            F5 Labs Newsletter
+                        </div>
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+                        <!-- LOADER -->
+                        <div id="loader" class="small-loader form-loader     
+                             "><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                        <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                            <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- SUCCESS MESSAGE -->
+            <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+                <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                <div class="c20-newsletter-signup-display__article-intro">
+                    Thanks for signing up! Get started with some of the articles below:
+                </div>
+                <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Fraud.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Fraud</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="../threat-intelligence/2020-phishing-and-fraud-report.html" class="text-article__link">
+
+                                <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">November 11, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Education.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Education</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="../education/what-is-the-cia-triad.html" class="text-article__link">
+
+                                <div class="text-article__article-title">What Is the CIA Triad?</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">July 09, 2019</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Strategies.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Strategies</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="the-three-main-cybersecurity-career-paths.html" class="text-article__link">
+
+                                <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex mid-point">
+                                    <span class="U:align-self-center">December 08, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center">9 min. read</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__wrapper purple-bg}">
+
+		<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+				<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+    <div class="conf06-footer-configuration__main-footer-container">
+        <div class="conf06-footer-configuration__main-footer-wrapper">
+          
+            <div class="conf06-footer-configuration__links-wrap first-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        <ul>
+            <li><a href="../../threat-intelligence.html" target="_blank" rel="no-opener no-referrer">THREATS</a></li>
+        
+            <li><a href="../../ciso-to-ciso.html" target="_blank" rel="no-opener no-referrer">CISO TO CISO</a></li>
+        
+            <li><a href="../../application-protection.html" target="_blank" rel="no-opener no-referrer">APPLICATION PROTECTION</a></li>
+        </ul>
+    
+
+    
+</div>
+            </div>
+            <div class="conf06-footer-configuration__links-wrap second-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        
+    
+
+    
+</div>
+            </div>
+                  
+
+            <div class="conf06-footer-configuration__social-links-wrap">
+                
+<div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Social media links configuration"></div> -->
+	<ul>
+		<li class="twitter">			
+			<a href="https://twitter.com/F5Labs" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb twitter xs-mr-15"></span></div><div class="float-left">TWITTER</div></a>
+		</li>
+	
+		<li class="linkedin">			
+			<a href="https://www.linkedin.com/showcase/f5labs/" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb linkedin xs-mr-15"></span></div><div class="float-left">LINKEDIN</div></a>
+		</li>
+	</ul>
+
+</div>
+
+            </div>
+        </div>
+        <div class="conf06-footer-configuration__foot-note  conf06-footer-configuration__footer-bottom footer-small">
+            <span class="conf06-footer-configuration__all-rights-reserved"> &copy; 2022 F5, Inc. All rights reserved</span> <br/>
+            
+
+                <a href="../../../company/policies.html">Policies</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/privacy-notice.html">Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/trademarks.html">Trademarks</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../index.html" rel="noreferrer">Manage Subscriptions</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/F5-California-privacy-summary.html">California Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/privacy-notice.html#no-sell">Do Not Sell My Personal Information</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+            <span>
+                <span id="teconsent"></span>
+            </span>
+
+        </div>
+    </div>
+
+    <script class="n-lang-en" async="async" src="../../../../consent.trustarc.com/notice%EF%B9%96domain=f5.com&amp;c=teconsent&amp;js=nj&amp;noticeType=bb&amp;text=true&amp;gtm=1.js" crossorigin=""></script>
+  
+     <div>
+
+
+
+
+
+<div class="c20-newsletter-signup-display__popover-bg   ">
+    <div class=" c20-newsletter-signup-display popover  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+                    <div class="c20-newsletter-signup-display__title">F5 Labs Newsletter</div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+</div>
+                </div>
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+
+                        <!-- SUCCESS MESSAGE -->
+                        <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none ">
+                            <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                            <div class="c20-newsletter-signup-display__article-intro">
+                                Thanks for signing up! Get started with some of the articles below:
+                            </div>
+
+                            <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="../threat-intelligence/2020-phishing-and-fraud-report.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">November 11, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="../education/what-is-the-cia-triad.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">What Is the CIA Triad?</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">July 09, 2019</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="the-three-main-cybersecurity-career-paths.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex mid-point">
+                                                <span class="U:align-self-center">December 08, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center">9 min. read</span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                         
+                        </div>
+
+                        <!-- LOADER -->
+                        <div id="loader" class="U:display-none big-loader"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" c20-newsletter-signup-display popover c20-newsletter-signup-display__subscribed-already  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__title">You already have a subscription</div>
+                  
+                </div>
+               
+              
+            </div>
+          
+        </div>
+    </div>
+
+</div>
+</div>
+  
+</footer>
+ 
+</div></div>
+
+    
+</div>
+</div>
+
+
+     
+        
+    
+    
+
+    
+<script src="../../../etc.clientlibs/clientlibs/granite/jquery/granite/csrf.a9dcac4698709ca8e1cbc88363cf0793.js"></script>
+<script src="../../../etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.68e8a508c100f218cc66bb13a94d1002.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.d96c3f535f649b3c2392029bf4ce52cd.js"></script>
+
+
+ 
+
+	<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5095d30f38626622"></script>
+	
+
+    
+
+
+        <div id="consent_blackbar" style="position:fixed;bottom:200px;width:100%"></div>
+    </body>
+</html>

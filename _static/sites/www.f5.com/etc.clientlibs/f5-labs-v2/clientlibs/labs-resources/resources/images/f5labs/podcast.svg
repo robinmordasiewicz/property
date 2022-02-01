@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 59 (101010) - https://sketch.com -->
+    <title>A1F9485A-29F9-46EE-8958-3E93C336D908</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M13.9998572,11.2972573 L13.9998572,11.4046859 L13.9998572,14.7872573 L11.7104287,14.7872573 C11.3038572,14.7872573 10.9741429,14.457543 10.9741429,14.0506859 L10.9741429,12.033543 C10.9741429,11.6266859 11.3038572,11.2972573 11.7104287,11.2972573 L12.5367144,11.2972573 L12.5367144,10.1426858 C12.5367144,8.1926858 10.9501429,6.60611435 9.00014294,6.60611435 C7.04985722,6.60611435 5.46300008,8.1926858 5.46300008,10.1426858 L5.46300008,11.2972573 L6.28928579,11.2972573 C6.69614294,11.2972573 7.02585722,11.6266859 7.02585722,12.033543 L7.02585722,14.0506859 C7.02585722,14.457543 6.69614294,14.7872573 6.28928579,14.7872573 L3.99985722,14.7872573 L3.99985722,11.4046859 L3.99985722,11.2972573 L3.99985722,10.1426858 C3.99985722,7.38582865 6.24300008,5.14268575 9.00014294,5.14268575 C11.7567144,5.14268575 13.9998572,7.38582865 13.9998572,10.1426858 L13.9998572,11.2972573 Z M8.85959075,9.99999964e-05 L4.43306722,2.3591 L0.00449578859,4.7201 L0.00449578859,15.2801 L0.000399999986,15.2801 L4.42794748,17.6421 L8.85447102,20.0001 L13.2830424,17.6421 L17.709566,15.2801 L17.709566,4.7201 L17.7146857,4.7201 L13.2881622,2.3591 L8.85959075,9.99999964e-05 Z" id="path-1"></path>
+    </defs>
+    <g id="pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage,-Hero,-App-Stack,-Latest-News---Desktop" transform="translate(-251.000000, -1546.000000)">
+            <g id="latest-news" transform="translate(250.000000, 1268.000000)">
+                <g id="content/article-listing/homepage_t1/desktop" transform="translate(0.000000, 266.000000)">
+                    <g id="category-&amp;-copy" transform="translate(0.000000, -27.000000)">
+                        <g id="all-copy" transform="translate(0.000000, 35.000000)">
+                            <g id="media-type">
+                                <g id="icon-small" transform="translate(0.000000, 4.000000)">
+                                    <g id="icon-sm/read-icon-sm/podcast">
+                                        <g id="icon-sm-color/white" transform="translate(1.142857, 0.000000)">
+                                            <mask id="mask-2" fill="white">
+                                                <use xlink:href="#path-1"></use>
+                                            </mask>
+                                            <use id="Mask" fill="#3D1553" xlink:href="#path-1"></use>
+                                            <g mask="url(#mask-2)" fill="#FFFFFF" id="Rectangle">
+                                                <g transform="translate(-1.142857, 0.000000)">
+                                                    <rect x="0" y="0" width="20" height="20"></rect>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

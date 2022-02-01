@@ -1,0 +1,2806 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8"/>
+    <title>2018 Application Protection Report</title>
+    <meta name="robots"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="In this report, we demystify the complexities of apps, explore how and where they’re attacked, and provide practical steps to take now to start winning the app protection battle."/>
+    <meta name="template" content="article-details-template"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>    
+    
+
+    <meta property="og:locale" content="en_US"/>
+
+    <meta property="og:type" content="website"/>
+
+    <meta property="og:title" content="2018 Application Protection Report"/>
+
+    <meta property="og:description" content="In this report, we demystify the complexities of apps, explore how and where they’re attacked, and provide practical steps to take now to start winning the app protection battle."/>
+
+    <meta property="og:site_name" content="F5 Labs"/>
+
+    <meta property="og:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+    <meta property="og:image_secure_url" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+
+    <meta property="fb:app_id" content="302184056577324"/>
+
+
+    <meta property="twitter:card" content="summary_large_image"/>
+
+    <meta property="twitter:title" content="2018 Application Protection Report"/>
+
+    <meta property="twitter:description" content="In this report, we demystify the complexities of apps, explore how and where they’re attacked, and provide practical steps to take now to start winning the app protection battle."/>
+
+    <meta property="twitter:site" content="@F5networks"/>
+
+    <meta property="twitter:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+    <meta property="twitter:creator" content="@F5networks"/>
+
+
+    <meta property="article:author" content="Raymond Pompon"/>
+
+    <meta property="article:published_time" content="2018-07-25T03:00:00.000-04:00"/>
+
+    <meta property="article:tag" content="Application Protection,Brute force attack,Credential stuffing,Eavesdropping,Credential theft"/>
+
+    <meta property="article:id" content="/content/f5-labs-v2/en/labs/articles/threat-intelligence/2018-Application-Protection-Report"/>
+
+    <meta property="article:read_time" content="90 min."/>
+
+    <meta property="article:topic" content="Top Risks"/>
+
+    <meta property="article:type" content="report"/>
+
+    <meta property="article:title" content="2018 Application Protection Report"/>
+
+<meta name="keywords" content="XSS,XSS,Application Protection,Brute force attack,Credential stuffing,Eavesdropping,Credential theft,Man-in-the-middle,DNS hijacking,Session hijacking,SYN, UDP, and HTTP floods,Key disclosure,Protocol abuse,Web Application Attacks,Cross-site request forgery,Network Tier,DNS spoofing,Top Risks,DDoS Attacks,Access Tier,Malware,TLS Tier,Man in the middle,Abuse of functionality,Services Tier,Cross-site request forgery,Client-side Attacks,Client-platform malware,Threats,App Infrastructure Attacks,Phishing,Client,DNS cache poisoning,Phishing,Dictionary attacks,DNS amplification,Cross-site scripting ,Injection,Man-in-the-browser,Man-in-the-middle,API Attacks,DNS Tier,Cross-site scripting,Protocol abuse,Certificate spoofing"/> 
+<link rel="canonical" href="2018-Application-Protection-Report.html"/>
+
+
+
+
+<meta property="labs:article:search-tab" content="Threats"/>
+
+    
+       	
+        <link href="https://assets.adobedtm.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://consent.trustarc.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://static.cloud.coveo.com" rel="rel=preconnect" crossorigin/>
+    
+
+    <script>window.F5=window.F5||{};window.F5.VisitorTracking=window.F5.VisitorTracking||{"isConfigEnabled":true,"tealiumScriptAsyncUrl":"//mktg.tags.f5.com/main/prod/utag.js","tealiumScriptSyncUrl":"//mktg.tags.f5.com/main/prod/utag.sync.js","visitorTrackingService":"tealium","isTealiumActive":true,"isLegacyActive":false,"legacyLibWarmingUrls":["https://assets.adobedtm.com","https://www.google-analytics.com","https://www.googletagmanager.com"]}</script>
+
+    <script src="../../../../mktg.tags.f5.com/main/prod/utag.sync.js"></script>
+    <!-- If JS enable will change the HTML class tag to "js"-->
+<script>
+    document.documentElement.className = document.documentElement.className.replace("js-off","js-on");
+</script>
+<!-- If JS enable will change the HTML class tag to "js" -->
+    
+    
+    
+
+    
+    
+
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/apple-touch-icon.png"/>
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-16x16.png"/>
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-32x32.png"/>
+    
+    <link rel="mask-icon" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/safari-pinned-tab.svg" color="#e21d38"/>
+
+    
+    
+
+    
+    
+<link rel="stylesheet" href="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.4921b04fbcd148d027b0a9a0b7fb303c.css" type="text/css">
+
+
+
+
+    <script src="https://app-aba.marketo.com/js/forms2/js/forms2.min.js"></script>
+    
+    
+
+<script>
+    window.digitalData = {"labs":{"articleAuthor":["raymond pompon"],"articlePostDate":"Jul 25, 2018","labsReadingTime":"90 min.","vitals":{"labsAttackType":["DDoS Attack, App Infrastructure Attack, Web Application Attack, Client-side Attack"],"labsAttackMethod":["Dictionary Attacks, DNS Cache Poisoning, DNS Hijacking, DNS Spoofing, MiTM, Eavesdropping, Protocol Abuse, Key Disclosure, Certificate Spoofing, Session Hijacking, Cross-site Request Forgery, Cross-site Scripting, Malware, MiTB, SYN, UDP, and HTTP Flood, DNS Amplification, Heavy URL, Brute Force, Credential Stuffing, Credential Theft, Phishing, Session Theft, Abuse of Functionality, API Attacks, Injection"],"labsAppTiers":["client","services","access","tls","dns","network"]},"labsTags":["Brute force attack","Credential stuffing","Credential theft","Eavesdropping","Man-in-the-middle","Session hijacking","DNS hijacking","SYN, UDP, and HTTP floods","Key disclosure","Protocol abuse","Web Application Attacks","Cross-site request forgery","Network Tier","DNS spoofing","Top Risks","DDoS Attacks","Access Tier","Malware","TLS Tier","Man in the middle","Abuse of functionality","Services Tier","Cross-site request forgery","Client-side Attacks","Client-platform malware","Threats","App Infrastructure Attacks","Phishing","Client","DNS cache poisoning","Phishing","Dictionary attacks","DNS amplification","Cross-site scripting ","Injection","Man-in-the-browser","Man-in-the-middle","API Attacks","DNS Tier","Cross-site scripting","Protocol abuse","Certificate spoofing"]},"page":{"pageInfo":{"pageName":"www:f5.labs.v2:labs:articles:threat-intelligence:2018-application-protection-report","destinationUrl":"https://www.f5.com/labs/articles/threat-intelligence/2018-Application-Protection-Report.html","subDomain":"www","referringUrl":"https://www.f5.com/labs/application-protection","referringPageName":"www:f5.labs.v2:labs:application-protection","language":"en","version":""},"category":{"primaryCategory":"labs","subCategory1":"articles","subCategory2":"threat-intelligence","subCategory3":"2018-application-protection-report"},"contentInfo":{"articleAuthor":["raymond pompon"],"articlePostDate":"Jul 25, 2018","labsReadingTime":"90 min.","vitals":{"labsAttackType":["DDoS Attack, App Infrastructure Attack, Web Application Attack, Client-side Attack"],"labsAttackMethod":["Dictionary Attacks, DNS Cache Poisoning, DNS Hijacking, DNS Spoofing, MiTM, Eavesdropping, Protocol Abuse, Key Disclosure, Certificate Spoofing, Session Hijacking, Cross-site Request Forgery, Cross-site Scripting, Malware, MiTB, SYN, UDP, and HTTP Flood, DNS Amplification, Heavy URL, Brute Force, Credential Stuffing, Credential Theft, Phishing, Session Theft, Abuse of Functionality, API Attacks, Injection"],"labsAppTiers":["client","services","access","tls","dns","network"]},"labsTags":["Brute force attack","Credential stuffing","Credential theft","Eavesdropping","Man-in-the-middle","Session hijacking","DNS hijacking","SYN, UDP, and HTTP floods","Key disclosure","Protocol abuse","Web Application Attacks","Cross-site request forgery","Network Tier","DNS spoofing","Top Risks","DDoS Attacks","Access Tier","Malware","TLS Tier","Man in the middle","Abuse of functionality","Services Tier","Cross-site request forgery","Client-side Attacks","Client-platform malware","Threats","App Infrastructure Attacks","Phishing","Client","DNS cache poisoning","Phishing","Dictionary attacks","DNS amplification","Cross-site scripting ","Injection","Man-in-the-browser","Man-in-the-middle","API Attacks","DNS Tier","Cross-site scripting","Protocol abuse","Certificate spoofing"]}}};
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmContentParam = urlParams.get("utm_content");
+    if (utmContentParam && window.digitalData.user != undefined && window.digitalData.user.userInfo) {
+        const utmContentParamArray = utmContentParam.split("-");
+        if (utmContentParamArray.length >= 3) {
+            window.digitalData.user.userInfo.digitalSignal = utmContentParamArray[2];
+        }
+    }
+</script>
+<script>
+    window.utag_data = {"page.pageInfo.pageName":"www:f5.labs.v2:labs:articles:threat-intelligence:2018-application-protection-report","page.pageInfo.destinationUrl":"https://www.f5.com/labs/articles/threat-intelligence/2018-Application-Protection-Report.html","page.pageInfo.subDomain":"www","page.pageInfo.referringUrl":"https://www.f5.com/labs/application-protection","page.pageInfo.referringPageName":"www:f5.labs.v2:labs:application-protection","page.pageInfo.language":"en","page.pageInfo.version":"","page.category.primaryCategory":"labs","page.category.subCategory1":"articles","page.category.subCategory2":"threat-intelligence","page.category.subCategory3":"2018-application-protection-report","page.contentInfo.articleAuthor[0]":"raymond pompon","page.contentInfo.articlePostDate":"Jul 25, 2018","page.contentInfo.labsReadingTime":"90 min.","page.contentInfo.vitals.labsAttackType[0]":"DDoS Attack, App Infrastructure Attack, Web Application Attack, Client-side Attack","page.contentInfo.vitals.labsAttackMethod[0]":"Dictionary Attacks, DNS Cache Poisoning, DNS Hijacking, DNS Spoofing, MiTM, Eavesdropping, Protocol Abuse, Key Disclosure, Certificate Spoofing, Session Hijacking, Cross-site Request Forgery, Cross-site Scripting, Malware, MiTB, SYN, UDP, and HTTP Flood, DNS Amplification, Heavy URL, Brute Force, Credential Stuffing, Credential Theft, Phishing, Session Theft, Abuse of Functionality, API Attacks, Injection","page.contentInfo.vitals.labsAppTiers[0]":"client","page.contentInfo.vitals.labsAppTiers[1]":"services","page.contentInfo.vitals.labsAppTiers[2]":"access","page.contentInfo.vitals.labsAppTiers[3]":"tls","page.contentInfo.vitals.labsAppTiers[4]":"dns","page.contentInfo.vitals.labsAppTiers[5]":"network","page.contentInfo.labsTags[0]":"Brute force attack","page.contentInfo.labsTags[1]":"Credential stuffing","page.contentInfo.labsTags[2]":"Credential theft","page.contentInfo.labsTags[3]":"Eavesdropping","page.contentInfo.labsTags[4]":"Man-in-the-middle","page.contentInfo.labsTags[5]":"Session hijacking","page.contentInfo.labsTags[6]":"DNS hijacking","page.contentInfo.labsTags[7]":"SYN, UDP, and HTTP floods","page.contentInfo.labsTags[8]":"Key disclosure","page.contentInfo.labsTags[9]":"Protocol abuse","page.contentInfo.labsTags[10]":"Web Application Attacks","page.contentInfo.labsTags[11]":"Cross-site request forgery","page.contentInfo.labsTags[12]":"Network Tier","page.contentInfo.labsTags[13]":"DNS spoofing","page.contentInfo.labsTags[14]":"Top Risks","page.contentInfo.labsTags[15]":"DDoS Attacks","page.contentInfo.labsTags[16]":"Access Tier","page.contentInfo.labsTags[17]":"Malware","page.contentInfo.labsTags[18]":"TLS Tier","page.contentInfo.labsTags[19]":"Man in the middle","page.contentInfo.labsTags[20]":"Abuse of functionality","page.contentInfo.labsTags[21]":"Services Tier","page.contentInfo.labsTags[22]":"Cross-site request forgery","page.contentInfo.labsTags[23]":"Client-side Attacks","page.contentInfo.labsTags[24]":"Client-platform malware","page.contentInfo.labsTags[25]":"Threats","page.contentInfo.labsTags[26]":"App Infrastructure Attacks","page.contentInfo.labsTags[27]":"Phishing","page.contentInfo.labsTags[28]":"Client","page.contentInfo.labsTags[29]":"DNS cache poisoning","page.contentInfo.labsTags[30]":"Phishing","page.contentInfo.labsTags[31]":"Dictionary attacks","page.contentInfo.labsTags[32]":"DNS amplification","page.contentInfo.labsTags[33]":"Cross-site scripting ","page.contentInfo.labsTags[34]":"Injection","page.contentInfo.labsTags[35]":"Man-in-the-browser","page.contentInfo.labsTags[36]":"Man-in-the-middle","page.contentInfo.labsTags[37]":"API Attacks","page.contentInfo.labsTags[38]":"DNS Tier","page.contentInfo.labsTags[39]":"Cross-site scripting","page.contentInfo.labsTags[40]":"Protocol abuse","page.contentInfo.labsTags[41]":"Certificate spoofing"};
+</script>
+
+
+    
+    <script>
+        ;(function(win, doc, style, timeout) {
+            var STYLE_ID = 'at-body-style';
+
+            function getParent() {
+                return doc.getElementsByTagName('head')[0];
+            }
+
+            function addStyle(parent, id, def) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.createElement('style');
+                style.id = id;
+                style.innerHTML = def;
+                parent.appendChild(style);
+            }
+
+            function removeStyle(parent, id) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.getElementById(id);
+
+                if (!style) {
+                    return;
+                }
+
+                parent.removeChild(style);
+            }
+
+            addStyle(getParent(), STYLE_ID, style);
+            setTimeout(function() {
+                removeStyle(getParent(), STYLE_ID);
+            }, timeout);
+        }(window, document, "body {opacity: 0 !important}", 3000));
+    </script>
+
+    <script src="../../../../assets.adobedtm.com/launch-EN37b07f3d0fa64d53b299e28194b30e0a.min.js" async></script>
+
+
+</head>
+    <body class="article-page preview-mode">
+        
+    <script>
+    (function(a,b,c,d){
+        a='//mktg.tags.f5.com/main/prod/utag.js';
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+    </script>
+
+        
+     
+        
+
+       	<div class="background-cut " style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a04/optimize/article-background-image.jpg);"></div>
+        
+
+
+<nav class="conf12-skip-links__nav" role="navigation">
+	<a href="#nav" class="conf12-skip-links__item">Skip to main navigation</a>
+
+	<a href="#content" class="conf12-skip-links__item">Skip to main content</a>
+
+	<a href="#footer" class="conf12-skip-links__item">Skip to footer</a>
+</nav>
+        
+
+<div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="megamenu-background"></div>
+
+	<div id="nav" class="fullscreen-wrapper header-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg labs-nav ">
+            <div class="container navbar-wrapper">
+                <a class="navbar-brand" href="../../../labs.html">
+                    <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <metadata>
+                            <rdf:RDF>
+                                <cc:Work rdf:about="">
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                    <dc:title/>
+                                </cc:Work>
+                            </rdf:RDF>
+                        </metadata>
+
+                        <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+                        <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+                        <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+                    </svg>
+                    <span>
+
+                        APPLICATION
+                        <br/> THREAT
+                        <br/> INTELLIGENCE
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  
+                    <div class="nav-wrap ml-lg-auto">
+                        <div class="upper-navigation">
+                            <div class="subscribe-item upper-nav-item">
+                                <a class="subscribe-link upper-nav-btn" href="../../subscribe.html">
+                                    <span class="upper-subscribe-ico ico"></span>
+                                    <span class="upper-navigation-content">Subscribe</span>
+                                </a>
+                            </div>
+                            <div class="search-item upper-nav-item">
+                                <a class="search-link upper-nav-btn">
+                                    <span class="upper-search-ico ico"></span>
+                                    <span class="upper-navigation-content">Search</span>
+                                </a>
+                                <form class="form-inline my-2 my-lg-0 search-form" method="get" action="../../search%EF%B9%96q=test.html" id="searchForm">
+                                    <div class="container">
+                                        <div class="search-input-container">
+                                            <a class="close-search-button"></a>
+                                            <input class="form-control mr-sm-2 " type="search" name="q" title="Cannot search for a blank query" placeholder="Search" required pattern="^(?!\s*$).+" aria-label="Search" id="search-input" lang="en"/>
+                                            <button class="btn btn-search  upper-nav-btn" type="submit"> <span class="upper-search-ico ico"></span> <span class="submit-text">Submit</span></button>
+                                        </div>
+    
+                                    </div>
+                                </form>
+                            </div>
+                            
+
+
+
+
+                        </div>
+                        
+<ul class="navbar-nav">
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../threat-intelligence.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Threats</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../ciso-to-ciso.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>CISO-to-CISO</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../application-protection.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Application Protection</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../rss-feeds.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>RSS Feeds</span>
+	</a></li>
+</ul>
+                     
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
+
+</div>
+<div>
+
+	
+    
+    
+
+
+</div><div class="c02-header-area aem-GridColumn aem-GridColumn--default--12"><div class="cq-placeholder section" data-emptytext="Article: Header area configuration"></div>
+
+    
+        
+       
+        <section class="container-fluid c02-header-area__main-article details fill-main-container">
+            <div class="c02-header-area__heroImageBackground" style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a04/optimize/article-background-image.jpg);"></div>
+            <div class="c02-header-area__main-article-overlay"></div>
+           
+            <div class="row">
+                <div class="align-bottom c02-header-area__article-wrap">
+                    <div class="info-row clearfix">
+                    	<a href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+	                        <div class="category">
+	                            <span class="badge badge-secondary c02-header-area__badge">Top Risks</span>
+	                        </div>
+                        </a>
+                        <div class="c02-header-area__additional-info">
+                            <div class="date U:padding-x">
+                                <span>July 25, 2018</span>
+                               
+                                
+                                
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="c02-header-area__main-articles-title">
+                        <h1>
+                            2018 Application Protection Report
+                        </h1>
+                    </div>
+                    <div class="c02-header-area__additional-info U:display-flex">
+                    	
+	                    	<div class="c02-header-area__type  U:display-flex article-ico-wrap big-ico-wrap mid-point">
+	                        	<span class="report"><i></i>report</span>
+	                        </div>
+	                    	<div class="c02-header-area__content-duration U:display-flex ">
+	                        	<span>90 min. read</span>
+	                        </div>
+                        
+                        
+                    </div>
+                    <div class="c02-header-area__author-name tags">
+                        By <a class="c02-header-area__author-name tag-item" href="../../search.author_Raymond+Pompon.html">Raymond Pompon</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+   		<div id="content"></div>
+    
+    
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row">
+        <div class="a01-container section">
+    <div class="a01-container-col-left">
+        <div data-component-type="article" class="c06-social-sharing section">
+
+
+
+<div class="addthis_share c06-social-sharing__links ">
+	
+	
+    <span class="addthis_share_button twitter addthis_sharing_toolbox" data-service="twitter" data-url="https://www.f5.com/labs/articles/threat-intelligence/2018-Application-Protection-Report.html" data-description="In this report, we demystify the complexities of apps, explore how and where they’re attacked, and provide practical steps to take now to start winning the app protection battle." data-title="2018 Application Protection Report- Raymond Pompon">
+        <span class="social-bulb xs-mr-15 twitter"></span>
+    </span>
+    <span class="addthis_share_button linkedin addthis_sharing_toolbox" data-service="linkedin" data-url="https://www.f5.com/labs/articles/threat-intelligence/2018-Application-Protection-Report.html" data-description="In this report, we demystify the complexities of apps, explore how and where they’re attacked, and provide practical steps to take now to start winning the app protection battle." data-title="2018 Application Protection Report- Raymond Pompon">
+        <span class="social-bulb xs-mr-15 linkedin"></span>
+    </span>
+    <span class="addthis_share_button facebook addthis_button_facebook addthis_sharing_toolbox" data-service="facebook" data-url="https://www.f5.com/labs/articles/threat-intelligence/2018-Application-Protection-Report.html" data-description="In this report, we demystify the complexities of apps, explore how and where they’re attacked, and provide practical steps to take now to start winning the app protection battle." data-title="2018 Application Protection Report- Raymond Pompon">
+        <span class="social-bulb xs-mr-15 facebook"></span>
+    </span>
+    <a class="mail" target="_blank" href="mailto:?subject=2018%20Application%20Protection%20Report-%20Raymond%20Pompon&amp;body=Checkout%20this%20great%20article%20I%20read%20on%20F5%20Labs%20%20/content/f5-labs-v2/en/labs/articles/threat-intelligence/2018-Application-Protection-Report" rel="noreferrer">
+        <span class="social-bulb xs-mr-15 mail"></span>
+    </a>
+    
+</div></div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-center">
+        <div data-component-type="article" class="a03-article-body section">
+
+<div id="content">
+    <div class="a03-article-body__content">
+        
+    </div>
+    <div class="a21-download-button section">
+
+
+    
+        
+        <div class="a21-download-button">
+            <div class="container U:flex-direction-reverse U:justify-content-desktop-end">
+                <div class="a21-download-button__actions U:display-flex">
+                    <a href="https://www.f5.com/content/dam/f5-labs-v2/article/pdfs/F5Labs_2018_Application_Protection_Report.pdf" class="btn btn-outline-inverse a21-download-button__button-download" target="_blank" rel="no-opener no-referrer">Download the Report</a>
+                </div>
+            </div>
+        </div>
+    
+
+    
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p> </p>
+<hr />
+
+<h4>Listen to the podcast on your way into the office!</h4>
+<ul class="loose">
+<li><a href="https://f5labs.fireside.fm/1" target="_blank" rel="no-opener no-referrer" rel="noreferrer">Episode 1</a></li>
+<li><a href="https://f5labs.fireside.fm/2" target="_blank" rel="no-opener no-referrer" rel="noreferrer">Episode 2</a></li>
+<li><a href="https://f5labs.fireside.fm/3" target="_blank" rel="no-opener no-referrer" rel="noreferrer">Episode 3</a></li>
+<li><a href="https://f5labs.fireside.fm/4" target="_blank" rel="no-opener no-referrer" rel="noreferrer">Episode 4</a></li>
+</ul>
+<p> </p>
+
+</div>
+
+    
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <table border="1" cellspacing="0" cellpadding="10">
+<tbody><tr><td bgcolor="#491B62"><span style="color: rgb(255,255,255);">We've begun producing the 2019 version of this Report, and are releasing portions of it as individual articles. <a href="application-protection-report-2019--episode-1--sensor-networks-r.html" style="color: rgb(247,234,76);">To see the first Episode in the 2019 Application Protection Report (and continue through the rest of the series), click here</a>.</span></td>
+</tr></tbody></table>
+
+</div>
+
+    
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p> </p>
+<p>Protecting applications is a critical task for security professionals, yet many feel they’re fighting a losing battle. In F5 Labs’ first annual, comprehensive Application Protection Report, we provide a practical model for understanding the complexities of applications, explore specifically how and where apps are being attacked, and offer practical steps you can take <i>now </i>to start—and keep—winning the app protection battle. Read the Executive Summary below.</p>
+<p>To download the full report, <a href="https://www.f5.com/content/dam/f5-labs-v2/article/pdfs/F5Labs_2018_Application_Protection_Report.pdf">click here</a>.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="pull-right half a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Application Tiers">
+        
+        <img data-src="https://www.f5.com/content/dam/f5/f5-labs/articles/20180725_app_protect_report/Figure3_Pg18.jpg" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Application Tiers
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h2>Executive Summary</h2>
+<p>Like coral reefs teeming with a variety of life, web applications are “colony creatures.” They consist of a multitude of independent components, running in separate environments with different operational requirements and supporting infrastructure (both in the cloud and on premises) glued together across networks. In this report, we examine that series of interacting tiers—application services, application access, transport layer services (TLS), domain name services (DNS), and the network—because each one is a potential target of attack.</p>
+<p>To get an objective viewpoint on how applications are being attacked, F5 Labs looked at data from a variety of sources, including our own internal datasets, WhiteHat Security vulnerabilities, Loryka attack data, and a Ponemon security survey of IT professionals commissioned by F5.</p>
+<p>In addition, we worked with faculty from the Whatcom Community College Cybersecurity Center to perform an extensive review of breach notification records in California, Washington, Idaho, and Oregon. (In each U.S. state, it is the state attorney general’s office that oversees and is responsible for enforcing state breach disclosure laws and notifications. Because of this role, some states publish data breach notification letters.)</p>
+<p>In these four states, we analyzed 301 breaches in 2017 and Q1 2018 and found that web application attacks were the top cause of all reported breaches at 30%. Earlier research done by F5 Labs into 433 major breach cases spanning 12 years and 26 countries found that applications were the initial targets in 53% of breaches.</p>
+<p>Protecting applications has always been a critical task and will continue to be in the future.</p>
+<p>But, what do CISOs need to know <i>now</i>?</p>
+<h2>What Apps Do We Use and Where Are They?</h2>
+<p>Our F5 Ponemon survey, <i>Web Application Security in the Changing Risk Landscape: Global Study</i>, found that a majority of organizations have little confidence in their ability to keep track of all their applications. Thirty-eight percent of respondents said they had “no confidence” in knowing where all the applications were in their organization. Yet, at the same time, respondents reported that 34% of their web applications were mission critical. Among the most commonly used web apps were backup and storage (83%), communication applications like email (71%), document management and collaboration (66%), and apps in the Microsoft Office suite (65%).</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class=" a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a>
+        
+        <img data-src="https://www.f5.com/content/dam/f5/f5-labs/articles/20180725_app_protect_report/Text_Callout_1_rev.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    
+</figure>
+</div>
+<div class="a02-image section">
+
+
+<figure class="pull-left half a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Pain Level of a DOS Attack">
+        
+        <img data-src="https://www.f5.com/content/dam/f5/f5-labs/articles/20180725_app_protect_report/Figure18_Pg35.jpg" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Pain Level of a DOS Attack
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h2>How Could Application Attacks Affect My Organization?</h2>
+<p>When apps are attacked there are many different impacts. Denial of service was the most painful for many organizations, with 81% of respondents rating loss of availability at 7 out of 10 on a scale of 1 to 10 (10 being highest). Breach of confidential or sensitive information (such as intellectual property or trade secrets) placed second with 77% of survey respondents rating it 7 to 10. Similarly, 73% of respondents rated tampering with an application at 7 to 10. Finally, 64% of respondents rated the loss of personally identifiable information (PII) of their customers, consumers, and employees at 7 to 10.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class=" a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Specific Threats Mapped to Application Attack Categories">
+        
+        <img data-src="https://www.f5.com/content/dam/f5/f5-labs/articles/20180725_app_protect_report/Figure6_Pg23.jpg" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Specific Threats Mapped to Application Attack Categories
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h2>What Are the Significant Risks?</h2>
+<p>Within the 2017 and Q1 2018 breach notification letters from the states’ attorneys general, we examined web attacks in detail. Specific application breaches included payment card theft via web injection (70%), website hacking (26%), and app database hacking (4%). We cross-referenced this with the relevant WhiteHat Security vulnerabilities, Loryka attack surveillance, and known exploits published by Exploit-DB, a CVE-compliant archive of public exploits<a href="#_ftn1"><sup>1</sup></a><a id="_ftnref1"></a> and corresponding vulnerable software,<a href="#_ftn2"><sup>2</sup></a><a id="_ftnref2"></a> to give us an idea of the most significant new risks.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="pull-right half a02-image__image">
+    <!-- link  -->
+    
+
+    <a href="https://www.f5.com/content/dam/f5-labs-v2/article/pdfs/F5Labs_2018_Application_Protection_Report.pdf" target="_blank" rel="no-opener no-referrer">
+        
+        <img data-src="https://www.f5.com/content/dam/f5/f5-labs/articles/20180725_app_protect_report/AppProtectionReportCover.jpg" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, no lightbox -->
+    
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        <a target="_blank" href="https://www.f5.com/content/dam/f5-labs-v2/article/pdfs/F5Labs_2018_Application_Protection_Report.pdf" rel="no-opener no-referrer">Download the full report now!</a>
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h3>Injection attacks against app services</h3>
+<p>The highest percentage (70%) of the breach reports for Q1 2018 were web injections that stole customer payment card information. Injection attacks allow an attacker to insert commands or new code directly into a running application (also known as tampering with an app) to pull off a malicious scheme. Over the past decade, 23% of breach records involved SQL injection attacks, the most infamous type of injection attack. Injection vulnerabilities (weaknesses that have not yet been exploited) are prevalent, as well. WhiteHat Security reported that 17% of all discovered vulnerabilities in 2017 were injection vulnerabilities. This problem is so significant that injection flaws are rated as the number one risk to applications on the OWASP Top 10 2017 list. For this reason, high priority should be given to finding, patching, and blocking injection vulnerabilities.</p>
+<p> </p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class=" a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a>
+        
+        <img data-src="https://www.f5.com/content/dam/f5/f5-labs/articles/20180725_app_protect_report/Text_Callout_2_rev.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h3>Account access hijacking</h3>
+<p>Breach records analysis shows that 13% of all web app breaches in 2017 and Q1 2018 were access-related. These broke down as follows: credentials stolen via compromised email (34.29%), access control misconfiguration (22.86%), brute force attacks to crack passwords (5.71%), credential stuffing from stolen passwords (8.57), and social engineering theft (2.76). Nearly 25% of the web app Exploit-DB scripts were also found to be access-related. The F5 Ponemon security survey showed that 75% of respondents were only using username and password for application authentication to critical web applications.</p>
+<p> </p>
+
+</div>
+
+    
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>For any important application, stronger authentication solutions such as federated identity or multi-factor should be considered. For external applications over which you don’t have full control, a cloud access security broker (CASB) can consolidate and augment authentication.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class=" a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Common User Attack Paths">
+        
+        <img data-src="https://www.f5.com/content/dam/f5/f5-labs/articles/20180725_app_protect_report/Figure29_pg44.jpg" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Common User Attack Paths
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h3>Deserialization attacks against app services</h3>
+<p>In 2017, deserialization attacks were somewhat low in number but vast in impact. The Apache Struts deserialization injection vulnerability was the hole that attackers used to breach Equifax and steal the identities of 148 million Americans and 15.2 million UK citizens.<a href="#_ftn3"><sup>3</sup></a><a id="_ftnref3"></a> Serialization occurs when an app converts its data into a format for transport; deserialization is the process of converting that data back again. These attacks are becoming more common because applications are now networked clusters of subsystems that require data-serialized communication streams. Attackers embed commands in the serialized data stream and pass them unfiltered directly into the heart of application engines. Thirty Exploit-DB scripts are related to deserialization.</p>
+<p>To protect against this type of attack, applications should scan and filter all user inputs, including serialization data streams.</p>
+<h3>Attacks against transport layer protection</h3>
+<p>While 63% of survey respondents said they always use SSL/TLS for their web applications, only 46% of survey respondents said they use SSL/TLS encryption for the majority (76-100%) of their applications. With so many transport layer encryption standards (such as SSL and TLS 1.0) still in use, even though they’ve been retired as “broken,” there’s an ongoing risk of eavesdropping or man-in-the-middle hijacks from attackers. Furthermore, 47% of organizations said they use self-signed certificates, which reduces the trustworthiness of their applications.</p>
+<p>DDoS attacks are pervasive across all levels of the application tier, so it’s critical that every organization have a DDoS response strategy.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class=" a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a>
+        
+        <img data-src="https://www.f5.com/content/dam/f5/f5-labs/articles/20180725_app_protect_report/Text_Callout_3_rev.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    
+</figure>
+</div>
+<div class="a02-image section">
+
+
+<figure class="pull-right half a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a>
+        
+        <img data-src="https://www.f5.com/content/dam/f5/f5-labs/articles/20180725_app_protect_report/Full_Pg72_VRgirl_red_bkgd.jpg" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h3>Scripting attacks against clients to hijack access</h3>
+<p>Attacks against app clients are often underreported because they target individuals, who are unlikely to be mentioned in a publicized breach report, and there are no regulatory reporting mandates like those that exist for application breaches. A common way a client is hijacked is via <a href="https://www.f5.com/labs/articles/education/what-is-cross-site-scripting--xss--" target="_blank" rel="no-opener no-referrer">cross-site scripting (XSS)</a>, which is one of the most prevalent vulnerabilities (30% of 2017 WhiteHat Security vulnerabilities, 9.24% of Exploit-DB scripts). XSS attacks can often lead to stolen user credentials or hijacked access. Cross-site request forgery (CSRF) is another way a client can be hijacked into unknowingly running unauthorized commands on a website. Both attacks involve a client app encountering malicious scripting code planted by an attacker somewhere on a website.</p>
+<p>Sites can help reduce scripting attacks by using web server options such as session cookies set to HTTP-only and domain restricted, as well as setting the X-frame-options to DENY.</p>
+<h3>Malware attacks against app clients</h3>
+<p>Clients are also attacked directly with malware that hijacks the browser to sniff or intercept the application authentication credentials. Malware that targets financial logins is quite common for both browser and mobile clients. While protection of the client device is something that has largely been ignored to date since it is difficult to control, tighter data privacy laws, such as the EU’s General Data Protection Regulation (GDPR), are likely to come down on poorly written app clients.</p>
+<p>Some web application firewall solutions can watch for suspicious connections by detecting compromised clients and filtering their access.</p>
+
+</div>
+
+    
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h2>Am I Doing Enough to Protect My Apps? How Do I Compare with My Peers?</h2>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="pull-left half a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a>
+        
+        <img data-src="https://www.f5.com/content/dam/f5/f5-labs/articles/20180725_app_protect_report/Pg96_App_Sec.jpg" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>The F5 Ponemon security survey offers some insight into how other organizations are wrangling application security. The first question is one of ownership: 28% of respondents said the CIO or CTO owns responsibility for the application security risk management process. Only 10% of CISOs own it, yet they will be in the hot seat in the event of a breach.</p>
+<p>The top three cited barriers to achieving a strong application security posture were “lack of visibility in the application layer,” “lack of skilled or expert personnel,” and “migration to the cloud environment.” The first and third response both speak to analysis and instrumentation of the application tiers, which are solvable problems with scanning, monitoring, and collaboration with the development team.</p>
+<p>At 26%, web application firewalls were the top means for securing applications; others were application scanning (20%) and penetration testing (19%). Surprisingly, 26% of organizations do not deploy application hardening procedures, a useful way to bolster application security.</p>
+<p> </p>
+
+</div>
+
+    
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h2>Four Steps to Take to Protect Applications</h2>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="pull-right half a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a data-title="Primary Application Protection Steps">
+        
+        <img data-src="https://www.f5.com/content/dam/f5/f5-labs/articles/20180725_app_protect_report/Figure68_Pg83.jpg" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        Primary Application Protection Steps
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>While all of these findings might seem to paint a bleak picture, taking these four steps will have a high impact on improving your application security and, for the most part, are not difficult to do.</p>
+<p><b>1. Understand your environment.</b></p>
+<p>Know what applications you have and what data repositories they access. Yes, determining this can be hard work, but it needs to be done. Focus on the apps your organization needs and the apps you build that your customers depend on. For the apps your organization needs, scan and inventory them regularly. For external applications your users depend on, a cloud access security broker (CASB) can be very helpful in counting and tracking app usage. For internal apps, it’s essential to have a good relationship with the developer team to track down applications, future app plans, and development environments.</p>
+<p><b>2. Reduce your attack surface.</b></p>
+<p>Any part of an application service that is visible on the Internet, either directly or indirectly, will be probed for possible exploitation by attackers. This surface is broad, given an app’s multiple tiers and the ever-increasing use of application programming interfaces (APIs) to share data with third parties. All exposed pieces should be access-controlled, patched, and hardened against attack. A good web application firewall (WAF)—our survey respondents’ #1 tool of choice—can buy you time to do this. Some WAFs can perform “virtual patching” by scanning application traffic and blocking known exploit attacks. They know what to block from automatic signature updates from threat intelligence feeds and vulnerability scans of your environment. This alleviates the time pressure to patch immediately when a new exploit is released, and it gives the operations team time to properly test and roll out fixes. Numerous preventable security incidents have occurred because security teams have not enabled the necessary security blocking features on their WAF. You should also segregate and partition your applications so that if a low-priority application gets breached, it can’t become a conduit to reach the higher priority systems. This can be done in code, with server isolation, sandboxes, lower privileged users, and even with firewalls.</p>
+<p> </p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class=" a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a>
+        
+        <img data-src="https://www.f5.com/content/dam/f5/f5-labs/articles/20180725_app_protect_report/Figure79_Pg85.jpg" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p> </p>
+<p><b>3. Prioritize defenses based on risk.</b></p>
+<p>Once you know which applications are important and have minimized your attack surface, identify applications that need additional resources. Your risk analysis doesn’t have to be perfect, just better than random guessing or biased decision making. So, use data to drive your risk strategy, figuring out what attackers would go after. Key data about your applications comes from security testing and scanning. Test internally developed code using internal scanners, code reviews, or a third party, which can give you an independent and knowledgeable perspective. With this information, you can properly assess the risk of any internally developed applications.</p>
+<p><b>4. Select flexible and integrated defense tools.</b></p>
+<p>You need a good but manageable selection of flexible, powerful solutions to cover controls for prevention, detection, and recovery from existing and emerging threats. Beyond the technical controls we’ve already mentioned—a web application firewall, a vulnerability scanning solution, and a CASB—protection needs to extend to all tiers that an application depends on. DNS servers should be well protected with DNS-savvy firewalls and be made highly available. Transport layer communications should be encrypted with a current acceptable standard of ciphers, and web servers should use HTTP Strict Transport Security (HSTS) to ensure encryption is fully covering all critical data flows. Security solutions should be consistent and well understood by security engineers. Many breaches occur despite these solutions simply because of a misunderstanding or misconfiguration of a product.</p>
+<p>Based on the potential impacts of DDoS attacks, it's essential to protect your applications at the network, application, and infrastructure levels with on-premises scrubbing equipment or hosted solutions. The important thing is to size the solution based on the risk to your applications and the likely threats.</p>
+<p> </p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="pull-right half a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a>
+        
+        <img data-src="https://www.f5.com/content/dam/f5/f5-labs/articles/20180725_app_protect_report/Pg97_serverless_computing.jpg" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>When it comes to protecting app clients, remember you have two classes of users: customers who access your apps and internal users who access apps on the Internet. To protect internal users, consider using federated identity or multi-factor authentication (MFA) for strong, reliable access control. For applications that only support username and password authentication (leaving your users open to access attacks like password guessing or stolen credentials), a CASB can help by consolidating and augmenting authentication for external apps. Protecting your customer’s app client sessions should also be done for any high-value applications. Some of the more powerful and flexible WAF systems can help you protect customers’ app client sessions by detecting bot attacks, brute-forcing, and logins from suspicious locations. This simple validation is great way to add another layer of protection for your customers as they access your apps.</p>
+<h2>What Does the Future of Application Protection Look Like? </h2>
+<h3>Serverless applications</h3>
+<p>“Serverless” is a new way for developers to build web applications without having to worry about servers and the app’s supporting infrastructure. The code and scripts developers write connect to APIs that directly trigger functions and services, instead of the traditional approach where the code runs within a server to call other servers. Serverless computing enables developers to focus on faster, more streamlined app development, and in the long run, serverless apps provide more flexibility and scalability. Just be aware that they are still vulnerable to the same kinds of attacks as traditional apps at every tier, especially against the primary user login pages and the APIs.</p>
+<p> </p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class=" a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a>
+        
+        <img data-src="https://www.f5.com/content/dam/f5/f5-labs/articles/20180725_app_protect_report/Text_Callout_4_rev.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    
+</figure>
+</div>
+<div class="a02-image section">
+
+
+<figure class="pull-left half a02-image__image">
+    <!-- link  -->
+    
+
+    <a href="https://www.f5.com/content/dam/f5-labs-v2/article/pdfs/F5Labs_2018_Application_Protection_Report.pdf" target="_blank" rel="no-opener no-referrer">
+        
+        <img data-src="https://www.f5.com/content/dam/f5/f5-labs/articles/20180725_app_protect_report/AppProtectionReportCover.jpg" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, no lightbox -->
+    
+
+    <!-- no link, lightbox -->
+    
+
+    <div class="a02-image__caption">
+        <a target="_blank" href="https://www.f5.com/content/dam/f5-labs-v2/article/pdfs/F5Labs_2018_Application_Protection_Report.pdf" rel="no-opener no-referrer">Download the full report now!</a>
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p> </p>
+<h3>Outsourcing of application security</h3>
+<p>The lack of skilled or expert personnel for security, cited as a main barrier in the F5 Ponemon security survey, will only continue to get worse for application defenders. Furthermore, with organization using an average of 765 different web applications, we can expect outsourcing of application security to grow, whether that means security functions such as anti-DDoS or web application security monitoring or moving to hosted platforms that provide security services as part of their offering. Outsourcing will require matching your specific security requirements to the outsourcer’s capabilities, focus, and experience in application security.</p>
+<h3>Transport Layer Security improvements</h3>
+<p>Because Transport Layer Security (TLS) 1.3 is a radical departure from previous iterations of the protocol, the security community will struggle with adoption. The specter of quantum computing is also hanging over TLS in the longer term. It is our opinion that TLS will suffer more severe shocks from an angle other than quantum computing, but those shocks are yet unknown. Organizations should keep an eye on browser support for TLS 1.3 and the major compliance standards regarding network encryption and updates in quantum computing.</p>
+<p> </p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class=" a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    <a>
+        
+        <img data-src="https://www.f5.com/content/dam/f5/f5-labs/articles/20180725_app_protect_report/Text_Callout_5_rev.png" data-component-type="platter" alt="" class="js-bg-lozad"/>
+    </a>
+
+    <!-- no link, lightbox -->
+    
+
+    
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p> </p>
+<h3>Application protection that follows the tiers</h3>
+<p>Since modern applications are collections of scripts, libraries, services, and devices, we hope to see security tools catch up to this paradigm. In the future, developers will have a broader spectrum of secure components and frameworks to choose from in a way that is dramatically different and better than today’s fragile and overly dependent ecosystem. Developers should ask for application frameworks that are “secure by default” with the capability to report security status and events in a standardized format. Defenders should look for security scanners that can continuously test application components in production in a safe but useful manner.</p>
+<h2>Conclusions and More Questions</h2>
+<p>After reading all of this, you might get the impression that web application security is intimidating. Perhaps—but there are some easy ways to get started. If you’re in the minority and aren’t using a web application firewall (WAF) yet, that would be a good first solution to investigate. Be sure to get proper training and make use of all the WAF features to help protect your applications. To quote our own guide to WAF configuration: “Start small, but most of all, just start.”<a href="#_ftn3"><sup>3</sup></a><a id="_ftnref3"></a></p>
+<p>Our goal in this report is to give you the information you need to answer the question, “What is the most important thing we can do now to protect our applications?” We have tried to anticipate and answer the kinds of questions CISOs would have regarding their application security. We hope you can use this report to fill in the gaps in your application security strategy—and that it will fuel productive conversations about risk and defense.</p>
+<p>What’s next? F5 Labs will continue to investigate threats and risks to applications and provide that information to you. Stay tuned.</p>
+<p><i>To see the full version of this report, including recommendations, click “Download” below.</i></p>
+
+</div>
+
+    
+</div>
+<div class="a21-download-button section">
+
+
+    
+        
+        <div class="a21-download-button">
+            <div class="container U:flex-direction-reverse U:justify-content-desktop-end">
+                <div class="a21-download-button__actions U:display-flex">
+                    <a href="https://www.f5.com/content/dam/f5-labs-v2/article/pdfs/F5Labs_2018_Application_Protection_Report.pdf" class="btn btn-outline-inverse a21-download-button__button-download" target="_blank" rel="no-opener no-referrer">Download the Report</a>
+                </div>
+            </div>
+        </div>
+    
+
+    
+</div>
+
+
+</div>
+</div>
+<div class="a04-include section"><!--googleoff: all-->
+<!-- inline style for wce-edit-mode -->
+
+    
+
+
+    
+        
+        <div class=" display-old-labs-only vitalsarea  js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/isogrid.png">
+            <div class="accordion only-mobile ">
+                <a class="trigger-collapse collapsed article-vital">
+                    
+                    <div class="button-container">
+                        <div class="x medium"><b></b><b></b><b></b><b></b></div>
+                    </div>
+                </a>
+                <div class="can-collapse collapsed ">
+                    <div class="row">
+                        <div class="vitals-wrap">
+                            <div>
+                                
+
+
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Type:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a target="_self">DDoS Attack, App Infrastructure Attack, Web Application Attack, Client-side Attack</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Method:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a target="_self">Dictionary Attacks, DNS Cache Poisoning, DNS Hijacking, DNS Spoofing, MiTM, Eavesdropping, Protocol Abuse, Key Disclosure, Certificate Spoofing, Session Hijacking, Cross-site Request Forgery, Cross-site Scripting, Malware, MiTB, SYN, UDP, and HTTP Flood, DNS Amplification, Heavy URL, Brute Force, Credential Stuffing, Credential Theft, Phishing, Session Theft, Abuse of Functionality, API Attacks, Injection</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="vital-item stack-wrap ">
+                            <h5 class="vital-header">App Tiers Affected:
+                            </h5>
+                            <div class="app-stack">
+                                <div class="above-top active">
+
+                                    <div class="bg js-bg-lozad active" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-above-top-active.svg">
+                                    </div>
+                                    <span>Client</span>
+
+                                </div>
+                                <div class="red-dots shorter">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="stack-top">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-top.png">
+                                    </div>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+
+                                <div class="layer-1 active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1-active.png" style="max-width: 80px;"/></div>
+                                    <span>Services</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-2 active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3-active.png" style="max-width: 80px;"/></div>
+                                    <span>Access</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-3 active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2-active.png" style="max-width: 80px;"/></div>
+                                    <span>TLS </span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-4  active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4-active.png" style="max-width: 80px;"/></div>
+                                    <span>DNS</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-5 active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5-active.png" style="max-width: 80px;"/></div>
+                                    <span>Network</span>
+                                </div>
+                                <div class="stack-bottom">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-bottom.png">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        <div class="display-LC-only vitalsarea  js-bg-lozad">
+            <div>
+
+
+                <div class="row">               
+
+                    <div class="vital-item stack-wrap ">
+                        <h5 class="vital-header">App Tiers Affected:</h5>
+
+
+                        <div class="app-stack ">
+                            <div class="above-top active">
+
+                                <div class="bg js-bg-lozad active" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-above-top-active.png">
+                                </div>
+                                <span>Client</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="stack-top">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-top.png">
+                                </div>
+                            </div>
+
+                            <div class="layer-1 active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1-active.png"/>
+                                </div>
+                                <span>Services</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-2 active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2-active.png"/>
+                                </div>
+                                <span>Access</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-3 active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3-active.png"/>
+                                </div>
+                                <span>TLS </span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-4  active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4-active.png"/>
+                                </div>
+                                <span>DNS</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-5 active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5-active.png"/>
+                                </div>
+                                <span>Network</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+                            <div class="stack-bottom">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-bottom.png">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    
+
+    
+
+
+    
+    
+
+<!--googleon: all--></div>
+<div class="a13-article-quote-labs section">
+
+
+    
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-right">
+        <div class="vitalsarea section">
+
+
+    
+        
+        <div class=" display-old-labs-only vitalsarea  js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/isogrid.png">
+            <div class="accordion only-mobile ">
+                <a class="trigger-collapse collapsed article-vital">
+                    
+                    <div class="button-container">
+                        <div class="x medium"><b></b><b></b><b></b><b></b></div>
+                    </div>
+                </a>
+                <div class="can-collapse collapsed ">
+                    <div class="row">
+                        <div class="vitals-wrap">
+                            <div>
+                                
+
+
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Type:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a target="_self">DDoS Attack, App Infrastructure Attack, Web Application Attack, Client-side Attack</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Method:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a target="_self">Dictionary Attacks, DNS Cache Poisoning, DNS Hijacking, DNS Spoofing, MiTM, Eavesdropping, Protocol Abuse, Key Disclosure, Certificate Spoofing, Session Hijacking, Cross-site Request Forgery, Cross-site Scripting, Malware, MiTB, SYN, UDP, and HTTP Flood, DNS Amplification, Heavy URL, Brute Force, Credential Stuffing, Credential Theft, Phishing, Session Theft, Abuse of Functionality, API Attacks, Injection</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="vital-item stack-wrap ">
+                            <h5 class="vital-header">App Tiers Affected:
+                            </h5>
+                            <div class="app-stack">
+                                <div class="above-top active">
+
+                                    <div class="bg js-bg-lozad active" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-above-top-active.svg">
+                                    </div>
+                                    <span>Client</span>
+
+                                </div>
+                                <div class="red-dots shorter">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="stack-top">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-top.png">
+                                    </div>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+
+                                <div class="layer-1 active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1-active.png" style="max-width: 80px;"/></div>
+                                    <span>Services</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-2 active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3-active.png" style="max-width: 80px;"/></div>
+                                    <span>Access</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-3 active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2-active.png" style="max-width: 80px;"/></div>
+                                    <span>TLS </span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-4  active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4-active.png" style="max-width: 80px;"/></div>
+                                    <span>DNS</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-5 active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5-active.png" style="max-width: 80px;"/></div>
+                                    <span>Network</span>
+                                </div>
+                                <div class="stack-bottom">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-bottom.png">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        <div class="display-LC-only vitalsarea  js-bg-lozad">
+            <div>
+
+
+                <div class="row">               
+
+                    <div class="vital-item stack-wrap ">
+                        <h5 class="vital-header">App Tiers Affected:</h5>
+
+
+                        <div class="app-stack ">
+                            <div class="above-top active">
+
+                                <div class="bg js-bg-lozad active" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-above-top-active.png">
+                                </div>
+                                <span>Client</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="stack-top">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-top.png">
+                                </div>
+                            </div>
+
+                            <div class="layer-1 active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1-active.png"/>
+                                </div>
+                                <span>Services</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-2 active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2-active.png"/>
+                                </div>
+                                <span>Access</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-3 active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3-active.png"/>
+                                </div>
+                                <span>TLS </span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-4  active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4-active.png"/>
+                                </div>
+                                <span>DNS</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-5 active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5-active.png"/>
+                                </div>
+                                <span>Network</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+                            <div class="stack-bottom">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-bottom.png">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    
+
+    
+
+</div>
+<div data-component-type="article" class="a07-related-articles section"><!--googleoff: all-->
+
+    
+
+    
+
+    <div class="a07-related-articles " data-id="relatedArticlesId">
+        <div class="a07-related-articles__container">
+            <h4 class="a07-related-articles__container-title">Related Content</h4>
+
+            <div id="related-article-hidden-items">
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Top Risks</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">May 11, 2020</span>
+                        </div>
+                    </div>
+                    <a href="2019-application-protection-report.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            2019 Application Protection Report
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center report a07-related-articles__type-ico "><i></i>report</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">60 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Top Risks</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">February 25, 2020</span>
+                        </div>
+                    </div>
+                    <a href="application-protection-research-series-executive-summary.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Application Protection Research Series—Summary 2nd Edition
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">3 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Top Risks</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">October 22, 2019</span>
+                        </div>
+                    </div>
+                    <a href="2019-application-protection-report-podcast-series.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            2019 Application Protection Report Podcast Series
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap ">
+                            <span class="U:align-self-center podcast a07-related-articles__type-ico "><i></i>podcast</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--googleon: all--></div>
+<div class="a11-separation-line section">
+
+<div>
+	<div></div>
+</div></div>
+<div class="c20-newsletter-signup-display section">
+
+
+
+
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display__wrapper purple-bg right-rail c20-newsletter-signup-display__newsletter-form">
+	<div class="c20-newsletter-signup-display__signup-wrap">
+		<div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+			<div class="c20-newsletter-signup-display__title">
+				F5 Labs Newsletter
+            </div>
+            <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+            </div>
+		</div>
+		<div class="c20-newsletter-signup-display__row-wrap">
+			<div class="c20-newsletter-signup-display__signup-form-wrap">
+                	<!-- LOADER -->
+				<div id="loader" class="form-loader small-loader     
+                  hide-after-submit"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+				<form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit"></form>
+
+				<!-- SUCCESS MESSAGE -->
+                <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+					<div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>					
+				</div>
+			</div>
+		</div>
+
+    </div>
+    <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+        <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display__wrapper purple-bg right-rail known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__row-wrap ">
+			<div class="c20-newsletter-signup-display__signup-form-wrap">
+				
+				<!-- KNOWN USER MESSAGE -->
+                <div class="c20-newsletter-signup-display__success-message ">
+					<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row container-bottom">
+        <div class="a01-container section">
+    <div class="a01-container-col-left">
+        
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-center">
+        <div class="a10-article-summary section">
+    
+    
+        
+    
+    
+</div>
+<div data-component-type="article" class="a02-article-actions-container section">
+
+    
+        
+        
+        <div class="a02-article-actions-container">
+            
+
+
+
+
+
+        </div>
+    
+
+    
+</div>
+<div data-component-type="article" class="a04-article-author-bio section"><!-- <div class="cq-placeholder section" data-emptytext="Article: Author Bio" data-sly-test="false"></div> -->
+
+
+
+        
+        
+            <div class="a04-article-author-bio__content">
+                <div class="a04-article-author-bio__content__author-box">
+                    <div class="row">
+                        <div class="a04-article-author-bio__content__image-wrap">
+                            <div class="a04-article-author-bio__content__img-container">
+                                <img data-src="../../../content/dam/f5-labs-v2/_author-headshots/Ray_Pompon.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                            </div>
+                        </div>
+                        <div class="a04-article-author-bio__content__data-wrap">
+                            <div>
+                                <b>About the author</b>
+                            </div>
+                            <div class="a04-article-author-bio__content__author-name U:margin-top-md">Raymond Pompon</div>
+                            <div class="a04-article-author-bio__content__author-descr"><p>Raymond Pompon is the Director of F5 Labs. With over 20 years of experience in Internet security, he has worked closely with federal law enforcement in cyber-crime investigations. He was directly involved in several major intrusion cases, including the FBI undercover Flyhook operation and the NW Hospital botnet prosecution. He is the author of IT Security Risk Control Management: An Audit Preparation Plan published by Apress books.</p>
+</div>
+                            <div>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="../../search.author_Raymond+Pompon.html">More articles from Raymond Pompon</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+    
+    
+</div>
+<div name="Footnotes" data-component-type="article" class="a09-article-footnotes section">
+
+
+    
+        
+        <div class="a09-article-footnotes U:padding-y-lg display-old-labs-only">
+            <div class="links-box border-bottom-dotted article-bottom-box">
+                <div class="panel-group accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-parent="#accordion" class="trigger-collapse collapsed" aria-expanded="false">
+                                <h4 class="panel-title display-3">
+                                    Footnotes
+                                </h4>
+                                <div class="button-container">
+                                    <img alt="" class="js-bg-lozad expand-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/expand-button.png"/>
+                                    <img alt="" class="js-bg-lozad close-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/close-button.png"/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="collapse-panel">
+                            <div class="panel-body can-collapse collapsed">
+                                <p><div id="ftn1"><p><a id="_ftn1"></a><a href="#_ftnref1"><sup>1</sup></a> <a href="http://cve.mitre.org/data/refs/refmap/source-EXPLOIT-DB.html" target="_blank" rel="no-opener no-referrer" rel="noreferrer">http://cve.mitre.org/data/refs/refmap/source-EXPLOIT-DB.html</a></p>
+</div>
+<div id="ftn2"><p><a id="_ftn2"></a><a href="#_ftnref2"><sup>2</sup></a> <a href="https://www.exploit-db.com/about-exploit-db/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/about-exploit-db/</a></p>
+</div>
+<div id="ftn3"><p><a id="_ftn3"></a><a href="#_ftnref3"><sup>3</sup></a> <a href="https://support.f5.com/csp/article/K07359270" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://support.f5.com/csp/article/K07359270</a></p>
+</div>
+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="a09-article-footnotes display-LC-only">
+            <details id="-button" class="a09-article-footnotes__button cmp-accordion__button ">
+                <summary class="a09-article-footnotes__title  display-as-">
+                    <span> Footnotes </span> <span class="a09-article-footnotes__icon cmp-accordion__icon"></span>
+                </summary>
+                <div class="a09-article-footnotes__panel">
+                    <p><div id="ftn1"><p><a id="_ftn1"></a><a href="#_ftnref1"><sup>1</sup></a> <a href="http://cve.mitre.org/data/refs/refmap/source-EXPLOIT-DB.html" target="_blank" rel="no-opener no-referrer" rel="noreferrer">http://cve.mitre.org/data/refs/refmap/source-EXPLOIT-DB.html</a></p>
+</div>
+<div id="ftn2"><p><a id="_ftn2"></a><a href="#_ftnref2"><sup>2</sup></a> <a href="https://www.exploit-db.com/about-exploit-db/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/about-exploit-db/</a></p>
+</div>
+<div id="ftn3"><p><a id="_ftn3"></a><a href="#_ftnref3"><sup>3</sup></a> <a href="https://support.f5.com/csp/article/K07359270" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://support.f5.com/csp/article/K07359270</a></p>
+</div>
+</p>
+                </div>
+            </details>
+        </div>
+    
+    
+
+</div>
+<div data-component-type="article" class="a05-article-tags section">
+
+
+    
+        
+
+        <div class="a05-article-tags__tags-box">
+            <strong class="a05-article-tags__strong">TAGS: </strong>
+            <a href="https://www.f5.com/labs/search?q=%22Application+Protection%22" class="a05-article-tags__a">Application Protection</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Brute+force+attack%22" class="a05-article-tags__a">Brute force attack</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Credential+stuffing%22" class="a05-article-tags__a">Credential stuffing</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=Eavesdropping" class="a05-article-tags__a">Eavesdropping</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Credential+theft%22" class="a05-article-tags__a">Credential theft</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=Man-in-the-middle" class="a05-article-tags__a">Man-in-the-middle</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22DNS+hijacking%22" class="a05-article-tags__a">DNS hijacking</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Session+hijacking%22" class="a05-article-tags__a">Session hijacking</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22SYN%2C+UDP%2C+and+HTTP+floods%22" class="a05-article-tags__a">SYN, UDP, and HTTP floods</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Key+disclosure%22" class="a05-article-tags__a">Key disclosure</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Protocol+abuse%22" class="a05-article-tags__a">Protocol abuse</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Web+Application+Attacks%22" class="a05-article-tags__a">Web Application Attacks</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Cross-site+request+forgery%22" class="a05-article-tags__a">Cross-site request forgery</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Network+Tier%22" class="a05-article-tags__a">Network Tier</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22DNS+spoofing%22" class="a05-article-tags__a">DNS spoofing</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=%22Top+Risks%22.html" class="a05-article-tags__a">Top Risks</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22DDoS+Attacks%22" class="a05-article-tags__a">DDoS Attacks</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Access+Tier%22" class="a05-article-tags__a">Access Tier</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=Malware" class="a05-article-tags__a">Malware</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22TLS+Tier%22" class="a05-article-tags__a">TLS Tier</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Man+in+the+middle%22" class="a05-article-tags__a">Man in the middle</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Abuse+of+functionality%22" class="a05-article-tags__a">Abuse of functionality</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Services+Tier%22" class="a05-article-tags__a">Services Tier</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Cross-site+request+forgery%22" class="a05-article-tags__a">Cross-site request forgery</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Client-side+Attacks%22" class="a05-article-tags__a">Client-side Attacks</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Client-platform+malware%22" class="a05-article-tags__a">Client-platform malware</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=Threats" class="a05-article-tags__a">Threats</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22App+Infrastructure+Attacks%22" class="a05-article-tags__a">App Infrastructure Attacks</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Phishing.html" class="a05-article-tags__a">Phishing</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=Client" class="a05-article-tags__a">Client</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22DNS+cache+poisoning%22" class="a05-article-tags__a">DNS cache poisoning</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Phishing.html" class="a05-article-tags__a">Phishing</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Dictionary+attacks%22" class="a05-article-tags__a">Dictionary attacks</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22DNS+amplification%22" class="a05-article-tags__a">DNS amplification</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Cross-site+scripting+%22" class="a05-article-tags__a">Cross-site scripting </a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=Injection" class="a05-article-tags__a">Injection</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=Man-in-the-browser" class="a05-article-tags__a">Man-in-the-browser</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=Man-in-the-middle" class="a05-article-tags__a">Man-in-the-middle</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22API+Attacks%22" class="a05-article-tags__a">API Attacks</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22DNS+Tier%22" class="a05-article-tags__a">DNS Tier</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Cross-site+scripting%22" class="a05-article-tags__a">Cross-site scripting</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Protocol+abuse%22" class="a05-article-tags__a">Protocol abuse</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Certificate+spoofing%22" class="a05-article-tags__a">Certificate spoofing</a>
+        </div>
+
+    
+
+	
+    
+</div>
+<div class="a04-include section"><!--googleoff: all-->
+<!-- inline style for wce-edit-mode -->
+
+    <!--googleoff: all-->
+
+    
+
+    
+
+    <div class="a07-related-articles " data-id="relatedArticlesId">
+        <div class="a07-related-articles__container">
+            <h4 class="a07-related-articles__container-title">Related Content</h4>
+
+            <div id="related-article-hidden-items">
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Top Risks</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">May 11, 2020</span>
+                        </div>
+                    </div>
+                    <a href="2019-application-protection-report.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            2019 Application Protection Report
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center report a07-related-articles__type-ico "><i></i>report</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">60 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Top Risks</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">February 25, 2020</span>
+                        </div>
+                    </div>
+                    <a href="application-protection-research-series-executive-summary.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Application Protection Research Series—Summary 2nd Edition
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">3 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Top Risks</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">October 22, 2019</span>
+                        </div>
+                    </div>
+                    <a href="2019-application-protection-report-podcast-series.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            2019 Application Protection Report Podcast Series
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap ">
+                            <span class="U:align-self-center podcast a07-related-articles__type-ico "><i></i>podcast</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--googleon: all-->
+    
+    
+
+<!--googleon: all--></div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-right">
+        <div class="a04-include section"><!--googleoff: all-->
+<!-- inline style for wce-edit-mode -->
+
+    <!--googleoff: all-->
+
+    
+
+    
+
+    <div class="a07-related-articles " data-id="relatedArticlesId">
+        <div class="a07-related-articles__container">
+            <h4 class="a07-related-articles__container-title">Related Content</h4>
+
+            <div id="related-article-hidden-items">
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Top Risks</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">May 11, 2020</span>
+                        </div>
+                    </div>
+                    <a href="2019-application-protection-report.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            2019 Application Protection Report
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center report a07-related-articles__type-ico "><i></i>report</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">60 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Top Risks</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">February 25, 2020</span>
+                        </div>
+                    </div>
+                    <a href="application-protection-research-series-executive-summary.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Application Protection Research Series—Summary 2nd Edition
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">3 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Top Risks</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">October 22, 2019</span>
+                        </div>
+                    </div>
+                    <a href="2019-application-protection-report-podcast-series.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            2019 Application Protection Report Podcast Series
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap ">
+                            <span class="U:align-self-center podcast a07-related-articles__type-ico "><i></i>podcast</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--googleon: all-->
+    
+    
+
+<!--googleon: all--></div>
+
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+<div class="a28-article-tile-list-dynamic aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+    
+<div class="a28-article-tile-list-dynamic__full-width-wrap xs-pt-20 xs-pb-20 container-fluid fill-main-container xs-mb-0 ">
+
+    
+        
+    
+<script src="../../../etc.clientlibs/base/clientlibs/libs/jquery/v3.6.0.abec7e706514e7e243d79b097790f71b.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-swiper.74571ff9ea0f905f582197d9e94ab140.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/components/articles/a28-article-tile-list-dynamic/clientlib.30cecdc12e1944d71b6a455f0740a7b6.js"></script>
+
+
+
+ 
+ 
+<!-- TEXT LAYOUT -->
+
+
+<!-- ALBUM COVER LAYOUT -->
+
+	<section class="a28-article-tile-list-dynamic__container a28-article-tile-list-dynamic-albumLayout a28-article-tile-list-dynamic-albumLayout__image-articles" data-numbersOfArticles="3" data-size="3" id="1684486191">
+
+		<div class="a28-article-tile-list-dynamic__section-title text-center xs-pt-20 xs-pb-20">
+			<h2>Need-to-Know</h2>
+			<span class="a28-article-tile-list-dynamic__text-bigger">Expertly picked stories on threat intelligence</span>
+		</div>
+
+		<div id="article-tile-items" class="a28-article-tile-list-dynamic-albumLayout__article-tiles-wrap U:justify-content-center swiper-container">
+
+			
+
+			<div class="swiper-wrapper">
+				<div id="1684486191_0" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a13/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Top Risks</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>May 18, 2021</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/2021-application-protection-report-of-ransom-and-redemption">
+								<a href="2021-application-protection-report-of-ransom-and-redemption.html">
+									<div class="article-title">
+										<h2 class="header-small">2021 Application Protection Report</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center report a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>report</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>60 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">Sander Vinberg</span>
+									
+										<span class="author-item">Raymond Pompon</span>
+									
+										<span class="author-item">Shahnawaz Backer</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			
+				<div id="1684486191_1" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a15/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=Encryption.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Encryption</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>July 17, 2020</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cryptonice">
+								<a href="cryptonice.html">
+									<div class="article-title">
+										<h2 class="header-small">Introducing the Cryptonice HTTPS Scanner</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center article a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>article</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>12 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">David Warburton</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			
+				<div id="1684486191_2" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a08/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Top Risks</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>February 01, 2021</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cybersecurity-threats-to-the-covid-19-vaccine">
+								<a href="cybersecurity-threats-to-the-covid-19-vaccine.html">
+									<div class="article-title">
+										<h2 class="header-small">Cybersecurity Threats to the COVID-19 Vaccine</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center article a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>article</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>9 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">Raymond Pompon</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="loader_1684486191" class="big-loader U:margin-bot-xl U:display-none"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+		<button class="a28-article-tile-list-dynamic__load-more-button btn btn-outline-inverse U:display-none" id="load_1684486191">
+			Load more stories</button>
+	</section>
+
+  
+
+<!-- MUTED LAYOUT -->
+
+
+</div>
+
+
+</div>
+<div data-component-type="category" class="u03-static-data-points aem-GridColumn aem-GridColumn--default--12"><!--googleoff: all-->
+
+    
+        
+        
+        <section class="u03-static-data-points__container fill-main-container">
+            <div class="full-site-container info-container-two-columns">
+                <div class="row">
+                    <div class="u03-static-data-points__left-column-container border-right">
+                        <div class="u03-static-data-points__left-column-wrap">
+                            <h3 class="display-3 u03-static-data-points__headline">Hundreds of apps will be attacked by the time you read this.</h3>
+                            <p><p>So, we get to work. We obsess over effective attack methods. We monitor the growth of IoT and its evolving threats. We dive deep into the latest crypto-mining campaigns. We analyze banking Trojan targets. We dissect exploits. We hunt for the latest malware. And then our team of experts share it all with you. For more than 20 years, F5 has been leading the app delivery space. With our experience, we are passionate about educating the security community-providing the intel you need to stay informed so your apps can stay safe.</p>
+</p>
+                        </div>
+                    </div>
+                    <div class="u03-static-data-points__right-column-container">
+                        <div class="u03-static-data-points__right-column-wrap">
+                            <h4 class="display-6">
+                                Every
+                            </h4>
+                            <h3 class="f5labs-big-number">9 hrs</h3>
+                            a critical vulnerability—with the potential for remote code execution—is released.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    
+
+<!--googleon: all--></div>
+<div class="u02-footer aem-GridColumn aem-GridColumn--default--12"><div>
+	
+<footer id="footer" class="u02-footer_labs conf06-footer-configuration">
+    <div class="conf06-footer-configuration__footer-logo">
+        <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <metadata>
+                <rdf:RDF>
+                    <cc:Work rdf:about="">
+                        <dc:format>image/svg+xml</dc:format>
+                        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                        <dc:title/>
+                    </cc:Work>
+                </rdf:RDF>
+            </metadata>
+            <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+            <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+            <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+        </svg>
+    </div>
+
+    <div class="conf06-footer-configuration__newslettersignup">
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg c20-newsletter-signup-display__newsletter-form">
+    <div class="c20-newsletter-signup-display__wrapper purple-bg  benefits-visible">
+
+        <div class="c20-newsletter-signup-display__signup-wrap">
+
+            <div class="c20-newsletter-signup-display__row form-and-benefits-row hide-after-submit">
+                <div class="c20-newsletter-signup-display__col">
+                    <div class="c20-newsletter-signup-display__title only-mobile">
+                        F5 Labs Newsletter
+                    </div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+                    </div>
+                </div>
+                <div class="c20-newsletter-signup-display__col">
+
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <div class="c20-newsletter-signup-display__title only-desktop">
+                            F5 Labs Newsletter
+                        </div>
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+                        <!-- LOADER -->
+                        <div id="loader" class="small-loader form-loader     
+                             "><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                        <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                            <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- SUCCESS MESSAGE -->
+            <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+                <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                <div class="c20-newsletter-signup-display__article-intro">
+                    Thanks for signing up! Get started with some of the articles below:
+                </div>
+                <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Fraud.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Fraud</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="2020-phishing-and-fraud-report.html" class="text-article__link">
+
+                                <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">November 11, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Education.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Education</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="../education/what-is-the-cia-triad.html" class="text-article__link">
+
+                                <div class="text-article__article-title">What Is the CIA Triad?</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">July 09, 2019</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Strategies.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Strategies</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="../cisotociso/the-three-main-cybersecurity-career-paths.html" class="text-article__link">
+
+                                <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex mid-point">
+                                    <span class="U:align-self-center">December 08, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center">9 min. read</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__wrapper purple-bg}">
+
+		<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+				<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+    <div class="conf06-footer-configuration__main-footer-container">
+        <div class="conf06-footer-configuration__main-footer-wrapper">
+          
+            <div class="conf06-footer-configuration__links-wrap first-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        <ul>
+            <li><a href="../../threat-intelligence.html" target="_blank" rel="no-opener no-referrer">THREATS</a></li>
+        
+            <li><a href="../../ciso-to-ciso.html" target="_blank" rel="no-opener no-referrer">CISO TO CISO</a></li>
+        
+            <li><a href="../../application-protection.html" target="_blank" rel="no-opener no-referrer">APPLICATION PROTECTION</a></li>
+        </ul>
+    
+
+    
+</div>
+            </div>
+            <div class="conf06-footer-configuration__links-wrap second-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        
+    
+
+    
+</div>
+            </div>
+                  
+
+            <div class="conf06-footer-configuration__social-links-wrap">
+                
+<div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Social media links configuration"></div> -->
+	<ul>
+		<li class="twitter">			
+			<a href="https://twitter.com/F5Labs" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb twitter xs-mr-15"></span></div><div class="float-left">TWITTER</div></a>
+		</li>
+	
+		<li class="linkedin">			
+			<a href="https://www.linkedin.com/showcase/f5labs/" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb linkedin xs-mr-15"></span></div><div class="float-left">LINKEDIN</div></a>
+		</li>
+	</ul>
+
+</div>
+
+            </div>
+        </div>
+        <div class="conf06-footer-configuration__foot-note  conf06-footer-configuration__footer-bottom footer-small">
+            <span class="conf06-footer-configuration__all-rights-reserved"> &copy; 2022 F5, Inc. All rights reserved</span> <br/>
+            
+
+                <a href="../../../company/policies.html">Policies</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/privacy-notice.html">Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/trademarks.html">Trademarks</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../index.html" rel="noreferrer">Manage Subscriptions</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/F5-California-privacy-summary.html">California Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/privacy-notice.html#no-sell">Do Not Sell My Personal Information</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+            <span>
+                <span id="teconsent"></span>
+            </span>
+
+        </div>
+    </div>
+
+    <script class="n-lang-en" async="async" src="../../../../consent.trustarc.com/notice%EF%B9%96domain=f5.com&amp;c=teconsent&amp;js=nj&amp;noticeType=bb&amp;text=true&amp;gtm=1.js" crossorigin=""></script>
+  
+     <div>
+
+
+
+
+
+<div class="c20-newsletter-signup-display__popover-bg   ">
+    <div class=" c20-newsletter-signup-display popover  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+                    <div class="c20-newsletter-signup-display__title">F5 Labs Newsletter</div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+</div>
+                </div>
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+
+                        <!-- SUCCESS MESSAGE -->
+                        <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none ">
+                            <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                            <div class="c20-newsletter-signup-display__article-intro">
+                                Thanks for signing up! Get started with some of the articles below:
+                            </div>
+
+                            <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="2020-phishing-and-fraud-report.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">November 11, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="../education/what-is-the-cia-triad.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">What Is the CIA Triad?</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">July 09, 2019</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="../cisotociso/the-three-main-cybersecurity-career-paths.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex mid-point">
+                                                <span class="U:align-self-center">December 08, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center">9 min. read</span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                         
+                        </div>
+
+                        <!-- LOADER -->
+                        <div id="loader" class="U:display-none big-loader"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" c20-newsletter-signup-display popover c20-newsletter-signup-display__subscribed-already  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__title">You already have a subscription</div>
+                  
+                </div>
+               
+              
+            </div>
+          
+        </div>
+    </div>
+
+</div>
+</div>
+  
+</footer>
+ 
+</div></div>
+
+    
+</div>
+</div>
+
+
+     
+        
+    
+    
+
+    
+<script src="../../../etc.clientlibs/clientlibs/granite/jquery/granite/csrf.a9dcac4698709ca8e1cbc88363cf0793.js"></script>
+<script src="../../../etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.68e8a508c100f218cc66bb13a94d1002.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.d96c3f535f649b3c2392029bf4ce52cd.js"></script>
+
+
+ 
+
+	<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5095d30f38626622"></script>
+	
+
+    
+
+
+        <div id="consent_blackbar" style="position:fixed;bottom:200px;width:100%"></div>
+    </body>
+</html>

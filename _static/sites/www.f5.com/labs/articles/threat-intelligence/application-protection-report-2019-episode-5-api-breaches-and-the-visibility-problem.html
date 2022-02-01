@@ -1,0 +1,2869 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8"/>
+    <title>Application Protection Report 2019, Episode 5: API Breaches and the Visibility Problem</title>
+    <meta name="robots"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="API use has grown tremendously, but security is lagging, creating easy targets for attackers. "/>
+    <meta name="template" content="article-details-template"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>    
+    
+
+    <meta property="og:locale" content="en_US"/>
+
+    <meta property="og:type" content="website"/>
+
+    <meta property="og:title" content="Application Protection Report 2019, Episode 5: API Breaches and the Visibility Problem"/>
+
+    <meta property="og:description" content="API use has grown tremendously, but security is lagging, creating easy targets for attackers. "/>
+
+    <meta property="og:site_name" content="F5 Labs"/>
+
+    <meta property="og:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+    <meta property="og:image_secure_url" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+
+    <meta property="fb:app_id" content="302184056577324"/>
+
+
+    <meta property="twitter:card" content="summary_large_image"/>
+
+    <meta property="twitter:title" content="Application Protection Report 2019, Episode 5: API Breaches and the Visibility Problem"/>
+
+    <meta property="twitter:description" content="API use has grown tremendously, but security is lagging, creating easy targets for attackers. "/>
+
+    <meta property="twitter:site" content="@F5networks"/>
+
+    <meta property="twitter:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+    <meta property="twitter:creator" content="@F5networks"/>
+
+
+    <meta property="article:author" content="Raymond Pompon, Sander Vinberg"/>
+
+    <meta property="article:published_time" content="2019-08-13T12:54:00.000-04:00"/>
+
+    <meta property="article:tag" content="EDB-46074,Brute force attack,Threats,Hacktivism,Credential stuffing"/>
+
+    <meta property="article:id" content="/content/f5-labs-v2/en/labs/articles/threat-intelligence/application-protection-report-2019-episode-5-api-breaches-and-the-visibility-problem"/>
+
+    <meta property="article:read_time" content="30 min."/>
+
+    <meta property="article:topic" content="Attack Campaign"/>
+
+    <meta property="article:type" content="article"/>
+
+    <meta property="article:title" content="Application Protection Report 2019, Episode 5: API Breaches and the Visibility Problem"/>
+
+<meta name="keywords" content="Application Protection Interface,EDB-46074,Brute force attack,Threats,Hacktivism,Credential stuffing,App Infrastructure Attacks,Attack Campaign,Espionage,CVE-2018-1000115,CVE-2018-1000049,Web Application Attacks,Dictionary attacks,API,API Attacks,EDB-45704,CVE-2017-12478,CVE-2018-6328,EDB-45559,EDB-46544,EDB-46004,EDB-46796,EDB-45044,EDB-44265"/> 
+<link rel="canonical" href="application-protection-report-2019-episode-5-api-breaches-and-the-visibility-problem.html"/>
+
+
+
+
+<meta property="labs:article:search-tab" content="Threats"/>
+
+    
+       	
+        <link href="https://assets.adobedtm.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://consent.trustarc.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://static.cloud.coveo.com" rel="rel=preconnect" crossorigin/>
+    
+
+    <script>window.F5=window.F5||{};window.F5.VisitorTracking=window.F5.VisitorTracking||{"isConfigEnabled":true,"tealiumScriptAsyncUrl":"//mktg.tags.f5.com/main/prod/utag.js","tealiumScriptSyncUrl":"//mktg.tags.f5.com/main/prod/utag.sync.js","visitorTrackingService":"tealium","isTealiumActive":true,"isLegacyActive":false,"legacyLibWarmingUrls":["https://assets.adobedtm.com","https://www.google-analytics.com","https://www.googletagmanager.com"]}</script>
+
+    <script src="../../../../mktg.tags.f5.com/main/prod/utag.sync.js"></script>
+    <!-- If JS enable will change the HTML class tag to "js"-->
+<script>
+    document.documentElement.className = document.documentElement.className.replace("js-off","js-on");
+</script>
+<!-- If JS enable will change the HTML class tag to "js" -->
+    
+    
+    
+
+    
+    
+
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/apple-touch-icon.png"/>
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-16x16.png"/>
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-32x32.png"/>
+    
+    <link rel="mask-icon" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/safari-pinned-tab.svg" color="#e21d38"/>
+
+    
+    
+
+    
+    
+<link rel="stylesheet" href="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.4921b04fbcd148d027b0a9a0b7fb303c.css" type="text/css">
+
+
+
+
+    <script src="https://app-aba.marketo.com/js/forms2/js/forms2.min.js"></script>
+    
+    
+
+<script>
+    window.digitalData = {"labs":{"articleAuthor":["raymond pompon","sander vinberg"],"articlePostDate":"Aug 13, 2019","labsReadingTime":"30 min.","vitals":{"labsAttackType":["App Infrastructure Attacks","Web Application Attacks"],"labsAttackMethod":["Dictionary attacks","API Attacks","Credential stuffing","Brute force attack"],"labsVulnerabilities":["CVE-2018-6328","CVE-2017-12478","CVE-2018-1000049","CVE-2018-1000115"],"labsExploits":["EDB-46796","EDB-46544","EDB-46074","EDB-46004","EDB-45704","EDB-45559","EDB-45044","EDB-44265"],"labsAttackMotive":["Hacktivism","Espionage","Warfare","Cybercrime"],"labsAppTiers":["services","access"]},"labsTags":["App Infrastructure Attacks","Web Application Attacks","API Attacks","Dictionary attacks","Brute force attack","Credential stuffing","Attack Campaign","Espionage","Hacktivism","CVE-2018-6328","CVE-2017-12478","CVE-2018-1000049","CVE-2018-1000115","EDB-46796","EDB-46544","EDB-46074","EDB-46004","EDB-45704","EDB-45559","EDB-45044","EDB-44265","API","Threats"]},"page":{"pageInfo":{"pageName":"www:f5.labs.v2:labs:articles:threat-intelligence:application-protection-report-2019-episode-5-api-breaches-and-the-visibility-problem","destinationUrl":"https://www.f5.com/labs/articles/threat-intelligence/application-protection-report-2019-episode-5-api-breaches-and-the-visibility-problem.html","subDomain":"www","referringUrl":"https://www.f5.com/labs/application-protection","referringPageName":"www:f5.labs.v2:labs:application-protection","language":"en","version":""},"category":{"primaryCategory":"labs","subCategory1":"articles","subCategory2":"threat-intelligence","subCategory3":"application-protection-report-2019-episode-5-api-breaches-and-the-visibility-problem"},"contentInfo":{"articleAuthor":["raymond pompon","sander vinberg"],"articlePostDate":"Aug 13, 2019","labsReadingTime":"30 min.","vitals":{"labsAttackType":["App Infrastructure Attacks","Web Application Attacks"],"labsAttackMethod":["Dictionary attacks","API Attacks","Credential stuffing","Brute force attack"],"labsVulnerabilities":["CVE-2018-6328","CVE-2017-12478","CVE-2018-1000049","CVE-2018-1000115"],"labsExploits":["EDB-46796","EDB-46544","EDB-46074","EDB-46004","EDB-45704","EDB-45559","EDB-45044","EDB-44265"],"labsAttackMotive":["Hacktivism","Espionage","Warfare","Cybercrime"],"labsAppTiers":["services","access"]},"labsTags":["App Infrastructure Attacks","Web Application Attacks","API Attacks","Dictionary attacks","Brute force attack","Credential stuffing","Attack Campaign","Espionage","Hacktivism","CVE-2018-6328","CVE-2017-12478","CVE-2018-1000049","CVE-2018-1000115","EDB-46796","EDB-46544","EDB-46074","EDB-46004","EDB-45704","EDB-45559","EDB-45044","EDB-44265","API","Threats"]}}};
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmContentParam = urlParams.get("utm_content");
+    if (utmContentParam && window.digitalData.user != undefined && window.digitalData.user.userInfo) {
+        const utmContentParamArray = utmContentParam.split("-");
+        if (utmContentParamArray.length >= 3) {
+            window.digitalData.user.userInfo.digitalSignal = utmContentParamArray[2];
+        }
+    }
+</script>
+<script>
+    window.utag_data = {"page.pageInfo.pageName":"www:f5.labs.v2:labs:articles:threat-intelligence:application-protection-report-2019-episode-5-api-breaches-and-the-visibility-problem","page.pageInfo.destinationUrl":"https://www.f5.com/labs/articles/threat-intelligence/application-protection-report-2019-episode-5-api-breaches-and-the-visibility-problem.html","page.pageInfo.subDomain":"www","page.pageInfo.referringUrl":"https://www.f5.com/labs/application-protection","page.pageInfo.referringPageName":"www:f5.labs.v2:labs:application-protection","page.pageInfo.language":"en","page.pageInfo.version":"","page.category.primaryCategory":"labs","page.category.subCategory1":"articles","page.category.subCategory2":"threat-intelligence","page.category.subCategory3":"application-protection-report-2019-episode-5-api-breaches-and-the-visibility-problem","page.contentInfo.articleAuthor[0]":"raymond pompon","page.contentInfo.articleAuthor[1]":"sander vinberg","page.contentInfo.articlePostDate":"Aug 13, 2019","page.contentInfo.labsReadingTime":"30 min.","page.contentInfo.vitals.labsAttackType[0]":"App Infrastructure Attacks","page.contentInfo.vitals.labsAttackType[1]":"Web Application Attacks","page.contentInfo.vitals.labsAttackMethod[0]":"Dictionary attacks","page.contentInfo.vitals.labsAttackMethod[1]":"API Attacks","page.contentInfo.vitals.labsAttackMethod[2]":"Credential stuffing","page.contentInfo.vitals.labsAttackMethod[3]":"Brute force attack","page.contentInfo.vitals.labsVulnerabilities[0]":"CVE-2018-6328","page.contentInfo.vitals.labsVulnerabilities[1]":"CVE-2017-12478","page.contentInfo.vitals.labsVulnerabilities[2]":"CVE-2018-1000049","page.contentInfo.vitals.labsVulnerabilities[3]":"CVE-2018-1000115","page.contentInfo.vitals.labsExploits[0]":"EDB-46796","page.contentInfo.vitals.labsExploits[1]":"EDB-46544","page.contentInfo.vitals.labsExploits[2]":"EDB-46074","page.contentInfo.vitals.labsExploits[3]":"EDB-46004","page.contentInfo.vitals.labsExploits[4]":"EDB-45704","page.contentInfo.vitals.labsExploits[5]":"EDB-45559","page.contentInfo.vitals.labsExploits[6]":"EDB-45044","page.contentInfo.vitals.labsExploits[7]":"EDB-44265","page.contentInfo.vitals.labsAttackMotive[0]":"Hacktivism","page.contentInfo.vitals.labsAttackMotive[1]":"Espionage","page.contentInfo.vitals.labsAttackMotive[2]":"Warfare","page.contentInfo.vitals.labsAttackMotive[3]":"Cybercrime","page.contentInfo.vitals.labsAppTiers[0]":"services","page.contentInfo.vitals.labsAppTiers[1]":"access","page.contentInfo.labsTags[0]":"App Infrastructure Attacks","page.contentInfo.labsTags[1]":"Web Application Attacks","page.contentInfo.labsTags[2]":"API Attacks","page.contentInfo.labsTags[3]":"Dictionary attacks","page.contentInfo.labsTags[4]":"Brute force attack","page.contentInfo.labsTags[5]":"Credential stuffing","page.contentInfo.labsTags[6]":"Attack Campaign","page.contentInfo.labsTags[7]":"Espionage","page.contentInfo.labsTags[8]":"Hacktivism","page.contentInfo.labsTags[9]":"CVE-2018-6328","page.contentInfo.labsTags[10]":"CVE-2017-12478","page.contentInfo.labsTags[11]":"CVE-2018-1000049","page.contentInfo.labsTags[12]":"CVE-2018-1000115","page.contentInfo.labsTags[13]":"EDB-46796","page.contentInfo.labsTags[14]":"EDB-46544","page.contentInfo.labsTags[15]":"EDB-46074","page.contentInfo.labsTags[16]":"EDB-46004","page.contentInfo.labsTags[17]":"EDB-45704","page.contentInfo.labsTags[18]":"EDB-45559","page.contentInfo.labsTags[19]":"EDB-45044","page.contentInfo.labsTags[20]":"EDB-44265","page.contentInfo.labsTags[21]":"API","page.contentInfo.labsTags[22]":"Threats"};
+</script>
+
+
+    
+    <script>
+        ;(function(win, doc, style, timeout) {
+            var STYLE_ID = 'at-body-style';
+
+            function getParent() {
+                return doc.getElementsByTagName('head')[0];
+            }
+
+            function addStyle(parent, id, def) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.createElement('style');
+                style.id = id;
+                style.innerHTML = def;
+                parent.appendChild(style);
+            }
+
+            function removeStyle(parent, id) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.getElementById(id);
+
+                if (!style) {
+                    return;
+                }
+
+                parent.removeChild(style);
+            }
+
+            addStyle(getParent(), STYLE_ID, style);
+            setTimeout(function() {
+                removeStyle(getParent(), STYLE_ID);
+            }, timeout);
+        }(window, document, "body {opacity: 0 !important}", 3000));
+    </script>
+
+    <script src="../../../../assets.adobedtm.com/launch-EN37b07f3d0fa64d53b299e28194b30e0a.min.js" async></script>
+
+
+</head>
+    <body class="article-page preview-mode">
+        
+    <script>
+    (function(a,b,c,d){
+        a='//mktg.tags.f5.com/main/prod/utag.js';
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+    </script>
+
+        
+     
+        
+
+       	<div class="background-cut " style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a05/optimize/article-background-image.jpg);"></div>
+        
+
+
+<nav class="conf12-skip-links__nav" role="navigation">
+	<a href="#nav" class="conf12-skip-links__item">Skip to main navigation</a>
+
+	<a href="#content" class="conf12-skip-links__item">Skip to main content</a>
+
+	<a href="#footer" class="conf12-skip-links__item">Skip to footer</a>
+</nav>
+        
+
+<div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="megamenu-background"></div>
+
+	<div id="nav" class="fullscreen-wrapper header-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg labs-nav ">
+            <div class="container navbar-wrapper">
+                <a class="navbar-brand" href="../../../labs.html">
+                    <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <metadata>
+                            <rdf:RDF>
+                                <cc:Work rdf:about="">
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                    <dc:title/>
+                                </cc:Work>
+                            </rdf:RDF>
+                        </metadata>
+
+                        <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+                        <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+                        <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+                    </svg>
+                    <span>
+
+                        APPLICATION
+                        <br/> THREAT
+                        <br/> INTELLIGENCE
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  
+                    <div class="nav-wrap ml-lg-auto">
+                        <div class="upper-navigation">
+                            <div class="subscribe-item upper-nav-item">
+                                <a class="subscribe-link upper-nav-btn" href="../../subscribe.html">
+                                    <span class="upper-subscribe-ico ico"></span>
+                                    <span class="upper-navigation-content">Subscribe</span>
+                                </a>
+                            </div>
+                            <div class="search-item upper-nav-item">
+                                <a class="search-link upper-nav-btn">
+                                    <span class="upper-search-ico ico"></span>
+                                    <span class="upper-navigation-content">Search</span>
+                                </a>
+                                <form class="form-inline my-2 my-lg-0 search-form" method="get" action="../../search%EF%B9%96q=test.html" id="searchForm">
+                                    <div class="container">
+                                        <div class="search-input-container">
+                                            <a class="close-search-button"></a>
+                                            <input class="form-control mr-sm-2 " type="search" name="q" title="Cannot search for a blank query" placeholder="Search" required pattern="^(?!\s*$).+" aria-label="Search" id="search-input" lang="en"/>
+                                            <button class="btn btn-search  upper-nav-btn" type="submit"> <span class="upper-search-ico ico"></span> <span class="submit-text">Submit</span></button>
+                                        </div>
+    
+                                    </div>
+                                </form>
+                            </div>
+                            
+
+
+
+
+                        </div>
+                        
+<ul class="navbar-nav">
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../threat-intelligence.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Threats</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../ciso-to-ciso.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>CISO-to-CISO</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../application-protection.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Application Protection</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../rss-feeds.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>RSS Feeds</span>
+	</a></li>
+</ul>
+                     
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
+
+</div>
+<div>
+
+	
+    
+    
+
+
+</div><div class="c02-header-area aem-GridColumn aem-GridColumn--default--12"><div class="cq-placeholder section" data-emptytext="Article: Header area configuration"></div>
+
+    
+        
+       
+        <section class="container-fluid c02-header-area__main-article details fill-main-container">
+            <div class="c02-header-area__heroImageBackground" style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a05/optimize/article-background-image.jpg);"></div>
+            <div class="c02-header-area__main-article-overlay"></div>
+           
+            <div class="row">
+                <div class="align-bottom c02-header-area__article-wrap">
+                    <div class="info-row clearfix">
+                    	<a href="https://www.f5.com/labs/search?q=%22Attack+Campaign%22">
+	                        <div class="category">
+	                            <span class="badge badge-secondary c02-header-area__badge">Attack Campaign</span>
+	                        </div>
+                        </a>
+                        <div class="c02-header-area__additional-info">
+                            <div class="date U:padding-x">
+                                <span>August 13, 2019</span>
+                               
+                                
+                                
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="c02-header-area__main-articles-title">
+                        <h1>
+                            Application Protection Report 2019, Episode 5: API Breaches and the Visibility Problem
+                        </h1>
+                    </div>
+                    <div class="c02-header-area__additional-info U:display-flex">
+                    	
+	                    	<div class="c02-header-area__type  U:display-flex article-ico-wrap big-ico-wrap mid-point">
+	                        	<span class="article"><i></i>article</span>
+	                        </div>
+	                    	<div class="c02-header-area__content-duration U:display-flex ">
+	                        	<span>30 min. read</span>
+	                        </div>
+                        
+                        
+                    </div>
+                    <div class="c02-header-area__author-name tags">
+                        By <a class="c02-header-area__author-name tag-item" href="../../search.author_Raymond+Pompon.html">Raymond Pompon</a><a class="c02-header-area__author-name tag-item" href="../../search.author_Sander+Vinberg.html">Sander Vinberg</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+   		<div id="content"></div>
+    
+    
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row">
+        <div class="a01-container section">
+    <div class="a01-container-col-left">
+        <div data-component-type="article" class="c06-social-sharing section">
+
+
+
+<div class="addthis_share c06-social-sharing__links ">
+	
+	
+    <span class="addthis_share_button twitter addthis_sharing_toolbox" data-service="twitter" data-url="https://www.f5.com/labs/articles/threat-intelligence/application-protection-report-2019-episode-5-api-breaches-and-the-visibility-problem.html" data-description="API use has grown tremendously, but security is lagging, creating easy targets for attackers. " data-title="Application Protection Report 2019, Episode 5: API Breaches and the Visibility Problem- Raymond Pompon, Sander Vinberg">
+        <span class="social-bulb xs-mr-15 twitter"></span>
+    </span>
+    <span class="addthis_share_button linkedin addthis_sharing_toolbox" data-service="linkedin" data-url="https://www.f5.com/labs/articles/threat-intelligence/application-protection-report-2019-episode-5-api-breaches-and-the-visibility-problem.html" data-description="API use has grown tremendously, but security is lagging, creating easy targets for attackers. " data-title="Application Protection Report 2019, Episode 5: API Breaches and the Visibility Problem- Raymond Pompon, Sander Vinberg">
+        <span class="social-bulb xs-mr-15 linkedin"></span>
+    </span>
+    <span class="addthis_share_button facebook addthis_button_facebook addthis_sharing_toolbox" data-service="facebook" data-url="https://www.f5.com/labs/articles/threat-intelligence/application-protection-report-2019-episode-5-api-breaches-and-the-visibility-problem.html" data-description="API use has grown tremendously, but security is lagging, creating easy targets for attackers. " data-title="Application Protection Report 2019, Episode 5: API Breaches and the Visibility Problem- Raymond Pompon, Sander Vinberg">
+        <span class="social-bulb xs-mr-15 facebook"></span>
+    </span>
+    <a class="mail" target="_blank" href="mailto:?subject=Application%20Protection%20Report%202019,%20Episode%205:%20API%20Breaches%20and%20the%20Visibility%20Problem-%20Raymond%20Pompon,%20Sander%20Vinberg&amp;body=Checkout%20this%20great%20article%20I%20read%20on%20F5%20Labs%20%20/content/f5-labs-v2/en/labs/articles/threat-intelligence/application-protection-report-2019-episode-5-api-breaches-and-the-visibility-problem" rel="noreferrer">
+        <span class="social-bulb xs-mr-15 mail"></span>
+    </a>
+    
+</div></div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-center">
+        <div data-component-type="article" class="a03-article-body section">
+
+<div id="content">
+    <div class="a03-article-body__content">
+        
+    </div>
+    <div class="a22-include-vitals-on-mobile a04-include section">
+	
+    
+
+
+    
+        
+        <div class=" display-old-labs-only vitalsarea  js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/isogrid.png">
+            <div class="accordion only-mobile ">
+                <a class="trigger-collapse collapsed article-vital">
+                    
+                    <div class="button-container">
+                        <div class="x medium"><b></b><b></b><b></b><b></b></div>
+                    </div>
+                </a>
+                <div class="can-collapse collapsed ">
+                    <div class="row">
+                        <div class="vitals-wrap">
+                            <div>
+                                
+
+
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Type:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22App+Infrastructure+Attacks%22" target="_self">App Infrastructure Attacks</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Web+Application+Attacks%22" target="_self">Web Application Attacks</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Method:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Dictionary+attacks%22" target="_self">Dictionary attacks</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22API+Attacks%22" target="_self">API Attacks</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Credential+stuffing%22" target="_self">Credential stuffing</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Brute+force+attack%22" target="_self">Brute force attack</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Vulnerabilities:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=CVE-2018-6328" target="_self">CVE-2018-6328</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=CVE-2017-12478" target="_self">CVE-2017-12478</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=CVE-2018-1000049" target="_self">CVE-2018-1000049</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=CVE-2018-1000115" target="_self">CVE-2018-1000115</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Exploits:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=EDB-46796" target="_self">EDB-46796</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=EDB-46544" target="_self">EDB-46544</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=EDB-46074" target="_self">EDB-46074</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=EDB-46004" target="_self">EDB-46004</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=EDB-45704" target="_self">EDB-45704</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=EDB-45559" target="_self">EDB-45559</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=EDB-45044" target="_self">EDB-45044</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=EDB-44265" target="_self">EDB-44265</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Motive:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Hacktivism" target="_self">Hacktivism</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Espionage" target="_self">Espionage</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Warfare" target="_self">Warfare</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Cybercrime" target="_self">Cybercrime</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="vital-item stack-wrap ">
+                            <h5 class="vital-header">App Tiers Affected:
+                            </h5>
+                            <div class="app-stack">
+                                <div class="above-top ">
+
+                                    <div class="bg js-bg-lozad " data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-above-top.png">
+                                    </div>
+                                    <span>Client</span>
+
+                                </div>
+                                <div class="red-dots shorter">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="stack-top">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-top.png">
+                                    </div>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+
+                                <div class="layer-1 active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1-active.png" style="max-width: 80px;"/></div>
+                                    <span>Services</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-2 active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3-active.png" style="max-width: 80px;"/></div>
+                                    <span>Access</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-3 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
+                                    <span>TLS </span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-4  ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4.png" style="max-width: 80px;"/></div>
+                                    <span>DNS</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-5 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
+                                    <span>Network</span>
+                                </div>
+                                <div class="stack-bottom">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-bottom.png">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        <div class="display-LC-only vitalsarea  js-bg-lozad">
+            <div>
+
+
+                <div class="row">               
+
+                    <div class="vital-item stack-wrap ">
+                        <h5 class="vital-header">App Tiers Affected:</h5>
+
+
+                        <div class="app-stack ">
+                            <div class="above-top ">
+
+                                <div class="bg js-bg-lozad " data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-above-top.png">
+                                </div>
+                                <span>Client</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="stack-top">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-top.png">
+                                </div>
+                            </div>
+
+                            <div class="layer-1 active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1-active.png"/>
+                                </div>
+                                <span>Services</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-2 active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2-active.png"/>
+                                </div>
+                                <span>Access</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-3 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
+                                </div>
+                                <span>TLS </span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-4  ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4.png"/>
+                                </div>
+                                <span>DNS</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-5 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
+                                </div>
+                                <span>Network</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+                            <div class="stack-bottom">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-bottom.png">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    
+
+    
+
+
+</div>
+<div class="a24-next-and-previous-article section">
+
+    
+            
+        <div class="a24-next-and-previous-article__prev-button-wrap">
+            <a class="a24-next-and-previous-article__prev-button btn btn-outline" href="application-protection-report-2019--episode--4-access-attack-trends-in-2018.html">
+                <span class="chev">‹</span>Previous article in this series
+            </a>
+        </div>
+        <div class="a24-next-and-previous-article__next-button-wrap">
+            
+        </div>
+    
+  
+    
+
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h2>APIs and the New-Old Problem of Visibility</h2>
+<p>So far in our 2019 Application Protection Research Series,<a id="_ftnrefAutoIncr1" class="footnote-ref" title="1" href="#_ftnAutoIncr1"><sup>1</sup></a> we have explored <a href="application-protection-report-2019--episode-1--sensor-networks-r.html" target="_blank" rel="no-opener no-referrer">reconnaissance campaigns</a> directed against PHP, looked at <a href="application-protection-report-2019--episode-2--2018-breach-trend.html" target="_blank" rel="no-opener no-referrer">causes for known breaches</a>, and mapped specific attack techniques to different industries, business models, and architecture. We’ve looked into the details of the two most successful attack types, <a href="application-protection-report-2019--episode-3--web-injection-attacks.html" target="_blank" rel="no-opener no-referrer">injection</a> and <a href="application-protection-report-2019--episode--4-access-attack-trends-in-2018.html" target="_blank" rel="no-opener no-referrer">access attacks</a>, unpacked why they work, and explained how you can avoid being a victim of these types of attacks.</p>
+<p>In this episode we investigate a component of web architecture whose importance is growing dramatically, and explore the implications that the use and configuration of this component has on protecting (or failing to protect) apps. <a href="https://www.f5.com/labs/search.category_threats_web-application-attacks_injection?q=API&amp;page=0" target="_blank" rel="no-opener no-referrer">Application Programming Interfaces (APIs)</a> are processes and structures through which applications (or sub-application modules or functions) can connect to one another and communicate autonomously. While APIs have been around for a long time, the growth of serverless architectures, containers, and DevOps have made them absolutely critical for contemporary web operations. You might say that web applications have shifted from being blankets to being quilts, and APIs are the stitching that holds the quilts together.</p>
+<p>APIs, then, are hard to categorize. They serve a combined access control and data translation role, coordinating disparate and distributed functions behind the scenes to present the user with a unified application service. From a security standpoint, this is what really matters: the user experience is that of one app. In other words, APIs raise the same fundamental issue of visibility that we discussed in the <a href="application-protection-report-2019--episode-3--web-injection-attacks.html" target="_blank" rel="no-opener no-referrer">third episode</a>.</p>
+<p>Last year we released a <a href="https://www.f5.com/labs/articles/threat-intelligence/reviewing-recent-api-security-incidents" target="_blank" rel="no-opener no-referrer">follow-up</a> to our 2018 Application Protection Report that focused on APIs. We highlighted two patterns of API use that were implicated in API breaches: 1) large platforms with numerous third-party integrations, and 2) mobile apps. Most of these attacks tended to follow the same form: access or injection attacks against the API authentication surface followed by exploitation of excessive permissions. In other words, APIs tend to be compromised in ways similar to breaches of other web applications, but because they are both increasingly important and hidden from view, they arguably represent a bigger risk to the business than other assets.<a id="_ftnrefAutoIncr2" class="footnote-ref" title="2" href="#_ftnAutoIncr2"><sup>2</sup></a></p>
+<p>As a result of this increased risk, we are devoting an entire episode to protecting APIs (and the applications they stitch together) to help the security industry keep pace with the change in the rest of the tech industry.</p>
+<h3>API Usage</h3>
+<p>APIs do not serve in an exclusively structural role to make applications work; they can transform an organization’s business model by directly generating revenue. In 2015, the Harvard Business Review reported that 90% of Expedia’s revenue came through APIs. Ebay and Salesforce also generated much of their revenue this way, reporting 60% and 50% API-driven revenue, respectively.<a id="_ftnrefAutoIncr3" class="footnote-ref" title="3" href="#_ftnAutoIncr3"><sup>3</sup></a> As a result of the growth of APIs, organizations are recognizing new opportunities to generate traffic and revenue, often using existing components of their environments with minimal modification.</p>
+<p>F5 Networks’ 2019 State of Application Services (SOAS) report found that of 2000 technology professionals who responded to the survey, 42% had already deployed API gateways, with 27% planning to deploy gateways in 2019.<a id="_ftnrefAutoIncr4" class="footnote-ref" title="4" href="#_ftnAutoIncr4"><sup>4</sup></a> The API information portal and community forum programmableweb.com listed 12,000 APIs in their directory in 2015, and in early 2019 listed nearly 22,000, illustrating the rapid growth in their use.<a id="_ftnrefAutoIncr5" class="footnote-ref" title="5" href="#_ftnAutoIncr5"><sup>5</sup></a></p>
+<h3>What Is an API?</h3>
+<p>In the simplest possible terms, an API is a user interface for other apps instead of users. (Technically, it is a standard to create a user interface for other apps). An API gateway is a piece of lightweight software, running on an application server, that creates a connection point through which other app services or mobile apps can push or pull data.<a id="_ftnrefAutoIncr6" class="footnote-ref" title="6" href="#_ftnAutoIncr6"><sup>6</sup></a> Ideally, API gateways should have some form of access control, and they typically support a range of authentication, authorization, and federation services such as OAuth, JWT, OpenID Connect, and SAML. The API gateway authenticates the requesting device and validates that its request or payload is structured correctly for the software that sits behind the API. This allows other applications to use the output of the original service in a different way, in a different app, or in a different environment, without having to recreate the original service from scratch. This is what makes APIs such a great way to scale and embed functionality into other apps.</p>
+<p>Google Earth provides an illustrative example of how APIs work. Most of us have run Google Earth, either through a desktop client or through a browser, to find satellite imagery of our own home, think briefly about how that’s kind of creepy, then go <i>fwooosh</i> around the globe. That’s the normal graphical user interface (GUI). But many of us have also used the mobile app, which pulls data from Google Earth servers through an API. In fact, many more apps use the Google Earth Engine API to achieve more specific goals, such as visualizing and measuring change on the surface of the Earth, than Google Earth itself does.<a id="_ftnrefAutoIncr7" class="footnote-ref" title="7" href="#_ftnAutoIncr7"><sup>7</sup></a> One of my favorite Google Earth API tools is the Streetview Zombie Apocalypse simulator, which allows you to see how your neighborhood would fare if the dead walked.<a id="_ftnrefAutoIncr8" class="footnote-ref" title="8" href="#_ftnAutoIncr8"><sup>8</sup></a> Google has even released an Earth Engine API dedicated exclusively to the user interface, enabling other app developers to create new UIs without having to reinvent the wheel on the backend.<a id="_ftnrefAutoIncr9" class="footnote-ref" title="9" href="#_ftnAutoIncr9"><sup>9</sup></a></p>
+<h3>Types of APIs</h3>
+<p>APIs differ in their architectural styles, which in turn affects the format of the machine-machine interactions and how those APIs are deployed. API architecture is a complex topic that exceeds the scope of this article, but it is important to know a few terms and concepts:</p>
+<h3>REST APIs</h3>
+<p>REST stands for REpresentational State Transfer. REST is an architectural style (as opposed to a strict standard or protocol) that defines how computers interact with one another on the Internet. REST APIs are transactional in nature, receiving requests and providing responses on demand. They use standard HTTP methods (that is, GET, POST, PUT, PATCH, DELETE), require a specific location to which they can connect (that is, a URI).<a id="_ftnrefAutoIncr10" class="footnote-ref" title="10" href="#_ftnAutoIncr10"><sup>10</sup></a> They also need to define data model standards to ensure that data are structured correctly. REST APIs make up the bulk of currently deployed APIs, having replaced most of the earlier generation of Remote Procedure Call (RPC) architectures, such as SOAP and XML-RPC.<a id="_ftnrefAutoIncr11" class="footnote-ref" title="11" href="#_ftnAutoIncr11"><sup>11</sup></a></p>
+<p>The fact that REST APIs use the standard HTTP methods is a big part of why they are so common. This standard allows them to be lightweight and straightforward to create and deploy, which means that they can be used across a wide variety of devices, even those with minimal processing power. For instance, REST APIs can allow an Internet of Things (IoT) device like a networked video security camera, which does not have a lot of computer power onboard, to work in a remote setting. A user connects to the camera through an app on the phone to see what happened overnight (or to check on cats/kids). On the backend, the mobile app for the security camera would be sending an API pull request to the camera, which would return a still photo across the web (we’ll talk about video data across APIs below).</p>
+<p>RESTful APIs can be described in a format called OpenAPI 2.0 (formerly Swagger) that defines authentication modes, servers used, methods accepted, and other expected behavior. This is especially handy when implementing API security services.<a id="_ftnrefAutoIncr12" class="footnote-ref" title="12" href="#_ftnAutoIncr12"><sup>12</sup></a></p>
+<h3>Real-time APIs</h3>
+<p>In contrast to the transactional model of REST APIs, real-time APIs offer a continuous feed of data. This can be advantageous in specific scenarios that are time-sensitive, such as for financial data, web chatting, and, in the example of our IoT webcam, sending out a stream of video instead of still photographs. Video information is time-sensitive because it needs to be reassembled from individual packets in the order in which they were taken before it can be viewed at the destination, and so streaming video is a great use case for real-time APIs.</p>
+<h3>Others</h3>
+<p>There are other kinds of APIs, such as native APIs embedded in systems for specific data output, or others that are only accessible through software development kits (SDKs). These are less common, and the differences are not relevant from a security standpoint, so we’ll leave it at that for now.</p>
+<p> </p>
+
+</div>
+
+    
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h2>What Makes APIs a Good Target?</h2>
+<p>There is a combination of factors that make APIs such rich targets. One of the biggest issues is overly broad permissions. Because they are not intended for human use, APIs are often set up to access any data within the application environment. Permissions are usually set up for the user making the original request, and these permissions are, in turn, passed to the API. That is all well and good, until an attack bypasses the user authentication process, going directly to the downstream app. Because the API has unrestricted access, attacks through the API provide attackers with visibility into everything.</p>
+<p>Like basic web requests, API calls incorporate URIs, methods, headers, and other parameters. All of these can be abused in an attack. In fact, most typical web attacks, such as injection, credential brute force, parameter tampering, and session snooping work surprisingly well. To attackers, APIs are an easy target for all their old, dirty tricks.</p>
+<p>Another issue is visibility. As an industry, we haven’t often maintained a lot of situational awareness of APIs. They are supposed to run behind the scenes; this is great until they are compromised behind the scenes, and all of our valuables get stolen behind the scenes. As we noted in our API follow-up to last year’s report, APIs often connect to ports other than 80/443, they are frequently buried in deep paths somewhere on web servers, and the details of their architecture are often known only by development teams. All of this adds up to the reality that security teams may be unaware that connections with that potential impact are even possible in their environment.</p>
+<p> </p>
+
+</div>
+
+    
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h2>What Kinds of APIs Get Hacked, and Why?</h2>
+<p><a href="https://www.f5.com/labs/articles/threat-intelligence/reviewing-recent-api-security-incidents" target="_blank" rel="no-opener no-referrer">Last year</a>, we found that API compromises tended to fall into two patterns of API use that correspond to common breaches. We have also identified a third emerging pattern, which we’ll unpack below. Here’s what the landscape for successful API breaches looks like:</p>
+<h3>Large Platforms with Lots of Third-Party Integrations</h3>
+<p>Organizations with high traffic sites offering a wide range of services often feature a large number of third-party integrations. These integrations rely on APIs to collect data from third-parties and serve it up to the user in a seamless fashion. The growing decentralization of infrastructure, represented by multi-cloud environments, third-party functions and content, and serverless and containerized architectures, means that APIs are not a luxury. Today they are absolutely essential for modern, high-volume platforms. Some of these platforms have hundreds of APIs, all of which need to be managed and monitored. These kinds of organizations and business models have tended to figure prominently in the API breach notifications we’ve seen.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    
+
+    <!-- no link, lightbox -->
+    <a data-lightbox="Image preview" data-title="Figure 1. This diagram shows a large web platform with a theoretical microservices architecture that depends heavily on APIs for communication and integration between functions. An attacker could exploit a vulnerability (or, often, a simple lack of access control) on an API in order to gain access to sensitive data." href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190813_apr_ep5/fig1.jpg">
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190813_apr_ep5/fig1.jpg" data-component-type="platter" alt="Figure 1. This diagram shows a large web platform with a theoretical microservices architecture that depends heavily on APIs for communication and integration between functions. An attacker could exploit a vulnerability (or, often, a simple lack of access control) on an API in order to gain access to sensitive data." class="js-bg-lozad"/>
+        
+    </a>
+
+    <div class="a02-image__caption">
+        Figure 1. This diagram shows a large web platform with a theoretical microservices architecture that depends heavily on APIs for communication and integration between functions. An attacker could exploit a vulnerability (or, often, a simple lack of access control) on an API in order to gain access to sensitive data.
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h3>Mobile Apps</h3>
+<p>As we noted briefly above and <a href="https://www.f5.com/labs/articles/cisotociso/what-to-do-when-your-company-tells-you-they-re-making-a-mobile-a">elsewhere</a>, most mobile apps rely on APIs to pull data from servers, which allows the apps to use fewer resources on the devices themselves. Because of some of the inherent challenges with securing mobile applications, there is a vibrant community of attackers who decompile and reverse engineer mobile applications looking for vulnerabilities or opportunities, such as hardcoded credentials or weak access control. The API is often a focal point for these efforts.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    
+
+    <!-- no link, lightbox -->
+    <a data-lightbox="Image preview" data-title="Figure 2. This diagram shows an app routing mobile traffic through a mobile-specific API while desktop users connect to the same backend through a web interface. The same tactics that would work against a traditional web application, such as brute force or injection attacks, are just as likely to work against the mobile API, and defenders are less likely to maintain awareness of the API." href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190813_apr_ep5/fig2.jpg">
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/threats/17--2019-jul-sep/20190813_apr_ep5/fig2.jpg" data-component-type="platter" alt="Figure 2. This diagram shows an app routing mobile traffic through a mobile-specific API while desktop users connect to the same backend through a web interface. The same tactics that would work against a traditional web application, such as brute force or injection attacks, are just as likely to work against the mobile API, and defenders are less likely to maintain awareness of the API." class="js-bg-lozad"/>
+        
+    </a>
+
+    <div class="a02-image__caption">
+        Figure 2. This diagram shows an app routing mobile traffic through a mobile-specific API while desktop users connect to the same backend through a web interface. The same tactics that would work against a traditional web application, such as brute force or injection attacks, are just as likely to work against the mobile API, and defenders are less likely to maintain awareness of the API.
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h3>The Misconfigured Big App</h3>
+<p>Both of those patterns—large apps with many third-party integrations and mobile apps—were common in breaches we reviewed last year, but there is an additional emerging trend that deserves mention: the misconfigured API. In many of the new cases we saw in the second half of 2018 and the first half of 2019, breaches occurred because stakeholders in organizations were not aware of either the existence of an API, or the impact of an insecure one, and so put no authentication (or weak authentication) in front of it. As silly as it sounds, it is hardly surprising, since it once again points to the fundamental challenge of visibility, both from the standpoint of information systems and large organizations.</p>
+<p> </p>
+
+</div>
+
+    
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h2>The Threat Actor Model Is a Poor Fit for APIs</h2>
+<p>In examining the data on API breaches over the past year, we have found that understanding the threat actors and their motivations is particularly instructive for understanding the threat in this case, but more because the CHEW (criminal, hacktivist, espionage, warfare) model is a poor fit rather than a good fit. To illustrate what we mean, let’s examine the model.</p>
+<h3>Criminals</h3>
+<p>Criminals want to attack APIs for relatively obvious reasons. APIs are an obscure but startlingly direct path to valuable data, like payment card information, that criminals can resell on the market, or use to buy commodities that they then resell as a form of money laundering. No surprises there.</p>
+<h3>Hacktivists</h3>
+<p>Here is where the model starts to fail in interesting ways. There are people exposing gaping holes in API security, but not to make a political point about power imbalances or perceived injustice. In actuality, the intentional but non-malicious exposures of API flaws that we see are from security researchers using recognized but obscure attack chains as a vehicle for self-promotion. The result is a loss of credibility and brand trust for the victims, but no direct financial or legal costs, for the most part. We will explore this in greater detail a little later.</p>
+<h3>Espionage</h3>
+<p>Similar to the poor fit in the hacktivist category above, the most prominent espionage scenario was not espionage in the sense of either corporate espionage against a competitor, or nation-state espionage against a rival state. The Cambridge Analytica/Facebook scandal was instead an <a href="https://www.vox.com/2018/3/17/17134072/facebook-cambridge-analytica-trump-explained-user-data" target="_blank" rel="no-opener no-referrer" rel="noreferrer">intentional exploitation of contractual loopholes</a> for the purposes of data mining the public. Nevertheless, it exploited the functionality of an API in a way that it was not (ostensibly) intended to be used.</p>
+<p>One of the questions this raises is whether the Cambridge Analytica scandal was an actual abuse of functionality, or an intentional exploitation of a business opportunity—right up until the point that the scandal broke. We don’t know, but it is worth noting here that, once again, the standard categories of threat actors don’t apply. It appears that the poor fit of our actor model says more about the nature of API security than it does about the model.</p>
+<h3>Warfare</h3>
+<p>We have not yet seen evidence of API attacks in a warfare context, but the most obvious scenario would be to flood an API with traffic as a form of distributed denial of service (DDoS) attack against the application itself. In a warfare scenario, compromising availability or integrity can be as tactically advantageous as compromising confidentiality, depending on the context. The potential for an API to become a medium for an obscure and difficult-to-diagnose DDoS attack is rich, and we will not be surprised to see it deployed that way soon.</p>
+<p> </p>
+
+</div>
+
+    
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h2>Public Records Review</h2>
+<p>In terms of public breaches, all of the 2018 breaches up through November were covered in the <a href="https://www.f5.com/labs/articles/threat-intelligence/reviewing-recent-api-security-incidents" target="_blank" rel="no-opener no-referrer">ancillary Application Protection Report on APIs</a>. We won’t bother to reprint them here, but all of the breaches we identified fit into the first two patterns listed above–huge platforms with loads of APIs, or mobile apps that depend heavily on a few APIs to function.</p>
+<h3>Breaches</h3>
+<p>In terms of new events, every single breach we’ve identified between November 2018 and the present were attributable to misconfigured access controls. In other words, system owners did not realize that their API was wide open. However, as we noted above, the security researcher looking for a headline to put their name on was the principal threat actor in these scenarios, so the good news is that data were not leaked to the black market. You might say that these system owners got lucky, as did the researchers.</p>
+<p> </p>
+
+</div>
+
+    
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <table border="1" cellspacing="0" cellpadding="10" style="width: auto;" class="table-striped">
+<tbody><tr style="background-color: rgb(73,27,98);color: rgb(255,255,255);"><td><b>System Owner</b></td>
+<td><b>Date</b></td>
+<td><b>Citation</b></td>
+</tr><tr><td>Brazil Fed of Indus - ElasticSearch API exposed</td>
+<td>11/23/18</td>
+<td>https://www.zdnet.com/article/brazils-largest-professional-association-suffers-massive-data-leak/</td>
+</tr><tr><td>Urban Massage - ElasticSearch API exposed</td>
+<td>11/27/18</td>
+<td>https://techcrunch.com/2018/11/27/urban-massage-data-exposed-customers-creepy-clients/</td>
+</tr><tr><td>SKY Brasil - ElasticSearch API exposed</td>
+<td>11/29/18</td>
+<td>https://www.zdnet.com/article/sky-brasil-exposes-data-of-32-million-subscribers/</td>
+</tr><tr><td>Atrium Health - ElasticSearch API exposed</td>
+<td>11/29/18</td>
+<td>https://www.securityinfowatch.com/healthcare/news/<br />
+12438109/personal-data-of-more-than-2m-patients<br />
+-compromised-in-atrium-health-data-breach</td>
+</tr><tr><td>Data&amp;Leads</td>
+<td>11/29/18</td>
+<td>https://www.bankinfosecurity.com/blogs/data-leads-site-disappears-after-data-exposure-alert-p-2687</td>
+</tr><tr><td>LandMark White Limited</td>
+<td>2/13/19</td>
+<td><p>https://www.computerworld.com.au/article/657662/<br />
+landmark-white-blames-exposed-api-data-breach/<br />
+https://www.programmableweb.com/news/<br />
+landmark-white-api-breach-may-have-exposed-loan-<br />
+details-100000-users/brief/2019/02/13</p>
+</td>
+</tr><tr><td>JustDial Leak</td>
+<td>4/17/19</td>
+<td>https://thehackernews.com/2019/04/justdial-hacked-data-breach.html</td>
+</tr><tr><td>GateHub Cryptocurrency Wallet Hack</td>
+<td>6/6/19</td>
+<td><p>https://gatehub.net/blog/gatehub-preliminary-statement/</p>
+</td>
+</tr><tr><td>Venmo transactions Leaked</td>
+<td>6/16/19</td>
+<td>https://techcrunch.com/2019/06/16/millions-venmo-transactions-scraped/</td>
+</tr></tbody></table>
+<p>Another piece of evidence from the same time period that illustrated the prevalence and importance of APIs—as well as their weak security—was a study by North Carolina State University (NCSU) that found that more than 100,000 code repositories on GitHub had API tokens and cryptographic keys—the literal tools for API access control—stored in plaintext and visible in plain sight.<a id="_ftnrefAutoIncr13" class="footnote-ref" title="13" href="#_ftnAutoIncr13"><sup>13</sup></a> These findings illustrate a trend we’ve seen for a long time: developers using workarounds or insecure practices during development, when it doesn’t matter, and then failing to mitigate those issues when the project goes live. Storing API authentication information in plaintext on GitHub is the latest incarnation of this old issue.</p>
+<h3>Incidents (Not Breaches)</h3>
+<p>The list of API incidents that did not lead to a breach had the same characteristics as the confirmed breaches. For the most part, these incidents were caused by security researchers finding routine bugs that had escaped detection precisely because they were in APIs.<br />
+<br />
+</p>
+<table border="1" cellspacing="0" cellpadding="10" style="width: auto;" class="table-striped">
+<tbody><tr style="background-color: rgb(73,27,98);color: rgb(255,255,255);"><td><b>System Owner</b></td>
+<td><b>API Type</b></td>
+<td><b>Incident Description</b></td>
+<td><b>Date</b></td>
+<td><b>Citation</b></td>
+</tr><tr><td>City of York - UK</td>
+<td>Mobile</td>
+<td>Vuln in mobile app allows access</td>
+<td>11/18/18</td>
+<td><p>https://www.yorkmix.com/news<br />
+/major-security-breach-as-<br />
+hackers-obtain-users-personal-<br />
+info-from-york-council-phone-app/</p>
+</td>
+</tr><tr><td>Kubernetes</td>
+<td>Platform</td>
+<td>API privilege escalation vuln</td>
+<td>12/3/18</td>
+<td><p>https://www.theregister.co.uk/<br />
+2018/12/03/kubernetes_flaw<br />
+_cve_2018_1002105/</p>
+</td>
+</tr><tr><td>Facebook Photo API</td>
+<td>Platform</td>
+<td>Facebook API bug privilege escalate third-party apps to access their photos</td>
+<td>12/14/18</td>
+<td><p>https://developers.facebook.<br />
+com/blog/post/2018/12/14/<br />
+notifying-our-developer-ecosystem-about-a-photo-<br />
+api-bug/</p>
+</td>
+</tr><tr><td>Twitter</td>
+<td>Platform</td>
+<td>Access control vuln leaves DMs open</td>
+<td>12/15/18</td>
+<td><p>https://www.bleepingcomputer.<br />
+com/news/security/twitter-fixes-bug-that-gives-unauthorized-access-to-direct-messages/</p>
+</td>
+</tr><tr><td>Kubernetes</td>
+<td>Platform</td>
+<td>Vuln can cause DoS</td>
+<td>2/15/19</td>
+<td><p>https://github.com/kubernetes<br />
+/kubernetes/issues/74534</p>
+</td>
+</tr><tr><td>Uber</td>
+<td>Mobile</td>
+<td>Info Leakage on Uber API</td>
+<td>2/19/19</td>
+<td><p>https://medium.freecodecamp.<br />
+org/leakage-of-client-secret-server-tokens-of-all-uber-developer-applications-657d9d7fd30e</p>
+</td>
+</tr><tr><td>Drupal's RESTful Web Services</td>
+<td>Platform</td>
+<td>Remote exec vuln</td>
+<td>2/20/19</td>
+<td><p>https://www.theregister.co.uk/<br />
+2019/02/20/drupal_cve_2019<br />
+_6340</p>
+</td>
+</tr><tr><td>Pandora and Viper (Clifford) car alarm systems</td>
+<td>Mobile</td>
+<td>Insecure direct object ref in the API</td>
+<td>2/25/19</td>
+<td><p>https://www.pentestpartners.<br />
+com/security-blog/gone-in-six-seconds-exploiting-car-alarms/</p>
+</td>
+</tr><tr><td>63red Safe</td>
+<td>Mobile</td>
+<td>Backend API doesn't use any form of authentication</td>
+<td>3/12/19</td>
+<td><p>https://www.zdnet.com/article<br />
+/yelp-for-conservatives-maga-app-leaks-users-data/</p>
+</td>
+</tr><tr><td>Portainer Docker Tool</td>
+<td>Platform</td>
+<td>Insufficient checks on API allow retrieval of LDAP creds</td>
+<td>4/3/19</td>
+<td><p>https://tools.cisco.com/security<br />
+/center/viewAlert.x?alertId=59882</p>
+</td>
+</tr><tr><td>Nagios XI</td>
+<td>Platform</td>
+<td>SQLi in API</td>
+<td>4/4/19</td>
+<td><p>https://tools.cisco.com/security<br />
+/center/viewAlert.x?alertId=59901</p>
+</td>
+</tr><tr><td>Shopify Exchange App</td>
+<td>Mobile</td>
+<td>Vuln leaks info</td>
+<td>4/15/19</td>
+<td><p>https://medium.com/bug<br />
+bountywriteup/how-i-gained-access-to-revenue-and-traffic-data-of-thousands-of-shopify-stores-b6fe360cc369</p>
+</td>
+</tr><tr><td>Tchap messaging app</td>
+<td>Mobile</td>
+<td>Weak auth</td>
+<td>4/19/19</td>
+<td><p>https://medium.com/fs0c131y<br />
+/tchap-the-super-not-secure-app-of-the-french-government-84b31517d144</p>
+</td>
+</tr><tr><td>Facebook Marketplace</td>
+<td>Platform</td>
+<td>Info leakage</td>
+<td>4/23/19</td>
+<td><p>https://www.7elements.co.uk<br />
+/resources/blog/facebooks-burglary-shopping-list/</p>
+</td>
+</tr><tr><td>OnePlus Mobile app</td>
+<td>Mobile</td>
+<td>Info leakage</td>
+<td>6/14/19</td>
+<td><p>https://9to5google.com/2019<br />
+/06/14/oneplus-wallpapers-app-leak/</p>
+</td>
+</tr></tbody></table>
+<p> </p>
+
+</div>
+
+    
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h2>API Vulnerability Data</h2>
+<p>The sensor network that our partner Lorkya maintains found only 0.1% of attack traffic was definitively looking for API vulnerabilities. However, this is probably better attributed to the limitations of the sensor network than any trends about API attacks. Loryka’s sensors primarily detect wide-ranging probes and reconnaissance campaigns where attackers are looking for something to target, but API attacks will, by nature, be targeted and bespoke. There were still a few interesting findings worth mentioning.</p>
+<h3>Stalker_Portal</h3>
+<p>There was a burst of traffic from a single IP address that lasted for a few days targeting a specific path on any system it could find. The path that the traffic was targeting was www.example.com/stalker_portal/server/api/file.php. In just a few days this traffic came to constitute more than one third of the total traffic targeting APIs, and we don’t know what it is. It could be a misconfigured vulnerability scanner that was supposed to be scanning an internal environment, but we don’t really know, and we can’t draw any big conclusions from it.</p>
+<h3>PHP API Attacks</h3>
+<p>One interesting finding was that, of the traffic looking for APIs, 86.7% of it was scanning for sites with the PHP API. While notable, this is not actually surprising; we found in <a href="application-protection-report-2019--episode-1--sensor-networks-r.html" target="_blank" rel="no-opener no-referrer">Episode One</a> that 81% of the malicious web traffic Loryka detected on port 80 was targeting PHP. In other words, our API intelligence just cements PHP’s position as one of the great targets of the Internet.</p>
+<h3>Crafty Syntax Live Help</h3>
+<p>Loryka’s data also revealed that 1.8% of the API attack data was targeting paths containing a CSS file for an open source customer service product known as Crafty Syntax Live Help.<a id="_ftnrefAutoIncr14" class="footnote-ref" title="14" href="#_ftnAutoIncr14"><sup>14</sup></a> An exploit was published in 2006 regarding a remote file inclusion vulnerability in version 2.9.9 of this product, specifically regarding a text-based database support API.<a id="_ftnrefAutoIncr15" class="footnote-ref" title="15" href="#_ftnAutoIncr15"><sup>15</sup></a> It appears that someone was looking for an opportunity to exploit a very old vulnerability on any target they could find.</p>
+<h3>Generic and Other API Attacks</h3>
+<p>About twelve percent of the API-targeted traffic we saw did not fit into any broader trend, or was malformed. With the limited detail we get from Loryka’s sensors, it’s not possible for us to form a complete picture of this traffic. It is still worth exploring some specific traffic in detail, however:</p>
+<ul>
+<li><b>/api/.git/HEAD</b>–This path probably represents an attempt to scrub HTTP header information from any system set up with a GIT API.<a id="_ftnrefAutoIncr16" class="footnote-ref" title="16" href="#_ftnAutoIncr16"><sup>16</sup></a></li>
+<li><b>/zabbix/api_jsonrpc.php</b>–Zabbix is a network monitoring appliance with an RPC API that encodes traffic in a JSON format. This is probably an attacker scanning for servers with Zabbix APIs that have no access control.</li>
+<li><b>/include/api/xmlrpc–</b>In all likelihood this is looking for any RPC-style APIs that might not require authentication.</li>
+<li><b>http://clientapi.ipip.net/echo.php?info=20180211134656</b>–This path, which we saw exactly ten times in the dataset with different 14-digit values at the end, was interesting because it targeted an actual domain instead of any domain that had something at the target path. The target, IPIP.NET, offers IP geolocation and research services. We don’t know what the payload values were intended to do, or whether this was an attack or a misconfiguration.</li>
+<li><b>/api/log_browser/validate</b>–This is another path whose intended target and function we do not understand, but we can reasonably guess that it was targeting the API of network traffic logging, server logging, or similar appliance, possibly for the purposes of network reconnaissance.</li>
+</ul>
+<h3>Known API Exploits with Plausible Linkages to Attack Patterns</h3>
+<p>We also found known exploits that line up with specific attack patterns, as noted by Loryka, that are worth mentioning:</p>
+<ul>
+<li><b>/wsdl/</b>–Web Services Description Language (WSDL) is an XML-based description language that is often used for Remote Procedure Call-type SOAP APIs. In May 2019, a researcher published an exploit for ReadyAPI that allows attackers to upload WSDL files with malicious content to the API, such that when a victim requests information from the API, the malicious code runs on the victim’s computer.<a id="_ftnrefAutoIncr17" class="footnote-ref" title="17" href="#_ftnAutoIncr17"><sup>17</sup></a> This attack path was probably targeting this vulnerability.</li>
+<li><b>StarOffice.ComponentContext</b>–This attack path was targeting a remote code execution vulnerability in the Apache OpenOffice UNO API that StarOffice uses along with other open source office suites like Libre Office and OpenOffice.<a id="_ftnrefAutoIncr18" class="footnote-ref" title="18" href="#_ftnAutoIncr18"><sup>18</sup></a></li>
+<li><b>/v1/agent/self</b> OR <b>/v1/agent/service/register</b>–These two paths are targeting a remote command execution vulnerability in the Hashicorp Consul service mesh API. The exploit for this vulnerability was published in early 2019.<a id="_ftnrefAutoIncr19" class="footnote-ref" title="19" href="#_ftnAutoIncr19"><sup>19</sup></a></li>
+<li><b>\x41</b>–We saw this path show up exactly 8000 times in our dataset, which corresponds to a known denial of service vulnerability in a network utility suite called Megaping, which is caused by a buffer overflow.<a id="_ftnrefAutoIncr20" class="footnote-ref" title="20" href="#_ftnAutoIncr20"><sup>20</sup></a></li>
+<li><b>pages.aspx?pageref=[SQL]</b>–This path is an injection attack against the Grapixel New Media 2 tool’s ASP.NET API.<a id="_ftnrefAutoIncr21" class="footnote-ref" title="21" href="#_ftnAutoIncr21"><sup>21</sup></a> Attacks like this illustrate how APIs are susceptible to many of the same kinds of vulnerabilities, and hence attacks, as other forms of software. Unvalidated user input like this is a risk no matter where it lands in a system.<b></b></li>
+<li><b>/api/hosts</b>–Similar to the above exploit in an ASP.NET API, this is an attempt to target the REST API for the Unitrends Enterprise Backup (UEB) appliance with unvalidated user input, which results in remote code execution and root privilege.<a id="_ftnrefAutoIncr22" class="footnote-ref" title="22" href="#_ftnAutoIncr22"><sup>22</sup></a></li>
+<li><b>miner_getfile</b>–Nanopool is a cryptocurrency mining and pooling platform that offers APIs for remote crypto miner management. The API has a remote code execution vulnerability that the attacker was presumably trying to exploit.<a id="_ftnrefAutoIncr23" class="footnote-ref" title="23" href="#_ftnAutoIncr23"><sup>23</sup></a></li>
+<li><b>/api.txt</b>–This path probably represents attempts to use the network appliance Shodan’s API to force memcached servers to flood targets with a distributed denial of service (DDoS) attack.<a id="_ftnrefAutoIncr24" class="footnote-ref" title="24" href="#_ftnAutoIncr24"><sup>24</sup></a></li>
+</ul>
+<h2>OK, I Get It. APIs Are Risky. What Do I Do?</h2>
+<h3>Inventory</h3>
+<p>To start, <a href="https://www.f5.com/labs/articles/bylines/to-protect-your-network-you-must-first-know-your-network" target="_blank" rel="no-opener no-referrer">as always</a>, you’ll need an inventory of your APIs. For some organizations, this is not as easy as it sounds. The large platforms that we mentioned earlier often depend on APIs to pull specific functions into their application, such as payment information processing, or linking to social media. The growing complexity of information systems, along with the accelerating rate of change, means that obtaining this inventory is not a trivial task. Maintaining the inventory over time can be even more difficult, because it is usually harder for people with other jobs to budget time for ongoing, routine maintenance tasks than it is to get together for a single discovery session. Nevertheless, it is absolutely essential to keep the inventory up to date, since APIs are quickly becoming the new nexus of business logic and application architecture.</p>
+<p>As of June 2019, we know of approximately 22,000 published APIs. The majority of those are estimated to be private APIs, which means that access to them is restricted to internal developers or specific partners, as opposed to the public.<a id="_ftnrefAutoIncr25" class="footnote-ref" title="25" href="#_ftnAutoIncr25"><sup>25</sup></a> Understanding which ones are which within your organization, and how each one contributes to your business operations is important for adding context to your inventory. This information allows you begin the process of assessing the risks that APIs might bring to your environment. The reason this is such a big deal is that all of the breaches we’ve seen so far have been attributable not to sophisticated zero-day exploits by genius hackers, but instead to failures to apply basic security principles to new operational needs.</p>
+<p>There are two specific things we recommend for every API inventory, reflecting the role of APIs in contemporary systems: 1) Conduct perimeter scans. Perimeter scans are valuable particularly because they replicate the hacker’s eye view.<a id="_ftnrefAutoIncr26" class="footnote-ref" title="26" href="#_ftnAutoIncr26"><sup>26</sup></a> 2) Perform in-depth discovery interviews with development and operations teams. This may save time and get you valuable information to supplement the results of internal scans. Find out what the <i>de juris</i> and the <i>de facto</i> states are, and prepare risk assessments for both.</p>
+<h3>API Authentication</h3>
+<p>By design, APIs execute commands. They should be considered root/admin interfaces and require strong authentication. F5’s State of Application Services 2019 found that 25% of the organizations surveyed didn’t deploy authentication for APIs at all.<a id="_ftnrefAutoIncr27" class="footnote-ref" title="27" href="#_ftnAutoIncr27"><sup>27</sup></a> 38% reported that they did ”some of the time,” and 37% said ”most of the time.” Two things stand out about this to us. The first is that a full quarter of F5’s customer base is not controlling access to a component that offers a direct path right to the heart of some of their most valuable capital. The other is that even the leaders in this issue are still not controlling access all of the time. This is a prime example of risk models failing to keep up with a changing landscape.</p>
+<p>There are different forms of API authentication; practitioners must consider the pros and cons of each type based on risk.<a id="_ftnrefAutoIncr28" class="footnote-ref" title="28" href="#_ftnAutoIncr28"><sup>28</sup></a> Generally speaking, OAuth 2.0 is considered the best option for most REST APIs, but it really depends on the nature and design of the API, its intended uses, and the business model and threat model of the organization.<a id="_ftnrefAutoIncr29" class="footnote-ref" title="29" href="#_ftnAutoIncr29"><sup>29</sup></a> (Note also that OAuth 2.0 authentication traffic must be encrypted to be effective.)<a id="_ftnrefAutoIncr30" class="footnote-ref" title="30" href="#_ftnAutoIncr30"><sup>30</sup></a> There are also emerging frameworks for service-level authentication in modern architectures such as the SPIFFE framework, which offer a potential step forward in terms of managing authentication in complex environments.<a id="_ftnrefAutoIncr31" class="footnote-ref" title="31" href="#_ftnAutoIncr31"><sup>31</sup></a> The real point here is that authentication of APIs is not optional given the trends and risk we’ve outlined above.</p>
+<p>Furthermore, as in all authentication, credentials must be stored in a secure way. Whether your credentials take the form of user/password combinations (for either machines or human users) or API keys (which are simplified authentication strings that have specific uses), it is critical to treat them as sensitive information, because they really are the keys to the kingdom.<a id="_ftnrefAutoIncr32" class="footnote-ref" title="32" href="#_ftnAutoIncr32"><sup>32</sup></a></p>
+<h3>API Authorization</h3>
+<p>The other half of API access control is authorization, by which we essentially mean the permissions associated with any credential set. As with all credentials, API creds must be treated using the principle of least privilege. Role-based access control is the best way to do this for API accounts of all types. At a minimum, this should take the form of limiting the HTTP methods that specific roles can implement (DELETE being an obvious one to limit, but not the only one–again, let your own environment and business logic dictate this in a risk-based way). To go one better, define specific sequences of actions that correspond to the specific API use case, and limit the API to that sequence instead of simply specifying a list of permitted actions.</p>
+<p>At no time should APIs be allowed to pass unsanitized or unvalidated input to the application. That is a sure recipe for an <a href="application-protection-report-2019--episode-3--web-injection-attacks.html" target="_blank" rel="no-opener no-referrer">injection attack</a>.</p>
+<h3>Log the API Connection</h3>
+<p>After implementing authentication and authorization controls, the next level of maturity is to implement monitoring on the API. As we mentioned in Episode 4, brute force attacks can easily go unnoticed; all the more so with the advent of clever, distributed, low-and-slow access attacks. As a result, you should log API connections regardless of their outcome and behavior, and review those logs, whether through humans, bots, or cloud services. Furthermore, given the number of APIs and connections across them, it’s best to also monitor the assets that the APIs serve to ensure their integrity and confidentiality.</p>
+<h3>Encrypt the API Connection</h3>
+<p>At the risk of sounding repetitive, APIs are like user interfaces for machine users. Their traffic still moves across the web like any other traffic. We increasingly encrypt all user traffic on the web—API traffic should be treated the same way. Encrypt those connections and validate the certificates like you would for any other service. That also takes care of the requirement to encrypt OAuth 2.0 authentication traffic, as noted above.</p>
+<h3>Look at API Security Tools</h3>
+<p>Consider looking at a proxy or a firewall that is “API aware” to inspect, validate, and throttle API requests. Some API security services can analyze the originating client and attempt to determine if a request is legitimate or malicious. They can also ensure that API requests stay where they’re supposed to stay, and do not escalate their privileges or exceed their reach into the app or data. A tool like this makes all of the aforementioned mitigation tasks easier. Many API security tools ingest OpenAPI/Swagger files, which will auto-configure the enforcement of the expected behavior.</p>
+<h3>Test Your API</h3>
+<p>APIs must be scoped in for scans, vulnerability assessments, and penetration tests. The point here is that the prevalence of APIs is matched only by their obscurity. Many organizations don’t even have a single person who is aware of all of the org’s APIs, and almost none of the orgs we’ve talked to have authentication on all of them. Testing is a part of any decent security program, and it applies here as well.</p>
+<p>Given the difficulty of maintaining situational awareness, it is also a good idea to place a bug bounty on API vulnerabilities. Security researchers are constantly looking for things to report about, and Shodan has made it easy for researchers (and attackers) to discover your systems in detail. It is much, much cheaper to pay them quickly and quietly, patch your issues, and release a statement when applicable, than for them to go public—which could lead to bad press at best and a compromise at worst.</p>
+<h2>Wrap-Up</h2>
+<p>APIs are not new, but they are newly relevant for the way the Internet is growing and applications are evolving. As such, they do not so much introduce new risks as they reintroduce existing risks in forms that are more likely to be exploited, more impactful, and harder to recognize. At the same time, they are an unavoidable component in contemporary architectures, which means that avoiding or ignoring their issues is not an option for security teams. The Open Web Application Security Project (OWASP) has released one of their excellent Top 10 lists <a href="https://github.com/OWASP/API-Security/tree/develop" target="_blank" rel="no-opener no-referrer" rel="noreferrer">specifically for APIs</a>. It is a good place to begin to explore these issues in greater detail.</p>
+<p>Each chapter of the 2019 research series has featured well-understood risks, many of which have been around for decades, but that have taken on new forms as a result of changes in the tools and techniques that we use to provide web services. While this is in keeping with our long-running assertion that successful security operations are mostly about the thorough implementation of the basics across space, time, and diverse systems, this is not to say that we think that the changes are bad. When we talk about increased architectural complexity, this should be understood in light of the fact that applications also feature less complexity in the code itself. Other than for operating systems and similar heavy pieces of software, the days of millions of lines of code in a single piece of software are probably coming to an end. Instead, that complexity is re-appearing in architecture and infrastructure, as we assemble many small parts to create a complete whole. There are many advantages to these trends, but they also introduce added layers of abstraction in operations, which, in turn, raises issues for visibility and cascading failure modes. This is why the old issues are coming back in new forms. As security practitioners, we must not lament these changes, but adapt our practices to them with evidence, perspective, and a focus on enabling operations rather than hindering them.</p>
+
+</div>
+
+    
+</div>
+<div class="a24-next-and-previous-article section">
+
+    
+            
+        <div class="a24-next-and-previous-article__prev-button-wrap">
+            <a class="a24-next-and-previous-article__prev-button btn btn-outline" href="application-protection-report-2019--episode--4-access-attack-trends-in-2018.html">
+                <span class="chev">‹</span>Previous article in this series
+            </a>
+        </div>
+        <div class="a24-next-and-previous-article__next-button-wrap">
+            
+        </div>
+    
+  
+    
+
+</div>
+
+
+</div>
+</div>
+<div class="a13-article-quote-labs section">
+
+
+    
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-right">
+        <div class="vitalsarea section">
+
+
+    
+        
+        <div class=" display-old-labs-only vitalsarea  js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/isogrid.png">
+            <div class="accordion only-mobile ">
+                <a class="trigger-collapse collapsed article-vital">
+                    
+                    <div class="button-container">
+                        <div class="x medium"><b></b><b></b><b></b><b></b></div>
+                    </div>
+                </a>
+                <div class="can-collapse collapsed ">
+                    <div class="row">
+                        <div class="vitals-wrap">
+                            <div>
+                                
+
+
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Type:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22App+Infrastructure+Attacks%22" target="_self">App Infrastructure Attacks</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Web+Application+Attacks%22" target="_self">Web Application Attacks</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Method:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Dictionary+attacks%22" target="_self">Dictionary attacks</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22API+Attacks%22" target="_self">API Attacks</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Credential+stuffing%22" target="_self">Credential stuffing</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Brute+force+attack%22" target="_self">Brute force attack</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Vulnerabilities:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=CVE-2018-6328" target="_self">CVE-2018-6328</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=CVE-2017-12478" target="_self">CVE-2017-12478</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=CVE-2018-1000049" target="_self">CVE-2018-1000049</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=CVE-2018-1000115" target="_self">CVE-2018-1000115</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Exploits:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=EDB-46796" target="_self">EDB-46796</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=EDB-46544" target="_self">EDB-46544</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=EDB-46074" target="_self">EDB-46074</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=EDB-46004" target="_self">EDB-46004</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=EDB-45704" target="_self">EDB-45704</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=EDB-45559" target="_self">EDB-45559</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=EDB-45044" target="_self">EDB-45044</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=EDB-44265" target="_self">EDB-44265</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attack Motive:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Hacktivism" target="_self">Hacktivism</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Espionage" target="_self">Espionage</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Warfare" target="_self">Warfare</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Cybercrime" target="_self">Cybercrime</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="vital-item stack-wrap ">
+                            <h5 class="vital-header">App Tiers Affected:
+                            </h5>
+                            <div class="app-stack">
+                                <div class="above-top ">
+
+                                    <div class="bg js-bg-lozad " data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-above-top.png">
+                                    </div>
+                                    <span>Client</span>
+
+                                </div>
+                                <div class="red-dots shorter">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="stack-top">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-top.png">
+                                    </div>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+
+                                <div class="layer-1 active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1-active.png" style="max-width: 80px;"/></div>
+                                    <span>Services</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-2 active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3-active.png" style="max-width: 80px;"/></div>
+                                    <span>Access</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-3 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
+                                    <span>TLS </span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-4  ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4.png" style="max-width: 80px;"/></div>
+                                    <span>DNS</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-5 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
+                                    <span>Network</span>
+                                </div>
+                                <div class="stack-bottom">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-bottom.png">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        <div class="display-LC-only vitalsarea  js-bg-lozad">
+            <div>
+
+
+                <div class="row">               
+
+                    <div class="vital-item stack-wrap ">
+                        <h5 class="vital-header">App Tiers Affected:</h5>
+
+
+                        <div class="app-stack ">
+                            <div class="above-top ">
+
+                                <div class="bg js-bg-lozad " data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-above-top.png">
+                                </div>
+                                <span>Client</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="stack-top">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-top.png">
+                                </div>
+                            </div>
+
+                            <div class="layer-1 active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1-active.png"/>
+                                </div>
+                                <span>Services</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-2 active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2-active.png"/>
+                                </div>
+                                <span>Access</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-3 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
+                                </div>
+                                <span>TLS </span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-4  ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4.png"/>
+                                </div>
+                                <span>DNS</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-5 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
+                                </div>
+                                <span>Network</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+                            <div class="stack-bottom">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-bottom.png">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    
+
+    
+
+</div>
+<div data-component-type="article" class="a07-related-articles section"><!--googleoff: all-->
+
+    
+
+    
+
+    <div class="a07-related-articles " data-id="relatedArticlesId">
+        <div class="a07-related-articles__container">
+            <h4 class="a07-related-articles__container-title">Related Articles</h4>
+
+            <div id="related-article-hidden-items">
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="https://www.f5.com/labs/search?q=%22Attack+Campaign%22">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Attack Campaign</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">January 31, 2020</span>
+                        </div>
+                    </div>
+                    <a href="https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities--exploits--and-malware-driving-attack-campaigns-in-december-2019" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Vulnerabilities, Exploits, and Malware Driving Attack Campaigns in December 2019
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">8 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="https://www.f5.com/labs/search?q=%22Attack+Campaign%22">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Attack Campaign</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">December 24, 2019</span>
+                        </div>
+                    </div>
+                    <a href="https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities-exploits-and-malware-driving-attack-campaigns-in-november-2019" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Vulnerabilities, Exploits, and Malware Driving Attack Campaigns in November 2019
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">12 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="https://www.f5.com/labs/search?q=%22Attack+Campaign%22">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Attack Campaign</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">November 26, 2019</span>
+                        </div>
+                    </div>
+                    <a href="https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities-exploits-and-malware-driving-attack-campaigns-in-october-2019" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Vulnerabilities, Exploits, and Malware Driving Attack Campaigns in October 2019
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">8 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--googleon: all--></div>
+<div class="a11-separation-line section">
+
+<div>
+	<div></div>
+</div></div>
+<div class="c20-newsletter-signup-display section">
+
+
+
+
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display__wrapper purple-bg right-rail c20-newsletter-signup-display__newsletter-form">
+	<div class="c20-newsletter-signup-display__signup-wrap">
+		<div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+			<div class="c20-newsletter-signup-display__title">
+				F5 Labs Newsletter
+            </div>
+            <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+            </div>
+		</div>
+		<div class="c20-newsletter-signup-display__row-wrap">
+			<div class="c20-newsletter-signup-display__signup-form-wrap">
+                	<!-- LOADER -->
+				<div id="loader" class="form-loader small-loader     
+                  hide-after-submit"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+				<form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit"></form>
+
+				<!-- SUCCESS MESSAGE -->
+                <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+					<div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>					
+				</div>
+			</div>
+		</div>
+
+    </div>
+    <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+        <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display__wrapper purple-bg right-rail known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__row-wrap ">
+			<div class="c20-newsletter-signup-display__signup-form-wrap">
+				
+				<!-- KNOWN USER MESSAGE -->
+                <div class="c20-newsletter-signup-display__success-message ">
+					<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row container-bottom">
+        <div class="a01-container section">
+    <div class="a01-container-col-left">
+        
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-center">
+        <div class="a10-article-summary section">
+    
+    
+        
+    
+    
+</div>
+<div data-component-type="article" class="a02-article-actions-container section">
+
+    
+        
+        
+        <div class="a02-article-actions-container">
+            
+
+
+
+
+    
+    
+    <div data-component-type="article" class="a01-article-action">
+
+    
+    
+        
+        <div class="a01-article-action__article-actions">
+            <div class="a01-article-action__article-action-box U:justify-content U:align-items-center  U:display-flex">
+              
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="https://www.f5.com/labs/articles/education/what-are-security-controls"><img alt="" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_technical.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Technical</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="https://www.f5.com/labs/articles/education/what-are-security-controls"><img alt="" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_preventative.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Preventative</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__box-descr">
+                    <div class="a01-article-action__box-descr-content"><ul>
+<li>Inventory APIs and understand their implications to your architecture and failure modes</li>
+<li>Require authentication for APIs - OAuth 2.0 is a common authentication protocol for APIs</li>
+<li>Restrict permissions for APIs</li>
+<li>Encrypt API connections</li>
+<li>Use API-specific tools such as proxies or firewalls that have built-in API controls</li>
+<li>Test APIs using perimeter scans, vulnerability assessments, and penetration tests</li>
+</ul>
+</div>
+                </div>                
+            </div>
+        </div>
+    
+
+    
+
+
+
+</div>
+
+
+    
+    
+    <div data-component-type="article" class="a01-article-action">
+
+    
+    
+        
+        <div class="a01-article-action__article-actions">
+            <div class="a01-article-action__article-action-box U:justify-content U:align-items-center  U:display-flex">
+              
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="https://www.f5.com/labs/articles/education/what-are-security-controls"><img alt="" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_technical.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Technical</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="https://www.f5.com/labs/articles/education/what-are-security-controls"><img alt="" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_detective.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Detective</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__box-descr">
+                    <div class="a01-article-action__box-descr-content"><ul>
+<li>Log API connections</li>
+</ul>
+</div>
+                </div>                
+            </div>
+        </div>
+    
+
+    
+
+
+
+</div>
+
+
+    
+    
+    <div data-component-type="article" class="a01-article-action">
+
+    
+    
+        
+        <div class="a01-article-action__article-actions">
+            <div class="a01-article-action__article-action-box U:justify-content U:align-items-center  U:display-flex">
+              
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="https://www.f5.com/labs/articles/education/what-are-security-controls"><img alt="" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_administrative.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Administrative</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="https://www.f5.com/labs/articles/education/what-are-security-controls"><img alt="" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_preventative.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Preventative</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__box-descr">
+                    <div class="a01-article-action__box-descr-content"><ul>
+<li>Place a bug bounty on API vulnerabilities so that incidents in the wild are resolved quickly and quietly</li>
+</ul>
+</div>
+                </div>                
+            </div>
+        </div>
+    
+
+    
+
+
+
+</div>
+
+
+
+        </div>
+    
+
+    
+</div>
+<div data-component-type="article" class="a04-article-author-bio section"><!-- <div class="cq-placeholder section" data-emptytext="Article: Author Bio" data-sly-test="false"></div> -->
+
+
+
+        
+        
+            <div class="a04-article-author-bio__content">
+                <div class="a04-article-author-bio__content__author-box">
+                    <div class="row">
+                        <div class="a04-article-author-bio__content__image-wrap">
+                            <div class="a04-article-author-bio__content__img-container">
+                                <img data-src="../../../content/dam/f5-labs-v2/_author-headshots/Ray_Pompon.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                            </div>
+                        </div>
+                        <div class="a04-article-author-bio__content__data-wrap">
+                            <div>
+                                <b>About the author</b>
+                            </div>
+                            <div class="a04-article-author-bio__content__author-name U:margin-top-md">Raymond Pompon</div>
+                            <div class="a04-article-author-bio__content__author-descr"><p>Raymond Pompon is the Director of F5 Labs. With over 20 years of experience in Internet security, he has worked closely with federal law enforcement in cyber-crime investigations. He was directly involved in several major intrusion cases, including the FBI undercover Flyhook operation and the NW Hospital botnet prosecution. He is the author of IT Security Risk Control Management: An Audit Preparation Plan published by Apress books.</p>
+</div>
+                            <div>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="../../search.author_Raymond+Pompon.html">More articles from Raymond Pompon</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="a04-article-author-bio__content">
+                <div class="a04-article-author-bio__content__author-box">
+                    <div class="row">
+                        <div class="a04-article-author-bio__content__image-wrap">
+                            <div class="a04-article-author-bio__content__img-container">
+                                <img data-src="../../../content/dam/f5-labs-v2/_author-headshots/Sander_Vinberg.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                            </div>
+                        </div>
+                        <div class="a04-article-author-bio__content__data-wrap">
+                            <div>
+                                <b>About the author</b>
+                            </div>
+                            <div class="a04-article-author-bio__content__author-name U:margin-top-md">Sander Vinberg</div>
+                            <div class="a04-article-author-bio__content__author-descr"><p>Sander Vinberg is a Threat Research Evangelist for F5 Labs. As the lead researcher on the Application Protection Research Series, he specializes in the evolution of the threat landscape over the long term. He holds a master’s degree from the University of Washington in Information Management, as well as bachelor’s degrees in History and African and African-American Studies from the University of Chicago.</p>
+</div>
+                            <div>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="../../search.author_Sander+Vinberg.html">More articles from Sander Vinberg</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+    
+    
+</div>
+<div name="Footnotes" data-component-type="article" class="a09-article-footnotes section">
+
+
+    
+        
+        <div class="a09-article-footnotes U:padding-y-lg display-old-labs-only">
+            <div class="links-box border-bottom-dotted article-bottom-box">
+                <div class="panel-group accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-parent="#accordion" class="trigger-collapse collapsed" aria-expanded="false">
+                                <h4 class="panel-title display-3">
+                                    Footnotes
+                                </h4>
+                                <div class="button-container">
+                                    <img alt="" class="js-bg-lozad expand-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/expand-button.png"/>
+                                    <img alt="" class="js-bg-lozad close-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/close-button.png"/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="collapse-panel">
+                            <div class="panel-body can-collapse collapsed">
+                                <p><p><span><a href="#_ftnrefAutoIncr1" class="footnote-actual" title="1" id="_ftnAutoIncr1"><sup>1</sup></a> In 2018, we published our first comprehensive Application Protection Report, which collected data from a range of sources to provide a strategic and overarching analysis of how the most valuable assets on the Internet are compromised. We still think the big picture view is important as a counterpoint to the shorter, more tactical threat intelligence we publish, but this year we are publishing the Application Protection research in shorter pieces so that we can make sure our intelligence is published while it is still fresh.</span></p>
+<p><span><a href="#_ftnrefAutoIncr2" class="footnote-actual" title="2" id="_ftnAutoIncr2"><sup>2</sup></a> For a brief perspective on APIs and microservice architectures, see <a href="https://www.kuppingercole.com/blog/balaganski/api-security-in-microservices-architectures" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.kuppingercole.com/blog/balaganski/api-security-in-microservices-architectures</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr3" class="footnote-actual" title="3" id="_ftnAutoIncr3"><sup>3</sup></a> <a href="https://hbr.org/2015/01/the-strategic-value-of-apis" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://hbr.org/2015/01/the-strategic-value-of-apis</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr4" class="footnote-actual" title="4" id="_ftnAutoIncr4"><sup>4</sup></a> <a href="https://www.f5.com/state-of-application-services-report/download-form" target="_blank" rel="no-opener no-referrer">https://www.f5.com/state-of-application-services-report/download-form</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr5" class="footnote-actual" title="5" id="_ftnAutoIncr5"><sup>5</sup></a> <a href="https://www.programmableweb.com/news/research-shows-interest-providing-apis-still-high/research/2018/02/23" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.programmableweb.com/news/research-shows-interest-providing-apis-still-high/research/2018/02/23</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr6" class="footnote-actual" title="6" id="_ftnAutoIncr6"><sup>6</sup></a> Not to be confused with AWS’ API gateway, which is confusingly named API Gateway. For a non-AWS implementation of API gateways, see <a href="https://docs.microsoft.com/en-us/azure/architecture/microservices/design/gateway" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://docs.microsoft.com/en-us/azure/architecture/microservices/design/gateway</a>. For AWS’ approach, see <a href="https://aws.amazon.com/api-gateway/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://aws.amazon.com/api-gateway/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr7" class="footnote-actual" title="7" id="_ftnAutoIncr7"><sup>7</sup></a> For some high-profile conservation efforts that have leveraged the Earth Engine API, see <a href="https://earthengine.google.com/case_studies/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://earthengine.google.com/case_studies/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr8" class="footnote-actual" title="8" id="_ftnAutoIncr8"><sup>8</sup></a> <a href="http://www.wonder-tonic.com/zombie/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">http://www.wonder-tonic.com/zombie/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr9" class="footnote-actual" title="9" id="_ftnAutoIncr9"><sup>9</sup></a> <a href="https://www.earthengine.app/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.earthengine.app/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr10" class="footnote-actual" title="10" id="_ftnAutoIncr10"><sup>10</sup></a> <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://en.wikipedia.org/wiki/Uniform_Resource_Identifier</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr11" class="footnote-actual" title="11" id="_ftnAutoIncr11"><sup>11</sup></a> <a href="https://www.programmableweb.com/news/which-api-types-and-architectural-styles-are-most-used/research/2017/11/26" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.programmableweb.com/news/which-api-types-and-architectural-styles-are-most-used/research/2017/11/26</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr12" class="footnote-actual" title="12" id="_ftnAutoIncr12"><sup>12</sup></a> <a href="https://www.openapis.org/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.openapis.org/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr13" class="footnote-actual" title="13" id="_ftnAutoIncr13"><sup>13</sup></a> <a href="https://www.zdnet.com/article/over-100000-github-repos-have-leaked-api-or-cryptographic-keys/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.zdnet.com/article/over-100000-github-repos-have-leaked-api-or-cryptographic-keys/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr14" class="footnote-actual" title="14" id="_ftnAutoIncr14"><sup>14</sup></a> Crafty Syntax has since been renamed to Sales Syntax: <a href="http://www.salessyntax.com/index.php" target="_blank" rel="no-opener no-referrer" rel="noreferrer">http://www.salessyntax.com/index.php</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr15" class="footnote-actual" title="15" id="_ftnAutoIncr15"><sup>15</sup></a> <a href="https://www.exploit-db.com/exploits/28851" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/exploits/28851</a>, <a href="https://packetstormsecurity.com/files/51414/CSLH2.9.9.txt.html" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://packetstormsecurity.com/files/51414/CSLH2.9.9.txt.html</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr16" class="footnote-actual" title="16" id="_ftnAutoIncr16"><sup>16</sup></a> For more information on GitHub’s API, see <a href="https://developer.github.com/v3/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://developer.github.com/v3/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr17" class="footnote-actual" title="17" id="_ftnAutoIncr17"><sup>17</sup></a> <a href="https://www.exploit-db.com/exploits/46796" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/exploits/46796</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr18" class="footnote-actual" title="18" id="_ftnAutoIncr18"><sup>18</sup></a> <a href="https://www.exploit-db.com/exploits/46544" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/exploits/46544</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr19" class="footnote-actual" title="19" id="_ftnAutoIncr19"><sup>19</sup></a> <a href="https://www.exploit-db.com/exploits/46074" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/exploits/46074</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr20" class="footnote-actual" title="20" id="_ftnAutoIncr20"><sup>20</sup></a> <a href="https://www.exploit-db.com/exploits/46004" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/exploits/46004</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr21" class="footnote-actual" title="21" id="_ftnAutoIncr21"><sup>21</sup></a> <a href="https://www.exploit-db.com/exploits/45704" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/exploits/45704</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr22" class="footnote-actual" title="22" id="_ftnAutoIncr22"><sup>22</sup></a> <a href="https://www.exploit-db.com/exploits/45559" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/exploits/45559</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr23" class="footnote-actual" title="23" id="_ftnAutoIncr23"><sup>23</sup></a> <a href="https://www.exploit-db.com/exploits/45044" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/exploits/45044</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr24" class="footnote-actual" title="24" id="_ftnAutoIncr24"><sup>24</sup></a> <a href="https://www.exploit-db.com/exploits/44265" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/exploits/44265</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr25" class="footnote-actual" title="25" id="_ftnAutoIncr25"><sup>25</sup></a> <a href="https://www.upwork.com/hiring/development/public-apis-vs-private-apis-whats-the-difference/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.upwork.com/hiring/development/public-apis-vs-private-apis-whats-the-difference/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr26" class="footnote-actual" title="26" id="_ftnAutoIncr26"><sup>26</sup></a>  Pompon, Ray. <i>IT Security Risk Control Management.</i> (New York: Apress, 2016). 170</span></p>
+<p><span><a href="#_ftnrefAutoIncr27" class="footnote-actual" title="27" id="_ftnAutoIncr27"><sup>27</sup></a> <a href="https://www.f5.com/state-of-application-services-report/download-form" target="_blank" rel="no-opener no-referrer">https://www.f5.com/state-of-application-services-report/download-form</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr28" class="footnote-actual" title="28" id="_ftnAutoIncr28"><sup>28</sup></a> <a href="https://blog.restcase.com/restful-api-authentication-basics/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://blog.restcase.com/restful-api-authentication-basics/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr29" class="footnote-actual" title="28" id="_ftnAutoIncr29"><sup>29</sup></a> For more on OAuth 2.0 and some suggestions on implementation, see <a href="https://oauth.net/2/oauth-best-practice/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://oauth.net/2/oauth-best-practice/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr30" class="footnote-actual" title="30" id="_ftnAutoIncr30"><sup>30</sup></a> <a href="https://aaronparecki.com/oauth-2-simplified/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://aaronparecki.com/oauth-2-simplified/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr31" class="footnote-actual" title="31" id="_ftnAutoIncr31"><sup>31</sup></a> <a href="https://spiffe.io/spiffe/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://spiffe.io/spiffe/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr32" class="footnote-actual" title="32" id="_ftnAutoIncr32"><sup>32</sup></a> For different types of API authentication, see <a href="https://cloud.google.com/docs/authentication/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://cloud.google.com/docs/authentication/</a>. For Google’s take on securing API keys, (which is as good as any we’ve seen), see <a href="https://cloud.google.com/docs/authentication/api-keys#securing_an_api_key" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://cloud.google.com/docs/authentication/api-keys#securing_an_api_key</a>. For Google’s implementation of OAuth 2.0 for service accounts, see <a href="https://developers.google.com/identity/protocols/OAuth2#serviceaccount" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://developers.google.com/identity/protocols/OAuth2#serviceaccount</a>. They also have an API authentication sandbox at <a href="https://developers.google.com/oauthplayground/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://developers.google.com/oauthplayground/</a></span></p>
+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="a09-article-footnotes display-LC-only">
+            <details id="-button" class="a09-article-footnotes__button cmp-accordion__button ">
+                <summary class="a09-article-footnotes__title  display-as-">
+                    <span> Footnotes </span> <span class="a09-article-footnotes__icon cmp-accordion__icon"></span>
+                </summary>
+                <div class="a09-article-footnotes__panel">
+                    <p><p><span><a href="#_ftnrefAutoIncr1" class="footnote-actual" title="1" id="_ftnAutoIncr1"><sup>1</sup></a> In 2018, we published our first comprehensive Application Protection Report, which collected data from a range of sources to provide a strategic and overarching analysis of how the most valuable assets on the Internet are compromised. We still think the big picture view is important as a counterpoint to the shorter, more tactical threat intelligence we publish, but this year we are publishing the Application Protection research in shorter pieces so that we can make sure our intelligence is published while it is still fresh.</span></p>
+<p><span><a href="#_ftnrefAutoIncr2" class="footnote-actual" title="2" id="_ftnAutoIncr2"><sup>2</sup></a> For a brief perspective on APIs and microservice architectures, see <a href="https://www.kuppingercole.com/blog/balaganski/api-security-in-microservices-architectures" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.kuppingercole.com/blog/balaganski/api-security-in-microservices-architectures</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr3" class="footnote-actual" title="3" id="_ftnAutoIncr3"><sup>3</sup></a> <a href="https://hbr.org/2015/01/the-strategic-value-of-apis" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://hbr.org/2015/01/the-strategic-value-of-apis</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr4" class="footnote-actual" title="4" id="_ftnAutoIncr4"><sup>4</sup></a> <a href="https://www.f5.com/state-of-application-services-report/download-form" target="_blank" rel="no-opener no-referrer">https://www.f5.com/state-of-application-services-report/download-form</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr5" class="footnote-actual" title="5" id="_ftnAutoIncr5"><sup>5</sup></a> <a href="https://www.programmableweb.com/news/research-shows-interest-providing-apis-still-high/research/2018/02/23" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.programmableweb.com/news/research-shows-interest-providing-apis-still-high/research/2018/02/23</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr6" class="footnote-actual" title="6" id="_ftnAutoIncr6"><sup>6</sup></a> Not to be confused with AWS’ API gateway, which is confusingly named API Gateway. For a non-AWS implementation of API gateways, see <a href="https://docs.microsoft.com/en-us/azure/architecture/microservices/design/gateway" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://docs.microsoft.com/en-us/azure/architecture/microservices/design/gateway</a>. For AWS’ approach, see <a href="https://aws.amazon.com/api-gateway/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://aws.amazon.com/api-gateway/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr7" class="footnote-actual" title="7" id="_ftnAutoIncr7"><sup>7</sup></a> For some high-profile conservation efforts that have leveraged the Earth Engine API, see <a href="https://earthengine.google.com/case_studies/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://earthengine.google.com/case_studies/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr8" class="footnote-actual" title="8" id="_ftnAutoIncr8"><sup>8</sup></a> <a href="http://www.wonder-tonic.com/zombie/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">http://www.wonder-tonic.com/zombie/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr9" class="footnote-actual" title="9" id="_ftnAutoIncr9"><sup>9</sup></a> <a href="https://www.earthengine.app/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.earthengine.app/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr10" class="footnote-actual" title="10" id="_ftnAutoIncr10"><sup>10</sup></a> <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://en.wikipedia.org/wiki/Uniform_Resource_Identifier</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr11" class="footnote-actual" title="11" id="_ftnAutoIncr11"><sup>11</sup></a> <a href="https://www.programmableweb.com/news/which-api-types-and-architectural-styles-are-most-used/research/2017/11/26" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.programmableweb.com/news/which-api-types-and-architectural-styles-are-most-used/research/2017/11/26</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr12" class="footnote-actual" title="12" id="_ftnAutoIncr12"><sup>12</sup></a> <a href="https://www.openapis.org/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.openapis.org/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr13" class="footnote-actual" title="13" id="_ftnAutoIncr13"><sup>13</sup></a> <a href="https://www.zdnet.com/article/over-100000-github-repos-have-leaked-api-or-cryptographic-keys/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.zdnet.com/article/over-100000-github-repos-have-leaked-api-or-cryptographic-keys/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr14" class="footnote-actual" title="14" id="_ftnAutoIncr14"><sup>14</sup></a> Crafty Syntax has since been renamed to Sales Syntax: <a href="http://www.salessyntax.com/index.php" target="_blank" rel="no-opener no-referrer" rel="noreferrer">http://www.salessyntax.com/index.php</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr15" class="footnote-actual" title="15" id="_ftnAutoIncr15"><sup>15</sup></a> <a href="https://www.exploit-db.com/exploits/28851" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/exploits/28851</a>, <a href="https://packetstormsecurity.com/files/51414/CSLH2.9.9.txt.html" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://packetstormsecurity.com/files/51414/CSLH2.9.9.txt.html</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr16" class="footnote-actual" title="16" id="_ftnAutoIncr16"><sup>16</sup></a> For more information on GitHub’s API, see <a href="https://developer.github.com/v3/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://developer.github.com/v3/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr17" class="footnote-actual" title="17" id="_ftnAutoIncr17"><sup>17</sup></a> <a href="https://www.exploit-db.com/exploits/46796" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/exploits/46796</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr18" class="footnote-actual" title="18" id="_ftnAutoIncr18"><sup>18</sup></a> <a href="https://www.exploit-db.com/exploits/46544" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/exploits/46544</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr19" class="footnote-actual" title="19" id="_ftnAutoIncr19"><sup>19</sup></a> <a href="https://www.exploit-db.com/exploits/46074" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/exploits/46074</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr20" class="footnote-actual" title="20" id="_ftnAutoIncr20"><sup>20</sup></a> <a href="https://www.exploit-db.com/exploits/46004" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/exploits/46004</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr21" class="footnote-actual" title="21" id="_ftnAutoIncr21"><sup>21</sup></a> <a href="https://www.exploit-db.com/exploits/45704" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/exploits/45704</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr22" class="footnote-actual" title="22" id="_ftnAutoIncr22"><sup>22</sup></a> <a href="https://www.exploit-db.com/exploits/45559" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/exploits/45559</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr23" class="footnote-actual" title="23" id="_ftnAutoIncr23"><sup>23</sup></a> <a href="https://www.exploit-db.com/exploits/45044" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/exploits/45044</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr24" class="footnote-actual" title="24" id="_ftnAutoIncr24"><sup>24</sup></a> <a href="https://www.exploit-db.com/exploits/44265" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.exploit-db.com/exploits/44265</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr25" class="footnote-actual" title="25" id="_ftnAutoIncr25"><sup>25</sup></a> <a href="https://www.upwork.com/hiring/development/public-apis-vs-private-apis-whats-the-difference/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.upwork.com/hiring/development/public-apis-vs-private-apis-whats-the-difference/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr26" class="footnote-actual" title="26" id="_ftnAutoIncr26"><sup>26</sup></a>  Pompon, Ray. <i>IT Security Risk Control Management.</i> (New York: Apress, 2016). 170</span></p>
+<p><span><a href="#_ftnrefAutoIncr27" class="footnote-actual" title="27" id="_ftnAutoIncr27"><sup>27</sup></a> <a href="https://www.f5.com/state-of-application-services-report/download-form" target="_blank" rel="no-opener no-referrer">https://www.f5.com/state-of-application-services-report/download-form</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr28" class="footnote-actual" title="28" id="_ftnAutoIncr28"><sup>28</sup></a> <a href="https://blog.restcase.com/restful-api-authentication-basics/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://blog.restcase.com/restful-api-authentication-basics/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr29" class="footnote-actual" title="28" id="_ftnAutoIncr29"><sup>29</sup></a> For more on OAuth 2.0 and some suggestions on implementation, see <a href="https://oauth.net/2/oauth-best-practice/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://oauth.net/2/oauth-best-practice/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr30" class="footnote-actual" title="30" id="_ftnAutoIncr30"><sup>30</sup></a> <a href="https://aaronparecki.com/oauth-2-simplified/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://aaronparecki.com/oauth-2-simplified/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr31" class="footnote-actual" title="31" id="_ftnAutoIncr31"><sup>31</sup></a> <a href="https://spiffe.io/spiffe/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://spiffe.io/spiffe/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr32" class="footnote-actual" title="32" id="_ftnAutoIncr32"><sup>32</sup></a> For different types of API authentication, see <a href="https://cloud.google.com/docs/authentication/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://cloud.google.com/docs/authentication/</a>. For Google’s take on securing API keys, (which is as good as any we’ve seen), see <a href="https://cloud.google.com/docs/authentication/api-keys#securing_an_api_key" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://cloud.google.com/docs/authentication/api-keys#securing_an_api_key</a>. For Google’s implementation of OAuth 2.0 for service accounts, see <a href="https://developers.google.com/identity/protocols/OAuth2#serviceaccount" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://developers.google.com/identity/protocols/OAuth2#serviceaccount</a>. They also have an API authentication sandbox at <a href="https://developers.google.com/oauthplayground/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://developers.google.com/oauthplayground/</a></span></p>
+</p>
+                </div>
+            </details>
+        </div>
+    
+    
+
+</div>
+<div data-component-type="article" class="a05-article-tags section">
+
+
+    
+        
+
+        <div class="a05-article-tags__tags-box">
+            <strong class="a05-article-tags__strong">TAGS: </strong>
+            <a href="https://www.f5.com/labs/search?q=EDB-46074" class="a05-article-tags__a">EDB-46074</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Brute+force+attack%22" class="a05-article-tags__a">Brute force attack</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=Threats" class="a05-article-tags__a">Threats</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=Hacktivism" class="a05-article-tags__a">Hacktivism</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Credential+stuffing%22" class="a05-article-tags__a">Credential stuffing</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22App+Infrastructure+Attacks%22" class="a05-article-tags__a">App Infrastructure Attacks</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Attack+Campaign%22" class="a05-article-tags__a">Attack Campaign</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=Espionage" class="a05-article-tags__a">Espionage</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=CVE-2018-1000115" class="a05-article-tags__a">CVE-2018-1000115</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=CVE-2018-1000049" class="a05-article-tags__a">CVE-2018-1000049</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Web+Application+Attacks%22" class="a05-article-tags__a">Web Application Attacks</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Dictionary+attacks%22" class="a05-article-tags__a">Dictionary attacks</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=API" class="a05-article-tags__a">API</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22API+Attacks%22" class="a05-article-tags__a">API Attacks</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=EDB-45704" class="a05-article-tags__a">EDB-45704</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=CVE-2017-12478" class="a05-article-tags__a">CVE-2017-12478</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=CVE-2018-6328" class="a05-article-tags__a">CVE-2018-6328</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=EDB-45559" class="a05-article-tags__a">EDB-45559</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=EDB-46544" class="a05-article-tags__a">EDB-46544</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=EDB-46004" class="a05-article-tags__a">EDB-46004</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=EDB-46796" class="a05-article-tags__a">EDB-46796</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=EDB-45044" class="a05-article-tags__a">EDB-45044</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=EDB-44265" class="a05-article-tags__a">EDB-44265</a>
+        </div>
+
+    
+
+	
+    
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-right">
+        <div class="a04-include section"><!--googleoff: all-->
+<!-- inline style for wce-edit-mode -->
+
+    <!--googleoff: all-->
+
+    
+
+    
+
+    <div class="a07-related-articles " data-id="relatedArticlesId">
+        <div class="a07-related-articles__container">
+            <h4 class="a07-related-articles__container-title">Related Articles</h4>
+
+            <div id="related-article-hidden-items">
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="https://www.f5.com/labs/search?q=%22Attack+Campaign%22">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Attack Campaign</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">January 31, 2020</span>
+                        </div>
+                    </div>
+                    <a href="https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities--exploits--and-malware-driving-attack-campaigns-in-december-2019" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Vulnerabilities, Exploits, and Malware Driving Attack Campaigns in December 2019
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">8 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="https://www.f5.com/labs/search?q=%22Attack+Campaign%22">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Attack Campaign</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">December 24, 2019</span>
+                        </div>
+                    </div>
+                    <a href="https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities-exploits-and-malware-driving-attack-campaigns-in-november-2019" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Vulnerabilities, Exploits, and Malware Driving Attack Campaigns in November 2019
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">12 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="https://www.f5.com/labs/search?q=%22Attack+Campaign%22">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Attack Campaign</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">November 26, 2019</span>
+                        </div>
+                    </div>
+                    <a href="https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities-exploits-and-malware-driving-attack-campaigns-in-october-2019" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Vulnerabilities, Exploits, and Malware Driving Attack Campaigns in October 2019
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">8 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--googleon: all-->
+    
+    
+
+<!--googleon: all--></div>
+
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+<div class="a28-article-tile-list-dynamic aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+    
+<div class="a28-article-tile-list-dynamic__full-width-wrap xs-pt-20 xs-pb-20 container-fluid fill-main-container xs-mb-0 ">
+
+    
+        
+    
+<script src="../../../etc.clientlibs/base/clientlibs/libs/jquery/v3.6.0.abec7e706514e7e243d79b097790f71b.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-swiper.74571ff9ea0f905f582197d9e94ab140.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/components/articles/a28-article-tile-list-dynamic/clientlib.30cecdc12e1944d71b6a455f0740a7b6.js"></script>
+
+
+
+ 
+ 
+<!-- TEXT LAYOUT -->
+
+
+<!-- ALBUM COVER LAYOUT -->
+
+	<section class="a28-article-tile-list-dynamic__container a28-article-tile-list-dynamic-albumLayout a28-article-tile-list-dynamic-albumLayout__image-articles" data-numbersOfArticles="3" data-size="3" id="1684486191">
+
+		<div class="a28-article-tile-list-dynamic__section-title text-center xs-pt-20 xs-pb-20">
+			<h2>Need-to-Know</h2>
+			<span class="a28-article-tile-list-dynamic__text-bigger">Expertly picked stories on threat intelligence</span>
+		</div>
+
+		<div id="article-tile-items" class="a28-article-tile-list-dynamic-albumLayout__article-tiles-wrap U:justify-content-center swiper-container">
+
+			
+
+			<div class="swiper-wrapper">
+				<div id="1684486191_0" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a13/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Top Risks</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>May 18, 2021</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/2021-application-protection-report-of-ransom-and-redemption">
+								<a href="2021-application-protection-report-of-ransom-and-redemption.html">
+									<div class="article-title">
+										<h2 class="header-small">2021 Application Protection Report</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center report a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>report</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>60 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">Sander Vinberg</span>
+									
+										<span class="author-item">Raymond Pompon</span>
+									
+										<span class="author-item">Shahnawaz Backer</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			
+				<div id="1684486191_1" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a15/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=Encryption.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Encryption</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>July 17, 2020</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cryptonice">
+								<a href="cryptonice.html">
+									<div class="article-title">
+										<h2 class="header-small">Introducing the Cryptonice HTTPS Scanner</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center article a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>article</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>12 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">David Warburton</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			
+				<div id="1684486191_2" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a08/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Top Risks</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>February 01, 2021</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cybersecurity-threats-to-the-covid-19-vaccine">
+								<a href="cybersecurity-threats-to-the-covid-19-vaccine.html">
+									<div class="article-title">
+										<h2 class="header-small">Cybersecurity Threats to the COVID-19 Vaccine</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center article a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>article</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>9 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">Raymond Pompon</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="loader_1684486191" class="big-loader U:margin-bot-xl U:display-none"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+		<button class="a28-article-tile-list-dynamic__load-more-button btn btn-outline-inverse U:display-none" id="load_1684486191">
+			Load more stories</button>
+	</section>
+
+  
+
+<!-- MUTED LAYOUT -->
+
+
+</div>
+
+
+</div>
+<div data-component-type="category" class="u03-static-data-points aem-GridColumn aem-GridColumn--default--12"><!--googleoff: all-->
+
+    
+        
+        
+        <section class="u03-static-data-points__container fill-main-container">
+            <div class="full-site-container info-container-two-columns">
+                <div class="row">
+                    <div class="u03-static-data-points__left-column-container border-right">
+                        <div class="u03-static-data-points__left-column-wrap">
+                            <h3 class="display-3 u03-static-data-points__headline">Hundreds of apps will be attacked by the time you read this.</h3>
+                            <p><p>So, we get to work. We obsess over effective attack methods. We monitor the growth of IoT and its evolving threats. We dive deep into the latest crypto-mining campaigns. We analyze banking Trojan targets. We dissect exploits. We hunt for the latest malware. And then our team of experts share it all with you. For more than 20 years, F5 has been leading the app delivery space. With our experience, we are passionate about educating the security community-providing the intel you need to stay informed so your apps can stay safe.</p>
+</p>
+                        </div>
+                    </div>
+                    <div class="u03-static-data-points__right-column-container">
+                        <div class="u03-static-data-points__right-column-wrap">
+                            <h4 class="display-6">
+                                Every
+                            </h4>
+                            <h3 class="f5labs-big-number">9 hrs</h3>
+                            a critical vulnerability—with the potential for remote code execution—is released.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    
+
+<!--googleon: all--></div>
+<div class="u02-footer aem-GridColumn aem-GridColumn--default--12"><div>
+	
+<footer id="footer" class="u02-footer_labs conf06-footer-configuration">
+    <div class="conf06-footer-configuration__footer-logo">
+        <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <metadata>
+                <rdf:RDF>
+                    <cc:Work rdf:about="">
+                        <dc:format>image/svg+xml</dc:format>
+                        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                        <dc:title/>
+                    </cc:Work>
+                </rdf:RDF>
+            </metadata>
+            <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+            <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+            <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+        </svg>
+    </div>
+
+    <div class="conf06-footer-configuration__newslettersignup">
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg c20-newsletter-signup-display__newsletter-form">
+    <div class="c20-newsletter-signup-display__wrapper purple-bg  benefits-visible">
+
+        <div class="c20-newsletter-signup-display__signup-wrap">
+
+            <div class="c20-newsletter-signup-display__row form-and-benefits-row hide-after-submit">
+                <div class="c20-newsletter-signup-display__col">
+                    <div class="c20-newsletter-signup-display__title only-mobile">
+                        F5 Labs Newsletter
+                    </div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+                    </div>
+                </div>
+                <div class="c20-newsletter-signup-display__col">
+
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <div class="c20-newsletter-signup-display__title only-desktop">
+                            F5 Labs Newsletter
+                        </div>
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+                        <!-- LOADER -->
+                        <div id="loader" class="small-loader form-loader     
+                             "><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                        <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                            <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- SUCCESS MESSAGE -->
+            <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+                <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                <div class="c20-newsletter-signup-display__article-intro">
+                    Thanks for signing up! Get started with some of the articles below:
+                </div>
+                <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Fraud.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Fraud</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="2020-phishing-and-fraud-report.html" class="text-article__link">
+
+                                <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">November 11, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Education.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Education</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="../education/what-is-the-cia-triad.html" class="text-article__link">
+
+                                <div class="text-article__article-title">What Is the CIA Triad?</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">July 09, 2019</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Strategies.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Strategies</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="../cisotociso/the-three-main-cybersecurity-career-paths.html" class="text-article__link">
+
+                                <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex mid-point">
+                                    <span class="U:align-self-center">December 08, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center">9 min. read</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__wrapper purple-bg}">
+
+		<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+				<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+    <div class="conf06-footer-configuration__main-footer-container">
+        <div class="conf06-footer-configuration__main-footer-wrapper">
+          
+            <div class="conf06-footer-configuration__links-wrap first-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        <ul>
+            <li><a href="../../threat-intelligence.html" target="_blank" rel="no-opener no-referrer">THREATS</a></li>
+        
+            <li><a href="../../ciso-to-ciso.html" target="_blank" rel="no-opener no-referrer">CISO TO CISO</a></li>
+        
+            <li><a href="../../application-protection.html" target="_blank" rel="no-opener no-referrer">APPLICATION PROTECTION</a></li>
+        </ul>
+    
+
+    
+</div>
+            </div>
+            <div class="conf06-footer-configuration__links-wrap second-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        
+    
+
+    
+</div>
+            </div>
+                  
+
+            <div class="conf06-footer-configuration__social-links-wrap">
+                
+<div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Social media links configuration"></div> -->
+	<ul>
+		<li class="twitter">			
+			<a href="https://twitter.com/F5Labs" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb twitter xs-mr-15"></span></div><div class="float-left">TWITTER</div></a>
+		</li>
+	
+		<li class="linkedin">			
+			<a href="https://www.linkedin.com/showcase/f5labs/" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb linkedin xs-mr-15"></span></div><div class="float-left">LINKEDIN</div></a>
+		</li>
+	</ul>
+
+</div>
+
+            </div>
+        </div>
+        <div class="conf06-footer-configuration__foot-note  conf06-footer-configuration__footer-bottom footer-small">
+            <span class="conf06-footer-configuration__all-rights-reserved"> &copy; 2022 F5, Inc. All rights reserved</span> <br/>
+            
+
+                <a href="../../../company/policies.html">Policies</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/privacy-notice.html">Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/trademarks.html">Trademarks</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../index.html" rel="noreferrer">Manage Subscriptions</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/F5-California-privacy-summary.html">California Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/privacy-notice.html#no-sell">Do Not Sell My Personal Information</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+            <span>
+                <span id="teconsent"></span>
+            </span>
+
+        </div>
+    </div>
+
+    <script class="n-lang-en" async="async" src="../../../../consent.trustarc.com/notice%EF%B9%96domain=f5.com&amp;c=teconsent&amp;js=nj&amp;noticeType=bb&amp;text=true&amp;gtm=1.js" crossorigin=""></script>
+  
+     <div>
+
+
+
+
+
+<div class="c20-newsletter-signup-display__popover-bg   ">
+    <div class=" c20-newsletter-signup-display popover  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+                    <div class="c20-newsletter-signup-display__title">F5 Labs Newsletter</div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+</div>
+                </div>
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+
+                        <!-- SUCCESS MESSAGE -->
+                        <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none ">
+                            <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                            <div class="c20-newsletter-signup-display__article-intro">
+                                Thanks for signing up! Get started with some of the articles below:
+                            </div>
+
+                            <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="2020-phishing-and-fraud-report.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">November 11, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="../education/what-is-the-cia-triad.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">What Is the CIA Triad?</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">July 09, 2019</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="../cisotociso/the-three-main-cybersecurity-career-paths.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex mid-point">
+                                                <span class="U:align-self-center">December 08, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center">9 min. read</span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                         
+                        </div>
+
+                        <!-- LOADER -->
+                        <div id="loader" class="U:display-none big-loader"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" c20-newsletter-signup-display popover c20-newsletter-signup-display__subscribed-already  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__title">You already have a subscription</div>
+                  
+                </div>
+               
+              
+            </div>
+          
+        </div>
+    </div>
+
+</div>
+</div>
+  
+</footer>
+ 
+</div></div>
+
+    
+</div>
+</div>
+
+
+     
+        
+    
+    
+
+    
+<script src="../../../etc.clientlibs/clientlibs/granite/jquery/granite/csrf.a9dcac4698709ca8e1cbc88363cf0793.js"></script>
+<script src="../../../etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.68e8a508c100f218cc66bb13a94d1002.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.d96c3f535f649b3c2392029bf4ce52cd.js"></script>
+
+
+ 
+
+	<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5095d30f38626622"></script>
+	
+
+    
+
+
+        <div id="consent_blackbar" style="position:fixed;bottom:200px;width:100%"></div>
+    </body>
+</html>

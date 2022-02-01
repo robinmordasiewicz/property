@@ -1,0 +1,1501 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+<title>F5 Labs Threats</title>
+<description>RSS for F5 Labs Threats content.</description>
+<link>https://www.f5.com/labs/threat-intelligence</link>
+<lastBuildDate>Fri, 14 Jan 2022 00:56:00 GMT</lastBuildDate>
+<ttl>60</ttl>
+<atom:link href="https://www.f5.com/labs/rss-feeds/threats.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>FluBot’s Authors Employ Creative and Sophisticated Techniques to Achieve Their Goals in Version 5.0 and Beyond</title>
+<description>A deconstruction of FluBot 5.0&amp;amp;rsquo;s new communication protocol and other capabilities FluBot uses to hide, making it difficult for researchers and security solutions to detect.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/flubots-authors-employ-creative-and-sophisticated-techniques-to-achieve-their-goals-in-version-50-and-beyond</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/flubots-authors-employ-creative-and-sophisticated-techniques-to-achieve-their-goals-in-version-50-and-beyond</guid>
+<pubDate>Thu, 06 Jan 2022 23:38:00 GMT</pubDate>
+</item>
+<item>
+<title>Holiday Phishing Trends For 2021</title>
+<description>As Christmas quickly approaches, seasonal phishing trends once again show that attackers are taking advantage of increased online shopping. Fraudsters doubled their efforts in November attacking ecommerce giants such as Amazon. The real attacker focus, however, was cryptocurrency with fraudulent sites...</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/holiday-phishing-trends-for-2021</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/holiday-phishing-trends-for-2021</guid>
+<pubDate>Fri, 17 Dec 2021 01:39:00 GMT</pubDate>
+</item>
+<item>
+<title>Explaining the Widespread log4j Vulnerability</title>
+<description>The log4j security vulnerability is one of the most widespread cybersecurity vulnerabilities in recent years. Here&amp;apos;s a non-technical explanation of it.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/explaining-the-widespread-log4j-vulnerability</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/explaining-the-widespread-log4j-vulnerability</guid>
+<pubDate>Sun, 12 Dec 2021 18:49:00 GMT</pubDate>
+</item>
+<item>
+<title>How Global Cyberthreats Changed Over 2021</title>
+<description>Scans continue against remote logins like VNC, RDP, and SSH, as well as MySQL and Elasticsearch. And what&amp;amp;rsquo;s going on in Malaysia and Lithuania?</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/how-global-cyberthreats-changed-over-2021</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/how-global-cyberthreats-changed-over-2021</guid>
+<pubDate>Wed, 01 Dec 2021 20:54:00 GMT</pubDate>
+</item>
+<item>
+<title>Cyberattacks Targeting South Africa, January through June 2021</title>
+<description>South Africa&amp;amp;rsquo;s cyberattack landscape saw targeting of Scryba, PHP, and CVE-2017-9841 web vulnerabilities.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/cyberattacks-targeting-south-africa-january-through-june-2021</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/cyberattacks-targeting-south-africa-january-through-june-2021</guid>
+<pubDate>Sat, 11 Sep 2021 06:04:00 GMT</pubDate>
+</item>
+<item>
+<title>DDoS Against a Financial Service: Analysis of a Massive Attack</title>
+<description>A detailed look at an 840-Gbps DDoS attack on a financial services provider and a deeper dive into attacking nodes.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/ddos-against-a-financial-service-analysis-of-a-massive-attack</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/ddos-against-a-financial-service-analysis-of-a-massive-attack</guid>
+<pubDate>Mon, 23 Aug 2021 17:52:00 GMT</pubDate>
+</item>
+<item>
+<title>The State of the State of Application Exploits in Security Incidents</title>
+<description>The title of this report is not a typo. &amp;amp;ldquo;The State of the State of Application Exploits in Security Incidents&amp;amp;rdquo; is a meta-analysis of several prominent industry reports, each of which covers the state of application security.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/the-state-of-the-state-of-application-exploits-in-security-incidents</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/the-state-of-the-state-of-application-exploits-in-security-incidents</guid>
+<pubDate>Tue, 20 Jul 2021 13:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Attacker Tricks for Taking Over Risk-Based Multifactor Authentication</title>
+<description>From spoofing device fingerprints to hijacking authenticated sessions, attackers use a range of techniques to bypass multifactor authentication.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/attacker-tricks-for-taking-over-risk-based-multifactor-authentication</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/attacker-tricks-for-taking-over-risk-based-multifactor-authentication</guid>
+<pubDate>Thu, 17 Jun 2021 15:27:00 GMT</pubDate>
+</item>
+<item>
+<title>Cyberattacks at Banks and Financial Services Organizations, and a Look at Open Banking</title>
+<description>A review of 2018-2020 cyberattacks at brokerages, investment funds, payment processors, and financial services organizations as well as API security incidents and open banking.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/cyberattacks-at-banks-and-financial-services-organizations-and-a-look-at-open-banking</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/cyberattacks-at-banks-and-financial-services-organizations-and-a-look-at-open-banking</guid>
+<pubDate>Wed, 02 Jun 2021 03:51:00 GMT</pubDate>
+</item>
+<item>
+<title>Cyberattacks at Banks and Financial Services Organizations</title>
+<description>A look at cybersecurity incidents at banks, credit unions, insurance companies, government-sponsored financial institutions, and stock exchanges.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/cyberattacks-at-banks-and-financial-services-organizations</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/cyberattacks-at-banks-and-financial-services-organizations</guid>
+<pubDate>Tue, 25 May 2021 20:35:00 GMT</pubDate>
+</item>
+<item>
+<title>DDoS Attack Trends for 2020</title>
+<description>Denial-of-service attacks are increasing and becoming more complex. We look at how attackers are attempting to bring down services around the world.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/ddos-attack-trends-for-2020</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/ddos-attack-trends-for-2020</guid>
+<pubDate>Sat, 08 May 2021 03:54:00 GMT</pubDate>
+</item>
+<item>
+<title>Cyberattacks Targeting Latin America, January through March 2021</title>
+<description>Latin America&amp;amp;rsquo;s cyberattack landscape saw continued focus on port 5900 and the targeting of common web vulnerabilities.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/cyberattacks-targeting-latin-america-january-through-march-2021</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/cyberattacks-targeting-latin-america-january-through-march-2021</guid>
+<pubDate>Wed, 28 Apr 2021 14:27:00 GMT</pubDate>
+</item>
+<item>
+<title>Email Compromise with Credential Stuffing Attack Tools</title>
+<description>How cybercriminals use credential stuffing attack tools OpenBullet and MailRanger to bypass CAPTCHA, compromise mailboxes, and reset passwords.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/business-email-compromise-with-credential-stuffing-attack-tools</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/business-email-compromise-with-credential-stuffing-attack-tools</guid>
+<pubDate>Thu, 22 Apr 2021 16:09:00 GMT</pubDate>
+</item>
+<item>
+<title>Collusion Fraud: The Art of Gaming the System with Complicity</title>
+<description>How platform business models are at an increased risk of fraud when two or more separate parties collude.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/collusion-fraud-the-art-of-gaming-the-system-with-complicity</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/collusion-fraud-the-art-of-gaming-the-system-with-complicity</guid>
+<pubDate>Wed, 14 Apr 2021 19:51:00 GMT</pubDate>
+</item>
+<item>
+<title>Credential Stuffing Tools and Techniques, Part 1</title>
+<description>We dig into the credential stuffing attack tool OpenBullet and look at configuring combolists, proxies, parse tokens, and check blocks for launching attacks.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/credential-stuffing-tools-and-techniques-part-1</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/credential-stuffing-tools-and-techniques-part-1</guid>
+<pubDate>Wed, 07 Apr 2021 21:40:00 GMT</pubDate>
+</item>
+<item>
+<title>IcedID Banking Trojan Uses COVID-19 Pandemic to Lure New Victims</title>
+<description>TA551 (AKA Shathak) deploys the IcedID banking trojan using COVID-19 in Microsoft Word documents containing a malicious macro that drops an installer.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/icedid-banking-trojan-uses-covid-19-pandemic-to-lure-new-victims</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/icedid-banking-trojan-uses-covid-19-pandemic-to-lure-new-victims</guid>
+<pubDate>Thu, 04 Mar 2021 17:06:00 GMT</pubDate>
+</item>
+<item>
+<title>Threats, Vulnerabilities, Exploits and Their Relationship to Risk</title>
+<description>Security threats and vulnerabilities constitute risk when both likelihood and impact are high.</description>
+<link>https://www.f5.com/labs/articles/education/vulnerabilities-threats-exploits-and-their-relationship-to-risk</link>
+<guid>https://www.f5.com/labs/articles/education/vulnerabilities-threats-exploits-and-their-relationship-to-risk</guid>
+<pubDate>Tue, 23 Feb 2021 16:57:00 GMT</pubDate>
+</item>
+<item>
+<title>Cyberthreats Targeting India, October through December 2020</title>
+<description>India&amp;amp;rsquo;s attack landscape saw focus on Port 5900 and the highest number of scans from the UK.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/cyberthreats-targeting-india--october-through-december-2020</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/cyberthreats-targeting-india--october-through-december-2020</guid>
+<pubDate>Thu, 11 Feb 2021 17:53:00 GMT</pubDate>
+</item>
+<item>
+<title>2021 Credential Stuffing Report</title>
+<description>Credential stuffing is a multifaceted and enduring risk to organizations of all types and sizes. This report is a comprehensive examination of the entire life cycle of stolen credentials&amp;amp;mdash;from their theft, to their resale, and their repeated use in credential stuffing attacks.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/2021-credential-stuffing-report</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/2021-credential-stuffing-report</guid>
+<pubDate>Tue, 09 Feb 2021 21:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Can Bots Manipulate Data and Change Facts to Fiction?</title>
+<description>Data manipulation is a real threat to data-driven approaches at enterprises. We tested one of our own assets to see the possibilities.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/can-bots-manipulate-data-and-change-facts-to-fiction-</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/can-bots-manipulate-data-and-change-facts-to-fiction-</guid>
+<pubDate>Wed, 13 Jan 2021 19:50:00 GMT</pubDate>
+</item>
+<item>
+<title>Recent Cyberattacks: 2020 Application Protection Report, Volume 3</title>
+<description>Cyberattacks in Q3 2020 targeted WordPress and other content management systems, IoT devices, and the State of Israel.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/recent-cyberattacks-2020-apr-vol3</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/recent-cyberattacks-2020-apr-vol3</guid>
+<pubDate>Wed, 16 Dec 2020 19:09:00 GMT</pubDate>
+</item>
+<item>
+<title>IoT Vulnerability Assessment of the Irish IP Address Space</title>
+<description>Vulnerability assessment of IoT devices in Ireland detailing the biggest threats, most at-risk and highly exposed devices.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/iot-vulnerability-assessment-of-the-irish-ip-address-space</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/iot-vulnerability-assessment-of-the-irish-ip-address-space</guid>
+<pubDate>Tue, 17 Nov 2020 17:27:00 GMT</pubDate>
+</item>
+<item>
+<title>2020 Phishing and Fraud Report</title>
+<description>In our 2020 edition of the Phishing and Fraud Report, we focus on how cybercriminals build and host phishing sites, the tactics they use to avoid detection, and how they&amp;amp;rsquo;ve capitalized this year on the COVID-19 pandemic.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/2020-phishing-and-fraud-report</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/2020-phishing-and-fraud-report</guid>
+<pubDate>Wed, 11 Nov 2020 13:00:00 GMT</pubDate>
+</item>
+<item>
+<title>How Cyber Attacks Changed During the Pandemic</title>
+<description>Cybersecurity attacks surged during the pandemic, with large jumps in DDoS and password login attacks against online retailers and APIs.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/how-cyber-attacks-changed-during-the-pandemic</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/how-cyber-attacks-changed-during-the-pandemic</guid>
+<pubDate>Tue, 06 Oct 2020 15:57:00 GMT</pubDate>
+</item>
+<item>
+<title>JWT: A How Not to Guide</title>
+<description>JWT brings performance to identity assertion and is being widely adopted, but it&amp;amp;rsquo;s also garnering the attention of cybercriminals.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/jwt--a-how-not-to-guide</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/jwt--a-how-not-to-guide</guid>
+<pubDate>Wed, 23 Sep 2020 14:14:00 GMT</pubDate>
+</item>
+<item>
+<title>The Rising IoT Threat to the Agriculture Industry and the Global Food Supply</title>
+<description>Precision agriculture leveraging IoT and API technology is both a great boon and a huge cybersecurity risk.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/the-rising-iot-threat-to-the-agriculture-industry-and-the-global-food-supply</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/the-rising-iot-threat-to-the-agriculture-industry-and-the-global-food-supply</guid>
+<pubDate>Tue, 15 Sep 2020 16:10:00 GMT</pubDate>
+</item>
+<item>
+<title>API Authentication Incidents: 2020 Application Protection Report, Volume 2</title>
+<description>Broken API authentication is leading to avoidable security incidents and unusual impacts. Learn what you can do to control the risk.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/api-authentication-incidents-2020-apr-vol2</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/api-authentication-incidents-2020-apr-vol2</guid>
+<pubDate>Tue, 01 Sep 2020 18:55:00 GMT</pubDate>
+</item>
+<item>
+<title>How Credential Stuffing Bots Bypass Defenses</title>
+<description>Website logins are under constant assault, with attackers quickly modifying their bots to evade simplistic defenses.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/how-credential-stuffing-bots-bypass-defenses</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/how-credential-stuffing-bots-bypass-defenses</guid>
+<pubDate>Wed, 26 Aug 2020 18:13:00 GMT</pubDate>
+</item>
+<item>
+<title>How I Designed an Open Source HTTPS Checker</title>
+<description>F5 Labs summer intern describes her experiences building a Python-based HTTPS scanning library for security research and release as an open source tool.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/how-i-designed-an-open-source-https-checker</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/how-i-designed-an-open-source-https-checker</guid>
+<pubDate>Tue, 18 Aug 2020 17:55:00 GMT</pubDate>
+</item>
+<item>
+<title>2020 Application Protection Report, Volume 1: APIs, Architecture, and Making Sense of the Moment</title>
+<description>Securing APIs demands a new approach. See what we can learn from API incidents and where to begin.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/2020-apr-vol1-apis-architecture</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/2020-apr-vol1-apis-architecture</guid>
+<pubDate>Fri, 31 Jul 2020 14:57:00 GMT</pubDate>
+</item>
+<item>
+<title>How Credential Stuffing Is Evolving</title>
+<description>Cred stuffing isn&amp;apos;t going away. Shape&amp;apos;s Jarrod Overson writes for InformationSecurityBuzz, examining the ROI of cred stuffing for attackers, and the evolution to &amp;amp;quot;imitation attacks&amp;amp;quot;.</description>
+<link>https://www.f5.com/labs/articles/bylines/how-credential-stuffing-is-evolving</link>
+<guid>https://www.f5.com/labs/articles/bylines/how-credential-stuffing-is-evolving</guid>
+<pubDate>Wed, 15 Jul 2020 17:44:00 GMT</pubDate>
+</item>
+<item>
+<title>Qbot Banking Trojan Still Up to Its Old Tricks</title>
+<description>The Qbot banking trojan is back, targeting American banks with dedicated campaigns followed by stealth and evasion techniques.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/qbot-banking-trojan-still-up-to-its-old-tricks</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/qbot-banking-trojan-still-up-to-its-old-tricks</guid>
+<pubDate>Thu, 11 Jun 2020 21:27:00 GMT</pubDate>
+</item>
+<item>
+<title>2019 Application Protection Report</title>
+<description>This is the most in-depth version of the 2019 Application Protection Report. It contains research and data from all of the 2019 episodes, updated with 2019 breach trends that paint a clearer picture of where application threats are heading. Cancel some afternoon meetings and take a deep dive with us!...</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/2019-application-protection-report</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/2019-application-protection-report</guid>
+<pubDate>Mon, 11 May 2020 16:28:00 GMT</pubDate>
+</item>
+<item>
+<title>Top Attacks Against Financial Services Organizations 2017–2019</title>
+<description>Attackers are targeting financial services organizations with brute force, credential stuffing, and DoS attacks. See how you can mitigate the risks.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/top-attacks-against-financial-services-organizations-2017-2019</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/top-attacks-against-financial-services-organizations-2017-2019</guid>
+<pubDate>Mon, 27 Apr 2020 19:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Mirai “COVID” Variant Disregards Stay-at-Home Orders</title>
+<description>New Mirai variant references the COVID-19 pandemic with a filename change and two targets: Huawei routers and TeamSpeak.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/mirai-covid-variant-disregards-stay-at-home-orders</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/mirai-covid-variant-disregards-stay-at-home-orders</guid>
+<pubDate>Fri, 24 Apr 2020 14:15:00 GMT</pubDate>
+</item>
+<item>
+<title>Privacy and Surveillance: How Generation Z and Millennials See the Internet of Things</title>
+<description>Over 700 survey respondents from different generations shared their views about the IoT and the tradeoffs between privacy and convenience.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/privacy-and-surveillance--how-generation-z-and-millennials-see-t</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/privacy-and-surveillance--how-generation-z-and-millennials-see-t</guid>
+<pubDate>Tue, 14 Apr 2020 16:19:00 GMT</pubDate>
+</item>
+<item>
+<title>Cyberthreats Targeting Canada, Winter 2019</title>
+<description>The Canadian threat landscape was characterized by a large amount of attack traffic from in-county systems, which can be the most difficult to filter. </description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/cyberthreats-targeting-canada--winter-2019</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/cyberthreats-targeting-canada--winter-2019</guid>
+<pubDate>Fri, 03 Apr 2020 10:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Cyberthreats Targeting Australia, Winter 2019</title>
+<description>The Australian threat landscape closely mirrored the threats we observed in Asia, with an added focus on NetBIOS port 139. </description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/cyberthreats-targeting-australia--winter-2019</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/cyberthreats-targeting-australia--winter-2019</guid>
+<pubDate>Thu, 02 Apr 2020 22:09:00 GMT</pubDate>
+</item>
+<item>
+<title>Cyberthreats Targeting the United States, Winter 2019</title>
+<description>The attack landscape targeting US systems was characterized by a large amount of traffic directed at web applications and web app databases.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/cyberthreats-targeting-the-united-states--winter-2019</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/cyberthreats-targeting-the-united-states--winter-2019</guid>
+<pubDate>Fri, 27 Mar 2020 14:53:00 GMT</pubDate>
+</item>
+<item>
+<title>Cyber Threats Targeting Russia, Winter 2019</title>
+<description>The Russian threat landscape is unique from other regions of the world in that it had the most unique attacking IP addresses.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/cyber-threats-targeting-russia--winter-2019</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/cyber-threats-targeting-russia--winter-2019</guid>
+<pubDate>Tue, 17 Mar 2020 15:42:00 GMT</pubDate>
+</item>
+<item>
+<title>Cyber Threats Targeting Middle East, Winter 2019</title>
+<description>Attackers used two top ASNs to broadly distribute IP addresses in an attempt to camouflage attack traffic targeting Middle Eastern systems.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/cyber-threats-targeting-middle-east--winter-2019</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/cyber-threats-targeting-middle-east--winter-2019</guid>
+<pubDate>Wed, 11 Mar 2020 13:40:00 GMT</pubDate>
+</item>
+<item>
+<title>Cyber Threats Targeting Asia, Winter 2019</title>
+<description>Asian systems saw a large amount of SMB attack traffic during this time period, mainly driven from in-region IP addresses.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/cyber-threats-targeting-asia--winter-2019</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/cyber-threats-targeting-asia--winter-2019</guid>
+<pubDate>Fri, 06 Mar 2020 17:25:00 GMT</pubDate>
+</item>
+<item>
+<title>New Perl Botnet (Tuyul) Found with Possible Indonesian Attribution</title>
+<description>Tuyul bot targets vulnerable PHPUnit systems to install an Internet Relay Chat (IRC) bot.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/new-perl-botnet--tuyul--found-with-possible-indonesian-attributi</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/new-perl-botnet--tuyul--found-with-possible-indonesian-attributi</guid>
+<pubDate>Tue, 03 Mar 2020 17:40:00 GMT</pubDate>
+</item>
+<item>
+<title>2019 TLS Telemetry Report Summary</title>
+<description>The Summary of the 2019 F5 Labs TLS Telemetry Report expands the scope of our research to bring deeper insights into encryption on the web, including ciphers, SSL/TLS versions, and digital certificates.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/2019-tls-telemetry-report-summary</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/2019-tls-telemetry-report-summary</guid>
+<pubDate>Thu, 27 Feb 2020 14:09:00 GMT</pubDate>
+</item>
+<item>
+<title>Application Protection Research Series—Summary 2nd Edition</title>
+<description>The short, concentrated brief on the 2019 application threat landscape, and what you can do to protect your apps.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/application-protection-research-series-executive-summary</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/application-protection-research-series-executive-summary</guid>
+<pubDate>Tue, 05 Nov 2019 18:37:00 GMT</pubDate>
+</item>
+<item>
+<title>Are Gen Z-ers More Security Savvy Online than Millennials?</title>
+<description>An F5 Labs survey of Gen Z-ers revealed they are not much more security savvy online than Millennials.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/are-gen-z-ers-more-security-savvy-online-than-millennials-</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/are-gen-z-ers-more-security-savvy-online-than-millennials-</guid>
+<pubDate>Thu, 13 Feb 2020 13:26:00 GMT</pubDate>
+</item>
+<item>
+<title>Top Attacks Against Service Providers 2017-2019</title>
+<description>Three years of data shows DDoS attacks against service providers are growing while brute force and other authentication attacks are slowly waning.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/top-attacks-against-service-providers-2017-2019</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/top-attacks-against-service-providers-2017-2019</guid>
+<pubDate>Thu, 06 Feb 2020 17:32:00 GMT</pubDate>
+</item>
+<item>
+<title>Vulnerabilities, Exploits, and Malware Driving Attack Campaigns in December 2019</title>
+<description>Threat campaign activity in December 2019 doubled from the previous month.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities--exploits--and-malware-driving-attack-campaigns-in-december-2019</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities--exploits--and-malware-driving-attack-campaigns-in-december-2019</guid>
+<pubDate>Fri, 31 Jan 2020 15:13:00 GMT</pubDate>
+</item>
+<item>
+<title>Black Friday, Cyber Monday and the Seasonal E-Commerce Onslaught</title>
+<description>The holiday shopping season is a bonanza for both shoppers and attackers. F5 Labs&amp;apos; David Warburton writes for ITProPortal, discussing the most commonly seen seasonal threats and how annual trends are shifting.</description>
+<link>https://www.f5.com/labs/articles/bylines/black-friday--cyber-monday-and-the-seasonal-e-commerce-onslaught</link>
+<guid>https://www.f5.com/labs/articles/bylines/black-friday--cyber-monday-and-the-seasonal-e-commerce-onslaught</guid>
+<pubDate>Thu, 09 Jan 2020 21:39:00 GMT</pubDate>
+</item>
+<item>
+<title>Gafgyt Targeting Huawei and Asus Routers and Killing Off Rival IoT Botnets</title>
+<description>IoT botnet Gafgyt targets popular routers through RCE vulnerabilities, and even removes competing malware.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/gafgyt-targeting-huawei-and-asus-routers-and-killing-off-rival-iot-botnets</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/gafgyt-targeting-huawei-and-asus-routers-and-killing-off-rival-iot-botnets</guid>
+<pubDate>Thu, 26 Dec 2019 12:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Vulnerabilities, Exploits, and Malware Driving Attack Campaigns in November 2019</title>
+<description>New campaign activity for remote code execution (RCE) vulnerabilities disclosed this year picked up in the month of November.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities-exploits-and-malware-driving-attack-campaigns-in-november-2019</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities-exploits-and-malware-driving-attack-campaigns-in-november-2019</guid>
+<pubDate>Tue, 24 Dec 2019 21:08:00 GMT</pubDate>
+</item>
+<item>
+<title>Regional Threat Perspectives, Fall 2019: Russia</title>
+<description>The same countries that attacked the rest of the world also attacked systems in Russia, but from different networks and IP addresses.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--fall-2019--russia</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--fall-2019--russia</guid>
+<pubDate>Mon, 23 Dec 2019 15:59:00 GMT</pubDate>
+</item>
+<item>
+<title>Regional Threat Perspectives, Fall 2019: Asia</title>
+<description>Attackers targeted applications and conducted credential stuffing attacks against systems in Asia during the fall of 2019.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--fall-2019--asia</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--fall-2019--asia</guid>
+<pubDate>Thu, 19 Dec 2019 15:59:00 GMT</pubDate>
+</item>
+<item>
+<title>Echobot Malware Now up to 71 Exploits, Targeting SCADA</title>
+<description>A Mirai variant named Echobot appeared mid-2019. Echobot has been seen expanding its arsenal to 71 exploits, targeting SCADA systems and IoT devices.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/echobot-malware-now-up-to-71-exploits--targeting-scada</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/echobot-malware-now-up-to-71-exploits--targeting-scada</guid>
+<pubDate>Wed, 18 Dec 2019 01:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Regional Threat Perspectives, Fall 2019: Europe</title>
+<description>Europe saw more in-region attack traffic&amp;amp;mdash;the hardest kind to filter out&amp;amp;mdash;than any of the 8 regions of the world we analyzed.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--fall-2019--europe</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--fall-2019--europe</guid>
+<pubDate>Tue, 17 Dec 2019 15:59:00 GMT</pubDate>
+</item>
+<item>
+<title>Regional Threat Perspectives, Fall 2019: Australia</title>
+<description>Attackers probed Australian applications for vulnerabilities on the most commonly used ports, and credential stuffing attacks were prevalent.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--fall-2019--australia</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--fall-2019--australia</guid>
+<pubDate>Thu, 12 Dec 2019 15:59:00 GMT</pubDate>
+</item>
+<item>
+<title>DanaBot’s New Tactics and Targets Arrive in Time for Peak Phishing and Fraud Season</title>
+<description>DanaBot makes a strong resurgence at the end of 2019, using new tactics and techniques and expanding beyond its traditional banking targets.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/danabot-s-new-tactics-and-targets-arrive-in-time-for-peak-phishi</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/danabot-s-new-tactics-and-targets-arrive-in-time-for-peak-phishi</guid>
+<pubDate>Mon, 09 Dec 2019 14:57:00 GMT</pubDate>
+</item>
+<item>
+<title>Regional Threat Perspectives, Fall 2019: Latin America</title>
+<description>Latin American systems received more attacks from IP addresses within the region that coincidentally did not attack anywhere else in the world.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--fall-2019--latin-america</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--fall-2019--latin-america</guid>
+<pubDate>Tue, 03 Dec 2019 15:59:00 GMT</pubDate>
+</item>
+<item>
+<title>Regional Threat Perspectives, Fall 2019: Canada</title>
+<description>The U.S. and Canada have 95% of top source traffic countries in common.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--fall-2019--canada</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--fall-2019--canada</guid>
+<pubDate>Mon, 02 Dec 2019 15:59:00 GMT</pubDate>
+</item>
+<item>
+<title>Vulnerabilities, Exploits, and Malware Driving Attack Campaigns in October 2019</title>
+<description>Vulnerable web servers are the top target for threat actors, who continue to exploit known vulnerabilities with the goal of running commands remotely.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities-exploits-and-malware-driving-attack-campaigns-in-october-2019</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities-exploits-and-malware-driving-attack-campaigns-in-october-2019</guid>
+<pubDate>Tue, 26 Nov 2019 21:08:00 GMT</pubDate>
+</item>
+<item>
+<title>Regional Threat Perspectives, Fall 2019: United States</title>
+<description>U.S. systems were heavily targeted by IP addresses in Russia, Moldova, and France that launched credential stuffing attacks on VNC port 5900 beginning in June 2019.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--fall-2019--united-states</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--fall-2019--united-states</guid>
+<pubDate>Mon, 25 Nov 2019 15:59:00 GMT</pubDate>
+</item>
+<item>
+<title>Regional Threat Perspectives, Fall 2019: Middle East</title>
+<description>IP addresses assigned in Russia launched significantly more attacks against Middle East systems than any other regions of the world.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--fall-2019--middle-east</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--fall-2019--middle-east</guid>
+<pubDate>Thu, 21 Nov 2019 16:52:00 GMT</pubDate>
+</item>
+<item>
+<title>Vulnerabilities, Exploits, and Malware Driving Attack Campaigns in September 2019</title>
+<description>Threat actors shift focus away from cryptominers and back to remote code execution&amp;amp;mdash;this month with a new zero-day exploits.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities-exploits-and-malware-driving-attack-campaigns-in-september-2019</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities-exploits-and-malware-driving-attack-campaigns-in-september-2019</guid>
+<pubDate>Wed, 30 Oct 2019 13:10:00 GMT</pubDate>
+</item>
+<item>
+<title>2019 Application Protection Report Podcast Series</title>
+<description>In this companion podcast, the 2019 F5 Labs Application Protection Report researchers examine how both apps and threats are changing, and what security practitioners can do to stay ahead of these changes.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/2019-application-protection-report-podcast-series</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/2019-application-protection-report-podcast-series</guid>
+<pubDate>Tue, 22 Oct 2019 17:16:00 GMT</pubDate>
+</item>
+<item>
+<title>Three Ways to Hack the U.S. Election</title>
+<description>There are three primary avenues to hack a U.S. election: voter registration, voting machines, and the voters themselves. We&amp;amp;rsquo;ll dig into each and see which offers the most bang for the buck.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/three-ways-to-hack-the-u-s--election</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/three-ways-to-hack-the-u-s--election</guid>
+<pubDate>Tue, 22 Oct 2019 20:12:00 GMT</pubDate>
+</item>
+<item>
+<title>Vulnerabilities, Exploits, and Malware Driving Attack Campaigns in August 2019</title>
+<description>August 2019 was slowest month on record F5 researchers have seen in new threat activity. But while active exploitation slowed, new reconnaissance campaigns grew.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities--exploits--and-malware-driving-attack-campaigns-in-august-2019</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities--exploits--and-malware-driving-attack-campaigns-in-august-2019</guid>
+<pubDate>Tue, 24 Sep 2019 14:53:00 GMT</pubDate>
+</item>
+<item>
+<title>Tricky Trickbot Runs Campaigns Without Redirection</title>
+<description>Known for redirection attacks, recent Trickbot banking trojan campaigns use server-side injection and target fewer victims.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/tricky-trickbot-runs-campaigns-without-redirection</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/tricky-trickbot-runs-campaigns-without-redirection</guid>
+<pubDate>Tue, 17 Sep 2019 20:55:00 GMT</pubDate>
+</item>
+<item>
+<title>How To Survive the Rash of Ransomware</title>
+<description>Ransomware is ramping up, especially in the public sector. The key to stopping these attacks is to focus on the ransomware attack vectors.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/how-to-survive-the-rash-of-ransomware</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/how-to-survive-the-rash-of-ransomware</guid>
+<pubDate>Thu, 05 Sep 2019 19:39:00 GMT</pubDate>
+</item>
+<item>
+<title>De-icing IcedID: Decompression and Decryption Methods Explained in an IcedID Attack</title>
+<description>We detail the steps for decrypting and decompressing IcedID webinject files, enabling researchers to analyze IcedID samples and pull out target and web injection files.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/de-icing-icedid--decompression-and-decryption-methods-explained-</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/de-icing-icedid--decompression-and-decryption-methods-explained-</guid>
+<pubDate>Wed, 04 Sep 2019 19:58:00 GMT</pubDate>
+</item>
+<item>
+<title>Application Protection Report 2019, Episode 5: API Breaches and the Visibility Problem</title>
+<description>API use has grown tremendously, but security is lagging, creating easy targets for attackers. </description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/application-protection-report-2019-episode-5-api-breaches-and-the-visibility-problem</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/application-protection-report-2019-episode-5-api-breaches-and-the-visibility-problem</guid>
+<pubDate>Tue, 13 Aug 2019 16:54:00 GMT</pubDate>
+</item>
+<item>
+<title>Kazakhstan Attempts to MITM Its Citizens</title>
+<description>Kazakhstan is now asking its citizens to install digital certificates so that it can decrypt all online communications. Their methods, however, may leave the population vulnerable to cyber attacks for many years to come.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/kazakhstan-attempts-to-mitm-itscitizens</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/kazakhstan-attempts-to-mitm-itscitizens</guid>
+<pubDate>Thu, 01 Aug 2019 15:17:00 GMT</pubDate>
+</item>
+<item>
+<title>Vulnerabilities, Exploits, and Malware Driving Attack Campaigns in June 2019</title>
+<description>Similar to April and May, threat actors in June continued targeting the deserialization vulnerabilities found in Oracle WebLogic to mine cryptocurrency.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities-exploits-and-malware-driving-attack-campaigns-in-june-2019</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities-exploits-and-malware-driving-attack-campaigns-in-june-2019</guid>
+<pubDate>Wed, 31 Jul 2019 17:40:00 GMT</pubDate>
+</item>
+<item>
+<title>2018 Application Protection Report Podcast Series</title>
+<description>In this companion podcast, the researchers who created the F5 Labs Application Protection Report discuss their findings, and share the details and backstories that helped shape the final report.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/2018-application-protection-report-podcast-series</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/2018-application-protection-report-podcast-series</guid>
+<pubDate>Tue, 16 Jul 2019 17:16:00 GMT</pubDate>
+</item>
+<item>
+<title>The Hunt for IoT: The Opportunity and Impact of Hacked IoT</title>
+<description>We&amp;amp;rsquo;re still thinking of Internet of Things devices as low risk when reality tells us exactly the opposite.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/the-hunt-for-Iot-the-opportunity-and-impact-of-hacked-iot</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/the-hunt-for-Iot-the-opportunity-and-impact-of-hacked-iot</guid>
+<pubDate>Mon, 15 Jul 2019 19:32:00 GMT</pubDate>
+</item>
+<item>
+<title>New Golang Malware is Spreading via Multiple Exploits to Mine Monero</title>
+<description>A newcomer to the malware scene, Golang-based malware has been seen installing cryptominers specifically targeting Moreno cryptocurrency.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/new-golang-malware-is-spreading-via-multiple-exploits-to-mine-mo</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/new-golang-malware-is-spreading-via-multiple-exploits-to-mine-mo</guid>
+<pubDate>Tue, 02 Jul 2019 20:43:00 GMT</pubDate>
+</item>
+<item>
+<title>Vulnerabilities, Exploits, and Malware Driving Attack Campaigns in May 2019</title>
+<description>Similar to April, threat actors in May continued targeting the deserialization vulnerabilities found in Oracle WebLogic to mine cryptocurrency.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities-exploits-and-malware-driving-attack-campaigns-in-may-2019</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities-exploits-and-malware-driving-attack-campaigns-in-may-2019</guid>
+<pubDate>Thu, 27 Jun 2019 17:40:00 GMT</pubDate>
+</item>
+<item>
+<title>Application Threat Report 2019, Episode 4: Access Attack Trends in 2018</title>
+<description>Access attacks that circumvent user authentication, such as phishing or credential stuffing, are the types that most commonly lead to a breach. </description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/application-protection-report-2019--episode--4-access-attack-trends-in-2018</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/application-protection-report-2019--episode--4-access-attack-trends-in-2018</guid>
+<pubDate>Tue, 25 Jun 2019 13:41:00 GMT</pubDate>
+</item>
+<item>
+<title>How I Hacked the Microsoft Outlook Android App and Found CVE-2019-1105 </title>
+<description>It looked like a simple XSS in the Outlook Android app, but the app developers couldn&amp;amp;rsquo;t reproduce it so they didn&amp;amp;rsquo;t fix it. Then things got interesting. Here&amp;amp;rsquo;s the story of how I discovered CVE-2019-1105.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/how-i-hacked-the-microsoft-outlook-android-app-and-found-cve-2019-1105</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/how-i-hacked-the-microsoft-outlook-android-app-and-found-cve-2019-1105</guid>
+<pubDate>Fri, 21 Jun 2019 21:41:00 GMT</pubDate>
+</item>
+<item>
+<title>Gootkit Italian Campaign Overview</title>
+<description>The Gootkit banking trojan is still active and protecting itself in Italy using a dedicated redirection defense.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/gootkit-italian-campaign-overview</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/gootkit-italian-campaign-overview</guid>
+<pubDate>Tue, 18 Jun 2019 16:35:00 GMT</pubDate>
+</item>
+<item>
+<title>Application Protection Report 2019, Episode 3: Web Injection Attacks Get Meaner</title>
+<description>Web injection represents an even greater risk than it did previously, thanks to the growth of third-party content and increasingly complex attack surfaces.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/application-protection-report-2019--episode-3--web-injection-attacks</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/application-protection-report-2019--episode-3--web-injection-attacks</guid>
+<pubDate>Thu, 16 May 2019 13:41:00 GMT</pubDate>
+</item>
+<item>
+<title>Vulnerabilities, Exploits, and Malware Driving Attack Campaigns in April 2019</title>
+<description>In April, threat actors focused on targeting vulnerabilities that had the highest impact: this month it was a recently released deserialization vulnerability in Oracle WebLogic Server.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities--exploits--and-malware-driving-attack-campaigns-in-april-2019</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities--exploits--and-malware-driving-attack-campaigns-in-april-2019</guid>
+<pubDate>Tue, 14 May 2019 12:35:00 GMT</pubDate>
+</item>
+<item>
+<title>Regional Threat Perspectives: United States</title>
+<description>Attackers using IP addresses in Vietnam, China, and Russia focused on attacking applications over Samba, SSH, and HTTP.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--united-states</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--united-states</guid>
+<pubDate>Thu, 02 May 2019 15:33:00 GMT</pubDate>
+</item>
+<item>
+<title>Gozi Banking Trojan Pivots Towards Italian Banks in February and March</title>
+<description>Gozi authors, who targeted banks in Canada, France, and the US in January 2019, shifted their targets to Italian banks in February 2019. </description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/gozi-banking-trojan-pivots-towards-italian-banks-in-february-and-march</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/gozi-banking-trojan-pivots-towards-italian-banks-in-february-and-march</guid>
+<pubDate>Tue, 30 Apr 2019 23:08:00 GMT</pubDate>
+</item>
+<item>
+<title>Denial of Service Vulnerabilities Discovered in HTTP/2</title>
+<description>SETTINGS frame abuse and Slow POST attacks in HTTP/2 can lead to CPU and memory exhaustion.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/denial-of-service-vulnerabilities-discovered-in-http-2</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/denial-of-service-vulnerabilities-discovered-in-http-2</guid>
+<pubDate>Mon, 29 Apr 2019 15:07:00 GMT</pubDate>
+</item>
+<item>
+<title>Panda Malware: It’s Not Just About Cryptocurrencies Anymore</title>
+<description>Panda malware is back with a March 2019 campaign that targets U.S. companies, and moves from cryptocurrencies to targeting web giants.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/panda-malware--it-s-not-just-about-cryptocurrencies-anymore</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/panda-malware--it-s-not-just-about-cryptocurrencies-anymore</guid>
+<pubDate>Thu, 25 Apr 2019 21:30:00 GMT</pubDate>
+</item>
+<item>
+<title>Regional Threat Perspectives: Australia</title>
+<description>Attackers using IP addresses in China, the United States, and the Netherlands focus on attacking applications over SSH, SMB and HTTP.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--australia</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--australia</guid>
+<pubDate>Wed, 24 Apr 2019 20:23:00 GMT</pubDate>
+</item>
+<item>
+<title>Ramnit Returns to its Banking Roots, Just in Time for Italian Tax Season</title>
+<description>Ramnit&amp;amp;rsquo;s latest configuration targets Europe leading up to tax season, focusing on Italian banks and international online advertisers.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/ramnit-returns-to-its-banking-roots--just-in-time-for-italian-ta</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/ramnit-returns-to-its-banking-roots--just-in-time-for-italian-ta</guid>
+<pubDate>Tue, 23 Apr 2019 19:38:00 GMT</pubDate>
+</item>
+<item>
+<title>Regional Threat Perspectives: Europe</title>
+<description>Attackers are using IP addresses in the Netherlands, United States, and China to target systems in Europe over SIP, Microsoft SMB, and SSH. </description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--europe</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/regional-threat-perspectives--europe</guid>
+<pubDate>Wed, 17 Apr 2019 14:05:00 GMT</pubDate>
+</item>
+<item>
+<title>Vulnerabilities, Exploits, and Malware Driving Attack Campaigns in March 2019</title>
+<description>In March, threat actors focused on targeting vulnerabilities released in the last few months. WordPress Easy SMTP Plugin Authentication Bypass vulnerability attacks had the most impact during that time frame.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities-exploits-and-malware-driving-attack-campaigns-march-2019</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities-exploits-and-malware-driving-attack-campaigns-march-2019</guid>
+<pubDate>Tue, 09 Apr 2019 15:29:00 GMT</pubDate>
+</item>
+<item>
+<title>Application Protection Report 2019, Episode 2: 2018 Breach Trends</title>
+<description>Analysis of public breach reports showed a relationship between business models and breach vectors, with injection and phishing the leading causes.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/application-protection-report-2019--episode-2--2018-breach-trend</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/application-protection-report-2019--episode-2--2018-breach-trend</guid>
+<pubDate>Mon, 08 Apr 2019 13:18:00 GMT</pubDate>
+</item>
+<item>
+<title>Why Attacks on Cryptocurrency Exchanges Show No Signs of Slowing Down</title>
+<description>F5 Labs&amp;apos; Ray Pompon writes for Finance Derivative, discussing why hackers will continue targeting cryptocurrency exchanges.</description>
+<link>https://www.f5.com/labs/articles/bylines/why-attacks-on-cryptocurrency-exchanges-show-no-signs-of-slowing</link>
+<guid>https://www.f5.com/labs/articles/bylines/why-attacks-on-cryptocurrency-exchanges-show-no-signs-of-slowing</guid>
+<pubDate>Wed, 20 Mar 2019 18:29:00 GMT</pubDate>
+</item>
+<item>
+<title>“CryptoSink” Campaign Deploys a New Miner Malware</title>
+<description>Attackers continue to exploit old vulnerabilities, use new methods to kill competing crypto-miners, and survive removal by administrators.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/-cryptosink--campaign-deploys-a-new-miner-malware</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/-cryptosink--campaign-deploys-a-new-miner-malware</guid>
+<pubDate>Wed, 13 Mar 2019 15:28:00 GMT</pubDate>
+</item>
+<item>
+<title>Vulnerabilities, Exploits, and Malware Driving Attack Campaigns in February 2019</title>
+<description>Continuing the trend from January, threat actor activity in February focused heavily on exploiting a ThinkPHP remote code execution vulnerability.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities--exploits--and-malware-driving-attack-campaigns-in-february-2019</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities--exploits--and-malware-driving-attack-campaigns-in-february-2019</guid>
+<pubDate>Tue, 12 Mar 2019 16:32:00 GMT</pubDate>
+</item>
+<item>
+<title>Vulnerabilities, Exploits, and Malware Driving Attack Campaigns in January 2019</title>
+<description>January threat actor activity focused heavily on exploiting a ThinkPHP remote code execution vulnerability and infecting vulnerable Oracle WebLogic systems with a Mirai variant.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities--exploits--and-malware-driving-attack-campaigns-</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/vulnerabilities--exploits--and-malware-driving-attack-campaigns-</guid>
+<pubDate>Thu, 21 Feb 2019 19:27:00 GMT</pubDate>
+</item>
+<item>
+<title>Gozi Adds Evasion Techniques to its Growing Bag of Tricks</title>
+<description>Gozi &amp;amp;ldquo;banking&amp;amp;rdquo; trojan continues to shift its targets beyond banking as it employs client-side and server-side evasion techniques via time-tested web injection.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/gozi-adds-evasion-techniques-to-its-growing-bag-of-tricks</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/gozi-adds-evasion-techniques-to-its-growing-bag-of-tricks</guid>
+<pubDate>Tue, 29 Jan 2019 16:32:00 GMT</pubDate>
+</item>
+<item>
+<title>Fighting Back Against Phishing and Fraud—Part 1</title>
+<description>Using existing protocols and tools to begin building a robust phishing and fraud mitigation strategy.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/fighting-back-against-phishing-and-fraud-part-1</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/fighting-back-against-phishing-and-fraud-part-1</guid>
+<pubDate>Thu, 17 Jan 2019 19:41:00 GMT</pubDate>
+</item>
+<item>
+<title>Spaceballs Security: The Top Attacked Usernames and Passwords</title>
+<description>Expect a breach If you have basic, vendor default SSH credentials active on any system. </description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/spaceballs-security--the-top-attacked-usernames-and-passwords</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/spaceballs-security--the-top-attacked-usernames-and-passwords</guid>
+<pubDate>Thu, 20 Dec 2018 22:08:00 GMT</pubDate>
+</item>
+<item>
+<title>Threat Actors Rapidly Adopt New ThinkPHP RCE Exploit to Spread IoT Malware and Deploy Remote Shells</title>
+<description>Threat actors wasted no time jumping on this new exploit to launch new campaigns for reconnaissance, uploading back doors, and deploying variants of the Mirai botnet.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/threat-actors-rapidly-adopt-new-thinkphp-rce-exploit-to-spread-i</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/threat-actors-rapidly-adopt-new-thinkphp-rce-exploit-to-spread-i</guid>
+<pubDate>Wed, 19 Dec 2018 23:05:00 GMT</pubDate>
+</item>
+<item>
+<title>DanaBot November Campaigns Target European Banks and Email Providers</title>
+<description>First detected in May 2018, DanaBot is a fraud trojan that has since shifted its targets from banks in Australia to banks in Europe, as well as global email providers such as Google, Microsoft and Yahoo for the holiday phishing season.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/danabot-november-campaigns-target-european-banks</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/danabot-november-campaigns-target-european-banks</guid>
+<pubDate>Mon, 17 Dec 2018 13:07:00 GMT</pubDate>
+</item>
+<item>
+<title>Reviewing Recent API Security Incidents</title>
+<description>Application programming interfaces (APIs) are a growing attack surface, offering predators unprecedented access to large data stores. As serverless, mobile, and online platforms grow, API attacks will surely rise.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/reviewing-recent-api-security-incidents</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/reviewing-recent-api-security-incidents</guid>
+<pubDate>Tue, 27 Nov 2018 13:39:00 GMT</pubDate>
+</item>
+<item>
+<title>Will Losses from Cryptocurrency Exchange Hacks Hit a Billion Dollars In 2018?</title>
+<description>Cryptocurrency exchanges and their supporting application systems are being attacked at an unprecedented level. As the value of cryptocurrency has climbed, so has the incentive to steal.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/will-losses-from-cryptocurrency-exchange-hacks-hit-a-billion-dol</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/will-losses-from-cryptocurrency-exchange-hacks-hit-a-billion-dol</guid>
+<pubDate>Thu, 18 Oct 2018 20:40:00 GMT</pubDate>
+</item>
+<item>
+<title>Abusing Googlebot Services to Deliver Crypto-Mining Malware</title>
+<description>Seventeen years after the opportunity for abuse was made public, attackers are finding new ways to make use of this unpatched web crawler service.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/abusing-googlebot-services-to-deliver-crypto-mining-malware</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/abusing-googlebot-services-to-deliver-crypto-mining-malware</guid>
+<pubDate>Tue, 09 Oct 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Ready or Not, Cyberwarfare Is Here</title>
+<description>By targeting critical infrastructure, cyberwarfare attackers can plunge a nation into chaos without ever firing a single shot.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/ready-or-not--cyberwarfare-is-here</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/ready-or-not--cyberwarfare-is-here</guid>
+<pubDate>Tue, 25 Sep 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Organizations Seek Help Fighting App-Focused DDoS Attacks Even as Total DDoS Attack Rates Stay Flat</title>
+<description>While DDoS attack rates hold, tensions rise for organizations trying to mitigate app-targeted attack that can be easily launched by script kiddies.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/organizations-seek-help-fighting-app-focused-ddos-attacks-even-a</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/organizations-seek-help-fighting-app-focused-ddos-attacks-even-a</guid>
+<pubDate>Fri, 14 Sep 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Trickbot Gets Trickier by Adding an Encryption Layer</title>
+<description>Trickbot authors gain precious time to defraud unsuspecting victims by adding an encryption layer that slows down the malware investigation process.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/trickbot-gets-trickier-by-adding-an-encryption-layer</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/trickbot-gets-trickier-by-adding-an-encryption-layer</guid>
+<pubDate>Thu, 06 Sep 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Apache Struts 2 Vulnerability (CVE-2018-11776) Exploited in CroniX Crypto-Mining Campaign</title>
+<description>Attackers are exploiting new vulnerabilities almost as quickly as they&amp;apos;re being discovered.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/apache-struts-2-vulnerability--cve-2018-11776--exploited-in-cron</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/apache-struts-2-vulnerability--cve-2018-11776--exploited-in-cron</guid>
+<pubDate>Tue, 04 Sep 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Rental Scams Are Pervasive, Even Years After the Housing Recession</title>
+<description>Rental scams are getting more sophisticated and are making it harder for legitimate landlords and renters to find each other.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/rental-scams-are-pervasive--even-years-after-the-housing-recessi</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/rental-scams-are-pervasive--even-years-after-the-housing-recessi</guid>
+<pubDate>Thu, 26 Jul 2018 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Tackling Gootkit's Traps</title>
+<description>Gootkit malware uses misleading code to hinder manual research and automated analysis.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/tackling-gootkit-s-traps</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/tackling-gootkit-s-traps</guid>
+<pubDate>Wed, 11 Jul 2018 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>New Jenkins Campaign Hides Malware, Kills Competing Crypto-Miners</title>
+<description>Threat actors continue to find creative yet relatively unsophisticated ways to launch new campaigns to reap profits from crypto-mining operations.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/new-jenkins-campaign-hides-malware--kills-competing-crypto-miner</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/new-jenkins-campaign-hides-malware--kills-competing-crypto-miner</guid>
+<pubDate>Fri, 06 Jul 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Snooping on Tor from Your Load Balancer</title>
+<description>An F5 Labs researcher snoops on Tor exit node traffic from a load balancer. What he finds will shock you. SHOCK YOU.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/snooping-on-tor-from-your-load-balancer</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/snooping-on-tor-from-your-load-balancer</guid>
+<pubDate>Tue, 03 Jul 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>BackSwap Defrauds Online Banking Customers Using Hidden Input Fields</title>
+<description>BackSwap demonstrates unique behavior in its manipulation of user input fields and its handling of International Bank Account Numbers (IBANs).</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/backswap-defrauds-online-banking-customers-using-hidden-input-fi</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/backswap-defrauds-online-banking-customers-using-hidden-input-fi</guid>
+<pubDate>Fri, 29 Jun 2018 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>New Struts 2 Campaign Compiles Its Own C# Downloader, Leverages a User Profile Page as Its C&amp;C Server</title>
+<description>Attackers continue to find new and creative ways to carry out malicious crypto-mining operations, employing multiple exploits in a single campaign.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/new-struts-2-campaign-compiles-its-own-c--downloader--leverages-</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/new-struts-2-campaign-compiles-its-own-c--downloader--leverages-</guid>
+<pubDate>Sat, 23 Jun 2018 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>New Campaign Targeting Apache Struts 2, WebLogic Deploys Malware Using VBScript</title>
+<description>With the vast availability of new exploits and the competition for victims&amp;amp;rsquo; resources, the multi-exploit trend continues to be popular among attackers.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/new-campaign-targeting-apache-struts-2--weblogic-deploys-malware</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/new-campaign-targeting-apache-struts-2--weblogic-deploys-malware</guid>
+<pubDate>Thu, 21 Jun 2018 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Russian Attacks Against Singapore Spike During Trump-Kim Summit</title>
+<description>Singapore saw a sharp rise in attacks targeting a variety of ports, from SIP clear-text (5060), Telnet, SQL, and host-to-host ports to those used for remote router management and proxy servers and caching.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/russian-attacks-against-singapore-spike-during-trump-kim-summit</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/russian-attacks-against-singapore-spike-during-trump-kim-summit</guid>
+<pubDate>Fri, 15 Jun 2018 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Drupalgeddon 2 Highlights the Need for AppSecOps</title>
+<description>If you aren&amp;amp;rsquo;t aware of Drupalgeddon 2, then you&amp;amp;rsquo;ve either been living off the grid or don&amp;amp;rsquo;t use the popular content management system (CMS).</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/drupalgeddon-2-highlights-the-need-for-appsecops</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/drupalgeddon-2-highlights-the-need-for-appsecops</guid>
+<pubDate>Fri, 11 May 2018 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Panda Malware Broadens Targets to Cryptocurrency Exchanges and Social Media</title>
+<description>Panda malware is back in full force with three currently active campaigns that extend its targets beyond banking to new industries and organizations worldwide.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/panda-malware-broadens-targets-to-cryptocurrency-exchanges-and-social-media</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/panda-malware-broadens-targets-to-cryptocurrency-exchanges-and-social-media</guid>
+<pubDate>Wed, 09 May 2018 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Russia Attacks Global Network Infrastructure Through Vulnerabilities That Extend Far Beyond Their Targets</title>
+<description>US-CERT TL18-106A alert underscores how insecure Internet systems really are and that ignoring the problem only increases the collateral damage.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/russia-attacks-global-network-infrastructure-through-vulnerabilities-that-extend-far-beyond-their-targets</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/russia-attacks-global-network-infrastructure-through-vulnerabilities-that-extend-far-beyond-their-targets</guid>
+<pubDate>Fri, 04 May 2018 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>The 2017 TLS Telemetry Report</title>
+<description>Privacy today isn&amp;amp;rsquo;t just about staying away from prying eyes. The very act of communicating across the Internet with open, non-confidential protocols invites exposure to multiple threat types.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/the-2017-tls-telemetry-report</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/the-2017-tls-telemetry-report</guid>
+<pubDate>Mon, 23 Apr 2018 18:15:00 GMT</pubDate>
+</item>
+<item>
+<title>Windows IIS 6.0 CVE-2017-7269 Is Targeted Again to Mine Electroneum</title>
+<description>Attackers are targeting a Windows IIS vulnerability first disclosed a year ago to mine Electroneum.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/windows-iis-60-cve-2017-7269-is-targeted-again-to-mine-electroneum</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/windows-iis-60-cve-2017-7269-is-targeted-again-to-mine-electroneum</guid>
+<pubDate>Thu, 12 Apr 2018 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Know the Risks to Your Critical Apps and Defend Against Them</title>
+<description>Critical apps are the ones that must never go down or be hacked. They are also the hardest to defend because they are often massive, ancient, and touch everything.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/know-the-risks-to-your-critical-apps-and-defend-against-them</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/know-the-risks-to-your-critical-apps-and-defend-against-them</guid>
+<pubDate>Tue, 10 Apr 2018 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Avoid Becoming a Crypto-Mining Bot: Where to Look for Mining Malware and How to Respond</title>
+<description>People are mining coins all over the place-all it costs is money for the power bill. So, of course, clever people are figuring out how to use other people&amp;amp;rsquo;s power to mine cryptocurrency.</description>
+<link>https://www.f5.com/labs/articles/bylines/avoid-becoming-a-crypto-mining-bot-where-to-look-for-mining-malware-and-how-to-respond</link>
+<guid>https://www.f5.com/labs/articles/bylines/avoid-becoming-a-crypto-mining-bot-where-to-look-for-mining-malware-and-how-to-respond</guid>
+<pubDate>Tue, 03 Apr 2018 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Old Dog, New Targets: Switching to Windows to Mine Electroneum</title>
+<description>Apache Struts 2 Jakarta Multipart Parser RCE crypto-mining campaign is now targeting Windows, not just Linux systems.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/old-dog-new-targets-switching-to-windows-to-mine-electroneum</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/old-dog-new-targets-switching-to-windows-to-mine-electroneum</guid>
+<pubDate>Wed, 28 Mar 2018 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>When Information Security is a Matter of Public Safety</title>
+<description>Seven steps for improving the security of critical infrastructure systems&amp;amp;mdash;and protecting the public from unnecessary risk.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/when-information-security-is-a-matter-of-public-safety</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/when-information-security-is-a-matter-of-public-safety</guid>
+<pubDate>Thu, 22 Mar 2018 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>The Hunt for IoT: The Growth and Evolution of Thingbots Ensures Chaos</title>
+<description>IoT attacks show no signs of decreasing while infected IoT devices go un-remediated, and discovery of new thingbots is at a decade-long high.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/the-hunt-for-iot-the-growth-and-evolution-of-thingbots-ensures-chaos</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/the-hunt-for-iot-the-growth-and-evolution-of-thingbots-ensures-chaos</guid>
+<pubDate>Tue, 13 Mar 2018 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Threat Modeling the Internet of Things: Modeling Reaper</title>
+<description>Reaper is just one more blinking light in the faces of the InfoSec community reminding us that we need to get ahead of IOT madness.</description>
+<link>https://www.f5.com/labs/articles/bylines/threat-modeling-the-internet-of-things-modeling-reaper</link>
+<guid>https://www.f5.com/labs/articles/bylines/threat-modeling-the-internet-of-things-modeling-reaper</guid>
+<pubDate>Fri, 09 Mar 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>rTorrent Vulnerability Leveraged in Campaign Spoofing RIAA and NYU User-Agents?</title>
+<description>The same rTorrent XML-RPC function configuration error that was targeted to mine Monero in February was also targeted in January in a campaign apparently spoofing user-agents for RIAA and NYU.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/rtorrent-vulnerability-leveraged-in-campaign-spoofing-riaa-and-nyu-user-agents</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/rtorrent-vulnerability-leveraged-in-campaign-spoofing-riaa-and-nyu-user-agents</guid>
+<pubDate>Thu, 08 Mar 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Exploited Memcached Servers Lead to Record-Setting 1.3Tbps DDoS Attack</title>
+<description>Memcached is just one of many application infrastructure systems that could launch the same types of attacks if they were also misconfigured.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/exploited-memcached-servers-lead-to-record-setting-13tbps-ddos-attack</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/exploited-memcached-servers-lead-to-record-setting-13tbps-ddos-attack</guid>
+<pubDate>Fri, 02 Mar 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>rTorrent Client Exploited In The Wild To Deploy Monero Crypto-Miner</title>
+<description>A previously undisclosed misconfiguration vulnerability in the rTorrent client is being exploited in the wild to mine Monero.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/rtorrent-client-exploited-in-the-wild-to-deploy-monero-crypto-miner</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/rtorrent-client-exploited-in-the-wild-to-deploy-monero-crypto-miner</guid>
+<pubDate>Wed, 28 Feb 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>XMRig Miner Now Targeting Oracle WebLogic and Jenkins Servers to Mine Monero</title>
+<description>The same drop zone server used last week to mine Monero on compromised Jenkins automation servers is now being used in a new Monero mining campaign targeting Oracle Web Logic servers.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/xmrig-miner-now-targeting-oracle-weblogic-and-jenkins-servers-to-mine-monero</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/xmrig-miner-now-targeting-oracle-weblogic-and-jenkins-servers-to-mine-monero</guid>
+<pubDate>Wed, 21 Feb 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Beware of Attackers Stealing Your Computing Power for their Cryptomining Operations</title>
+<description>As the black-market price for stolen data declines, attackers turn to cryptojacking schemes to maximize their profits&amp;amp;mdash;all at your expense.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/beware-of-attackers-stealing-your-computing-power-for-their-cryptomining-operations</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/beware-of-attackers-stealing-your-computing-power-for-their-cryptomining-operations</guid>
+<pubDate>Thu, 15 Feb 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>The Email that Could Steal Your Life Savings and Leave You Homeless</title>
+<description>Real estate scams are big business for attackers. Be on the lookout for this one, which can leave home buyers destitute if not caught in time.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/the-email-that-could-steal-your-life-savings-and-leave-you-homeless</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/the-email-that-could-steal-your-life-savings-and-leave-you-homeless</guid>
+<pubDate>Thu, 08 Feb 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Lessons Learned From a Decade of Data Breaches</title>
+<description>F5 Labs researched 433 breach cases spanning 12 years, 37 industries, and 27 countries to discover patterns in the initial attacks that lead to the breach.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/lessons-learned-from-a-decade-of-data-breaches-29035</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/lessons-learned-from-a-decade-of-data-breaches-29035</guid>
+<pubDate>Thu, 07 Dec 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Thingbots and Reapers and Cryptominers—Oh, My! F5 Labs’ First Year in Review</title>
+<description>F5 Labs covered a multitude of threats, vulnerabilities, botnets, attackers, and attacks in 2017. Here are just some of the highlights you might have missed.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/thingbots-and-reapers-and-cryptominersoh-my-f5-labs-first-year-in-review</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/thingbots-and-reapers-and-cryptominersoh-my-f5-labs-first-year-in-review</guid>
+<pubDate>Thu, 25 Jan 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>New Python-Based Crypto-Miner Botnet Flying Under the Radar</title>
+<description>A new Python-based botnet that mines Monero spreads via SSH and leverages Pastebin to publish new C&amp;amp;amp;C server addresses.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/new-python-based-crypto-miner-botnet-flying-under-the-radar</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/new-python-based-crypto-miner-botnet-flying-under-the-radar</guid>
+<pubDate>Wed, 03 Jan 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Ramnit Goes on a Holiday Shopping Spree, Targeting Retailers and Banks</title>
+<description>Ramnit&amp;amp;rsquo;s latest twist includes targeting the most widely used web services during the holidays: online retailers, entertainment, banking, food delivery, and shipping sites.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/ramnit-goes-on-a-holiday-shopping-spree-targeting-retailers-and-banks</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/ramnit-goes-on-a-holiday-shopping-spree-targeting-retailers-and-banks</guid>
+<pubDate>Mon, 15 Jan 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Mirai is Attacking Again, So We’re Outing its Hilarious, Explicit C&amp;C Hostnames</title>
+<description>With Mirai rearing its ugly head again, we&amp;amp;rsquo;re revealing its C&amp;amp;amp;C hostnames so organizations can update their blacklists and protect themselves.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/mirai-is-attacking-again-so-were-outing-its-hilarious-explicit-c-c-hostnames</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/mirai-is-attacking-again-so-were-outing-its-hilarious-explicit-c-c-hostnames</guid>
+<pubDate>Thu, 04 Jan 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Zealot: New Apache Struts Campaign Uses EternalBlue and EternalSynergy to Mine Monero on Internal Networks</title>
+<description>New Apache Struts campaign, Zealot, targets vulnerabilities in Windows, Linux, and the DotNetNuke CMS, then leverages leaked NSA exploits to move laterally through internal networks and mine Monero.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/zealot-new-apache-struts-campaign-uses-eternalblue-and-eternalsynergy-to-mine-monero-on-internal-networks</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/zealot-new-apache-struts-campaign-uses-eternalblue-and-eternalsynergy-to-mine-monero-on-internal-networks</guid>
+<pubDate>Fri, 15 Dec 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>BrickerBot: Do “Good Intentions” Justify the Means—or Deliver Meaningful Results?</title>
+<description>Most security researchers have good intentions, but ethics must play a central role in the decisions they make.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/brickerbot-do-good-intentions-justify-the-meansor-deliver-meaningful-results</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/brickerbot-do-good-intentions-justify-the-meansor-deliver-meaningful-results</guid>
+<pubDate>Thu, 28 Dec 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>A Spectre of Meltdowns Could be in Store for 2018, Including Fileless Malware Attacks and More Costly Bots</title>
+<description>Every week another bug, vulnerability, or exploit is released - we need a multi-layered security strategy (beyond our standard patch &amp;amp;ldquo;spin cycles&amp;amp;rdquo;) to deal with threats like Spectre and Meltdown.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/a-spectre-of-meltdowns-could-be-in-store-for-2018-including-fileless-malware-attacks-and-more-costly-bots-29354</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/a-spectre-of-meltdowns-could-be-in-store-for-2018-including-fileless-malware-attacks-and-more-costly-bots-29354</guid>
+<pubDate>Wed, 10 Jan 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Bleichenbacher Rears Its Head Again with the ROBOT Attack</title>
+<description>Bleichenbacher attacks will likely continue to pop up until TLS 1.3 is fully adopted, which could take years.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/bleichenbacher-rears-its-head-again-with-the-robot-attack</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/bleichenbacher-rears-its-head-again-with-the-robot-attack</guid>
+<pubDate>Wed, 27 Dec 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Friendly Reminder: App Security in the Cloud Is Your Responsibility</title>
+<description>Nearly 200,000 servers are still vulnerable to Heartbleed&amp;amp;mdash;and the organizations who own them might surprise you.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/friendly-reminder-app-security-in-the-cloud-is-your-responsibility-24894</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/friendly-reminder-app-security-in-the-cloud-is-your-responsibility-24894</guid>
+<pubDate>Thu, 02 Feb 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>How Three Low-Risk Vulnerabilities Become One High</title>
+<description>It&amp;amp;rsquo;s easy to brush off low-risk vulnerabilities as trivial&amp;amp;mdash;until they&amp;amp;rsquo;re combined to create a deep-impact attack.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/how-three-low-risk-vulnerabilities-become-one-high-24995</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/how-three-low-risk-vulnerabilities-become-one-high-24995</guid>
+<pubDate>Mon, 13 Feb 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Cloudbleed: What We Know and What You Should Do</title>
+<description>Definitive steps individuals and organizations can take today to deal with the impact of Cloudbleed.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/cloudbleed-what-we-know-and-what-you-should-do</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/cloudbleed-what-we-know-and-what-you-should-do</guid>
+<pubDate>Fri, 24 Feb 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>The Credential Crisis: It’s Really Happening</title>
+<description>With billions of data records compromised, it&amp;amp;rsquo;s time to reconsider whether passwords are our best means for authenticating users.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/the-credential-crisis-its-really-happening</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/the-credential-crisis-its-really-happening</guid>
+<pubDate>Thu, 14 Dec 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Phishing: The Secret of Its Success and What You Can Do to Stop It</title>
+<description>Learn about the tricks attackers use to dupe unsuspecting users and how you can help protect them&amp;amp;mdash;and your organization.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/phishing-the-secret-of-its-success-and-what-you-can-do-to-stop-it</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/phishing-the-secret-of-its-success-and-what-you-can-do-to-stop-it</guid>
+<pubDate>Thu, 16 Nov 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>The Startup Security Challenge: Safe in the Cloud From Day One</title>
+<description>How this cloud startup met its goals for security and availability right out of the gate by setting goals, doing a risk analysis, and examining tradeoffs.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/the-startup-security-challenge-safe-in-the-cloud-from-day-one</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/the-startup-security-challenge-safe-in-the-cloud-from-day-one</guid>
+<pubDate>Thu, 30 Nov 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Phishing for Information, Part 4: Beware of Data Leaking Out of Your Equipment</title>
+<description>Organizations often overlook the many ways in which their own systems put useful information right into the hands of attackers building cyber scams.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/phishing-for-information-part-4-beware-of-data-leaking-out-of-your-equipment</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/phishing-for-information-part-4-beware-of-data-leaking-out-of-your-equipment</guid>
+<pubDate>Thu, 07 Sep 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Profile of a Hacker: The Real Sabu, Part 2 of 2</title>
+<description>New information sheds light on Sabu&amp;amp;rsquo;s activities following the revelation of his identity.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/profile-of-a-hacker-the-real-sabu-part-2-of-2-26748</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/profile-of-a-hacker-the-real-sabu-part-2-of-2-26748</guid>
+<pubDate>Tue, 02 May 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Little Trickbot Growing Up: New Campaign</title>
+<description>Recently there have been several reports of a financial malware named TrickBot; this malware&amp;apos;s code looks similar to Dyre.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/little-trickbot-growing-up-new-campaign-24412</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/little-trickbot-growing-up-new-campaign-24412</guid>
+<pubDate>Mon, 07 Nov 2016 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>If Your Security Question List Looks Like a Facebook Favorite List, Start Over Now</title>
+<description>Seriously, how many colors are there? And how many of us share the same love of one of those limited choices?</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/if-your-security-question-list-looks-like-a-facebook-favorite-list-start-over-now</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/if-your-security-question-list-looks-like-a-facebook-favorite-list-start-over-now</guid>
+<pubDate>Tue, 21 Nov 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Reaper: The Professional Bot Herder’s Thingbot</title>
+<description>While Reaper might be considered an &amp;amp;ldquo;object lesson&amp;amp;rdquo; today, it should serve as a blistering warning that IoT security needs to be fixed now.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/reaper-the-professional-bot-herders-thingbot</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/reaper-the-professional-bot-herders-thingbot</guid>
+<pubDate>Thu, 26 Oct 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>What Happens to Encryption in a Post-Quantum Computing World?</title>
+<description>As the possibility of quantum computing draws nearer, changes to today&amp;amp;rsquo;s TLS key exchange algorithms will be required.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/what-happens-to-encryption-in-a-post-quantum-computing-world</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/what-happens-to-encryption-in-a-post-quantum-computing-world</guid>
+<pubDate>Tue, 07 Nov 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Academic Research: A Survey of Email Attacks</title>
+<description>Email has become such an ordinary part of our daily lives that we can forget how vulnerable it is.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/academic-research-a-survey-of-email-attacks</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/academic-research-a-survey-of-email-attacks</guid>
+<pubDate>Tue, 31 Oct 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Interview With the Experts: The Future of IoT Security Through the Eyes of F5 Threat Researchers</title>
+<description>When it comes to IoT threats, we&amp;amp;rsquo;re nowhere near being out of the woods yet; we&amp;amp;rsquo;ve just barely entered the forest.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/interview-with-the-experts-the-future-of-iot-security-through-the-eyes-of-f5-threat-researchers</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/interview-with-the-experts-the-future-of-iot-security-through-the-eyes-of-f5-threat-researchers</guid>
+<pubDate>Thu, 19 Oct 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Academic Research: Web Application Attacks</title>
+<description>Personally identifiable information and user credentials are the primary nuggets attackers are after when they exploit known vulnerabilities in web applications.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/academic-research-web-application-attacks</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/academic-research-web-application-attacks</guid>
+<pubDate>Tue, 10 Oct 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Joining Forces With Criminals, Deviants, and Spies to Defend Privacy</title>
+<description>Organizations need to provide clear and specific guidance to employees who travel across national borders when it comes to giving up passwords and surrendering devices.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/joining-forces-with-criminals-deviants-and-spies-to-defend-privacy</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/joining-forces-with-criminals-deviants-and-spies-to-defend-privacy</guid>
+<pubDate>Thu, 12 Oct 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>How Quantum Computing Will Change Browser Encryption</title>
+<description>Safeguarding TLS against attack in the quantum computing age will require changes to today&amp;amp;rsquo;s TLS key exchange algorithms.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/how-quantum-computing-will-change-browser-encryption</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/how-quantum-computing-will-change-browser-encryption</guid>
+<pubDate>Thu, 13 Jul 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>The Good News About Breaches</title>
+<description>Security breaches in the news serve as a good reminder to check and make sure you have a solid application protection strategy in place, starting with never trusting user input.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/the-good-news-about-breaches</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/the-good-news-about-breaches</guid>
+<pubDate>Wed, 04 Oct 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Phishing for Information, Part 5: How Attackers Pull It All Together, and How You Can Fight Back</title>
+<description>Stop feeding attackers every piece of the puzzle they need to pull off their scams.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/phishing-for-information-part-5-how-attackers-pull-it-all-together-and-how-you-can-fight-back</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/phishing-for-information-part-5-how-attackers-pull-it-all-together-and-how-you-can-fight-back</guid>
+<pubDate>Thu, 28 Sep 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Trickbot Rapidly Expands its Targets in August, Shifting Focus to US Banks and Credit Card Companies</title>
+<description>TrickBot kicked into high gear coming into August with the most targeted URLs since its launch. It released a new worm module, shifted its focus towards the US, and soared past the one thousand target URL mark in a single configuration.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/trickbot-rapidly-expands-its-targets-in-august-shifting-focus-to-us-banks-and-credit-card-companies</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/trickbot-rapidly-expands-its-targets-in-august-shifting-focus-to-us-banks-and-credit-card-companies</guid>
+<pubDate>Thu, 14 Sep 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Wirex Android DDoS Malware Adds UDP Flood</title>
+<description>As quickly as attackers commandeer IoT devices to build more &amp;amp;ldquo;thingbots,&amp;amp;rdquo; they continue to evolve their attack types and functionality.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/wirex-android-ddos-malware-adds-udp-flood</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/wirex-android-ddos-malware-adds-udp-flood</guid>
+<pubDate>Fri, 01 Sep 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Phishing for Information, Part 3: How Attackers Gather Data About Your Organization</title>
+<description>The Internet is full of information about your company that&amp;amp;rsquo;s easily accessible to anyone and particularly useful to attackers.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/phishing-for-information-part-3-how-attackers-gather-data-about-your-organization</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/phishing-for-information-part-3-how-attackers-gather-data-about-your-organization</guid>
+<pubDate>Tue, 22 Aug 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>URL Obfuscation—Still a Phisher’s Phriend</title>
+<description>Cyber crooks use several common URL disguising techniques to trick users into thinking their sham sites are legitimate.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/url-obfuscationstill-a-phishers-phriend</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/url-obfuscationstill-a-phishers-phriend</guid>
+<pubDate>Tue, 29 Aug 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>“Cry ‘Havoc’ and Let Loose the Thingbots of War!”</title>
+<description>Gray hats might have good intentions launching their &amp;amp;ldquo;vigilante&amp;amp;rdquo; botnets, but are they really helping us win the war against Death Star-sized thingbots?</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/cry-havoc-and-let-loose-the-thingbots-of-war</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/cry-havoc-and-let-loose-the-thingbots-of-war</guid>
+<pubDate>Thu, 17 Aug 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>RSA in a “Pre-Post-Quantum” Computing World</title>
+<description>Quantum computing is coming. What should your strategy be today to deal with what&amp;amp;rsquo;s on the horizon?</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/rsa-in-a-pre-post-quantum-computing-world</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/rsa-in-a-pre-post-quantum-computing-world</guid>
+<pubDate>Tue, 01 Aug 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Profile of a Hacker: The Real Sabu, Part 1 of 2</title>
+<description>Notorious hacker of Anonymous and LulzSec fame is challenged by rival hacker, The Jester, to reveal his identity.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/profile-of-a-hacker-the-real-sabu-part-1-of-2-26146</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/profile-of-a-hacker-the-real-sabu-part-1-of-2-26146</guid>
+<pubDate>Tue, 18 Apr 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>IoT Threats: A First Step Into a Much Larger World of Mayhem</title>
+<description>So far, we&amp;amp;rsquo;ve seen IoT DDoS attacks on a Death Star scale. What&amp;apos;s next for those of us that may be caught in the blast?</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/iot-threats-a-first-step-into-a-much-larger-world-of-mayhem-24664</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/iot-threats-a-first-step-into-a-much-larger-world-of-mayhem-24664</guid>
+<pubDate>Tue, 17 Jan 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Phishing for Information, Part 2: How Attackers Collect Data About Your Employees</title>
+<description>The personal and job-related information that employees often innocently post on various websites makes it easy for phishers to pull off their scams.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/phishing-for-information-part-2-how-attackers-collect-data-about-your-employees</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/phishing-for-information-part-2-how-attackers-collect-data-about-your-employees</guid>
+<pubDate>Thu, 20 Jul 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Trickbot Focuses on Wealth Management Services from its Dyre Core</title>
+<description>As TrickBot evolves, we examine version 24, which heavily targets Nordic financial institutions, and we take a close look at the Dyre&amp;amp;ndash;TrickBot connection.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/trickbot-focuses-on-wealth-management-services-from-its-dyre-core</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/trickbot-focuses-on-wealth-management-services-from-its-dyre-core</guid>
+<pubDate>Thu, 27 Jul 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Phishing for Information, Part 1: How Phishers Bait Their Hooks With Information You Volunteer</title>
+<description>In this five-part blog series, we look at how cyber scammers vacuum up information across the Internet to build profiles for phishing and other kinds of social engineering attacks.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/phishing-for-information-part-1-how-phishers-bait-their-hooks-with-information-you-volunteer</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/phishing-for-information-part-1-how-phishers-bait-their-hooks-with-information-you-volunteer</guid>
+<pubDate>Thu, 06 Jul 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>The Hunt for IoT: The Networks Building Death Star-Sized Botnets</title>
+<description>With a growth rate of 1,473% in 2016, the hunt for vulnerable IoT devices rages on...</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/the-hunt-for-iot-the-networks-building-death-star-sized-botnets-26796</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/the-hunt-for-iot-the-networks-building-death-star-sized-botnets-26796</guid>
+<pubDate>Wed, 10 May 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Russian Hackers, Face to Face</title>
+<description>An undercover interview of two infamous Russian hackers speak volumes about skills, passion, and motivation of some of the world&amp;amp;rsquo;s most dangerous cybercriminals.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/russian-hackers-face-to-face</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/russian-hackers-face-to-face</guid>
+<pubDate>Wed, 21 Jun 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Trickbot Expands Global Targets Beyond Banks and Payment Processors to CRMs</title>
+<description>TrickBot shows no signs of slowing down as new targets are added and command and control servers hide within web hosting providers&amp;amp;rsquo; networks.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/trickbot-expands-global-targets-beyond-banks-and-payment-processors-to-crms</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/trickbot-expands-global-targets-beyond-banks-and-payment-processors-to-crms</guid>
+<pubDate>Thu, 15 Jun 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Why Managing Low-Severity Vulnerabilities Can’t Be Just a Pipe Dream</title>
+<description>Putting off fixing low-severity vulnerabilities can have high-impact effects.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/why-managing-low-severity-vulnerabilities-cant-be-just-a-pipe-dream-25583</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/why-managing-low-severity-vulnerabilities-cant-be-just-a-pipe-dream-25583</guid>
+<pubDate>Fri, 03 Mar 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>DNS Is Still the Achilles’ Heel of the Internet</title>
+<description>Since the Internet can&amp;amp;rsquo;t survive without DNS, let&amp;amp;rsquo;s make our best effort to defend it.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/dns-is-still-the-achilles-heel-of-the-internet-25613</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/dns-is-still-the-achilles-heel-of-the-internet-25613</guid>
+<pubDate>Fri, 10 Mar 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>From DDoS to Server Ransomware: Apache Struts 2 – CVE-2017-5638 Campaign</title>
+<description>A common infection vector used by botnet creators is scanning the Internet for web vulnerabilities to exploit for malware or back doors. The advantage of hitting servers over personal consumer devices is the ability to leverage powerful hardware that is...</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/from-ddos-to-server-ransomware-apache-struts-2-cve-2017-5638-campaign-25922</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/from-ddos-to-server-ransomware-apache-struts-2-cve-2017-5638-campaign-25922</guid>
+<pubDate>Mon, 27 Mar 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>From NSA Exploit to Widespread Ransomware: WannaCry Is on the Loose</title>
+<description>The new EternalBlue NSA exploit is powering a wave of virulent ransomware sweeping across Europe.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/from-nsa-exploit-to-widespread-ransomware-wannacry-is-on-the-loose-26847</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/from-nsa-exploit-to-widespread-ransomware-wannacry-is-on-the-loose-26847</guid>
+<pubDate>Fri, 12 May 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Internet, We (Still) Have a Problem With Internationalized Domain Names</title>
+<description>Even URLs that look legitimate can be fake, so train, train, train your users to verify links before they click.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/internet-we-still-have-a-problem-with-internationalized-domain-names-26680</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/internet-we-still-have-a-problem-with-internationalized-domain-names-26680</guid>
+<pubDate>Tue, 25 Apr 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Strike Back at Silent Bob: Scan and Block Ports Used by Intel AMT</title>
+<description>Is the Intel AMT vulnerability as bad as we all first thought? Either way, here are some suggestions for protecting yourself.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/strike-back-at-silent-bob-scan-and-block-ports-used-by-intel-amt-26907</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/strike-back-at-silent-bob-scan-and-block-ports-used-by-intel-amt-26907</guid>
+<pubDate>Tue, 16 May 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Virtual Kidnapping: The Latest in an Endless Stream of Scams</title>
+<description>The virtual kidnapping scam is on the rise because of the excessive amount of personal information people volunteer on social media.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/virtual-kidnapping-the-latest-in-an-endless-stream-of-scams-25840</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/virtual-kidnapping-the-latest-in-an-endless-stream-of-scams-25840</guid>
+<pubDate>Thu, 30 Mar 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Why Cloud Sprawl Is a Security Risk</title>
+<description>Cloud sprawl isn&amp;amp;rsquo;t just a budget sinkhole; it&amp;amp;rsquo;s quickly becoming a security blind spot and potential attack vector for data theft.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/why-cloud-sprawl-is-a-security-risk</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/why-cloud-sprawl-is-a-security-risk</guid>
+<pubDate>Thu, 18 May 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Default Passwords Are Not the Biggest Part of the IoT Botnet Problem</title>
+<description>Providers and manufacturers could go a long way toward reducing the very real threat of IoT.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/default-passwords-are-not-the-biggest-part-of-the-iot-botnet-problem</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/default-passwords-are-not-the-biggest-part-of-the-iot-botnet-problem</guid>
+<pubDate>Tue, 06 Jun 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>SambaCry: The Linux Sequel to WannaCry</title>
+<description>With simple exploits plaguing Windows and Linux SMB week over week, do yourself a favor and patch for CVE-2017-7494 now to avoid having to do it in panic mode.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/sambacry-the-linux-sequel-to-wannacry</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/sambacry-the-linux-sequel-to-wannacry</guid>
+<pubDate>Fri, 26 May 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Are You Ready to Handle 100+ Gbps DDoS Attacks—the New Normal?</title>
+<description>DDoS attacks have been common since the late 2000s, but average attack peaks have increased to 100+ Gbps.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/are-you-ready-to-handle-100-gbps-ddos-attacksthe-new-normal-22627</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/are-you-ready-to-handle-100-gbps-ddos-attacksthe-new-normal-22627</guid>
+<pubDate>Mon, 13 Jun 2016 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>DARPA Proves Automated Systems Can Detect, Patch Software Flaws at Machine Speed</title>
+<description>According to DARPA, it takes an average of 312 days for security pros to discover software vulnerabilities such as viruses, malware, and other attacks. In hacker time, that&amp;amp;rsquo;s a virtual eternity in which bad actors can wreak havoc.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/darpa-proves-automated-systems-can-detect-patch-software-flaws-at-machine-speed-22613</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/darpa-proves-automated-systems-can-detect-patch-software-flaws-at-machine-speed-22613</guid>
+<pubDate>Sun, 23 Oct 2016 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Doxing, DoS, and Defacement: Today’s Mainstream Hacktivism Tools</title>
+<description>Readily available hacking tools provide new ways for civil disobedience groups to antagonize their targets anonymously.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/doxing-dos-and-defacement-todays-mainstream-hacktivism-tools-26139</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/doxing-dos-and-defacement-todays-mainstream-hacktivism-tools-26139</guid>
+<pubDate>Wed, 12 Apr 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Dridex Botnet 220 Campaign: Targeting UK Financials With Webinjects</title>
+<description>Like many other financial Trojans, the notorious Dridex malware keeps evolving and strengthening its presence.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/dridex-botnet-220-campaign-targeting-uk-financials-with-webinjects-22411</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/dridex-botnet-220-campaign-targeting-uk-financials-with-webinjects-22411</guid>
+<pubDate>Thu, 25 Feb 2016 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Dridex is Watching You</title>
+<description>And we&amp;apos;re watching Dridex. Here&amp;apos;s the latest in this malware&amp;apos;s evolution.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/dridex-is-watching-you-22407</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/dridex-is-watching-you-22407</guid>
+<pubDate>Fri, 17 Jun 2016 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Dridex Update: Moving to US Financials with VNC</title>
+<description>Ongoing campaign analysis has revealed that Dridex malware&amp;apos;s latest focus has strongly shifted in recent months to US banks.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/dridex-update-moving-to-us-financials-with-vnc-22433</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/dridex-update-moving-to-us-financials-with-vnc-22433</guid>
+<pubDate>Tue, 26 Apr 2016 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Dyre In-Depth: Server-Side Webinjects, I2P Evasion, and Sophisticated Encryption</title>
+<description>Dyre is one of the most sophisticated banking malware agents in the wild.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/dyre-in-depth-server-side-webinjects-i2p-evasion-and-sophisticated-encryption-22437</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/dyre-in-depth-server-side-webinjects-i2p-evasion-and-sophisticated-encryption-22437</guid>
+<pubDate>Sun, 12 Apr 2015 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Dyre Update: Moving to Edge and Windows 10 With Anti-Antivirus</title>
+<description>Dyre malware requires little introduction as it has been the focus of many publications, and it is a well-known threat. One of the reasons for it being so infamous is the frequent changes the authors incorporate in...</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/dyre-update-moving-to-edge-and-windows-10-with-anti-antivirus-22452</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/dyre-update-moving-to-edge-and-windows-10-with-anti-antivirus-22452</guid>
+<pubDate>Wed, 11 Nov 2015 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Fight Credential Stuffing by Taking a New Approach to Authorization</title>
+<description>How a token-based authorization model can help organizations dramatically reduce credential stuffing attacks.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/fight-credential-stuffing-by-taking-a-new-approach-to-authorization</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/fight-credential-stuffing-by-taking-a-new-approach-to-authorization</guid>
+<pubDate>Wed, 31 May 2017 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Is HEIST a Risk or a Threat?</title>
+<description>HEIST is an example of how risk and threat are different, and why the distinction matters.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/is-heist-a-risk-or-a-threat-24421</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/is-heist-a-risk-or-a-threat-24421</guid>
+<pubDate>Fri, 12 Aug 2016 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Malware Targeting Bank Accounts Has a Swapping Pattern</title>
+<description>F5 Labs analysts discovered a target pattern in the IBAN number formats as well as weekly changes to the script injection content. In May 2016, the F5 Security Operations Center (SOC) detected a generic form grabber and IBAN (International Bank...</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/malware-targeting-bank-accounts-has-a-swapping-pattern-22413</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/malware-targeting-bank-accounts-has-a-swapping-pattern-22413</guid>
+<pubDate>Thu, 01 Sep 2016 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Mirai: The IoT Bot that Took Down Krebs and Launched a Tbps Attack on OVH</title>
+<description>The Mirai botnet has infected hundreds of thousands of Internet of Things (IoT) devices, specifically security cameras, by using vendor default passwords for Telnet access.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/mirai-the-iot-bot-that-took-down-krebs-and-launched-a-tbps-attack-on-ovh-22422</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/mirai-the-iot-bot-that-took-down-krebs-and-launched-a-tbps-attack-on-ovh-22422</guid>
+<pubDate>Thu, 06 Oct 2016 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Old Protocols, New Exploits: LDAP Unwittingly Serves DDoS Amplification Attacks</title>
+<description>A new DDoS attack vector that leverages LDAP for reflection-amplification attacks is seeing increased usage.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/old-protocols-new-exploits-ldap-unwittingly-serves-ddos-amplification-attacks-22609</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/old-protocols-new-exploits-ldap-unwittingly-serves-ddos-amplification-attacks-22609</guid>
+<pubDate>Tue, 15 Nov 2016 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Ramnit’s Twist: A Disappearing Configuration</title>
+<description>The Ramnit banking Trojan continues to evolve, this time with the intent of making the malware harder to detect.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/ramnits-latest-twist-a-disappearing-configuration-25079</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/ramnits-latest-twist-a-disappearing-configuration-25079</guid>
+<pubDate>Fri, 17 Feb 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Security’s “Rule Zero” Violated Again With Zero-Day Apache Struts 2 Exploit</title>
+<description>If you&amp;amp;rsquo;re running Apache Struts 2 and the vulnerable component, stop reading and update now.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/securitys-rule-zero-violated-again-with-zero-day-apache-struts-2-exploit-25619</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/securitys-rule-zero-violated-again-with-zero-day-apache-struts-2-exploit-25619</guid>
+<pubDate>Thu, 09 Mar 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Shellshock: Malicious Bash, Obfuscated perlb0t, Echo Probes, and More</title>
+<description>Shellshock can take advantage of HTTP headers as well as other mechanisms to enable unauthorized access to Bash.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/shellshock-malicious-bash-obfuscated-perlb0t-echo-probes-and-more-22438</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/shellshock-malicious-bash-obfuscated-perlb0t-echo-probes-and-more-22438</guid>
+<pubDate>Fri, 10 Oct 2014 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Slave Malware Analysis: Evolving From IBAN Swaps to Persistent Webinjects</title>
+<description>Slave is financial malware written in Visual Basic. Since 2015 it has evolved from relatively simple IBAN swapping.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/slave-malware-analysis-evolving-from-iban-swaps-to-persistent-webinjects-22439</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/slave-malware-analysis-evolving-from-iban-swaps-to-persistent-webinjects-22439</guid>
+<pubDate>Wed, 24 Jun 2015 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Speed Over Security Still Prevalent in Spite of Substantial Risk for IoT Apps</title>
+<description>Speed to market means IoT and mobile apps are being released with known vulnerabilities.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/speed-over-security-still-prevalent-in-spite-of-substantial-risk-for-iot-apps-25581</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/speed-over-security-still-prevalent-in-spite-of-substantial-risk-for-iot-apps-25581</guid>
+<pubDate>Fri, 03 Mar 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Thanks to Anonymous’ Latest Toolset, Anyone Can Play the DDoS Game</title>
+<description>Anonymous commoditizes well-known DDoS attacks by making easy-to-use tools, available to even the most unsophisticated user.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/thanks-to-anonymous-latest-toolset-anyone-can-play-the-ddos-game-22423</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/thanks-to-anonymous-latest-toolset-anyone-can-play-the-ddos-game-22423</guid>
+<pubDate>Wed, 01 Jun 2016 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>The 2016 TLS Telemetry Report</title>
+<description>In just four short years, encryption estimates have gone from almost non-existent (in the low single digits before 2013) to just over 50% by the end of 2016. How much of a victory is this?</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/the-2016-tls-telemetry-report-24674</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/the-2016-tls-telemetry-report-24674</guid>
+<pubDate>Thu, 19 Jan 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Tinba Malware: Domain Generation Algorithm Means New, Improved, and Persistent</title>
+<description>Tinba, also known as &amp;amp;quot;Tinybanker&amp;amp;quot;, &amp;amp;quot;Zusy&amp;amp;quot; and &amp;amp;quot;H&amp;amp;micro;NT&amp;amp;euro;R$&amp;amp;quot;, is a banking Trojan.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/tinba-malware-domain-generation-algorithm-means-new-improved-and-persistent-22440</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/tinba-malware-domain-generation-algorithm-means-new-improved-and-persistent-22440</guid>
+<pubDate>Wed, 15 Oct 2014 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Trickbot Now Targeting German Banking Group Sparkassen-Finanzgruppe</title>
+<description>TrickBot, the latest arrival to the banking malware scene and successor to the infamous Dyre botnet, is in constant flux.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/trickbot-now-targeting-german-banking-group-sparkassen-finanzgruppe-24420</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/trickbot-now-targeting-german-banking-group-sparkassen-finanzgruppe-24420</guid>
+<pubDate>Thu, 01 Dec 2016 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Using F5 Labs Application Threat Intelligence</title>
+<description>As security professionals, we often feel like we&amp;amp;rsquo;re fighting a losing battle when it comes to cyber security.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/using-f5-labs-threat-intelligence-24665</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/using-f5-labs-threat-intelligence-24665</guid>
+<pubDate>Thu, 26 Jan 2017 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>VBKlip Banking Trojan Goes Man-in-the-Browser</title>
+<description>VBKlip has evolved significantly from searching for IBAN data in copy-paste functionality to MITB techniques.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/vbklip-banking-trojan-goes-man-in-the-browser-22435</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/vbklip-banking-trojan-goes-man-in-the-browser-22435</guid>
+<pubDate>Thu, 30 Apr 2015 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>We Expected SSL Everywhere, and It’s Well on the Way</title>
+<description>Malicious actors and eavesdroppers are forcing Internet communication into a single cryptographic protocol: SSL.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/we-expected-ssl-everywhere-and-its-well-on-the-way-22425</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/we-expected-ssl-everywhere-and-its-well-on-the-way-22425</guid>
+<pubDate>Tue, 02 Aug 2016 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Web Injection Threats: The Cost of Community Engagement on Your Site</title>
+<description>Customer engagement drives web application design, but user-generated content brings inherent security challenges.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/web-injection-threats-the-cost-of-community-engagement-on-your-site-22424</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/web-injection-threats-the-cost-of-community-engagement-on-your-site-22424</guid>
+<pubDate>Fri, 22 Jul 2016 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Webinject Analysis: Newsidran.com</title>
+<description>Webinject attacks modify webpages to allow fraudsters to collect credentials, or act more directly against user accounts.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/webinject-analysis-newsidroncom-22441</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/webinject-analysis-newsidroncom-22441</guid>
+<pubDate>Sat, 12 Dec 2015 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Webinject Crafting Goes Professional: Gozi Sharing Tinba Webinjects</title>
+<description>Webinject crafting is a separate profession now. Hackers write webinjects and sell them to fraudsters, who use them to weaponize Trojans.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/webinject-crafting-goes-professional-gozi-sharing-tinba-webinjects-22453</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/webinject-crafting-goes-professional-gozi-sharing-tinba-webinjects-22453</guid>
+<pubDate>Thu, 26 May 2016 07:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Yasuo-Bot: Flexible, Customized, Fraudulent Content</title>
+<description>Standard mobile banking trojans post their own fraudulent content over banking applications. Yasuo-Bot goes further.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/yasuo-bot-flexible-customized-fraudulent-content-22442</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/yasuo-bot-flexible-customized-fraudulent-content-22442</guid>
+<pubDate>Mon, 14 Dec 2015 08:00:00 GMT</pubDate>
+</item>
+<item>
+<title>perlb0t: Still in the Wild with UDP Flood DDoS Attacks</title>
+<description>Despite being around since 2005, perlb0t is still being used against unpatched servers.</description>
+<link>https://www.f5.com/labs/articles/threat-intelligence/perlb0t-still-in-the-wild-with-udp-flood-ddos-attacks-22434</link>
+<guid>https://www.f5.com/labs/articles/threat-intelligence/perlb0t-still-in-the-wild-with-udp-flood-ddos-attacks-22434</guid>
+<pubDate>Thu, 24 Jul 2014 07:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

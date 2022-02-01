@@ -1,0 +1,2316 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8"/>
+    <title>What Is a Distributed Denial of Service (DDoS) Attack?</title>
+    <meta name="robots"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Learn how DDoS attacks can cripple your network, website, or business."/>
+    <meta name="template" content="education-article-template"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>    
+    
+
+    <meta property="og:locale" content="en_US"/>
+
+    <meta property="og:type" content="website"/>
+
+    <meta property="og:title" content="What Is a Distributed Denial of Service (DDoS) Attack?"/>
+
+    <meta property="og:description" content="Learn how DDoS attacks can cripple your network, website, or business."/>
+
+    <meta property="og:site_name" content="F5 Labs"/>
+
+    <meta property="og:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+    <meta property="og:image_secure_url" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+
+    <meta property="fb:app_id" content="302184056577324"/>
+
+
+    <meta property="twitter:card" content="summary_large_image"/>
+
+    <meta property="twitter:title" content="What Is a Distributed Denial of Service (DDoS) Attack?"/>
+
+    <meta property="twitter:description" content="Learn how DDoS attacks can cripple your network, website, or business."/>
+
+    <meta property="twitter:site" content="@F5networks"/>
+
+    <meta property="twitter:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+    <meta property="twitter:creator" content="@F5networks"/>
+
+
+    <meta property="article:author" content="Debbie Walkowski"/>
+
+    <meta property="article:published_time" content="2019-06-05T09:36:00.000-07:00"/>
+
+    <meta property="article:tag" content="DDoS Attacks,Network Tier,denial of service attack,UDP flood,Education"/>
+
+    <meta property="article:id" content="/content/f5-labs-v2/en/labs/articles/education/what-is-a-distributed-denial-of-service-attack-"/>
+
+    <meta property="article:read_time"/>
+
+    <meta property="article:topic" content="Education"/>
+
+    <meta property="article:type"/>
+
+    <meta property="article:title" content="What Is a Distributed Denial-of-Service Attack?"/>
+
+<meta name="keywords" content="DoS,DDoS Attacks,Network Tier,denial of service attack,UDP flood,Education,DNS Tier,DoS,SYN flood,DNS flood,DDoS,Services Tier,denial of service"/> 
+<link rel="canonical" href="what-is-a-distributed-denial-of-service-attack-.html"/>
+
+
+
+
+<meta property="labs:article:search-tab" content="Education"/>
+
+    
+       	
+        <link href="https://assets.adobedtm.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://consent.trustarc.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://static.cloud.coveo.com" rel="rel=preconnect" crossorigin/>
+    
+
+    <script>window.F5=window.F5||{};window.F5.VisitorTracking=window.F5.VisitorTracking||{"isConfigEnabled":true,"tealiumScriptAsyncUrl":"//mktg.tags.f5.com/main/prod/utag.js","tealiumScriptSyncUrl":"//mktg.tags.f5.com/main/prod/utag.sync.js","visitorTrackingService":"tealium","isTealiumActive":true,"isLegacyActive":false,"legacyLibWarmingUrls":["https://assets.adobedtm.com","https://www.google-analytics.com","https://www.googletagmanager.com"]}</script>
+
+    <script src="../../../../mktg.tags.f5.com/main/prod/utag.sync.js"></script>
+    <!-- If JS enable will change the HTML class tag to "js"-->
+<script>
+    document.documentElement.className = document.documentElement.className.replace("js-off","js-on");
+</script>
+<!-- If JS enable will change the HTML class tag to "js" -->
+    
+    
+    
+
+    
+    
+
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/apple-touch-icon.png"/>
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-16x16.png"/>
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-32x32.png"/>
+    
+    <link rel="mask-icon" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/safari-pinned-tab.svg" color="#e21d38"/>
+
+    
+    
+
+    
+    
+<link rel="stylesheet" href="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.4921b04fbcd148d027b0a9a0b7fb303c.css" type="text/css">
+
+
+
+
+    <script src="https://app-aba.marketo.com/js/forms2/js/forms2.min.js"></script>
+    
+    
+
+<script>
+    window.digitalData = {"labs":{"articleAuthor":["debbie walkowski"],"articlePostDate":"Jun 5, 2019","vitals":{"labsAlsoKnownAs":["DDoS, flood, volumetric attack"],"labsLikelyImpact":["Medium to high"],"labsAttackerMotivation":["sabotage, extortion, hacktivism, cyber warfare"],"labsTypicalThreatActors":["Any—unskilled hackers to nation-state attackers"],"labsTermstoKnow":["Command and control server","Bot","Zombie","Bot master","SYN flood","UDP flood","DNS flood","DNS amplification","HTTP flood","Heavy URL","CIA Triad","IoT","DNS reflection"],"labsAppTiers":["services","dns","network"],"labsTargetIndustries":["Any, but especially financial services and web hosting providers"]},"labsTags":["Services Tier","DNS Tier","Network Tier","DNS flood","SYN flood","UDP flood","DoS","DDoS","denial of service","denial of service attack","Education"]},"page":{"pageInfo":{"pageName":"www:f5.labs.v2:labs:articles:education:what-is-a-distributed-denial-of-service-attack-","destinationUrl":"https://www.f5.com/labs/articles/education/what-is-a-distributed-denial-of-service-attack-.html","subDomain":"www","referringUrl":"https://www.f5.com/services/resources/glossary/syn-flood","referringPageName":"www:f5.com:services:resources:glossary:syn-flood","language":"en","version":""},"category":{"primaryCategory":"labs","subCategory1":"articles","subCategory2":"education","subCategory3":"what-is-a-distributed-denial-of-service-attack-"},"contentInfo":{"articleAuthor":["debbie walkowski"],"articlePostDate":"Jun 5, 2019","vitals":{"labsAlsoKnownAs":["DDoS, flood, volumetric attack"],"labsLikelyImpact":["Medium to high"],"labsAttackerMotivation":["sabotage, extortion, hacktivism, cyber warfare"],"labsTypicalThreatActors":["Any—unskilled hackers to nation-state attackers"],"labsTermstoKnow":["Command and control server","Bot","Zombie","Bot master","SYN flood","UDP flood","DNS flood","DNS amplification","HTTP flood","Heavy URL","CIA Triad","IoT","DNS reflection"],"labsAppTiers":["services","dns","network"],"labsTargetIndustries":["Any, but especially financial services and web hosting providers"]},"labsTags":["Services Tier","DNS Tier","Network Tier","DNS flood","SYN flood","UDP flood","DoS","DDoS","denial of service","denial of service attack","Education"]}}};
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmContentParam = urlParams.get("utm_content");
+    if (utmContentParam && window.digitalData.user != undefined && window.digitalData.user.userInfo) {
+        const utmContentParamArray = utmContentParam.split("-");
+        if (utmContentParamArray.length >= 3) {
+            window.digitalData.user.userInfo.digitalSignal = utmContentParamArray[2];
+        }
+    }
+</script>
+<script>
+    window.utag_data = {"page.pageInfo.pageName":"www:f5.labs.v2:labs:articles:education:what-is-a-distributed-denial-of-service-attack-","page.pageInfo.destinationUrl":"https://www.f5.com/labs/articles/education/what-is-a-distributed-denial-of-service-attack-.html","page.pageInfo.subDomain":"www","page.pageInfo.referringUrl":"https://www.f5.com/services/resources/glossary/syn-flood","page.pageInfo.referringPageName":"www:f5.com:services:resources:glossary:syn-flood","page.pageInfo.language":"en","page.pageInfo.version":"","page.category.primaryCategory":"labs","page.category.subCategory1":"articles","page.category.subCategory2":"education","page.category.subCategory3":"what-is-a-distributed-denial-of-service-attack-","page.contentInfo.articleAuthor[0]":"debbie walkowski","page.contentInfo.articlePostDate":"Jun 5, 2019","page.contentInfo.vitals.labsAlsoKnownAs[0]":"DDoS, flood, volumetric attack","page.contentInfo.vitals.labsLikelyImpact[0]":"Medium to high","page.contentInfo.vitals.labsAttackerMotivation[0]":"sabotage, extortion, hacktivism, cyber warfare","page.contentInfo.vitals.labsTypicalThreatActors[0]":"Any—unskilled hackers to nation-state attackers","page.contentInfo.vitals.labsTermstoKnow[0]":"Command and control server","page.contentInfo.vitals.labsTermstoKnow[1]":"Bot","page.contentInfo.vitals.labsTermstoKnow[2]":"Zombie","page.contentInfo.vitals.labsTermstoKnow[3]":"Bot master","page.contentInfo.vitals.labsTermstoKnow[4]":"SYN flood","page.contentInfo.vitals.labsTermstoKnow[5]":"UDP flood","page.contentInfo.vitals.labsTermstoKnow[6]":"DNS flood","page.contentInfo.vitals.labsTermstoKnow[7]":"DNS amplification","page.contentInfo.vitals.labsTermstoKnow[8]":"HTTP flood","page.contentInfo.vitals.labsTermstoKnow[9]":"Heavy URL","page.contentInfo.vitals.labsTermstoKnow[10]":"CIA Triad","page.contentInfo.vitals.labsTermstoKnow[11]":"IoT","page.contentInfo.vitals.labsTermstoKnow[12]":"DNS reflection","page.contentInfo.vitals.labsAppTiers[0]":"services","page.contentInfo.vitals.labsAppTiers[1]":"dns","page.contentInfo.vitals.labsAppTiers[2]":"network","page.contentInfo.vitals.labsTargetIndustries[0]":"Any, but especially financial services and web hosting providers","page.contentInfo.labsTags[0]":"Services Tier","page.contentInfo.labsTags[1]":"DNS Tier","page.contentInfo.labsTags[2]":"Network Tier","page.contentInfo.labsTags[3]":"DNS flood","page.contentInfo.labsTags[4]":"SYN flood","page.contentInfo.labsTags[5]":"UDP flood","page.contentInfo.labsTags[6]":"DoS","page.contentInfo.labsTags[7]":"DDoS","page.contentInfo.labsTags[8]":"denial of service","page.contentInfo.labsTags[9]":"denial of service attack","page.contentInfo.labsTags[10]":"Education"};
+</script>
+
+
+    
+    <script>
+        ;(function(win, doc, style, timeout) {
+            var STYLE_ID = 'at-body-style';
+
+            function getParent() {
+                return doc.getElementsByTagName('head')[0];
+            }
+
+            function addStyle(parent, id, def) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.createElement('style');
+                style.id = id;
+                style.innerHTML = def;
+                parent.appendChild(style);
+            }
+
+            function removeStyle(parent, id) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.getElementById(id);
+
+                if (!style) {
+                    return;
+                }
+
+                parent.removeChild(style);
+            }
+
+            addStyle(getParent(), STYLE_ID, style);
+            setTimeout(function() {
+                removeStyle(getParent(), STYLE_ID);
+            }, timeout);
+        }(window, document, "body {opacity: 0 !important}", 3000));
+    </script>
+
+    <script src="../../../../assets.adobedtm.com/launch-EN37b07f3d0fa64d53b299e28194b30e0a.min.js" async></script>
+
+
+</head>
+    <body class="education-article-page preview-mode">
+        
+    <script>
+    (function(a,b,c,d){
+        a='//mktg.tags.f5.com/main/prod/utag.js';
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+    </script>
+
+        
+     
+        
+
+       	<div class="background-cut " style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a07/optimize/article-background-image.jpg);"></div>
+        
+
+
+<nav class="conf12-skip-links__nav" role="navigation">
+	<a href="#nav" class="conf12-skip-links__item">Skip to main navigation</a>
+
+	<a href="#content" class="conf12-skip-links__item">Skip to main content</a>
+
+	<a href="#footer" class="conf12-skip-links__item">Skip to footer</a>
+</nav>
+        
+
+<div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="megamenu-background"></div>
+
+	<div id="nav" class="fullscreen-wrapper header-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg labs-nav ">
+            <div class="container navbar-wrapper">
+                <a class="navbar-brand" href="../../../labs.html">
+                    <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <metadata>
+                            <rdf:RDF>
+                                <cc:Work rdf:about="">
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                    <dc:title/>
+                                </cc:Work>
+                            </rdf:RDF>
+                        </metadata>
+
+                        <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+                        <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+                        <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+                    </svg>
+                    <span>
+
+                        APPLICATION
+                        <br/> THREAT
+                        <br/> INTELLIGENCE
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  
+                    <div class="nav-wrap ml-lg-auto">
+                        <div class="upper-navigation">
+                            <div class="subscribe-item upper-nav-item">
+                                <a class="subscribe-link upper-nav-btn" href="../../subscribe.html">
+                                    <span class="upper-subscribe-ico ico"></span>
+                                    <span class="upper-navigation-content">Subscribe</span>
+                                </a>
+                            </div>
+                            <div class="search-item upper-nav-item">
+                                <a class="search-link upper-nav-btn">
+                                    <span class="upper-search-ico ico"></span>
+                                    <span class="upper-navigation-content">Search</span>
+                                </a>
+                                <form class="form-inline my-2 my-lg-0 search-form" method="get" action="../../search%EF%B9%96q=test.html" id="searchForm">
+                                    <div class="container">
+                                        <div class="search-input-container">
+                                            <a class="close-search-button"></a>
+                                            <input class="form-control mr-sm-2 " type="search" name="q" title="Cannot search for a blank query" placeholder="Search" required pattern="^(?!\s*$).+" aria-label="Search" id="search-input" lang="en"/>
+                                            <button class="btn btn-search  upper-nav-btn" type="submit"> <span class="upper-search-ico ico"></span> <span class="submit-text">Submit</span></button>
+                                        </div>
+    
+                                    </div>
+                                </form>
+                            </div>
+                            
+
+
+
+
+                        </div>
+                        
+<ul class="navbar-nav">
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../threat-intelligence.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Threats</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../ciso-to-ciso.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>CISO-to-CISO</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../application-protection.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Application Protection</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../rss-feeds.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>RSS Feeds</span>
+	</a></li>
+</ul>
+                     
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
+
+</div>
+<div>
+
+	
+    
+    
+
+
+</div><div class="c02-header-area aem-GridColumn aem-GridColumn--default--12"><div class="cq-placeholder section" data-emptytext="Article: Header area configuration"></div>
+
+    
+        
+       
+        <section class="container-fluid c02-header-area__main-article details fill-main-container">
+            <div class="c02-header-area__heroImageBackground" style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a07/optimize/article-background-image.jpg);"></div>
+            <div class="c02-header-area__main-article-overlay"></div>
+           
+            <div class="row">
+                <div class="align-bottom c02-header-area__article-wrap">
+                    <div class="info-row clearfix">
+                    	<a href="../../search%EF%B9%96q=Education.html">
+	                        <div class="category">
+	                            <span class="badge badge-secondary c02-header-area__badge">Education</span>
+	                        </div>
+                        </a>
+                        <div class="c02-header-area__additional-info">
+                            <div class="date U:padding-x">
+                                <span>June 05, 2019</span>
+                               
+                                
+                                
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="c02-header-area__main-articles-title">
+                        <h1>
+                            What Is a Distributed Denial-of-Service Attack?
+                        </h1>
+                    </div>
+                    <div class="c02-header-area__additional-info U:display-flex">
+                    	
+                        <div class="c02-header-area__content-duration U:display-flex">
+	                        <span>Learn how DDoS attacks can cripple your network, website, or business.</span>
+	                    </div>
+                    </div>
+                    <div class="c02-header-area__author-name tags">
+                        By <a class="c02-header-area__author-name tag-item" href="https://www.f5.com/labs/search.author_Debbie%2BWalkowski">Debbie Walkowski</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+   		<div id="content"></div>
+    
+    
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row">
+        <div class="a01-container section">
+    <div class="a01-container-col-left">
+        <div data-component-type="article" class="c06-social-sharing section">
+
+
+
+<div class="addthis_share c06-social-sharing__links ">
+	
+	
+    <span class="addthis_share_button twitter addthis_sharing_toolbox" data-service="twitter" data-url="https://www.f5.com/labs/articles/education/what-is-a-distributed-denial-of-service-attack-.html" data-description="Learn how DDoS attacks can cripple your network, website, or business." data-title="What Is a Distributed Denial of Service (DDoS) Attack?">
+        <span class="social-bulb xs-mr-15 twitter"></span>
+    </span>
+    <span class="addthis_share_button linkedin addthis_sharing_toolbox" data-service="linkedin" data-url="https://www.f5.com/labs/articles/education/what-is-a-distributed-denial-of-service-attack-.html" data-description="Learn how DDoS attacks can cripple your network, website, or business." data-title="What Is a Distributed Denial of Service (DDoS) Attack?">
+        <span class="social-bulb xs-mr-15 linkedin"></span>
+    </span>
+    <span class="addthis_share_button facebook addthis_button_facebook addthis_sharing_toolbox" data-service="facebook" data-url="https://www.f5.com/labs/articles/education/what-is-a-distributed-denial-of-service-attack-.html" data-description="Learn how DDoS attacks can cripple your network, website, or business." data-title="What Is a Distributed Denial of Service (DDoS) Attack?">
+        <span class="social-bulb xs-mr-15 facebook"></span>
+    </span>
+    <a class="mail" target="_blank" href="mailto:?subject=What%20Is%20a%20Distributed%20Denial%20of%20Service%20(DDoS)%20Attack?&amp;body=Checkout%20this%20great%20article%20I%20read%20on%20F5%20Labs%20%20/content/f5-labs-v2/en/labs/articles/education/what-is-a-distributed-denial-of-service-attack-" rel="noreferrer">
+        <span class="social-bulb xs-mr-15 mail"></span>
+    </a>
+    
+</div></div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-center">
+        <div data-component-type="article" class="a03-article-body section">
+
+<div id="content">
+    <div class="a03-article-body__content">
+        
+    </div>
+    <div class="a22-include-vitals-on-mobile a04-include section">
+	
+    
+
+
+    
+        
+        <div class=" display-old-labs-only vitalsarea alignToSecond js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/isogrid.png">
+            <div class="accordion only-mobile ">
+                <a class="trigger-collapse collapsed article-vital">
+                    
+                    <div class="button-container">
+                        <div class="x medium"><b></b><b></b><b></b><b></b></div>
+                    </div>
+                </a>
+                <div class="can-collapse collapsed ">
+                    <div class="row">
+                        <div class="vitals-wrap">
+                            <div>
+                                
+
+
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Also Known As:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a target="_self">DDoS, flood, volumetric attack</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attacker Motivation:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a target="_self">sabotage, extortion, hacktivism, cyber warfare</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Target Industries:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a target="_self">Any, but especially financial services and web hosting providers</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Likely Impact:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a target="_self">Medium to high</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Typical Threat Actors:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a target="_self">Any—unskilled hackers to nation-state attackers</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Terms to Know:</h5>
+            <div class="tags display-cta">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Command+and+control+server%22" target="_self">Command and control server</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=Bot.html" target="_self">Bot</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Zombie" target="_self">Zombie</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Bot+master%22" target="_self">Bot master</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22SYN+flood%22" target="_self">SYN flood</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22UDP+flood%22" target="_self">UDP flood</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22DNS+flood%22" target="_self">DNS flood</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22DNS+amplification%22.html" target="_self">DNS amplification</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22HTTP+flood%22" target="_self">HTTP flood</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Heavy+URL%22" target="_self">Heavy URL</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22CIA+Triad%22" target="_self">CIA Triad</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=IoT" target="_self">IoT</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22DNS+reflection%22" target="_self">DNS reflection</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="vital-item stack-wrap ">
+                            <h5 class="vital-header">App Tiers Affected:
+                            </h5>
+                            <div class="app-stack">
+                                <div class="above-top ">
+
+                                    <div class="bg js-bg-lozad " data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-above-top.png">
+                                    </div>
+                                    <span>Client</span>
+
+                                </div>
+                                <div class="red-dots shorter">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="stack-top">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-top.png">
+                                    </div>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+
+                                <div class="layer-1 active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1-active.png" style="max-width: 80px;"/></div>
+                                    <span>Services</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-2 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3.png" style="max-width: 80px;"/></div>
+                                    <span>Access</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-3 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
+                                    <span>TLS </span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-4  active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4-active.png" style="max-width: 80px;"/></div>
+                                    <span>DNS</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-5 active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5-active.png" style="max-width: 80px;"/></div>
+                                    <span>Network</span>
+                                </div>
+                                <div class="stack-bottom">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-bottom.png">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        <div class="display-LC-only vitalsarea alignToSecond js-bg-lozad">
+            <div>
+
+
+                <div class="row">               
+
+                    <div class="vital-item stack-wrap ">
+                        <h5 class="vital-header">App Tiers Affected:</h5>
+
+
+                        <div class="app-stack ">
+                            <div class="above-top ">
+
+                                <div class="bg js-bg-lozad " data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-above-top.png">
+                                </div>
+                                <span>Client</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="stack-top">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-top.png">
+                                </div>
+                            </div>
+
+                            <div class="layer-1 active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1-active.png"/>
+                                </div>
+                                <span>Services</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-2 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2.png"/>
+                                </div>
+                                <span>Access</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-3 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
+                                </div>
+                                <span>TLS </span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-4  active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4-active.png"/>
+                                </div>
+                                <span>DNS</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-5 active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5-active.png"/>
+                                </div>
+                                <span>Network</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+                            <div class="stack-bottom">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-bottom.png">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    
+
+    
+
+
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p><span class="intro rte-custom" style="font-size: 120.0%;"><i>F5 Labs attack series education articles help you understand common attacks, how they work, and how to defend against them.</i></span></p>
+
+</div>
+
+    
+</div>
+<div name="Table of contents" data-component-type="article" class="a27-article-table-of-contents section">
+
+
+    
+    	
+        <div>
+            <div class="links-box border-bottom-dotted article-bottom-box">
+                <div class="panel-group accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-parent="#accordion" class="trigger-collapse collapsed" aria-expanded="false">
+                                <h4 class="panel-title display-3">
+                                    Table of Contents
+                                </h4>
+                                <div class="button-container">
+                                    <img alt="" class="expand-btn js-bg-lozad" data-src="../../../content/dam/f5-labs-v2/components/footnotes/expand-button.png"/>
+                                    <img alt="" class="close-btn js-bg-lozad" data-src="../../../content/dam/f5-labs-v2/components/footnotes/close-button.png"/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="collapse-panel">
+                            <div class="panel-body can-collapse collapsed">
+                                <p><p><b><a href="#_Section1">What Is a Distributed Denial-of-Service Attack?</a></b></p>
+<p><b><a href="#_Section2">How Does a DDoS Attack Work?</a></b></p>
+<p><b><i>    <a href="#_Section2_1">The Role of Botnets in DDoS Attacks</a></i></b></p>
+<p><b><a href="#_Section3">DDoS Attack Types</a></b></p>
+<p><b><a href="#_Section4">Who’s Attacking and Why?</a></b></p>
+<p><b><a href="#_Section5">Who Is a Target of DDoS Attacks?</a></b></p>
+<p><b><a href="#_Section6">The Business Impact of a DDoS Attack</a></b></p>
+<p><b><a href="#_Section7">Signs and Symptoms of a DDoS Attack</a></b></p>
+<p><b><a href="#_Section8">DDoS Protection: What You Can Do</a></b></p>
+<p><b><a href="#_Section9">DDoS Attack History and Trends</a></b></p>
+<p><b><i>    <a href="#_Section9_1">Recent High-Profile DDoS Attacks</a></i></b></p>
+<p><b><i>    <a href="#_Section9_2">The Future of DDoS Attacks</a></i></b></p>
+<p><b><a href="#_Section10">Countermeasures for Mitigating DDoS Attacks</a></b></p>
+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h2><a id="_Section1"></a>What Is a Distributed Denial-of-Service Attack?</h2>
+<p>As the name implies, a denial-of-service attack is an attempt by attackers to keep users from accessing a networked system, service, website, application, or other resource. The attack typically makes a system slow to respond, or it can disable the system entirely.</p>
+<p>An attack that originates from a single source is called simply a denial-of-service (DoS) attack. However, far more common today are <i>distributed </i>denial-of-service (DDoS) attacks, which are launched at a target from multiple sources but coordinated from a central point. Distributed attacks are larger, potentially more devastating, and in some cases more difficult for the victim to detect and stop.</p>
+<p>Whether DoS or DDoS, the result is the same—legitimate users are unable to connect to the resources they are intended to have access to. DDoS attacks are one of the most effective ways for malicious actors to violate availability, the third of three foundational security principles—confidentiality, integrity, and availability—in what is known as the <i><a href="https://www.f5.com/labs/articles/education/what-is-the-cia-triad?sf215982330=1">CIA triad</a></i>.</p>
+<h2><a id="_Section2"></a>How Does a DDoS Attack Work?</h2>
+<p>Most DDoS attacks are designed to consume all available network bandwidth or resources on a target network, system, or website. The attacker uses one of many available methods and tools to flood the target with a barrage of malicious or nuisance requests, or to abuse a protocol or inherent vulnerability in such a way that the system can no longer respond to requests. The effects of a DDoS attack are a bit like having the entrance to a concert venue suddenly swarmed by busloads of troublemakers with counterfeit tickets. The legitimate ticket-holders, standing in an orderly line, would never get inside.</p>
+<h3><a id="_Section2_1"></a>The Role of Botnets in DDoS Attacks</h3>
+<p>From a single computer, it’s difficult for attackers to generate the volume of traffic necessary to crash a network or website. To get the bandwidth or processing power needed, attackers often use <i><a href="https://www.f5.com/labs/search?q=botnet" target="_blank" rel="no-opener no-referrer">botnet</a>s—</i>armies of hundreds or thousands of Internet-connected computers (<i>zombies</i> or <i>bots</i>) that are infected with malware and under the control of the attacker (the <i>bot master</i>, or <i>bot herder</i>). In most cases, the owners of these infected computers are not even aware they’ve been compromised.</p>
+<p>From one or more computers designated as the <i>command and control</i> <i>(C&amp;C) server</i>, the attacker sends remote “launch” instructions to the bots. Collectively, these systems provide enough power to carry out massive attacks—far larger than those launched from a single source. And by using a botnet, attackers are able to hide their identity because the attack originates from many different systems that all appear to be legitimate.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    
+
+    <!-- no link, lightbox -->
+    <a data-lightbox="Image preview" data-title="Figure 1: To get maximum effectiveness, today’s attackers typically use a botnet to launch DDoS attacks" href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/edu/20190605_what_is_a_ddos/DDoS_attack.png">
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/edu/20190605_what_is_a_ddos/DDoS_attack.png" data-component-type="platter" alt="To launch DDoS attacks, attackers use botnets" class="js-bg-lozad"/>
+        
+    </a>
+
+    <div class="a02-image__caption">
+        Figure 1: To get maximum effectiveness, today’s attackers typically use a botnet to launch DDoS attacks
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>In the beginning, attackers built their own botnets by scanning the Internet for vulnerable devices and then compromising them with malware that enabled attackers to remotely control the bots. Sadly, attackers don’t even need to build botnets anymore; they can rent DDoS-for-hire botnets from operators who charge very little money for short-term (but effective) attacks.</p>
+<p>While a fair number of botnets are still made up of infected PCs, increasingly, today’s botnets consist of compromised Internet of Things (IoT) devices. As the number of these devices (from home appliances and toys to fitness devices and sleep aids) grows into the <i>multi-billions</i>, the problem of malicious bots being used by attackers is skyrocketing. Many IoT devices are perfect zombie candidates because they’re <a href="https://www.f5.com/labs/articles/threat-intelligence/the-hunt-for-iot--multi-purpose-attack-thingbots-threaten-intern" target="_blank" rel="no-opener no-referrer">built without any security protections</a> (for example, the same default password is used across thousands of devices), making them extremely easy for attackers to exploit.</p>
+<h2><a id="_Section3"></a>DDoS Attack Types</h2>
+<p>Because there are literally dozens of different types of DDoS attacks, it’s difficult to categorize them simply or definitively. The three most common categories recognized industrywide are <i>volumetric, protocol,</i> and <i>application layer,</i> but there is some overlap in all of these. For example, some protocol attacks can also be volumetric.</p>
+<p>What’s more important than trying to perfectly categorize attacks is to understand the variety of methods attackers have at their disposal to perpetrate DDoS attacks. It’s just as important to understand that attackers will target any vulnerable part of your infrastructure, from the network all the way up to the application and its supporting services. (For a unique look at how modern apps are constructed and where they’re vulnerable to all types of attacks, not just DDoS, see <a href="../cisotociso/apps-are-like-onions--they-have-layers.html" target="_blank" rel="no-opener no-referrer"><i>Apps Are Like Onions; They Have Layers</i></a>.)</p>
+<ul>
+<li><b>Volumetric attacks</b>, also known as floods, are the most common type of DDoS attack. They typically send a massive amount of traffic to the targeted victim’s network with the goal of consuming so much bandwidth that users are denied access. As we’ve already seen, attackers often use botnets to increase the volume of traffic hitting the target network or server. This has aided attackers in launching massive DDoS attacks, which can range from hundreds of gigabits per second to terabits per second—well beyond the capacity that most organization can handle on their own networks.<br />
+<br />
+</li>
+<li><b>Protocol attacks</b>. Instead of targeting higher level resources such as a web server, protocol attacks (sometimes called “computational” or “network” attacks) deny service by exploiting either weaknesses in or the normal behavior of protocols—typically OSI layer 3 and layer 4 protocols such as ICMP (Internet Control Message Protocol), TCP (Transport Control Protocol), UDP (User Datagram Protocol), and others. The goal is to exhaust the computational capabilities of the network or intermediate resources (such as firewalls), resulting in denial of service. Because protocol attacks deal at the packet level, they are typically measured in packets per second.<br />
+<br />
+</li>
+<li><b>Application layer attacks</b> (also known as OSI layer 7 attacks) target web servers, web application platforms, and specific web-based applications rather than the network itself. The attacker’s goal is to crash the server, making a website or application inaccessible to users. These attacks can target known application vulnerabilities, the underlying business logic of an application, or abuse higher-layer protocols like HTTP/HTTPS (Hypertext Transfer Protocol/Secure) and SNMP (Simple Network Management Protocol). These attacks often use less bandwidth than other types of attacks and therefore don’t always display a sudden increase in traffic, making them harder to detect. Application layer attacks are measured in requests per second.</li>
+</ul>
+<p>Below we describe a few of the most common types of DDoS attacks:</p>
+<ul>
+<li><b>SYN flood.</b> This volumetric attack prevents a server from handling new connection requests by manipulating the standard way TCP connects a client to a server. Normally, in what is known as a three-way handshake, a client connects to a website by sending a SYN (synchronize) packet, the server replies with a SYN-ACK (synchronize-acknowledge) packet, and then waits for an ACK (acknowledge) packet from the client. However, in a SYN flood attack, the attacker intentionally never sends the ACK packet but instead continues to flood the server with more SYN requests. This ties up the server’s resources with “half-open” connections to the point that it cannot respond to new, legitimate connection requests.<br />
+<br />
+A SYN flood is somewhat like a nuisance caller calling the main switchboard of a company and not responding when the operator answers “hello.” Instead of disconnecting, however, the operator puts the call on hold in order to answer dozens more nuisance calls, which are also put on hold. Eventually there aren’t enough open lines for legitimate callers to get through.<br />
+<br />
+</li>
+<li><b>UDP flood.</b> This volumetric and protocol attack attempts to abuse the normal behavior of UDP, a “connectionless” protocol that has no handshake mechanism like TCP’s, described above. As such, it does not create a session and cannot verify the sender’s IP address. The attacker sends a huge number of UDP packets with spoofed (forged) IP addresses to numerous ports on the victim’s server. The server, trying (and failing) to find applications associated with the requested ports, is soon overwhelmed, at which point it can no longer respond to any requests, including legitimate ones. One advantage of this attack is that UDP makes it easy for attackers to hide their identity by spoofing the source IP address.<br />
+<br />
+</li>
+<li><b>HTTP GET and POST floods.</b> HTTP is the protocol that enables clients to communicate with web servers on the Internet. Once a connection is established, HTTP GET is used to request data from a specified resource; HTTP POST is used to send data to a server to create or update a resource. Attackers can easily take down a web server by sending a continuous stream of HTTP GET or POST requests to the target without waiting for a response. The server tries to respond to all requests but eventually, its resources are exhausted. These application layer attacks can be difficult to detect because the traffic mimics legitimate HTTP GET and POST requests, so nothing malicious appears to be happening.<br />
+<br />
+</li>
+<li><b>DNS flood.</b> The Domain Name System (DNS) is the Internet service that resolves common domain names (such as www.example.com) to their corresponding Internet IP addresses when users try to connect to a website. In a DNS DDoS flood, which is essentially an application-specific version of a UDP flood, the attacker sends a huge volume of fake DNS requests directly to the victim’s DNS server for the sole purpose of overloading it. As with other types of flood attacks, the victim’s DNS server tries to respond to all requests (it can’t distinguish between fake and legitimate requests) and is eventually overwhelmed and unable to respond, making the victim’s website unreachable.<br />
+<br />
+</li>
+<li><b>DNS reflected <a href="what-is-a-dns-amplification-attack-.html" target="_blank" rel="no-opener no-referrer">amplification attack</a>.</b> Unlike in a DNS flood where the victim’s own DNS server is flooded with fake requests, in this attack, malicious actors use publicly accessible (“open”) DNS servers (resolvers) as a weapon to flood a victim’s system with fake DNS responses. The attacker sends DNS lookup requests to these open DNS resolvers, and in them, fakes (spoofs) the source IP address to that of the victim. Because the requests appear to come from the victim, the DNS resolvers, acting as reflectors, send all responses to the victim’s system instead of the attacker’s, even though the victim never made any requests.<br />
+<br />
+Attackers often combine reflection with amplification techniques, for example, by requesting far more information than just the IP address for a given domain name. This significantly increases the size of the responses—sometimes up to 50 times—which obviously increases the impact of the attack. If the attacker uses a botnet, the size of the attack can be even further magnified.<br />
+<br />
+This attack is somewhat like a prankster posting thousands of fake help wanted ads on the Internet and listing the intended victim’s email address in the contact information. If the ad service doesn’t verify the requester’s information, the victim, who never placed any ads, will soon be inundated with unwanted email responses. The effect is further amplified if, for example, the ad asks respondents not just to enquire about the job by email but to attach résumés, photos, job and character references, high school and college transcripts, background check information, and more in the email response.<br />
+<br />
+</li>
+<li><b>Heavy URL.</b> During the reconnaissance phase of attack planning, an attacker searches for a website’s most computationally expensive URLs and uses them as part of a DDoS attack. These are known as “heavy” URLs because they place greater load on the server when requested. While the HTTP requests themselves are relatively small, the responses, which can involve loading multiple large files or running complex database queries, can take a long time for the server to process. Eventually the site resources are exhausted, leading to a denial of service.<br />
+<br />
+</li>
+<li><b>Low and slow</b> (for example, <b>Slowloris</b>). The goal of these DDoS attacks is to bring application resources down quietly and stealthily—and do it using very little bandwidth. There are several types of low and slow attack tools, all of which attempt to monopolize server resources indefinitely. One tool called Slowloris works by opening hundreds of connection requests and keeping each one open as long as possible by slowly sending data to the server before each connection times out. This consumes so much of the server’s resources that eventually it can’t handle any new, legitimate requests. Because these attacks require very little bandwidth, they’re hard to detect, and because they occur at the application layer where a TCP connection is already established, the HTTP requests appear legitimate.<br />
+<br />
+To use another telephone analogy, these attacks are a bit like a mischievous person calling a company to request information, but the caller talks so slowly and can't adequately explain what they want that the operator must put the call on hold. Meanwhile, many more of the same kind of calls come in, and eventually all of the operator’s time is consumed handling fake calls that legitimate ones can’t be answered.</li>
+</ul>
+<h2><a id="_Section4"></a>Who’s Attacking and Why?</h2>
+<p>DDoS attacks are launched by different types of attackers, each with their own motivations. Here are just a few:</p>
+<ul>
+<li>Hacktivists trying to make a social or political statement by shutting down a site or large portions of the Internet</li>
+<li>A disgruntled employee or unhappy customer attempting to negatively impact a company’s revenue or damage its reputation by shutting down the website</li>
+<li>Unscrupulous competitors trying to sabotage a site by shutting it down</li>
+<li>Malicious actors who combine DDoS attacks with ransomware threats for extortion purposes</li>
+<li>Sophisticated attackers (often nation-states) using DDoS attacks as a distraction for more targeted and devastating attacks designed to disrupt critical infrastructure, plant malware, or steal proprietary, personal, or customer information</li>
+<li>Professional “hackers for hire” who are entirely self-motivated and can make moderate to substantial amounts of money hacking for a living, despite the risks involved</li>
+<li>“Script kiddies” who lack technical skills, so they use ready-made code and existing scripts to launch attacks</li>
+</ul>
+<h2><a id="_Section5"></a>Who Is a Target of DDoS Attacks?</h2>
+<p>Regardless of size or industry, virtually <i>any organization that has a public-facing website is vulnerable to DDoS attacks</i>. By their very nature, public-facing websites are designed to invite visitors in—which inherently makes them a potential target for attackers. Unmonitored and poorly protected networks are especially vulnerable because there are no security mechanisms in place to alert administrators to intrusions, anomalous behavior, or fluctuations in traffic volume.</p>
+<p>But who will be targeted? Although all industries are warned to prepare for “when, not if,” some are more likely targets than others, simply because of the nature of their business. F5's own attack data indicates that financial services and web hosting and colocation facilities were targets in 55% of DDoS attacks investigated in 2018. In the case of financial services, DDoS attacks are often just one step in a multi-level attack—usually used as a distraction for a broader attack aimed at stealing account information or taking over accounts. In the case of web hosting providers and colocation facilities, their own customers, although not directly targeted, end up becoming collateral damage in such attacks. Other obvious targets are retail and ecommerce websites, whose revenue is highly dependent upon their websites being available and responsive.</p>
+<h2><a id="_Section6"></a>The Business Impact of a DDoS Attack</h2>
+<p>The business impact of a DDoS can vary widely based on the size and length of an attack (hours to days) and the nature of the victim’s business. And, the industries that feel the most impact of an attack don’t necessarily match up with those that are targeted the most. In an <a href="https://www.f5.com/labs/articles/threat-intelligence/industry-breakdowns-for-the-2018-application-protection-report" target="_blank" rel="no-opener no-referrer">F5 Labs 2018 survey of security professionals</a>, respondents in the Entertainment and Media, Industrial/Manufacturing, and Energy and Utilities industries reported that DDoS would be most devastating type of attack to their business.</p>
+<p>The most significant direct business impacts of a DDoS attack are described below. But it’s important to recognize that DDoS attacks are often used in combination with or as a smokescreen for other types of attacks where the ultimate goal is to steal data.</p>
+<ul>
+<li><b>Financial loss.</b> In that same F5 Labs survey, security professionals in financial services companies estimated the average cost of an application level DDoS attack at more than <a href="https://www.f5.com/labs/articles/threat-intelligence/industry-breakdowns-for-the-2018-application-protection-report" target="_blank" rel="no-opener no-referrer">$9 million</a>. Even the lowest estimate (from the public sector) came in at $5 million. Sites that are highly dependent on the Internet for revenue, for example, heavily-trafficked ecommerce, gaming, or web hosting sites, can lose hundreds of thousands of dollars every minute their sites are down. And it doesn’t take a complete outage for a company to suffer large financial losses.<br />
+<br />
+</li>
+<li><b>Remediation and compensatory costs.</b> All organizations, revenue-dependent or not, will have some amount of remediation costs. Some organizations, for example, web hosting providers whose outage affects thousands of its own customers, might have significant compensatory costs to pay.<br />
+<br />
+</li>
+<li><b>Loss of customers and customer confidence.</b> In a world where any conceivable product is available to purchase with just a few mouse clicks, loss of online customers can be fatal. Buyers are fickle, and nothing will drive online customers away faster than an unreachable or unresponsive site. When customers abandon a poorly performing or unreachable site, the loss isn’t just in immediate revenue, it’s the potential loss of loyal customers who may go to a competitor’s site and never return.<br />
+<br />
+</li>
+<li><b>Reputation and goodwill.</b> No business wants to make headlines for its security failures. Customers are especially less forgiving with businesses like banks and credit bureaus for whom trust is an important factor. It can take time for some businesses to repair their reputation and brand after a DDoS attack, especially if the attack is used as a diversion for a data breach in which personal or customer data is stolen or compromised.<br />
+<br />
+</li>
+<li><b>Threat of legal action.</b> Organizations that have been the victim of DoS attacks would rarely be challenged with legal action from consumers, but they might from customers with whom they have service level agreements (SLAs). Imagine a large company that depends on a software-as-a-service app to deliver employee payroll twice a month. If that app goes down during a pay period and paychecks are delayed, the provider could be subject to legal action. The same is true for cloud or web service providers—if their services cause hundreds of thousands of other companies’ websites to go down, they run a high risk of being sued by those customers for damages.</li>
+</ul>
+<h2><a id="_Section7"></a>Signs and Symptoms of a DDoS Attack</h2>
+<p>From a defender’s point of view, there may be few obvious indications of an attack. Often an organization is unaware of an attack until the customer service desk starts receiving numerous complaints about a website that is slow to respond or appears to be having technical issues, or is completely unreachable. Keep in mind, though, that not all types of DDoS attacks display these signs as some attacks are designed to appear as non-malicious, normal-looking traffic. These kinds of attacks, which often don’t consume a lot of bandwidth, doesn’t raise red flags, so they are much harder to detect and mitigate without doing traffic analysis.</p>
+<h2><a id="_Section8"></a>DDoS Protection: What You Can Do</h2>
+<p>How to protect against DDoS attacks? There’s no way to completely avoid being a target, but you can take steps to better protect your organization from becoming a victim.</p>
+<ul>
+<li><b>Implement DDoS protection.</b> Based on the frequency with which your organization is attacked (or is likely to be attacked), your in-house skillset to defend against an attack, your budget, and your network’s capacity and limitations, choose one of the following:<br />
+<br />
+<ul>
+<li><b>On premises.</b> If your network capacity can handle moderate attacks (in the range of 10 to 50 Gbps), is routinely targeted, and you have skilled in-house DDoS mitigation personnel, implement an on-premises DDoS solution.<br />
+<br />
+</li>
+<li><b>Outsourced solution.</b> If your network circuits can’t handle an attack greater than 10 Gbps, your risk of attack is low, and you either can’t afford or don’t have the in-house expertise to manage an on-premises solution, a DDoS scrubbing center (outsourced service) is advised to keep all suspicious and obviously malicious traffic off your network.<br />
+<br />
+</li>
+<li><b>Hybrid DDoS.</b> If your organization is at risk for frequent or large-scale DDoS attacks that would exceed your network capacity, and you want DDoS mitigation expertise beyond the skills of your in-house staff, take the hybrid route and use a managed service in combination with an on-premises DDoS solution.<br />
+ </li>
+</ul>
+</li>
+<li><b>Have a DDoS response plan.</b> Have a detailed playbook that outlines every step for incident response (people, processes, roles, procedures, etc.) so you’re not caught by surprise, scrambling to figure out what to do while you’re under attack.<br />
+<br />
+</li>
+<li><b>Protect your network infrastructure</b> by using firewalls and intrusion detection systems to monitor and analyze network traffic; use anti-virus solutions to curb malware infections; use load balancing and redundancy to help maintain availability.<br />
+<br />
+</li>
+<li><b>Use technical and administrative controls.</b> The following will help protect you from DDoS attacks but are not sufficient in themselves. Use these measures in combination with others listed above:<br />
+<br />
+<ul>
+<li>Limit remote administration to a management network, not the entire Internet.</li>
+<li>Ensure critical services have redundancy.</li>
+<li>Scan your network ports and services that are open to the Internet as frequently as possible.</li>
+<li>Apply patches promptly.</li>
+<li>Shut down all ports that you don’t need to use.</li>
+<li>Block packet with spoofed source IP addresses. Use real-time threat intelligence feeds to alert you to bad IP addresses to block.</li>
+<li>Use rate limiting to set a predetermined threshold for requests until you can determine the reason for traffic anomalies.</li>
+<li>Never expose databases or database caching systems to the Internet without hardening them and enforcing strong access control.</li>
+</ul>
+</li>
+</ul>
+<h2><a id="_Section9"></a>DDoS Attack History and Trends</h2>
+<p>Denial-of-service attacks in one form or another have been around for more than four decades, although they wouldn’t become known as such until more than 20 years later. The first known incident resembling denial of service reportedly happened in 1974. A 13-year-old is said to have written a program that took down a room full of terminals connected to a learning management system at a University of Illinois computer learning lab.<a id="_ftnrefAutoIncr1" class="footnote-ref" title="1" href="#_ftnAutoIncr1"><sup>1</sup></a> In 1999, the first attack that used over 200 compromised hosts (master and “daemons,” foreshadowing a modern-day botnet) shut down the University of Minnesota’s network for two days.<a id="_ftnrefAutoIncr2" class="footnote-ref" title="2" href="#_ftnAutoIncr2"><sup>2</sup></a></p>
+<p>It wasn’t until 2000 when so-called “MafiaBoy” Michael Calce launched attacks against several large companies, among them, Amazon, eBay, CNN, Amazon, and Yahoo!—the largest search engine company at the time—that these became known as “distributed denial-of-service” attacks. The takedown of these companies was believed to have been caused by zombies, as well, and highlighted the significant lack of security at such major companies.<a id="_ftnrefAutoIncr3" class="footnote-ref" title="3" href="#_ftnAutoIncr3"><sup>3</sup></a></p>
+<h3><a id="_Section9_1"></a>Recent High-Profile DDoS Attacks</h3>
+<p>Recent highly publicized DDoS attacks can provide insight into the variety of attack types and methods attackers use to carry out some of the most devastating DDoS attacks and highlight the broad impact such attacks can have. For simplicity, the incidents below are arranged chronologically, but each one is included for some unique aspect of the attack.</p>
+<p><b>GitHub</b></p>
+<p>On February 28, 2018, <a href="../threat-intelligence/exploited-memcached-servers-lead-to-record-setting-13tbps-ddos-attack.html" target="_blank" rel="no-opener no-referrer">GitHub suffered a 1.35 Tbps DDoS attack</a>—the largest known attack at the time. Attackers pulled off this attack by exploiting misconfigured Memcached database caching servers that were exposed publicly to the Internet and had no authentication protection. Attackers spoofed the source IP address, which returned packets to GitHub that were significantly larger than the requests. In this case, the amplification factor was as much as 51,000. The attack reportedly originated from more than 1,000 autonomous systems (ASNs) across tens of thousands of unique endpoints.<a id="_ftnrefAutoIncr4" class="footnote-ref" title="4" href="#_ftnAutoIncr4"><sup>4</sup></a> Fortunately, GitHub was able to quell the attack within about an hour.</p>
+<p><b>Dyn, Inc. </b>(and other Mirai victims)<b></b></p>
+<p>In October 2016, Dyn, Inc., a DNS provider for hundreds of companies worldwide, suffered a series of three DNS DDoS attacks that occurred about four hours apart. The attacks affected nearly 70 well-known companies such as CNN, Amazon, Airbnb, GitHub, Netflix, Twitter, PayPal, Starbucks, Comcast, Xbox Live, Reddit, Spotify, Visa, Verizon, and countless others. Attackers used a botnet reportedly consisting of hundreds of thousands of IoT devices infected with the Mirai malware, which gave attackers remote control over the devices. Peaking at 1.2 Tbps, the attack was the first to highlight how vulnerable many IoT devices are and how easily they can be exploited—with monumental affects. As a result of the attack, Dyn reportedly lost 8% of the domains it hosted.<a id="_ftnrefAutoIncr5" class="footnote-ref" title="5" href="#_ftnAutoIncr5"><sup>5</sup></a> Although several hacker groups claimed responsibility, the attack was never officially attributed to any single group.</p>
+<p>Previous victims of the same <a href="https://www.f5.com/labs/articles/threat-intelligence/mirai-the-iot-bot-that-took-down-krebs-and-launched-a-tbps-attack-on-ovh-22422" target="_blank" rel="no-opener no-referrer">Mirai botnet</a> included Krebs on Security, a 620 Gbps attack and French ISP and web hosting provider OVH. Both attacks occurred in September 2016.</p>
+<p>Underscoring the widespread effects a Mirai-driven DDoS attack can have, the bulk of the Internet infrastructure of an entire country, the African nation of Liberia, was also taken down by a 600 Gbps Mirai-based attack in November 2016. In January 2019, a UK man, who admitted to being hired by a competitor of the country’s largest telecom provider to launch the attack, was convicted and sentenced in the UK.<a id="_ftnrefAutoIncr6" class="footnote-ref" title="6" href="#_ftnAutoIncr6"><sup>6</sup></a></p>
+<p><b>ProtonMail</b></p>
+<p>Secure (encrypted) email service provider ProtonMail suffered DDoS attacks in both 2015 and again in 2018. At more than 100 Gbps, the 2015 attack was notable not just for its size (at the time) but because it affected ProtonMail’s ISP in several countries. Perhaps even more notable was that ProtonMail, citing pressure from the ISP and its customers, ultimately paid a ransom to the attackers, setting a questionable and dangerous precedent. However, bending to the attackers’ demands bought ProtonMail no long-term security. In 2018, the company suffered another DDoS attack that was reportedly “orders of magnitude” larger than the 2015 attack.<a id="_ftnrefAutoIncr7" class="footnote-ref" title="7" href="#_ftnAutoIncr7"><sup>7</sup></a></p>
+<p><b>Cloudflare</b></p>
+<p>In February 2014, content delivery network Cloudflare was hit with a 400 Gbps DDoS attack that took advantage of a vulnerability in the Network Time Protocol (NTP), which synchronizes computer clocks. The attack worked somewhat like a DNS reflected amplification attack in which the attacker sent small packets that each generated large responses directed to the victim’s spoofed IP address. The attacker, possibly from just a single server, used 4,529 publicly accessible NTP servers across 1,298 networks to generate the 400 Gbps attack, the largest on record at the time.<a id="_ftnrefAutoIncr8" class="footnote-ref" title="8" href="#_ftnAutoIncr8"><sup>8</sup></a></p>
+<p><b>Georgia</b></p>
+<p>In July and August of 2008, the country of Georgia was hit with numerous DDoS attacks on the country’s Internet infrastructure. The attacks shut down servers in media, communications, banking, and transportation companies as well as the government for various lengths of time. The attacks, believed to have been launched by pro-Russian hackers, were the first known cyber attacks to coincide with a military conflict.<sup><a id="_ftnrefAutoIncr9" class="footnote-ref" title="9" href="#_ftnAutoIncr9">9</a>, <a id="_ftnrefAutoIncr10" class="footnote-ref" title="10" href="#_ftnAutoIncr10">10</a></sup></p>
+<p><b>Republic of Estonia</b></p>
+<p>In 2007, a series of DDoS attacks swept through the Republic of Estonia, effectively shutting down normal government, banking, and media operations within the country for weeks. Prompted by a dispute with Russia and Russian-speaking Estonians over the relocation of a 1947 war monument to Russian soldiers, the attacks are widely believed to be among the first state-sponsored (or state-sanctioned, through the use of “patriotic” hackers) acts of cyberwarfare, which also included information warfare (dissemination of fake news). Although the attacks originated from Russian IP addresses and contained instructions in Russian, they were never officially attributed to the Kremlin. The attacks led to the formation of the NATO Cooperative Cyber Defence Centre of Excellence, dedicated to cooperation and information sharing among member nations.</p>
+<h3><a id="_Section9_2"></a>The Future of DDoS Attacks</h3>
+<p>As DDoS protection mechanisms have improved over the years, attackers have gotten more innovative and aggressive by launching multi-vector DDoS attacks. Such attacks might begin with an attacker performing a network reconnaissance scan to discover network bottlenecks, backend servers, and resource-intensive application services. Next, the attacker might make an extortion demand and then begin a traditional network flood attack, perhaps in the tens of gigabits per second range, just enough to be a concern and a distraction for the network operations team. The “real” attack would follow with a massive layer 7 application-specific attack, perhaps against port 80, targeting things like content delivery servers that support the application or other resource-stressed application services. Such attacks can originate from thousands of individual IP addresses and can range in the hundreds of gigabits per second range or, as we’ve seen in examples above, in the terabits per second range.</p>
+<p>With the cheap, easy availability of DDoS tools and massive IoT botnets for rent, we expect DDoS attacks to continue for the foreseeable future—and they will likely grow in size, at least until the problem of highly vulnerable, unsecured IoT devices is addressed. All organizations are urged to take DDoS attacks seriously, <i>expect</i> to be attacked at some time in the future, and prepare in ways that make sense for their particular business to the extent they are able.</p>
+<h2><a id="_Section10"></a>Countermeasures for Mitigating DDoS Attacks</h2>
+<p>The following technical/preventative <a href="what-are-security-controls.html">security controls</a> are recommended to protect against DDoS attacks.</p>
+
+</div>
+
+    
+</div>
+
+
+</div>
+</div>
+<div class="a13-article-quote-labs section">
+
+
+    
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-right">
+        <div class="vitalsarea section">
+
+
+    
+        
+        <div class=" display-old-labs-only vitalsarea alignToSecond js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/isogrid.png">
+            <div class="accordion only-mobile ">
+                <a class="trigger-collapse collapsed article-vital">
+                    
+                    <div class="button-container">
+                        <div class="x medium"><b></b><b></b><b></b><b></b></div>
+                    </div>
+                </a>
+                <div class="can-collapse collapsed ">
+                    <div class="row">
+                        <div class="vitals-wrap">
+                            <div>
+                                
+
+
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Also Known As:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a target="_self">DDoS, flood, volumetric attack</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attacker Motivation:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a target="_self">sabotage, extortion, hacktivism, cyber warfare</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Target Industries:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a target="_self">Any, but especially financial services and web hosting providers</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Likely Impact:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a target="_self">Medium to high</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Typical Threat Actors:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a target="_self">Any—unskilled hackers to nation-state attackers</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Terms to Know:</h5>
+            <div class="tags display-cta">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Command+and+control+server%22" target="_self">Command and control server</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=Bot.html" target="_self">Bot</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Zombie" target="_self">Zombie</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Bot+master%22" target="_self">Bot master</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22SYN+flood%22" target="_self">SYN flood</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22UDP+flood%22" target="_self">UDP flood</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22DNS+flood%22" target="_self">DNS flood</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="../../search%EF%B9%96q=%22DNS+amplification%22.html" target="_self">DNS amplification</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22HTTP+flood%22" target="_self">HTTP flood</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Heavy+URL%22" target="_self">Heavy URL</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22CIA+Triad%22" target="_self">CIA Triad</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=IoT" target="_self">IoT</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22DNS+reflection%22" target="_self">DNS reflection</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="vital-item stack-wrap ">
+                            <h5 class="vital-header">App Tiers Affected:
+                            </h5>
+                            <div class="app-stack">
+                                <div class="above-top ">
+
+                                    <div class="bg js-bg-lozad " data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-above-top.png">
+                                    </div>
+                                    <span>Client</span>
+
+                                </div>
+                                <div class="red-dots shorter">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="stack-top">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-top.png">
+                                    </div>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+
+                                <div class="layer-1 active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1-active.png" style="max-width: 80px;"/></div>
+                                    <span>Services</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-2 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3.png" style="max-width: 80px;"/></div>
+                                    <span>Access</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-3 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
+                                    <span>TLS </span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-4  active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4-active.png" style="max-width: 80px;"/></div>
+                                    <span>DNS</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-5 active">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5-active.png" style="max-width: 80px;"/></div>
+                                    <span>Network</span>
+                                </div>
+                                <div class="stack-bottom">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-bottom.png">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        <div class="display-LC-only vitalsarea alignToSecond js-bg-lozad">
+            <div>
+
+
+                <div class="row">               
+
+                    <div class="vital-item stack-wrap ">
+                        <h5 class="vital-header">App Tiers Affected:</h5>
+
+
+                        <div class="app-stack ">
+                            <div class="above-top ">
+
+                                <div class="bg js-bg-lozad " data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-above-top.png">
+                                </div>
+                                <span>Client</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="stack-top">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-top.png">
+                                </div>
+                            </div>
+
+                            <div class="layer-1 active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1-active.png"/>
+                                </div>
+                                <span>Services</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-2 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2.png"/>
+                                </div>
+                                <span>Access</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-3 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
+                                </div>
+                                <span>TLS </span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-4  active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4-active.png"/>
+                                </div>
+                                <span>DNS</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-5 active">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5-active.png"/>
+                                </div>
+                                <span>Network</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+                            <div class="stack-bottom">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-bottom.png">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    
+
+    
+
+</div>
+<div class="a11-separation-line section">
+
+<div>
+	<div></div>
+</div></div>
+<div class="c20-newsletter-signup-display section">
+
+
+
+
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display__wrapper purple-bg right-rail c20-newsletter-signup-display__newsletter-form">
+	<div class="c20-newsletter-signup-display__signup-wrap">
+		<div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+			<div class="c20-newsletter-signup-display__title">
+				F5 Labs Newsletter
+            </div>
+            <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+            </div>
+		</div>
+		<div class="c20-newsletter-signup-display__row-wrap">
+			<div class="c20-newsletter-signup-display__signup-form-wrap">
+                	<!-- LOADER -->
+				<div id="loader" class="form-loader small-loader     
+                  hide-after-submit"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+				<form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit"></form>
+
+				<!-- SUCCESS MESSAGE -->
+                <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+					<div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>					
+				</div>
+			</div>
+		</div>
+
+    </div>
+    <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+        <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display__wrapper purple-bg right-rail known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__row-wrap ">
+			<div class="c20-newsletter-signup-display__signup-form-wrap">
+				
+				<!-- KNOWN USER MESSAGE -->
+                <div class="c20-newsletter-signup-display__success-message ">
+					<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row container-bottom">
+        <div class="a01-container section">
+    <div class="a01-container-col-left">
+        
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-center">
+        <div class="a10-article-summary section">
+    
+    
+        
+    
+    
+</div>
+<div data-component-type="article" class="a02-article-actions-container section">
+
+    
+        
+        
+        <div class="a02-article-actions-container">
+            
+
+
+
+
+    
+    
+    <div data-component-type="article" class="a01-article-action">
+
+    
+    
+        
+        <div class="a01-article-action__article-actions">
+            <div class="a01-article-action__article-action-box U:justify-content U:align-items-center  U:display-flex">
+              
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_technical.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Technical</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__img-container">
+                    <div class="a01-article-action__action-img-wrapper">
+                        <a href="what-are-security-controls.html"><img alt="" data-src="../../../etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/actions/icon_preventative.svg" class="js-bg-lozad img-fluid"/></a>
+                        <div class="a01-article-action__action-img-desc">Preventative</div>
+                    </div>
+                </div>
+                <div class="a01-article-action__box-descr">
+                    <div class="a01-article-action__box-descr-content"><ul>
+<li>Implement DDoS protection using an on premises solution, DDoS scrubbing service, or hybrid.</li>
+<li>Use both network and web application firewalls.</li>
+<li>Use anti-virus solutions to curb malware infections.</li>
+<li>Use a network-based intrusion detection system.</li>
+<li>Apply patches promptly.</li>
+<li>Block traffic with spoofed source IP addresses.</li>
+<li>Use rate limiting to restrict the volume of incoming traffic.</li>
+</ul>
+</div>
+                </div>                
+            </div>
+        </div>
+    
+
+    
+
+
+
+</div>
+
+
+    
+    
+    <div class="a03-text text">
+<div class="cmp-text ">
+    <p>To learn more about other attack types, read:</p>
+<ul>
+<li><a href="https://www.f5.com/labs/articles/education/what-is-sql-injection-">What is SQL Injection?</a></li>
+<li><a href="what-is-credential-stuffing-.html">What is Credential Stuffing?</a></li>
+<li><a href="https://www.f5.com/labs/articles/education/what-is-phishing--how-to-recognize-and-avoid-it">What is Phishing? How to Recognize and Avoid It</a></li>
+<li><a href="what-is-a-dns-amplification-attack-.html">What is a DNS Amplification Attack?</a> </li>
+<li><a href="https://www.f5.com/labs/articles/education/what-is-cross-site-scripting--xss--">What is Cross-Site Scripting?</a><br />
+</li>
+</ul>
+<p> </p>
+
+</div>
+
+    
+</div>
+
+
+
+        </div>
+    
+
+    
+</div>
+<div data-component-type="article" class="a04-article-author-bio section"><!-- <div class="cq-placeholder section" data-emptytext="Article: Author Bio" data-sly-test="false"></div> -->
+
+
+
+        
+        
+            <div class="a04-article-author-bio__content">
+                <div class="a04-article-author-bio__content__author-box">
+                    <div class="row">
+                        <div class="a04-article-author-bio__content__image-wrap">
+                            <div class="a04-article-author-bio__content__img-container">
+                                <img data-src="https://www.f5.com/content/dam/f5-labs-v2/_author-headshots/Debbie_Walkowski.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                            </div>
+                        </div>
+                        <div class="a04-article-author-bio__content__data-wrap">
+                            <div>
+                                <b>About the author</b>
+                            </div>
+                            <div class="a04-article-author-bio__content__author-name U:margin-top-md">Debbie Walkowski</div>
+                            <div class="a04-article-author-bio__content__author-descr"><p>As a Security Threat Researcher for F5 Labs, Debbie specializes in writing threat-related educational content as well as blogs, articles, and comprehensive research reports about application threat intelligence. She has worked for F5 for 10 years and has more than 20 years’ experience in the technology industry as a technical writer. She holds SANS GIAC Information Security Professional (<a href="https://www.youracclaim.com/badges/b184d9ab-5941-44d2-bd92-9624e24cec5e/public_url" rel="noreferrer">GISP</a>), GIAC Security Essentials (<a href="https://www.youracclaim.com/badges/35904d93-5034-4f7c-85d7-275c5f6a99af/public_url" rel="noreferrer">GSEC</a>), and GIAC Security Fundamentals (<a href="https://www.youracclaim.com/badges/e896e680-558f-419b-aef7-709cf091d8a5/public_url" rel="noreferrer">GISF</a>) certifications. Her bachelor’s degree from the University of Washington is in scientific and technical communication with an emphasis in computer science. She is the author of 18 technology books published by IDG Books, SAMS, QUE, and Alpha Books.</p>
+</div>
+                            <div>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="https://www.f5.com/labs/search.author_Debbie%2BWalkowski">More articles from Debbie Walkowski</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+    
+    
+</div>
+<div name="Footnotes" data-component-type="article" class="a09-article-footnotes section">
+
+
+    
+        
+        <div class="a09-article-footnotes U:padding-y-lg display-old-labs-only">
+            <div class="links-box border-bottom-dotted article-bottom-box">
+                <div class="panel-group accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-parent="#accordion" class="trigger-collapse collapsed" aria-expanded="false">
+                                <h4 class="panel-title display-3">
+                                    Footnotes
+                                </h4>
+                                <div class="button-container">
+                                    <img alt="" class="js-bg-lozad expand-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/expand-button.png"/>
+                                    <img alt="" class="js-bg-lozad close-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/close-button.png"/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="collapse-panel">
+                            <div class="panel-body can-collapse collapsed">
+                                <p><p><span><a href="#_ftnrefAutoIncr1" class="footnote-actual" title="1" id="_ftnAutoIncr1"><sup>1</sup></a> <a href="http://www.platohistory.org/blog/2010/02/perhaps-the-first-denial-of-service-attack.html" target="_blank" rel="no-opener no-referrer" rel="noreferrer">http://www.platohistory.org/blog/2010/02/perhaps-the-first-denial-of-service-attack.html</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr2" class="footnote-actual" title="2" id="_ftnAutoIncr2"><sup>2</sup></a> <a href="https://www.eweek.com/security/how-ddos-attacks-techniques-have-evolved-over-past-20-years" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.eweek.com/security/how-ddos-attacks-techniques-have-evolved-over-past-20-years</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr3" class="footnote-actual" title="3" id="_ftnAutoIncr3"><sup>3</sup></a> <a href="https://www.npr.org/sections/alltechconsidered/2015/02/07/384567322/meet-mafiaboy-the-bratty-kid-who-took-down-the-internet" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.npr.org/sections/alltechconsidered/2015/02/07/384567322/meet-mafiaboy-the-bratty-kid-who-took-down-the-internet</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr4" class="footnote-actual" title="4" id="_ftnAutoIncr4"><sup>4</sup></a> <a href="https://github.blog/2018-03-01-ddos-incident-report/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://github.blog/2018-03-01-ddos-incident-report/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr5" class="footnote-actual" title="5" id="_ftnAutoIncr5"><sup>5</sup></a> <a href="https://www.itwire.com/security/76717-ddos-attack-on-dyn-costly-for-company-claim.html" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.itwire.com/security/76717-ddos-attack-on-dyn-costly-for-company-claim.html</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr6" class="footnote-actual" title="6" id="_ftnAutoIncr6"><sup>6</sup></a> <a href="https://www.bankinfosecurity.com/uk-sentenced-man-for-mirai-ddos-attacks-against-liberia-a-11933" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.bankinfosecurity.com/uk-sentenced-man-for-mirai-ddos-attacks-against-liberia-a-11933</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr7" class="footnote-actual" title="7" id="_ftnAutoIncr7"><sup>7</sup></a> <a href="https://techcrunch.com/2018/06/27/protonmail-suffers-ddos-attack-that-takes-its-email-service-down-for-minutes/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://techcrunch.com/2018/06/27/protonmail-suffers-ddos-attack-that-takes-its-email-service-down-for-minutes/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr8" class="footnote-actual" title="8" id="_ftnAutoIncr8"><sup>8</sup></a> <a href="https://krebsonsecurity.com/2014/02/the-new-normal-200-400-gbps-ddos-attacks/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://krebsonsecurity.com/2014/02/the-new-normal-200-400-gbps-ddos-attacks/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr9" class="footnote-actual" title="9" id="_ftnAutoIncr9"><sup>9</sup></a> <a href="https://jsis.washington.edu/news/cyberattack-critical-infrastructure-russia-ukrainian-power-grid-attacks/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://jsis.washington.edu/news/cyberattack-critical-infrastructure-russia-ukrainian-power-grid-attacks/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr10" class="footnote-actual" title="10" id="_ftnAutoIncr10"><sup>10</sup></a> <a href="https://en.wikipedia.org/wiki/Russo-Georgian_War" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://en.wikipedia.org/wiki/Russo-Georgian_War</a></span></p>
+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="a09-article-footnotes display-LC-only">
+            <details id="-button" class="a09-article-footnotes__button cmp-accordion__button ">
+                <summary class="a09-article-footnotes__title  display-as-">
+                    <span> Footnotes </span> <span class="a09-article-footnotes__icon cmp-accordion__icon"></span>
+                </summary>
+                <div class="a09-article-footnotes__panel">
+                    <p><p><span><a href="#_ftnrefAutoIncr1" class="footnote-actual" title="1" id="_ftnAutoIncr1"><sup>1</sup></a> <a href="http://www.platohistory.org/blog/2010/02/perhaps-the-first-denial-of-service-attack.html" target="_blank" rel="no-opener no-referrer" rel="noreferrer">http://www.platohistory.org/blog/2010/02/perhaps-the-first-denial-of-service-attack.html</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr2" class="footnote-actual" title="2" id="_ftnAutoIncr2"><sup>2</sup></a> <a href="https://www.eweek.com/security/how-ddos-attacks-techniques-have-evolved-over-past-20-years" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.eweek.com/security/how-ddos-attacks-techniques-have-evolved-over-past-20-years</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr3" class="footnote-actual" title="3" id="_ftnAutoIncr3"><sup>3</sup></a> <a href="https://www.npr.org/sections/alltechconsidered/2015/02/07/384567322/meet-mafiaboy-the-bratty-kid-who-took-down-the-internet" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.npr.org/sections/alltechconsidered/2015/02/07/384567322/meet-mafiaboy-the-bratty-kid-who-took-down-the-internet</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr4" class="footnote-actual" title="4" id="_ftnAutoIncr4"><sup>4</sup></a> <a href="https://github.blog/2018-03-01-ddos-incident-report/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://github.blog/2018-03-01-ddos-incident-report/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr5" class="footnote-actual" title="5" id="_ftnAutoIncr5"><sup>5</sup></a> <a href="https://www.itwire.com/security/76717-ddos-attack-on-dyn-costly-for-company-claim.html" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.itwire.com/security/76717-ddos-attack-on-dyn-costly-for-company-claim.html</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr6" class="footnote-actual" title="6" id="_ftnAutoIncr6"><sup>6</sup></a> <a href="https://www.bankinfosecurity.com/uk-sentenced-man-for-mirai-ddos-attacks-against-liberia-a-11933" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.bankinfosecurity.com/uk-sentenced-man-for-mirai-ddos-attacks-against-liberia-a-11933</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr7" class="footnote-actual" title="7" id="_ftnAutoIncr7"><sup>7</sup></a> <a href="https://techcrunch.com/2018/06/27/protonmail-suffers-ddos-attack-that-takes-its-email-service-down-for-minutes/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://techcrunch.com/2018/06/27/protonmail-suffers-ddos-attack-that-takes-its-email-service-down-for-minutes/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr8" class="footnote-actual" title="8" id="_ftnAutoIncr8"><sup>8</sup></a> <a href="https://krebsonsecurity.com/2014/02/the-new-normal-200-400-gbps-ddos-attacks/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://krebsonsecurity.com/2014/02/the-new-normal-200-400-gbps-ddos-attacks/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr9" class="footnote-actual" title="9" id="_ftnAutoIncr9"><sup>9</sup></a> <a href="https://jsis.washington.edu/news/cyberattack-critical-infrastructure-russia-ukrainian-power-grid-attacks/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://jsis.washington.edu/news/cyberattack-critical-infrastructure-russia-ukrainian-power-grid-attacks/</a></span></p>
+<p><span><a href="#_ftnrefAutoIncr10" class="footnote-actual" title="10" id="_ftnAutoIncr10"><sup>10</sup></a> <a href="https://en.wikipedia.org/wiki/Russo-Georgian_War" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://en.wikipedia.org/wiki/Russo-Georgian_War</a></span></p>
+</p>
+                </div>
+            </details>
+        </div>
+    
+    
+
+</div>
+<div data-component-type="article" class="a05-article-tags section">
+
+
+    
+        
+
+        <div class="a05-article-tags__tags-box">
+            <strong class="a05-article-tags__strong">TAGS: </strong>
+            <a href="../../search%EF%B9%96q=%22DDoS+Attacks%22.html" class="a05-article-tags__a">DDoS Attacks</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=%22Network+Tier%22.html" class="a05-article-tags__a">Network Tier</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22denial+of+service+attack%22" class="a05-article-tags__a">denial of service attack</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22UDP+flood%22" class="a05-article-tags__a">UDP flood</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Education.html" class="a05-article-tags__a">Education</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=%22DNS+Tier%22.html" class="a05-article-tags__a">DNS Tier</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=DoS.html" class="a05-article-tags__a">DoS</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22SYN+flood%22" class="a05-article-tags__a">SYN flood</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22DNS+flood%22" class="a05-article-tags__a">DNS flood</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=DDoS" class="a05-article-tags__a">DDoS</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=%22Services+Tier%22.html" class="a05-article-tags__a">Services Tier</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22denial+of+service%22" class="a05-article-tags__a">denial of service</a>
+        </div>
+
+    
+
+	
+    
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-right">
+        
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="a28-article-tile-list-dynamic aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+    
+<div class="a28-article-tile-list-dynamic__full-width-wrap xs-pt-20 xs-pb-20 container-fluid fill-main-container xs-mb-0 bg-turquoise">
+
+    
+        
+    
+<script src="../../../etc.clientlibs/base/clientlibs/libs/jquery/v3.6.0.abec7e706514e7e243d79b097790f71b.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-swiper.74571ff9ea0f905f582197d9e94ab140.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/components/articles/a28-article-tile-list-dynamic/clientlib.30cecdc12e1944d71b6a455f0740a7b6.js"></script>
+
+
+
+ 
+ 
+<!-- TEXT LAYOUT -->
+
+	<div class="a28-article-tile-list-dynamic__container a28-article-tile-list-dynamic-textLayout" data-numbersOfArticles="3" data-size="3" id="1533579288">
+
+		<div class="a28-article-tile-list-dynamic__section-title text-center xs-pt-20 xs-pb-20">
+			<h2>Related Content</h2>
+			
+		</div>
+
+		<div class="a28-article-tile-list-dynamic-textLayout__container">
+
+			
+
+			<div class="a28-article-tile-list-dynamic-textLayout__articles a28-article-tile-list-dynamic-textLayout__row" id="article-tile-items">
+
+				<div id="1533579288_0" class="a28-article-tile-list-dynamic-textLayout__col ">
+					<div class="a28-article-tile-list-dynamic-textLayout__article" data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/ddos-attack-trends-for-2020">
+						
+						<div class="U:display-flex U:align-items-center">
+
+							<a href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+								<div class="a28-article-tile-list-dynamic-textLayout__category">
+									<span class="badge badge-secondary">Top Risks</span>
+								</div>
+							</a>
+
+						</div>
+						<a href="https://www.f5.com/labs/articles/threat-intelligence/ddos-attack-trends-for-2020" class="a28-article-tile-list-dynamic-textLayout__link">
+							<div class="a28-article-tile-list-dynamic-textLayout__type article-ico-wrap U:display-none">
+								<span class="U:align-self-center article a28-article-tile-list-dynamic-textLayout__type-ico"><i></i>article / </span>
+							</div>
+							<div class="a28-article-tile-list-dynamic-textLayout__article-title">DDoS Attack Trends for 2020</div>
+						</a>
+						<div class="U:display-flex U:flex-nowrap">
+							<div class="a28-article-tile-list-dynamic-textLayout__date U:display-flex mid-point">
+								<span class="U:align-self-center">May 07, 2021</span>
+							</div>
+							<div class="a28-article-tile-list-dynamic-textLayout__content-duration U:display-flex">
+								<span class="U:align-self-center">12 min. read</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+
+				<div id="1533579288_1" class="a28-article-tile-list-dynamic-textLayout__col ">
+					<div class="a28-article-tile-list-dynamic-textLayout__article" data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/echobot-malware-now-up-to-71-exploits--targeting-scada">
+						
+						<div class="U:display-flex U:align-items-center">
+
+							<a href="https://www.f5.com/labs/search?q=IoT">
+								<div class="a28-article-tile-list-dynamic-textLayout__category">
+									<span class="badge badge-secondary">IoT</span>
+								</div>
+							</a>
+
+						</div>
+						<a href="https://www.f5.com/labs/articles/threat-intelligence/echobot-malware-now-up-to-71-exploits--targeting-scada" class="a28-article-tile-list-dynamic-textLayout__link">
+							<div class="a28-article-tile-list-dynamic-textLayout__type article-ico-wrap U:display-none">
+								<span class="U:align-self-center article a28-article-tile-list-dynamic-textLayout__type-ico"><i></i>article / </span>
+							</div>
+							<div class="a28-article-tile-list-dynamic-textLayout__article-title">Echobot Malware Now up to 71 Exploits, Targeting SCADA</div>
+						</a>
+						<div class="U:display-flex U:flex-nowrap">
+							<div class="a28-article-tile-list-dynamic-textLayout__date U:display-flex mid-point">
+								<span class="U:align-self-center">December 17, 2019</span>
+							</div>
+							<div class="a28-article-tile-list-dynamic-textLayout__content-duration U:display-flex">
+								<span class="U:align-self-center">8 min. read</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+
+				<div id="1533579288_2" class="a28-article-tile-list-dynamic-textLayout__col ">
+					<div class="a28-article-tile-list-dynamic-textLayout__article" data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/2019-application-protection-report-podcast-series">
+						
+						<div class="U:display-flex U:align-items-center">
+
+							<a href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+								<div class="a28-article-tile-list-dynamic-textLayout__category">
+									<span class="badge badge-secondary">Top Risks</span>
+								</div>
+							</a>
+
+						</div>
+						<a href="../threat-intelligence/2019-application-protection-report-podcast-series.html" class="a28-article-tile-list-dynamic-textLayout__link">
+							<div class="a28-article-tile-list-dynamic-textLayout__type article-ico-wrap ">
+								<span class="U:align-self-center podcast a28-article-tile-list-dynamic-textLayout__type-ico"><i></i>podcast / </span>
+							</div>
+							<div class="a28-article-tile-list-dynamic-textLayout__article-title">2019 Application Protection Report Podcast Series</div>
+						</a>
+						<div class="U:display-flex U:flex-nowrap">
+							<div class="a28-article-tile-list-dynamic-textLayout__date U:display-flex ">
+								<span class="U:align-self-center">October 22, 2019</span>
+							</div>
+							<div class="a28-article-tile-list-dynamic-textLayout__content-duration U:display-flex">
+								<span class="U:align-self-center"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="loader_1533579288" class="big-loader U:margin-bot-xl U:display-none"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+		<button class="a28-article-tile-list-dynamic__load-more-button btn btn-outline-inverse U:display-none" id="load_1533579288">
+			Load more stories</button>
+	</div>
+
+
+<!-- ALBUM COVER LAYOUT -->
+
+  
+
+<!-- MUTED LAYOUT -->
+
+
+</div>
+
+
+</div>
+
+    
+</div>
+</div>
+<div data-component-type="category" class="u03-static-data-points aem-GridColumn aem-GridColumn--default--12"><!--googleoff: all-->
+
+    
+        
+        
+        <section class="u03-static-data-points__container fill-main-container">
+            <div class="full-site-container info-container-two-columns">
+                <div class="row">
+                    <div class="u03-static-data-points__left-column-container border-right">
+                        <div class="u03-static-data-points__left-column-wrap">
+                            <h3 class="display-3 u03-static-data-points__headline">Hundreds of apps will be attacked by the time you read this.</h3>
+                            <p><p>So, we get to work. We obsess over effective attack methods. We monitor the growth of IoT and its evolving threats. We dive deep into the latest crypto-mining campaigns. We analyze banking Trojan targets. We dissect exploits. We hunt for the latest malware. And then our team of experts share it all with you. For more than 20 years, F5 has been leading the app delivery space. With our experience, we are passionate about educating the security community-providing the intel you need to stay informed so your apps can stay safe.</p>
+</p>
+                        </div>
+                    </div>
+                    <div class="u03-static-data-points__right-column-container">
+                        <div class="u03-static-data-points__right-column-wrap">
+                            <h4 class="display-6">
+                                Every
+                            </h4>
+                            <h3 class="f5labs-big-number">9 hrs</h3>
+                            a critical vulnerability—with the potential for remote code execution—is released.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    
+
+<!--googleon: all--></div>
+<div class="u02-footer aem-GridColumn aem-GridColumn--default--12"><div>
+	
+<footer id="footer" class="u02-footer_labs conf06-footer-configuration">
+    <div class="conf06-footer-configuration__footer-logo">
+        <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <metadata>
+                <rdf:RDF>
+                    <cc:Work rdf:about="">
+                        <dc:format>image/svg+xml</dc:format>
+                        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                        <dc:title/>
+                    </cc:Work>
+                </rdf:RDF>
+            </metadata>
+            <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+            <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+            <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+        </svg>
+    </div>
+
+    <div class="conf06-footer-configuration__newslettersignup">
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg c20-newsletter-signup-display__newsletter-form">
+    <div class="c20-newsletter-signup-display__wrapper purple-bg  benefits-visible">
+
+        <div class="c20-newsletter-signup-display__signup-wrap">
+
+            <div class="c20-newsletter-signup-display__row form-and-benefits-row hide-after-submit">
+                <div class="c20-newsletter-signup-display__col">
+                    <div class="c20-newsletter-signup-display__title only-mobile">
+                        F5 Labs Newsletter
+                    </div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+                    </div>
+                </div>
+                <div class="c20-newsletter-signup-display__col">
+
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <div class="c20-newsletter-signup-display__title only-desktop">
+                            F5 Labs Newsletter
+                        </div>
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+                        <!-- LOADER -->
+                        <div id="loader" class="small-loader form-loader     
+                             "><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                        <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                            <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- SUCCESS MESSAGE -->
+            <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+                <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                <div class="c20-newsletter-signup-display__article-intro">
+                    Thanks for signing up! Get started with some of the articles below:
+                </div>
+                <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Fraud.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Fraud</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="../threat-intelligence/2020-phishing-and-fraud-report.html" class="text-article__link">
+
+                                <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">November 11, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Education.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Education</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="what-is-the-cia-triad.html" class="text-article__link">
+
+                                <div class="text-article__article-title">What Is the CIA Triad?</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">July 09, 2019</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Strategies.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Strategies</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="../cisotociso/the-three-main-cybersecurity-career-paths.html" class="text-article__link">
+
+                                <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex mid-point">
+                                    <span class="U:align-self-center">December 08, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center">9 min. read</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__wrapper purple-bg}">
+
+		<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+				<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+    <div class="conf06-footer-configuration__main-footer-container">
+        <div class="conf06-footer-configuration__main-footer-wrapper">
+          
+            <div class="conf06-footer-configuration__links-wrap first-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        <ul>
+            <li><a href="../../threat-intelligence.html" target="_blank" rel="no-opener no-referrer">THREATS</a></li>
+        
+            <li><a href="../../ciso-to-ciso.html" target="_blank" rel="no-opener no-referrer">CISO TO CISO</a></li>
+        
+            <li><a href="../../application-protection.html" target="_blank" rel="no-opener no-referrer">APPLICATION PROTECTION</a></li>
+        </ul>
+    
+
+    
+</div>
+            </div>
+            <div class="conf06-footer-configuration__links-wrap second-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        
+    
+
+    
+</div>
+            </div>
+                  
+
+            <div class="conf06-footer-configuration__social-links-wrap">
+                
+<div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Social media links configuration"></div> -->
+	<ul>
+		<li class="twitter">			
+			<a href="https://twitter.com/F5Labs" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb twitter xs-mr-15"></span></div><div class="float-left">TWITTER</div></a>
+		</li>
+	
+		<li class="linkedin">			
+			<a href="https://www.linkedin.com/showcase/f5labs/" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb linkedin xs-mr-15"></span></div><div class="float-left">LINKEDIN</div></a>
+		</li>
+	</ul>
+
+</div>
+
+            </div>
+        </div>
+        <div class="conf06-footer-configuration__foot-note  conf06-footer-configuration__footer-bottom footer-small">
+            <span class="conf06-footer-configuration__all-rights-reserved"> &copy; 2022 F5, Inc. All rights reserved</span> <br/>
+            
+
+                <a href="../../../company/policies.html">Policies</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/privacy-notice.html">Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/trademarks.html">Trademarks</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../index.html" rel="noreferrer">Manage Subscriptions</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/F5-California-privacy-summary.html">California Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/privacy-notice.html#no-sell">Do Not Sell My Personal Information</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+            <span>
+                <span id="teconsent"></span>
+            </span>
+
+        </div>
+    </div>
+
+    <script class="n-lang-en" async="async" src="../../../../consent.trustarc.com/notice%EF%B9%96domain=f5.com&amp;c=teconsent&amp;js=nj&amp;noticeType=bb&amp;text=true&amp;gtm=1.js" crossorigin=""></script>
+  
+     <div>
+
+
+
+
+
+<div class="c20-newsletter-signup-display__popover-bg   ">
+    <div class=" c20-newsletter-signup-display popover  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+                    <div class="c20-newsletter-signup-display__title">F5 Labs Newsletter</div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+</div>
+                </div>
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+
+                        <!-- SUCCESS MESSAGE -->
+                        <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none ">
+                            <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                            <div class="c20-newsletter-signup-display__article-intro">
+                                Thanks for signing up! Get started with some of the articles below:
+                            </div>
+
+                            <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="../threat-intelligence/2020-phishing-and-fraud-report.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">November 11, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="what-is-the-cia-triad.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">What Is the CIA Triad?</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">July 09, 2019</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="../cisotociso/the-three-main-cybersecurity-career-paths.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex mid-point">
+                                                <span class="U:align-self-center">December 08, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center">9 min. read</span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                         
+                        </div>
+
+                        <!-- LOADER -->
+                        <div id="loader" class="U:display-none big-loader"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" c20-newsletter-signup-display popover c20-newsletter-signup-display__subscribed-already  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__title">You already have a subscription</div>
+                  
+                </div>
+               
+              
+            </div>
+          
+        </div>
+    </div>
+
+</div>
+</div>
+  
+</footer>
+ 
+</div></div>
+
+    
+</div>
+</div>
+
+
+     
+        
+    
+    
+
+    
+<script src="../../../etc.clientlibs/clientlibs/granite/jquery/granite/csrf.a9dcac4698709ca8e1cbc88363cf0793.js"></script>
+<script src="../../../etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.68e8a508c100f218cc66bb13a94d1002.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.d96c3f535f649b3c2392029bf4ce52cd.js"></script>
+
+
+ 
+
+	<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5095d30f38626622"></script>
+	
+
+    
+
+
+        <div id="consent_blackbar" style="position:fixed;bottom:200px;width:100%"></div>
+    </body>
+</html>

@@ -1,0 +1,1903 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8"/>
+    <title>Turing in His Grave: What Human CAPTCHA Solvers Reveal About Control Design</title>
+    <meta name="robots"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="CAPTCHA solver networks that use humans in the developing world to enable large-scale bot attacks demonstrate the need for a new approach to security controls."/>
+    <meta name="template" content="article-details-template"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>    
+    
+
+    <meta property="og:locale" content="en_US"/>
+
+    <meta property="og:type" content="website"/>
+
+    <meta property="og:title" content="Turing in His Grave: What Human CAPTCHA Solvers Reveal About Control Design"/>
+
+    <meta property="og:description" content="CAPTCHA solver networks that use humans in the developing world to enable large-scale bot attacks demonstrate the need for a new approach to security controls."/>
+
+    <meta property="og:site_name" content="F5 Labs"/>
+
+    <meta property="og:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+    <meta property="og:image_secure_url" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+
+    <meta property="fb:app_id" content="302184056577324"/>
+
+
+    <meta property="twitter:card" content="summary_large_image"/>
+
+    <meta property="twitter:title" content="Turing in His Grave: What Human CAPTCHA Solvers Reveal About Control Design"/>
+
+    <meta property="twitter:description" content="CAPTCHA solver networks that use humans in the developing world to enable large-scale bot attacks demonstrate the need for a new approach to security controls."/>
+
+    <meta property="twitter:site" content="@F5networks"/>
+
+    <meta property="twitter:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+    <meta property="twitter:creator" content="@F5networks"/>
+
+
+    <meta property="article:author" content="Sander Vinberg"/>
+
+    <meta property="article:published_time" content="2020-05-28T14:24:00.000-04:00"/>
+
+    <meta property="article:tag" content="CAPTCHA,CISO,Defending Applications,Innovation,Controls"/>
+
+    <meta property="article:id" content="/content/f5-labs-v2/en/labs/articles/cisotociso/turing-in-his-grave--what-human-captcha-solvers-reveal-about-con"/>
+
+    <meta property="article:read_time" content="13 min."/>
+
+    <meta property="article:topic" content="Strategies"/>
+
+    <meta property="article:type" content="blog"/>
+
+    <meta property="article:title" content="Turing in His Grave: What Human CAPTCHA Solvers Reveal About Control Design"/>
+
+<meta name="keywords" content="CAPTCHA,CISO,Defending Applications,Innovation,Controls,automation,New Approach,Scalability"/> 
+<link rel="canonical" href="turing-in-his-grave--what-human-captcha-solvers-reveal-about-con.html"/>
+
+
+
+
+<meta property="labs:article:search-tab" content="CISO"/>
+
+    
+       	
+        <link href="https://assets.adobedtm.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://consent.trustarc.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://static.cloud.coveo.com" rel="rel=preconnect" crossorigin/>
+    
+
+    <script>window.F5=window.F5||{};window.F5.VisitorTracking=window.F5.VisitorTracking||{"isConfigEnabled":true,"tealiumScriptAsyncUrl":"//mktg.tags.f5.com/main/prod/utag.js","tealiumScriptSyncUrl":"//mktg.tags.f5.com/main/prod/utag.sync.js","visitorTrackingService":"tealium","isTealiumActive":true,"isLegacyActive":false,"legacyLibWarmingUrls":["https://assets.adobedtm.com","https://www.google-analytics.com","https://www.googletagmanager.com"]}</script>
+
+    <script src="../../../../mktg.tags.f5.com/main/prod/utag.sync.js"></script>
+    <!-- If JS enable will change the HTML class tag to "js"-->
+<script>
+    document.documentElement.className = document.documentElement.className.replace("js-off","js-on");
+</script>
+<!-- If JS enable will change the HTML class tag to "js" -->
+    
+    
+    
+
+    
+    
+
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/apple-touch-icon.png"/>
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-16x16.png"/>
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-32x32.png"/>
+    
+    <link rel="mask-icon" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/safari-pinned-tab.svg" color="#e21d38"/>
+
+    
+    
+
+    
+    
+<link rel="stylesheet" href="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.4921b04fbcd148d027b0a9a0b7fb303c.css" type="text/css">
+
+
+
+
+    <script src="https://app-aba.marketo.com/js/forms2/js/forms2.min.js"></script>
+    
+    
+
+<script>
+    window.digitalData = {"labs":{"articleAuthor":["sander vinberg"],"articlePostDate":"May 28, 2020","labsReadingTime":"13 min.","vitals":{},"labsTags":["CAPTCHA","New Approach","Innovation","Defending Applications","automation","Controls","Scalability","CISO"]},"page":{"pageInfo":{"pageName":"www:f5.labs.v2:labs:articles:cisotociso:turing-in-his-grave--what-human-captcha-solvers-reveal-about-con","destinationUrl":"https://www.f5.com/labs/articles/cisotociso/turing-in-his-grave--what-human-captcha-solvers-reveal-about-con.html","subDomain":"www","referringUrl":"https://www.f5.com/labs/articles/threat-intelligence/how-credential-stuffing-bots-bypass-defenses","referringPageName":"www:f5.labs.v2:labs:articles:threat-intelligence:how-credential-stuffing-bots-bypass-defenses","language":"en","version":""},"category":{"primaryCategory":"labs","subCategory1":"articles","subCategory2":"cisotociso","subCategory3":"turing-in-his-grave--what-human-captcha-solvers-reveal-about-con"},"contentInfo":{"articleAuthor":["sander vinberg"],"articlePostDate":"May 28, 2020","labsReadingTime":"13 min.","vitals":{},"labsTags":["CAPTCHA","New Approach","Innovation","Defending Applications","automation","Controls","Scalability","CISO"]}}};
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmContentParam = urlParams.get("utm_content");
+    if (utmContentParam && window.digitalData.user != undefined && window.digitalData.user.userInfo) {
+        const utmContentParamArray = utmContentParam.split("-");
+        if (utmContentParamArray.length >= 3) {
+            window.digitalData.user.userInfo.digitalSignal = utmContentParamArray[2];
+        }
+    }
+</script>
+<script>
+    window.utag_data = {"page.pageInfo.pageName":"www:f5.labs.v2:labs:articles:cisotociso:turing-in-his-grave--what-human-captcha-solvers-reveal-about-con","page.pageInfo.destinationUrl":"https://www.f5.com/labs/articles/cisotociso/turing-in-his-grave--what-human-captcha-solvers-reveal-about-con.html","page.pageInfo.subDomain":"www","page.pageInfo.referringUrl":"https://www.f5.com/labs/articles/threat-intelligence/how-credential-stuffing-bots-bypass-defenses","page.pageInfo.referringPageName":"www:f5.labs.v2:labs:articles:threat-intelligence:how-credential-stuffing-bots-bypass-defenses","page.pageInfo.language":"en","page.pageInfo.version":"","page.category.primaryCategory":"labs","page.category.subCategory1":"articles","page.category.subCategory2":"cisotociso","page.category.subCategory3":"turing-in-his-grave--what-human-captcha-solvers-reveal-about-con","page.contentInfo.articleAuthor[0]":"sander vinberg","page.contentInfo.articlePostDate":"May 28, 2020","page.contentInfo.labsReadingTime":"13 min.","page.contentInfo.vitals":{},"page.contentInfo.labsTags[0]":"CAPTCHA","page.contentInfo.labsTags[1]":"New Approach","page.contentInfo.labsTags[2]":"Innovation","page.contentInfo.labsTags[3]":"Defending Applications","page.contentInfo.labsTags[4]":"automation","page.contentInfo.labsTags[5]":"Controls","page.contentInfo.labsTags[6]":"Scalability","page.contentInfo.labsTags[7]":"CISO"};
+</script>
+
+
+    
+    <script>
+        ;(function(win, doc, style, timeout) {
+            var STYLE_ID = 'at-body-style';
+
+            function getParent() {
+                return doc.getElementsByTagName('head')[0];
+            }
+
+            function addStyle(parent, id, def) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.createElement('style');
+                style.id = id;
+                style.innerHTML = def;
+                parent.appendChild(style);
+            }
+
+            function removeStyle(parent, id) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.getElementById(id);
+
+                if (!style) {
+                    return;
+                }
+
+                parent.removeChild(style);
+            }
+
+            addStyle(getParent(), STYLE_ID, style);
+            setTimeout(function() {
+                removeStyle(getParent(), STYLE_ID);
+            }, timeout);
+        }(window, document, "body {opacity: 0 !important}", 3000));
+    </script>
+
+    <script src="../../../../assets.adobedtm.com/launch-EN37b07f3d0fa64d53b299e28194b30e0a.min.js" async></script>
+
+
+</head>
+    <body class="article-page preview-mode">
+        
+    <script>
+    (function(a,b,c,d){
+        a='//mktg.tags.f5.com/main/prod/utag.js';
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+    </script>
+
+        
+     
+        
+
+       	<div class="background-cut " style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a02/optimize/article-background-image.jpg);"></div>
+        
+
+
+<nav class="conf12-skip-links__nav" role="navigation">
+	<a href="#nav" class="conf12-skip-links__item">Skip to main navigation</a>
+
+	<a href="#content" class="conf12-skip-links__item">Skip to main content</a>
+
+	<a href="#footer" class="conf12-skip-links__item">Skip to footer</a>
+</nav>
+        
+
+<div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="megamenu-background"></div>
+
+	<div id="nav" class="fullscreen-wrapper header-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg labs-nav ">
+            <div class="container navbar-wrapper">
+                <a class="navbar-brand" href="../../../labs.html">
+                    <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <metadata>
+                            <rdf:RDF>
+                                <cc:Work rdf:about="">
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                    <dc:title/>
+                                </cc:Work>
+                            </rdf:RDF>
+                        </metadata>
+
+                        <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+                        <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+                        <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+                    </svg>
+                    <span>
+
+                        APPLICATION
+                        <br/> THREAT
+                        <br/> INTELLIGENCE
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  
+                    <div class="nav-wrap ml-lg-auto">
+                        <div class="upper-navigation">
+                            <div class="subscribe-item upper-nav-item">
+                                <a class="subscribe-link upper-nav-btn" href="../../subscribe.html">
+                                    <span class="upper-subscribe-ico ico"></span>
+                                    <span class="upper-navigation-content">Subscribe</span>
+                                </a>
+                            </div>
+                            <div class="search-item upper-nav-item">
+                                <a class="search-link upper-nav-btn">
+                                    <span class="upper-search-ico ico"></span>
+                                    <span class="upper-navigation-content">Search</span>
+                                </a>
+                                <form class="form-inline my-2 my-lg-0 search-form" method="get" action="../../search%EF%B9%96q=test.html" id="searchForm">
+                                    <div class="container">
+                                        <div class="search-input-container">
+                                            <a class="close-search-button"></a>
+                                            <input class="form-control mr-sm-2 " type="search" name="q" title="Cannot search for a blank query" placeholder="Search" required pattern="^(?!\s*$).+" aria-label="Search" id="search-input" lang="en"/>
+                                            <button class="btn btn-search  upper-nav-btn" type="submit"> <span class="upper-search-ico ico"></span> <span class="submit-text">Submit</span></button>
+                                        </div>
+    
+                                    </div>
+                                </form>
+                            </div>
+                            
+
+
+
+
+                        </div>
+                        
+<ul class="navbar-nav">
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../threat-intelligence.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Threats</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../ciso-to-ciso.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>CISO-to-CISO</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../application-protection.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Application Protection</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../rss-feeds.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>RSS Feeds</span>
+	</a></li>
+</ul>
+                     
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
+
+</div>
+<div>
+
+	
+    
+    
+
+
+</div><div class="c02-header-area aem-GridColumn aem-GridColumn--default--12"><div class="cq-placeholder section" data-emptytext="Article: Header area configuration"></div>
+
+    
+        
+       
+        <section class="container-fluid c02-header-area__main-article details fill-main-container">
+            <div class="c02-header-area__heroImageBackground" style="background-image: url(../../../content/dam/f5-labs-v2/article/backgrounds/a02/optimize/article-background-image.jpg);"></div>
+            <div class="c02-header-area__main-article-overlay"></div>
+           
+            <div class="row">
+                <div class="align-bottom c02-header-area__article-wrap">
+                    <div class="info-row clearfix">
+                    	<a href="../../search%EF%B9%96q=Strategies.html">
+	                        <div class="category">
+	                            <span class="badge badge-secondary c02-header-area__badge">Strategies</span>
+	                        </div>
+                        </a>
+                        <div class="c02-header-area__additional-info">
+                            <div class="date U:padding-x">
+                                <span>May 28, 2020</span>
+                               
+                                
+                                
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="c02-header-area__main-articles-title">
+                        <h1>
+                            Turing in His Grave: What Human CAPTCHA Solvers Reveal About Control Design
+                        </h1>
+                    </div>
+                    <div class="c02-header-area__additional-info U:display-flex">
+                    	
+	                    	<div class="c02-header-area__type  U:display-flex article-ico-wrap big-ico-wrap mid-point">
+	                        	<span class="blog"><i></i>blog</span>
+	                        </div>
+	                    	<div class="c02-header-area__content-duration U:display-flex ">
+	                        	<span>13 min. read</span>
+	                        </div>
+                        
+                        
+                    </div>
+                    <div class="c02-header-area__author-name tags">
+                        By <a class="c02-header-area__author-name tag-item" href="../../search.author_Sander+Vinberg.html">Sander Vinberg</a>
+                    </div>
+                    <div class="c02-header-area__contributors-name tags">
+                        Additional Contributions By <a class="c02-header-area__contributors-name tag-item" href="https://www.f5.com/labs/search.author_Maxim%2BZavodchik">Maxim Zavodchik</a><a class="c02-header-area__contributors-name tag-item" href="https://www.f5.com/labs/search.author_Gal%2BGoldshtein">Gal Goldshtein</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+   		<div id="content"></div>
+    
+    
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row">
+        <div class="a01-container section">
+    <div class="a01-container-col-left">
+        <div data-component-type="article" class="c06-social-sharing section">
+
+
+
+<div class="addthis_share c06-social-sharing__links ">
+	
+	
+    <span class="addthis_share_button twitter addthis_sharing_toolbox" data-service="twitter" data-url="https://www.f5.com/labs/articles/cisotociso/turing-in-his-grave--what-human-captcha-solvers-reveal-about-con.html" data-description="CAPTCHA solver networks that use humans in the developing world to enable large-scale bot attacks demonstrate the need for a new approach to security controls." data-title="Turing in His Grave: What Human CAPTCHA Solvers Reveal About Control Design- Sander Vinberg">
+        <span class="social-bulb xs-mr-15 twitter"></span>
+    </span>
+    <span class="addthis_share_button linkedin addthis_sharing_toolbox" data-service="linkedin" data-url="https://www.f5.com/labs/articles/cisotociso/turing-in-his-grave--what-human-captcha-solvers-reveal-about-con.html" data-description="CAPTCHA solver networks that use humans in the developing world to enable large-scale bot attacks demonstrate the need for a new approach to security controls." data-title="Turing in His Grave: What Human CAPTCHA Solvers Reveal About Control Design- Sander Vinberg">
+        <span class="social-bulb xs-mr-15 linkedin"></span>
+    </span>
+    <span class="addthis_share_button facebook addthis_button_facebook addthis_sharing_toolbox" data-service="facebook" data-url="https://www.f5.com/labs/articles/cisotociso/turing-in-his-grave--what-human-captcha-solvers-reveal-about-con.html" data-description="CAPTCHA solver networks that use humans in the developing world to enable large-scale bot attacks demonstrate the need for a new approach to security controls." data-title="Turing in His Grave: What Human CAPTCHA Solvers Reveal About Control Design- Sander Vinberg">
+        <span class="social-bulb xs-mr-15 facebook"></span>
+    </span>
+    <a class="mail" target="_blank" href="mailto:?subject=Turing%20in%20His%20Grave:%20What%20Human%20CAPTCHA%20Solvers%20Reveal%20About%20Control%20Design-%20Sander%20Vinberg&amp;body=Checkout%20this%20great%20article%20I%20read%20on%20F5%20Labs%20%20/content/f5-labs-v2/en/labs/articles/cisotociso/turing-in-his-grave--what-human-captcha-solvers-reveal-about-con" rel="noreferrer">
+        <span class="social-bulb xs-mr-15 mail"></span>
+    </a>
+    
+</div></div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-center">
+        <div data-component-type="article" class="a03-article-body section">
+
+<div id="content">
+    <div class="a03-article-body__content">
+        
+    </div>
+    <div class="a22-include-vitals-on-mobile a04-include section">
+	
+    
+
+
+    
+        
+        
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        
+
+
+    
+
+    
+
+
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>Information security often takes the form of an arms race, as attackers develop novel ways to use or abuse services on the web to their own benefit, and defenders scramble to adapt to and block these new techniques. Few technologies better exemplify this arms race than the web element known as CAPTCHA.<a id="_ftnrefAutoIncr1" class="footnote-ref" title="1" href="#_ftnAutoIncr1"><sup>1</sup></a> This component is designed to identify and block bots that attackers use to automate and scale up attacks such as credential abuse, web scraping, or, in the case of tools like sneaker bots, to quickly buy up limited supplies of commodities like fashionable sneakers.<a id="_ftnrefAutoIncr2" class="footnote-ref" title="2" href="#_ftnAutoIncr2"><sup>2</sup></a> CAPTCHAs weed out bots by presenting puzzles within the browser’s response that ostensibly only humans can solve. In the beginning, these puzzles were mostly visual, and usually required users to parse distorted text and type it in. Over time, CAPTCHAs have come to include different types of puzzles, including identifying specific objects within a complex image, transcribing short audio files, or solving logical puzzles, such as turning an image right-side up. Google’s latest version of their reCAPTCHA tool, version 3, transparently analyzes user behavior in the browser instead of requiring specific human input.<a id="_ftnrefAutoIncr3" class="footnote-ref" title="3" href="#_ftnAutoIncr3"><sup>3</sup></a></p>
+<p>For more than a decade, however, attackers have had the ability to circumvent CAPTCHAs at scale and speed, not through advances in computer vision or artificial intelligence, but by identifying and farming out the puzzles to networks of human workers (known in this industry as solvers) in developing economies, and then returning the correct responses so that bots can continue on their assigned task. These services cost attackers (that is, the customers of the solver service) roughly USD $1-$3 per 1,000 correct solutions, depending on the service and type of puzzle. The solver networks, however, only pay workers roughly USD $0.40 for 1,000 correct solutions. Depending on the solver’s speed, that puts their pay anywhere from $2 to $5 per day.</p>
+<p>To be clear, as of 2020, the risk that human CAPTCHA solvers present is now more or less manageable (if not solved) for multiple reasons. For one, it’s an old practice with which security practitioners are widely familiar, and several security vendors have devised ways to detect human CAPTCHA solver networks. Some security vendors have developed bot mitigation or anti-fraud solutions to replace CAPTCHAs. Meanwhile, advances in artificial intelligence-based CAPTCHA solvers threaten to make the human solver networks obsolete.</p>
+<p>So why dive into these human solver networks now? Despite the low risk, this practice deserves a through examination because of the simple nature of the hack. Instead of trying to compete with defenders to develop sophisticated artificial intelligence, CAPTCHA solvers simply use low-cost, globally distributed human labor as a front-end for a botnet. This kind of problem-solving illuminates a fundamental aspect of the battle between attackers and defenders in information security. Just as the CAPTCHA element exemplifies the arms race, this method of circumventing security controls reveals that security practitioners often misrecognize the nature of the attacker’s advantage. Unpacking that misrecognition can provide clues to general guidelines for designing future controls that could transcend this arms race and stand the test of time. Before we get to all that, however, let’s dig into the basics of solver networks and how they function.</p>
+<h2>How CAPTCHA Solver Networks Work</h2>
+<p>Human CAPTCHA solver networks involve three entities: attackers who want to circumvent CAPTCHAs so that they can scale out attacks using bots; solver networks, such as Anti-Captcha, 2Captcha, and DeathbyCaptcha; and the solver labor force. The details of the solver networks’ architecture vary slightly from network to network. Generally speaking, however, the life cycle of the service for a single CAPTCHA is as follows: when an attacker identifies a CAPTCHA at a target site, they send the puzzle content, usually encoded in base64, to the solver network API. The solver network’s software returns a task identification number to the attacker and farms out the puzzle to one of its workers, who solves it and returns a solution (see Figure 1). Meanwhile, the attacker sends a request with the task number to the network API to check for a posted solution, repeating over short intervals. When the solver network software detects a solution with the same task number, it responds to the attacker’s request with the solution, the attacker places the solution in the text field, and the attack can continue.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    
+
+    <!-- no link, lightbox -->
+    <a data-lightbox="Image preview" data-title="Figure 1: The life cycle for a single CAPTCHA solution event. Note that this diagram only shows a single solution event—in an attack this process would be happening hundreds of times a minute to achieve scalability." href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/20--2020-apr-jun/20200526_turing/CAPTCHA_solver_lifecycle.jpg">
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/20--2020-apr-jun/20200526_turing/CAPTCHA_solver_lifecycle.jpg" data-component-type="platter" alt="The life cycle for a single CAPTCHA solution event. Note that this diagram only shows a single solution event—in an attack this process would be happening hundreds of times a minute to achieve scalability." class="js-bg-lozad"/>
+        
+    </a>
+
+    <div class="a02-image__caption">
+        Figure 1: The life cycle for a single CAPTCHA solution event. Note that this diagram only shows a single solution event—in an attack this process would be happening hundreds of times a minute to achieve scalability.
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>While the process described in Figure 1 is for a single CAPTCHA event, the real point of this service is to enable scalability through automation. In an actual attack, an attacker would use scripts or off-the-shelf attack software to send hundreds or thousands of these requests per minute, which the solver network software would distribute to a large number of workers around the world.</p>
+<p>One common method to accomplish this scaling uses a script to coordinate API traffic with the network in conjunction with a webdriver like Selenium to identify CAPTCHAs and place the returned solution back into the form. Figure 2 shows the Selenium/script approach from the attacker’s point of view.</p>
+
+</div>
+
+    
+</div>
+<div data-component-type="media-article" class="m04-video-player section">
+    
+    
+
+    <div class="m04-video-player__wrapper  lightbox-active">
+        <div class="m04-video-player__container U:display-none clearfix">
+            <video class="video-element" preload="metadata">
+                <source src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/20--2020-apr-jun/20200526_turing/headless_browser_captcha_solver.mp4" type="video/mp4"/>
+                Your browser doesn't support the video tag.
+            </video>
+            
+          
+        </div>
+      
+    </div>
+    <div class="m04-video-player__caption">Figure 2: Video showing the Selenium/script model in action from an attacker&#39;s point of view.</div>
+    <div class="lightbox-wrap ">
+        <div class="lightbox-content">
+            <a class="lb-close" tabindex=""></a>
+            <div class="m04-video-player__wrapper lightbox-wrapper">
+                <div class="m04-video-player__container U:display-none clearfix">
+                    <video class="video-element" preload="metadata">
+                        <source src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/20--2020-apr-jun/20200526_turing/headless_browser_captcha_solver.mp4" type="video/mp4"/>
+                        Your browser doesn't support the video tag.
+                    </video>
+                    
+                 
+                </div>
+                
+            </div>
+            <div class="m04-video-player__caption lightbox-caption">Figure 2: Video showing the Selenium/script model in action from an attacker&#39;s point of view.</div>
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>Some of these services also offer a browser extension through which attackers can flag both the puzzle and the input field for the solution. Others leave it up to the customer to integrate the API calls with their own command and control systems. However, browser extensions have the disadvantage of changing the Document Object Model (DOM) of the target site, making them susceptible to detection. Figure 3 shows the attacker’s point of view using a browser extension to coordinate the traffic between the attacker’s browser and the solver network.</p>
+
+</div>
+
+    
+</div>
+<div data-component-type="media-article" class="m04-video-player section">
+    
+    
+
+    <div class="m04-video-player__wrapper  lightbox-active">
+        <div class="m04-video-player__container U:display-none clearfix">
+            <video class="video-element" preload="metadata">
+                <source src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/20--2020-apr-jun/20200526_turing/captcha_solver_browser_extention.mp4" type="video/mp4"/>
+                Your browser doesn't support the video tag.
+            </video>
+            
+          
+        </div>
+      
+    </div>
+    <div class="m04-video-player__caption">Figure 3: Video showing the browser extension model in action from the attacker&#39;s point of view.</div>
+    <div class="lightbox-wrap ">
+        <div class="lightbox-content">
+            <a class="lb-close" tabindex=""></a>
+            <div class="m04-video-player__wrapper lightbox-wrapper">
+                <div class="m04-video-player__container U:display-none clearfix">
+                    <video class="video-element" preload="metadata">
+                        <source src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/20--2020-apr-jun/20200526_turing/captcha_solver_browser_extention.mp4" type="video/mp4"/>
+                        Your browser doesn't support the video tag.
+                    </video>
+                    
+                 
+                </div>
+                
+            </div>
+            <div class="m04-video-player__caption lightbox-caption">Figure 3: Video showing the browser extension model in action from the attacker&#39;s point of view.</div>
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>These networks also offer a surprisingly high level of service, including documentation, technical support, and language support. Most of the larger solver networks support coverage for a wide range of more advanced CAPTCHAs, including reCAPTCHA v2, text-based logic CAPTCHAs like hCaptcha, and even behavioral systems like reCAPTCHA v3. Some networks also provide expedited service at a higher cost, a guaranteed-accuracy option in which multiple separate workers return solutions in parallel for comparison, and even accessibility options for visually impaired customers.</p>
+<p>From the workers’ standpoint, the process is simple. The networks present the CAPTCHAs to workers either through web applications or desktop applications. Workers simply log in and wait for puzzles to appear. One of the networks, Anti-Captcha, also publishes information about their workforce, even going so far as to publish worker profiles to give a sense of the humans behind this globally distributed process. The workforce that we know about through these profiles is distributed across 26 countries, though as of May 2020 nearly 75 percent of the workforce is located in Venezuela, Indonesia, or Vietnam.<span class="footnoteList"></span><a id="_ftnrefAutoIncr1" class="footnote-ref" title="1" href="#_ftnAutoIncr1"><sup>1</sup></a> Figure 4 shows the solver worker’s point of view using one of the more popular desktop solver clients.</p>
+
+</div>
+
+    
+</div>
+<div data-component-type="media-article" class="m04-video-player section">
+    
+    
+
+    <div class="m04-video-player__wrapper  lightbox-active">
+        <div class="m04-video-player__container U:display-none clearfix">
+            <video class="video-element" preload="metadata">
+                <source src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/20--2020-apr-jun/20200526_turing/captcha_solver_worker_pov.mp4" type="video/mp4"/>
+                Your browser doesn't support the video tag.
+            </video>
+            
+          
+        </div>
+      
+    </div>
+    <div class="m04-video-player__caption">Figure 4: Video showing the CAPTCHA solver client in action from the worker&#39;s point of view.</div>
+    <div class="lightbox-wrap ">
+        <div class="lightbox-content">
+            <a class="lb-close" tabindex=""></a>
+            <div class="m04-video-player__wrapper lightbox-wrapper">
+                <div class="m04-video-player__container U:display-none clearfix">
+                    <video class="video-element" preload="metadata">
+                        <source src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/ciso/20--2020-apr-jun/20200526_turing/captcha_solver_worker_pov.mp4" type="video/mp4"/>
+                        Your browser doesn't support the video tag.
+                    </video>
+                    
+                 
+                </div>
+                
+            </div>
+            <div class="m04-video-player__caption lightbox-caption">Figure 4: Video showing the CAPTCHA solver client in action from the worker&#39;s point of view.</div>
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h2><a id="_ReassessingtheInformationSecurityArmsRace"></a>Reassessing the Information Security Arms Race</h2>
+<p>The thing that makes the human CAPTCHA solvers so instructive about the security arms race doesn’t lie in the technical details. Rather, it is the most fundamental thing about them. Instead of exploiting coding errors or misconfigurations that lead to vulnerabilities, human CAPTCHA solvers exploit assumptions about the value of human labor time. That is, CAPTCHAs are designed around system owners’ assumptions that it is not possible to use human labor to scale up the kinds of attacks that the CAPTCHA solver customers undertake. In one way, that assumption is correct. The skilled labor that actual attackers represent is too expensive to multiply by hundreds or thousands within a short time frame. However, the comparatively unskilled labor required to solve a CAPTCHA is not too expensive, given the necessary infrastructure that allows this fragmented, distributed labor supply to meet its demand.</p>
+<p>The result is that, in the 21st century, attackers pay humans poverty-line wages to act as a front end for bots, which in turn act like humans, for the purpose of using an information system in a way for which it was not designed. This illuminates the core issue: for the attackers, it was never really about the bots—it was about scalability. The bots were a means to an end; when defenders made life hard for bots using CAPTCHAs, attackers found humans to front for them. Faced with a battle that, on the surface, seemed to be about artificial intelligence or computer vision, attackers instead found a way to reframe it in terms of the cost of human labor.</p>
+
+</div>
+
+    
+</div>
+<div class="a13-article-quote-labs section">
+
+
+    <div class="blockquote-wrapper js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/components/quote/blockquote-bg.jpg">
+        <blockquote><p>For the attackers, it was never really about the bots—it was about scalability.</p></blockquote>
+        
+    </div>
+
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>This is, in a way, the archetypal hack. By maintaining a focus on their actual goal—scalability—and by developing a new, low-cost solution, attackers have deftly sidestepped a battle in which defenders had an advantage. In contrast, the ever-increasing complexity and fidelity of CAPTCHAs shows that stopping bots, which were only ever a means for the attacker, has become an end in itself for defenders.</p>
+<p>Because the reframing that these solver services represent happens along nontechnical lines that are unusual in the information security world, it is easy to recognize, but the underlying thought process is also present in other kinds of attacks. The <a href="../threat-intelligence/application-protection-report-2019--episode-3--web-injection-attacks.html" target="_blank" rel="no-opener no-referrer">formjacking attacks</a> that have become so prevalent and profitable over the last few years represent a similar sort of insight. Many of the prescribed controls around payment card processing, such as rigorous encryption standards, need-based access, and firewalls that are expensive to procure and maintain, are built around the goal of protecting those data once they are formally the defender’s responsibility. Viewed through this lens, formjacking attacks represent the attacker declining to attempt to infiltrate those relative fortresses, instead donning a disguise to convince users to hand over their information willingly, out on the metaphorical street.</p>
+<p>In other words, these practices illustrate that the field of information security has tended to misrepresent the “attacker’s advantage.” In our field, we often fall back on the truism that defenders need to succeed all of the time, whereas attackers only need to succeed once. While I think this is becoming increasingly less true with time, that is not really the point here. The CAPTCHA solver networks show that the attacker’s advantage is the opportunity to constantly redefine the scope of the battlefield, to operate at the level of ends, and to force the defender to operate at the level of means.</p>
+<h2>What This Means in Practical Terms</h2>
+<p>Security practitioners are often preoccupied with tactics, techniques, and procedures (TTPs) because they are the details that allow people in a security operations center (SOC) or in a forensic analysis to diagnose or mitigate an attack. The CAPTCHA solvers, however, demonstrate that when it comes to designing proactive controls or security programs (instead of mitigating ongoing attacks), focusing on TTPs is only going to get us so far. This is because TTPs often represent a set of disposable means to the attacker. On some level, we can boil the entire history of the security arms race down to the attacker community declining to fight on the terms that the security community has laid out and seeking another way around, forcing security practitioners to adapt in turn.</p>
+<p>By contrast, controls that can invalidate entire strategies like scalability, persistence, or concealment would offer greater utility across time, space, and diverse systems. In other words, TTPs are absolutely critical in many applications of information security, but they are neither the final word nor the only game in town.</p>
+<p>In practical terms, controls that operate at this strategic level, at the level of ends and not means, will necessarily raise questions of application architecture and even of business models. The idea of incorporating information security more deeply in the business is neither new nor controversial, but the implication here is that it actually represents an opportunity to reduce security costs by making efforts across the board more proactive. I do not mean to imply that the time and expertise dedicated to mitigating bots has been ill-spent, but I do think that focusing on <i>why</i> attackers are doing something can be as productive as focusing on <i>how</i> they are doing it.</p>
+
+</div>
+
+    
+</div>
+
+
+</div>
+</div>
+<div class="c20-newsletter-signup-display section">
+
+
+
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display__wrapper in-body purple-bg benefits-visible c20-newsletter-signup-display__newsletter-form">
+    <div class="c20-newsletter-signup-display__row form-and-benefits-row hide-after-submit">
+        <div class="c20-newsletter-signup-display__col">
+            <div class="c20-newsletter-signup-display__title only-mobile">
+                F5 Labs Newsletter
+            </div>
+            <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="c20-newsletter-signup-display__col">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+                    <div class="c20-newsletter-signup-display__title  only-desktop">
+                        F5 Labs Newsletter
+                    </div>
+                </div>
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+                        <div class="form-loader small-loader  
+                               
+                               "><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                        <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                            <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SUCCESS MESSAGE -->
+    <div class="c20-newsletter-signup-display__success-message benefits-visible newsletter-success-message  U:display-none">
+        <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display__wrapper in-body purple-bg known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+    	
+	<!-- KNOW USER MESSAGE -->
+	<div class="c20-newsletter-signup-display__success-message ">
+        <div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>
+    </div>
+</div>
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-right">
+        <div class="vitalsarea section">
+
+
+    
+        
+        
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        
+
+
+    
+
+    
+
+</div>
+<div data-component-type="article" class="a07-related-articles section"><!--googleoff: all-->
+
+    
+
+    
+
+    <div class="a07-related-articles " data-id="relatedArticlesId">
+        <div class="a07-related-articles__container">
+            <h4 class="a07-related-articles__container-title">Related Articles</h4>
+
+            <div id="related-article-hidden-items">
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Strategies.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Strategies</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">May 14, 2021</span>
+                        </div>
+                    </div>
+                    <a href="https://www.f5.com/labs/articles/cisotociso/i-was-a-human-captcha-solver" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            I Was a Human CAPTCHA Solver
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">10 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Strategies.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Strategies</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">April 01, 2021</span>
+                        </div>
+                    </div>
+                    <a href="combatting-digital-fraud-with-security-convergence.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Combatting Digital Fraud with Security Convergence
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center blog a07-related-articles__type-ico "><i></i>blog</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">5 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Strategies.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Strategies</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">March 18, 2021</span>
+                        </div>
+                    </div>
+                    <a href="when-will-we-get-rid-of-passwords-.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            When Will We Get Rid Of Passwords?
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center blog a07-related-articles__type-ico "><i></i>blog</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">5 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--googleon: all--></div>
+<div class="a11-separation-line section">
+
+<div>
+	<div></div>
+</div></div>
+<div class="c20-newsletter-signup-display section">
+
+
+
+
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display__wrapper purple-bg right-rail c20-newsletter-signup-display__newsletter-form">
+	<div class="c20-newsletter-signup-display__signup-wrap">
+		<div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+			<div class="c20-newsletter-signup-display__title">
+				F5 Labs Newsletter
+            </div>
+            <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+            </div>
+		</div>
+		<div class="c20-newsletter-signup-display__row-wrap">
+			<div class="c20-newsletter-signup-display__signup-form-wrap">
+                	<!-- LOADER -->
+				<div id="loader" class="form-loader small-loader     
+                  hide-after-submit"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+				<form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit"></form>
+
+				<!-- SUCCESS MESSAGE -->
+                <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+					<div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>					
+				</div>
+			</div>
+		</div>
+
+    </div>
+    <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+        <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display__wrapper purple-bg right-rail known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__row-wrap ">
+			<div class="c20-newsletter-signup-display__signup-form-wrap">
+				
+				<!-- KNOWN USER MESSAGE -->
+                <div class="c20-newsletter-signup-display__success-message ">
+					<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row container-bottom">
+        <div class="a01-container section">
+    <div class="a01-container-col-left">
+        
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-center">
+        <div class="a10-article-summary section">
+    
+    
+        
+    
+    
+</div>
+<div data-component-type="article" class="a02-article-actions-container section">
+
+    
+        
+        
+        <div class="a02-article-actions-container">
+            
+
+
+
+
+
+        </div>
+    
+
+    
+</div>
+<div data-component-type="article" class="a04-article-author-bio section"><!-- <div class="cq-placeholder section" data-emptytext="Article: Author Bio" data-sly-test="false"></div> -->
+
+
+
+        
+        
+            <div class="a04-article-author-bio__content">
+                <div class="a04-article-author-bio__content__author-box">
+                    <div class="row">
+                        <div class="a04-article-author-bio__content__image-wrap">
+                            <div class="a04-article-author-bio__content__img-container">
+                                <img data-src="../../../content/dam/f5-labs-v2/_author-headshots/Sander_Vinberg.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                            </div>
+                        </div>
+                        <div class="a04-article-author-bio__content__data-wrap">
+                            <div>
+                                <b>About the author</b>
+                            </div>
+                            <div class="a04-article-author-bio__content__author-name U:margin-top-md">Sander Vinberg</div>
+                            <div class="a04-article-author-bio__content__author-descr"><p>Sander Vinberg is a Threat Research Evangelist for F5 Labs. As the lead researcher on the Application Protection Research Series, he specializes in the evolution of the threat landscape over the long term. He holds a master’s degree from the University of Washington in Information Management, as well as bachelor’s degrees in History and African and African-American Studies from the University of Chicago.</p>
+</div>
+                            <div>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="../../search.author_Sander+Vinberg.html">More articles from Sander Vinberg</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="a04-article-author-bio__content">
+                <div class="a04-article-author-bio__content__author-box">
+                    <div class="row">
+                        <div class="a04-article-author-bio__content__image-wrap">
+                            <div class="a04-article-author-bio__content__img-container">
+                                <img alt="" data-src="https://www.f5.com/content/dam/f5-labs-v2/_author-headshots/Maxim_Zavodchik.png" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                            </div>
+                        </div>
+                        <div class="a04-article-author-bio__content__data-wrap">
+                            <div class="a04-article-author-bio__content__author-name contributor">Maxim Zavodchik</div>
+                            <div class="a04-article-author-bio__content__author-descr"><p>Maxim is a Security Research Group Manager at F5 Networks, leading innovative research of web vulnerabilities and denial of service, evolving threats analysis, attack signature development and product hacking.</p>
+</div>
+                            <div>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="https://www.f5.com/labs/search.author_Maxim%2BZavodchik">More articles from Maxim Zavodchik</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="a04-article-author-bio__content">
+                <div class="a04-article-author-bio__content__author-box">
+                    <div class="row">
+                        <div class="a04-article-author-bio__content__image-wrap">
+                            <div class="a04-article-author-bio__content__img-container">
+                                <img alt="" data-src="https://www.f5.com/content/dam/f5-labs-v2/_author-headshots/Gal_Goldshtein.png" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                            </div>
+                        </div>
+                        <div class="a04-article-author-bio__content__data-wrap">
+                            <div class="a04-article-author-bio__content__author-name contributor">Gal Goldshtein</div>
+                            <div class="a04-article-author-bio__content__author-descr"><p>Gal Goldshtein is a security researcher for F5. Previously, he worked as a penetration tester at Citadel Consulting.</p>
+</div>
+                            <div>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="https://www.f5.com/labs/search.author_Gal%2BGoldshtein">More articles from Gal Goldshtein</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+    
+</div>
+<div name="Footnotes" data-component-type="article" class="a09-article-footnotes section">
+
+
+    
+        
+        <div class="a09-article-footnotes U:padding-y-lg display-old-labs-only">
+            <div class="links-box border-bottom-dotted article-bottom-box">
+                <div class="panel-group accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-parent="#accordion" class="trigger-collapse collapsed" aria-expanded="false">
+                                <h4 class="panel-title display-3">
+                                    Footnotes
+                                </h4>
+                                <div class="button-container">
+                                    <img alt="" class="js-bg-lozad expand-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/expand-button.png"/>
+                                    <img alt="" class="js-bg-lozad close-btn" data-src="../../../content/dam/f5-labs-v2/components/footnotes/close-button.png"/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="collapse-panel">
+                            <div class="panel-body can-collapse collapsed">
+                                <p><p><span><a href="#_ftnrefAutoIncr1" class="footnote-actual" title="1" id="_ftnAutoIncr1"><sup>1</sup></a> CAPTCHA stands for Completely Automated Public Turing test to tell Computers and Humans Apart, though this name was created and applied several years after the original concept was invented. A Turing test is designed to differentiate computers from humans through a series of tasks.</span></p>
+<p><span><a href="#_ftnrefAutoIncr2" class="footnote-actual" title="2" id="_ftnAutoIncr2"><sup>2</sup></a> For an example of a sneaker bot, see <a href="https://www.nikeshoebot.com/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.nikeshoebot.com/</a>.</span></p>
+<p><span><a href="#_ftnrefAutoIncr3" class="footnote-actual" title="3" id="_ftnAutoIncr3"><sup>3</sup></a> Google’s CAPTCHA offering, reCAPTCHA, garnered intense criticism in its earlier versions because it applied the outcomes of successful CAPTCHA solutions by human users to train Google’s artificial intelligence systems, including its self-driving car AI, without informing users (<a href="https://www.techradar.com/news/captcha-if-you-can-how-youve-been-training-ai-for-years-without-realising-it" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.techradar.com/news/captcha-if-you-can-how-youve-been-training-ai-for-years-without-realising-it</a>). Privacy advocates have also criticized Google’s latest version, reCAPTCHA v3, for its invisibility, reliance on tracking cookies, and tendency toward vendor lock-in (<a href="https://www.fastcompany.com/90369697/googles-new-recaptcha-has-a-dark-side" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.fastcompany.com/90369697/googles-new-recaptcha-has-a-dark-side</a>). Also note that because Google’s reCAPTCHA places a cookie on users’ machines, web property owners using reCAPTCHA need to notify users about this in their privacy policy, even in the unlikely event that the reCAPTCHA cookie is the only one being placed. (<a href="https://www.termsfeed.com/blog/privacy-policy-recaptcha/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.termsfeed.com/blog/privacy-policy-recaptcha/</a>).</span></p>
+<p><span><a href="#_ftnrefAutoIncr4" class="footnote-actual" title="4" id="_ftnAutoIncr4"><sup>4</sup></a> <a href="https://kolostories.com/contents/list" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://kolostories.com/contents/list</a></span></p>
+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="a09-article-footnotes display-LC-only">
+            <details id="-button" class="a09-article-footnotes__button cmp-accordion__button ">
+                <summary class="a09-article-footnotes__title  display-as-">
+                    <span> Footnotes </span> <span class="a09-article-footnotes__icon cmp-accordion__icon"></span>
+                </summary>
+                <div class="a09-article-footnotes__panel">
+                    <p><p><span><a href="#_ftnrefAutoIncr1" class="footnote-actual" title="1" id="_ftnAutoIncr1"><sup>1</sup></a> CAPTCHA stands for Completely Automated Public Turing test to tell Computers and Humans Apart, though this name was created and applied several years after the original concept was invented. A Turing test is designed to differentiate computers from humans through a series of tasks.</span></p>
+<p><span><a href="#_ftnrefAutoIncr2" class="footnote-actual" title="2" id="_ftnAutoIncr2"><sup>2</sup></a> For an example of a sneaker bot, see <a href="https://www.nikeshoebot.com/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.nikeshoebot.com/</a>.</span></p>
+<p><span><a href="#_ftnrefAutoIncr3" class="footnote-actual" title="3" id="_ftnAutoIncr3"><sup>3</sup></a> Google’s CAPTCHA offering, reCAPTCHA, garnered intense criticism in its earlier versions because it applied the outcomes of successful CAPTCHA solutions by human users to train Google’s artificial intelligence systems, including its self-driving car AI, without informing users (<a href="https://www.techradar.com/news/captcha-if-you-can-how-youve-been-training-ai-for-years-without-realising-it" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.techradar.com/news/captcha-if-you-can-how-youve-been-training-ai-for-years-without-realising-it</a>). Privacy advocates have also criticized Google’s latest version, reCAPTCHA v3, for its invisibility, reliance on tracking cookies, and tendency toward vendor lock-in (<a href="https://www.fastcompany.com/90369697/googles-new-recaptcha-has-a-dark-side" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.fastcompany.com/90369697/googles-new-recaptcha-has-a-dark-side</a>). Also note that because Google’s reCAPTCHA places a cookie on users’ machines, web property owners using reCAPTCHA need to notify users about this in their privacy policy, even in the unlikely event that the reCAPTCHA cookie is the only one being placed. (<a href="https://www.termsfeed.com/blog/privacy-policy-recaptcha/" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://www.termsfeed.com/blog/privacy-policy-recaptcha/</a>).</span></p>
+<p><span><a href="#_ftnrefAutoIncr4" class="footnote-actual" title="4" id="_ftnAutoIncr4"><sup>4</sup></a> <a href="https://kolostories.com/contents/list" target="_blank" rel="no-opener no-referrer" rel="noreferrer">https://kolostories.com/contents/list</a></span></p>
+</p>
+                </div>
+            </details>
+        </div>
+    
+    
+
+</div>
+<div data-component-type="article" class="a05-article-tags section">
+
+
+    
+        
+
+        <div class="a05-article-tags__tags-box">
+            <strong class="a05-article-tags__strong">TAGS: </strong>
+            <a href="https://www.f5.com/labs/search?q=CAPTCHA" class="a05-article-tags__a">CAPTCHA</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=CISO.html" class="a05-article-tags__a">CISO</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Defending+Applications%22" class="a05-article-tags__a">Defending Applications</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Innovation.html" class="a05-article-tags__a">Innovation</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Controls.html" class="a05-article-tags__a">Controls</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=automation" class="a05-article-tags__a">automation</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=%22New+Approach%22.html" class="a05-article-tags__a">New Approach</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=Scalability" class="a05-article-tags__a">Scalability</a>
+        </div>
+
+    
+
+	
+    
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-right">
+        <div class="a04-include section"><!--googleoff: all-->
+<!-- inline style for wce-edit-mode -->
+
+    <!--googleoff: all-->
+
+    
+
+    
+
+    <div class="a07-related-articles " data-id="relatedArticlesId">
+        <div class="a07-related-articles__container">
+            <h4 class="a07-related-articles__container-title">Related Articles</h4>
+
+            <div id="related-article-hidden-items">
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Strategies.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Strategies</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">May 14, 2021</span>
+                        </div>
+                    </div>
+                    <a href="https://www.f5.com/labs/articles/cisotociso/i-was-a-human-captcha-solver" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            I Was a Human CAPTCHA Solver
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center article a07-related-articles__type-ico "><i></i>article</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">10 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Strategies.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Strategies</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">April 01, 2021</span>
+                        </div>
+                    </div>
+                    <a href="combatting-digital-fraud-with-security-convergence.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            Combatting Digital Fraud with Security Convergence
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center blog a07-related-articles__type-ico "><i></i>blog</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">5 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="related-article-hidden-item" class="a07-related-articles__article">
+
+                    <div class="U:display-flex U:align-items-center">
+                        <a href="../../search%EF%B9%96q=Strategies.html">
+                            <div class="a07-related-articles__category">
+                                <span class="badge badge-secondary">Strategies</span>
+                            </div>
+                        </a>
+                        <div class="a07-related-articles__date U:display-flex">
+                            <span class="U:align-self-center">March 18, 2021</span>
+                        </div>
+                    </div>
+                    <a href="when-will-we-get-rid-of-passwords-.html" class="a07-related-articles__link">
+                        <div class="a07-related-articles__article-title">
+                            When Will We Get Rid Of Passwords?
+                        </div>
+                    </a>
+                    <div class="U:display-flex U:flex-nowrap">
+                    	<div class="a07-related-articles__type U:display-flex article-ico-wrap mid-point">
+                            <span class="U:align-self-center blog a07-related-articles__type-ico "><i></i>blog</span>
+                        </div>
+                        <div class="a07-related-articles__content-duration U:display-flex">
+                            <span class="U:align-self-center">5 min. read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--googleon: all-->
+    
+    
+
+<!--googleon: all--></div>
+
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+<div class="a28-article-tile-list-dynamic aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+    
+<div class="a28-article-tile-list-dynamic__full-width-wrap xs-pt-20 xs-pb-20 container-fluid fill-main-container xs-mb-0 ">
+
+    
+        
+    
+<script src="../../../etc.clientlibs/base/clientlibs/libs/jquery/v3.6.0.abec7e706514e7e243d79b097790f71b.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-swiper.74571ff9ea0f905f582197d9e94ab140.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/components/articles/a28-article-tile-list-dynamic/clientlib.30cecdc12e1944d71b6a455f0740a7b6.js"></script>
+
+
+
+ 
+ 
+<!-- TEXT LAYOUT -->
+
+
+<!-- ALBUM COVER LAYOUT -->
+
+	<section class="a28-article-tile-list-dynamic__container a28-article-tile-list-dynamic-albumLayout a28-article-tile-list-dynamic-albumLayout__image-articles" data-numbersOfArticles="3" data-size="3" id="1684486191">
+
+		<div class="a28-article-tile-list-dynamic__section-title text-center xs-pt-20 xs-pb-20">
+			<h2>Need-to-Know</h2>
+			<span class="a28-article-tile-list-dynamic__text-bigger">Expertly picked stories on threat intelligence</span>
+		</div>
+
+		<div id="article-tile-items" class="a28-article-tile-list-dynamic-albumLayout__article-tiles-wrap U:justify-content-center swiper-container">
+
+			
+
+			<div class="swiper-wrapper">
+				<div id="1684486191_0" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a13/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Top Risks</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>May 18, 2021</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/2021-application-protection-report-of-ransom-and-redemption">
+								<a href="../threat-intelligence/2021-application-protection-report-of-ransom-and-redemption.html">
+									<div class="article-title">
+										<h2 class="header-small">2021 Application Protection Report</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center report a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>report</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>60 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">Sander Vinberg</span>
+									
+										<span class="author-item">Raymond Pompon</span>
+									
+										<span class="author-item">Shahnawaz Backer</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			
+				<div id="1684486191_1" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a15/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=Encryption.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Encryption</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>July 17, 2020</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cryptonice">
+								<a href="../threat-intelligence/cryptonice.html">
+									<div class="article-title">
+										<h2 class="header-small">Introducing the Cryptonice HTTPS Scanner</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center article a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>article</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>12 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">David Warburton</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			
+				<div id="1684486191_2" class="a28-article-tile-list-dynamic-albumLayout__col swiper-slide ">
+					<div class="image-article-wrap">
+						<div class="article-bg js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a08/optimize/article-tile-image.jpg"></div>
+						<div class="image-article">
+							<div class="info-row clearfix">
+
+								<a class="category-link" href="../../search%EF%B9%96q=%22Top+Risks%22.html">
+									<div class="category">
+										<span class="badge badge-default badge-big">Top Risks</span>
+									</div>
+								</a>
+								<div class="date">
+									<span>February 01, 2021</span>
+								</div>
+							</div>
+							<article data-article-path="/content/f5-labs-v2/en/labs/articles/threat-intelligence/cybersecurity-threats-to-the-covid-19-vaccine">
+								<a href="../threat-intelligence/cybersecurity-threats-to-the-covid-19-vaccine.html">
+									<div class="article-title">
+										<h2 class="header-small">Cybersecurity Threats to the COVID-19 Vaccine</h2>
+									</div>
+									<div class="article-type-duration U:display-flex U:justify-content-center">
+										<div class="type U:display-flex article-ico-wrap mid-point">
+											<span class="U:align-self-center article a28-article-tile-list-dynamic-albumLayout__type-ico"><i></i>article</span>
+										</div>
+										<div class="content-duration U:display-flex">
+											<span>9 min. read</span>
+										</div>
+									</div>
+									<div class="article-content only-hover">
+										<span class="author-item">Raymond Pompon</span>
+									</div>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="loader_1684486191" class="big-loader U:margin-bot-xl U:display-none"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+		<button class="a28-article-tile-list-dynamic__load-more-button btn btn-outline-inverse U:display-none" id="load_1684486191">
+			Load more stories</button>
+	</section>
+
+  
+
+<!-- MUTED LAYOUT -->
+
+
+</div>
+
+
+</div>
+<div data-component-type="category" class="u03-static-data-points aem-GridColumn aem-GridColumn--default--12"><!--googleoff: all-->
+
+    
+        
+        
+        <section class="u03-static-data-points__container fill-main-container">
+            <div class="full-site-container info-container-two-columns">
+                <div class="row">
+                    <div class="u03-static-data-points__left-column-container border-right">
+                        <div class="u03-static-data-points__left-column-wrap">
+                            <h3 class="display-3 u03-static-data-points__headline">Hundreds of apps will be attacked by the time you read this.</h3>
+                            <p><p>So, we get to work. We obsess over effective attack methods. We monitor the growth of IoT and its evolving threats. We dive deep into the latest crypto-mining campaigns. We analyze banking Trojan targets. We dissect exploits. We hunt for the latest malware. And then our team of experts share it all with you. For more than 20 years, F5 has been leading the app delivery space. With our experience, we are passionate about educating the security community-providing the intel you need to stay informed so your apps can stay safe.</p>
+</p>
+                        </div>
+                    </div>
+                    <div class="u03-static-data-points__right-column-container">
+                        <div class="u03-static-data-points__right-column-wrap">
+                            <h4 class="display-6">
+                                Every
+                            </h4>
+                            <h3 class="f5labs-big-number">9 hrs</h3>
+                            a critical vulnerability—with the potential for remote code execution—is released.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    
+
+<!--googleon: all--></div>
+<div class="u02-footer aem-GridColumn aem-GridColumn--default--12"><div>
+	
+<footer id="footer" class="u02-footer_labs conf06-footer-configuration">
+    <div class="conf06-footer-configuration__footer-logo">
+        <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <metadata>
+                <rdf:RDF>
+                    <cc:Work rdf:about="">
+                        <dc:format>image/svg+xml</dc:format>
+                        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                        <dc:title/>
+                    </cc:Work>
+                </rdf:RDF>
+            </metadata>
+            <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+            <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+            <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+        </svg>
+    </div>
+
+    <div class="conf06-footer-configuration__newslettersignup">
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg c20-newsletter-signup-display__newsletter-form">
+    <div class="c20-newsletter-signup-display__wrapper purple-bg  benefits-visible">
+
+        <div class="c20-newsletter-signup-display__signup-wrap">
+
+            <div class="c20-newsletter-signup-display__row form-and-benefits-row hide-after-submit">
+                <div class="c20-newsletter-signup-display__col">
+                    <div class="c20-newsletter-signup-display__title only-mobile">
+                        F5 Labs Newsletter
+                    </div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+                    </div>
+                </div>
+                <div class="c20-newsletter-signup-display__col">
+
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <div class="c20-newsletter-signup-display__title only-desktop">
+                            F5 Labs Newsletter
+                        </div>
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+                        <!-- LOADER -->
+                        <div id="loader" class="small-loader form-loader     
+                             "><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                        <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                            <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- SUCCESS MESSAGE -->
+            <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+                <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                <div class="c20-newsletter-signup-display__article-intro">
+                    Thanks for signing up! Get started with some of the articles below:
+                </div>
+                <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Fraud.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Fraud</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="../threat-intelligence/2020-phishing-and-fraud-report.html" class="text-article__link">
+
+                                <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">November 11, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Education.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Education</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="../education/what-is-the-cia-triad.html" class="text-article__link">
+
+                                <div class="text-article__article-title">What Is the CIA Triad?</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">July 09, 2019</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Strategies.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Strategies</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="the-three-main-cybersecurity-career-paths.html" class="text-article__link">
+
+                                <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex mid-point">
+                                    <span class="U:align-self-center">December 08, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center">9 min. read</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__wrapper purple-bg}">
+
+		<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+				<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+    <div class="conf06-footer-configuration__main-footer-container">
+        <div class="conf06-footer-configuration__main-footer-wrapper">
+          
+            <div class="conf06-footer-configuration__links-wrap first-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        <ul>
+            <li><a href="../../threat-intelligence.html" target="_blank" rel="no-opener no-referrer">THREATS</a></li>
+        
+            <li><a href="../../ciso-to-ciso.html" target="_blank" rel="no-opener no-referrer">CISO TO CISO</a></li>
+        
+            <li><a href="../../application-protection.html" target="_blank" rel="no-opener no-referrer">APPLICATION PROTECTION</a></li>
+        </ul>
+    
+
+    
+</div>
+            </div>
+            <div class="conf06-footer-configuration__links-wrap second-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        
+    
+
+    
+</div>
+            </div>
+                  
+
+            <div class="conf06-footer-configuration__social-links-wrap">
+                
+<div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Social media links configuration"></div> -->
+	<ul>
+		<li class="twitter">			
+			<a href="https://twitter.com/F5Labs" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb twitter xs-mr-15"></span></div><div class="float-left">TWITTER</div></a>
+		</li>
+	
+		<li class="linkedin">			
+			<a href="https://www.linkedin.com/showcase/f5labs/" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb linkedin xs-mr-15"></span></div><div class="float-left">LINKEDIN</div></a>
+		</li>
+	</ul>
+
+</div>
+
+            </div>
+        </div>
+        <div class="conf06-footer-configuration__foot-note  conf06-footer-configuration__footer-bottom footer-small">
+            <span class="conf06-footer-configuration__all-rights-reserved"> &copy; 2022 F5, Inc. All rights reserved</span> <br/>
+            
+
+                <a href="../../../company/policies.html">Policies</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/privacy-notice.html">Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/trademarks.html">Trademarks</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../index.html" rel="noreferrer">Manage Subscriptions</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/F5-California-privacy-summary.html">California Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/privacy-notice.html#no-sell">Do Not Sell My Personal Information</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+            <span>
+                <span id="teconsent"></span>
+            </span>
+
+        </div>
+    </div>
+
+    <script class="n-lang-en" async="async" src="../../../../consent.trustarc.com/notice%EF%B9%96domain=f5.com&amp;c=teconsent&amp;js=nj&amp;noticeType=bb&amp;text=true&amp;gtm=1.js" crossorigin=""></script>
+  
+     <div>
+
+
+
+
+
+<div class="c20-newsletter-signup-display__popover-bg   ">
+    <div class=" c20-newsletter-signup-display popover  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+                    <div class="c20-newsletter-signup-display__title">F5 Labs Newsletter</div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+</div>
+                </div>
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+
+                        <!-- SUCCESS MESSAGE -->
+                        <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none ">
+                            <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                            <div class="c20-newsletter-signup-display__article-intro">
+                                Thanks for signing up! Get started with some of the articles below:
+                            </div>
+
+                            <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="../threat-intelligence/2020-phishing-and-fraud-report.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">November 11, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="../education/what-is-the-cia-triad.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">What Is the CIA Triad?</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">July 09, 2019</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="the-three-main-cybersecurity-career-paths.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex mid-point">
+                                                <span class="U:align-self-center">December 08, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center">9 min. read</span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                         
+                        </div>
+
+                        <!-- LOADER -->
+                        <div id="loader" class="U:display-none big-loader"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" c20-newsletter-signup-display popover c20-newsletter-signup-display__subscribed-already  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__title">You already have a subscription</div>
+                  
+                </div>
+               
+              
+            </div>
+          
+        </div>
+    </div>
+
+</div>
+</div>
+  
+</footer>
+ 
+</div></div>
+
+    
+</div>
+</div>
+
+
+     
+        
+    
+    
+
+    
+<script src="../../../etc.clientlibs/clientlibs/granite/jquery/granite/csrf.a9dcac4698709ca8e1cbc88363cf0793.js"></script>
+<script src="../../../etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.68e8a508c100f218cc66bb13a94d1002.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.d96c3f535f649b3c2392029bf4ce52cd.js"></script>
+
+
+ 
+
+	<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5095d30f38626622"></script>
+	
+
+    
+
+
+        <div id="consent_blackbar" style="position:fixed;bottom:200px;width:100%"></div>
+    </body>
+</html>
