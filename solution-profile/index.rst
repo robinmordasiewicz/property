@@ -7,6 +7,7 @@ Solution Profiles
    :titlesonly:
    :glob:
 
+   service-providers.rst
    f5-solutions-for-the-emerging-5g-landscape.rst
    security.rst
    edge-compute.rst

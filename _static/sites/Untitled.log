@@ -257,3 +257,13 @@
 22-2-1, 8:51:37 AM - ERROR: Download of "https://automotive.knect365.com/", referred from "/Users/mordasiewicz/GIT/f5-agility-labs-template/docs/_static/sites/tmt.knect365.com/big-5g-event/index.html", failed with error code 301 (moved permanently)
 
 ---------------------
+
+22-2-1, 9:19:59 AM - ERROR: Download of "https://static.cloud.coveo.com", referred from "/Users/mordasiewicz/GIT/f5-agility-labs-template/docs/_static/sites/www.f5.com/company/events/webinars/edge-computing-and-cloud-native-operations-webinar.html", failed with error code 403 (forbidden)
+22-2-1, 9:20:05 AM - ERROR: Download of "https://www.f5.com/content/f5-com/en_us", referred from "/Users/mordasiewicz/GIT/f5-agility-labs-template/docs/_static/sites/www.f5.com/company/events/webinars/edge-computing-and-cloud-native-operations-webinar.html", failed with error code 404 (not found)
+
+---------------------
+
+22-2-1, 9:23:35 AM - ERROR: Download of "https://static.cloud.coveo.com", referred from "/Users/mordasiewicz/GIT/f5-agility-labs-template/docs/_static/sites/www.f5.com/services/resources/use-cases/volte-and-ims-security-for-service-providers.html", failed with error code 403 (forbidden)
+22-2-1, 9:23:38 AM - ERROR: Download of "https://www.f5.com/content/f5-com/en_us", referred from "/Users/mordasiewicz/GIT/f5-agility-labs-template/docs/_static/sites/www.f5.com/services/resources/use-cases/volte-and-ims-security-for-service-providers.html", failed with error code 404 (not found)
+
+---------------------
