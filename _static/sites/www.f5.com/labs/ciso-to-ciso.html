@@ -1,0 +1,1250 @@
+<!DOCTYPE HTML>
+<html lang="en" class="js-off">
+    <head>
+    <meta charset="UTF-8"/>
+    <title>CISO-to-CISO</title>
+    <meta name="robots"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="CISO to CISO provides CISO-level content, written by experts and guest authors with decades of experience in the field. Join us for discussion of trends, strategies, and control measures that will help protect your business."/>
+    <meta name="template" content="ciso-page-template"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>    
+    
+    
+        <meta property="og:locale" content="en_US"/>
+    
+        <meta property="og:type" content="website"/>
+    
+        <meta property="og:title" content="CISO-to-CISO"/>
+    
+        <meta property="og:description" content="CISO to CISO provides CISO-level content, written by experts and guest authors with decades of experience in the field. Join us for discussion of trends, strategies, and control measures that will help protect your business."/>
+    
+        <meta property="og:site_name" content="F5 Labs"/>
+    
+        <meta property="og:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+    
+        <meta property="og:image_secure_url" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+    
+    
+        <meta property="fb:app_id" content="302184056577324"/>
+    
+    
+        <meta property="twitter:card" content="summary_large_image"/>
+    
+        <meta property="twitter:title" content="CISO-to-CISO"/>
+    
+        <meta property="twitter:description" content="CISO to CISO provides CISO-level content, written by experts and guest authors with decades of experience in the field. Join us for discussion of trends, strategies, and control measures that will help protect your business."/>
+    
+        <meta property="twitter:site" content="@F5networks"/>
+    
+        <meta property="twitter:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+    
+        <meta property="twitter:creator" content="@F5networks"/>
+    
+    
+     
+    <link rel="canonical" href="ciso-to-ciso.html"/>
+
+
+    
+       	
+        <link href="https://assets.adobedtm.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://consent.trustarc.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://static.cloud.coveo.com" rel="rel=preconnect" crossorigin/>
+    
+
+    <script>window.F5=window.F5||{};window.F5.VisitorTracking=window.F5.VisitorTracking||{"isConfigEnabled":true,"tealiumScriptAsyncUrl":"//mktg.tags.f5.com/main/prod/utag.js","tealiumScriptSyncUrl":"//mktg.tags.f5.com/main/prod/utag.sync.js","visitorTrackingService":"tealium","isTealiumActive":true,"isLegacyActive":false,"legacyLibWarmingUrls":["https://assets.adobedtm.com","https://www.google-analytics.com","https://www.googletagmanager.com"]}</script>
+
+    <script src="../../mktg.tags.f5.com/main/prod/utag.sync.js"></script>
+    <!-- If JS enable will change the HTML class tag to "js"-->
+<script>
+    document.documentElement.className = document.documentElement.className.replace("js-off","js-on");
+</script>
+<!-- If JS enable will change the HTML class tag to "js" -->
+    
+    
+    
+
+    
+    
+
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="../content/dam/f5-labs-v2/global-configuration/favicons/apple-touch-icon.png"/>
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="../content/dam/f5-labs-v2/global-configuration/favicons/favicon-16x16.png"/>
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="../content/dam/f5-labs-v2/global-configuration/favicons/favicon-32x32.png"/>
+    
+    <link rel="mask-icon" href="../content/dam/f5-labs-v2/global-configuration/favicons/safari-pinned-tab.svg" color="#e21d38"/>
+
+    
+    
+
+    
+    
+<link rel="stylesheet" href="../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.4921b04fbcd148d027b0a9a0b7fb303c.css" type="text/css">
+
+
+
+
+    <script src="https://app-aba.marketo.com/js/forms2/js/forms2.min.js"></script>
+    
+    
+
+<script>
+    window.digitalData = {"page":{"pageInfo":{"pageName":"www:f5.labs.v2:labs:ciso-to-ciso","destinationUrl":"https://www.f5.com/labs/ciso-to-ciso.html","subDomain":"www","referringUrl":"https://www.f5.com/labs","referringPageName":"www:f5.labs.v2:labs","language":"en","version":""},"category":{"primaryCategory":"labs","subCategory1":"ciso-to-ciso","subCategory2":"","subCategory3":""}}};
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmContentParam = urlParams.get("utm_content");
+    if (utmContentParam && window.digitalData.user != undefined && window.digitalData.user.userInfo) {
+        const utmContentParamArray = utmContentParam.split("-");
+        if (utmContentParamArray.length >= 3) {
+            window.digitalData.user.userInfo.digitalSignal = utmContentParamArray[2];
+        }
+    }
+</script>
+<script>
+    window.utag_data = {"page.pageInfo.pageName":"www:f5.labs.v2:labs:ciso-to-ciso","page.pageInfo.destinationUrl":"https://www.f5.com/labs/ciso-to-ciso.html","page.pageInfo.subDomain":"www","page.pageInfo.referringUrl":"https://www.f5.com/labs","page.pageInfo.referringPageName":"www:f5.labs.v2:labs","page.pageInfo.language":"en","page.pageInfo.version":"","page.category.primaryCategory":"labs","page.category.subCategory1":"ciso-to-ciso","page.category.subCategory2":"","page.category.subCategory3":""};
+</script>
+
+
+    
+    <script>
+        ;(function(win, doc, style, timeout) {
+            var STYLE_ID = 'at-body-style';
+
+            function getParent() {
+                return doc.getElementsByTagName('head')[0];
+            }
+
+            function addStyle(parent, id, def) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.createElement('style');
+                style.id = id;
+                style.innerHTML = def;
+                parent.appendChild(style);
+            }
+
+            function removeStyle(parent, id) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.getElementById(id);
+
+                if (!style) {
+                    return;
+                }
+
+                parent.removeChild(style);
+            }
+
+            addStyle(getParent(), STYLE_ID, style);
+            setTimeout(function() {
+                removeStyle(getParent(), STYLE_ID);
+            }, timeout);
+        }(window, document, "body {opacity: 0 !important}", 3000));
+    </script>
+
+    <script src="../../assets.adobedtm.com/launch-EN37b07f3d0fa64d53b299e28194b30e0a.min.js" async></script>
+
+
+</head>
+    <body class="ciso-to-ciso preview-mode ">
+        
+    <script>
+    (function(a,b,c,d){
+        a='//mktg.tags.f5.com/main/prod/utag.js';
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+    </script>
+
+        
+       	<div class="background-cut" style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/page-backgrounds/Search-C2C-BG.png);"></div>
+        
+
+
+
+<nav class="conf12-skip-links__nav" role="navigation">
+	<a href="#nav" class="conf12-skip-links__item">Skip to main navigation</a>
+
+	<a href="#content" class="conf12-skip-links__item">Skip to main content</a>
+
+	<a href="#footer" class="conf12-skip-links__item">Skip to footer</a>
+</nav>
+
+<div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="megamenu-background"></div>
+
+	<div id="nav" class="fullscreen-wrapper header-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg labs-nav ">
+            <div class="container navbar-wrapper">
+                <a class="navbar-brand" href="../labs.html">
+                    <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <metadata>
+                            <rdf:RDF>
+                                <cc:Work rdf:about="">
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                    <dc:title/>
+                                </cc:Work>
+                            </rdf:RDF>
+                        </metadata>
+
+                        <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+                        <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+                        <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+                    </svg>
+                    <span>
+
+                        APPLICATION
+                        <br/> THREAT
+                        <br/> INTELLIGENCE
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  
+                    <div class="nav-wrap ml-lg-auto">
+                        <div class="upper-navigation">
+                            <div class="subscribe-item upper-nav-item">
+                                <a class="subscribe-link upper-nav-btn" href="subscribe.html">
+                                    <span class="upper-subscribe-ico ico"></span>
+                                    <span class="upper-navigation-content">Subscribe</span>
+                                </a>
+                            </div>
+                            <div class="search-item upper-nav-item">
+                                <a class="search-link upper-nav-btn">
+                                    <span class="upper-search-ico ico"></span>
+                                    <span class="upper-navigation-content">Search</span>
+                                </a>
+                                <form class="form-inline my-2 my-lg-0 search-form" method="get" action="search%EF%B9%96q=test.html" id="searchForm">
+                                    <div class="container">
+                                        <div class="search-input-container">
+                                            <a class="close-search-button"></a>
+                                            <input class="form-control mr-sm-2 " type="search" name="q" title="Cannot search for a blank query" placeholder="Search" required pattern="^(?!\s*$).+" aria-label="Search" id="search-input" lang="en"/>
+                                            <button class="btn btn-search  upper-nav-btn" type="submit"> <span class="upper-search-ico ico"></span> <span class="submit-text">Submit</span></button>
+                                        </div>
+    
+                                    </div>
+                                </form>
+                            </div>
+                            
+
+
+
+
+                        </div>
+                        
+<ul class="navbar-nav">
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="threat-intelligence.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Threats</span>
+	</a></li>
+
+	<li class="nav-item active"><a class="nav-link dropdown-toggle" href="ciso-to-ciso.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>CISO-to-CISO</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="application-protection.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Application Protection</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="https://www.f5.com/labs/rss-feeds" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>RSS Feeds</span>
+	</a></li>
+</ul>
+                     
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
+
+</div>
+<div>
+
+	
+    
+    
+
+
+</div><div data-component-type="vulnerabilities" class="v01-header-and-intro aem-GridColumn aem-GridColumn--default--12">
+
+
+
+<div class="container-fluid fill-main-container">
+    <div class="v01-header-and-intro__content-background-wrapper">
+        <div class="v01-header-and-intro__content-background" style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/page-backgrounds/Search-C2C-BG.png)">
+
+        </div>
+    </div>
+    <div class="v01-header-and-intro__main-article-overlay"></div>
+    <div class="v01-header-and-intro__headerarea-title text-align-center">CISO-to-CISO</div>
+    <div class="v01-header-and-intro__headerarea-description text-align-center">
+        <p>Content for CISOs, by CISOs</p>
+</div>
+</div>
+<div id="content"></div>
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row">
+        
+    <div class="a01-container-col-left">
+        <div data-component-type="ciso" class="c01-featured-article section">
+
+
+<div class="c01-featured-article__wrap js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/article/backgrounds/a15/article-background-hero-image.png">
+	<div class="c01-featured-article__content">
+		<div class="c01-featured-article__info-row clearfix">
+			<a href="https://www.f5.com/labs/search?q=Strategies">
+				<div class="c01-featured-article__category">
+					<span class="badge badge-default badge-secondary">Strategies</span>
+				</div>
+			</a>
+			<div class="c01-featured-article__additional-wrap-info">
+				<div class="date">
+					<span>January 28, 2022</span>
+				</div>
+				<div class="content-duration U:display-flex ">
+					<span>3 min. read</span>
+				</div>
+			</div>
+		</div>
+		
+		<a href="https://www.f5.com/labs/articles/cisotociso/how-we-handle-privacy-at-f5-labs" target="_blank" rel="no-opener no-referrer">
+			<div class="c01-featured-article__article-title">
+				<h2>How We Handle Privacy at F5 Labs</h2>
+			</div>
+		</a>
+	</div>
+</div></div>
+<div data-component-type="ciso" class="c02-featured-contributor section">
+
+
+<div class="c02-featured-contributor__container">
+    <div class="c02-featured-contributor__title-wrap">
+        <div class="c02-featured-contributor__title">
+            Featured Contributor
+        </div>
+        <div class="c02-featured-contributor__subtitle">
+            
+        </div>
+    </div>
+    <div class="c02-featured-contributor__contributor-wrap">
+        <div class="c02-featured-contributor__row">
+            <div class="c02-featured-contributor__contributor-image-col">
+                <div class="c02-featured-contributor__contributor-image-wrap">
+                    <div class=" c02-featured-contributor__contributor-image-circle">
+                        <div class="c02-featured-contributor__contributor-image js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/_author-headshots/Shuman_Ghosemajumder.png">     
+                        </div>       
+                    </div>
+                </div>
+            </div>
+            <div class="c02-featured-contributor__contributor-bio-col">
+                <div class="c02-featured-contributor__name">Shuman Ghosemajumder</div>
+                <div class="c02-featured-contributor__job-title">
+                	<span>Global Head, Artificial Intelligence</span> 
+                	<span>F5</span> 
+                	             
+                </div>
+                <div class="c02-featured-contributor__descr">
+                    <p>Shuman Ghosemajumder is global head of artificial intelligence at F5. Shuman was previously chief technology officer of Shape Security, which was acquired by F5 in 2020. Shape's technology platform is the primary application defense for the world's largest banks, airlines, retailers, and government agencies.</p>
+
+                </div>
+                <div class="c02-featured-contributor__button-wrap">
+                    <a class="btn btn-outline-inverse" href="https://www.f5.com/labs/articles/threat-intelligence/explaining-the-widespread-log4j-vulnerability" target="_blank" rel="no-opener no-referrer">Read Shuman&#39;s Most Recent Content!</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div data-component-type="ciso" class="c04-contributors-listing section">
+
+
+
+<div class="c04-contributors-listing__container">
+    <div id="hidden-contributors-json" class="U:display-none">[{&#34;name&#34;:&#34;Kathie Miley&#34;,&#34;summary&#34;:&#34;\u003cp\u003eKathie Miley is a recognized name in cyber security and is currently an EVP at AffirmLogic. She has 30 years of IT and security experience and leadership, including as chief experience officer at the Cybersecurity Collaborative, chief operating officer at Cybrary, and EVP at Invincea, Inc. Miley also served on the Board of Directors for the national chapter of Information Systems Security Association and earned certifications for HIPAA Security Expert, HIPAA Privacy Expert, CSX, and Lean Six Sigma. She is currently on the advisory board of George Washington University\u0027s Customer Experience Certificate program.\u0026nbsp;Miley holds CHSE, CHPE, CSX, and LSS certifications.\u003c/p\u003e\r\n&#34;,&#34;imageReference&#34;:&#34;/content/dam/f5-labs-v2/_author-headshots/Kathie_Miley.png&#34;,&#34;searchLink&#34;:&#34;/content/f5-labs-v2/en/labs/search.author_Kathie+Miley.html&#34;,&#34;jobTitle&#34;:&#34;EVP&#34;,&#34;companyName&#34;:&#34;AffirmLogic&#34;,&#34;articles&#34;:[{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;December 30, 2020&#34;,&#34;contentDuration&#34;:&#34;5 min. read&#34;,&#34;publishDate&#34;:&#34;Dec 30, 2020 8:59:00 AM&#34;,&#34;title&#34;:&#34;AI-powered Cyber Attacks&#34;,&#34;authors&#34;:[&#34;Kathie Miley&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/kathie-miley&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/ai-powered-cyber-attacks&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/ai-powered-cyber-attacks&#34;,&#34;description&#34;:&#34;AI and Machine Learning can find the optimal cyberattack strategy by analyzing all possible vectors of attack.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:Keywords/machine-learning&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22machine+learning%22&#34;,&#34;name&#34;:&#34;machine-learning&#34;,&#34;title&#34;:&#34;machine learning&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/ciso&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCISO&#34;,&#34;name&#34;:&#34;ciso&#34;,&#34;title&#34;:&#34;CISO&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:Keywords/AI&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dAI&#34;,&#34;name&#34;:&#34;AI&#34;,&#34;title&#34;:&#34;AI&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/automation&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dautomation&#34;,&#34;name&#34;:&#34;automation&#34;,&#34;title&#34;:&#34;automation&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a10/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a10/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a10/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[]},{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;November 03, 2020&#34;,&#34;contentDuration&#34;:&#34;5 min. read&#34;,&#34;publishDate&#34;:&#34;Nov 3, 2020 11:29:00 AM&#34;,&#34;title&#34;:&#34;OCC and HIPAA Cybersecurity Regulator Fines Now in Hundreds of Millions&#34;,&#34;authors&#34;:[&#34;Kathie Miley&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/kathie-miley&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/occ-and-hipaa-cybersecurity-regulator-fines-now-in-hundreds-of-m&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/occ-and-hipaa-cybersecurity-regulator-fines-now-in-hundreds-of-m&#34;,&#34;description&#34;:&#34;Cybersecurity regulators have recently levied huge fines against financial institutions and healthcare organizations. Is this the new normal?&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:Keywords/hipaa&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dHIPAA&#34;,&#34;name&#34;:&#34;hipaa&#34;,&#34;title&#34;:&#34;HIPAA&#34;,&#34;isTopic&#34;:false,&#34;relatedKeywordTerms&#34;:&#34;&#34;},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;industry:healthcare&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dHealthcare&#34;,&#34;name&#34;:&#34;healthcare&#34;,&#34;title&#34;:&#34;Healthcare&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/ciso&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCISO&#34;,&#34;name&#34;:&#34;ciso&#34;,&#34;title&#34;:&#34;CISO&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/compliance-\u0026-legal&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Compliance+%26+Legal%22&#34;,&#34;name&#34;:&#34;compliance-\u0026-legal&#34;,&#34;title&#34;:&#34;Compliance \u0026 Legal&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a10/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a10/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a10/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[]},{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;September 10, 2020&#34;,&#34;contentDuration&#34;:&#34;5 min. read&#34;,&#34;publishDate&#34;:&#34;Sep 10, 2020 9:10:00 AM&#34;,&#34;title&#34;:&#34;The Disappearing IT Security Budget: A 2020 Cybersecurity Crisis&#34;,&#34;authors&#34;:[&#34;Kathie Miley&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/kathie-miley&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/the-disappearing-it-security-budget--a-2020-cybersecurity-crisis&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/the-disappearing-it-security-budget--a-2020-cybersecurity-crisis&#34;,&#34;description&#34;:&#34;As COVID-19 shrinks IT security budgets, security teams must shift their spending and update operations plans to support this new normal.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/governance&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dGovernance&#34;,&#34;name&#34;:&#34;governance&#34;,&#34;title&#34;:&#34;Governance&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/ciso&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCISO&#34;,&#34;name&#34;:&#34;ciso&#34;,&#34;title&#34;:&#34;CISO&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:Keywords/covid-19&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCOVID-19&#34;,&#34;name&#34;:&#34;covid-19&#34;,&#34;title&#34;:&#34;COVID-19&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:Keywords/coronavirus&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCoronavirus&#34;,&#34;name&#34;:&#34;coronavirus&#34;,&#34;title&#34;:&#34;Coronavirus&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a10/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a10/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a10/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[]}],&#34;firstName&#34;:&#34;Kathie&#34;,&#34;id&#34;:-1968659122},{&#34;name&#34;:&#34;Shahnawaz Backer&#34;,&#34;summary&#34;:&#34;\u003cp\u003eShahnawaz Backer is a Principal Security Advisor with F5 Labs. With keen interest in modern application development, digital identity and fraud vectors, he focuses on building security intelligence into solutions and firmly believes in automated proactive defence.\u003c/p\u003e\r\n&#34;,&#34;imageReference&#34;:&#34;/content/dam/f5-labs-v2/_author-headshots/Shahnawaz_Backer.png&#34;,&#34;searchLink&#34;:&#34;/content/f5-labs-v2/en/labs/search.author_Shahnawaz+Backer.html&#34;,&#34;jobTitle&#34;:&#34;Principal Security Advisor&#34;,&#34;companyName&#34;:&#34;F5&#34;,&#34;articles&#34;:[{&#34;topic&#34;:&#34;Controls&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/controls&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dControls&#34;,&#34;date&#34;:&#34;August 05, 2021&#34;,&#34;contentDuration&#34;:&#34;4 min. read&#34;,&#34;publishDate&#34;:&#34;Aug 5, 2021 10:00:00 AM&#34;,&#34;title&#34;:&#34;Fraud Scenarios in the Buy Now, Pay Later Ecosystem&#34;,&#34;authors&#34;:[&#34;Atishay Kumar&#34;,&#34;Shahnawaz Backer&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/atishay-kumar&#34;,&#34;/content/f5-labs-v2/en/authors/shahnawaz-backer&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/fraud-scenarios-in-the-buy-now-pay-later-ecosystem&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/fraud-scenarios-in-the-buy-now-pay-later-ecosystem&#34;,&#34;description&#34;:&#34;Existing fraud tricks are finding new use in buy now, pay later payment systems.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:Keywords/bnpl&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dBNPL&#34;,&#34;name&#34;:&#34;bnpl&#34;,&#34;title&#34;:&#34;BNPL&#34;,&#34;isTopic&#34;:false,&#34;relatedKeywordTerms&#34;:&#34;&#34;},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/controls&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dControls&#34;,&#34;name&#34;:&#34;controls&#34;,&#34;title&#34;:&#34;Controls&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/governance&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dGovernance&#34;,&#34;name&#34;:&#34;governance&#34;,&#34;title&#34;:&#34;Governance&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/Risk&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dRisk&#34;,&#34;name&#34;:&#34;Risk&#34;,&#34;title&#34;:&#34;Risk&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/ciso&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCISO&#34;,&#34;name&#34;:&#34;ciso&#34;,&#34;title&#34;:&#34;CISO&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a09/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a09/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a09/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;article&#34;,&#34;appTierAffected&#34;:[]},{&#34;topic&#34;:&#34;Top Risks&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/article-topics/top-risks&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003d%22Top+Risks%22&#34;,&#34;threatCategoriesPath&#34;:[&#34;f5-labs-v2:category/threats/client-side-attacks/phishing&#34;,&#34;f5-labs-v2:category/threats/client-side-attacks/session-hijacking&#34;,&#34;f5-labs-v2:category/threats/web-application-attacks/man-in-the-middle&#34;,&#34;f5-labs-v2:category/threats/web-application-attacks/Malware&#34;],&#34;threatCategoriesTitles&#34;:[&#34;Phishing&#34;,&#34;Session hijacking&#34;,&#34;Man-in-the-middle&#34;,&#34;Malware&#34;],&#34;date&#34;:&#34;June 17, 2021&#34;,&#34;contentDuration&#34;:&#34;4 min. read&#34;,&#34;publishDate&#34;:&#34;Jun 17, 2021 8:27:00 AM&#34;,&#34;title&#34;:&#34;Attacker Tricks for Taking Over Risk-Based Multifactor Authentication&#34;,&#34;authors&#34;:[&#34;Shahnawaz Backer&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/shahnawaz-backer&#34;],&#34;contributors&#34;:[&#34;Ann Sha Ng&#34;],&#34;contributorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/ann-sha-ng&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/threat-intelligence/attacker-tricks-for-taking-over-risk-based-multifactor-authentication&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/threat-intelligence/attacker-tricks-for-taking-over-risk-based-multifactor-authentication&#34;,&#34;description&#34;:&#34;From spoofing device fingerprints to hijacking authenticated sessions, attackers use a range of techniques to bypass multifactor authentication.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:4,&#34;tagId&#34;:&#34;f5-labs-v2:Keywords/MFA&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dMFA&#34;,&#34;name&#34;:&#34;MFA&#34;,&#34;title&#34;:&#34;MFA&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:article-topics/top-risks&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Top+Risks%22&#34;,&#34;name&#34;:&#34;top-risks&#34;,&#34;title&#34;:&#34;Top Risks&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/threats/client-side-attacks&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Client-side+Attacks%22&#34;,&#34;name&#34;:&#34;client-side-attacks&#34;,&#34;title&#34;:&#34;Client-side Attacks&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/threats&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dThreats&#34;,&#34;name&#34;:&#34;threats&#34;,&#34;title&#34;:&#34;Threats&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/threats/web-application-attacks/man-in-the-middle&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dMan-in-the-middle&#34;,&#34;name&#34;:&#34;man-in-the-middle&#34;,&#34;title&#34;:&#34;Man-in-the-middle&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a15/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a15/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a15/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;article&#34;,&#34;appTierAffected&#34;:[&#34;Services Tier&#34;,&#34;Access Tier&#34;,&#34;Client&#34;]},{&#34;topic&#34;:&#34;Top Risks&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/article-topics/top-risks&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003d%22Top+Risks%22&#34;,&#34;threatCategoriesPath&#34;:[&#34;f5-labs-v2:category/threats/web-application-attacks/credential-theft&#34;,&#34;f5-labs-v2:category/threats/web-application-attacks/credential-stuffing&#34;,&#34;f5-labs-v2:category/threats/web-application-attacks/brute-force&#34;,&#34;f5-labs-v2:category/threats/web-application-attacks/cross-site-scripting&#34;,&#34;f5-labs-v2:category/threats/web-application-attacks/api-attacks&#34;,&#34;f5-labs-v2:category/threats/web-application-attacks/injection&#34;,&#34;f5-labs-v2:category/threats/web-application-attacks/phishing&#34;,&#34;f5-labs-v2:category/threats/web-application-attacks/abuse-of-functionality&#34;,&#34;f5-labs-v2:category/threats/web-application-attacks/Malware&#34;,&#34;f5-labs-v2:category/threats/web-application-attacks/remote-code-execution&#34;,&#34;f5-labs-v2:category/threats/client-side-attacks/client-platform-malware&#34;,&#34;f5-labs-v2:category/threats/client-side-attacks/cross-site-scripting&#34;,&#34;f5-labs-v2:category/threats/client-side-attacks/phishing&#34;,&#34;f5-labs-v2:category/threats/client-side-attacks/session-hijacking&#34;,&#34;f5-labs-v2:category/threats/client-side-attacks/Injection&#34;,&#34;f5-labs-v2:category/threats/client-side-attacks/credential-theft&#34;,&#34;f5-labs-v2:category/threats/app-infrastructure-attacks/credential-stuffing&#34;],&#34;threatCategoriesTitles&#34;:[&#34;Credential theft&#34;,&#34;Credential stuffing&#34;,&#34;Brute force attack&#34;,&#34;Cross-site scripting &#34;,&#34;API Attacks&#34;,&#34;Injection&#34;,&#34;Phishing&#34;,&#34;Abuse of functionality&#34;,&#34;Malware&#34;,&#34;Remote Code Execution&#34;,&#34;Client-platform malware&#34;,&#34;Cross-site scripting&#34;,&#34;Phishing&#34;,&#34;Session hijacking&#34;,&#34;Injection&#34;,&#34;Credential Theft&#34;,&#34;Credential Stuffing&#34;],&#34;date&#34;:&#34;May 18, 2021&#34;,&#34;contentDuration&#34;:&#34;60 min. read&#34;,&#34;publishDate&#34;:&#34;May 18, 2021 4:53:00 PM&#34;,&#34;title&#34;:&#34;2021 Application Protection Report: Of Ransom and Redemption&#34;,&#34;authors&#34;:[&#34;Sander Vinberg&#34;,&#34;Raymond Pompon&#34;,&#34;Shahnawaz Backer&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/sander-vinberg&#34;,&#34;/content/f5-labs-v2/en/authors/raymond-pompon&#34;,&#34;/content/f5-labs-v2/en/authors/shahnawaz-backer&#34;],&#34;contributors&#34;:[&#34;Malcolm Heath&#34;],&#34;contributorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/malcolm-heath&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/threat-intelligence/2021-application-protection-report-of-ransom-and-redemption&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/threat-intelligence/2021-application-protection-report-of-ransom-and-redemption&#34;,&#34;description&#34;:&#34;The 2021 version of F5’s continuing analysis of the application security threat landscape explores ransomware, payment card theft, and account takeover.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:5,&#34;tagId&#34;:&#34;f5-labs-v2:Keywords/application-protection&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Application+Protection%22&#34;,&#34;name&#34;:&#34;application-protection&#34;,&#34;title&#34;:&#34;Application Protection&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:article-topics/top-risks&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Top+Risks%22&#34;,&#34;name&#34;:&#34;top-risks&#34;,&#34;title&#34;:&#34;Top Risks&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/threats/web-application-attacks/brute-force&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Brute+force+attack%22&#34;,&#34;name&#34;:&#34;brute-force&#34;,&#34;title&#34;:&#34;Brute force attack&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/threats/web-application-attacks/credential-stuffing&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Credential+stuffing%22&#34;,&#34;name&#34;:&#34;credential-stuffing&#34;,&#34;title&#34;:&#34;Credential stuffing&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/threats/web-application-attacks/credential-theft&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Credential+theft%22&#34;,&#34;name&#34;:&#34;credential-theft&#34;,&#34;title&#34;:&#34;Credential theft&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a13/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a13/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a13/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;report&#34;,&#34;appTierAffected&#34;:[&#34;Services Tier&#34;,&#34;Access Tier&#34;,&#34;Client&#34;]},{&#34;topic&#34;:&#34;Fraud&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/article-topics/Fraud&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dFraud&#34;,&#34;date&#34;:&#34;April 14, 2021&#34;,&#34;contentDuration&#34;:&#34;4 min. read&#34;,&#34;publishDate&#34;:&#34;Apr 14, 2021 12:51:00 PM&#34;,&#34;title&#34;:&#34;Collusion Fraud: The Art of Gaming the System with Complicity&#34;,&#34;authors&#34;:[&#34;Shahnawaz Backer&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/shahnawaz-backer&#34;],&#34;contributors&#34;:[&#34;Yiing Chau Mak&#34;],&#34;contributorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/yiing-chau-mak&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/threat-intelligence/collusion-fraud-the-art-of-gaming-the-system-with-complicity&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/threat-intelligence/collusion-fraud-the-art-of-gaming-the-system-with-complicity&#34;,&#34;description&#34;:&#34;How platform business models are at an increased risk of fraud when two or more separate parties collude.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:article-topics/Fraud&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dFraud&#34;,&#34;name&#34;:&#34;Fraud&#34;,&#34;title&#34;:&#34;Fraud&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:Keywords/collusion&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCollusion&#34;,&#34;name&#34;:&#34;collusion&#34;,&#34;title&#34;:&#34;Collusion&#34;,&#34;isTopic&#34;:false,&#34;relatedKeywordTerms&#34;:&#34;&#34;},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/threats&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dThreats&#34;,&#34;name&#34;:&#34;threats&#34;,&#34;title&#34;:&#34;Threats&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a13/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a13/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a13/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;article&#34;,&#34;appTierAffected&#34;:[]}],&#34;firstName&#34;:&#34;Shahnawaz&#34;,&#34;id&#34;:-1813933071},{&#34;name&#34;:&#34;Dan Woods&#34;,&#34;summary&#34;:&#34;\u003cp\u003ePrior to F5, Dan Woods spent more than 20 years with local, state, and federal law enforcement and intelligence organizations including the FBI as a special agent where he investigated cyber terrorism, and the CIA where he served as a cyber operations officer.\u003c/p\u003e\r\n&#34;,&#34;imageReference&#34;:&#34;/content/dam/f5-labs-v2/_author-headshots/Dan_Woods_v6.jpg&#34;,&#34;searchLink&#34;:&#34;/content/f5-labs-v2/en/labs/search.author_Dan+Woods.html&#34;,&#34;jobTitle&#34;:&#34;Global Head of Intelligence&#34;,&#34;companyName&#34;:&#34;F5&#34;,&#34;articles&#34;:[{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;January 18, 2022&#34;,&#34;contentDuration&#34;:&#34;13 min. read&#34;,&#34;publishDate&#34;:&#34;Jan 18, 2022 2:56:00 PM&#34;,&#34;title&#34;:&#34;Cybersecurity Predictions for 2022 from F5 Labs (and Friends)&#34;,&#34;authors&#34;:[&#34;Sander Vinberg&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/sander-vinberg&#34;],&#34;contributors&#34;:[&#34;Remi Cohen&#34;,&#34;Raymond Pompon&#34;,&#34;Peter Scheffler&#34;,&#34;Dan Woods&#34;],&#34;contributorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/remi-cohen&#34;,&#34;/content/f5-labs-v2/en/authors/raymond-pompon&#34;,&#34;/content/f5-labs-v2/en/authors/peter-scheffler&#34;,&#34;/content/f5-labs-v2/en/authors/dan-woods&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/cybersecurity-predictions-for-2022-from-f5-labs-and-friends&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/cybersecurity-predictions-for-2022-from-f5-labs-and-friends&#34;,&#34;description&#34;:&#34;We asked a diverse group of F5 security experts about cybersecurity in 2022. Here’s what they said. We look at cyber-war, cyber-crime, the cloud, the supply chain, encryption keys, and new ransomware targets.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/controls/article-focus/relevance&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dRelevance&#34;,&#34;name&#34;:&#34;relevance&#34;,&#34;title&#34;:&#34;Relevance&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/governance&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dGovernance&#34;,&#34;name&#34;:&#34;governance&#34;,&#34;title&#34;:&#34;Governance&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/controls/defense-strategies/defending-infrastructure&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Defending+Infrastructure%22&#34;,&#34;name&#34;:&#34;defending-infrastructure&#34;,&#34;title&#34;:&#34;Defending Infrastructure&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/Risk&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dRisk&#34;,&#34;name&#34;:&#34;Risk&#34;,&#34;title&#34;:&#34;Risk&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a08/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a08/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a08/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;article&#34;,&#34;appTierAffected&#34;:[]},{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;May 14, 2021&#34;,&#34;contentDuration&#34;:&#34;10 min. read&#34;,&#34;publishDate&#34;:&#34;May 14, 2021 9:07:00 AM&#34;,&#34;title&#34;:&#34;I Was a Human CAPTCHA Solver&#34;,&#34;authors&#34;:[&#34;Dan Woods&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/dan-woods&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/i-was-a-human-captcha-solver&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/i-was-a-human-captcha-solver&#34;,&#34;description&#34;:&#34;A behind-the-scenes peek into the hidden world of human click farms.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:4,&#34;tagId&#34;:&#34;f5-labs-v2:Keywords/captcha&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCAPTCHA&#34;,&#34;name&#34;:&#34;captcha&#34;,&#34;title&#34;:&#34;CAPTCHA&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/ciso&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCISO&#34;,&#34;name&#34;:&#34;ciso&#34;,&#34;title&#34;:&#34;CISO&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/c-suite&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dC-Suite&#34;,&#34;name&#34;:&#34;c-suite&#34;,&#34;title&#34;:&#34;C-Suite&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a08/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a08/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a08/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;article&#34;,&#34;appTierAffected&#34;:[]},{&#34;topic&#34;:&#34;Top Risks&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/article-topics/top-risks&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003d%22Top+Risks%22&#34;,&#34;date&#34;:&#34;February 09, 2021&#34;,&#34;contentDuration&#34;:&#34;45 min. read&#34;,&#34;publishDate&#34;:&#34;Feb 9, 2021 1:00:00 PM&#34;,&#34;title&#34;:&#34;2021 Credential Stuffing Report&#34;,&#34;authors&#34;:[&#34;Sander Vinberg&#34;,&#34;Jarrod Overson&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/sander-vinberg&#34;,&#34;/content/f5-labs-v2/en/authors/jarrod-overson&#34;],&#34;contributors&#34;:[&#34;Dan Woods&#34;,&#34;Shuman Ghosemajumder&#34;,&#34;Sara Boddy&#34;,&#34;Raymond Pompon&#34;,&#34;Alexander Koritz&#34;],&#34;contributorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/dan-woods&#34;,&#34;/content/f5-labs-v2/en/authors/shuman-ghosemajumder&#34;,&#34;/content/f5-labs-v2/en/authors/sara-boddy&#34;,&#34;/content/f5-labs-v2/en/authors/raymond-pompon&#34;,&#34;/content/f5-labs-v2/en/authors/alexander_koritz&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/threat-intelligence/2021-credential-stuffing-report&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/threat-intelligence/2021-credential-stuffing-report&#34;,&#34;description&#34;:&#34;Credential stuffing is a multifaceted and enduring risk to organizations of all types and sizes. This report is a comprehensive examination of the entire life cycle of stolen credentials—from their theft, to their resale, and their repeated use in credential stuffing attacks.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:5,&#34;tagId&#34;:&#34;f5-labs-v2:category/threats/web-application-attacks/credential-stuffing&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Credential+stuffing%22&#34;,&#34;name&#34;:&#34;credential-stuffing&#34;,&#34;title&#34;:&#34;Credential stuffing&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:article-topics/top-risks&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Top+Risks%22&#34;,&#34;name&#34;:&#34;top-risks&#34;,&#34;title&#34;:&#34;Top Risks&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/threats/client-side-attacks&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Client-side+Attacks%22&#34;,&#34;name&#34;:&#34;client-side-attacks&#34;,&#34;title&#34;:&#34;Client-side Attacks&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/threats/web-application-attacks/brute-force&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Brute+force+attack%22&#34;,&#34;name&#34;:&#34;brute-force&#34;,&#34;title&#34;:&#34;Brute force attack&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/threats&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dThreats&#34;,&#34;name&#34;:&#34;threats&#34;,&#34;title&#34;:&#34;Threats&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a13/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a13/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a13/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;report&#34;,&#34;appTierAffected&#34;:[&#34;Access Tier&#34;]},{&#34;topic&#34;:&#34;Fraud&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/article-topics/Fraud&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dFraud&#34;,&#34;date&#34;:&#34;November 19, 2020&#34;,&#34;contentDuration&#34;:&#34;11 min.&#34;,&#34;publishDate&#34;:&#34;Nov 19, 2020 9:10:00 AM&#34;,&#34;title&#34;:&#34;Genesis Marketplace, a Digital Fingerprint Darknet Store&#34;,&#34;authors&#34;:[&#34;Dan Woods&#34;,&#34;Sara Boddy&#34;,&#34;Shahnawaz Backer&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/dan-woods&#34;,&#34;/content/f5-labs-v2/en/authors/sara-boddy&#34;,&#34;/content/f5-labs-v2/en/authors/shahnawaz-backer&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/threat-intelligence/genesis-marketplace--a-digital-fingerprint-darknet-store&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/threat-intelligence/genesis-marketplace--a-digital-fingerprint-darknet-store&#34;,&#34;description&#34;:&#34;Insights into Genesis Marketplace, a black market trading in digital identity.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:5,&#34;tagId&#34;:&#34;f5-labs-v2:Keywords/genesis-marketplace&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Genesis+Marketplace%22&#34;,&#34;name&#34;:&#34;genesis-marketplace&#34;,&#34;title&#34;:&#34;Genesis Marketplace&#34;,&#34;isTopic&#34;:false,&#34;relatedKeywordTerms&#34;:&#34;&#34;},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:Keywords/darknet&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dDarknet&#34;,&#34;name&#34;:&#34;darknet&#34;,&#34;title&#34;:&#34;Darknet&#34;,&#34;isTopic&#34;:false,&#34;relatedKeywordTerms&#34;:&#34;&#34;},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:article-topics/Fraud&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dFraud&#34;,&#34;name&#34;:&#34;Fraud&#34;,&#34;title&#34;:&#34;Fraud&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/threats/client-side-attacks&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Client-side+Attacks%22&#34;,&#34;name&#34;:&#34;client-side-attacks&#34;,&#34;title&#34;:&#34;Client-side Attacks&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/threats/client-side-attacks/client-platform-malware&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Client-platform+malware%22&#34;,&#34;name&#34;:&#34;client-platform-malware&#34;,&#34;title&#34;:&#34;Client-platform malware&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a07/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a07/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a07/optimize/article-tile-image.jpg&#34;,&#34;appTierAffected&#34;:[]}],&#34;firstName&#34;:&#34;Dan&#34;,&#34;id&#34;:363071563},{&#34;name&#34;:&#34;Mirell Metspalu&#34;,&#34;summary&#34;:&#34;\u003cp\u003eMirell Metspalu is a Senior Privacy Analyst in F5. She has previously worked in fintech, consultancy and carried out legal research. With keen interest in privacy and data protection, UX design and product management, she focuses on helping product teams on building compliant, user friendly and ethical products.\u003c/p\u003e\r\n&#34;,&#34;imageReference&#34;:&#34;/content/dam/f5-labs-v2/_author-headshots/Mirell_Metspalu.png&#34;,&#34;searchLink&#34;:&#34;/content/f5-labs-v2/en/labs/search.author_Mirell+Metspalu.html&#34;,&#34;jobTitle&#34;:&#34;Sr Privacy Analyst&#34;,&#34;companyName&#34;:&#34;F5&#34;,&#34;articles&#34;:[{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;January 28, 2021&#34;,&#34;contentDuration&#34;:&#34;5 min. read&#34;,&#34;publishDate&#34;:&#34;Jan 28, 2021 9:07:00 AM&#34;,&#34;title&#34;:&#34;Privacy by Design for Ethical Applications&#34;,&#34;authors&#34;:[&#34;Mirell Metspalu&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/mirell-metspalu&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/privacy-by-design-for-ethical-applications&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/privacy-by-design-for-ethical-applications&#34;,&#34;description&#34;:&#34;Privacy by Design is key to ethical app design and includes anticipating for all possible uses of collected data.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:Keywords/privacy&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dprivacy&#34;,&#34;name&#34;:&#34;privacy&#34;,&#34;title&#34;:&#34;privacy&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/GDPR&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dGDPR&#34;,&#34;name&#34;:&#34;GDPR&#34;,&#34;title&#34;:&#34;GDPR&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/ciso&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCISO&#34;,&#34;name&#34;:&#34;ciso&#34;,&#34;title&#34;:&#34;CISO&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/compliance-\u0026-legal&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Compliance+%26+Legal%22&#34;,&#34;name&#34;:&#34;compliance-\u0026-legal&#34;,&#34;title&#34;:&#34;Compliance \u0026 Legal&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a10/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a10/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a10/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[]}],&#34;firstName&#34;:&#34;Mirell&#34;,&#34;id&#34;:-2015875088},{&#34;name&#34;:&#34;Mike Simon&#34;,&#34;summary&#34;:&#34;\u003cp\u003eWith an education in computer science and 25 years of experience designing and securing information systems, Mike Simon is a well-known and highly respected member of the Northwest’s information security community. He is faculty at the University of Washington Information School, a published author, an active collaborator in the PRISEM and PICES projects and other regional initiatives, a subject matter expert in the energy and finance sectors, and integrated with law enforcement through contacts in the FBI, DHS, and Infragard. As Critical Informatics’ Chief Technology Officer, he leads development teams for the Critical Insight security monitoring platform and the associated Critical Insight Collector-sensor, directs our Big Data and Data Analytics program and helps to set company direction and strategy.\u003c/p\u003e\r\n&#34;,&#34;imageReference&#34;:&#34;/content/dam/f5-labs-v2/_author-headshots/Mike_Simon.png&#34;,&#34;searchLink&#34;:&#34;/content/f5-labs-v2/en/labs/search.author_Mike+Simon.html&#34;,&#34;jobTitle&#34;:&#34;CTO&#34;,&#34;companyName&#34;:&#34;Critical Informatics&#34;,&#34;companyPageUrl&#34;:&#34;https://ci.security/&#34;,&#34;articles&#34;:[{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;February 06, 2019&#34;,&#34;contentDuration&#34;:&#34;4 min. read&#34;,&#34;publishDate&#34;:&#34;Feb 6, 2019 8:28:00 AM&#34;,&#34;title&#34;:&#34;If I Had to Do It Over Again, Part 2&#34;,&#34;authors&#34;:[&#34;Raymond Pompon&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/raymond-pompon&#34;],&#34;contributors&#34;:[&#34;Sara Boddy&#34;,&#34;Mike Simon&#34;,&#34;Todd Plesco&#34;,&#34;Kate Wakefield&#34;],&#34;contributorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/sara-boddy&#34;,&#34;/content/f5-labs-v2/en/authors/mike-simon&#34;,&#34;/content/f5-labs-v2/en/authors/todd-plesco&#34;,&#34;/content/f5-labs-v2/en/authors/kate-wakefield&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/if-i-had-it-to-do-over-again-part-2&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/if-i-had-it-to-do-over-again-part-2&#34;,&#34;description&#34;:&#34;More lessons learned from CISOs about “fire and forget,” physical security, the human factor, and audit logging.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/career-path&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Career+Path%22&#34;,&#34;name&#34;:&#34;career-path&#34;,&#34;title&#34;:&#34;Career Path&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;industry:healthcare&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dHealthcare&#34;,&#34;name&#34;:&#34;healthcare&#34;,&#34;title&#34;:&#34;Healthcare&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/governance&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dGovernance&#34;,&#34;name&#34;:&#34;governance&#34;,&#34;title&#34;:&#34;Governance&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/Risk&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dRisk&#34;,&#34;name&#34;:&#34;Risk&#34;,&#34;title&#34;:&#34;Risk&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a11/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a11/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a11/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[]},{&#34;topic&#34;:&#34;Controls&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/controls&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dControls&#34;,&#34;date&#34;:&#34;December 13, 2017&#34;,&#34;contentDuration&#34;:&#34;9 min. read&#34;,&#34;publishDate&#34;:&#34;Nov 2, 2017 12:00:00 AM&#34;,&#34;title&#34;:&#34;Can Engineers Build Networks Too Complicated for Humans to Operate? Part II: Making Sense of Network Activities and System Behaviors&#34;,&#34;authors&#34;:[&#34;Mike Simon&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/mike-simon&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/can-engineers-build-networks-too-complicated-for-humans-to-operate-part-ii-making-sense-of-network-activities-and-system-behaviors&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/can-engineers-build-networks-too-complicated-for-humans-to-operate-part-ii-making-sense-of-network-activities-and-system-behaviors&#34;,&#34;description&#34;:&#34;How to selectively capture packets for further analysis and avoid buying a storage farm.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/controls&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dControls&#34;,&#34;name&#34;:&#34;controls&#34;,&#34;title&#34;:&#34;Controls&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/risk-management&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22risk+management%22&#34;,&#34;name&#34;:&#34;risk-management&#34;,&#34;title&#34;:&#34;risk management&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/ciso&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCISO&#34;,&#34;name&#34;:&#34;ciso&#34;,&#34;title&#34;:&#34;CISO&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/packet-analysis&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22packet+analysis%22&#34;,&#34;name&#34;:&#34;packet-analysis&#34;,&#34;title&#34;:&#34;packet analysis&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/complex-systems&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22complex+systems%22&#34;,&#34;name&#34;:&#34;complex-systems&#34;,&#34;title&#34;:&#34;complex systems&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a05/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a05/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a05/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[&#34;Client&#34;]},{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;October 30, 2017&#34;,&#34;contentDuration&#34;:&#34;6 min. read&#34;,&#34;publishDate&#34;:&#34;Aug 3, 2017 12:00:00 AM&#34;,&#34;title&#34;:&#34;Can Engineers Build Networks Too Complicated for Humans to Operate? Part I: Scope of the Problem&#34;,&#34;authors&#34;:[&#34;Mike Simon&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/mike-simon&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/can-engineers-build-networks-too-complicated-for-humans-to-operate-part-i-scope-of-the-problem&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/can-engineers-build-networks-too-complicated-for-humans-to-operate-part-i-scope-of-the-problem&#34;,&#34;description&#34;:&#34;This series explores how InfoSec practitioners can use math, technology, and critical thinking to mitigate risk in a world where networks and data have surpassed the scope of human comprehension.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/risk-management&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22risk+management%22&#34;,&#34;name&#34;:&#34;risk-management&#34;,&#34;title&#34;:&#34;risk management&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/ciso&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCISO&#34;,&#34;name&#34;:&#34;ciso&#34;,&#34;title&#34;:&#34;CISO&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/packet-analysis&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22packet+analysis%22&#34;,&#34;name&#34;:&#34;packet-analysis&#34;,&#34;title&#34;:&#34;packet analysis&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/complex-systems&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22complex+systems%22&#34;,&#34;name&#34;:&#34;complex-systems&#34;,&#34;title&#34;:&#34;complex systems&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a09/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a09/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a09/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[&#34;Client&#34;]}],&#34;firstName&#34;:&#34;Mike&#34;,&#34;id&#34;:-842160816},{&#34;name&#34;:&#34;Mike Hamilton&#34;,&#34;summary&#34;:&#34;\u003cp\u003eMike Hamilton is the founder and CISO of CI Security (formerly Critical Informatics). He has 25 years experience in Information Security as a practitioner, entrepreneur, consultant, and in executive management. He also has direct experience in retail, manufacturing, government, defense, academic, semiconductor, energy, law enforcement, transportation, publishing and financial sectors - from Fortune 1 to small nonprofits. \u003c/p\u003e\r\n&#34;,&#34;imageReference&#34;:&#34;/content/dam/f5-labs-v2/_author-headshots/Mike_Hamilton.png&#34;,&#34;searchLink&#34;:&#34;/content/f5-labs-v2/en/labs/search.author_Mike+Hamilton.html&#34;,&#34;jobTitle&#34;:&#34;Founder, CISO&#34;,&#34;companyName&#34;:&#34;CI Security&#34;,&#34;companyPageUrl&#34;:&#34;https://ci.security/&#34;,&#34;articles&#34;:[{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;January 15, 2019&#34;,&#34;contentDuration&#34;:&#34;5 min. read&#34;,&#34;publishDate&#34;:&#34;Jan 15, 2019 3:34:00 PM&#34;,&#34;title&#34;:&#34;If I Had to Do It Over Again&#34;,&#34;authors&#34;:[&#34;Raymond Pompon&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/raymond-pompon&#34;],&#34;contributors&#34;:[&#34;Erik Pierson&#34;,&#34;Mike Hamilton&#34;,&#34;Mary Gardner&#34;],&#34;contributorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/erik-pierson&#34;,&#34;/content/f5-labs-v2/en/authors/mike-hamilton&#34;,&#34;/content/f5-labs-v2/en/authors/mary-gardner&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/if-i-had-it-to-do-over-again&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/if-i-had-it-to-do-over-again&#34;,&#34;description&#34;:&#34;Learn from CISOs who describe how they would “do it over” again in some of their early security program deployments.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/career-path&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Career+Path%22&#34;,&#34;name&#34;:&#34;career-path&#34;,&#34;title&#34;:&#34;Career Path&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;industry:healthcare&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dHealthcare&#34;,&#34;name&#34;:&#34;healthcare&#34;,&#34;title&#34;:&#34;Healthcare&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/governance&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dGovernance&#34;,&#34;name&#34;:&#34;governance&#34;,&#34;title&#34;:&#34;Governance&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/Risk&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dRisk&#34;,&#34;name&#34;:&#34;Risk&#34;,&#34;title&#34;:&#34;Risk&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a11/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a11/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a11/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[]}],&#34;firstName&#34;:&#34;Mike&#34;,&#34;id&#34;:2133310420},{&#34;name&#34;:&#34;Aaron Zander&#34;,&#34;summary&#34;:&#34;\u003cp\u003eAaron Zander is the Head of IT at HackerOne. Aaron is an Information Technology professional with more than 10 years of IT networking and security experience. Aaron is dedicated towards creating business efficient processes that increase ROI and create better experiences for end users and teams. Prior to HackerOne, Aaron served in technical IT leadership roles at Sitecore and Drop.\u0026nbsp; Aaron is based in San Francisco, California. He oversees IT for all of HackerOne’s global offices including Singapore, Europe and the UK.\u003c/p\u003e\r\n&#34;,&#34;imageReference&#34;:&#34;/content/dam/f5-labs-v2/_author-headshots/Aaron_Zander.png&#34;,&#34;searchLink&#34;:&#34;/content/f5-labs-v2/en/labs/search.author_Aaron+Zander.html&#34;,&#34;jobTitle&#34;:&#34;Head of IT&#34;,&#34;companyName&#34;:&#34;HackerOne&#34;,&#34;companyPageUrl&#34;:&#34;https://www.hackerone.com/blog&#34;,&#34;articles&#34;:[{&#34;topic&#34;:&#34;Controls&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/controls&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dControls&#34;,&#34;date&#34;:&#34;June 09, 2020&#34;,&#34;contentDuration&#34;:&#34;8 min. read&#34;,&#34;publishDate&#34;:&#34;Jun 9, 2020 1:12:00 PM&#34;,&#34;title&#34;:&#34;Using Zero Trust to Secure Your Company When Going Remote&#34;,&#34;authors&#34;:[&#34;Aaron Zander&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/aaron-zander&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/using-zero-trust-to-secure-your-company-when-going-remote&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/using-zero-trust-to-secure-your-company-when-going-remote&#34;,&#34;description&#34;:&#34;How to move your workforce securely to remote access with zero trust networking.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:5,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/zero-trust&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Zero+Trust%22&#34;,&#34;name&#34;:&#34;zero-trust&#34;,&#34;title&#34;:&#34;Zero Trust&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/controls&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dControls&#34;,&#34;name&#34;:&#34;controls&#34;,&#34;title&#34;:&#34;Controls&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/beyond-corp&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Beyond+Corp%22&#34;,&#34;name&#34;:&#34;beyond-corp&#34;,&#34;title&#34;:&#34;Beyond Corp&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/ciso&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCISO&#34;,&#34;name&#34;:&#34;ciso&#34;,&#34;title&#34;:&#34;CISO&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/controls/defense-strategies/defending-clients&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Defending+Clients%22&#34;,&#34;name&#34;:&#34;defending-clients&#34;,&#34;title&#34;:&#34;Defending Clients&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a03/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a03/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a03/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[]}],&#34;firstName&#34;:&#34;Aaron&#34;,&#34;id&#34;:-235695977},{&#34;name&#34;:&#34;Kip Boyle&#34;,&#34;summary&#34;:&#34;\u003cp\u003eKip Boyle is the CEO of Cyber Risk Opportunities, whose mission is to help executives become better cyber risk managers. He has over 24 years of cybersecurity experience serving in such roles as Chief Information Security Officer (CISO) for PEMCO Insurance and Director of Wide Area Network Security for the F-22 Raptor. In addition to his work with many large, global organizations at the Stanford Research Institute, Kip has also held other cyber risk management roles for organizations in the financial services, technology, telecom, military, civil engineering, and logistics industries.\u003c/p\u003e\r\n&#34;,&#34;imageReference&#34;:&#34;/content/dam/f5-labs-v2/_author-headshots/Kip_Boyle.png&#34;,&#34;searchLink&#34;:&#34;/content/f5-labs-v2/en/labs/search.author_Kip+Boyle.html&#34;,&#34;jobTitle&#34;:&#34;CEO&#34;,&#34;companyName&#34;:&#34;Cyber Risk Opportunities&#34;,&#34;companyPageUrl&#34;:&#34;https://www.cyberriskopportunities.com/&#34;,&#34;articles&#34;:[{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;May 17, 2018&#34;,&#34;contentDuration&#34;:&#34;7 min. read&#34;,&#34;publishDate&#34;:&#34;May 17, 2018 12:00:00 AM&#34;,&#34;title&#34;:&#34;Managing Compliance Issues within the Value Chain&#34;,&#34;authors&#34;:[&#34;Kip Boyle&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/kip-boyle&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/managing-compliance-issues-within-the-value-chain&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/managing-compliance-issues-within-the-value-chain&#34;,&#34;description&#34;:&#34;Align your compliance requirements with your other business requirements so you can distinguish what you must do from what’s nice to do.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/third-party-liability&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22third+party+liability%22&#34;,&#34;name&#34;:&#34;third-party-liability&#34;,&#34;title&#34;:&#34;third party liability&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/third-party-security&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22third+party+security%22&#34;,&#34;name&#34;:&#34;third-party-security&#34;,&#34;title&#34;:&#34;third party security&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/ciso&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCISO&#34;,&#34;name&#34;:&#34;ciso&#34;,&#34;title&#34;:&#34;CISO&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/compliance&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dcompliance&#34;,&#34;name&#34;:&#34;compliance&#34;,&#34;title&#34;:&#34;compliance&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a03/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a03/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a03/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[&#34;Services Tier&#34;]}],&#34;firstName&#34;:&#34;Kip&#34;,&#34;id&#34;:782047147},{&#34;name&#34;:&#34;Erik Pierson&#34;,&#34;summary&#34;:&#34;\u003cp\u003eErik Pierson is the Director of Information Security at Slalom Consulting, with over 20 years experience in the field.\u003c/p\u003e\r\n&#34;,&#34;imageReference&#34;:&#34;/content/dam/f5-labs-v2/_author-headshots/Erik_Pierson.png&#34;,&#34;searchLink&#34;:&#34;/content/f5-labs-v2/en/labs/search.author_Erik+Pierson.html&#34;,&#34;jobTitle&#34;:&#34;Director of Information Security&#34;,&#34;companyName&#34;:&#34;Slalom Consulting&#34;,&#34;companyPageUrl&#34;:&#34;https://www.slalom.com/&#34;,&#34;articles&#34;:[{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;January 15, 2019&#34;,&#34;contentDuration&#34;:&#34;5 min. read&#34;,&#34;publishDate&#34;:&#34;Jan 15, 2019 3:34:00 PM&#34;,&#34;title&#34;:&#34;If I Had to Do It Over Again&#34;,&#34;authors&#34;:[&#34;Raymond Pompon&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/raymond-pompon&#34;],&#34;contributors&#34;:[&#34;Erik Pierson&#34;,&#34;Mike Hamilton&#34;,&#34;Mary Gardner&#34;],&#34;contributorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/erik-pierson&#34;,&#34;/content/f5-labs-v2/en/authors/mike-hamilton&#34;,&#34;/content/f5-labs-v2/en/authors/mary-gardner&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/if-i-had-it-to-do-over-again&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/if-i-had-it-to-do-over-again&#34;,&#34;description&#34;:&#34;Learn from CISOs who describe how they would “do it over” again in some of their early security program deployments.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/career-path&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Career+Path%22&#34;,&#34;name&#34;:&#34;career-path&#34;,&#34;title&#34;:&#34;Career Path&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;industry:healthcare&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dHealthcare&#34;,&#34;name&#34;:&#34;healthcare&#34;,&#34;title&#34;:&#34;Healthcare&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/governance&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dGovernance&#34;,&#34;name&#34;:&#34;governance&#34;,&#34;title&#34;:&#34;Governance&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/Risk&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dRisk&#34;,&#34;name&#34;:&#34;Risk&#34;,&#34;title&#34;:&#34;Risk&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a11/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a11/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a11/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[]}],&#34;firstName&#34;:&#34;Erik&#34;,&#34;id&#34;:-43669857},{&#34;name&#34;:&#34;Wendy Nather&#34;,&#34;summary&#34;:&#34;\u003cp\u003eWendy Nather is Principal Security Strategist at Duo Security. She was previously the Research Director at the Retail ISAC, as well as Research Director of the Information Security Practice at independent analyst firm 451 Research. Wendy led IT security for the EMEA region of the investment banking division of Swiss Bank Corporation (now UBS), and served as CISO of the Texas Education Agency. She speaks regularly on topics ranging from threat intelligence to identity and access management, risk analysis, incident response, data security, and societal and privacy issues. Wendy is co-author of \u003ci\u003eThe Cloud Security Rules\u003c/i\u003e, and was listed as one of SC Magazine\u0027s Women in IT Security \u0026quot;Power Players\u0026quot; in 2014. \u003c/p\u003e\r\n&#34;,&#34;imageReference&#34;:&#34;/content/dam/f5-labs-v2/_author-headshots/Wendy_Nather.png&#34;,&#34;searchLink&#34;:&#34;/content/f5-labs-v2/en/labs/search.author_Wendy+Nather.html&#34;,&#34;jobTitle&#34;:&#34;Principal Security Strategist&#34;,&#34;companyName&#34;:&#34;Duo Security&#34;,&#34;companyPageUrl&#34;:&#34;https://duo.com/blog/post-author/wnather&#34;,&#34;articles&#34;:[{&#34;topic&#34;:&#34;Controls&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/controls&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dControls&#34;,&#34;date&#34;:&#34;July 24, 2017&#34;,&#34;contentDuration&#34;:&#34;6 min. read&#34;,&#34;publishDate&#34;:&#34;Apr 4, 2017 12:00:00 AM&#34;,&#34;title&#34;:&#34;Wait, Don’t Throw Out Your Firewalls!&#34;,&#34;authors&#34;:[&#34;Wendy Nather&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/wendy-nather&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/wait-dont-throw-out-your-firewalls-25982&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/wait-dont-throw-out-your-firewalls-25982&#34;,&#34;description&#34;:&#34;Yes, the perimeter has shifted, but firewalls still have a place in your network. They’re just not alone anymore.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/controls&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dControls&#34;,&#34;name&#34;:&#34;controls&#34;,&#34;title&#34;:&#34;Controls&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/beyond-corp&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Beyond+Corp%22&#34;,&#34;name&#34;:&#34;beyond-corp&#34;,&#34;title&#34;:&#34;Beyond Corp&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/zero-trust&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Zero+Trust%22&#34;,&#34;name&#34;:&#34;zero-trust&#34;,&#34;title&#34;:&#34;Zero Trust&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/ciso&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCISO&#34;,&#34;name&#34;:&#34;ciso&#34;,&#34;title&#34;:&#34;CISO&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/security-architecture&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22security+architecture%22&#34;,&#34;name&#34;:&#34;security-architecture&#34;,&#34;title&#34;:&#34;security architecture&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a14/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a14/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a14/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[&#34;Client&#34;]}],&#34;firstName&#34;:&#34;Wendy&#34;,&#34;id&#34;:-1943454051},{&#34;name&#34;:&#34;Ravila White&#34;,&#34;summary&#34;:&#34;\u003cp\u003eRavila White is currently a Deputy Director of Enterprise Security Architecture at a global healthcare company. She has over 15 years of experience in Information Technology and Information Security with a career spanning non-profit, healthcare, e-commerce and educations sectors. She has experience as a whitehat, strategist, architect, auditor, incident handler and various leadership roles.  She applies reverse engineering and logic-based information modeling to her work. Ravila carries CISSP, CISM, CISA, CIPP, GCIH and ITIL v3 certifications along with a MSc information Security from the University of Royal Holloway. She regularly presents at local and national events on information assurance topics and is published on a national and global level. She is also a member of the PacCISO and Agora.\u003c/p\u003e\r\n&#34;,&#34;imageReference&#34;:&#34;/content/dam/f5-labs-v2/_author-headshots/Ravila_White.png&#34;,&#34;searchLink&#34;:&#34;/content/f5-labs-v2/en/labs/search.author_Ravila+White.html&#34;,&#34;jobTitle&#34;:&#34;Deputy Director of Enterprise Security Architecture&#34;,&#34;articles&#34;:[{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;January 12, 2018&#34;,&#34;contentDuration&#34;:&#34;4 min. read&#34;,&#34;publishDate&#34;:&#34;Dec 26, 2017 12:00:00 AM&#34;,&#34;title&#34;:&#34;Achieving Multi-Dimensional Security Through Information Modeling—Modeling Inversion Part 5&#34;,&#34;authors&#34;:[&#34;Ravila White&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/ravila-white&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/achieving-multi-dimensional-security-through-information-modelingmodeling-inversion-part-5&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/achieving-multi-dimensional-security-through-information-modelingmodeling-inversion-part-5&#34;,&#34;description&#34;:&#34;In Part 5 of this blog series, we use inversion modeling techniques to develop a high-level protection strategy.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/ciso&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCISO&#34;,&#34;name&#34;:&#34;ciso&#34;,&#34;title&#34;:&#34;CISO&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/compliance&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dcompliance&#34;,&#34;name&#34;:&#34;compliance&#34;,&#34;title&#34;:&#34;compliance&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/security-architecture&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22security+architecture%22&#34;,&#34;name&#34;:&#34;security-architecture&#34;,&#34;title&#34;:&#34;security architecture&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/information-modeling&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22information+modeling%22&#34;,&#34;name&#34;:&#34;information-modeling&#34;,&#34;title&#34;:&#34;information modeling&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a04/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a04/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a04/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[&#34;Client&#34;]},{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;January 02, 2018&#34;,&#34;contentDuration&#34;:&#34;5 min. read&#34;,&#34;publishDate&#34;:&#34;Nov 28, 2017 12:00:00 AM&#34;,&#34;title&#34;:&#34;Achieving Multi-Dimensional Security Through Information Modeling—Unwrapping Controls Part 4&#34;,&#34;authors&#34;:[&#34;Ravila White&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/ravila-white&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/achieving-multi-dimensional-security-through-information-modelingunwrapping-controls-part-4&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/achieving-multi-dimensional-security-through-information-modelingunwrapping-controls-part-4&#34;,&#34;description&#34;:&#34;In Part 3 of this blog series, we demonstrated modeling the threat landscape along with executive threat-modeling. In this blog, we discuss the importance of defining controls.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/ciso&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCISO&#34;,&#34;name&#34;:&#34;ciso&#34;,&#34;title&#34;:&#34;CISO&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/compliance&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dcompliance&#34;,&#34;name&#34;:&#34;compliance&#34;,&#34;title&#34;:&#34;compliance&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/security-architecture&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22security+architecture%22&#34;,&#34;name&#34;:&#34;security-architecture&#34;,&#34;title&#34;:&#34;security architecture&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/information-modeling&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22information+modeling%22&#34;,&#34;name&#34;:&#34;information-modeling&#34;,&#34;title&#34;:&#34;information modeling&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a15/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a15/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a15/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[&#34;Client&#34;]},{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;October 10, 2017&#34;,&#34;contentDuration&#34;:&#34;5 min. read&#34;,&#34;publishDate&#34;:&#34;Aug 23, 2017 12:00:00 AM&#34;,&#34;title&#34;:&#34;Achieving Multi-Dimensional Security Through Information Modeling—Executive Threat Modeling Part 3&#34;,&#34;authors&#34;:[&#34;Ravila White&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/ravila-white&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/achieving-multi-dimensional-security-through-information-modelingexecutive-threat-modeling-part-3&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/achieving-multi-dimensional-security-through-information-modelingexecutive-threat-modeling-part-3&#34;,&#34;description&#34;:&#34;How InfoSec leaders can build successful threat models by defining the threat landscape and its component resources, then asking simple, situational questions.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/ciso&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCISO&#34;,&#34;name&#34;:&#34;ciso&#34;,&#34;title&#34;:&#34;CISO&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/compliance&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dcompliance&#34;,&#34;name&#34;:&#34;compliance&#34;,&#34;title&#34;:&#34;compliance&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/security-architecture&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22security+architecture%22&#34;,&#34;name&#34;:&#34;security-architecture&#34;,&#34;title&#34;:&#34;security architecture&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/information-modeling&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22information+modeling%22&#34;,&#34;name&#34;:&#34;information-modeling&#34;,&#34;title&#34;:&#34;information modeling&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a01/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a01/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a01/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[&#34;Client&#34;]},{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;August 03, 2017&#34;,&#34;contentDuration&#34;:&#34;7 min. read&#34;,&#34;publishDate&#34;:&#34;Jun 22, 2017 12:00:00 AM&#34;,&#34;title&#34;:&#34;Achieving Multi-Dimensional Security Through Information Modeling—The Master Model Part 2&#34;,&#34;authors&#34;:[&#34;Ravila White&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/ravila-white&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/achieving-multi-dimensional-security-through-information-modelingthe-master-model-part-2&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/achieving-multi-dimensional-security-through-information-modelingthe-master-model-part-2&#34;,&#34;description&#34;:&#34;Understanding the customer segment of your organization is critical to developing a strategy that ensures regulatory compliance.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/ciso&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCISO&#34;,&#34;name&#34;:&#34;ciso&#34;,&#34;title&#34;:&#34;CISO&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/compliance&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dcompliance&#34;,&#34;name&#34;:&#34;compliance&#34;,&#34;title&#34;:&#34;compliance&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/security-architecture&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22security+architecture%22&#34;,&#34;name&#34;:&#34;security-architecture&#34;,&#34;title&#34;:&#34;security architecture&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/information-modeling&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22information+modeling%22&#34;,&#34;name&#34;:&#34;information-modeling&#34;,&#34;title&#34;:&#34;information modeling&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a04/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a04/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a04/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[&#34;Client&#34;]}],&#34;firstName&#34;:&#34;Ravila&#34;,&#34;id&#34;:-640364060},{&#34;name&#34;:&#34;Masako Long&#34;,&#34;summary&#34;:&#34;\u003cp\u003eMasako Long is a Senior Sales Executive at DefenseStorm, where she empowers financial institutions to take control of their cybersafety and soundness through understanding and appropriate action. She is passionate about making security an everyday conversation and enjoys bridging the technical gap.\u003c/p\u003e\r\n\u003cp\u003eThroughout her technology sales career, Masako has supported a wide range of industries from seafood, aerospace, healthcare, high tech, finance, critical infrastructure, with some of the biggest companies to small local companies. She attributes her knowledge primary to listening (A LOT!), taking good notes (although often illegible), and participating in a few security organizations.\u003c/p\u003e\r\n\u003cp\u003eTo contact Masako, email at \u003ca href\u003d\&#34;mailto:masako.long@defensestorm.com\&#34; target\u003d\&#34;_blank\&#34;\u003emasako.long@defensestorm.com\u003c/a\u003e or find her on LinkedIn: \u003ca href\u003d\&#34;https://www.linkedin.com/in/masako/\&#34; target\u003d\&#34;_blank\&#34;\u003ehttps://www.linkedin.com/in/masako/\u003c/a\u003e\u003c/p\u003e\r\n&#34;,&#34;imageReference&#34;:&#34;/content/dam/f5-labs-v2/_author-headshots/Masako_Long.png&#34;,&#34;searchLink&#34;:&#34;/content/f5-labs-v2/en/labs/search.author_Masako+Long.html&#34;,&#34;jobTitle&#34;:&#34;Senior Sales Executive&#34;,&#34;companyName&#34;:&#34;DefenseStorm&#34;,&#34;companyPageUrl&#34;:&#34;https://www.defensestorm.com/&#34;,&#34;articles&#34;:[{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;October 25, 2018&#34;,&#34;contentDuration&#34;:&#34;7 min. read&#34;,&#34;publishDate&#34;:&#34;Oct 25, 2018 10:15:00 AM&#34;,&#34;title&#34;:&#34;“Fire the CISO!”&#34;,&#34;authors&#34;:[&#34;Masako Long&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/masako-long&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/--fire-the-ciso--&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/--fire-the-ciso--&#34;,&#34;description&#34;:&#34;Managing cybersecurity and protecting the business should be a team effort, so don’t let your CISO become the easy scapegoat when things go wrong.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/ciso&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCISO&#34;,&#34;name&#34;:&#34;ciso&#34;,&#34;title&#34;:&#34;CISO&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/risk-communication&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22risk+communication%22&#34;,&#34;name&#34;:&#34;risk-communication&#34;,&#34;title&#34;:&#34;risk communication&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a15/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a15/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a15/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[]}],&#34;firstName&#34;:&#34;Masako&#34;,&#34;id&#34;:-322724156},{&#34;name&#34;:&#34;Paul Farrall&#34;,&#34;summary&#34;:&#34;\u003cp\u003ePaul Farrall currently holds the position of Vice President \u0026amp; Chief Information Security Officer at Skytap, a Cloud Infrastructure provider headquartered in Seattle, WA. For the past 15 years, Paul has been focused on Information Security and IT Operations at a variety of organizations ranging from Fortune 500 companies to small technology startups. Prior to Skytap, he was VP of Operations and Information Security for Big Fish Games, where he had overall responsibility for Information Security and IT Operations. Paul’s current interests include the emerging intersection of privacy and cybersecurity; integrating agile security into Devops; and developing cybersecurity best practices for cloud services providers.\u003c/p\u003e\r\n&#34;,&#34;imageReference&#34;:&#34;/content/dam/f5-labs-v2/_author-headshots/Paul_Farrall.png&#34;,&#34;searchLink&#34;:&#34;/content/f5-labs-v2/en/labs/search.author_Paul+Farrall.html&#34;,&#34;jobTitle&#34;:&#34;Vice President and CISO&#34;,&#34;companyName&#34;:&#34;Skytap&#34;,&#34;articles&#34;:[{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;April 18, 2019&#34;,&#34;contentDuration&#34;:&#34;6 min. read&#34;,&#34;publishDate&#34;:&#34;Apr 18, 2019 7:51:00 AM&#34;,&#34;title&#34;:&#34;If I Had To Do It Over Again, Part 3&#34;,&#34;authors&#34;:[&#34;Raymond Pompon&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/raymond-pompon&#34;],&#34;contributors&#34;:[&#34;Paul Farrall&#34;,&#34;Preston Hogue&#34;,&#34;Taeil Goh&#34;],&#34;contributorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/paul-farrall&#34;,&#34;/content/f5-labs-v2/en/authors/preston-hogue&#34;,&#34;/content/f5-labs-v2/en/authors/taeil-goh&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/if-i-had-to-do-it-over-again--part-3&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/if-i-had-to-do-it-over-again--part-3&#34;,&#34;description&#34;:&#34;More stories from CISOs who describe how they would “do it over” again in some of their early security program deployments.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/career-path&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Career+Path%22&#34;,&#34;name&#34;:&#34;career-path&#34;,&#34;title&#34;:&#34;Career Path&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;industry:healthcare&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dHealthcare&#34;,&#34;name&#34;:&#34;healthcare&#34;,&#34;title&#34;:&#34;Healthcare&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/governance&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dGovernance&#34;,&#34;name&#34;:&#34;governance&#34;,&#34;title&#34;:&#34;Governance&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/Risk&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dRisk&#34;,&#34;name&#34;:&#34;Risk&#34;,&#34;title&#34;:&#34;Risk&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a12/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a12/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a12/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[]}],&#34;firstName&#34;:&#34;Paul&#34;,&#34;id&#34;:1449513714},{&#34;name&#34;:&#34;Todd Plesco&#34;,&#34;summary&#34;:&#34;\u003cp\u003eTodd Plesco is the Chief Information Security Officer of PrescribeWellness.  PrescribeWellness\u0027s cloud-based platform is used by pharmacies and other healthcare professionals to provide more effective, preventive healthcare services, which improve medication adherence, chronic disease management, transitions in care, and population health.\u003cbr /\u003e\r\n\u003cbr /\u003e\r\nMr. Plesco is responsible for developing and executing cyber security strategy and leading teams focused on risk management, security engineering, application security, cyber security operations and policy, and company-wide cyber security resiliency. His mission promotes a vigilant culture which places a high value on the protection of privacy and security for information resources and protection of personal health information entrusted to PrescribeWellness.\u003c/p\u003e\r\n\u003cp\u003e\u003ca href\u003d\&#34;http://www.infosecurity.pro/\&#34;\u003ehttp://www.infosecurity.pro/\u003c/a\u003e\u003c/p\u003e\r\n&#34;,&#34;imageReference&#34;:&#34;/content/dam/f5-labs-v2/_author-headshots/Todd_Plesco.png&#34;,&#34;searchLink&#34;:&#34;/content/f5-labs-v2/en/labs/search.author_Todd+Plesco.html&#34;,&#34;jobTitle&#34;:&#34;CISO&#34;,&#34;companyName&#34;:&#34;PrescribeWellness&#34;,&#34;articles&#34;:[{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;February 06, 2019&#34;,&#34;contentDuration&#34;:&#34;4 min. read&#34;,&#34;publishDate&#34;:&#34;Feb 6, 2019 8:28:00 AM&#34;,&#34;title&#34;:&#34;If I Had to Do It Over Again, Part 2&#34;,&#34;authors&#34;:[&#34;Raymond Pompon&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/raymond-pompon&#34;],&#34;contributors&#34;:[&#34;Sara Boddy&#34;,&#34;Mike Simon&#34;,&#34;Todd Plesco&#34;,&#34;Kate Wakefield&#34;],&#34;contributorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/sara-boddy&#34;,&#34;/content/f5-labs-v2/en/authors/mike-simon&#34;,&#34;/content/f5-labs-v2/en/authors/todd-plesco&#34;,&#34;/content/f5-labs-v2/en/authors/kate-wakefield&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/if-i-had-it-to-do-over-again-part-2&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/if-i-had-it-to-do-over-again-part-2&#34;,&#34;description&#34;:&#34;More lessons learned from CISOs about “fire and forget,” physical security, the human factor, and audit logging.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/career-path&#34;,&#34;url&#34;:&#34;/labs/search?q\u003d%22Career+Path%22&#34;,&#34;name&#34;:&#34;career-path&#34;,&#34;title&#34;:&#34;Career Path&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;industry:healthcare&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dHealthcare&#34;,&#34;name&#34;:&#34;healthcare&#34;,&#34;title&#34;:&#34;Healthcare&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/governance&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dGovernance&#34;,&#34;name&#34;:&#34;governance&#34;,&#34;title&#34;:&#34;Governance&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies/Risk&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dRisk&#34;,&#34;name&#34;:&#34;Risk&#34;,&#34;title&#34;:&#34;Risk&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a11/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a11/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a11/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[]},{&#34;topic&#34;:&#34;Strategies&#34;,&#34;topicPath&#34;:&#34;/content/cq:tags/f5-labs-v2/ciso/strategies&#34;,&#34;topicSearchPath&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;date&#34;:&#34;July 18, 2017&#34;,&#34;contentDuration&#34;:&#34;4 min. read&#34;,&#34;publishDate&#34;:&#34;May 25, 2017 12:00:00 AM&#34;,&#34;title&#34;:&#34;How I Learned to Love Cyber Security&#34;,&#34;authors&#34;:[&#34;Todd Plesco&#34;],&#34;authorPaths&#34;:[&#34;/content/f5-labs-v2/en/authors/todd-plesco&#34;],&#34;path&#34;:&#34;/content/f5-labs-v2/en/labs/articles/cisotociso/how-i-learned-to-love-cyber-security-26951&#34;,&#34;mappedPath&#34;:&#34;/labs/articles/cisotociso/how-i-learned-to-love-cyber-security-26951&#34;,&#34;description&#34;:&#34;Cyber security can be a difficult and thankless job, but you can learn to love it when you know how to go about it.&#34;,&#34;tags&#34;:[{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:3,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/strategies&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dStrategies&#34;,&#34;name&#34;:&#34;strategies&#34;,&#34;title&#34;:&#34;Strategies&#34;,&#34;isTopic&#34;:true},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:category/ciso&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dCISO&#34;,&#34;name&#34;:&#34;ciso&#34;,&#34;title&#34;:&#34;CISO&#34;,&#34;isTopic&#34;:false},{&#34;TAG_ID_PARAM&#34;:&#34;tagId&#34;,&#34;weight&#34;:0,&#34;tagId&#34;:&#34;f5-labs-v2:ciso/C2C-Keywords/leadership&#34;,&#34;url&#34;:&#34;/labs/search?q\u003dleadership&#34;,&#34;name&#34;:&#34;leadership&#34;,&#34;title&#34;:&#34;leadership&#34;,&#34;isTopic&#34;:false}],&#34;backgroundImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a08/article-background-hero-image.png&#34;,&#34;thumbnailImage&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a08/article-thumbnail-image.png&#34;,&#34;backgroundTileImagePath&#34;:&#34;/content/dam/f5-labs-v2/article/backgrounds/a08/optimize/article-tile-image.jpg&#34;,&#34;type&#34;:&#34;blog&#34;,&#34;appTierAffected&#34;:[&#34;Client&#34;]}],&#34;firstName&#34;:&#34;Todd&#34;,&#34;id&#34;:343613065}]</div>
+
+    <div class="c04-contributors-listing__contributor-list">
+
+        <div id="hidden-item" class="c04-contributors-listing__contributor-item U:display-none">
+            <input type="hidden" class="hidden-contributor-search-url"/>
+            <div class="contributor-hidden-summary U:display-none"></div>
+            <div class="recent-articles U:display-none"></div>
+
+            <div class="c04-contributors-listing__contributor-image-wrap">
+                <div class="c04-contributors-listing__contributor-image-circle">
+                    <div class="c04-contributors-listing__contributor-image">    </div>
+                </div>
+            </div>
+            <div class="c04-contributors-listing__contributor-bio-small-wrap">
+                <div class="c04-contributors-listing__contributor-bio-small">
+                    <div class="c04-contributors-listing__name"></div>
+                    <div class="c04-contributors-listing__job-title">
+                        <span class="job-title"></span>
+                        <span class="company-name">
+                            <a target="_blank" rel="no-opener no-referrer"></a>
+                        </span>
+                    </div>
+                    <div class="c04-contributors-listing__expand-button-wrap">
+                        <a class="c04-contributors-listing__expand-button">BIO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="c04-contributors-listing__load-more-container U:display-none">
+        <a class="btn btn-outline-inverse c04-contributors-listing__load-more-btn">LOAD MORE</a>
+    </div>
+    <div id="c04-contributors-listing__loader" class=" big-loader U:margin-bot-xl"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+
+
+</div>
+
+<div class="c04-contributors-listing__modal-background">
+    <div class="c04-contributors-listing__modal">     
+        <div class="c04-contributors-listing__modal-content-wrap">
+                <div class="c04-contributors-listing__modal-close">
+                    <a class="c04-contributors-listing__close-button" id="closeModal"></a>
+                </div>
+            <div class="c04-contributors-listing__modal-content">
+                <div class="c04-contributors-listing__modal-row">
+                    <div class="c04-contributors-listing__modal-contributor-image-col">
+                        <div class="c04-contributors-listing__modal-contributor-image-wrap">
+                            <div class="c04-contributors-listing__modal-contributor-image-circle">
+                                <div class="c04-contributors-listing__modal-contributor-image" style="background-image:url()">     </div>       
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c04-contributors-listing__modal-contributor-bio-col">
+                        <div class="c04-contributors-listing__modal-contributor-bio-col-content">
+                        <div class="c04-contributors-listing__modal-name"></div>
+                        <div class="c04-contributors-listing__modal-job-title">
+                            <span class="job-title"></span>
+                            <span class="company-name">
+                                <a target="_blank" rel="no-opener no-referrer"></a>
+                            </span>    
+                        </div>
+                        <div class="c04-contributors-listing__modal-long-descr display-desktop"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c04-contributors-listing__modal-row ">
+                        <div class="c04-contributors-listing__modal-long-descr display-mobile"></div>
+                </div>
+                <div class="c04-contributors-listing__modal-row">
+                    <div class="c04-contributors-listing__modal-recent-articles-wrap">
+                        <div class="c04-contributors-listing__modal-recent-articles">
+                                
+                        </div>
+                    </div>
+                </div>
+                <div class="c04-contributors-listing__modal-row">
+                    <div class="c04-contributors-listing__modal-button-wrap U:display-none">
+                        <a class="btn btn-outline-inverse">ALL ARTICLES BY <span></span></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div></div>
+
+
+    </div>
+
+
+    <div class="a01-container-col-right">
+        <div data-component-type="ciso" class="c07-vertical-bio section">
+ 
+
+<div class="c07-vertical-bio__container">
+	<div class="c07-vertical-bio__title">CISO Spotlight</div>
+    <div class="c07-vertical-bio__row">
+        <div class="c07-vertical-bio__author-image-col">
+            <div class="c07-vertical-bio__author-image-wrap">
+                <div class=" c07-vertical-bio__author-image-circle">
+                    <div class="c07-vertical-bio__author-image js-bg-lozad" data-background-image="/content/dam/f5-labs-v2/_author-headshots/Gail_Coury.png"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="c07-vertical-bio__author-bio">
+            <div class="c07-vertical-bio__name">Gail Coury</div>
+            <div class="c07-vertical-bio__job-title">
+                <span>CISO</span> 
+                <span>F5</span> 
+                             
+            </div>
+            <div class="c07-vertical-bio__descr">
+                <p>As F5's CISO, Gail has three primary responsibilities:</p>
+<ol>
+<li>Implement and operate F5’s enterprise IT security program</li>
+<li>Establish company-wide standards and programs for product and service security</li>
+<li>Showcase to customers and the industry the use of F5 security technologies</li>
+</ol>
+<p>Previously, Gail served as Vice President and General Manager of F5 Silverline, where she led product management, marketing, architecture, engineering, and customer success for F5’s cloud-based Silverline managed service offering. Before joining F5, Coury was CISO of Oracle Cloud, PeopleSoft and J.D. Edwards. She brings more than 20 years of experience both as a CISO and as a security product leader.</p>
+<p>Gail has an Executive MBA from Stanford University and a bachelor’s degree in computer science from Clarke University.  She is also a member of the following boards:</p>
+<ul>
+<li>One In Tech, an ISACA Foundation, Board Chair</li>
+<li>Clarke University Board of Trustees</li>
+<li>Coalfire Cloud Security Advisory Board</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+        
+    
+        <div class="c07-vertical-bio__more-from">
+            <a href="https://www.f5.com/labs/search.author_Gail%2BCoury"> <img alt="" src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/related-inteligence.svg"/> <span>SEE ALL ARTICLES BY  <br/>Gail Coury
+            </span>
+            </a>
+        </div>
+    </div>
+
+</div>
+ 
+
+
+</div>
+<div data-component-type="ciso" class="c06-recent-articles-list-condensed-container section"> 
+
+<div class="c06-recent-articles-list-condensed-container">
+	
+
+
+
+
+    
+    
+    <div data-component-type="ciso" class="c03-articles-by-type">
+
+
+
+    <div class="c03-articles-by-type__container">
+        <div class="big-ico-wrap article-ico-wrap c03-articles-by-type__title">
+            <span class="blog"><i class="ciso-to-ciso-article-type"></i> Featured Topic: Vulnerability Management</span>
+        </div>
+        <div class="c03-articles-by-type__list-description"></div>    
+        <div class="c03-articles-by-type__articles" id="article-tile-items">
+            <div class="c03-articles-by-type__article-item ">
+                <div class="c03-articles-by-type__article-info-row U:display-flex U:flex-nowrap">                     
+                    <div class="c03-articles-by-type__date U:display-flex mid-point"><span class="U:align-self-center">October 12, 2021</span></div>
+                    <div class="c03-articles-by-type__duration U:display-flex"><span class="U:align-self-center">10 min. read</span></div>
+                </div>
+                <div class="c03-articles-by-type__article-title"><a class="c03-articles-by-type__article-link" href="https://www.f5.com/labs/articles/cisotociso/prioritizing-vulnerability-management-using-machine-learning">Prioritizing Vulnerability Management Using Machine Learning</a></div>          
+            </div>       
+        
+            <div class="c03-articles-by-type__article-item ">
+                <div class="c03-articles-by-type__article-info-row U:display-flex U:flex-nowrap">                     
+                    <div class="c03-articles-by-type__date U:display-flex mid-point"><span class="U:align-self-center">September 29, 2020</span></div>
+                    <div class="c03-articles-by-type__duration U:display-flex"><span class="U:align-self-center">5 min. read</span></div>
+                </div>
+                <div class="c03-articles-by-type__article-title"><a class="c03-articles-by-type__article-link" href="https://www.f5.com/labs/articles/cisotociso/what-cybersecurity-can-learn-from-ux-design">What Cybersecurity Can Learn from UX Design</a></div>          
+            </div>       
+        
+            <div class="c03-articles-by-type__article-item ">
+                <div class="c03-articles-by-type__article-info-row U:display-flex U:flex-nowrap">                     
+                    <div class="c03-articles-by-type__date U:display-flex mid-point"><span class="U:align-self-center">January 08, 2018</span></div>
+                    <div class="c03-articles-by-type__duration U:display-flex"><span class="U:align-self-center">6 min. read</span></div>
+                </div>
+                <div class="c03-articles-by-type__article-title"><a class="c03-articles-by-type__article-link" href="https://www.f5.com/labs/articles/cisotociso/the-new-insider-threat-automation-frameworks-24735">The New Insider Threat: Automation Frameworks</a></div>          
+            </div>       
+        </div>    
+       
+        <div class="c03-articles-by-type__load-more-container">
+            
+        </div>
+    </div>
+
+</div>
+
+
+    
+    
+    <div data-component-type="ciso" class="c03-articles-by-type">
+
+
+
+    <div class="c03-articles-by-type__container">
+        <div class="big-ico-wrap article-ico-wrap c03-articles-by-type__title">
+            <span><i class="ciso-to-ciso-article-type"></i> </span>
+        </div>
+        <div class="c03-articles-by-type__list-description"></div>    
+            
+       
+        <div class="c03-articles-by-type__load-more-container">
+            
+        </div>
+    </div>
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+    </div>
+
+
+
+    </div>
+
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+<div data-component-type="ciso" class="c05-articles-listing aem-GridColumn aem-GridColumn--default--12">
+
+ 
+	<input type="hidden" data-limit="6" data-masterlistfilter="ciso" data-currentpage="/content/f5-labs-v2/en/labs/ciso-to-ciso" id="params"/>
+    <div class="c05-articles-listing__container xs-pt-20 xs-pb-20">
+        <h4 class="c05-articles-listing__container-title">CISO Content</h4>
+        <div class="c05-articles-listing__mobile-filters">
+          
+            <div class="c05-articles-listing__selectbox-markup">
+                <div class="c05-articles-listing__selectbox-markup-current-filters">No filters selected</div>
+                <div class="c05-articles-listing__selectbox-markup-button"></div>
+            </div>
+           
+            
+            <div class="c05-articles-listing__states-wrap-mobile" style="display: none">
+            <div class="U:display-flex U:flex-wrap above-list">
+                    <a class="c05-articles-listing__states-wrap-mobile-close-filters-ico js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/x.png"></a> 
+                    <div class="c05-articles-listing__states-wrap-mobile-title">Filters</div>
+                    <div class="c05-articles-listing__states-block">
+                        <div class="c05-articles-listing__states-title">CISO Categories</div>
+                        <div class="U:display-flex U:flex-wrap c05-articles-listing__states" id="collection1Mobile">
+
+                            <div class="c05-articles-listing__state-wrap">
+                                <input type="checkbox" id="all1Mobile" name="allStates" value="" checked/> <label for="all1Mobile" class="badge state-wrap-badge">All</label>
+                            </div>
+                            <div class="c05-articles-listing__state-wrap">
+                                <input type="checkbox" id="strategiesMobile" name="state" value="strategies"/> <label for="strategiesMobile" class="badge state-wrap-badge ">Strategies</label>
+                            </div>
+                        
+
+                            
+                            <div class="c05-articles-listing__state-wrap">
+                                <input type="checkbox" id="controlsMobile" name="state" value="controls"/> <label for="controlsMobile" class="badge state-wrap-badge ">Controls</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c05-articles-listing__states-block second-state-block">
+                        
+                        
+                    </div>
+                    <div class="c05-articles-listing__states-wrap-mobile-apply-filters">
+                        <a id="applyFiltersMobile" class="btn-outline btn">Apply Filters</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c05-articles-listing__current-filters-wrap">
+                <span class="c05-articles-listing__current-filters-descr"></span> <b class="c05-articles-listing__current-filters"></b>
+            </div>
+            
+        </div>
+        <div class="c05-articles-listing__container c05-articles-listing__items-container above-list">
+          
+            <div id="c05-articles-listing_items" class="c05-articles-listing__row">
+            	
+            	
+                <div class="c05-articles-listing__states-wrap">
+                    <div class="c05-articles-listing__states-block">
+                        <div class="c05-articles-listing__states-title">CISO Categories</div>
+                        <div class="U:display-flex U:flex-wrap c05-articles-listing__states" id="collection1">
+
+                            <div class="c05-articles-listing__state-wrap">
+                                <input type="checkbox" id="all1" name="allStates" value="" checked/> <label for="all1" class="badge state-wrap-badge">All</label>
+                            </div>
+                            <div class="c05-articles-listing__state-wrap">
+                                <input type="checkbox" id="strategies" name="state" value="strategies"/> <label for="strategies" class="badge state-wrap-badge ">Strategies</label>
+                            </div>
+                        
+
+                            
+                            <div class="c05-articles-listing__state-wrap">
+                                <input type="checkbox" id="controls" name="state" value="controls"/> <label for="controls" class="badge state-wrap-badge ">Controls</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c05-articles-listing__states-block">
+                        
+                        
+                    </div>
+                </div>
+                <h4 class="c05-articles-listing__no-result-text U:display-none">No articles found matching your filter
+                        criteria</h4>
+                <div id="c05-articles-listing-hidden-item" class="c05-articles-listing__col U:display-none">
+                    <div class="c05-articles-listing__article">
+
+                        <div class="U:display-flex U:align-items-center">
+                           
+                            <a class="c05-articles-listing__topic" href="" rel="noreferrer">
+                                <div class="c05-articles-listing__category">
+                                    <span class="badge badge-secondary"></span>
+                                </div>
+                            </a>
+                         
+                        </div>
+                        <a href="" class="c05-articles-listing__title" rel="noreferrer">
+                            <div class="c05-articles-listing__type article-ico-wrap">
+                                <i></i><span class=""></span>
+                            </div>
+                            <div class="c05-articles-listing__article-title"></div>
+                        </a>
+                        <div class="c05-articles-listing__article-type U:display-flex U:flex-nowrap ">     
+                            <div class="c05-articles-listing__date U:display-flex">
+                                <span class="U:align-self-center"></span>
+                            </div>                      
+                            <div class="c05-articles-listing__content-duration  U:display-flex">
+                                <span class="U:align-self-center"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="c05-articles-listing__loader" class=" big-loader U:margin-bot-xl U:display-none"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+            <button class="c05-articles-listing__load-more-button btn btn-outline-inverse" id="load-more-button">Load more stories</button>
+
+        </div>
+    </div>
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+<div data-component-type="category" class="u03-static-data-points aem-GridColumn aem-GridColumn--default--12"><!--googleoff: all-->
+
+    
+        
+        
+        <section class="u03-static-data-points__container fill-main-container">
+            <div class="full-site-container info-container-two-columns">
+                <div class="row">
+                    <div class="u03-static-data-points__left-column-container border-right">
+                        <div class="u03-static-data-points__left-column-wrap">
+                            <h3 class="display-3 u03-static-data-points__headline">Hundreds of apps will be attacked by the time you read this.</h3>
+                            <p><p>So, we get to work. We obsess over effective attack methods. We monitor the growth of IoT and its evolving threats. We dive deep into the latest crypto-mining campaigns. We analyze banking Trojan targets. We dissect exploits. We hunt for the latest malware. And then our team of experts share it all with you. For more than 20 years, F5 has been leading the app delivery space. With our experience, we are passionate about educating the security community-providing the intel you need to stay informed so your apps can stay safe.</p>
+</p>
+                        </div>
+                    </div>
+                    <div class="u03-static-data-points__right-column-container">
+                        <div class="u03-static-data-points__right-column-wrap">
+                            <h4 class="display-6">
+                                Every
+                            </h4>
+                            <h3 class="f5labs-big-number">9 hrs</h3>
+                            a critical vulnerability—with the potential for remote code execution—is released.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    
+
+<!--googleon: all--></div>
+<div class="u02-footer aem-GridColumn aem-GridColumn--default--12"><div>
+	
+<footer id="footer" class="u02-footer_labs conf06-footer-configuration">
+    <div class="conf06-footer-configuration__footer-logo">
+        <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <metadata>
+                <rdf:RDF>
+                    <cc:Work rdf:about="">
+                        <dc:format>image/svg+xml</dc:format>
+                        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                        <dc:title/>
+                    </cc:Work>
+                </rdf:RDF>
+            </metadata>
+            <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+            <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+            <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+        </svg>
+    </div>
+
+    <div class="conf06-footer-configuration__newslettersignup">
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg c20-newsletter-signup-display__newsletter-form">
+    <div class="c20-newsletter-signup-display__wrapper purple-bg  benefits-visible">
+
+        <div class="c20-newsletter-signup-display__signup-wrap">
+
+            <div class="c20-newsletter-signup-display__row form-and-benefits-row hide-after-submit">
+                <div class="c20-newsletter-signup-display__col">
+                    <div class="c20-newsletter-signup-display__title only-mobile">
+                        F5 Labs Newsletter
+                    </div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+                    </div>
+                </div>
+                <div class="c20-newsletter-signup-display__col">
+
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <div class="c20-newsletter-signup-display__title only-desktop">
+                            F5 Labs Newsletter
+                        </div>
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+                        <!-- LOADER -->
+                        <div id="loader" class="small-loader form-loader     
+                             "><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                        <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                            <div><p><i>The information you provide will be treated in accordance with the <a href="https://www.f5.com/company/policies/privacy-policy" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- SUCCESS MESSAGE -->
+            <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+                <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                <div class="c20-newsletter-signup-display__article-intro">
+                    Thanks for signing up! Get started with some of the articles below:
+                </div>
+                <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="https://www.f5.com/labs/search?q=Fraud">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Fraud</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="https://www.f5.com/labs/articles/threat-intelligence/2020-phishing-and-fraud-report" class="text-article__link">
+
+                                <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">November 11, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="https://www.f5.com/labs/search?q=Education">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Education</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="https://www.f5.com/labs/articles/education/what-is-the-cia-triad" class="text-article__link">
+
+                                <div class="text-article__article-title">What Is the CIA Triad?</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">July 09, 2019</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="https://www.f5.com/labs/search?q=Strategies">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Strategies</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="https://www.f5.com/labs/articles/cisotociso/the-three-main-cybersecurity-career-paths" class="text-article__link">
+
+                                <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex mid-point">
+                                    <span class="U:align-self-center">December 08, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center">9 min. read</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__wrapper purple-bg}">
+
+		<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+				<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+    <div class="conf06-footer-configuration__main-footer-container">
+        <div class="conf06-footer-configuration__main-footer-wrapper">
+          
+            <div class="conf06-footer-configuration__links-wrap first-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        <ul>
+            <li><a href="threat-intelligence.html" target="_blank" rel="no-opener no-referrer">THREATS</a></li>
+        
+            <li><a href="ciso-to-ciso.html" target="_blank" rel="no-opener no-referrer">CISO TO CISO</a></li>
+        
+            <li><a href="application-protection.html" target="_blank" rel="no-opener no-referrer">APPLICATION PROTECTION</a></li>
+        </ul>
+    
+
+    
+</div>
+            </div>
+            <div class="conf06-footer-configuration__links-wrap second-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        
+    
+
+    
+</div>
+            </div>
+                  
+
+            <div class="conf06-footer-configuration__social-links-wrap">
+                
+<div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Social media links configuration"></div> -->
+	<ul>
+		<li class="twitter">			
+			<a href="https://twitter.com/F5Labs" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb twitter xs-mr-15"></span></div><div class="float-left">TWITTER</div></a>
+		</li>
+	
+		<li class="linkedin">			
+			<a href="https://www.linkedin.com/showcase/f5labs/" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb linkedin xs-mr-15"></span></div><div class="float-left">LINKEDIN</div></a>
+		</li>
+	</ul>
+
+</div>
+
+            </div>
+        </div>
+        <div class="conf06-footer-configuration__foot-note  conf06-footer-configuration__footer-bottom footer-small">
+            <span class="conf06-footer-configuration__all-rights-reserved"> &copy; 2022 F5, Inc. All rights reserved</span> <br/>
+            
+
+                <a href="../company/policies.html">Policies</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="https://www.f5.com/content/f5-com/en_us/company/policies/privacy-notice">Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../company/policies/trademarks.html">Trademarks</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="https://interact.f5.com/email-peference-center.html" rel="noreferrer">Manage Subscriptions</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../company/policies/F5-California-privacy-summary.html">California Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../company/policies/privacy-notice.html#no-sell">Do Not Sell My Personal Information</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+            <span>
+                <span id="teconsent"></span>
+            </span>
+
+        </div>
+    </div>
+
+    <script class="n-lang-en" async="async" src="https://consent.trustarc.com/notice?domain=f5.com&amp;c=teconsent&amp;js=nj&amp;noticeType=bb&amp;text=true&amp;gtm=1" crossorigin=""></script>
+  
+     <div>
+
+
+
+
+
+<div class="c20-newsletter-signup-display__popover-bg   ">
+    <div class=" c20-newsletter-signup-display popover  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+                    <div class="c20-newsletter-signup-display__title">F5 Labs Newsletter</div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+</div>
+                </div>
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+
+                        <!-- SUCCESS MESSAGE -->
+                        <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none ">
+                            <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                            <div class="c20-newsletter-signup-display__article-intro">
+                                Thanks for signing up! Get started with some of the articles below:
+                            </div>
+
+                            <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="https://www.f5.com/labs/articles/threat-intelligence/2020-phishing-and-fraud-report" class="text-article__link">
+            
+                                            <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">November 11, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="https://www.f5.com/labs/articles/education/what-is-the-cia-triad" class="text-article__link">
+            
+                                            <div class="text-article__article-title">What Is the CIA Triad?</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">July 09, 2019</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="https://www.f5.com/labs/articles/cisotociso/the-three-main-cybersecurity-career-paths" class="text-article__link">
+            
+                                            <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex mid-point">
+                                                <span class="U:align-self-center">December 08, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center">9 min. read</span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                         
+                        </div>
+
+                        <!-- LOADER -->
+                        <div id="loader" class="U:display-none big-loader"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                <div><p><i>The information you provide will be treated in accordance with the <a href="https://www.f5.com/company/policies/privacy-policy" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" c20-newsletter-signup-display popover c20-newsletter-signup-display__subscribed-already  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__title">You already have a subscription</div>
+                  
+                </div>
+               
+              
+            </div>
+          
+        </div>
+    </div>
+
+</div>
+</div>
+  
+</footer>
+ 
+</div></div>
+
+    
+</div>
+</div>
+     
+        
+    
+    
+
+    
+<script src="../etc.clientlibs/base/clientlibs/libs/jquery/v3.6.0.abec7e706514e7e243d79b097790f71b.js"></script>
+<script src="https://www.f5.com/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.a9dcac4698709ca8e1cbc88363cf0793.js"></script>
+<script src="../etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.68e8a508c100f218cc66bb13a94d1002.js"></script>
+<script src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.d96c3f535f649b3c2392029bf4ce52cd.js"></script>
+
+
+ 
+
+	<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5095d30f38626622"></script>
+	
+
+    
+
+
+        <div id="consent_blackbar" style="position:fixed;bottom:200px;width:100%"></div>
+    </body>
+</html>

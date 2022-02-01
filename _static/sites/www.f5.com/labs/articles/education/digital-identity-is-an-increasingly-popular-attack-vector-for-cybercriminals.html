@@ -1,0 +1,1945 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8"/>
+    <title>Digital Identity Is an Increasingly Popular Attack Vector for Cybercriminals</title>
+    <meta name="robots"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="As cybercriminals continue trying to break into applications using legitimate channels, digital identity is a growing target. Learn what digital identity is and the attack methods fraudsters employ at every stage of the identity life cycle."/>
+    <meta name="template" content="education-article-template"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>    
+    
+
+    <meta property="og:locale" content="en_US"/>
+
+    <meta property="og:type" content="website"/>
+
+    <meta property="og:title" content="Digital Identity Is an Increasingly Popular Attack Vector for Cybercriminals"/>
+
+    <meta property="og:description" content="As cybercriminals continue trying to break into applications using legitimate channels, digital identity is a growing target. Learn what digital identity is and the attack methods fraudsters employ at every stage of the identity life cycle."/>
+
+    <meta property="og:site_name" content="F5 Labs"/>
+
+    <meta property="og:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+    <meta property="og:image_secure_url" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+
+    <meta property="fb:app_id" content="302184056577324"/>
+
+
+    <meta property="twitter:card" content="summary_large_image"/>
+
+    <meta property="twitter:title" content="Digital Identity Is an Increasingly Popular Attack Vector for Cybercriminals"/>
+
+    <meta property="twitter:description" content="As cybercriminals continue trying to break into applications using legitimate channels, digital identity is a growing target. Learn what digital identity is and the attack methods fraudsters employ at every stage of the identity life cycle."/>
+
+    <meta property="twitter:site" content="@F5networks"/>
+
+    <meta property="twitter:image" content="https://www.f5.com/content/dam/f5-labs-v2/global-configuration/metatags/F5_Default_SocialShare.jpg"/>
+
+    <meta property="twitter:creator" content="@F5networks"/>
+
+
+    <meta property="article:author" content="Shahnawaz Backer, Debbie Walkowski"/>
+
+    <meta property="article:published_time" content="2020-08-14T15:56:00.000-07:00"/>
+
+    <meta property="article:tag" content="Digital Identity,Credential stuffing,Cybercrime,Education,Client"/>
+
+    <meta property="article:id" content="/content/f5-labs-v2/en/labs/articles/education/digital-identity-is-an-increasingly-popular-attack-vector-for-cybercriminals"/>
+
+    <meta property="article:read_time"/>
+
+    <meta property="article:topic" content="Education"/>
+
+    <meta property="article:type"/>
+
+    <meta property="article:title" content="Digital Identity Is an Increasingly Popular Attack Vector for Cybercriminals"/>
+
+<meta name="keywords" content="ATO,Digital Identity,Credential stuffing,Cybercrime,Education,Client,social engineering,Identity Theft,Fraud,account takeover,insider threat,Phishing"/> 
+<link rel="canonical" href="digital-identity-is-an-increasingly-popular-attack-vector-for-cybercriminals.html"/>
+
+
+
+
+<meta property="labs:article:search-tab" content="Education"/>
+
+    
+       	
+        <link href="https://assets.adobedtm.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://consent.trustarc.com" rel="rel=preconnect" crossorigin/>
+       	
+        <link href="https://static.cloud.coveo.com" rel="rel=preconnect" crossorigin/>
+    
+
+    <script>window.F5=window.F5||{};window.F5.VisitorTracking=window.F5.VisitorTracking||{"isConfigEnabled":true,"tealiumScriptAsyncUrl":"//mktg.tags.f5.com/main/prod/utag.js","tealiumScriptSyncUrl":"//mktg.tags.f5.com/main/prod/utag.sync.js","visitorTrackingService":"tealium","isTealiumActive":true,"isLegacyActive":false,"legacyLibWarmingUrls":["https://assets.adobedtm.com","https://www.google-analytics.com","https://www.googletagmanager.com"]}</script>
+
+    <script src="../../../../mktg.tags.f5.com/main/prod/utag.sync.js"></script>
+    <!-- If JS enable will change the HTML class tag to "js"-->
+<script>
+    document.documentElement.className = document.documentElement.className.replace("js-off","js-on");
+</script>
+<!-- If JS enable will change the HTML class tag to "js" -->
+    
+    
+    
+
+    
+    
+
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/apple-touch-icon.png"/>
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-16x16.png"/>
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/favicon-32x32.png"/>
+    
+    <link rel="mask-icon" href="../../../content/dam/f5-labs-v2/global-configuration/favicons/safari-pinned-tab.svg" color="#e21d38"/>
+
+    
+    
+
+    
+    
+<link rel="stylesheet" href="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.4921b04fbcd148d027b0a9a0b7fb303c.css" type="text/css">
+
+
+
+
+    <script src="https://app-aba.marketo.com/js/forms2/js/forms2.min.js"></script>
+    
+    
+
+<script>
+    window.digitalData = {"labs":{"articleAuthor":["shahnawaz backer","debbie walkowski"],"articlePostDate":"Aug 14, 2020","vitals":{"labsAttackerMotivation":["Cybercrime"],"labsTermstoKnow":["Digital Identity","Authentication","account takeover","Credential stuffing","insider threat"],"labsAppTiers":["client"]},"labsTags":["Identity Theft","Fraud","account takeover","social engineering","Credential stuffing","Phishing","insider threat","Cybercrime","Digital Identity","Client","Education"]},"page":{"pageInfo":{"pageName":"www:f5.labs.v2:labs:articles:education:digital-identity-is-an-increasingly-popular-attack-vector-for-cybercriminals","destinationUrl":"https://www.f5.com/labs/articles/education/digital-identity-is-an-increasingly-popular-attack-vector-for-cybercriminals.html","subDomain":"www","referringUrl":"https://www.f5.com/ja_jp/solutions/online-fraud","referringPageName":"www:f5.com:solutions:online-fraud","language":"en","version":""},"category":{"primaryCategory":"labs","subCategory1":"articles","subCategory2":"education","subCategory3":"digital-identity-is-an-increasingly-popular-attack-vector-for-cybercriminals"},"contentInfo":{"articleAuthor":["shahnawaz backer","debbie walkowski"],"articlePostDate":"Aug 14, 2020","vitals":{"labsAttackerMotivation":["Cybercrime"],"labsTermstoKnow":["Digital Identity","Authentication","account takeover","Credential stuffing","insider threat"],"labsAppTiers":["client"]},"labsTags":["Identity Theft","Fraud","account takeover","social engineering","Credential stuffing","Phishing","insider threat","Cybercrime","Digital Identity","Client","Education"]}}};
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmContentParam = urlParams.get("utm_content");
+    if (utmContentParam && window.digitalData.user != undefined && window.digitalData.user.userInfo) {
+        const utmContentParamArray = utmContentParam.split("-");
+        if (utmContentParamArray.length >= 3) {
+            window.digitalData.user.userInfo.digitalSignal = utmContentParamArray[2];
+        }
+    }
+</script>
+<script>
+    window.utag_data = {"page.pageInfo.pageName":"www:f5.labs.v2:labs:articles:education:digital-identity-is-an-increasingly-popular-attack-vector-for-cybercriminals","page.pageInfo.destinationUrl":"https://www.f5.com/labs/articles/education/digital-identity-is-an-increasingly-popular-attack-vector-for-cybercriminals.html","page.pageInfo.subDomain":"www","page.pageInfo.referringUrl":"https://www.f5.com/ja_jp/solutions/online-fraud","page.pageInfo.referringPageName":"www:f5.com:solutions:online-fraud","page.pageInfo.language":"en","page.pageInfo.version":"","page.category.primaryCategory":"labs","page.category.subCategory1":"articles","page.category.subCategory2":"education","page.category.subCategory3":"digital-identity-is-an-increasingly-popular-attack-vector-for-cybercriminals","page.contentInfo.articleAuthor[0]":"shahnawaz backer","page.contentInfo.articleAuthor[1]":"debbie walkowski","page.contentInfo.articlePostDate":"Aug 14, 2020","page.contentInfo.vitals.labsAttackerMotivation[0]":"Cybercrime","page.contentInfo.vitals.labsTermstoKnow[0]":"Digital Identity","page.contentInfo.vitals.labsTermstoKnow[1]":"Authentication","page.contentInfo.vitals.labsTermstoKnow[2]":"account takeover","page.contentInfo.vitals.labsTermstoKnow[3]":"Credential stuffing","page.contentInfo.vitals.labsTermstoKnow[4]":"insider threat","page.contentInfo.vitals.labsAppTiers[0]":"client","page.contentInfo.labsTags[0]":"Identity Theft","page.contentInfo.labsTags[1]":"Fraud","page.contentInfo.labsTags[2]":"account takeover","page.contentInfo.labsTags[3]":"social engineering","page.contentInfo.labsTags[4]":"Credential stuffing","page.contentInfo.labsTags[5]":"Phishing","page.contentInfo.labsTags[6]":"insider threat","page.contentInfo.labsTags[7]":"Cybercrime","page.contentInfo.labsTags[8]":"Digital Identity","page.contentInfo.labsTags[9]":"Client","page.contentInfo.labsTags[10]":"Education"};
+</script>
+
+
+    
+    <script>
+        ;(function(win, doc, style, timeout) {
+            var STYLE_ID = 'at-body-style';
+
+            function getParent() {
+                return doc.getElementsByTagName('head')[0];
+            }
+
+            function addStyle(parent, id, def) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.createElement('style');
+                style.id = id;
+                style.innerHTML = def;
+                parent.appendChild(style);
+            }
+
+            function removeStyle(parent, id) {
+                if (!parent) {
+                    return;
+                }
+
+                var style = doc.getElementById(id);
+
+                if (!style) {
+                    return;
+                }
+
+                parent.removeChild(style);
+            }
+
+            addStyle(getParent(), STYLE_ID, style);
+            setTimeout(function() {
+                removeStyle(getParent(), STYLE_ID);
+            }, timeout);
+        }(window, document, "body {opacity: 0 !important}", 3000));
+    </script>
+
+    <script src="../../../../assets.adobedtm.com/launch-EN37b07f3d0fa64d53b299e28194b30e0a.min.js" async></script>
+
+
+</head>
+    <body class="education-article-page preview-mode">
+        
+    <script>
+    (function(a,b,c,d){
+        a='//mktg.tags.f5.com/main/prod/utag.js';
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+    </script>
+
+        
+     
+        
+
+       	<div class="background-cut " style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a02/optimize/article-background-image.jpg);"></div>
+        
+
+
+<nav class="conf12-skip-links__nav" role="navigation">
+	<a href="#nav" class="conf12-skip-links__item">Skip to main navigation</a>
+
+	<a href="#content" class="conf12-skip-links__item">Skip to main content</a>
+
+	<a href="#footer" class="conf12-skip-links__item">Skip to footer</a>
+</nav>
+        
+
+<div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="megamenu-background"></div>
+
+	<div id="nav" class="fullscreen-wrapper header-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg labs-nav ">
+            <div class="container navbar-wrapper">
+                <a class="navbar-brand" href="../../../labs.html">
+                    <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <metadata>
+                            <rdf:RDF>
+                                <cc:Work rdf:about="">
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                    <dc:title/>
+                                </cc:Work>
+                            </rdf:RDF>
+                        </metadata>
+
+                        <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+                        <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+                        <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+                    </svg>
+                    <span>
+
+                        APPLICATION
+                        <br/> THREAT
+                        <br/> INTELLIGENCE
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  
+                    <div class="nav-wrap ml-lg-auto">
+                        <div class="upper-navigation">
+                            <div class="subscribe-item upper-nav-item">
+                                <a class="subscribe-link upper-nav-btn" href="../../subscribe.html">
+                                    <span class="upper-subscribe-ico ico"></span>
+                                    <span class="upper-navigation-content">Subscribe</span>
+                                </a>
+                            </div>
+                            <div class="search-item upper-nav-item">
+                                <a class="search-link upper-nav-btn">
+                                    <span class="upper-search-ico ico"></span>
+                                    <span class="upper-navigation-content">Search</span>
+                                </a>
+                                <form class="form-inline my-2 my-lg-0 search-form" method="get" action="../../search%EF%B9%96q=test.html" id="searchForm">
+                                    <div class="container">
+                                        <div class="search-input-container">
+                                            <a class="close-search-button"></a>
+                                            <input class="form-control mr-sm-2 " type="search" name="q" title="Cannot search for a blank query" placeholder="Search" required pattern="^(?!\s*$).+" aria-label="Search" id="search-input" lang="en"/>
+                                            <button class="btn btn-search  upper-nav-btn" type="submit"> <span class="upper-search-ico ico"></span> <span class="submit-text">Submit</span></button>
+                                        </div>
+    
+                                    </div>
+                                </form>
+                            </div>
+                            
+
+
+
+
+                        </div>
+                        
+<ul class="navbar-nav">
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../threat-intelligence.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Threats</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../ciso-to-ciso.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>CISO-to-CISO</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../application-protection.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Application Protection</span>
+	</a></li>
+
+	<li class="nav-item "><a class="nav-link dropdown-toggle" href="../../rss-feeds.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>RSS Feeds</span>
+	</a></li>
+</ul>
+                     
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
+
+</div>
+<div>
+
+	
+    
+    
+
+
+</div><div class="c02-header-area aem-GridColumn aem-GridColumn--default--12"><div class="cq-placeholder section" data-emptytext="Article: Header area configuration"></div>
+
+    
+        
+       
+        <section class="container-fluid c02-header-area__main-article details fill-main-container">
+            <div class="c02-header-area__heroImageBackground" style="background-image: url(https://www.f5.com/content/dam/f5-labs-v2/article/backgrounds/a02/optimize/article-background-image.jpg);"></div>
+            <div class="c02-header-area__main-article-overlay"></div>
+           
+            <div class="row">
+                <div class="align-bottom c02-header-area__article-wrap">
+                    <div class="info-row clearfix">
+                    	<a href="../../search%EF%B9%96q=Education.html">
+	                        <div class="category">
+	                            <span class="badge badge-secondary c02-header-area__badge">Education</span>
+	                        </div>
+                        </a>
+                        <div class="c02-header-area__additional-info">
+                            <div class="date U:padding-x">
+                                <span>August 14, 2020</span>
+                               
+                                
+                                
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="c02-header-area__main-articles-title">
+                        <h1>
+                            Digital Identity Is an Increasingly Popular Attack Vector for Cybercriminals
+                        </h1>
+                    </div>
+                    <div class="c02-header-area__additional-info U:display-flex">
+                    	
+                        <div class="c02-header-area__content-duration U:display-flex">
+	                        <span>Learn which techniques cybercriminals use to exploit digital identity for fraudulent purposes.</span>
+	                    </div>
+                    </div>
+                    <div class="c02-header-area__author-name tags">
+                        By <a class="c02-header-area__author-name tag-item" href="https://www.f5.com/labs/search.author_Shahnawaz%2BBacker">Shahnawaz Backer</a><a class="c02-header-area__author-name tag-item" href="https://www.f5.com/labs/search.author_Debbie%2BWalkowski">Debbie Walkowski</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+   		<div id="content"></div>
+    
+    
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row">
+        <div class="a01-container section">
+    <div class="a01-container-col-left">
+        <div data-component-type="article" class="c06-social-sharing section">
+
+
+
+<div class="addthis_share c06-social-sharing__links ">
+	
+	
+    <span class="addthis_share_button twitter addthis_sharing_toolbox" data-service="twitter" data-url="https://www.f5.com/labs/articles/education/digital-identity-is-an-increasingly-popular-attack-vector-for-cybercriminals.html" data-description="As cybercriminals continue trying to break into applications using legitimate channels, digital identity is a growing target. Learn what digital identity is and the attack methods fraudsters employ at every stage of the identity life cycle." data-title="Digital Identity Is an Increasingly Popular Attack Vector for Cybercriminals">
+        <span class="social-bulb xs-mr-15 twitter"></span>
+    </span>
+    <span class="addthis_share_button linkedin addthis_sharing_toolbox" data-service="linkedin" data-url="https://www.f5.com/labs/articles/education/digital-identity-is-an-increasingly-popular-attack-vector-for-cybercriminals.html" data-description="As cybercriminals continue trying to break into applications using legitimate channels, digital identity is a growing target. Learn what digital identity is and the attack methods fraudsters employ at every stage of the identity life cycle." data-title="Digital Identity Is an Increasingly Popular Attack Vector for Cybercriminals">
+        <span class="social-bulb xs-mr-15 linkedin"></span>
+    </span>
+    <span class="addthis_share_button facebook addthis_button_facebook addthis_sharing_toolbox" data-service="facebook" data-url="https://www.f5.com/labs/articles/education/digital-identity-is-an-increasingly-popular-attack-vector-for-cybercriminals.html" data-description="As cybercriminals continue trying to break into applications using legitimate channels, digital identity is a growing target. Learn what digital identity is and the attack methods fraudsters employ at every stage of the identity life cycle." data-title="Digital Identity Is an Increasingly Popular Attack Vector for Cybercriminals">
+        <span class="social-bulb xs-mr-15 facebook"></span>
+    </span>
+    <a class="mail" target="_blank" href="mailto:?subject=Digital%20Identity%20Is%20an%20Increasingly%20Popular%20Attack%20Vector%20for%20Cybercriminals&amp;body=Checkout%20this%20great%20article%20I%20read%20on%20F5%20Labs%20%20/content/f5-labs-v2/en/labs/articles/education/digital-identity-is-an-increasingly-popular-attack-vector-for-cybercriminals" rel="noreferrer">
+        <span class="social-bulb xs-mr-15 mail"></span>
+    </a>
+    
+</div></div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-center">
+        <div data-component-type="article" class="a03-article-body section">
+
+<div id="content">
+    <div class="a03-article-body__content">
+        
+    </div>
+    <div class="a22-include-vitals-on-mobile a04-include section">
+	
+    
+
+
+    
+        
+        <div class=" display-old-labs-only vitalsarea alignToSecond js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/isogrid.png">
+            <div class="accordion only-mobile ">
+                <a class="trigger-collapse collapsed article-vital">
+                    
+                    <div class="button-container">
+                        <div class="x medium"><b></b><b></b><b></b><b></b></div>
+                    </div>
+                </a>
+                <div class="can-collapse collapsed ">
+                    <div class="row">
+                        <div class="vitals-wrap">
+                            <div>
+                                
+
+
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attacker Motivation:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Cybercrime" target="_self">Cybercrime</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Terms to Know:</h5>
+            <div class="tags display-cta">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Digital+Identity%22" target="_self">Digital Identity</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Authentication" target="_self">Authentication</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22account+takeover%22" target="_self">account takeover</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Credential+stuffing%22" target="_self">Credential stuffing</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22insider+threat%22" target="_self">insider threat</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="vital-item stack-wrap ">
+                            <h5 class="vital-header">App Tiers Affected:
+                            </h5>
+                            <div class="app-stack">
+                                <div class="above-top active">
+
+                                    <div class="bg js-bg-lozad active" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-above-top-active.svg">
+                                    </div>
+                                    <span>Client</span>
+
+                                </div>
+                                <div class="red-dots shorter">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="stack-top">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-top.png">
+                                    </div>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+
+                                <div class="layer-1 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1.png" style="max-width: 80px;"/></div>
+                                    <span>Services</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-2 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3.png" style="max-width: 80px;"/></div>
+                                    <span>Access</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-3 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
+                                    <span>TLS </span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-4  ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4.png" style="max-width: 80px;"/></div>
+                                    <span>DNS</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-5 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
+                                    <span>Network</span>
+                                </div>
+                                <div class="stack-bottom">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-bottom.png">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        <div class="display-LC-only vitalsarea alignToSecond js-bg-lozad">
+            <div>
+
+
+                <div class="row">               
+
+                    <div class="vital-item stack-wrap ">
+                        <h5 class="vital-header">App Tiers Affected:</h5>
+
+
+                        <div class="app-stack ">
+                            <div class="above-top active">
+
+                                <div class="bg js-bg-lozad active" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-above-top-active.png">
+                                </div>
+                                <span>Client</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="stack-top">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-top.png">
+                                </div>
+                            </div>
+
+                            <div class="layer-1 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1.png"/>
+                                </div>
+                                <span>Services</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-2 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2.png"/>
+                                </div>
+                                <span>Access</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-3 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
+                                </div>
+                                <span>TLS </span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-4  ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4.png"/>
+                                </div>
+                                <span>DNS</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-5 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
+                                </div>
+                                <span>Network</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+                            <div class="stack-bottom">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-bottom.png">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    
+
+    
+
+
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p><span class="intro rte-custom"><i>In part one of this two-part series, we define digital identity and explore the attack vectors cybercriminals use at each stage in the identity lifecycle.</i></span></p>
+
+</div>
+
+    
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <p>Everything that we do as individuals has found its way into the digital world. From communicating with friends to purchasing good or services—even getting an education and managing investments can all be done online today. Consumers wholeheartedly embrace this “digital channel” for the broad reach and convenience it offers.</p>
+<p>To provide the right services and maintain appropriate privacy, companies doing business online maintain data about every user in the form of an account. To grant users access to their accounts, proper user identification is a must. However, when you combine the great trail of personal information people voluntarily provide about themselves online with the vast amount of identity data that has been compromised in data breaches, it’s becoming a lot more difficult to identify legitimate users online. Because identities can so easily be stolen and faked, user accounts are put in jeopardy. Even as organizations amplify their defenses, cybercriminals find digital identity and identity fraud too lucrative an attack vector to ignore.</p>
+<p>In this article, we look at the different techniques cybercriminals use to commit fraud at different stages in the “identity lifecycle.” But first, we must understand what digital identity is.</p>
+<h2>What Is Digital Identity?</h2>
+<p>In the physical world, everyone needs to assert their identity, and trust is established based on something the person <i>is</i> (their physical presence and appearance) combined with something the person <i>has</i> (an identity card, which often includes a photo to validate their identity). Identity in the digital world has some commonalities with the physical world, but user attributes, such as date of birth, age, gender, location, and government-issued identity numbers that are stored in a digital format, also become part of a person’s digital identity. Over time, the activities users perform and the devices they use also contribute to their digital identity. But without a physical document or physical presence to validate identity, the digital world must rely on <a><i></i></a><i><a href="https://www.f5.com/labs/search?q=authentication" target="_blank" rel="no-opener no-referrer">authentication</a></i> to validate an identity assertion. This is typically done using a combination of the following factors:</p>
+<ul>
+<li>something the user <i>knows</i> (such as a password, passphrase, or PIN)</li>
+<li>something the user <i>has</i> (such as a token generator)</li>
+<li>something the user <i>is</i> (a biometric factor, such as a fingerprint, voiceprint, or iris scan)</li>
+</ul>
+<p>Depending on the confidentiality of data and user tolerance for the inconvenience of the validation process, organizations combine one or more of these factors to enforce identity assertion/authentication. Some factors can be easily faked, so it’s becoming more common to augment these three factors with a contextual factor such as location, time of day, or the device used for a particular transaction. Together, these factors can help detect anomalies and improve the identification process. The sum of these factors that enable organizations to uniquely identify a user constitute digital identity. Usually this association between an account and the required authentication factors is made during the sign-up process for an online service.</p>
+<h2>How Cybercriminals Weaponize Digital Identity for Fraud Schemes</h2>
+<p>In the rapidly expanding digital universe, identity is a frequent attack focus for abuse. Fraudsters have figured out ways to carry out different malicious schemes at each stage of the identity life cycle (see Figure 1). In most cases, the end goal is to steal data or procure services intended only for the authorized user. Digital identity has a lifecycle that includes three stages: creation, operation, and dormancy. Let’s look more closely at each stage and some specific identity fraud vectors within each.</p>
+
+</div>
+
+    
+</div>
+<div class="a02-image section">
+
+
+<figure class="img-full a02-image__image">
+    <!-- link  -->
+    
+
+    
+
+    <!-- no link, no lightbox -->
+    
+
+    <!-- no link, lightbox -->
+    <a data-lightbox="Image preview" data-title="Figure 1. Different types of identity fraud can occur at each stage of the identity lifecycle." href="https://www.f5.com/content/dam/f5-labs-v2/article/articles/edu/20200814_digital_identity/F5-LABS-Fraud-Mind-Map.png">
+        <img data-src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/edu/20200814_digital_identity/F5-LABS-Fraud-Mind-Map.png" data-component-type="platter" alt="Different types of identity fraud can occur at each stage of the identity life cycle." class="js-bg-lozad"/>
+        
+    </a>
+
+    <div class="a02-image__caption">
+        Figure 1. Different types of identity fraud can occur at each stage of the identity lifecycle.
+    </div>
+</figure>
+</div>
+<div class="a03-text text section">
+<div class="cmp-text ">
+    <h2>Identity Creation</h2>
+<p>In this phase, a user identity is created on an online service in the form of an account. This helps the provider to have a record of users and customize the experience to the user’s liking, location, and needs. Data required for the account is typically collected using a web form or it’s pulled from other established services after obtaining the user’s consent.</p>
+<p>In this stage, having access to a wealth of data (from previous breaches and other avenues), criminals can scam users, organizations, or both in the following ways:</p>
+<ul class="list-paragraph">
+<li><b>New account fraud:</b> The deliberate use of stolen information to impersonate a valid user, typically with the aim of financial gain, such as obtaining credit in their name or gaining other advantages (such as limited free services) at the legitimate user’s or organization’s cost. New account fraud can take the following forms:<ul class="list-paragraph">
+<li><b>Stolen identity:</b> A cybercriminal uses stolen details (such as a government-issued identification number, photo, date of birth, location, etc.) that can identify a genuine user to create a new account and defraud an online service.</li>
+<li><b>Synthetic identity:</b> A cybercriminal amalgamates the stolen user details with fake information to create a seemingly genuine identity. The objective is to defraud the system and disappear before anyone spots the anomalies.</li>
+<li><b>Twin account fraud:</b> A fraudster tries to create an account similar to a genuine, existing online account and defraud the system by providing detailed information and making it seem like both accounts belong to the same user.</li>
+</ul>
+</li>
+<li><b>First-party fraud.</b> In this method, a user or group misrepresents their identity data or provides false information to gain an advantage or derive some services for which they are not otherwise eligible.</li>
+<li><b>Mule accounts:</b> In this method, a user creates an account and passes the information to cybercriminals in exchange for some minor financial payment. This method resembles the steps involved in money laundering.</li>
+</ul>
+<h2>Identity in Operation</h2>
+<p>In the operation stage, a user’s digital identity has already been created with an online service and is actively being used to identify the user and provide access to services. At this stage, fraudsters aim to get into the active account to obtain the service for themselves or, in the case of a financial account, make use of the user’s credit or steal funds. This process is known as account takeover (ATO), and fraudsters can trick users and steal their account access in multiple ways, including:</p>
+<ul class="list-paragraph">
+<li><b>Social engineering:</b> Fraudsters use a variety of tactics to create an environment of urgency (pretending to need help or making a limited time offer) to deceive users into divulging their personal information, including credentials, one-time passwords, credit card number, and so on.</li>
+<li><b>Phishing and smishing:</b> Fraudsters use email or mobile channels (text messages) to pose as a genuine entity or website and lure victims into voluntarily providing personal or confidential information so they can then impersonate that user.</li>
+<li><b>Credential Stuffing:</b> It is a common practice for users to reuse passwords across multiple online accounts, making stolen credentials very valuable. Fraudsters can easily procure huge quantities of credentials from compromised sites or the dark web. Then, using a systematic process, such as bots or manual labor farms, they can validate credentials across multiple websites until they can gain access and take over an account.</li>
+<li><b>Abuse of self-service features like forgotten password.</b> Most applications provide self-service access for users to get into their accounts in case they forget their current credentials. Typically, the “forgot password” functionality either asks the user to provide answers to security questions (which can easily be guessed) or sends a reset link to a preregistered email address. Fraudsters make use of data acquired either via a data breach or using online sources to gain access to the account.</li>
+<li><b>Malware-initiated fraud.</b> Fraudsters make use of malware to gain an intermediary position between two communicating parties so they can intercept communications and alter user transactions. With techniques like man-in-the-browser, they can successfully deceive users because they can modify both user input as well as the response from the server without the user realizing what is happening.</li>
+<li><b>Canary accounts.</b> Fraudsters create genuine accounts on the system to study how the system works. This technique is not used to commit direct crime but rather to understand and assist in creating actual attacks.</li>
+</ul>
+<h2>Dormant Identity</h2>
+<p>It is not uncommon for users to lose interest in or completely forget about online accounts they previously created and no longer use. Over time, these accounts become dormant. Cybercriminals can take over these forgotten accounts by reactivating them using the following:</p>
+<ul class="list-paragraph">
+<li><b>Stolen information:</b> Fraudsters use stolen credentials to reactivate accounts by calling user helplines or using self-service reactivation mechanisms.</li>
+<li><b>Insider help: </b>Time and again, criminals have colluded with insiders to circumvent tools and procedures put in place to detect fraud. Malicious insiders can activate dormant accounts for criminals to commit fraud. This mechanism is highly effective because when the fraud is uncovered, law enforcement will focus on tracking down the original account owners, while the fraudsters have already monetized their fraud and moved on.</li>
+</ul>
+<h2>Conclusion</h2>
+<p>Digital identity is an important and complex security construct that enables individuals to reap the benefits of the connected world. But fraudsters find it an equally lucrative attack vector and have found countless ways to exploit it. In this article, we reviewed some of the common techniques fraudsters use. Part two will take a deeper dive into individual fraud attack vectors, the tactics and technologies criminals use to conduct fraud at scale, and mitigation techniques.</p>
+
+</div>
+
+    
+</div>
+
+
+</div>
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-right">
+        <div class="vitalsarea section">
+
+
+    
+        
+        <div class=" display-old-labs-only vitalsarea alignToSecond js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/isogrid.png">
+            <div class="accordion only-mobile ">
+                <a class="trigger-collapse collapsed article-vital">
+                    
+                    <div class="button-container">
+                        <div class="x medium"><b></b><b></b><b></b><b></b></div>
+                    </div>
+                </a>
+                <div class="can-collapse collapsed ">
+                    <div class="row">
+                        <div class="vitals-wrap">
+                            <div>
+                                
+
+
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attacker Motivation:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Cybercrime" target="_self">Cybercrime</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Terms to Know:</h5>
+            <div class="tags display-cta">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Digital+Identity%22" target="_self">Digital Identity</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Authentication" target="_self">Authentication</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22account+takeover%22" target="_self">account takeover</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Credential+stuffing%22" target="_self">Credential stuffing</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22insider+threat%22" target="_self">insider threat</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="vital-item stack-wrap ">
+                            <h5 class="vital-header">App Tiers Affected:
+                            </h5>
+                            <div class="app-stack">
+                                <div class="above-top active">
+
+                                    <div class="bg js-bg-lozad active" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-above-top-active.svg">
+                                    </div>
+                                    <span>Client</span>
+
+                                </div>
+                                <div class="red-dots shorter">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="stack-top">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-top.png">
+                                    </div>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+
+                                <div class="layer-1 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1.png" style="max-width: 80px;"/></div>
+                                    <span>Services</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-2 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3.png" style="max-width: 80px;"/></div>
+                                    <span>Access</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-3 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
+                                    <span>TLS </span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-4  ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4.png" style="max-width: 80px;"/></div>
+                                    <span>DNS</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-5 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
+                                    <span>Network</span>
+                                </div>
+                                <div class="stack-bottom">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-bottom.png">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        <div class="display-LC-only vitalsarea alignToSecond js-bg-lozad">
+            <div>
+
+
+                <div class="row">               
+
+                    <div class="vital-item stack-wrap ">
+                        <h5 class="vital-header">App Tiers Affected:</h5>
+
+
+                        <div class="app-stack ">
+                            <div class="above-top active">
+
+                                <div class="bg js-bg-lozad active" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-above-top-active.png">
+                                </div>
+                                <span>Client</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="stack-top">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-top.png">
+                                </div>
+                            </div>
+
+                            <div class="layer-1 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1.png"/>
+                                </div>
+                                <span>Services</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-2 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2.png"/>
+                                </div>
+                                <span>Access</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-3 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
+                                </div>
+                                <span>TLS </span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-4  ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4.png"/>
+                                </div>
+                                <span>DNS</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-5 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
+                                </div>
+                                <span>Network</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+                            <div class="stack-bottom">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-bottom.png">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    
+
+    
+
+</div>
+<div class="a11-separation-line section">
+
+<div>
+	<div></div>
+</div></div>
+<div class="c20-newsletter-signup-display section">
+
+
+
+
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display__wrapper purple-bg right-rail c20-newsletter-signup-display__newsletter-form">
+	<div class="c20-newsletter-signup-display__signup-wrap">
+		<div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+			<div class="c20-newsletter-signup-display__title">
+				F5 Labs Newsletter
+            </div>
+            <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+            </div>
+		</div>
+		<div class="c20-newsletter-signup-display__row-wrap">
+			<div class="c20-newsletter-signup-display__signup-form-wrap">
+                	<!-- LOADER -->
+				<div id="loader" class="form-loader small-loader     
+                  hide-after-submit"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+				<form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit"></form>
+
+				<!-- SUCCESS MESSAGE -->
+                <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+					<div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>					
+				</div>
+			</div>
+		</div>
+
+    </div>
+    <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+        <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display__wrapper purple-bg right-rail known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__row-wrap ">
+			<div class="c20-newsletter-signup-display__signup-form-wrap">
+				
+				<!-- KNOWN USER MESSAGE -->
+                <div class="c20-newsletter-signup-display__success-message ">
+					<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container aem-GridColumn aem-GridColumn--default--12">
+    <div class="a01-container-row container-bottom">
+        <div class="a01-container section">
+    <div class="a01-container-col-left">
+        
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-center">
+        <div class="a10-article-summary section">
+    
+    
+        
+    
+    
+</div>
+<div data-component-type="article" class="a02-article-actions-container section">
+
+    
+        
+        
+        <div class="a02-article-actions-container">
+            
+
+
+
+
+
+        </div>
+    
+
+    
+</div>
+<div data-component-type="article" class="a04-article-author-bio section"><!-- <div class="cq-placeholder section" data-emptytext="Article: Author Bio" data-sly-test="false"></div> -->
+
+
+
+        
+        
+            <div class="a04-article-author-bio__content">
+                <div class="a04-article-author-bio__content__author-box">
+                    <div class="row">
+                        <div class="a04-article-author-bio__content__image-wrap">
+                            <div class="a04-article-author-bio__content__img-container">
+                                <img data-src="https://www.f5.com/content/dam/f5-labs-v2/_author-headshots/Shahnawaz_Backer.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                            </div>
+                        </div>
+                        <div class="a04-article-author-bio__content__data-wrap">
+                            <div>
+                                <b>About the author</b>
+                            </div>
+                            <div class="a04-article-author-bio__content__author-name U:margin-top-md">Shahnawaz Backer</div>
+                            <div class="a04-article-author-bio__content__author-descr"><p>Shahnawaz Backer is a Principal Security Advisor with F5 Labs. With keen interest in modern application development, digital identity and fraud vectors, he focuses on building security intelligence into solutions and firmly believes in automated proactive defence.</p>
+</div>
+                            <div>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="https://www.f5.com/labs/search.author_Shahnawaz%2BBacker">More articles from Shahnawaz Backer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="a04-article-author-bio__content">
+                <div class="a04-article-author-bio__content__author-box">
+                    <div class="row">
+                        <div class="a04-article-author-bio__content__image-wrap">
+                            <div class="a04-article-author-bio__content__img-container">
+                                <img data-src="https://www.f5.com/content/dam/f5-labs-v2/_author-headshots/Debbie_Walkowski.png" alt="" class="js-bg-lozad img-fluid a04-article-author-bio__content__image-wrap__img"/>
+                            </div>
+                        </div>
+                        <div class="a04-article-author-bio__content__data-wrap">
+                            <div>
+                                <b>About the author</b>
+                            </div>
+                            <div class="a04-article-author-bio__content__author-name U:margin-top-md">Debbie Walkowski</div>
+                            <div class="a04-article-author-bio__content__author-descr"><p>As a Security Threat Researcher for F5 Labs, Debbie specializes in writing threat-related educational content as well as blogs, articles, and comprehensive research reports about application threat intelligence. She has worked for F5 for 10 years and has more than 20 years’ experience in the technology industry as a technical writer. She holds SANS GIAC Information Security Professional (<a href="https://www.youracclaim.com/badges/b184d9ab-5941-44d2-bd92-9624e24cec5e/public_url" rel="noreferrer">GISP</a>), GIAC Security Essentials (<a href="https://www.youracclaim.com/badges/35904d93-5034-4f7c-85d7-275c5f6a99af/public_url" rel="noreferrer">GSEC</a>), and GIAC Security Fundamentals (<a href="https://www.youracclaim.com/badges/e896e680-558f-419b-aef7-709cf091d8a5/public_url" rel="noreferrer">GISF</a>) certifications. Her bachelor’s degree from the University of Washington is in scientific and technical communication with an emphasis in computer science. She is the author of 18 technology books published by IDG Books, SAMS, QUE, and Alpha Books.</p>
+</div>
+                            <div>
+                                <a class="a04-article-author-bio__content__author-more-articles" href="https://www.f5.com/labs/search.author_Debbie%2BWalkowski">More articles from Debbie Walkowski</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+    
+    
+</div>
+<div name="Footnotes" data-component-type="article" class="a09-article-footnotes section">
+
+
+    
+        
+        
+        
+    
+    
+
+</div>
+<div data-component-type="article" class="a05-article-tags section">
+
+
+    
+        
+
+        <div class="a05-article-tags__tags-box">
+            <strong class="a05-article-tags__strong">TAGS: </strong>
+            <a href="https://www.f5.com/labs/search?q=%22Digital+Identity%22" class="a05-article-tags__a">Digital Identity</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Credential+stuffing%22" class="a05-article-tags__a">Credential stuffing</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=Cybercrime" class="a05-article-tags__a">Cybercrime</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Education.html" class="a05-article-tags__a">Education</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=Client" class="a05-article-tags__a">Client</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22social+engineering%22" class="a05-article-tags__a">social engineering</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22Identity+Theft%22" class="a05-article-tags__a">Identity Theft</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="../../search%EF%B9%96q=Fraud.html" class="a05-article-tags__a">Fraud</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22account+takeover%22" class="a05-article-tags__a">account takeover</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=%22insider+threat%22" class="a05-article-tags__a">insider threat</a><span class="a05-article-tags__span">,</span>
+        
+            
+            <a href="https://www.f5.com/labs/search?q=Phishing" class="a05-article-tags__a">Phishing</a>
+        </div>
+
+    
+
+	
+    
+</div>
+
+
+    </div>
+
+</div>
+<div class="a01-container section">
+    <div class="a01-container-col-right">
+        <div class="a04-include section"><!--googleoff: all-->
+<!-- inline style for wce-edit-mode -->
+
+    
+
+
+    
+        
+        <div class=" display-old-labs-only vitalsarea alignToSecond js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/isogrid.png">
+            <div class="accordion only-mobile ">
+                <a class="trigger-collapse collapsed article-vital">
+                    
+                    <div class="button-container">
+                        <div class="x medium"><b></b><b></b><b></b><b></b></div>
+                    </div>
+                </a>
+                <div class="can-collapse collapsed ">
+                    <div class="row">
+                        <div class="vitals-wrap">
+                            <div>
+                                
+
+
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Attacker Motivation:</h5>
+            <div class="tags ">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Cybercrime" target="_self">Cybercrime</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+    
+    
+    <div class="vitalitem">
+
+
+    
+        <div class="vital-item">
+            <h5 class="vital-header">Terms to Know:</h5>
+            <div class="tags display-cta">
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Digital+Identity%22" target="_self">Digital Identity</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=Authentication" target="_self">Authentication</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22account+takeover%22" target="_self">account takeover</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22Credential+stuffing%22" target="_self">Credential stuffing</a></div>
+            
+                <!-- below markup needs to be in a one line to properly display comas after links-->
+                <div class="tag-item"><a href="https://www.f5.com/labs/search?q=%22insider+threat%22" target="_self">insider threat</a></div>
+            </div>
+        </div>
+    
+
+    
+
+</div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="vital-item stack-wrap ">
+                            <h5 class="vital-header">App Tiers Affected:
+                            </h5>
+                            <div class="app-stack">
+                                <div class="above-top active">
+
+                                    <div class="bg js-bg-lozad active" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-above-top-active.svg">
+                                    </div>
+                                    <span>Client</span>
+
+                                </div>
+                                <div class="red-dots shorter">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="stack-top">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-top.png">
+                                    </div>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+
+                                <div class="layer-1 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-1.png" style="max-width: 80px;"/></div>
+                                    <span>Services</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-2 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-3.png" style="max-width: 80px;"/></div>
+                                    <span>Access</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-3 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-2.png" style="max-width: 80px;"/></div>
+                                    <span>TLS </span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-4  ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-4.png" style="max-width: 80px;"/></div>
+                                    <span>DNS</span>
+                                </div>
+                                <div class="red-dots">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="layer-5 ">
+                                    <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/layer-5.png" style="max-width: 80px;"/></div>
+                                    <span>Network</span>
+                                </div>
+                                <div class="stack-bottom">
+                                    <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals/stack-bottom.png">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LC CODE FOR VITALS -->
+
+
+        <div class="display-LC-only vitalsarea alignToSecond js-bg-lozad">
+            <div>
+
+
+                <div class="row">               
+
+                    <div class="vital-item stack-wrap ">
+                        <h5 class="vital-header">App Tiers Affected:</h5>
+
+
+                        <div class="app-stack ">
+                            <div class="above-top active">
+
+                                <div class="bg js-bg-lozad active" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-above-top-active.png">
+                                </div>
+                                <span>Client</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="stack-top">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-top.png">
+                                </div>
+                            </div>
+
+                            <div class="layer-1 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-1.png"/>
+                                </div>
+                                <span>Services</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-2 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-2.png"/>
+                                </div>
+                                <span>Access</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-3 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-3.png"/>
+                                </div>
+                                <span>TLS </span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-4  ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-4.png"/>
+                                </div>
+                                <span>DNS</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+
+                            <div class="layer-5 ">
+                                <div class="img-wrap"><img alt="" class="js-bg-lozad" data-src="https://www.f5.com/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/layer-5.png"/>
+                                </div>
+                                <span>Network</span>
+                                <i class="icon-bolt"></i>
+
+                            </div>
+                            <div class="stack-bottom">
+                                <div class="bg js-bg-lozad" data-background-image="/etc.clientlibs/f5-labs-v2/clientlibs/labs-resources/resources/images/f5labs/vitals-lc/stack-bottom.png">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    
+
+    
+
+
+    
+    
+
+<!--googleon: all--></div>
+
+
+    </div>
+
+</div>
+
+
+    </div>
+
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    
+    
+</div>
+</div>
+<div data-component-type="category" class="u03-static-data-points aem-GridColumn aem-GridColumn--default--12"><!--googleoff: all-->
+
+    
+        
+        
+        <section class="u03-static-data-points__container fill-main-container">
+            <div class="full-site-container info-container-two-columns">
+                <div class="row">
+                    <div class="u03-static-data-points__left-column-container border-right">
+                        <div class="u03-static-data-points__left-column-wrap">
+                            <h3 class="display-3 u03-static-data-points__headline">Hundreds of apps will be attacked by the time you read this.</h3>
+                            <p><p>So, we get to work. We obsess over effective attack methods. We monitor the growth of IoT and its evolving threats. We dive deep into the latest crypto-mining campaigns. We analyze banking Trojan targets. We dissect exploits. We hunt for the latest malware. And then our team of experts share it all with you. For more than 20 years, F5 has been leading the app delivery space. With our experience, we are passionate about educating the security community-providing the intel you need to stay informed so your apps can stay safe.</p>
+</p>
+                        </div>
+                    </div>
+                    <div class="u03-static-data-points__right-column-container">
+                        <div class="u03-static-data-points__right-column-wrap">
+                            <h4 class="display-6">
+                                Every
+                            </h4>
+                            <h3 class="f5labs-big-number">9 hrs</h3>
+                            a critical vulnerability—with the potential for remote code execution—is released.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    
+
+<!--googleon: all--></div>
+<div class="u02-footer aem-GridColumn aem-GridColumn--default--12"><div>
+	
+<footer id="footer" class="u02-footer_labs conf06-footer-configuration">
+    <div class="conf06-footer-configuration__footer-logo">
+        <svg version="1.1" viewBox="0 0 113.7 100.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <metadata>
+                <rdf:RDF>
+                    <cc:Work rdf:about="">
+                        <dc:format>image/svg+xml</dc:format>
+                        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                        <dc:title/>
+                    </cc:Work>
+                </rdf:RDF>
+            </metadata>
+            <path class="st0" d="M70.5 37.2V16.8l18-10.3 18.1 10.2v20.4L88.5 47.5l-18-10.3zm18-33.7L67.8 15.2v23.5l20.7 11.7L109 38.8V15.1L88.5 3.5z"/>
+            <path class="st0" d="M41.5 97.2L4.6 76.4V34.7l36.9-20.8 21.8 12.2.1 7.1-21.9-12.3-30.8 17.3v34.6l30.8 17.4 30.8-17.4V47.4l6.1 3.4v25.6z"/>
+            <path class="st0" d="M44 63l-3.3 2.8c2.4 2.6 5.5 3.9 8.8 3.9 5.6 0 9.7-4.1 9.7-9.3 0-5.4-3.8-9.1-9.4-9.1-.8 0-1.7.1-2.6.2l.3-4.6h9.1l1.4-4.3H43.7l-.6 13.9c1.7-1 3.7-1.5 5.5-1.5 3.6 0 6 2.3 6 5.3 0 2.9-2.3 5.1-5.2 5.1-1.9 0-3.8-.8-5.4-2.4m-20.2 5.9h4.6V57.3H38v-4h-9.7v-6.7h10.9v-4.1H23.8v26.4zM91.3 29.9v-2.4h.9c.9 0 1.4.4 1.4 1.2 0 .8-.5 1.2-1.4 1.2h-.9zm0-3.4v-2.1h.7c1 0 1.5.3 1.5 1s-.5 1.1-1.4 1.1h-.8zm-1.2 4.4h2c1.9 0 2.9-.7 2.9-2.2 0-.9-.5-1.6-1.4-1.8.8-.3 1.2-.8 1.2-1.6 0-1.2-.8-1.9-2.5-1.9H90v7.5zm-5.9-2.4l1.2-2.8 1.2 2.8h-2.4zM83 30.9l.6-1.3H87l.6 1.3H89l-3.6-7.8h-.1l-3.7 7.8H83zm-6.5 0H81v-1.2h-3.2v-6.4h-1.3v7.6zM100.1 23.4c-.4-.2-.8-.3-1.2-.3-.6 0-1.1.2-1.5.6-.4.4-.6.8-.6 1.3 0 .2 0 .4.1.6.1.2.2.4.4.6.2.2.4.4.6.5.2.1.5.3 1 .5.4.2.7.3.9.4.2.1.3.3.5.5.1.2.2.4.2.6 0 .3-.1.6-.4.8-.2.2-.5.3-.9.3-.8 0-1.3-.4-1.7-1.2l-1 .3c.3.7.6 1.2 1.1 1.5.5.3 1 .5 1.6.5.6 0 1.2-.2 1.6-.6.4-.4.7-1 .7-1.6 0-.3 0-.5-.1-.7-.1-.2-.2-.5-.4-.7l-.6-.6c-.3-.2-.6-.4-1.1-.6-.5-.2-.8-.4-1-.6-.2-.2-.3-.4-.3-.6 0-.3.1-.5.3-.6.2-.2.5-.2.9-.2.3 0 .6.1.8.2.2.1.4.3.6.5l.8-.7c-.6-.3-.9-.5-1.3-.7z"/>
+        </svg>
+    </div>
+
+    <div class="conf06-footer-configuration__newslettersignup">
+
+
+
+
+
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg c20-newsletter-signup-display__newsletter-form">
+    <div class="c20-newsletter-signup-display__wrapper purple-bg  benefits-visible">
+
+        <div class="c20-newsletter-signup-display__signup-wrap">
+
+            <div class="c20-newsletter-signup-display__row form-and-benefits-row hide-after-submit">
+                <div class="c20-newsletter-signup-display__col">
+                    <div class="c20-newsletter-signup-display__title only-mobile">
+                        F5 Labs Newsletter
+                    </div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+
+                    </div>
+                </div>
+                <div class="c20-newsletter-signup-display__col">
+
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <div class="c20-newsletter-signup-display__title only-desktop">
+                            F5 Labs Newsletter
+                        </div>
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+                        <!-- LOADER -->
+                        <div id="loader" class="small-loader form-loader     
+                             "><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                        <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                            <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- SUCCESS MESSAGE -->
+            <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+                <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                <div class="c20-newsletter-signup-display__article-intro">
+                    Thanks for signing up! Get started with some of the articles below:
+                </div>
+                <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Fraud.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Fraud</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="../threat-intelligence/2020-phishing-and-fraud-report.html" class="text-article__link">
+
+                                <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">November 11, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Education.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Education</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="what-is-the-cia-triad.html" class="text-article__link">
+
+                                <div class="text-article__article-title">What Is the CIA Triad?</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex ">
+                                    <span class="U:align-self-center">July 09, 2019</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="articles__col">
+
+                        <div class="article">
+                            <div class="U:display-flex U:align-items-center">
+
+                                <a href="../../search%EF%B9%96q=Strategies.html">
+                                    <div class="text-article__category">
+                                        <span class="badge badge-secondary">Strategies</span>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a href="../cisotociso/the-three-main-cybersecurity-career-paths.html" class="text-article__link">
+
+                                <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                            </a>
+                            <div class="U:display-flex U:flex-nowrap">
+                                <div class="text-article__date U:display-flex mid-point">
+                                    <span class="U:align-self-center">December 08, 2020</span>
+                                </div>
+                                <div class="text-article__content-duration U:display-flex">
+                                    <span class="U:align-self-center">9 min. read</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="c20-newsletter-signup-display footer-signup purple-bg known-user-not-visible c20-newsletter-signup-display__known-user-message U:display-none">
+	<div class="c20-newsletter-signup-display__wrapper purple-bg}">
+
+		<div class="c20-newsletter-signup-display__signup-wrap">
+			<div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none">
+				<div class="c20-newsletter-signup-display__success-message-content"><p>Welcome back! Need to change your email or add a new one? Click <a class="newsletter-link">here</a>. </p>
+</div>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+    <div class="conf06-footer-configuration__main-footer-container">
+        <div class="conf06-footer-configuration__main-footer-wrapper">
+          
+            <div class="conf06-footer-configuration__links-wrap first-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        <ul>
+            <li><a href="../../threat-intelligence.html" target="_blank" rel="no-opener no-referrer">THREATS</a></li>
+        
+            <li><a href="../../ciso-to-ciso.html" target="_blank" rel="no-opener no-referrer">CISO TO CISO</a></li>
+        
+            <li><a href="../../application-protection.html" target="_blank" rel="no-opener no-referrer">APPLICATION PROTECTION</a></li>
+        </ul>
+    
+
+    
+</div>
+            </div>
+            <div class="conf06-footer-configuration__links-wrap second-column">
+                <div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Link List"></div> -->
+    
+        
+    
+
+    
+</div>
+            </div>
+                  
+
+            <div class="conf06-footer-configuration__social-links-wrap">
+                
+<div>
+    <!-- <div class="cq-placeholder section" data-emptytext="Social media links configuration"></div> -->
+	<ul>
+		<li class="twitter">			
+			<a href="https://twitter.com/F5Labs" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb twitter xs-mr-15"></span></div><div class="float-left">TWITTER</div></a>
+		</li>
+	
+		<li class="linkedin">			
+			<a href="https://www.linkedin.com/showcase/f5labs/" target="_blank" rel="no-opener no-referrer" rel="noreferrer"><div class="float-left"><span class="social-bulb small-bulb linkedin xs-mr-15"></span></div><div class="float-left">LINKEDIN</div></a>
+		</li>
+	</ul>
+
+</div>
+
+            </div>
+        </div>
+        <div class="conf06-footer-configuration__foot-note  conf06-footer-configuration__footer-bottom footer-small">
+            <span class="conf06-footer-configuration__all-rights-reserved"> &copy; 2022 F5, Inc. All rights reserved</span> <br/>
+            
+
+                <a href="../../../company/policies.html">Policies</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/privacy-notice.html">Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/trademarks.html">Trademarks</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../index.html" rel="noreferrer">Manage Subscriptions</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/F5-California-privacy-summary.html">California Privacy</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+
+                <a href="../../../company/policies/privacy-notice.html#no-sell">Do Not Sell My Personal Information</a>
+                <span class="conf06-footer-configuration__separator">|</span>
+            
+            <span>
+                <span id="teconsent"></span>
+            </span>
+
+        </div>
+    </div>
+
+    <script class="n-lang-en" async="async" src="../../../../consent.trustarc.com/notice%EF%B9%96domain=f5.com&amp;c=teconsent&amp;js=nj&amp;noticeType=bb&amp;text=true&amp;gtm=1.js" crossorigin=""></script>
+  
+     <div>
+
+
+
+
+
+<div class="c20-newsletter-signup-display__popover-bg   ">
+    <div class=" c20-newsletter-signup-display popover  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap hide-after-submit">
+                    <div class="c20-newsletter-signup-display__title">F5 Labs Newsletter</div>
+                    <div class="c20-newsletter-signup-display__benefits-copy"><ul class="hex-white rte-custom" style="font-size: 18.0px;line-height: 24.0px;">
+<li><span class="hex-white rte-custom">One email per week, with newsletter exclusives</span></li>
+<li><span class="hex-white rte-custom">Latest security research insights</span></li>
+<li><span class="hex-white rte-custom">CISO-level expert analysis</span></li>
+</ul>
+</div>
+                </div>
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__signup-form-wrap">
+                        <form data-formid="5799" data-forminstance="basic" class="email-signup__signup-form-wrap__form mktoForm mktoHasWidth mktoLayoutLeft hide-after-submit">
+                        </form>
+
+                        <!-- SUCCESS MESSAGE -->
+                        <div class="c20-newsletter-signup-display__success-message newsletter-success-message U:display-none ">
+                            <div class="c20-newsletter-signup-display__success-message-content">Great! You should receive your first email shortly.</div>
+                            <div class="c20-newsletter-signup-display__article-intro">
+                                Thanks for signing up! Get started with some of the articles below:
+                            </div>
+
+                            <div class="U:flex-wrap U:display-flex articles-cols-wrap">
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="../threat-intelligence/2020-phishing-and-fraud-report.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">2020 Phishing and Fraud Report</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">November 11, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="what-is-the-cia-triad.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">What Is the CIA Triad?</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex ">
+                                                <span class="U:align-self-center">July 09, 2019</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center"></span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            
+                                <div class="articles__col">
+            
+                                    <div class="article">
+                                        <div class="U:display-flex U:align-items-center">
+            
+                                        
+            
+                                        </div>
+            
+                                        <a href="../cisotociso/the-three-main-cybersecurity-career-paths.html" class="text-article__link">
+            
+                                            <div class="text-article__article-title">The Three Main Cybersecurity Career Paths</div>
+                                        </a>
+                                        <div class="U:display-flex U:flex-nowrap">
+                                            <div class="text-article__date U:display-flex mid-point">
+                                                <span class="U:align-self-center">December 08, 2020</span>
+                                            </div>
+                                            <div class="text-article__content-duration U:display-flex">
+                                                <span class="U:align-self-center">9 min. read</span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                         
+                        </div>
+
+                        <!-- LOADER -->
+                        <div id="loader" class="U:display-none big-loader"><div id="hexagon-loader">
+    <svg width="104" height="120" viewBox="0 0 104 120" xmlns="http://www.w3.org/2000/svg" id="hexagon">
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-base"/>
+        <path d="m104 89.7-51.7 30.3-52-29.7-.3-60 51.7-30.3 52 29.7z" id="hexagon-line-animation"/>
+    </svg>
+</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="c20-newsletter-signup-display__privacy hide-after-submit">
+                <div><p><i>The information you provide will be treated in accordance with the <a href="../../../company/policies/privacy-notice.html" target="_blank" rel="no-opener no-referrer"><span style="color: rgb(247,234,76);">F5 Privacy Notice</span></a>.</i></p>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" c20-newsletter-signup-display popover c20-newsletter-signup-display__subscribed-already  purple-bg">
+        <div class="lb-data">
+            <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+        <div class=" c20-newsletter-signup-display__wrapper   popover purple-bg" data-delay="45">
+            <div class="c20-newsletter-signup-display__signup-wrap">
+                <div class="c20-newsletter-signup-display__row-wrap">
+                    <div class="c20-newsletter-signup-display__title">You already have a subscription</div>
+                  
+                </div>
+               
+              
+            </div>
+          
+        </div>
+    </div>
+
+</div>
+</div>
+  
+</footer>
+ 
+</div></div>
+
+    
+</div>
+</div>
+
+
+     
+        
+    
+    
+
+    
+<script src="../../../etc.clientlibs/base/clientlibs/libs/jquery/v3.6.0.abec7e706514e7e243d79b097790f71b.js"></script>
+<script src="../../../etc.clientlibs/clientlibs/granite/jquery/granite/csrf.a9dcac4698709ca8e1cbc88363cf0793.js"></script>
+<script src="../../../etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.68e8a508c100f218cc66bb13a94d1002.js"></script>
+<script src="../../../etc.clientlibs/f5-labs-v2/clientlibs/clientlib-base.d96c3f535f649b3c2392029bf4ce52cd.js"></script>
+
+
+ 
+
+	<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5095d30f38626622"></script>
+	
+
+    
+
+
+        <div id="consent_blackbar" style="position:fixed;bottom:200px;width:100%"></div>
+    </body>
+</html>
