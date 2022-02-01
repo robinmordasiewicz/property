@@ -64,4 +64,17 @@ https://www.f5.com/solutions/traffic-management
 https://www.f5.com/content/dam/f5-com/global-assets/default-ogimage.png
 https://www.f5.com/solutions/service-provider-security/5g-security
 https://www.f5.com/solutions/service-provider-security/5g-security.socialImage.png
+https://www.f5.com/content/dam/f5-com/global-assets/images/heros/city-driverless-cars-ai-hero_xs.jpg
+https://www.f5.com/content/dam/f5-com/global-assets/images/heros/city-driverless-cars-ai-hero_sm.jpg
+https://www.f5.com/content/dam/f5-com/global-assets/images/heros/city-driverless-cars-ai-hero_md.jpg
+https://www.f5.com/content/dam/f5-com/global-assets/images/heros/city-driverless-cars-ai-hero_lg.jpg
+https://www.f5.com/content/dam/f5-com/global-assets/images/heros/city-driverless-cars-ai-hero_xl.jpg
+https://www.f5.com/content/dam/f5-com/global-assets/images/heros/city-driverless-cars-ai-hero_hd.jpg
+https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/solutions/service-providers/5g/unlock-the-promise-of-5g-banner_xs.jpg
+https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/solutions/service-providers/5g/unlock-the-promise-of-5g-banner_sm.jpg
+https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/solutions/service-providers/5g/unlock-the-promise-of-5g-banner_md.jpg
+https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/solutions/service-providers/5g/unlock-the-promise-of-5g-banner_lg.jpg
+https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/solutions/service-providers/5g/unlock-the-promise-of-5g-banner_xl.jpg
+https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/solutions/service-providers/5g/unlock-the-promise-of-5g-banner_hd.jpg
+https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/solutions/service-providers/5g/blog-state-off-app-services-report-thumbnail.jpg
 

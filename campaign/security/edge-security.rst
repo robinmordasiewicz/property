@@ -9,5 +9,5 @@ Edge
 
 .. raw:: html
 
-    <iframe width="1280" height="720" src="../../_static/sites/www.f5.com/solutions/service-providers/edge-security.html" title=NGINX frameborder="1" scrolling="yes"></iframe>
+    <iframe width="1366" height="768" src="../../_static/sites/www.f5.com/solutions/service-providers/edge-security.html" title=NGINX frameborder="1" scrolling="yes"></iframe>
 
