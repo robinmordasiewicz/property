@@ -1,4 +1,4 @@
-Gi-LAN N6
+Mobile Core
 =================
 
 .. toctree::
@@ -9,6 +9,7 @@ Gi-LAN N6
 
    5g-edge-telco-cloud.rst
    5g-sba-solution-overview.rst
+   5g-security-threats-challenges-for-service-providers.rst
 
 https://www.f5.com/solutions/mobility-and-5g-evolution
 
