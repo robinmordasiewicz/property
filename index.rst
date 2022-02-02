@@ -9,7 +9,7 @@ Portfolio
 
    campaign/index.rst
    solution-profile/index.rst
-   use-cases/index.rst
+   use-case/index.rst
    product/index.rst
    video/index.rst
    white-paper/index.rst
@@ -17,8 +17,8 @@ Portfolio
    brand/index.rst
    documentation/index.rst
    support/index.rst
-   sales/index.rst
-   partners/index.rst
+   contact/index.rst
+   partner/index.rst
    event/index.rst
 
 This is the F5 family
