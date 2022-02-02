@@ -7,8 +7,6 @@ Gi-LAN N6
    :titlesonly:
    :glob:
 
-   5g-edge-telco-cloud.rst
-
 https://www.f5.com/solutions/mobility-and-5g-evolution
 
 .. raw:: html
