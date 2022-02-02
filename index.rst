@@ -12,8 +12,9 @@ Portfolio
    solution-profile/index.rst
    product/index.rst
    video/index.rst
-   white-paper/index.rst
    blog/index.rst
+   white-paper/index.rst
+   deployment-guide/index.rst
    documentation/index.rst
    support/index.rst
    brand/index.rst
