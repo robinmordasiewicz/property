@@ -16,10 +16,10 @@ Portfolio
    blog/index.rst
    documentation/index.rst
    support/index.rst
-   contact/index.rst
    brand/index.rst
    partner/index.rst
    survey/index.rst
+   contact/index.rst
 
 https://www.f5.com/pdf/solution-center/f5-handbook-for-service-providers-guide.pdf
 

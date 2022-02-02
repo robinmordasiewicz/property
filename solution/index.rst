@@ -7,8 +7,8 @@ Solutions
    :titlesonly:
    :glob:
 
-   mobility-and-5g-evolution/index.rst
-   service-provider-security/index.rst
+   service-provider-security/index.rst 
+   service-provider/index.rst
 
 https://www.f5.com/solutions/service-providers
 
