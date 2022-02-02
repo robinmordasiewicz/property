@@ -1,4 +1,5 @@
-https://www.f5.com/services/resources/white-papers/augmented-ddos-protection-for-cloud-nfv-environments-with-big-ip-ve-for-smartnics.html
+https://www.f5.com/services/resources/white-papers/5g-success-starts-with-cloud-native-infrastructure
+https://www.f5.com/services/resources/white-papers/augmented-ddos-protection-for-cloud-nfv-environments-with-big-ip-ve-for-smartnics
 https://www.f5.com/c/content/dam/f5-com/page-assets-en/home-en/solutions/service-providers/5g-hype-becomes-reality.jpg
 https://www.f5.com/content/dam/f5-app-security/en/2020/article/PULLQUOTE-DESKTOP+MOBILE_a.jpg
 https://www.f5.com/c/content/dam/f5-com/global-assets/icons/api.png
