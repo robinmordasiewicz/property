@@ -7,8 +7,8 @@
 }
 @font-face {
   font-family: "TabletGothic";
-  src: url('../../f5/images/TabletGothic.eot');
-  src: url('../../f5/images/TabletGothic%EF%B9%96.eot#iefix') format('embedded-opentype'), url('../../f5/images/TabletGothic.woff.txt') format('woff'), url('../../f5/images/TabletGothic.ttf') format('truetype'), url('https://interact.f5.com/rs/f5/images/TabletGothic.svg#TabletGothic') format('svg');
+  src: url('../../f5/images/TabletGothic.eot.txt');
+  src: url('../../f5/images/TabletGothic.eot%EF%B9%96.txt#iefix') format('embedded-opentype'), url('../../f5/images/TabletGothic.woff.txt') format('woff'), url('../../f5/images/TabletGothic.ttf.txt') format('truetype'), url('https://interact.f5.com/rs/f5/images/TabletGothic.svg#TabletGothic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -21,15 +21,15 @@
 }
 @font-face {
   font-family: "ProximaBold";
-  src: url('../../f5/images/ProximaBold.eot');
-  src: url('../../f5/images/ProximaBold%EF%B9%96.eot#iefix') format('embedded-opentype'), url('../../f5/images/ProximaBold.woff') format('woff'), url('../../f5/images/ProximaBold.ttf') format('truetype'), url('https://interact.f5.com/rs/f5/images/ProximaBold.svg#ProximaBold') format('svg');
+  src: url('../../f5/images/ProximaBold.eot.txt');
+  src: url('../../f5/images/ProximaBold.eot%EF%B9%96.txt#iefix') format('embedded-opentype'), url('../../f5/images/ProximaBold.woff') format('woff'), url('../../f5/images/ProximaBold.ttf') format('truetype'), url('https://interact.f5.com/rs/f5/images/ProximaBold.svg#ProximaBold') format('svg');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "ProximaMedium";
-  src: url('../../f5/images/ProximaMedium.eot');
-  src: url('../../f5/images/ProximaMedium%EF%B9%96.eot#iefix') format('embedded-opentype'), url('../../f5/images/ProximaMedium.woff') format('woff'), url('../../f5/images/ProximaMedium.ttf') format('truetype'), url('https://interact.f5.com/rs/f5/images/ProximaMedium.svg#ProximaMedium') format('svg');
+  src: url('../../f5/images/ProximaMedium.eot.txt');
+  src: url('../../f5/images/ProximaMedium.eot%EF%B9%96.txt#iefix') format('embedded-opentype'), url('../../f5/images/ProximaMedium.woff') format('woff'), url('../../f5/images/ProximaMedium.ttf') format('truetype'), url('https://interact.f5.com/rs/f5/images/ProximaMedium.svg#ProximaMedium') format('svg');
   font-weight: 400;
   font-style: normal;
 }
@@ -42,8 +42,8 @@
 }
 @font-face {
   font-family: "runes";
-  src: url('../../f5/images/runes.eot');
-  src: url('../../f5/images/runes%EF%B9%96.eot#iefix') format('embedded-opentype'), url('../../f5/images/runes.woff') format('woff'), url('../../f5/images/runes.ttf') format('truetype'), url('https://interact.f5.com/rs/f5/images/runes.svg#rune') format('svg');
+  src: url('../../f5/images/runes.eot.txt');
+  src: url('../../f5/images/runes.eot%EF%B9%96.txt#iefix') format('embedded-opentype'), url('../../f5/images/runes.woff') format('woff'), url('../../f5/images/runes.ttf') format('truetype'), url('https://interact.f5.com/rs/f5/images/runes.svg#rune') format('svg');
   font-weight: 400;
   font-style: normal;
 }
