@@ -7,6 +7,8 @@ S/Gi-Lan N6 Consolidation
    :titlesonly:
    :glob:
 
+https://solutions/service-providers/sgi-lan-consolidation
+
 .. raw:: html
 
-    <iframe width="1280" height="720" src="../_static/sites/www.f5.com/solutions/service-providers/sgi-lan-consolidation.html" title=F5 frameborder="1" scrolling="yes"></iframe>
+    <iframe width="1366" height="768" src="../../_static/sites/www.f5.com/solutions/service-providers/sgi-lan-consolidation.html" title=F5 frameborder="1" scrolling="yes"></iframe>

@@ -15,13 +15,13 @@ https://www.f5.com/pdf/solution-center/f5-solutions-for-the-emerging-5g-landscap
       <object
         data='https://www.f5.com/pdf/solution-center/f5-solutions-for-the-emerging-5g-landscape.pdf'
         type="application/pdf"
-        width="500"
-        height="678"
+        width="1366"
+        height="768"
       >
         <iframe
-          src=''
-          width="500"
-          height="678"
+          src='https://www.f5.com/pdf/solution-center/f5-solutions-for-the-emerging-5g-landscape.pdf'
+          width="1366"
+          height="768"
         >
         <p>This browser does not support PDF!</p>
         </iframe>

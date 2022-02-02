@@ -15,13 +15,13 @@ https://www.f5.com/pdf/solution-center/f5_optimize_your_network_ebook.pdf
       <object
         data='https://www.f5.com/pdf/solution-center/f5_optimize_your_network_ebook.pdf'
         type="application/pdf"
-        width="500"
-        height="678"
+        width="1366"
+        height="768"
       >
         <iframe
           src='https://www.f5.com/pdf/solution-center/f5_optimize_your_network_ebook.pdf'
-          width="500"
-          height="678"
+          width="1366"
+          height="768"
         >
         <p>This browser does not support PDF!</p>
         </iframe>
