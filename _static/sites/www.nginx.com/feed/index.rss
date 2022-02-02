@@ -12,7 +12,7 @@
 	<atom:link href="https://www.nginx.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.nginx.com</link>
 	<description>The High Performance Reverse Proxy, Load Balancer, Edge Cache, Origin Server</description>
-	<lastBuildDate>Mon, 31 Jan 2022 22:04:21 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 01 Feb 2022 23:24:16 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,6 +20,70 @@
 	1	</sy:updateFrequency>
 	
 	<item>
+		<title>Microservices March 2022: Kubernetes Networking</title>
+		<link>https://www.nginx.com/blog/microservices-march-2022-kubernetes-networking/</link>
+		
+		<dc:creator><![CDATA[Jenn Gile of F5]]></dc:creator>
+		<pubDate>Tue, 01 Feb 2022 23:24:16 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Events]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[microservices]]></category>
+		<category><![CDATA[Kubernetes]]></category>
+		<category><![CDATA[NGINX Ingress Controller]]></category>
+		<category><![CDATA[NGINX Service Mesh]]></category>
+		<category><![CDATA[production-grade Kubernetes]]></category>
+		<category><![CDATA[Microservices March]]></category>
+		<guid isPermaLink="false">https://www.nginx.com/?p=68695</guid>
+
+					<description><![CDATA[<p>What Is Microservices March? It’s a month&#8209;long, free educational program designed to up&#8209;level your knowledge of various microservices topics. (If you missed last year’s program, you can catch all the content on demand.) Why Kubernetes Networking for 2022? Getting Kubernetes into production is a top priority for many organizations. But the journey is hard and [...]</p>
+<p><a class="btn btn-secondary understrap-read-more-link" href="https://www.nginx.com/blog/microservices-march-2022-kubernetes-networking/">Read More...</a></p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/microservices-march-2022-kubernetes-networking/">Microservices March 2022: Kubernetes Networking</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><img src="https://www.nginx.com/wp-content/uploads/2022/01/Microservices-March-2022-intro_banner.png" alt="" width="2048" height="500" class="aligncenter size-full wp-image-68719" srcset="https://www.nginx.com/wp-content/uploads/2022/01/Microservices-March-2022-intro_banner.png 2048w, https://www.nginx.com/wp-content/uploads/2022/01/Microservices-March-2022-intro_banner-300x73.png 300w, https://www.nginx.com/wp-content/uploads/2022/01/Microservices-March-2022-intro_banner-1024x250.png 1024w, https://www.nginx.com/wp-content/uploads/2022/01/Microservices-March-2022-intro_banner-768x188.png 768w, https://www.nginx.com/wp-content/uploads/2022/01/Microservices-March-2022-intro_banner-1536x375.png 1536w, https://www.nginx.com/wp-content/uploads/2022/01/Microservices-March-2022-intro_banner-150x37.png 150w, https://www.nginx.com/wp-content/uploads/2022/01/Microservices-March-2022-intro_banner-640x156.png 640w, https://www.nginx.com/wp-content/uploads/2022/01/Microservices-March-2022-intro_banner-320x78.png 320w" sizes="(max-width: 2048px) 100vw, 2048px" /></p>
+<h2>What Is Microservices March?</h2>
+<p>It’s a month&#8209;long, free educational program designed to up&#8209;level your knowledge of various <a href="https://www.nginx.com/resources/glossary/microservices/">microservices</a> topics. (If you missed last year’s program, you can <a href="https://www.nginx.com/blog/welcome-to-microservices-march/">catch all the content on demand</a>.)</p>
+<h2>Why Kubernetes Networking for 2022?</h2>
+<p>Getting <a href="https://www.nginx.com/resources/glossary/kubernetes">Kubernetes</a> into production is a top priority for many organizations. But the journey is hard and getting value can be even harder. Through conversations with our customers and community, we’ve observed that Kubernetes networking&nbsp;&ndash; a key component of production&#8209;grade Kubernetes&nbsp;&ndash; is frequently misunderstood or underappreciated. Without a solid Kubernetes networking strategy (and the right talent in place to execute it), the most likely outcomes are downtime, security breaches, and wasted money and effort. As providers of two Kubernetes networking tools&nbsp;&ndash; an <a href="https://www.nginx.com/resources/glossary/kubernetes-ingress-controller">Ingress controller</a> and <a href="https://www.nginx.com/resources/glossary/service-mesh/">service mesh</a>&nbsp;&ndash; we’re in a great position to use our knowledge and resources to ease your path to production Kubernetes. </p>
+<h3>What Is Kubernetes Networking?</h3>
+<p>Simply put, Kubernetes networking is a framework for connecting your Kubernetes components, services, and traffic&nbsp;&ndash; but it’s more than just moving packets from&nbsp;A to&nbsp;B. Kubernetes networking includes layers of unique networking constructs and pieces (from nodes and clusters to Ingress controllers to service meshes) that work together to provide a range of capabilities. Whether you’re just getting started in Kubernetes or are dealing with advanced architectural decisions, understanding Kubernetes networking is crucial to successfully delivering your containerized apps and APIs.</p>
+<h2>What Will I Learn?</h2>
+<p>If you’re a complete newbie to Kubernetes networking&nbsp;&ndash; don’t worry! This year’s program is a series of events and self&#8209;paced activities designed to take you from Zero to Hero. You can choose to complete the entire program or just the bits and pieces you need to fill in your knowledge gaps. The total time commitment is about&nbsp;16 hours, spread across&nbsp;4 weeks.</p>
+<p>Four units progressively guide you through the essentials of Kubernetes networking:</p>
+<ul>
+<li>Unit 1 (March 7&ndash;11): Architecting Kubernetes Clusters for High&#8209;Traffic Websites
+<li>Unit 2 (March 14&ndash;18): Exposing APIs in Kubernetes
+<li>Unit 3 (March 21&ndash;25): Microservices Security Pattern
+<li>Unit 4 (March 28&ndash;31): Advanced Kubernetes Deployment Strategies
+</ul>
+<p>Each unit includes:</p>
+<ul>
+<li>A YouTube livestream featuring experts from NGINX and <a target="_blank" href="https://learnk8s.io/" rel="noopener noreferrer">learnk8s</a>
+<li>A collection of blogs, videos and ebooks to deepen your knowledge
+<li>A hands&#8209;on, self&#8209;paced lab for experimenting with Kubernetes technologies
+<li>Access to the NGINX experts via our Slack community
+</ul>
+<p><iframe width="770" height="433" src="https://www.youtube.com/embed/mwLiQdEbzaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<h2>Who Should Participate?</h2>
+<p>While anyone interested in Kubernetes will learn a lot, we’d especially like to invite current and aspiring “Kubernetes operators”&nbsp;&ndash; regardless of Kubernetes skill level&nbsp;&ndash; to participate because the curriculum caters to your professional development!</p>
+<h3>What’s a Kubernetes Operator?</h3>
+<p>An Kubernetes operator or “cluster operator” (not to be confused with the Kubernetes programmatic <a target="_blank" href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/" rel="noopener noreferrer">operator</a> construct) is analogous to what we would have called a system administrator in the pre&#8209;cloud era. </p>
+<ul>
+<li><strong>Job titles</strong>&nbsp;&ndash; We haven’t met anyone with the job title “Kubernetes Operator”&#8230;yet. Most often, people in this role have the title of Cloud Architect or Site Reliability Engineer. They’re usually part of a larger operations team, such as a <a href="https://www.nginx.com/blog/why-every-company-needs-platform-ops/">Platform Ops</a> team.</li>
+<li><strong>Job description</strong>&nbsp;&ndash; Kubernetes operators are responsible for Kubernetes as a piece of infrastructure and are commonly responsible for helping other teams run their services on Kubernetes. Their jobs can include planning and monitoring capacity, scaling the clusters, and handling larger management tasks that help provide Kubernetes as a platform for network and app teams.</li>
+</ul>
+<h2>How Do I Join Microservices March 2022?</h2>
+<p><a href="https://www.nginx.com/c/microservices-march-2022-kubernetes-networking/"><img src="https://www.nginx.com/wp-content/uploads/2022/01/Microservices-March-2022-intro_footer.png" alt="" width="2049" height="501" class="aligncenter size-full wp-image-68718" srcset="https://www.nginx.com/wp-content/uploads/2022/01/Microservices-March-2022-intro_footer.png 2049w, https://www.nginx.com/wp-content/uploads/2022/01/Microservices-March-2022-intro_footer-300x73.png 300w, https://www.nginx.com/wp-content/uploads/2022/01/Microservices-March-2022-intro_footer-1024x250.png 1024w, https://www.nginx.com/wp-content/uploads/2022/01/Microservices-March-2022-intro_footer-768x188.png 768w, https://www.nginx.com/wp-content/uploads/2022/01/Microservices-March-2022-intro_footer-1536x376.png 1536w, https://www.nginx.com/wp-content/uploads/2022/01/Microservices-March-2022-intro_footer-150x37.png 150w, https://www.nginx.com/wp-content/uploads/2022/01/Microservices-March-2022-intro_footer-640x156.png 640w, https://www.nginx.com/wp-content/uploads/2022/01/Microservices-March-2022-intro_footer-320x78.png 320w" sizes="(max-width: 2049px) 100vw, 2049px" /></a></p>
+<p>It’s easy! <a href="https://www.nginx.com/c/microservices-march-2022-kubernetes-networking/ ">Sign up</a> for free to get access to the program. </p>
+<p>When you register, we’ll collect just enough information to provide you with calendar reminders for the livestreams, weekly learning guides, access to the Slack community, and enrollment for the labs.</p>
+<p>We love hearing about what you’re interested in and how we can make your Microservices March experience valuable and fun. If you have questions or suggestions, please feel free to leave them in the comments section below. Stay tuned for more updates and we can’t wait to “see” you in March!</p>
+<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/microservices-march-2022-kubernetes-networking/">Microservices March 2022: Kubernetes Networking</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Supporting Open Source for a More Secure World: F5 NGINX Announces Sponsorships of Let’s Encrypt and OpenSSL</title>
 		<link>https://www.nginx.com/blog/supporting-open-source-f5-nginx-sponsorships-of-lets-encrypt-openssl/</link>
 		
@@ -851,51 +915,6 @@ done</code></pre>
 </ul>
 <p>Get started by requesting your  <span style="white-space: nowrap;"><a href="https://www.nginx.com/free-trial-request-nginx-ingress-controller">free 30-day trial</a></span> of NGINX Ingress Controller with NGINX App Protect WAF and DoS, and <a target="_blank" href="https://downloads.f5.com/" rel="noopener noreferrer">download</a> the always&#8209;free NGINX Service Mesh.</p>
 <p>The post <a rel="nofollow" href="https://www.nginx.com/blog/six-ways-to-secure-kubernetes-using-traffic-management-tools/">Six Ways to Secure Kubernetes Using Traffic Management Tools</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Rewinding 2021: The Year’s Top 5 NGINX Videos</title>
-		<link>https://www.nginx.com/blog/rewinding-2021-years-top-5-nginx-videos/</link>
-		
-		<dc:creator><![CDATA[Marco Martinez of F5]]></dc:creator>
-		<pubDate>Thu, 16 Dec 2021 22:22:03 +0000</pubDate>
-				<category><![CDATA[Blog]]></category>
-		<category><![CDATA[Tech]]></category>
-		<guid isPermaLink="false">https://www.nginx.com/?p=68467</guid>
-
-					<description><![CDATA[<p>Despite any offline disruptions we all experienced during&#160;2021, it was a fantastic year for video, livestreams, and webinars here at NGINX. We enjoyed great conversations with our community of users, customers, and partners, and took a look at trends and topics of interest in the world of digital transformation, app security, open source, DevOps, and [...]</p>
-<p><a class="btn btn-secondary understrap-read-more-link" href="https://www.nginx.com/blog/rewinding-2021-years-top-5-nginx-videos/">Read More...</a></p>
-<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/rewinding-2021-years-top-5-nginx-videos/">Rewinding 2021: The Year’s Top 5 NGINX Videos</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[<p>Despite any offline disruptions we all experienced during&nbsp;2021, it was a fantastic year for video, livestreams, and webinars here at NGINX. We enjoyed great conversations with our community of users, customers, and partners, and took a look at trends and topics of interest in the world of digital transformation, app security, open source, DevOps, and Kubernetes. </p>
-<p>In this blog post, we review the five video broadcasts that were most popular with our viewers over the past year, giving you a second chance to learn from our leading experts on current topics of interest. (You might notice that some videos first appeared in previous years&nbsp;&ndash; we like to think that means we’re ahead of the curve!) We hope you enjoy.<br />
-liv</p>
-<h2>How to Improve Visibility in Kubernetes with Prometheus, Grafana, and NGINX</h2>
-<p>Kubernetes is complex, and to get control you need robust visibility and monitoring. In this livestream, our microservices experts demonstrated several techniques for boosting visi  bility:</p>
-<ul>
-<li>Leverage the NGINX&nbsp;Plus live activity monitoring dashboard for real&#8209;time tracking of key load&#8209;balancing and performance metrics</li>
-<li>Export the metrics to Prometheus</li>
-<li>Create Grafana dashboards to view cumulative performance in time&#8209;series graphs</li>
-</ul>
-<p>For more tips, see <a href="https://www.nginx.com/blog/how-to-improve-visibility-in-kubernetes/">How to Improve Visibility in Kubernetes</a> on our blog.</p>
-<p>    <iframe width="770" height="433" src="https://www.youtube.com/embed/hJoH7J0un5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-<h2>Modern App Delivery with Red Hat and NGINX (Podcast)</h2>
-<p>We’re making one of our biggest partnership investments by broadening our integrations with Red Hat solutions. NGINX Product Marketing Manager Jenn&nbsp;Gile shows how fully supported Red Hat and NGINX solutions make application delivery secure and scalable for organizations at every point along the journey from monolithic to microservices. The partnership spans six products: Red Hat Enterprise Linux, Red Hat Ansible Automation Platform, Red Hat OpenShift, NGINX&nbsp;Plus, NGINX&nbsp;Controller, and NGINX Kubernetes Ingress Controller. Learn more on our <a href="http://www.nginx.com/partners/red-hat">website</a>.</p>
-<p>    <iframe width="770" height="433" src="https://www.youtube.com/embed/n39NKvK4Tv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-<h2>Using NGINX Open Source for Video Streaming and Storage</h2>
-<p>The COVID&#8209;19 pandemic sent demand for stable and secure video streaming through the roof. NGINX Systems Engineer James&nbsp;Jones shows how to get started with NGINX Open Source for both livestreaming and video storage. Learn how to install build tools and dependencies, configure HLS or DASH, and set your playback method of choice.</p>
-<p>    <iframe width="770" height="433" src="https://www.youtube.com/embed/Js1OlvRNsdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-<h2>How to Set Up SSL with NGINX</h2>
-<p>This popular video from&nbsp;2018 covers the basics of setting up NGINX for SSL/TLS and shows how to redirect HTTP traffic on port&nbsp;80 to HTTPS on port&nbsp;443. For information and complete configuration examples on more advanced topics&nbsp;&ndash; offloading cryptographic processing from backend servers, certificate handling, <span style="white-space: nowrap;">end-to-end</span> encryption, and more&nbsp;&ndash; see <a href="https://www.nginx.com/blog/nginx-ssl/">SSL/TLS Offloading, Encryption, and Certificates with NGINX and NGINX&nbsp;Plus</a> on our blog.</p>
-<p>    <iframe width="770" height="433" src="https://www.youtube.com/embed/X3Pr5VATOyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-<h2>What Is an API Gateway?</h2>
-<p>Finally, application programming interfaces (APIs) are an increasingly popular way to communicate with applications, both for clients and other apps. Most modern apps are built using APIs. Learn more in this overview of API gateways. </p>
-<p>    <iframe width="770" height="433" src="https://www.youtube.com/embed/hYgP0cBORVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-<p>That’s our roundup of the five most popular videos from NGINX during&nbsp;2021. Let us know what you’d like to see from us in&nbsp;2022 by commenting below, or get in touch with us on social media!</p>
-<p>The post <a rel="nofollow" href="https://www.nginx.com/blog/rewinding-2021-years-top-5-nginx-videos/">Rewinding 2021: The Year’s Top 5 NGINX Videos</a> appeared first on <a rel="nofollow" href="https://www.nginx.com">NGINX</a>.</p>
 ]]></content:encoded>
 					
 		
