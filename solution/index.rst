@@ -7,14 +7,10 @@ Solutions
    :titlesonly:
    :glob:
 
-   5g-performance.rst
-   carrier-grade-nat-for-service-providers.rst
-   consolidated-virtual-gilan-use-case-mwc.rst
-   intelligent-dns-firewall-for-service-providers.rst
-   virtual-gi-lan.rst
-   volte-and-ims-security-for-service-providers.rst
+   mobility-and-5g-evolution/index.rst
+   service-provider-security/index.rst
 
-www.f5.com/solutions/service-providers
+https://www.f5.com/solutions/service-providers
 
 .. raw:: html
 
