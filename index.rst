@@ -19,6 +19,5 @@ Portfolio
    support/index.rst
    contact/index.rst
    partner/index.rst
-   event/index.rst
 
 This is the F5 family
