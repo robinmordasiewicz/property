@@ -9,14 +9,13 @@ White Papers
 
    ipv6-migration.rst
    build-cdn.rst
-   sip.rst
+   build-your-future-ready-infrastructure.rst
    ims.rst
    5g-cloud-native.rst
    smartnics.rst
    containerization.rst
    mobile-security.rst
    building-better-5g-security.rst
-   build-your-future-ready-infrastructure.rst
 
 This is the white papers section
 
