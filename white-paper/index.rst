@@ -17,5 +17,9 @@ White Papers
    build-your-future-ready-infrastructure.rst
    ims.rst
 
-This is the white papers section
+https://www.f5.com/services/resources/white-papers
+
+. raw:: html
+
+    <iframe width="1366" height="768" src="../_static/sites/www.f5.com/services/resources/white-papers.html" title=NGINX frameborder="1" scrolling="yes"></iframe>
 
