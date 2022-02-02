@@ -19,13 +19,13 @@ https://interact.f5.com/rs/653-SMC-783/images/F5_5G_WP_BuildingBetter5GSecurity_
       <object
         data='https://interact.f5.com/rs/653-SMC-783/images/F5_5G_WP_BuildingBetter5GSecurity_Final_120720%20%281%29.pdf'
         type="application/pdf"
-        width="500"
-        height="678"
+        width="1366"
+        height="768"
       >
         <iframe
           src='https://interact.f5.com/rs/653-SMC-783/images/F5_5G_WP_BuildingBetter5GSecurity_Final_120720%20%281%29.pdf'
-          width="500"
-          height="678"
+          width="1366"
+          height="768"
         >
         <p>This browser does not support PDF!</p>
         </iframe>

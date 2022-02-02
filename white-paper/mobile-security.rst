@@ -15,13 +15,13 @@ https://wtit.com/wp-content/uploads/2015/07/f5-white-paper-simplifying-security-
       <object
         data='https://wtit.com/wp-content/uploads/2015/07/f5-white-paper-simplifying-security-for-mobile-networks-.pdf'
         type="application/pdf"
-        width="500"
-        height="678"
+        width="1366"
+        height="768"
       >
         <iframe
           src='https://wtit.com/wp-content/uploads/2015/07/f5-white-paper-simplifying-security-for-mobile-networks-.pdf'
-          width="500"
-          height="678"
+          width="1366"
+          height="768"
         >
         <p>This browser does not support PDF!</p>
         </iframe>
