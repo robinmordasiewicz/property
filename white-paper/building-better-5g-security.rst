@@ -7,7 +7,7 @@
    :titlesonly:
    :glob:
 
-https://www.f5.com/solutions/service-providers/building-better-5g-security.html
+https://www.f5.com/solutions/service-providers/building-better-5g-security
 
 .. raw:: html
 

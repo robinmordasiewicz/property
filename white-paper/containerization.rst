@@ -7,7 +7,7 @@ Containers
    :titlesonly:
    :glob:
 
-https://www.f5.com/services/resources/white-papers/f5-and-containerization.html
+https://www.f5.com/services/resources/white-papers/f5-and-containerization
 
 .. raw:: html
 

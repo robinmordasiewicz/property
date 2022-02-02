@@ -7,7 +7,7 @@ Smart Nics
    :titlesonly:
    :glob:
 
-https://www.f5.com/services/resources/white-papers/augmented-ddos-protection-for-cloud-nfv-environments-with-big-ip-ve-for-smartnics.html
+https://www.f5.com/services/resources/white-papers/augmented-ddos-protection-for-cloud-nfv-environments-with-big-ip-ve-for-smartnics
 
 .. raw:: html
 
