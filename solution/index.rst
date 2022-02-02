@@ -8,7 +8,7 @@ Solutions
    :glob:
 
    service-provider-security/index.rst 
-   service-provider/index.rst
+   service-providers/index.rst
 
 https://www.f5.com/solutions/service-providers
 
