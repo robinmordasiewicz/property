@@ -9,8 +9,6 @@ Devcentral
 
 https://www.youtube.com/channel/UCtVHX3fmQVjVgj_cGRIxRSg
 
-..  youtube:: d8OvxoDjvuo
-
 ..  youtube:: ay1lvj5Imeo
 
 ..  youtube:: 82sfgwrkg44
