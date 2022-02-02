@@ -1,4 +1,8 @@
 https://www.f5.com/c/content/dam/f5-app-security/en/2020/article/DIGART-SP-576107690-fast-track-5g-edge-n6-lan-consolidation_Chart.png
+https://www.f5.com/content/dam/f5-app-security/en/2020/article-sp-improve-qoe-with-n6-lan-optimization/DGART-SP-IMPROVE-QOE-N6LAN-pie-chart-orange-gray-60percent.jpg
+https://www.f5.com/content/dam/f5-app-security/en/2020/article-sp-improve-qoe-with-n6-lan-optimization/DGART-SP-IMPROVE-QOE-N6LAN-clouds-orange-purple-neon-rectangle.jpg
+https://www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/adaptive-apps-illustrations/adaptive-apps-5G-innovation-and-mobility-illustration-768x400.jpg
+https://www.f5.com/content/dam/f5-app-security/en/2020/article-sp-improve-qoe-with-n6-lan-optimization/DGART-SP-IMPROVE-QOE-N6LAN-bike-couple-phone-parking.jpg
 https://www.f5.com/c/content/dam/f5-app-security/en/2020/article/Related%20Content_green_background_224x158.jpg
 https://www.f5.com/c/content/dam/f5-com/global-assets/icons/api.png
 https://www.f5.com/c/content/dam/f5-com/global-assets/icons/lock-with-controls.png
@@ -121,3 +125,5 @@ https://www.f5.com/solutions/service-providers/simplified-operations-for-edge-an
 https://www.f5.com/solutions/service-providers/telecom-secures-5g-edge-with-velos.socialImage.png
 https://www.f5.com/solutions/service-providers/telecoms-annual-industry-survey.socialImage.png
 https://www.f5.com/solutions/service-providers/threat-landscape-2021-ebook.socialImage.png
+https://www.f5.com/content/dam/f5-app-security/en/2020/article-sp-improve-qoe-with-n6-lan-optimization/DGART-SP-IMPROVE-QOE-N6LAN-diagram-1a-1600.jpg
+https://www.f5.com/content/dam/f5-app-security/en/2020/article-sp-improve-qoe-with-n6-lan-optimization/DGART-SP-IMPROVE-QOE-N6LAN-diagram-figure1b_PATHs.svg
