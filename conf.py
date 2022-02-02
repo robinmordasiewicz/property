@@ -190,6 +190,8 @@ html_sidebars = {"**": ["searchbox.html", "localtoc.html", "globaltoc.html"]}
 html_theme_options = {
     "site_name": "Service Provider",
     "next_prev_link": True,
+    "display_version": False,
+    "style_external_links": False,
 }
 html_last_updated_fmt = "%Y-%m-%d %H:%M:%S"
 
