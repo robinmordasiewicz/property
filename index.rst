@@ -8,16 +8,16 @@ Portfolio
    :glob:
 
    campaign/index.rst
+   solution/index.rst
    solution-profile/index.rst
-   use-case/index.rst
    product/index.rst
    video/index.rst
    white-paper/index.rst
    blog/index.rst
-   brand/index.rst
    documentation/index.rst
    support/index.rst
    contact/index.rst
+   brand/index.rst
    partner/index.rst
 
 https://www.f5.com/pdf/solution-center/f5-handbook-for-service-providers-guide.pdf

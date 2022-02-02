@@ -1,5 +1,5 @@
-Solution Profiles
-=====================
+Use Cases
+=================
 
 .. toctree::
    :hidden:
@@ -7,23 +7,12 @@ Solution Profiles
    :titlesonly:
    :glob:
 
-   service-providers.rst
-   security.rst
-   edge-compute.rst
-   sgi-lan-consolidation.rst
-   adaptive-bit-rate-video-detection-and-control.rst
-   f5_optimize_your_network_ebook.rst
-   tcp-opt.rst
-   cgnat.rst
-   pem.rst
-   diameter-signalling.rst
-   diameter-signalling-SS7.rst
-   multi-layer-security.rst
-   f5-solutions-for-the-emerging-5g-landscape.rst
+   5g-performance.rst
+   carrier-grade-nat-for-service-providers.rst
+   consolidated-virtual-gilan-use-case-mwc.rst
+   intelligent-dns-firewall-for-service-providers.rst
+   virtual-gi-lan.rst
+   volte-and-ims-security-for-service-providers.rst
 
-https://www.f5.com/services/resources/solution-profiles
-
-.. raw:: html
-
-    <iframe width="1366" height="768" src="../_static/sites/www.f5.com/services/resources/solution-profiles.html" title=F5 frameborder="1" scrolling="yes"></iframe>
+These are F5 use cases
 
