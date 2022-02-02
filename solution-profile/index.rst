@@ -8,18 +8,18 @@ Solution Profiles
    :glob:
 
    service-providers.rst
-   f5-solutions-for-the-emerging-5g-landscape.rst
    security.rst
    edge-compute.rst
-   multi-layer-security.rst
-   diameter-signalling.rst
-   diameter-signalling-SS7.rst
    sgi-lan-consolidation.rst
-   pem.rst
-   cgnat.rst
-   tcp-opt.rst
    adaptive-bit-rate-video-detection-and-control.rst
    f5_optimize_your_network_ebook.rst
+   tcp-opt.rst
+   cgnat.rst
+   pem.rst
+   diameter-signalling.rst
+   diameter-signalling-SS7.rst
+   multi-layer-security.rst
+   f5-solutions-for-the-emerging-5g-landscape.rst
 
 https://www.f5.com/services/resources/solution-profiles
 
