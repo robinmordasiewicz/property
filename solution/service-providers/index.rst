@@ -8,6 +8,7 @@ Gi-LAN N6
    :glob:
 
    5g-edge-telco-cloud.rst
+   5g-sba-solution-overview.rst
 
 https://www.f5.com/solutions/mobility-and-5g-evolution
 
