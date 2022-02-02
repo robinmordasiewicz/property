@@ -7,8 +7,6 @@ Contact Sales
    :titlesonly:
    :glob:
 
-Contact Sales
-
 https://www.f5.com/solutions/service-providers/service-provider-contact-us
 
 .. raw:: html
