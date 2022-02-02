@@ -1,4 +1,4 @@
-Big 5G
+Events
 =================
 
 .. toctree::
@@ -7,8 +7,10 @@ Big 5G
    :titlesonly:
    :glob:
  
-https://tmt.knect365.com/big-5g-event/
+   big-5g.rst
+
+https://www.f5.com/company/events
 
 .. raw:: html
 
-   <iframe width="1280" height="720" src="../../_static/sites/tmt.knect365.com/big-5g-event/index.html" title=F5 frameborder="1" scrolling="yes"></iframe>
+   <iframe width="1366" height="768" src="../_static/sites/www.f5.com/company/events.html" title=F5 frameborder="1" scrolling="yes"></iframe>
