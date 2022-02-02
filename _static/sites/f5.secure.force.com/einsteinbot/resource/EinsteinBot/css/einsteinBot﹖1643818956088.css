@@ -1,0 +1,430 @@
+.embeddedServiceHelpButton .helpButton button.uiButton,
+.embeddedServiceSidebar .embeddedServiceSidebarMinimizedDefaultUI{
+    background-color: #1D9CD3 !important;
+    width: 175px !important;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.5) !important;
+    border-radius : 23px !important;
+    max-width: initial !important;
+    height :40px  !important;
+    bottom:32px !important;
+    right : 32px !important;
+    border:none !important;
+}
+.embeddedServiceHelpButton .helpButton .uiButton:focus {
+    outline: 1px solid #1D9CD3;
+}
+.embeddedServiceHelpButton .uiButton{
+    max-width: 20em;
+}
+.embeddedServiceHelpButton .uiButton .helpButtonLabel .message{
+    overflow: visible !important;
+    /*font-weight: bold !important;*/
+    letter-spacing: 1px;
+    font-size: 14px !important;
+    width:116px;
+    line-height: 14px !important;
+    font-style: normal !important;
+   /* text-align: right;*/
+}
+.chat-content.chasitor[ebcm-einsteinBotChatMessage_einsteinBotChatMessage]{
+    border-radius : 8px 8px 0px 8px !important;
+    background:  #1D9CD3 !important;
+}
+.embeddedServiceLiveAgentStateChatButtonMessage .embeddedServiceLiveAgentStateChatButtonItem {
+    /*background-color: #1D9CD3 !important;*/
+	color:  black !important;
+}
+.embeddedServiceSidebarHeader .shortHeaderContent > *, .shortHeaderContent .headerText .headerButton{
+    margin-top : 3px;
+}
+/* removing hyphens*/
+.chat-content.agent .chatMessageContent[ebcm-einsteinBotChatMessage_einsteinBotChatMessage] {
+    hyphens: none;
+}
+/*removing border on chat area click */
+.embeddedServiceLiveAgentStateChat .messageArea:focus{
+    border: none !important;
+}
+.embeddedServiceLiveAgentStateChatInputFooter .chasitorText.textAreaIsFocused{
+    border: unset !important;
+}
+/* Quick Replies */
+.embeddedServiceLiveAgentStateChatButtonMessage .embeddedServiceLiveAgentStateChatButtonItem {
+    padding-right: 16px;
+    padding-left: 16px;
+    border-radius: 21px;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+    border-color: #1D9CD3 !important;
+    background-color: #1D9CD3 !important;
+}
+/* quick reply hover on button*/
+.embeddedServiceLiveAgentStateChatItem.chatMessage button:hover, .embeddedServiceLiveAgentStateChatItem.chatMessage button:hover:focus {
+    background-color: #1D9CD3 !important;
+    opacity: 1 !important;
+}
+/* Chat Body  background color*/
+.embeddedServiceLiveAgentSidebarFeature .embeddedServiceLiveAgentStateChat .messageArea {
+    background-color: #f4f4f4 !important;
+}
+
+.embeddedServiceLiveAgentStateChat .messageWrapper{
+    background-color: #f4f4f4 !important;
+}
+
+.embeddedServiceLiveAgentStateChatItem.chatMessage{
+    background-color: #f4f4f4 !important;
+}
+
+/* Chat bubble(agent message box) */
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatItem .chatContent .agent {
+	background-color: #fff !important;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+}
+/*input box message remove outside color */
+.embeddedServiceLiveAgentStateChatInputFooter.chasitorInputWrapper{
+background-color : #fff !important;
+}
+
+.embeddedServiceLiveAgentStateChatInputFooter .chasitorControls .uiInput{
+background-color: #f4f4f4 !important;
+font-style:italic;
+}
+.embeddedServiceLiveAgentStateChat .chasitorInputWrapper{
+    background-color : #fff !important;
+}
+/* cancel chat request message*/
+.embeddedServiceSidebarButton.uiButton--inverse .label{
+    color:white !important;
+    line-height: 1.14;
+}
+
+.embeddedServiceSidebarButton.uiButton--inverse, .embeddedServiceSidebarButton.uiButton--inverse:disabled{
+    background:#1D9CD3 !important;
+    width: 275px;
+    height: 45px;
+}
+.embeddedServiceSidebarButton{
+    padding:none;
+}
+.embeddedServiceSidebarButton.uiButton--inverse:not(:disabled):focus, .embeddedServiceSidebarButton.uiButton--inverse:not(:disabled):hover{
+background-color: #1D9CD3 !important;
+}
+/* Go back button and confirm end chat */
+.embeddedServiceSidebarButton:not(:disabled):focus, .embeddedServiceSidebarButton:not(:disabled):hover{
+    background: #1D9CD3 !important;
+}
+/* reconnecting screen*/
+.embeddedServiceLiveAgentStateChatHeader.reconnecting{
+background-color :#1D9CD3 !important;
+}
+/* Chat header options save chat and end chat*/
+a.chatOption.embeddedServiceLiveAgentStateChatHeaderOption{
+        color: white !important;
+}
+/* Floating bot 
+    .embeddedServiceHelpButton .helpButton {
+     bottom:32px !important;
+      right:32px !important;
+    } 
+*/
+/* bot div to round */
+.embeddedServiceSidebar.layout-docked .dockableContainer{
+border-bottom-left-radius :8px !important;
+}
+.embeddedServiceSidebar.layout-docked .dockableContainer{
+bottom:32px !important;
+}
+@media only screen and (max-width: 768px) {
+    .embeddedServiceSidebar.layout-docked .dockableContainer{
+        max-width: 90% !important;
+        bottom: 12px !important;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .embeddedServiceSidebar.sidebarMaximized {
+        z-index : 999999 !important;
+    }
+} 
+@media screen and (max-width: 834px){
+    .embeddedServiceSidebar.sidebarMaximized{
+       z-index : 999999 !important;
+    }
+select:focus,
+  textarea,
+  input {
+    font-size: 16px !important;
+  }
+    .embeddedServiceHelpButton .helpButton .uiButton{
+        visibility: hidden;
+    }
+    .embeddedServiceHelpButton .helpButton button.uiButton, .embeddedServiceSidebar .embeddedServiceSidebarMinimizedDefaultUI{
+        height:62px !important;
+    }
+    .embeddedServiceHelpButton .helpButton .uiButton:after {
+        visibility: visible;
+        content: url(https://f5.secure.force.com/einsteinbot/resource/einsteinBot/img/mobileCTA.png);
+        border-radius: 75px;
+        line-height: 0;
+        padding-bottom: 7px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 7px;
+        background-color: #1D9CD3;
+    }
+    .embeddedServiceHelpButton .helpButton{
+        right: 5px !important;
+        bottom: 32px !important;
+
+    }
+    .embeddedServiceSidebar.layout-docked .dockableContainer {
+        border-bottom-right-radius: 0px !important;
+    }
+    .embeddedServiceSidebar.layout-docked .dockableContainer, .embeddedServiceSidebar.layout-float .dockableContainer{
+        max-height: 90% !important;
+        top: 40px !important;
+        max-width: 90% !important;
+    }
+    /* minimize cta*/ 
+    .embeddedServiceSidebarMinimizedDefaultUI .minimizedText>.message::before {
+        visibility: hidden;
+    }
+    .embeddedServiceSidebarMinimizedDefaultUI .content::before{
+        visibility: hidden;
+    }
+
+    .embeddedServiceSidebar .embeddedServiceSidebarMinimizedDefaultUI{
+        width: 67px !important;
+        height: 67px !important;
+        border-radius: 32px !important;
+    }
+    .embeddedServiceSidebarMinimizedDefaultUI .content::after{
+        visibility: visible;
+        background: url(https://f5.secure.force.com/einsteinbot/resource/einsteinBot/img/image.png) 2px 0 no-repeat !important;
+        color: transparent !important;
+        background-size: 40px !important;
+        padding-left: 53px !important;
+        padding-right: 20px !important;
+        padding-top: 52px !important;
+        padding-bottom: 0px !important;
+        content: "";
+        }
+}
+.embeddedServiceHelpButton .helpButton .helpButtonEnabled:hover::before, .embeddedServiceHelpButton .helpButton .helpButtonEnabled:focus::before{
+    background-color: unset !important;
+}
+.embeddedServiceLiveAgentStateWaitingHeader .waitingGreeting{
+    font-size:0px;
+}
+/*header text*/
+.embeddedServiceLiveAgentStateChatHeader:not(.alert) .message{
+    font-size: 14px !important;
+}
+.embeddedServiceLiveAgentStateChatHeaderOption .optionName{
+    font-size: 14px !important;
+}
+.embeddedServiceSidebarExtendedHeader{
+    color: rgb(255, 255, 255) !important;
+}
+/*agent message border-radius*/
+.chat-content.agent[ebcm-einsteinBotChatMessage_einsteinBotChatMessage]{
+    border-radius: 8px 8px 8px 0px !important;
+    /*width:227px;*/
+    max-width: 227px !important;
+}
+/*dividing chat area from input*/
+.embeddedServiceLiveAgentStateChat .chasitorInputWrapper{
+    border-top-style : solid !important;
+    border-color :  #1D9CD3 !important;
+    border-width: 2px !important;
+}
+/*header button background*/
+.headerButton:before, .headerButton:after{
+    display:none !important;
+}
+button.minimizeButton.headerItem::after {
+    display: none !important;
+}
+button.minimizeButton.headerItem::before {
+    display: none !important;
+}
+.embeddedServiceHelpButton .embeddedServiceIcon::before{
+    background: url(../img/botCTA.png) 2px 0 no-repeat !important;
+        color: transparent !important;
+        background-size: 22px !important;
+        /*padding: 3px 0px 6px 6px !important;*/
+        margin-left: 0px;
+        padding-top: 2px;
+        padding-bottom: 6px;
+        padding-left: 7px;
+        margin-left: -6px;
+}
+/*.embeddedServiceSidebarMinimizedDefaultUI .content::before{
+    background: url(https://f5.secure.force.com/einsteinbot/resource/einsteinBot/img/image.png) 2px 0 no-repeat !important;
+        color: transparent !important;
+        background-size: 21px !important;
+        padding: 6px 0px 6px 6px !important;
+        margin-left: 0px;
+} */
+/*Chat Menu */
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu {
+	background-color: transparent;
+	border: 1px solid #1D9CD3;
+	border-radius: 8px;
+	/*margin-left: 44.75px;*/
+    margin-left: 41px;
+    width: 227px!important;
+	overflow: hidden;
+}
+
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu .rich-menu-items > li {
+	border: none;
+	border-radius: 0;
+}
+
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu .rich-menu-items > li:not(:last-child) {
+	border: none;
+	border-bottom: 1px solid #1D9CD3;
+}
+
+
+.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items .rich-menu-item,
+.embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items .rich-menu-itemOptionIsClicked {
+	background-color: white;
+	font-size: 14px;
+}
+
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:hover,
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:active,
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:hover:active,
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:focus,
+.embeddedServiceLiveAgentStateChat .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-items button:focus:hover {
+	background-color: #1D9CD3;
+	border-color: #1D9CD3;
+	color: white;
+	opacity: 1;
+}
+/*global chat styling */
+.embeddedServiceHelpButton *,
+.embeddedServiceSidebar .dockableContainer *,
+.embeddedServiceLiveAgentStateChatMessage .uiOutputRichText {
+	font-family: proximaNova , sans-serif !important;
+	text-transform: none !important;
+}
+/*loading */
+.embeddedServiceHelpButton .uiButton .helpButtonLabel .message{
+    padding-bottom:3px !important;
+}
+/*loading balls*/
+.embeddedServiceLiveAgentStateChatHeader .embeddedServiceLoadingBalls{
+    margin-bottom:7px !important;
+    margin-top : 7px !important;
+}
+.embeddedServiceSidebar .embeddedServiceSidebarButton.uiButton--inverse:not(:disabled):focus,
+.embeddedServiceSidebar .embeddedServiceSidebarButton.uiButton--inverse:not(:disabled):hover{
+    text-decoration: none !important;
+}
+.embeddedServiceHelpButton *, .embeddedServiceSidebar .dockableContainer *, .embeddedServiceLiveAgentStateChatMessage .uiOutputRichText{
+    text-decoration: none !important;
+}
+.chat-content.agent .chatMessageContent a {
+    text-decoration: underline !important;
+}
+.embeddedServiceLiveAgentStateChatHeaderOption:after{
+    border: unset !important;
+}
+/*link color of user reply */
+.chat-content.chasitor .chatMessageContent a{
+    color : white !important;
+}
+/* Minimized button*/
+.embeddedServiceSidebarMinimizedDefaultUI .content::before{
+    background: url(../img/botCTA.png) 2px 0 no-repeat !important;
+    color: transparent !important;
+    background-size: 24px !important;
+    padding: 13px !important;
+    margin-top: 2px;
+    margin-left: 0px;
+    margin-right: 0px;
+    content: "";
+}
+.embeddedServiceSidebarMinimizedDefaultUI .minimizedText>.message::before{
+    font-size:14px;
+    font-weight: normal;
+    font-family: proximaNova , sans-serif !important;
+    content: "Chat with Codey";
+}
+.embeddedServiceSidebarMinimizedDefaultUI .minimizedText>.message{
+    font-size: 0px;
+}
+.embeddedServiceSidebarMinimizedDefaultUI.minimizedContainer:focus{
+    text-decoration: none !important;
+}
+.loadingBallContainer.tiny.animated.embeddedServiceLoadingBalls{
+    display:none !important;
+}
+/*Hide CTA when is bot is deactivated*/
+.embeddedServiceHelpButton .helpButtonDisabled{
+    display: none !important;
+}
+/* adding padding to the End Button */
+.endChatButton {
+    margin-bottom : 5px !important;
+}
+/* hiding the logo from minimized  view */
+.embeddedServiceSidebarMinimizedDefaultUI .minimizedImage .uiImage {
+    display: none;
+}
+/* Removing outline of close and minimize button */ 
+button[embeddedService-chatHeader_chatHeader]{
+    outline: none;
+}
+/*close chat,end chat buttons*/ 
+.embeddedServiceSidebarDialogState .dialogButton{
+    width: 275px;
+    border-radius: 3px;
+    height: 45px;
+}
+/*close chat,save chat buttons */
+.embeddedServiceLiveAgentStateChat .endChatContainer .endChatButton{
+    height: 45px;
+    line-height: 19px;
+    margin: 0 24px;
+    width: 275px;
+    border-radius: 3px
+}
+/* close chat,save chat text*/ 
+.embeddedServiceSidebarButton .label, .embeddedServiceSidebarButton:disabled .label{
+        line-height: 1.14;
+}
+/*save chat option */
+.embeddedServiceLiveAgentStateChatInputFooter .footerMenuWrapper .footer-menu-items .slds-dropdown__item>a:focus{
+    box-shadow: none;
+    color:#1D9CD3;
+}
+/*header*/ 
+h2[embeddedService-chatHeader_chatHeader]{
+    letter-spacing: normal !important;
+    font-weight: normal !important;
+    height: 19px;
+}
+/*Quick Replies */ 
+.embeddedServiceLiveAgentStateChatButtonMessage .embeddedServiceLiveAgentStateChatButtonItem .label{
+color: white !important
+}
+.embeddedServiceLiveAgentStateChatButtonMessage .embeddedServiceLiveAgentStateChatButtonItem :hover{
+    color: black !important;
+}
+
+/*quick reply*/ 
+button.rich-button-item.uiButton--default.uiButton.embeddedServiceLiveAgentStateChatButtonItem :hover, .rich-button-item.uiButton--default.uiButton.embeddedServiceLiveAgentStateChatButtonItem:hover{
+    background-color: white !important
+}
+button.rich-button-item.uiButton--default.uiButton.embeddedServiceLiveAgentStateChatButtonItem:hover span{
+color: black !important;
+}
+.chat-content.agent .chatMessageContent a{
+    color: #1D9CD3 !important;
+}
+
+
