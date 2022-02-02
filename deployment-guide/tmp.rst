@@ -1,5 +1,5 @@
-Deployment Guides
-===================
+Solutions
+=================
 
 .. toctree::
    :hidden:
@@ -7,12 +7,12 @@ Deployment Guides
    :titlesonly:
    :glob:
 
-   diameter-load-balancing-dg.rst
-   ip-address-sharing-in-large-scale-networks-dns64na.rst
-
+   service-provider-security/index.rst 
+   service-providers/index.rst
 
 https://www.f5.com/solutions/service-providers
 
 .. raw:: html
 
     <iframe width="1366" height="768" src="../_static/sites/www.f5.com/solutions/service-providers.html" title=NGINX frameborder="1" scrolling="yes"></iframe>
+
