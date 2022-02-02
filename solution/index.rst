@@ -1,4 +1,4 @@
-Use Cases
+Solutions
 =================
 
 .. toctree::
@@ -14,5 +14,9 @@ Use Cases
    virtual-gi-lan.rst
    volte-and-ims-security-for-service-providers.rst
 
-These are F5 use cases
+www.f5.com/solutions/service-providers
+
+.. raw:: html
+
+    <iframe width="1366" height="768" src="../_static/sites/www.f5.com/solutions/service-providers.html" title=NGINX frameborder="1" scrolling="yes"></iframe>
 

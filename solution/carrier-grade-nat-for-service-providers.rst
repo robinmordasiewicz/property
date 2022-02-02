@@ -1,4 +1,4 @@
-Virtual Gi LAN
+CG-Nat
 ==================
 
 .. toctree::
