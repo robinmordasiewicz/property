@@ -11,4 +11,19 @@ https://www.f5.com/content/dam/f5/corp/global/pdf/deployment-guides/f5-large-sca
 
 .. raw:: html
 
-    <iframe width="1366" height="768" src="../_static/sites/www.f5.com/services/resources/deployment-guides/ip-address-sharing-in-large-scale-networks-dns64na.html" title=NGINX frameborder="1" scrolling="yes"></iframe>
+    <div>
+      <object
+        data='https://www.f5.com/content/dam/f5/corp/global/pdf/deployment-guides/f5-large-scale-nat-dg.pdf'
+        type="application/pdf"
+        width="1366"
+        height="768"
+      >
+        <iframe
+          src='https://www.f5.com/content/dam/f5/corp/global/pdf/deployment-guides/f5-large-scale-nat-dg.pdf'
+          width="1366"
+          height="768"
+        >
+        <p>This browser does not support PDF!</p>
+        </iframe>
+      </object>
+    </div>
