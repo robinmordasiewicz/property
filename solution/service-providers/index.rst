@@ -10,9 +10,8 @@
    overcoming-4g-to-5g-migration-challenges.rst
    sgi-lan-consolidation.rst
    5g-edge-telco-cloud.rst
-   5g-sba-solution-overview.rst
-   5g-security-threats-challenges-for-service-providers.rst
-   edge-compute/index.rst
+   deploying-your-cloud-native-infrastructure-and-5g-core.rst
+   5g-security.rst
 
 https://www.f5.com/solutions/mobility-and-5g-evolution
 
