@@ -14,6 +14,7 @@ Portfolio
    blog/index.rst
    white-paper/index.rst
    deployment-guide/index.rst
+   use-case/index.rst
    documentation/index.rst
    support/index.rst
    brand/index.rst

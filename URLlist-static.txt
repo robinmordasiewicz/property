@@ -1,3 +1,9 @@
+https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/solutions/service-providers/edge-computing/service-provider-factory-tablet-inspecting-hero_xs.jpg
+https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/solutions/service-providers/edge-computing/service-provider-factory-tablet-inspecting-hero_sm.jpg
+https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/solutions/service-providers/edge-computing/service-provider-factory-tablet-inspecting-hero_md.jpg
+https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/solutions/service-providers/edge-computing/service-provider-factory-tablet-inspecting-hero_lg.jpg
+https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/solutions/service-providers/edge-computing/service-provider-factory-tablet-inspecting-hero_xl.jpg
+https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/solutions/service-providers/edge-computing/service-provider-factory-tablet-inspecting-hero_hd.jpg
 https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/products/big-ip/policy-enforcement-manager/big-ip-network-earth-communication-hero_xs.jpg
 https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/products/big-ip/policy-enforcement-manager/big-ip-network-earth-communication-hero_sm.jpg
 https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/products/big-ip/policy-enforcement-manager/big-ip-network-earth-communication-hero_md.jpg
