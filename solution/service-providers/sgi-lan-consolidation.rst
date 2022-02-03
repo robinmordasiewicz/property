@@ -6,7 +6,8 @@ Gi-Lan N6 Consolidation
    :maxdepth: 5
    :titlesonly:
    :glob:
- 
+
+   fast-track-to-the-5g-edge-n6-lan-consolidation.rst 
    sgi-lan-consolidation-pdf.rst
 
 https://solutions/service-providers/sgi-lan-consolidation
