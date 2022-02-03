@@ -10,6 +10,7 @@ Signaling
    signaling-dns-pdf.rst
    signaling-diameter-pdf.rst
    signaling-diameter-firewall-pdf.rst
+   signaling-gtp-proxy-pdf.rst
 
 https://www.f5.com/solutions/service-providers/signaling
 
