@@ -1,4 +1,4 @@
-Establishing
+Establishing 5G
 =================
 
 .. toctree::
@@ -8,7 +8,7 @@ Establishing
    :glob:
 
    5g-security-pdf.rst
-   ../service-providers/5g-security-threats-challenges-for-service-providers.rst
+   5g-security-threats-challenges-for-service-providers.rst
 
 https://www.f5.com/solutions/service-provider-security/5g-security
 
