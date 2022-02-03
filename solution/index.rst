@@ -9,8 +9,6 @@ Solutions
 
    service-provider-security/index.rst 
    service-providers/index.rst
-   mobility-and-5g-evolution.rst
-   overcoming-4g-to-5g-migration-challenges.rst
 
 https://www.f5.com/solutions/service-providers
 
