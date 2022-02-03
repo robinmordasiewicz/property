@@ -7,10 +7,6 @@ Solution Profiles
    :titlesonly:
    :glob:
 
-   service-providers.rst
-   security.rst
-   edge-compute.rst
-   sgi-lan-consolidation.rst
    adaptive-bit-rate-video-detection-and-control.rst
    f5_optimize_your_network_ebook.rst
    tcp-opt.rst
