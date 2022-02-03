@@ -7,7 +7,7 @@ White Papers
    :titlesonly:
    :glob:
 
-   5g-cloud-native.rst
+   5g-success-starts-with-cloud-native-infrastructure.rst
    smartnics.rst
    containerization.rst
    building-better-5g-security.rst
