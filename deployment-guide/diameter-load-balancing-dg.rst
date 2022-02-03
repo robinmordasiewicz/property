@@ -15,13 +15,13 @@ https://www.f5.com/content/dam/f5/corp/global/pdf/deployment-guides/diameter-loa
       <object
         data='https://www.f5.com/content/dam/f5/corp/global/pdf/deployment-guides/diameter-load-balancing-dg.pdf'
         type="application/pdf"
-        width="500"
-        height="678"
+        width="1366"
+        height="768"
       >
         <iframe
           src='https://www.f5.com/content/dam/f5/corp/global/pdf/deployment-guides/diameter-load-balancing-dg.pdf'
-          width="500"
-          height="678"
+          width="1366"
+          height="768"
         >
         <p>This browser does not support PDF!</p>
         </iframe>
