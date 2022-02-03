@@ -7,8 +7,6 @@ IDG Report - State of 5G
    :titlesonly:
    :glob:
 
-   signaling-pdf.rst
-
 https://www.f5.com/solutions/service-providers/protect-your-4g-investment-with-your-5g-strategy
 
 .. raw:: html
