@@ -1,4 +1,4 @@
-DNS Case Study PDF
+DNS - PDF
 ====================
 
 .. toctree::
@@ -6,6 +6,7 @@ DNS Case Study PDF
    :maxdepth: 5
    :titlesonly:
    :glob:
+
 https://www.f5.com/content/dam/f5/corp/global/pdf/solution-center/f5-near-real-time-dns-reporting-mitigates-ddos-attacks-case-study.pdf
 
 .. raw:: html

@@ -7,7 +7,8 @@ Signaling
    :titlesonly:
    :glob:
 
-   signaling-pdf.rst
+   signaling-dns-pdf.rst
+   signaling-diameter-pdf.rst
 
 https://www.f5.com/solutions/service-providers/signaling
 
