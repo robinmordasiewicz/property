@@ -6,6 +6,8 @@ Gi-Lan N6 Consolidation
    :maxdepth: 5
    :titlesonly:
    :glob:
+ 
+   sgi-lan-consolidation-pdf.rst
 
 https://solutions/service-providers/sgi-lan-consolidation
 
