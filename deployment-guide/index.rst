@@ -11,7 +11,6 @@ Deployment Guides
    ip-address-sharing-in-large-scale-networks-dns64na.rst
    sip-traffic-management-big-ip-ltm.rst
 
-
 https://www.f5.com/services/resources/deployment-guides
 
 .. raw:: html
