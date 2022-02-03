@@ -1,4 +1,4 @@
-Solutions OLD
+OLD Solutions
 =====================
 
 .. toctree::
