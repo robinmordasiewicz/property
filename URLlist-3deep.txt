@@ -1,3 +1,4 @@
+https://www.f5.com/solutions/service-providers/edge-compute/download-edge-computing-in-carrier-networks
 https://www.f5.com/services/resources/deployment-guides/sip-traffic-management-big-ip-ltm
 https://www.f5.com/c/emea-2020/asset/telecoms-annual-industry-survey
 https://www.f5.com/services/resources/use-cases/carrier-grade-nat-for-service-providers

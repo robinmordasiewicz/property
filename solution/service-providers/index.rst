@@ -10,6 +10,7 @@ Mobile Core
    5g-edge-telco-cloud.rst
    5g-sba-solution-overview.rst
    5g-security-threats-challenges-for-service-providers.rst
+   edge-compute/index.rst
 
 https://www.f5.com/solutions/mobility-and-5g-evolution
 
