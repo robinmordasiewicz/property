@@ -7,11 +7,11 @@ Blogs
    :titlesonly:
    :glob:
 
+   the-changing-face-of-telecoms-in-2022.rst
+   the-future-of-5g.rst
    5g-migration.rst
    telco-apps.rst
    service-providers-on-the-edge--common-automation-frameworks-and-.rst
-   the-changing-face-of-telecoms-in-2022.rst
-   the-future-of-5g.rst
 
 https://www.f5.com/company/blog
 
