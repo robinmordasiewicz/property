@@ -9,6 +9,7 @@ Blogs
 
    the-changing-face-of-telecoms-in-2022.rst
    the-future-of-5g.rst
+   big-ip-ve-for-smart-nics-solution-blog.rst
    5g-migration.rst
    telco-apps.rst
    service-providers-on-the-edge--common-automation-frameworks-and-.rst
