@@ -1,3 +1,5 @@
+https://www.f5.com/content/dam/f5-app-security/en/2020/article-sp-improve-qoe-with-n6-lan-optimization/DGART-SP-IMPROVE-QOE-N6LAN-diagram-figure1b_PATHs.svg
+https://www.f5.com/content/dam/f5-app-security/en/2020/article/ft_Chart1.png
 https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/state-of-app-services/soas-telecom-edition-banner_xs.jpg
 https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/state-of-app-services/soas-telecom-edition-banner_sm.jpg
 https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/state-of-app-services/soas-telecom-edition-banner_md.jpg

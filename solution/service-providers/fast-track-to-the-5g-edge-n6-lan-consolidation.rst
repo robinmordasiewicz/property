@@ -1,5 +1,5 @@
-Fast Track
-=================
+N6 Lan Consolidation
+=========================
 
 .. toctree::
    :hidden:
