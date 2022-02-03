@@ -8,6 +8,7 @@ OLD Solutions
    :glob:
 
    f5-solutions-for-the-emerging-5g-landscape.rst
+   f5-and-the-growing-role-of-gtp-for-traffic-shaping-network-slicing-iot-and-security.rst
    tcp-opt.rst
    cgnat.rst
    pem.rst
