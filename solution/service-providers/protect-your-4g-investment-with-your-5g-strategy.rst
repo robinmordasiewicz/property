@@ -1,4 +1,4 @@
-IDG Report - State of 5G 2021
+IDG Report - State of 5G
 =================================
 
 .. toctree::
