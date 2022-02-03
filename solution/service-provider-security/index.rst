@@ -7,6 +7,8 @@ Security
    :titlesonly:
    :glob:
 
+   5g-security.rst
+
 https://www.f5.com/solutions/service-provider-security
 
 .. raw:: html
