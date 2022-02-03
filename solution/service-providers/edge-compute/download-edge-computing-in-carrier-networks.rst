@@ -1,4 +1,4 @@
-Edge Compute
+Download
 =============================
 
 .. toctree::

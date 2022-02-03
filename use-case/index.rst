@@ -14,5 +14,5 @@ Use Cases
    volte-and-ims-security-for-service-providers.rst
    intelligent-dns-firewall-for-service-providers.rst
 
-These are F5 use cases
+These older use-cases have been depracated
 
