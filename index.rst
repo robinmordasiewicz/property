@@ -7,7 +7,6 @@ Portfolio
    :titlesonly:
    :glob:
 
-   campaign/index.rst
    solution/index.rst
    solution-profile/index.rst
    product/index.rst
@@ -21,6 +20,7 @@ Portfolio
    partner/index.rst
    survey/index.rst
    contact/index.rst
+   campaign/index.rst
 
 https://www.f5.com/pdf/solution-center/f5-handbook-for-service-providers-guide.pdf
 
