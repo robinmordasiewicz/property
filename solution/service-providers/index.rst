@@ -1,4 +1,4 @@
-Mobile Core
+5G and Mobility
 =================
 
 .. toctree::
@@ -11,6 +11,7 @@ Mobile Core
    5g-sba-solution-overview.rst
    5g-security-threats-challenges-for-service-providers.rst
    edge-compute/index.rst
+   video.rst
 
 https://www.f5.com/solutions/mobility-and-5g-evolution
 

@@ -22,6 +22,7 @@ Portfolio
    survey/index.rst
    contact/index.rst
    campaign/index.rst
+   business-continuity/index.rst
 
 https://www.f5.com/pdf/solution-center/f5-handbook-for-service-providers-guide.pdf
 
