@@ -7,6 +7,8 @@ Edge Security
    :titlesonly:
    :glob:
 
+   edge-security-pdf.rst
+
 https://www.f5.com/solutions/service-providers/edge-security
 
 .. raw:: html
