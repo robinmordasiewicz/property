@@ -1,4 +1,4 @@
-5G Threat Report
+Threat Report
 =================
 
 .. toctree::
