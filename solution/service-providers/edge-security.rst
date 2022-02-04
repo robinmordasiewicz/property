@@ -8,6 +8,7 @@ Edge Security
    :glob:
 
    edge-security-pdf.rst
+   edge-security-threatreport.rst
 
 https://www.f5.com/solutions/service-providers/edge-security
 
