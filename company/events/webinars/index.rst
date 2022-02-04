@@ -13,6 +13,8 @@ Webinars
    how-5g-success-starts-with-your-cloud-native-infrastructure.rst
    securing-5g-networks-industry-research-survey-discussion.rst
    telecom-security-threat-landscape.rst
+   myforum-encrypted-dns.rst
+   myforum-5g-security.rst
 
 https://www.f5.com/company/events/webinars
 
