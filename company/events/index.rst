@@ -7,6 +7,7 @@ Events
    :titlesonly:
    :glob:
 
+   mwc-2022.rst
    webinars/index.rst
 
 https://www.f5.com/company/events
