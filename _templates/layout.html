@@ -3,7 +3,6 @@
   {{ super() }}
 
 
-
 {% set css_files = css_files +
   [ "_static/css/bootstrap.min.css",
     "_static/css/f5.css",
@@ -30,11 +29,7 @@
 {%- block header %}
 <div id="clouddocs-header">
 <div class="container-fluid">
-
-  <div class="row pageHeader">
-    <div class="container stat">
-    </div>
-  </div>
+  <div class="row pageHeader"></div>
 </div> <!-- /container-fluid -->
 
 <div id="search-container" class="support-header">
