@@ -7,19 +7,19 @@ Account Security
    :titlesonly:
    :glob:
 
-https//www.f5.com/pdf/shape-security/shape-security-telecom-case-study.pdf
+https://www.f5.com/pdf/shape-security/shape-security-telecom-case-study.pdf
 
 .. raw:: html
 
     <div>
       <object
-        data='https//www.f5.com/pdf/shape-security/shape-security-telecom-case-study.pdf'
+        data='https://www.f5.com/pdf/shape-security/shape-security-telecom-case-study.pdf'
         type="application/pdf"
         width="1366"
         height="768"
       >
         <iframe
-          src='https//www.f5.com/pdf/shape-security/shape-security-telecom-case-study.pdf'
+          src='https://www.f5.com/pdf/shape-security/shape-security-telecom-case-study.pdf'
           width="1366"
           height="768"
         >
