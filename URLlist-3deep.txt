@@ -6,6 +6,7 @@ https://www.f5.com/company/events/webinars/5g-an-opportunity-to-get-security-rig
 https://www.f5.com/company/events/webinars/securing-5g-networks-industry-research-survey-discussion
 https://www.f5.com/company/events/webinars/real-world-strategies-for-deploying-5g
 https://www.f5.com/company/events/webinars/securing-5g-networks-industry-research-survey-discussion
+https://www.f5.com/c/apcj-2020/webinars/attacks-and-fraud-in-uncertain-times
 https://www.f5.com/c/emea-2020/asset/telecoms-annual-industry-survey
 https://www.f5.com/c/emea-2020/event/f5-myforum/myforum-encrypted-dns
 https://www.f5.com/c/landing/service-providers/Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization
