@@ -14,6 +14,7 @@ Blogs
    5g-migration.rst
    telco-apps.rst
    unlocking-smart-core-network-slicing-for-iot-and-mvnos.rst
+   dont-take-your-eye-off-gtp-en-route-to-5g.rst
 
 https://www.f5.com/company/blog
 
