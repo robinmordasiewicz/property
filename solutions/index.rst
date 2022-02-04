@@ -9,6 +9,7 @@ Solutions
 
    service-provider-security/index.rst 
    service-providers/index.rst
+   service-providers/managed-services.rst
 
 https://www.f5.com/solutions/service-providers
 
