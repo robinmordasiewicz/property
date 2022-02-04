@@ -1,4 +1,5 @@
 https://www.f5.com/company/events/mwc-2022
+https://www.f5.com/solutions/service-providers/managed-services
 https://www.f5.com/company/blog/big-ip-ve-for-smart-nics-solution-blog
 https://www.f5.com/company/blog/dont-take-your-eye-off-gtp-en-route-to-5g
 https://www.f5.com/company/blog/kickstart-your-move-to-5g-services-without-abandoning-4g-investments

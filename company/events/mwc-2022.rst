@@ -7,6 +7,8 @@ MWC 2022
    :titlesonly:
    :glob:
 
+   mwc-2022-pdf.rst
+
 https://www.f5.com/company/events/mwc-2022
 
 .. raw:: html
