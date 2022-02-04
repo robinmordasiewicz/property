@@ -7,18 +7,18 @@ Portfolio
    :titlesonly:
    :glob:
 
-   solution/index.rst
-   product/index.rst
+   solutions/index.rst
+   products/index.rst
    company/index.rst
-   video/index.rst
-   white-paper/index.rst
+   videos/index.rst
+   white-papers/index.rst
    support/index.rst
-   survey/index.rst
+   surveys/index.rst
    contact/index.rst
    business-continuity/index.rst
-   solution-profile/index.rst
-   deployment-guide/index.rst
-   use-case/index.rst
+   solution-profiles/index.rst
+   deployment-guides/index.rst
+   use-cases/index.rst
 
 https://www.f5.com/pdf/solution-center/f5-handbook-for-service-providers-guide.pdf
 
