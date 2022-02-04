@@ -1,3 +1,4 @@
+https://www.f5.com/c/landing/service-providers/telcos-prioritize-5G-network-security
 https://www.f5.com/services/resources/use-cases/intelligent-dns-firewall-for-service-providers
 https://www.f5.com/solutions/service-providers/edge-compute/download-edge-computing-in-carrier-networks
 https://www.f5.com/services/resources/deployment-guides/sip-traffic-management-big-ip-ltm
