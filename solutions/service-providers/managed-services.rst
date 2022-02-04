@@ -8,6 +8,7 @@ Managed Services
    :glob:
 
    managed-services-pdf.rst
+   managed-services-demo.rst
 
 https://www.f5.com/solutions/service-providers/managed-services
 
