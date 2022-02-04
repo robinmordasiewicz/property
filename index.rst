@@ -9,8 +9,8 @@ Portfolio
 
    solution/index.rst
    product/index.rst
+   company/index.rst
    video/index.rst
-   blog/index.rst
    white-paper/index.rst
    support/index.rst
    survey/index.rst
