@@ -15,6 +15,7 @@ Webinars
    telecom-security-threat-landscape.rst
    myforum-encrypted-dns.rst
    myforum-5g-security.rst
+   myforum-help-msps-enhance-managed-services-offerings.rst
 
 https://www.f5.com/company/events/webinars
 
