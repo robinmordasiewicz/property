@@ -1466,8 +1466,8 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
-    margin-top: 22px;
-    margin-bottom:11px
+    margin-top: 10px;
+    margin-bottom:10px
 }
 
 h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h1 .small, .h1 .small, h2 .small, .h2 .small, h3 .small, .h3 .small {
@@ -1484,27 +1484,27 @@ h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small, h4 .small, .h4 .s
 }
 
 h1, .h1 {
-    font-size:48px
-}
-
-h2, .h2 {
     font-size:36px
 }
 
-h3, .h3 {
+h2, .h2 {
     font-size:28px
 }
 
-h4, .h4 {
+h3, .h3 {
     font-size:22px
 }
 
-h5, .h5 {
+h4, .h4 {
     font-size:16px
 }
 
+h5, .h5 {
+    font-size:12px
+}
+
 h6, .h6 {
-    font-size:13px
+    font-size:10px
 }
 
 p {
