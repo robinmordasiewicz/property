@@ -189,7 +189,8 @@ html_theme_path = f5_sphinx_theme.get_html_theme_path()
 html_sidebars = {"**": ["searchbox.html", "localtoc.html", "globaltoc.html"]}
 html_theme_options = {
     "site_name": "Service Provider",
-    "next_prev_link": True
+    "next_prev_link": True,
+    'sidebar_span': 6
 }
 html_last_updated_fmt = "%Y-%m-%d %H:%M:%S"
 
