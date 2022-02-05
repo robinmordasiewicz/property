@@ -17,6 +17,8 @@ Support
    rma-hardware-rentention-services-datasheet.rst
    iso-9001-ds.rst
 
+https://www.f5.com/services/support/support-offerings/support-policies
+
 .. raw:: html
 
     <iframe width="1366" height="768" src="../_static/sites/www.f5.com/services/support/support-offerings/support-policies.html" title=F5 frameborder="1" scrolling="yes"></iframe>
