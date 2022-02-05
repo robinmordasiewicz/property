@@ -185,7 +185,7 @@ a:hover{
 }
 
 #sidebar, .section-nav {
-  width: 320px;
+  width: 250px;
   margin-right: 20px;
   position: fixed;
   top: 106px;
