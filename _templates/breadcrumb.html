@@ -1,5 +1,5 @@
         <!-- custom breadcrumb -->
-        <h5>
+        <h6>
           {%- if master_doc == pagename %}
             <a href="index.html">Service Provider Portfolio</a>
           {%- else %}
@@ -12,12 +12,6 @@
           {%- endif %}
 
           <span class="right">
-          {%- if show_source and has_source and sourcename %}
-             <a href="{{ pathto('_sources/' + sourcename, true)|e }}" rel="nofollow">Source</a> |
-          {%- endif %}
-          {%- if github_url is defined %}
-             <a href="{{ github_url }}">Edit on <i class="fa fa-github" aria-hidden="true"></i></a>
-          {%- endif %}
           </span>
-        </h5>
+        </h6>
         <!-- end custom breadcrumb -->
