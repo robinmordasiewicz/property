@@ -13,7 +13,7 @@ import f5_sphinx_theme
 # ------------
 #
 # REQUIRED: Your class/lab name
-classname = ""
+classname = "classname"
 
 # OPTIONAL: The URL to the GitHub Repository for this class
 github_repo = "https://github.com/robinmordasiewicz/property"
