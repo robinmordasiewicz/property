@@ -1,4 +1,4 @@
-Solutions
+Service Provider
 =================
 
 .. toctree::
