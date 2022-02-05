@@ -20,23 +20,9 @@ Portfolio
    deployment-guides/index.rst
    use-cases/index.rst
 
-https://www.f5.com/pdf/solution-center/f5-handbook-for-service-providers-guide.pdf
+https://www.f5.com/solutions
+
 
 .. raw:: html
 
-    <div>
-      <object
-        data='https://www.f5.com/pdf/solution-center/f5-handbook-for-service-providers-guide.pdf'
-        type="application/pdf"
-        width="1366"
-        height="768"
-      >
-        <iframe
-          src='https://www.f5.com/pdf/solution-center/f5-handbook-for-service-providers-guide.pdf'
-          width="1366"
-          height="768"
-        >
-        <p>This browser does not support PDF!</p>
-        </iframe>
-      </object>
-    </div>
+    <iframe width="1366" height="768" src="../_static/sites/www.f5.com/solutions.html" title=NGINX frameborder="1" scrolling="yes"></iframe>
