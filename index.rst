@@ -1,4 +1,4 @@
-Service Provider
+Service Providerd
 =================
 
 .. toctree::
