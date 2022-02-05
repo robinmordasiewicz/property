@@ -1,5 +1,5 @@
-Solutions
-=================
+Service Providers
+==================
 
 .. toctree::
    :hidden:

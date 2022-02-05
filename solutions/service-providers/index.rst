@@ -1,4 +1,4 @@
-5G and Mobility
+Mobility and 5G
 =================
 
 .. toctree::
