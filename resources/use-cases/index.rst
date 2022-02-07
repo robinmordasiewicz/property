@@ -1,4 +1,4 @@
-OLD Use Cases
+Use Cases
 =================
 
 .. toctree::

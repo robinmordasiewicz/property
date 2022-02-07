@@ -1,4 +1,4 @@
-Diameter Signalling
+Diameter Signaling
 ========================
 
 .. toctree::

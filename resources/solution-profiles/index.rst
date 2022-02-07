@@ -1,4 +1,4 @@
-OLD Solutions
+Solutions Profiles
 =====================
 
 .. toctree::
