@@ -8,7 +8,6 @@ https://www.f5.com/company/events/webinars/real-world-strategies-for-deploying-5
 https://www.f5.com/company/events/webinars/securing-5g-networks-industry-research-survey-discussion
 https://www.f5.com/c/apcj-2020/webinars/attacks-and-fraud-in-uncertain-times
 https://www.f5.com/c/emea-2020/asset/telecoms-annual-industry-survey
-https://www.f5.com/c/emea-2020/event/f5-myforum/myforum-encrypted-dns
 https://www.f5.com/c/landing/service-providers/Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization
 https://www.f5.com/c/landing/service-providers/fast-track-to-the-5g-edge-n6-lan-consolidation
 https://www.f5.com/c/landing/service-providers/securing-your-5g-edge
@@ -18,6 +17,7 @@ https://www.f5.com/services/resources/deployment-guides/sip-traffic-management-b
 https://www.f5.com/services/resources/use-cases/carrier-grade-nat-for-service-providers
 https://www.f5.com/services/resources/use-cases/intelligent-dns-firewall-for-service-providers
 https://www.f5.com/services/resources/use-cases/leading-service-provider-delivers-outstanding-5g-network-performance1
+https://www.f5.com/services/resources/use-cases/virtual-gi-lan
 https://www.f5.com/services/resources/white-papers/5g-success-starts-with-cloud-native-infrastructure
 https://www.f5.com/services/resources/white-papers/augmented-ddos-protection-for-cloud-nfv-environments-with-big-ip-ve-for-smartnics
 https://www.f5.com/services/resources/white-papers/f5-and-containerization
