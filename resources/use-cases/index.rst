@@ -1,5 +1,5 @@
-Use Cases
-=================
+Depracated Use Cases
+======================
 
 .. toctree::
    :hidden:
@@ -14,5 +14,8 @@ Use Cases
    volte-and-ims-security-for-service-providers.rst
    intelligent-dns-firewall-for-service-providers.rst
 
-These older use-cases have been depracated
+https://www.f5.com/services/resources/use-cases
 
+.. raw:: html
+
+    <iframe width="1366" height="768" src="../../_static/sites/www.f5.com/services/resources/use-cases.html" title=NGINX frameborder="1" scrolling="yes"></iframe>

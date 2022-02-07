@@ -17,6 +17,7 @@ https://www.f5.com/services/resources/deployment-guides/ip-address-sharing-in-la
 https://www.f5.com/services/resources/deployment-guides/sip-traffic-management-big-ip-ltm
 https://www.f5.com/services/resources/use-cases/carrier-grade-nat-for-service-providers
 https://www.f5.com/services/resources/use-cases/intelligent-dns-firewall-for-service-providers
+https://www.f5.com/services/resources/use-cases/leading-service-provider-delivers-outstanding-5g-network-performance1
 https://www.f5.com/services/resources/white-papers/5g-success-starts-with-cloud-native-infrastructure
 https://www.f5.com/services/resources/white-papers/augmented-ddos-protection-for-cloud-nfv-environments-with-big-ip-ve-for-smartnics
 https://www.f5.com/services/resources/white-papers/f5-and-containerization
