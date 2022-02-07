@@ -16,6 +16,7 @@ Solutions
    contact/index.rst
    business-continuity/index.rst
    resources/index.rst
+   pdf/index.rst
 
 https://www.f5.com/solutions
 
