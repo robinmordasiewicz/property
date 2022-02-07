@@ -11,14 +11,11 @@ Solutions
    products/index.rst
    company/index.rst
    videos/index.rst
-   white-papers/index.rst
    support/index.rst
    surveys/index.rst
    contact/index.rst
    business-continuity/index.rst
-   solution-profiles/index.rst
-   deployment-guides/index.rst
-   use-cases/index.rst
+   resources/index.rst
 
 https://www.f5.com/solutions
 
