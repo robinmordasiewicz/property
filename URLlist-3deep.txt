@@ -15,6 +15,7 @@ https://www.f5.com/c/landing/service-providers/telcos-prioritize-5G-network-secu
 https://www.f5.com/services/resources/deployment-guides/ip-address-sharing-in-large-scale-networks-dns64na
 https://www.f5.com/services/resources/deployment-guides/sip-traffic-management-big-ip-ltm
 https://www.f5.com/services/resources/use-cases/carrier-grade-nat-for-service-providers
+https://www.f5.com/services/resources/use-cases/volte-and-ims-security-for-service-providers
 https://www.f5.com/services/resources/use-cases/intelligent-dns-firewall-for-service-providers
 https://www.f5.com/services/resources/use-cases/leading-service-provider-delivers-outstanding-5g-network-performance1
 https://www.f5.com/services/resources/use-cases/virtual-gi-lan
