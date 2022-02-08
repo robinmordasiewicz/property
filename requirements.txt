@@ -1,7 +1,7 @@
 f5_sphinx_theme
 pre-commit
 recommonmark
-sphinx
+sphinx-js
 sphinx_rtd_theme
 sphinx-copybutton
 sphinxcontrib-blockdiag
