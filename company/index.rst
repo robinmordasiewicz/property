@@ -7,8 +7,9 @@ Media
    :titlesonly:
    :glob:
 
-   events/index.rst
    blog/index.rst
+   events/index.rst
+   news/index.rst
 
 https://www.f5.com/company
 
