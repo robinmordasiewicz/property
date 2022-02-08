@@ -25,6 +25,7 @@ https://www.f5.com/pdf/partners/F5-Technology-Alliance-Program-Brochure-2020.pdf
 https://www.f5.com/pdf/products/big-ip-advanced-firewall-manager-datasheet.pdf
 https://www.f5.com/pdf/products/big-ip-cgnat-datasheet.pdf
 https://www.f5.com/pdf/products/big-ip-policy-enforcement-manager-datasheet.pdf
+https://www.f5.com/pdf/products/diameter-signaling-delivery-controller-product-brochure.pdf
 https://www.f5.com/pdf/products/nfv-packaged-solutions-overview.pdf
 https://www.f5.com/pdf/professional-services/professional-services-overview.pdf
 https://www.f5.com/pdf/reports/build-your-future-ready-infrastructure.pdf
