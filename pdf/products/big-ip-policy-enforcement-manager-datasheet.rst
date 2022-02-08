@@ -1,4 +1,4 @@
-Datasheet
+PEM Datasheet
 ======================
 
 .. toctree::
