@@ -20,3 +20,5 @@ PDF
    use-cases/index.rst
    white-papers/index.rst
 
+.. include:: ../sitemap-pdf.xml
+   :literal:
