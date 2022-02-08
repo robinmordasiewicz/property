@@ -69,6 +69,7 @@ https://www.f5.com/pdf/solution-profiles/wap-gateway-offload-solution-profile.pd
 https://www.f5.com/pdf/use-cases/consolidated-virtual-gilan-use-case-mwc.pdf
 https://www.f5.com/pdf/use-cases/f5-and-the-growing-role-of-gtp.pdf
 https://www.f5.com/pdf/use-cases/gtp-proxy-with-apn-correction-use-case.pdf
+https://www.f5.com/pdf/case-studies/leading-service-provider-delivers-outstanding-5g-network-performance-5g-and-virtualization-use-cases.pdf
 https://www.f5.com/pdf/white-papers/building-cdn-with-f5-wp.pdf
 https://www.f5.com/pdf/white-papers/f5-accelerates-cryptographic-processing-with-intel-qat-white-paper.pdf
 https://www.f5.com/pdf/white-papers/ims-introduction-wp.pdf

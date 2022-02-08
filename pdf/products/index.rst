@@ -10,7 +10,6 @@ Products
    big-ip-advanced-firewall-manager-datasheet.rst
    big-ip-cgnat-datasheet.rst
    big-ip-policy-enforcement-manager-datasheet.rst
-   big-ip-policy-enforcement-manager-solution-profile.rst
    diameter-signaling-delivery-controller-product-brochure.rst
    nfv-packaged-solutions-overview.rst
 

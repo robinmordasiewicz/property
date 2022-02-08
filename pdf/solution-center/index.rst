@@ -12,6 +12,7 @@ Solution Center
    f5-container-integrations-solutions-overview.rst
    f5-handbook-for-service-providers-guide.rst
    f5-near-real-time-dns-reporting-mitigates-ddos-attacks-case-study.rst
+   f5-mellanox-partner-solution-brief.rst
    f5-network-security-for-iot.rst
    f5-service-provider-optimize-monetize-secure.rst
    f5-service-provider-solutions.rst
