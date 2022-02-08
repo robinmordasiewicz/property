@@ -1,4 +1,4 @@
-Traffic Management
+Subscriber Tiering
 ========================
 
 .. toctree::
@@ -7,19 +7,19 @@ Traffic Management
    :titlesonly:
    :glob:
 
-https://www.f5.com/pdf/solution-center/f5_optimize_your_network_ebook.pdf
+https://www.f5.com/pdf/solution-profiles/big-ip-policy-enforcement-manager-solution-profile.pdf
 
 .. raw:: html
 
     <div>
       <object
-        data='https://www.f5.com/pdf/solution-center/f5_optimize_your_network_ebook.pdf'
+        data='https://www.f5.com/pdf/solution-profiles/big-ip-policy-enforcement-manager-solution-profile.pdf'
         type="application/pdf"
         width="1366"
         height="768"
       >
         <iframe
-          src='https://www.f5.com/pdf/solution-center/f5_optimize_your_network_ebook.pdf'
+          src='https://www.f5.com/pdf/solution-profiles/big-ip-policy-enforcement-manager-solution-profile.pdf'
           width="1366"
           height="768"
         >

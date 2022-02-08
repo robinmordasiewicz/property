@@ -1,6 +1,3 @@
-#!/bin/bash
-#
- 
 touch case-studies/leading-service-provider-delivers-outstanding-5g-network-performance-5g-and-virtualization-use-cases.rst
 touch customer-support/Premium-Plus-Service-Description-24X7.rst
 touch customer-support/guidelines-and-policies-ds.rst

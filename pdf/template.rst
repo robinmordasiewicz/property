@@ -1,5 +1,5 @@
-5G
-========================
+TITLE
+==================
 
 .. toctree::
    :hidden:
@@ -7,19 +7,19 @@
    :titlesonly:
    :glob:
 
-https://www.f5.com/pdf/solution-center/f5-solutions-for-the-emerging-5g-landscape.pdf
+URL
 
 .. raw:: html
 
     <div>
       <object
-        data='https://www.f5.com/pdf/solution-center/f5-solutions-for-the-emerging-5g-landscape.pdf'
+        data='URL'
         type="application/pdf"
         width="1366"
         height="768"
       >
         <iframe
-          src='https://www.f5.com/pdf/solution-center/f5-solutions-for-the-emerging-5g-landscape.pdf'
+          src='URL'
           width="1366"
           height="768"
         >
@@ -27,3 +27,4 @@ https://www.f5.com/pdf/solution-center/f5-solutions-for-the-emerging-5g-landscap
         </iframe>
       </object>
     </div>
+

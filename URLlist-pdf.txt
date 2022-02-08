@@ -1,6 +1,5 @@
-https://www.f5.com/pdf/solution-profiles/volterra-edge-distributed-cloud-solution-overview.pdf
-https://www.f5.com/pdf/solution-center/f5-service-provider-solutions.pdf
-https://www.f5.com/pdf/solution-profiles/big-ip-cloud-native-network-function-solutions-for-service-providers-overview.pdf
+https://interact.f5.com/rs/653-SMC-783/images/F5_5G_WP_BuildingBetter5GSecurity_Final_120720%20%281%29.pdf
+https://wtit.com/wp-content/uploads/2015/07/f5-white-paper-simplifying-security-for-mobile-networks-.pdf
 https://www.f5.com/content/dam/f5-com/page-assets-en/home-en/solutions/service-providers/5g/DIAG-WEB-PROJ-SP-414932860-5g-page-updates-nov-2019.pdf
 https://www.f5.com/content/dam/f5/corp/global/pdf/deployment-guides/f5-large-scale-nat-dg.pdf
 https://www.f5.com/content/dam/f5/corp/global/pdf/deployment-guides/load-balancing-sip-dg.pdf
@@ -11,6 +10,7 @@ https://www.f5.com/content/dam/f5/corp/global/pdf/solution-center/f5-mellanox-pa
 https://www.f5.com/content/dam/f5/corp/global/pdf/solution-center/f5-near-real-time-dns-reporting-mitigates-ddos-attacks-case-study.pdf
 https://www.f5.com/content/dam/f5/corp/global/pdf/solution-center/network-transformation-get-ready-for-5g-solution-brief.pdf
 https://www.f5.com/content/dam/f5/corp/global/pdf/solution-profiles/big-ip-policy-enforcement-manager-solution-profile.pdf
+https://www.f5.com/content/dam/f5/corp/global/pdf/white-papers/sip-paradigm-wp.pdf
 https://www.f5.com/pdf/customer-support/Premium-Plus-Service-Description-24X7.pdf
 https://www.f5.com/pdf/customer-support/guidelines-and-policies-ds.pdf
 https://www.f5.com/pdf/customer-support/iso-9001-ds.pdf
@@ -38,6 +38,7 @@ https://www.f5.com/pdf/solution-center/f5-handbook-for-service-providers-guide.p
 https://www.f5.com/pdf/solution-center/f5-near-real-time-dns-reporting-mitigates-ddos-attacks-case-study.pdf
 https://www.f5.com/pdf/solution-center/f5-network-security-for-iot.pdf
 https://www.f5.com/pdf/solution-center/f5-service-provider-optimize-monetize-secure.pdf
+https://www.f5.com/pdf/solution-center/f5-service-provider-solutions.pdf
 https://www.f5.com/pdf/solution-center/f5-solutions-for-the-emerging-5g-landscape.pdf
 https://www.f5.com/pdf/solution-center/f5_optimize_your_network_ebook.pdf
 https://www.f5.com/pdf/solution-center/google-cloud-platform-overview.pdf
@@ -53,6 +54,7 @@ https://www.f5.com/pdf/solution-guides/overcoming-4g-to-5g-migration-challenges-
 https://www.f5.com/pdf/solution-guides/securing-edge-volterra.pdf
 https://www.f5.com/pdf/solution-guides/velos-f5-powerful-next-generation-chassis-system-datasheet.pdf
 https://www.f5.com/pdf/solution-profiles/SP-scaling-dns-services.pdf
+https://www.f5.com/pdf/solution-profiles/big-ip-cloud-native-network-function-solutions-for-service-providers-overview.pdf
 https://www.f5.com/pdf/solution-profiles/big-ip-policy-enforcement-manager-solution-profile.pdf
 https://www.f5.com/pdf/solution-profiles/cgnat-ipv6-sp.pdf
 https://www.f5.com/pdf/solution-profiles/diameter-signaling-solution-profile.pdf
@@ -67,5 +69,8 @@ https://www.f5.com/pdf/solution-profiles/wap-gateway-offload-solution-profile.pd
 https://www.f5.com/pdf/use-cases/consolidated-virtual-gilan-use-case-mwc.pdf
 https://www.f5.com/pdf/use-cases/f5-and-the-growing-role-of-gtp.pdf
 https://www.f5.com/pdf/use-cases/gtp-proxy-with-apn-correction-use-case.pdf
+https://www.f5.com/pdf/white-papers/building-cdn-with-f5-wp.pdf
 https://www.f5.com/pdf/white-papers/f5-accelerates-cryptographic-processing-with-intel-qat-white-paper.pdf
+https://www.f5.com/pdf/white-papers/ims-introduction-wp.pdf
+https://www.f5.com/pdf/white-papers/ipv6-service-provider-wp.pdf
 https://www.f5.com/pdf/white-papers/the-future-of-vnf-management-white-paper.pdf

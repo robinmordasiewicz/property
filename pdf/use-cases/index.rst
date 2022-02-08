@@ -1,4 +1,4 @@
-Depracated Use Cases
+Use Cases
 ======================
 
 .. toctree::
@@ -7,11 +7,9 @@ Depracated Use Cases
    :titlesonly:
    :glob:
 
-   carrier-grade-nat-for-service-providers.rst
    consolidated-virtual-gilan-use-case-mwc.rst
-   virtual-gi-lan.rst
-   5g-performance.rst
-   volte-and-ims-security-for-service-providers.rst
+   f5-and-the-growing-role-of-gtp.rst
+   gtp-proxy-with-apn-correction-use-case.rst
    intelligent-dns-firewall-for-service-providers.rst
 
 https://www.f5.com/services/resources/use-cases
