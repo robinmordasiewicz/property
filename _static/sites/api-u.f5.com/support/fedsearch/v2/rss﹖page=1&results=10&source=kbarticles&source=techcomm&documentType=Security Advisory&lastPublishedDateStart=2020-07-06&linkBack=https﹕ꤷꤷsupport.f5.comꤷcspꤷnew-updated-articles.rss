@@ -12,6 +12,13 @@
         <link>https://support.f5.com/csp/new-updated-articles</link>
     </image>
     <item>
+        <description>BIND vulnerability CVE-2021-25219 Security Advisory Security Advisory Description In BIND 9.3.0 -&gt; 9.11.35, 9.12.0 -&gt; 9.16.21, and versions 9.9.3-S1 -&gt; 9.11.35-S1 and 9.16.8-S1 -&gt; 9.16.21-S1 of ...</description>
+        <guid>https://support.f5.com/csp/article/K77326807?utm_source=f5support&amp;utm_medium=RSS</guid>
+        <link>https://support.f5.com/csp/article/K77326807?utm_source=f5support&amp;utm_medium=RSS</link>
+        <pubDate>Wed, 09 Feb 2022 02:59:00 +0000</pubDate>
+        <title>K77326807: BIND vulnerability CVE-2021-25219</title>
+    </item>
+    <item>
         <description>Overview of Log4j vulnerabilities (2021 and 2022) Security Advisory Security Advisory Description This document is intended to serve as an overview of the 2021 and 2022 Log4j vulnerabilities to ...</description>
         <guid>https://support.f5.com/csp/article/K34002344?utm_source=f5support&amp;utm_medium=RSS</guid>
         <link>https://support.f5.com/csp/article/K34002344?utm_source=f5support&amp;utm_medium=RSS</link>
@@ -73,13 +80,6 @@
         <link>https://support.f5.com/csp/article/K92052341?utm_source=f5support&amp;utm_medium=RSS</link>
         <pubDate>Mon, 07 Feb 2022 01:29:00 +0000</pubDate>
         <title>K92052341: Linux kernel vulnerability CVE-2021-29266</title>
-    </item>
-    <item>
-        <description>Linux kernel vulnerability CVE-2021-3444 Security Advisory Security Advisory Description The bpf verifier in the Linux kernel did not properly handle mod32 destination register truncation when the ...</description>
-        <guid>https://support.f5.com/csp/article/K42323475?utm_source=f5support&amp;utm_medium=RSS</guid>
-        <link>https://support.f5.com/csp/article/K42323475?utm_source=f5support&amp;utm_medium=RSS</link>
-        <pubDate>Mon, 07 Feb 2022 01:25:00 +0000</pubDate>
-        <title>K42323475: Linux kernel vulnerability CVE-2021-3444</title>
     </item>
 </channel>
 
