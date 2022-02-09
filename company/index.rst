@@ -9,7 +9,7 @@ Media
 
    blog/index.rst
    events/index.rst
-   news/press-releases/index.rst
+   news/index.rst
 
 https://www.f5.com/company
 

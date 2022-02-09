@@ -6,6 +6,7 @@ https://www.f5.com/business-continuity/service-providers-keep-the-world-connecte
 https://www.f5.com/company
 https://www.f5.com/company/blog
 https://www.f5.com/company/events
+https://www.f5.com/company/news
 https://www.f5.com/partners
 https://www.f5.com/products
 https://www.f5.com/products/service-proxy-for-kubernetes

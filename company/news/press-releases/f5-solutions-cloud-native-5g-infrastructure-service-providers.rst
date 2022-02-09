@@ -7,9 +7,6 @@ Cloud-Native 5G
    :titlesonly:
    :glob:
 
-   events/index.rst
-   blog/index.rst
-
 https://www.f5.com/company/news/press-releases/f5-solutions-cloud-native-5g-infrastructure-service-providers
 
 .. raw:: html
