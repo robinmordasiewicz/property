@@ -31,6 +31,8 @@ year = time.strftime("%Y")
 eventname = "F5 Service Provider - %s " % (year)
 
 rst_prolog = """
+.. |PAGEWIDTH| replace:: 1366
+.. |PAGEHEIGHT| replace:: 768
 .. |classname| replace:: %s
 .. |classbold| replace:: **%s**
 .. |classitalic| replace:: *%s*
