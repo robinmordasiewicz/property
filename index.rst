@@ -10,12 +10,10 @@ Solutions
    solutions/index.rst
    products/index.rst
    company/index.rst
-   videos/index.rst
-   support/index.rst
+   services/index.rst
    surveys/index.rst
    contact/index.rst
    business-continuity/index.rst
-   resources/index.rst
    pdf/index.rst
 
 https://www.f5.com/solutions

@@ -1,4 +1,4 @@
-Resources
+Global Services
 =================
 
 .. toctree::
@@ -7,10 +7,8 @@ Resources
    :titlesonly:
    :glob:
 
-   white-papers/index.rst
-   solution-profiles/index.rst
-   deployment-guides/index.rst
-   use-cases/index.rst
+   support/index.rst
+   resources/index.rst
 
 https://www.f5.com/services
 

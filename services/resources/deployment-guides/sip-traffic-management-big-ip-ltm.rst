@@ -13,4 +13,4 @@ https://www.f5.com/services/resources/deployment-guides/sip-traffic-management-b
 
 .. raw:: html
 
-    <iframe width="1366" height="768" src="../../_static/sites/www.f5.com/services/resources/deployment-guides/sip-traffic-management-big-ip-ltm.html" title=NGINX frameborder="1" scrolling="yes"></iframe>
+    <iframe width="1366" height="768" src="../../../_static/sites/www.f5.com/services/resources/deployment-guides/sip-traffic-management-big-ip-ltm.html" title=NGINX frameborder="1" scrolling="yes"></iframe>
