@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="44px" viewBox="0 0 33 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>11A01705-3764-4E7E-B815-CA34072881E9</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#1E647D" offset="0%"></stop>
+            <stop stop-color="#0D3447" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-3" points="0.456996865 0.290616667 13.6976614 0.290616667 13.6976614 8.73150333 0.456996865 8.73150333"></polygon>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#295D72" offset="0%"></stop>
+            <stop stop-color="#5396AB" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-6" points="-0.00236990596 0.373023333 12.2603135 0.373023333 12.2603135 12.5333333 -0.00236990596 12.5333333"></polygon>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#6BD581" offset="0%"></stop>
+            <stop stop-color="#39AB4A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Aspen-Mesh-Game---Introduction-Page" transform="translate(-857.000000, -531.000000)">
+            <g id="Group-22" transform="translate(857.000000, 531.000000)">
+                <polygon id="Fill-1" fill="url(#linearGradient-1)" points="0 40 28 40 28 6 0 6"></polygon>
+                <polygon id="Fill-2" fill="url(#linearGradient-2)" points="4 36 24 36 24 11 4 11"></polygon>
+                <g id="Group-21" transform="translate(6.000000, 0.000000)">
+                    <g id="Group-5" transform="translate(0.789969, 0.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Clip-4"></g>
+                        <path d="M7.07693417,5.91777 C6.03259561,5.91777 5.18495925,5.07803667 5.18495925,4.04168667 C5.18495925,3.00612 6.03259561,2.16638667 7.07693417,2.16638667 C8.1220627,2.16638667 8.96890909,3.00612 8.96890909,4.04168667 C8.96890909,5.07803667 8.1220627,5.91777 7.07693417,5.91777 L7.07693417,5.91777 Z M10.860094,4.04168667 C10.860094,1.96977 9.16640125,0.290303333 7.07693417,0.290303333 C4.98746708,0.290303333 3.29377429,1.96977 3.29377429,4.04168667 L0.456996865,4.04168667 L0.456996865,8.73150333 L13.6976614,8.73150333 L13.6976614,4.04168667 L10.860094,4.04168667 Z" id="Fill-3" fill="url(#linearGradient-5)" mask="url(#mask-4)"></path>
+                    </g>
+                    <g id="Group-8" transform="translate(13.429467, 30.550000)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <g id="Clip-7"></g>
+                        <path d="M12.2603135,6.45325667 C12.2603135,9.81140667 9.51517241,12.53349 6.1285768,12.53349 C2.74277116,12.53349 -0.00236990596,9.81140667 -0.00236990596,6.45325667 C-0.00236990596,3.09510667 2.74277116,0.373023333 6.1285768,0.373023333 C9.51517241,0.373023333 12.2603135,3.09510667 12.2603135,6.45325667" id="Fill-6" fill="url(#linearGradient-8)" mask="url(#mask-7)"></path>
+                    </g>
+                    <path d="M22.3455273,34.878935 L19.3420665,38.8496517 C19.0869066,39.1872683 18.5892263,39.2225183 18.2882483,38.9240683 L16.5337279,37.184285" id="Stroke-9" stroke="#FFFFFF" stroke-linecap="round"></path>
+                    <line x1="0.773774295" y1="15.82709" x2="11.1768715" y2="15.82709" id="Stroke-11" stroke="#D3D3D3" stroke-linecap="round"></line>
+                    <line x1="0.773774295" y1="19.5784733" x2="14.9600313" y2="19.5784733" id="Stroke-13" stroke="#D3D3D3" stroke-linecap="round"></line>
+                    <line x1="0.773774295" y1="23.3295433" x2="11.1768715" y2="23.3295433" id="Stroke-15" stroke="#D3D3D3" stroke-linecap="round"></line>
+                    <line x1="0.773774295" y1="27.081005" x2="14.9600313" y2="27.081005" id="Stroke-17" stroke="#D3D3D3" stroke-linecap="round"></line>
+                    <line x1="0.773774295" y1="30.8323883" x2="11.1768715" y2="30.8323883" id="Stroke-19" stroke="#D3D3D3" stroke-linecap="round"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

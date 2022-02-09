@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="58px" viewBox="0 0 44 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 14</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#408A9F" offset="0%"></stop>
+            <stop stop-color="#1E5266" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#70B2C6" offset="0%"></stop>
+            <stop stop-color="#295D72" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#1E647D" offset="0%"></stop>
+            <stop stop-color="#0D3447" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-45.7%" y="-35.0%" width="191.3%" height="170.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#6BD581" offset="0%"></stop>
+            <stop stop-color="#39AB4A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#2DAB3E" offset="0%"></stop>
+            <stop stop-color="#14721D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Aspen-Mesh---Home-Page---Desktop" transform="translate(-197.000000, -1305.000000)">
+            <g id="Group-14" transform="translate(197.000000, 1305.000000)">
+                <polygon id="Fill-1" fill="url(#linearGradient-1)" points="2.8162 8.0046 2.8162 5.0046 16.3172 5.0046 23.3172 11.0046 40.3172 11.0046 43.3172 14.0046 43.3172 22.0586 2.3172 22.0046"></polygon>
+                <polygon id="Fill-2" fill="url(#linearGradient-2)" points="6.34730303 32.005 38.286697 32.005 38.286697 0.005 6.34730303 0.005"></polygon>
+                <polygon id="Fill-4" fill="url(#linearGradient-3)" points="0.3172 40.0046 0.3172 8.0046 14.3172 8.0046 21.3172 14.0046 43.3172 14.0046 43.3172 40.0046"></polygon>
+                <g id="Group-13" filter="url(#filter-4)" transform="translate(10.000000, 19.740000)">
+                    <path d="M11.3172,0.7646 C15.9262739,0.7646 19.6785217,4.43304645 19.8134434,9.00943938 L19.8172,9.2646 L19.8166,12.2646 L21.0496,12.2646 C21.7466,12.2646 22.3176,12.8346 22.3176,13.5326 L22.3176,27.9966 C22.3176,28.6946 21.7466,29.2646 21.0496,29.2646 L1.5846,29.2646 C0.8876,29.2646 0.3176,28.6946 0.3176,27.9966 L0.3176,13.5326 C0.3176,12.8346 0.8876,12.2646 1.5846,12.2646 L2.8166,12.2646 L2.8172,9.2646 C2.8172,4.57017288 6.62277288,0.7646 11.3172,0.7646 Z M11.3172,3.7646 C8.35371427,3.7646 5.93766054,6.10837359 5.82156719,9.04339239 L5.8172,9.2646 L5.8166,12.2646 L16.8166,12.2646 L16.8172,9.2646 C16.8172,6.22702712 14.3547729,3.7646 11.3172,3.7646 Z" id="Combined-Shape" fill="url(#linearGradient-5)"></path>
+                    <path d="M11.0672,15.7646 C12.5862,15.7646 13.8172,16.9956 13.8172,18.5146 C13.8172,19.7295765 13.0296498,20.7603007 11.9370991,21.1242232 L13.267,25.1143 L8.867,25.1143 L10.1968012,21.1242376 C9.91618726,21.0307813 9.65559459,20.8932631 9.4232,20.7196 C8.7522,20.2186 8.3172,19.4166 8.3172,18.5146 C8.3172,16.9956 9.5482,15.7646 11.0672,15.7646 Z" id="Combined-Shape" fill="url(#linearGradient-6)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
