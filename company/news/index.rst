@@ -7,7 +7,7 @@ News
    :titlesonly:
    :glob:
 
-   press-releases/index.html
+   press-releases/index.rst
 
 https://www.f5.com/company/news
 
