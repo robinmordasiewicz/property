@@ -1,15 +1,11 @@
+https://tmt.knect365.com/big-5g-event/
 https://www.f5.com/pdf/reports
 https://www.f5.com/services/support
 https://www.f5.com/services/professional-services
-https://www.f5.com/solutions
-https://tmt.knect365.com/big-5g-event/
 https://www.f5.com/business-continuity/service-providers-keep-the-world-connected
-https://www.f5.com/company
 https://www.f5.com/company/blog
 https://www.f5.com/company/events
 https://www.f5.com/company/news
-https://www.f5.com/partners
-https://www.f5.com/products
 https://www.f5.com/products/service-proxy-for-kubernetes
 https://www.f5.com/solutions/mobility-and-5g-evolution
 https://www.f5.com/solutions/overcoming-4g-to-5g-migration-challenges
