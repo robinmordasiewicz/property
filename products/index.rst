@@ -7,10 +7,8 @@ Products
    :titlesonly:
    :glob:
 
-   diameter-traffic-management.rst
-   carrier-grade-nat.rst
    service-proxy-for-kubernetes.rst
-   policy-enforcement-manager.rst
+   big-ip-services/index.rst
 
 https://www.f5.com/products
 
