@@ -20,6 +20,7 @@ github_repo = "https://github.com/robinmordasiewicz/property"
 github_url = "https://github.com/robinmordasiewicz/property"
 
 show_source = False
+html_copy_source = False
 
 #
 # END CONFIG
