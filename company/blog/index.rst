@@ -13,6 +13,7 @@ Blogs
    service-providers-on-the-edge--common-automation-frameworks-and-.rst
    5g-migration.rst
    telco-apps.rst
+   edge-a-nomics--how-to-monetize-your-5g-edge-network.rst
    dont-take-your-eye-off-gtp-en-route-to-5g.rst
    unlocking-smart-core-network-slicing-for-iot-and-mvnos.rst
 
