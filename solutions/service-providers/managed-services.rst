@@ -9,6 +9,7 @@ Managed Services
 
    managed-services-pdf.rst
    managed-services-demo.rst
+   ../cloud-and-managed-services-2020-trends.rst
 
 https://www.f5.com/solutions/service-providers/managed-services
 
