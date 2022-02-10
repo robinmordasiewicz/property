@@ -21,6 +21,7 @@ github_url = "https://github.com/robinmordasiewicz/property"
 
 show_source = False
 html_copy_source = False
+html_show_sourcelink = False
 
 #
 # END CONFIG
