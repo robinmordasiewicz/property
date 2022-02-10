@@ -9,6 +9,7 @@ BIGIP Services
 
    diameter-traffic-management.rst
    carrier-grade-nat.rst
+   network-functions-virtualization--nfv--solution-packages.rst
    policy-enforcement-manager.rst
 
 https://www.f5.com/products/big-ip-services
