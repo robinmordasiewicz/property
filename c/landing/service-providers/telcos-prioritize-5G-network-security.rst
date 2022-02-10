@@ -1,4 +1,4 @@
-Landing Pages
+5G Security
 ================
 
 .. toctree::
@@ -7,10 +7,8 @@ Landing Pages
    :titlesonly:
    :glob:
 
-   edge-multi-cloud-deployment-strategy-challenges.rst
-
-https://www.f5.com/c/landing/service-providers/edge-multi-cloud-deployment-strategy-challenges
+https://www.f5.com/c/landing/service-providers/telcos-prioritize-5G-network-security
 
 .. raw:: html
 
-    <iframe width="1366" height="800" src="./_static/sites/www.f5.com/c/landing/service-providers/edge-multi-cloud-deployment-strategy-challenges.html" title=NGINX frameborder="1" scrolling="yes"></iframe>
+    <iframe width="1366" height="768" src="../../../_static/sites/www.f5.com/c/landing/service-providers/telcos-prioritize-5G-network-security.html" title=NGINX frameborder="1" scrolling="yes"></iframe>
