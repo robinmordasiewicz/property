@@ -30,12 +30,18 @@ Articles
    :width: 448px
    :target: ../../../c/landing/service-providers/securing-your-5g-edge.html
 
-.. table::
-   :widths: 100 100 100
+.. |edge-multi-cloud-deployment-strategy-challenges| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/article-securing-your-5G-edge-thumbnail_950x534.jpg
+   :height: 251px
+   :width: 448px
+   :target: ../../../c/landing/service-providers/edge-multi-cloud-deployment-strategy-challenges.html
 
-   +----------------------------------------+-------------------------------------------------------------+-------------------------+
-   | |city-lights-spectrum|                 + |networking-vedios-screens|                                 + |securing-your-5G-edge| |
-   | 5G Technology Transformation Explained + Improve Network QoE and Reduce TCO with N6 LAN Optimization + Securing Your 5G Edge   |
-   +----------------------------------------+-------------------------------------------------------------+-------------------------+
+.. table::
+   :widths: 100 100 100 100
+
+   +----------------------------------------+-------------------------------------------------------------+-------------------------+---------------------------------------------------+
+   | |city-lights-spectrum|                 + |networking-vedios-screens|                                 + |securing-your-5G-edge| | |edge-multi-cloud-deployment-strategy-challenges| |
+   | 5G Technology Transformation Explained + Improve Network QoE and Reduce TCO with N6 LAN Optimization + Securing Your 5G Edge   | title here                                        |
+   +----------------------------------------+-------------------------------------------------------------+-------------------------+---------------------------------------------------+
+
 
 
