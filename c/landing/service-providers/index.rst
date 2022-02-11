@@ -19,6 +19,7 @@ Articles
    :height: 251px
    :width: 448px
    :target: https://www.f5.com
+   :target: ../../../c/landing/service-providers/5G-Technology-Transformation-Explained.html
    :class: with-shadow
 
    This is the caption
