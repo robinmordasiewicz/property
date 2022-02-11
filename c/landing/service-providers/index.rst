@@ -15,17 +15,17 @@ Articles
    telcos-prioritize-5G-network-security.rst
    threat-landscape-report-2021.rst
 
-.. |city-lights-spectrum| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-provider-city-lights-spectrum_950x534.jpg
+.. |city-lights-spectrum| figure:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-provider-city-lights-spectrum_950x534.jpg
    :height: 251px
    :width: 448px
    :target: ../../../c/landing/service-providers/5G-Technology-Transformation-Explained.html
 
-.. |networking-vedios-screens| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-provider-networking-vedios-screens_950x534.jpg
+.. |networking-vedios-screens| figure:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-provider-networking-vedios-screens_950x534.jpg
    :height: 251px
    :width: 448px
    :target: ../../../c/landing/service-providers/5G-Technology-Transformation-Explained.html
 
-.. |securing-your-5G-edge| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/article-securing-your-5G-edge-thumbnail_950x534.jpg
+.. |securing-your-5G-edge| figure:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/article-securing-your-5G-edge-thumbnail_950x534.jpg
    :height: 251px
    :width: 448px
    :target: ../../../c/landing/service-providers/securing-your-5g-edge.html
@@ -33,6 +33,5 @@ Articles
 +------------------------+-----------------------------+-------------------------+
 | |city-lights-spectrum| + |networking-vedios-screens| + |securing-your-5G-edge| +
 +------------------------+-----------------------------+-------------------------+
-
 
 
