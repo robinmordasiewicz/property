@@ -16,8 +16,13 @@ Articles
    threat-landscape-report-2021.rst
 
 .. figure:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
+   :height: 251px
+   :width: 448px
+   :target: https://www.f5.com
+   :class: with-shadow
 
-   
+   This is the caption
+
 .. image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
    :height: 251px
    :width: 448px
