@@ -17,8 +17,8 @@ Articles
 
 .. figure:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
 
-.. figure:: ../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
-
+   
 .. image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
+   :height: 251px
+   :width: 448px
 
-.. image:: ../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
