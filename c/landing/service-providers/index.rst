@@ -35,6 +35,7 @@ Articles
 
    +------------------------+-----------------------------+-------------------------+
    | |city-lights-spectrum| + |networking-vedios-screens| + |securing-your-5G-edge| |
+   | this is some text      + this is other text          + and yet more text       |
    +------------------------+-----------------------------+-------------------------+
 
 
