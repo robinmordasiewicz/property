@@ -16,22 +16,22 @@ Articles
    threat-landscape-report-2021.rst
 
 .. |city-lights-spectrum| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-provider-city-lights-spectrum_950x534.jpg
-   :height: 251px
+   :height: 170px
    :width: 448px
    :target: ../../../c/landing/service-providers/5G-Technology-Transformation-Explained.html
 
 .. |networking-vedios-screens| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-provider-networking-vedios-screens_950x534.jpg
-   :height: 251px
+   :height: 170px
    :width: 448px
    :target: ../../../c/landing/service-providers/Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization.html
 
 .. |securing-your-5G-edge| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/article-securing-your-5G-edge-thumbnail_950x534.jpg
-   :height: 251px
+   :height: 170px
    :width: 448px
    :target: ../../../c/landing/service-providers/securing-your-5g-edge.html
 
 .. |edge-multi-cloud-deployment-strategy-challenges| image:: ../../../_static/sites/www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Servers-768.png
-   :height: 251px
+   :height: 170px
    :width: 448px
    :target: ../../../c/landing/service-providers/edge-multi-cloud-deployment-strategy-challenges.html
 
