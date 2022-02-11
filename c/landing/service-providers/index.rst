@@ -30,7 +30,7 @@ Articles
    :width: 448px
    :target: ../../../c/landing/service-providers/securing-your-5g-edge.html
 
-.. |edge-multi-cloud-deployment-strategy-challenges| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/article-securing-your-5G-edge-thumbnail_950x534.jpg
+.. |edge-multi-cloud-deployment-strategy-challenges| image:: ../../../_static/sites/www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Servers-768.png
    :height: 251px
    :width: 448px
    :target: ../../../c/landing/service-providers/edge-multi-cloud-deployment-strategy-challenges.html
@@ -38,10 +38,9 @@ Articles
 .. table::
    :widths: 100 100 100 100
 
-   +----------------------------------------+-------------------------------------------------------------+-------------------------+---------------------------------------------------+
-   | |city-lights-spectrum|                 + |networking-vedios-screens|                                 + |securing-your-5G-edge| | |edge-multi-cloud-deployment-strategy-challenges| |
-   | 5G Technology Transformation Explained + Improve Network QoE and Reduce TCO with N6 LAN Optimization + Securing Your 5G Edge   | title here                                        |
-   +----------------------------------------+-------------------------------------------------------------+-------------------------+---------------------------------------------------+
-
+   +----------------------------------------+-------------------------------------------------------------+-------------------------+----------------------------------------------------------------------------------------------+
+   | |city-lights-spectrum|                 + |networking-vedios-screens|                                 + |securing-your-5G-edge| | |edge-multi-cloud-deployment-strategy-challenges|                                            |
+   | 5G Technology Transformation Explained + Improve Network QoE and Reduce TCO with N6 LAN Optimization + Securing Your 5G Edge   | Infrastructure and Security Challenges That Should Inform Your Multi-Cloud and Edge Strategy |
+   +----------------------------------------+-------------------------------------------------------------+-------------------------+----------------------------------------------------------------------------------------------+
 
 
