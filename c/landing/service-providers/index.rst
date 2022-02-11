@@ -31,6 +31,7 @@ Articles
    :target: ../../../c/landing/service-providers/securing-your-5g-edge.html
 
 .. table::
+   :widths: 50 50 50
 
    +----------------------------------------+-------------------------------------------------------------+-------------------------+
    | |city-lights-spectrum|                 + |networking-vedios-screens|                                 + |securing-your-5G-edge| |
