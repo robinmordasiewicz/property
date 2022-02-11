@@ -25,6 +25,10 @@ Articles
    :width: 448px
    :target: ../../../c/landing/service-providers/5G-Technology-Transformation-Explained.html
 
+.. |securing-your-5G-edge| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/article-securing-your-5G-edge-thumbnail_950x534.jpg
+   :height: 251px
+   :width: 448px
+   :target: ../../../c/landing/service-providers/securing-your-5g-edge.html
 
 +------------------------+-----------------------------+
 | |city-lights-spectrum| + |networking-vedios-screens| +
