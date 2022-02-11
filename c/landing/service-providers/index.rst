@@ -15,7 +15,7 @@ Articles
    telcos-prioritize-5G-network-security.rst
    threat-landscape-report-2021.rst
 
-.. |networking-vedios-screens| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-provider-city-lights-spectrum_950x534.jpg
+.. |city-lights-spectrum| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-provider-city-lights-spectrum_950x534.jpg
    :height: 251px
    :width: 448px
    :target: ../../../c/landing/service-providers/5G-Technology-Transformation-Explained.html
