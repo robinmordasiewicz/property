@@ -15,7 +15,7 @@ Articles
    telcos-prioritize-5G-network-security.rst
    threat-landscape-report-2021.rst
 
-.. figure:: ../../content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
+.. figure:: ../../../content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
 
    Self-Configuring NFV Packaged Solutions for Fast and Flexible Deployment
 
