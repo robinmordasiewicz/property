@@ -15,10 +15,10 @@ Articles
    telcos-prioritize-5G-network-security.rst
    threat-landscape-report-2021.rst
 
-.. figure:: ../../../content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
+.. figure:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
 
-.. figure:: ../../content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
+.. figure:: ../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
 
-.. image:: ../../../content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
+.. image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
 
-.. image:: ../../content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
+.. image:: ../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
