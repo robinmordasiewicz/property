@@ -1,4 +1,4 @@
-Global Services
+Services
 =================
 
 .. toctree::
