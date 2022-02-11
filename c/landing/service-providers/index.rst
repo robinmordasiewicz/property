@@ -33,9 +33,9 @@ Articles
 .. table:: This is my table
    :widths: 33 33 33
 
-   +------------------------+-----------------------------+-------------------------+
-   | |city-lights-spectrum| + |networking-vedios-screens| + |securing-your-5G-edge| |
-   | 5G Technology Transformation Explained      + Improve Network QoE and Reduce TCO with N6 LAN Optimization          + Securing Your 5G Edge       |
-   +------------------------+-----------------------------+-------------------------+
+   +----------------------------------------+-------------------------------------------------------------+-------------------------+
+   | |city-lights-spectrum|                 + |networking-vedios-screens|                                 + |securing-your-5G-edge| |
+   | 5G Technology Transformation Explained + Improve Network QoE and Reduce TCO with N6 LAN Optimization + Securing Your 5G Edge   |
+   +----------------------------------------+-------------------------------------------------------------+-------------------------+
 
 
