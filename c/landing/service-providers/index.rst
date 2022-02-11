@@ -17,5 +17,8 @@ Articles
 
 .. figure:: ../../../content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
 
-   Self-Configuring NFV Packaged Solutions for Fast and Flexible Deployment
+.. figure:: ../../content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
 
+.. image:: ../../../content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
+
+.. image:: ../../content/dam/f5-com/global-assets/resources-featurettes/webinars/service-provider-blockchain-network-green_950x534.jpg
