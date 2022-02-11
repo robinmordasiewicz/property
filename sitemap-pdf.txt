@@ -54,6 +54,7 @@ https://www.f5.com/pdf/solution-guides/overcoming-4g-to-5g-migration-challenges-
 https://www.f5.com/pdf/solution-guides/securing-edge-volterra.pdf
 https://www.f5.com/pdf/solution-guides/velos-f5-powerful-next-generation-chassis-system-datasheet.pdf
 https://www.f5.com/pdf/solution-profiles/SP-scaling-dns-services.pdf
+https://www.f5.com/pdf/solution-profiles/a-global-network-for-maximum-cloud-performance-overview.pdf
 https://www.f5.com/pdf/solution-profiles/big-ip-cloud-native-network-function-solutions-for-service-providers-overview.pdf
 https://www.f5.com/pdf/solution-profiles/big-ip-policy-enforcement-manager-solution-profile.pdf
 https://www.f5.com/pdf/solution-profiles/cgnat-ipv6-sp.pdf

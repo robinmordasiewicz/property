@@ -7,12 +7,13 @@ Solution Profiles
    :titlesonly:
    :glob:
 
-   SP-scaling-dns-services.rst
+   a-global-network-for-maximum-cloud-performance-overview.rst
    big-ip-cloud-native-network-function-solutions-for-service-providers-overview.rst
    big-ip-policy-enforcement-manager-solution-profile.rst
    cgnat-ipv6-sp.rst
    diameter-signaling-solution-profile.rst
    dns-services-sp.rst
+   SP-scaling-dns-services.rst
    service-provider-multi-layered-security-sp.rst
    service-provider-security-sp.rst
    simplify-your-edge-solution-overview.rst
