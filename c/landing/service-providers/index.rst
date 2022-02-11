@@ -31,10 +31,10 @@ Articles
    :target: ../../../c/landing/service-providers/securing-your-5g-edge.html
 
 .. table:: This is my table
-    :widths: 33 33 33
+   :widths: 33 33 33
 
    +------------------------+-----------------------------+-------------------------+
-   | |city-lights-spectrum| + |networking-vedios-screens| + |securing-your-5G-edge| +
+   | |city-lights-spectrum| + |networking-vedios-screens| + |securing-your-5G-edge| |
    +------------------------+-----------------------------+-------------------------+
 
 
