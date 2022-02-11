@@ -23,7 +23,7 @@ Articles
 .. |networking-vedios-screens| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-provider-networking-vedios-screens_950x534.jpg
    :height: 251px
    :width: 448px
-   :target: ../../../c/landing/service-providers/5G-Technology-Transformation-Explained.html
+   :target: ../../../c/landing/service-providers/Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization.html
 
 .. |securing-your-5G-edge| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/article-securing-your-5G-edge-thumbnail_950x534.jpg
    :height: 251px
@@ -35,7 +35,7 @@ Articles
 
    +------------------------+-----------------------------+-------------------------+
    | |city-lights-spectrum| + |networking-vedios-screens| + |securing-your-5G-edge| |
-   | this is some text      + this is other text          + and yet more text       |
+   | 5G Technology Transformation Explained      + Improve Network QoE and Reduce TCO with N6 LAN Optimization          + Securing Your 5G Edge       |
    +------------------------+-----------------------------+-------------------------+
 
 
