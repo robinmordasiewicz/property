@@ -15,35 +15,25 @@ Articles
    telcos-prioritize-5G-network-security.rst
    threat-landscape-report-2021.rst
 
-.. _city-lights-spectrum:
-.. figure:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-provider-city-lights-spectrum_950x534.jpg
+.. |networking-vedios-screens| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-provider-city-lights-spectrum_950x534.jpg
    :height: 251px
    :width: 448px
    :target: ../../../c/landing/service-providers/5G-Technology-Transformation-Explained.html
    :class: with-shadow
 
-   5G Technology Transformation Explained
-
-An example is shown in Figure :ref:`city-lights-spectrum`.
-
-
-.. |networking-vedios-screens| figure:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-provider-networking-vedios-screens_950x534.jpg
+.. |networking-vedios-screens| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-provider-networking-vedios-screens_950x534.jpg
    :height: 251px
    :width: 448px
    :target: ../../../c/landing/service-providers/5G-Technology-Transformation-Explained.html
    :class: with-shadow
 
-   Improve Network QoE and Reduce TCO with N6 LAN Optimization
-
-.. |securing-your-5G-edge| figure:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/article-securing-your-5G-edge-thumbnail_950x534.jpg
+.. |securing-your-5G-edge| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/article-securing-your-5G-edge-thumbnail_950x534.jpg
    :height: 251px
    :width: 448px
    :target: ../../../c/landing/service-providers/securing-your-5g-edge.html
    :class: with-shadow
 
-   Securing Your 5G Edge
-
- +------------------------------+--------------------------+------------------------------+
- | |networking-vedios-screens|  +  |city-lights-spectrum|  + |networking-vedios-screens|  +
- +------------------------------+--------------------------+------------------------------+
+ +-----------------------------+------------------------+-------------------------+
+ | |networking-vedios-screens| + |city-lights-spectrum| + |securing-your-5G-edge| +
+ +-----------------------------+------------------------+-------------------------+
 
