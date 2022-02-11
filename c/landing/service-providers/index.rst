@@ -19,21 +19,19 @@ Articles
    :height: 251px
    :width: 448px
    :target: ../../../c/landing/service-providers/5G-Technology-Transformation-Explained.html
-   :class: with-shadow
 
 .. |networking-vedios-screens| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-provider-networking-vedios-screens_950x534.jpg
    :height: 251px
    :width: 448px
    :target: ../../../c/landing/service-providers/5G-Technology-Transformation-Explained.html
-   :class: with-shadow
 
 .. |securing-your-5G-edge| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/article-securing-your-5G-edge-thumbnail_950x534.jpg
    :height: 251px
    :width: 448px
    :target: ../../../c/landing/service-providers/securing-your-5g-edge.html
-   :class: with-shadow
 
- +-----------------------------+------------------------+-------------------------+
- | |networking-vedios-screens| + |city-lights-spectrum| + |securing-your-5G-edge| +
- +-----------------------------+------------------------+-------------------------+
+
+   +------------------------+-----------------------------+-------------------------+
+   | |city-lights-spectrum| + |networking-vedios-screens| + |securing-your-5G-edge| +
+   +------------------------+-----------------------------+-------------------------+
 
