@@ -17,6 +17,7 @@ Articles
 
 .. raw:: html
 
+   <embed>
 <div class="bg-default cont01 
     U:padding-top U:padding-bot-lg 
     height-1 theme-default theme-wrap" dir="auto" id="container-1063934774" data-bg-skip="None">
@@ -85,3 +86,5 @@ Articles
         <div class="cont01__gradient-second-color"></div>
     </div>
 </div>
+   </embed>
+
