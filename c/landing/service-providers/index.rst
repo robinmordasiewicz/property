@@ -30,7 +30,9 @@ Articles
    :width: 448px
    :target: ../../../c/landing/service-providers/securing-your-5g-edge.html
 
-+------------------------+-----------------------------+
-| |city-lights-spectrum| + |networking-vedios-screens| +
-+------------------------+-----------------------------+
++------------------------+-----------------------------+-------------------------+
+| |city-lights-spectrum| + |networking-vedios-screens| + |securing-your-5G-edge| +
++------------------------+-----------------------------+-------------------------+
+
+
 
