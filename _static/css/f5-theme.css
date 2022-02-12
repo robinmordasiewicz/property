@@ -954,6 +954,9 @@ table tbody tr {
 table tbody td {
   padding: 20px 30px;
   text-align: left;
+  border: hidden;
+  font-size: 15px;
+  font-weight: 500;  
 }
 
 tr,
