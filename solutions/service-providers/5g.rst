@@ -1,4 +1,4 @@
-Accelerate 5G Adoption
+5G Adoption
 ========================
 
 .. toctree::
