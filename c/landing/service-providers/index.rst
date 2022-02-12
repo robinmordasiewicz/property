@@ -40,7 +40,7 @@ Articles
    :width: 267px
    :target: ../../../c/landing/service-providers/securing-your-5g-edge.html
 
-.. |telcos-prioritize-5G-network-security| image:: ../../../_static/sites/www.f5.com/content/f5-com/dam/global-assets/resources-featurettes/reports-articles/service-providers-light-trails-city-night_950x534.jpg
+.. |telcos-prioritize-5G-network-security| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-providers-light-trails-city-night_950x534.jpg
    :height: 152px
    :width: 267px
    :target: ../../../c/landing/service-providers/telcos-prioritize-5G-network-security.html
