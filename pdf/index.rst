@@ -19,6 +19,9 @@ PDF
    solution-profiles/index.rst
    use-cases/index.rst
    white-papers/index.rst
+   big-ip-policy-enforcement-manager-solution-profile.rst
+   building-better-5g-security-pdf.rst
+   mobile-security.rst
 
 .. include:: ../sitemap-pdf.txt
    :literal:
