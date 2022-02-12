@@ -25,7 +25,7 @@ Articles
    :width: 267px
    :target: ../../../c/landing/service-providers/Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization.html
 
-.. |edge-multi-cloud-deployment-strategy-challenges| image:: ../../../_static/sites/www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Servers-768.png
+.. |edge-multi-cloud-deployment-strategy-challenges| image:: ../../../_static/sites/www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/threat_landscape_2021_INLINE-IMAGE_2_sm.jpg
    :height: 152px
    :width: 267px
    :target: ../../../c/landing/service-providers/edge-multi-cloud-deployment-strategy-challenges.html
