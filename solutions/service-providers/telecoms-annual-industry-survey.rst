@@ -1,5 +1,5 @@
-Telecoms.com Survey - 2020
-=============================
+Telecoms Survey 2020
+===========================
 
 .. toctree::
    :hidden:

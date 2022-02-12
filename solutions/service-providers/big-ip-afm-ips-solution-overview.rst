@@ -1,4 +1,4 @@
-Intrusion Prevention System
+Intrusion Prevention
 =============================
 
 .. toctree::
