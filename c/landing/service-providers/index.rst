@@ -45,7 +45,7 @@ Articles
    :width: 267px
    :target: ../../../c/landing/service-providers/telcos-prioritize-5G-network-security.html
 
-.. |threat-landscape-report-2021| image:: ../../../_static/sites/www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Servers-768.png
+.. |threat-landscape-report-2021| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-providers-light-trails-city-night_950x534.jpg
    :height: 152px
    :width: 267px
    :target: ../../../c/landing/service-providers/threat-landscape-report-2021.html
@@ -53,12 +53,12 @@ Articles
 .. table::
    :widths: 100 100 100 100
 
-   +------------------------------------------+---------------------------------------------------------------+---------------------------------------------------+----------------------------------------------------------------------------------------------+
-   | |5G-Technology-Transformation-Explained| + |Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization| + |edge-multi-cloud-deployment-strategy-challenges| | |fast-track-to-the-5g-edge-n6-lan-consolidation|                                             |
-   | 5G Technology Transformation Explained   + Improve Network QoE and Reduce TCO with N6 LAN Optimization   + Securing Your 5G Edge                             | Infrastructure and Security Challenges That Should Inform Your Multi-Cloud and Edge Strategy |
-   +------------------------------------------+---------------------------------------------------------------+---------------------------------------------------+----------------------------------------------------------------------------------------------+
-   | |securing-your-5G-edge|                  + |telcos-prioritize-5G-network-security|                       + |threat-landscape-report-2021|                    |                                                                                              |
-   | 5G Technology Transformation Explained   + Improve Network QoE and Reduce TCO with N6 LAN Optimization   + Securing Your 5G Edge                             |                                                                                              |
-   +------------------------------------------+---------------------------------------------------------------+---------------------------------------------------+----------------------------------------------------------------------------------------------+
+   +------------------------------------------+---------------------------------------------------------------+---------------------------------------------------+--------------------------------------------------+
+   | |5G-Technology-Transformation-Explained| + |Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization| + |edge-multi-cloud-deployment-strategy-challenges| | |fast-track-to-the-5g-edge-n6-lan-consolidation| |
+   | 5G Technology Transformation Explained   + Improve Network QoE and Reduce TCO with N6 LAN Optimization   + Edge multi cloud deployment strategy challenges   | Fast track to the 5G EDGE - N6 LAN consolidation |
+   +------------------------------------------+---------------------------------------------------------------+---------------------------------------------------+--------------------------------------------------+
+   | |securing-your-5G-edge|                  + |telcos-prioritize-5G-network-security|                       + |threat-landscape-report-2021|                    |                                                  |
+   | Securing your 5G EDGE                    + Telcos prioritize 5G network security                         + Threat landscape report - 2021                    |                                                  |
+   +------------------------------------------+---------------------------------------------------------------+---------------------------------------------------+--------------------------------------------------+
 
 
