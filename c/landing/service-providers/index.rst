@@ -45,7 +45,7 @@ Articles
    :width: 267px
    :target: ../../../c/landing/service-providers/telcos-prioritize-5G-network-security.html
 
-.. |threat-landscape-report-2021| image:: ../../../_static/sites/www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Servers-768.png
+.. |threat-landscape-report-2021| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/ebooks/service-provider-abstract-data-landscape_950x534.jpg
    :height: 152px
    :width: 267px
    :target: ../../../c/landing/service-providers/threat-landscape-report-2021.html
