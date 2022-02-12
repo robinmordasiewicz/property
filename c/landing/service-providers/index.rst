@@ -40,12 +40,12 @@ Articles
    :width: 267px
    :target: ../../../c/landing/service-providers/securing-your-5g-edge.html
 
-.. |telcos-prioritize-5G-network-security| image:: ../../../_static/sites/www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Servers-768.png
+.. |telcos-prioritize-5G-network-security| image:: ../../../_static/sites/www.f5.com/content/dam/global-assets/resources-featurettes/reports-articles/service-providers-light-trails-city-night_950x534.jpg
    :height: 152px
    :width: 267px
    :target: ../../../c/landing/service-providers/telcos-prioritize-5G-network-security.html
 
-.. |threat-landscape-report-2021| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-providers-light-trails-city-night_950x534.jpg
+.. |threat-landscape-report-2021| image:: ../../../_static/sites/www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/volterra-conversion-Servers-768.png
    :height: 152px
    :width: 267px
    :target: ../../../c/landing/service-providers/threat-landscape-report-2021.html
