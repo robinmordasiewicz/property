@@ -30,7 +30,7 @@ Articles
    :width: 267px
    :target: ../../../c/landing/service-providers/edge-multi-cloud-deployment-strategy-challenges.html
 
-.. |fast-track-to-the-5g-edge-n6-lan-consolidation| image:: ../../../_static/sites/www.f5.com/content/dam/f5-app-security/en/2020/article/fast_track_5G_hero_sm.jpg
+.. |fast-track-to-the-5g-edge-n6-lan-consolidation| image:: ../../../_static/fast_track_5G_hero_950x534.png
    :height: 152px
    :width: 267px
    :target: ../../../c/landing/service-providers/fast-track-to-the-5g-edge-n6-lan-consolidation.html
