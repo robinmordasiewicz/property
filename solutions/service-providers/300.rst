@@ -7,4 +7,10 @@
    :titlesonly:
    :glob:
 
-
+   5g.rst
+   5g-sba-solution-overview.rst:
+   building-better-5g-security.rst
+   deploying-your-cloud-native-infrastructure-and-5g-core-pdf.rst
+   edge-compute/index.rst
+   edge-security.rst
+   telcos-prioritize-5G-network-security.rst
