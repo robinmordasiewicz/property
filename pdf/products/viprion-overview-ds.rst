@@ -13,13 +13,13 @@ https://www.f5.com/pdf/products/viprion-overview-ds.pdf
 
     <div>
       <object
-        data='https://www.f5.com/pdf/products/viprion-overview-ds.pdf'
+        data='../../_static/sites/www.f5.com/pdf/products/viprion-overview-ds.pdf'
         type="application/pdf"
         width="1366"
         height="768"
       >
         <iframe
-          src='https://www.f5.com/pdf/products/viprion-overview-ds.pdf'
+          src='../../_static/sites/www.f5.com/pdf/products/viprion-overview-ds.pdf'
           width="1366"
           height="768"
         >
