@@ -1,1 +1,0 @@
-../service-provider-security/5g-security.rst

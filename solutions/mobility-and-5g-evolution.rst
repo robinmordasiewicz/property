@@ -1,4 +1,4 @@
-Mobility and 5G
+4G Investment
 =================
 
 .. toctree::
@@ -7,11 +7,11 @@ Mobility and 5G
    :titlesonly:
    :glob:
 
-   mobility-and-5g-evolution-download.rst
+   service-providers/protect-your-4g-investment-with-your-5g-strategy.rst
 
-https://www.f5.com/solutions/mobility-and-5g-evolution-download
+https://www.f5.com/solutions/service-providers/protect-your-4g-investment-with-your-5g-strategy
 
 .. raw:: html
 
-    <iframe width="1366" height="768" src="../_static/sites/www.f5.com/solutions/mobility-and-5g-evolution.html" title=NGINX frameborder="1" scrolling="yes"></iframe>
+    <iframe width="1366" height="768" src="../_static/sites/www.f5.com/solutions/service-providers/protect-your-4g-investment-with-your-5g-strategy.html" title=NGINX frameborder="1" scrolling="yes"></iframe>
 
