@@ -15,6 +15,7 @@
    data-traffic-management.rst
    edge-compute.rst
    fast-track-to-the-5g-edge-ebook.rst
+   fixed-line-cable.rst
    harnessing-the-power-of-edge-computing.rst
    network-functions-virtualization-nfv.rst
    nfv-ebook-optimize-your-network-with-best-of-suite-nfv-solutions.rst

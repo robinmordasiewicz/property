@@ -1,4 +1,4 @@
-Adaptive Bitrate Streaming
+Adaptive Bitrate
 =============================
 
 .. toctree::
