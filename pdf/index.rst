@@ -13,7 +13,7 @@ PDF
    products/index.rst
    professional-services/index.rst
    reports/index.rst
-   shape-security/index.rst
+   shape-security/shape-security-telecom-case-study.rst
    solution-center/index.rst
    solution-guides/index.rst
    solution-profiles/index.rst
