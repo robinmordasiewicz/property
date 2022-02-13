@@ -11,7 +11,7 @@ Use Cases
    intelligent-dns-firewall-for-service-providers.rst
    leading-service-provider-delivers-outstanding-5g-network-performance1.rst
    virtual-gi-lan.rst
-   volte-and-ims-security-for-service-providers.rst:
+   volte-and-ims-security-for-service-providers.rst
 
 https://www.f5.com/services/resources/use-cases
 
