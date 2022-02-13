@@ -11,6 +11,7 @@ Webinars
    5g-security-offload-hyperscale-ddos-attacks-to-smartnics.rst
    edge-computing-and-cloud-native-operations-webinar.rst
    how-5g-success-starts-with-your-cloud-native-infrastructure.rst
+   real-world-strategies-for-deploying-5g.rst
    securing-5g-networks-industry-research-survey-discussion.rst
    telecom-security-threat-landscape.rst
    myforum-encrypted-dns.rst

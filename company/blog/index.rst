@@ -11,6 +11,7 @@ Blogs
    the-future-of-5g.rst
    big-ip-ve-for-smart-nics-solution-blog.rst
    f5-softbank-multi-access-edge-computing.rst
+   iot-infrastructure-empowered-by-f5s-iot-solution.rst
    service-providers-on-the-edge--common-automation-frameworks-and-.rst
    5g-migration.rst
    telco-apps.rst
