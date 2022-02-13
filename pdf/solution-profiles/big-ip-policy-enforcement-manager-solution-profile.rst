@@ -1,4 +1,4 @@
-Subscriber Tiering
+PEM Subscriber Tiering
 ========================
 
 .. toctree::
