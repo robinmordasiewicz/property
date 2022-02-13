@@ -1,4 +1,4 @@
-PDF
+5G Security
 ==================
 
 .. toctree::
@@ -13,13 +13,13 @@ https://interact.f5.com/rs/653-SMC-783/images/F5_5G_WP_BuildingBetter5GSecurity_
 
     <div>
       <object
-        data='https://interact.f5.com/rs/653-SMC-783/images/F5_5G_WP_BuildingBetter5GSecurity_Final_120720%20%281%29.pdf'
+        data='../_static/sites/interact.f5.com/rs/653-SMC-783/images/F5_5G_WP_BuildingBetter5GSecurity_Final_120720%20%281%29.pdf'
         type="application/pdf"
         width="1366"
         height="768"
       >
         <iframe
-          src='https://interact.f5.com/rs/653-SMC-783/images/F5_5G_WP_BuildingBetter5GSecurity_Final_120720%20%281%29.pdf'
+          src='../_static/sites/interact.f5.com/rs/653-SMC-783/images/F5_5G_WP_BuildingBetter5GSecurity_Final_120720%20%281%29.pdf'
           width="1366"
           height="768"
         >

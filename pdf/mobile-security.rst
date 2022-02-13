@@ -13,13 +13,13 @@ https://wtit.com/wp-content/uploads/2015/07/f5-white-paper-simplifying-security-
 
     <div>
       <object
-        data='https://wtit.com/wp-content/uploads/2015/07/f5-white-paper-simplifying-security-for-mobile-networks-.pdf'
+        data='../_static/sites/wtit.com/wp-content/uploads/2015/07/f5-white-paper-simplifying-security-for-mobile-networks-.pdf'
         type="application/pdf"
         width="1366"
         height="768"
       >
         <iframe
-          src='https://wtit.com/wp-content/uploads/2015/07/f5-white-paper-simplifying-security-for-mobile-networks-.pdf'
+          src='../_static/sites/wtit.com/wp-content/uploads/2015/07/f5-white-paper-simplifying-security-for-mobile-networks-.pdf'
           width="1366"
           height="768"
         >
