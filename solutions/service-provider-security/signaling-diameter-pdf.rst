@@ -1,1 +1,0 @@
-../service-providers/signaling-diameter-pdf.rst

@@ -1,1 +1,0 @@
-../service-providers/signaling-gtp-proxy-pdf.rst

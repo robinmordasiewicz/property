@@ -7,10 +7,6 @@ Establishing 5G Security
    :titlesonly:
    :glob:
 
-   5g-security-pdf.rst
-   5g-security-threats-challenges-for-service-providers.rst
-   ../service-providers/signaling.rst
-
 https://www.f5.com/solutions/service-provider-security/5g-security
 
 .. raw:: html
