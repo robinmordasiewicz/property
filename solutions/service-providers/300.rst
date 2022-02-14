@@ -7,11 +7,10 @@
    :titlesonly:
    :glob:
 
-   5g.rst
    5g-sba-solution-overview.rst
+   5g.rst
    adaptive-bitrate-streaming-video-traffic-management.rst
    big-ip-afm-ips-solution-overview.rst
-   building-better-5g-security.rst
    data-traffic-management.rst
    edge-compute.rst
    fast-track-to-the-5g-edge-ebook.rst
@@ -25,3 +24,4 @@
    telecom-secures-5g-edge-with-velos.rst
    telecoms-annual-industry-survey.rst
    ../mobility-and-5g-evolution.rst
+
