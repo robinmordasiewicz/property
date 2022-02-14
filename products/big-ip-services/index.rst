@@ -12,6 +12,7 @@ BIGIP Services
    network-functions-virtualization--nfv--solution-packages.rst
    policy-enforcement-manager.rst
    iseries-appliance.rst
+   viprion-chassis.rst
    velos-hardware-chassis-and-blades.rst
 
 https://www.f5.com/products/big-ip-services
