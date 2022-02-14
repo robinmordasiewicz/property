@@ -14,7 +14,7 @@ Solutions
    services/index.rst
    surveys/index.rst
    contact/index.rst
-   business-continuity/index.rst
+   business-continuity/service-providers-keep-the-world-connected.rst
    pdf/index.rst
    videos/index.rst
 
