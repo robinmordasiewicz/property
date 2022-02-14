@@ -1,4 +1,4 @@
-Fixed-Line and Cable Security
+Fixed-Line and Cable
 ===============================
 
 .. toctree::
