@@ -11,7 +11,7 @@ Mobility and 5G
    sgi-lan-consolidation.rst
    5g-edge-telco-cloud.rst
    ../deploying-your-cloud-native-infrastructure-and-5g-core.rst
-   ../service-provider-security/5g-security.rst
+   ../service-provider-security/5g-security2.rst
 
 https://www.f5.com/solutions/mobility-and-5g-evolution
 

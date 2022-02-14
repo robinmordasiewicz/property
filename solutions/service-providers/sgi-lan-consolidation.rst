@@ -1,4 +1,4 @@
-Gi-Lan N6 Consolidation
+Consolidation
 =============================
 
 .. toctree::
