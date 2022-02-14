@@ -8,8 +8,10 @@ Security
    :glob:
 
    5g-security.rst
-   edge-security.rst
+   ../service-providers/edge-security.rst
+   ../mitigate-bots-and-other-automated-attacks.rst
    ../stop-human-driven-fraud.rst
+   ../manage-and-secure-apis.rst
    fixed-line-cable-and-data-center-security.rst
 
 https://www.f5.com/solutions/service-provider-security
