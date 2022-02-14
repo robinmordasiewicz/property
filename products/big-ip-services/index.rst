@@ -11,6 +11,8 @@ BIGIP Services
    carrier-grade-nat.rst
    network-functions-virtualization--nfv--solution-packages.rst
    policy-enforcement-manager.rst
+   iseries-appliance.rst
+   velos-hardware-chassis-and-blades.rst
 
 https://www.f5.com/products/big-ip-services
 
