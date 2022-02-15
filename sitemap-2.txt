@@ -4,6 +4,7 @@ https://www.f5.com/company/blog/edge-a-nomics--how-to-monetize-your-5g-edge-netw
 https://www.f5.com/company/blog/f5-softbank-multi-access-edge-computing
 https://www.f5.com/company/blog/iot-infrastructure-empowered-by-f5s-iot-solution
 https://www.f5.com/company/blog/kickstart-your-move-to-5g-services-without-abandoning-4g-investments
+https://www.f5.com/company/blog/how-cloud-based-infrastructure-enables-5g-innovation
 https://www.f5.com/company/blog/service-providers-on-the-edge--common-automation-frameworks-and-
 https://www.f5.com/company/blog/state-of-application-services-telecom-edition-emerging-as-leaders
 https://www.f5.com/company/blog/the-changing-face-of-telecoms-in-2022

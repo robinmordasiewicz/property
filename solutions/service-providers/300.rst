@@ -16,6 +16,7 @@
    fast-track-to-the-5g-edge-ebook.rst
    fixed-line-cable.rst
    harnessing-the-power-of-edge-computing.rst
+   ../how-big-ip-cgnat-provides-network-scalability-overview.rst
    network-functions-virtualization-nfv.rst
    nfv-ebook-optimize-your-network-with-best-of-suite-nfv-solutions.rst
    security.rst

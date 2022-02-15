@@ -13,6 +13,7 @@ Blogs
    f5-softbank-multi-access-edge-computing.rst
    iot-infrastructure-empowered-by-f5s-iot-solution.rst
    service-providers-on-the-edge--common-automation-frameworks-and-.rst
+   how-cloud-based-infrastructure-enables-5g-innovation.rst
    5g-migration.rst
    telco-apps.rst
    edge-a-nomics--how-to-monetize-your-5g-edge-network.rst

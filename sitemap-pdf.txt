@@ -10,6 +10,7 @@ https://www.f5.com/content/dam/f5/corp/global/pdf/solution-center/f5-mellanox-pa
 https://www.f5.com/content/dam/f5/corp/global/pdf/solution-center/f5-near-real-time-dns-reporting-mitigates-ddos-attacks-case-study.pdf
 https://www.f5.com/content/dam/f5/corp/global/pdf/solution-center/network-transformation-get-ready-for-5g-solution-brief.pdf
 https://www.f5.com/content/dam/f5/corp/global/pdf/solution-profiles/big-ip-policy-enforcement-manager-solution-profile.pdf
+https://www.f5.com/content/dam/f5/corp/global/pdf/solution-profiles/big-ip-cloud-native-network-function-solutions-for-service-providers-overview.pdf
 https://www.f5.com/content/dam/f5/corp/global/pdf/white-papers/sip-paradigm-wp.pdf
 https://www.f5.com/pdf/customer-support/Premium-Plus-Service-Description-24X7.pdf
 https://www.f5.com/pdf/customer-support/guidelines-and-policies-ds.pdf
