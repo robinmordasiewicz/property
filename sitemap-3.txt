@@ -9,6 +9,7 @@ https://www.f5.com/company/events/webinars/real-world-strategies-for-deploying-5
 https://www.f5.com/company/events/webinars/securing-5g-networks-industry-research-survey-discussion
 https://www.f5.com/c/apcj-2020/webinars/attacks-and-fraud-in-uncertain-times
 https://www.f5.com/c/emea-2020/asset/telecoms-annual-industry-survey
+https://www.f5.com/c/emea-2021/event/myForum-cloud-native-network-functions
 https://www.f5.com/c/landing/service-providers/Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization
 https://www.f5.com/c/landing/service-providers/5G-Technology-Transformation-Explained
 https://www.f5.com/c/landing/service-providers/fast-track-to-the-5g-edge-n6-lan-consolidation
