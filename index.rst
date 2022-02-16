@@ -9,7 +9,6 @@ Solutions
 
    solutions/index.rst
    products/index.rst
-   c/landing/service-providers/index.rst
    company/index.rst
    services/index.rst
    pdf/index.rst
