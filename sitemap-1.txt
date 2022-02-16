@@ -7,6 +7,7 @@ https://www.f5.com/services/professional-services
 https://www.f5.com/business-continuity/service-providers-keep-the-world-connected
 https://www.f5.com/company/blog
 https://www.f5.com/company/events
+https://www.f5.com/partners/technology-alliances
 https://www.f5.com/company/news
 https://www.f5.com/products/big-ip-services
 https://www.f5.com/products/service-proxy-for-kubernetes

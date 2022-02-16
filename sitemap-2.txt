@@ -54,3 +54,4 @@ https://www.f5.com/solutions/service-providers/telecom-secures-5g-edge-with-velo
 https://www.f5.com/solutions/service-providers/telecoms-annual-industry-survey
 https://www.f5.com/solutions/service-providers/threat-landscape-2021-ebook
 https://www.f5.com/state-of-application-strategy-report/download-form-telecom
+https://www.f5.com/partners/technology-alliances/red-hat
