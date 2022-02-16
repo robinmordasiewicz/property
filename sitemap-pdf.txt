@@ -78,3 +78,4 @@ https://www.f5.com/pdf/white-papers/f5-accelerates-cryptographic-processing-with
 https://www.f5.com/pdf/white-papers/ims-introduction-wp.pdf
 https://www.f5.com/pdf/white-papers/ipv6-service-provider-wp.pdf
 https://www.f5.com/pdf/white-papers/the-future-of-vnf-management-white-paper.pdf
+https://www.f5.com/pdf/partners/f5-redhat-multi-protocol-solution-enables-containerized-5g-infrastructure-for-service-providers.pdf
