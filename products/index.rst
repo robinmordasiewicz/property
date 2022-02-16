@@ -7,7 +7,6 @@ Products
    :titlesonly:
    :glob:
 
-   service-proxy-for-kubernetes.rst
    big-ip-services/index.rst
 
 https://www.f5.com/products
