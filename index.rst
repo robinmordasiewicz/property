@@ -12,7 +12,6 @@ Solutions
    company/index.rst
    services/index.rst
    pdf/index.rst
-   partners/index.rst
 
 https://www.f5.com/solutions/
 
