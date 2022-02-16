@@ -12,9 +12,6 @@ Solutions
    c/landing/service-providers/index.rst
    company/index.rst
    services/index.rst
-   surveys/index.rst
-   contact/index.rst
-   business-continuity/service-providers-keep-the-world-connected.rst
    pdf/index.rst
    videos/index.rst
 
