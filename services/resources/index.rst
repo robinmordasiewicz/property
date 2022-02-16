@@ -8,7 +8,6 @@ Resources
    :glob:
 
    white-papers/index.rst
-   deployment-guides/index.rst
    use-cases/index.rst
    datasheets/index.rst
    ../../pdf/solution-profiles/index.rst
