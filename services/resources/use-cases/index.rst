@@ -43,7 +43,7 @@ Use Cases
    :target: ../../../services/resources/use-cases/s-gi-firewall-for-service-providers.html
 
 .. table::
-   :widths: 100 100 100
+   :widths: 100 100 100 100
 
    +-------------------------------------------+--------------------------------------------------+-------------------------------------------------------------------------+---------------------------------------+
    | |carrier-grade-nat-for-service-providers| + |intelligent-dns-firewall-for-service-providers| + |leading-service-provider-delivers-outstanding-5g-network-performance1| | |s-gi-firewall-for-service-providers| |
