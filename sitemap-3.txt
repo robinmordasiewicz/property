@@ -19,6 +19,7 @@ https://www.f5.com/c/landing/service-providers/edge-multi-cloud-deployment-strat
 https://www.f5.com/c/landing/service-providers/threat-landscape-report-2021
 https://www.f5.com/services/resources/deployment-guides/ip-address-sharing-in-large-scale-networks-dns64na
 https://www.f5.com/services/resources/deployment-guides/sip-traffic-management-big-ip-ltm
+https://www.f5.com/services/resources/use-cases/s-gi-firewall-for-service-providers
 https://www.f5.com/services/resources/use-cases/carrier-grade-nat-for-service-providers
 https://www.f5.com/services/resources/use-cases/volte-and-ims-security-for-service-providers
 https://www.f5.com/services/resources/use-cases/intelligent-dns-firewall-for-service-providers
