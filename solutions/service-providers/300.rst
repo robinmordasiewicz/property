@@ -9,18 +9,9 @@
 
    5g-sba-solution-overview.rst
    5g.rst
-   adaptive-bitrate-streaming-video-traffic-management.rst
-   big-ip-afm-ips-solution-overview.rst
-   data-traffic-management.rst
-   edge-compute.rst
    fast-track-to-the-5g-edge-ebook.rst
-   fixed-line-cable.rst
    harnessing-the-power-of-edge-computing.rst
    ../how-big-ip-cgnat-provides-network-scalability-overview.rst
-   network-functions-virtualization-nfv.rst
-   nfv-ebook-optimize-your-network-with-best-of-suite-nfv-solutions.rst
-   security.rst
-   service-provider-contact-us.rst
    simplified-operations-for-edge-an-multi-cloud-application-delivery.rst
    telecom-secures-5g-edge-with-velos.rst
    telecoms-annual-industry-survey.rst
