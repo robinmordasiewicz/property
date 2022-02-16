@@ -8,8 +8,6 @@ Solutions
    :glob:
 
    service-providers/index.rst
-   service-providers/managed-services.rst
-   service-provider-security/index.rst
    service-providers/300.rst
 
 https://www.f5.com/solutions/service-providers
