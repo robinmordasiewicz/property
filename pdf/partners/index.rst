@@ -7,7 +7,6 @@ Partners
    :titlesonly:
    :glob:
 
-   F5-Technology-Alliance-Program-Brochure-2020.rst
    f5-redhat-multi-protocol-solution-enables-containerized-5g-infrastructure-for-service-providers.rst
 
 https://www.f5.com/partners

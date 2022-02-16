@@ -7,6 +7,7 @@ PDF
    :titlesonly:
    :glob:
 
+   partners/index.rst
    case-studies/index.rst
    products/index.rst
    solution-guides/index.rst
