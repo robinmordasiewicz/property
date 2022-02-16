@@ -21,6 +21,7 @@ Solution Center
    key-diameter-use-cases-including-traffic-shaping-iot-and-security.rst
    load-aware-entity-location-with-big-ip-dns-services.rst
    network-functions-virtualization-nfv-solution-overview.rst
+   nokia-and-f5-partnership-overview.rst
 
 https://www.f5.com/pdf/solution-center
 
