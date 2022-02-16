@@ -7,8 +7,6 @@ Press Releases
    :titlesonly:
    :glob:
 
-   f5-solutions-cloud-native-5g-infrastructure-service-providers.rst
-
 https://www.f5.com/company/news/press-releases
 
 .. raw:: html

@@ -8,7 +8,6 @@ BIGIP Services
    :glob:
 
    iseries-appliance.rst
-   viprion-chassis.rst
    velos-hardware-chassis-and-blades.rst
 
 https://www.f5.com/products/big-ip-services
