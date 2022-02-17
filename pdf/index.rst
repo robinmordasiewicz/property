@@ -10,5 +10,3 @@ PDF
    products/index.rst
    shape-security/shape-security-telecom-case-study.rst
 
-.. include:: ../sitemap-pdf.txt
-   :literal:
