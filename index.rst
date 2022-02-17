@@ -3,7 +3,7 @@ Solutions
 
 .. toctree::
    :hidden:
-   :maxdepth: 5
+   :maxdepth: 1
    :titlesonly:
    :glob:
 
