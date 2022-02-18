@@ -6,9 +6,6 @@ Service Provider
    :glob:
 
    mobility-and-5g-evolution.rst
-   service-providers/managed-services.rst
-   service-provider-security/index.rst
-   service-providers/300.rst
 
 https://www.f5.com/solutions/service-providers
 
