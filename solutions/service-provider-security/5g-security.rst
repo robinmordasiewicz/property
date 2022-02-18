@@ -1,4 +1,4 @@
-Establishing 5G Security
+Establishing 5G Securite
 =============================
 
 .. toctree::
