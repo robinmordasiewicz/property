@@ -2,13 +2,9 @@ Redhat Partners
 =======================
 
 .. toctree::
-   :hidden:
    :maxdepth: 5
    :titlesonly:
    :glob:
-
-   redhat-cnf-partners.rst
-   f5_big_ip_spk.rst
 
 https://catalog.redhat.com/software/cnf/search
 
