@@ -34,9 +34,9 @@ release = '202202152222'
 # ones.
 extensions = [
 ]
-extensions = [
-    "sphinxcontrib.youtube",
-]
+#extensions = [
+#    "sphinxcontrib.youtube",
+#]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

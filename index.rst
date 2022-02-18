@@ -5,6 +5,18 @@ Solutions
    :titlesonly:
    :glob:
 
+   solutions/index.rst
+   products/index.rst
+   c/landing/service-providers/index.rst
+   company/index.rst
+   services/index.rst
+   surveys/index.rst
+   pdf/index.rst
+   videos/index.rst
+   contact/index.rst
+   partners/index.rst
+   business-continuity/service-providers-keep-the-world-connected.rst
+
 https://www.f5.com/solutions/
 
 .. raw:: html
