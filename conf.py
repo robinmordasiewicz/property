@@ -19,7 +19,7 @@ import f5_sphinx_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'Home'
+project = 'conf.pyproject'
 copyright = '2022, Robin Mordasiewicz'
 author = 'Robin Mordasiewicz'
 

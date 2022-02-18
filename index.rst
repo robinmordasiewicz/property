@@ -1,4 +1,4 @@
-Home
+Sitemap
 ================
 
 .. toctree::
