@@ -2,6 +2,7 @@ Solutions
 ==================
 
 .. toctree::
+   :maxdepth: 10
    :titlesonly:
    :glob:
 
