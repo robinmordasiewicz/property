@@ -1,11 +1,9 @@
-Test
+Test 2
 =================
 
 .. toctree::
    :titlesonly:
    :glob:
-
-   test2.rst
 
 https://www.f5.com/solutions/mobility-and-5g-evolution
 
