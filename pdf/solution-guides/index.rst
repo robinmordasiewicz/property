@@ -8,6 +8,7 @@ Solution Guides
    :glob:
 
    augment-performance-virtualized-environments-with-big-ip-ve-for-smart-nics.rst
+   deploying-cloud-native-infra-and-5g-core-overview.rst
    establishing-5g-security.rst
    f5-and-the-growing-role-of-gtp-for-traffic-shaping-network-slicing-iot-and-security.rst
    f5-diameter-firewall-for-mobile-operators.rst
