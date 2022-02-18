@@ -1,8 +1,7 @@
-Redhat
+Redhat on f5.com
 =======================
 
 .. toctree::
-   :hidden:
    :maxdepth: 5
    :titlesonly:
    :glob:

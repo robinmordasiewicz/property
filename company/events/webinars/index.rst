@@ -14,6 +14,7 @@ Webinars
    securing-5g-networks-industry-research-survey-discussion.rst
    telecom-security-threat-landscape.rst
    myforum-5g-security.rst
+   ../../../c/emea-2021/event/myForum-cloud-native-network-functions.rst
 
 https://www.f5.com/company/events/webinars
 
