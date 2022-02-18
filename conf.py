@@ -14,7 +14,7 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-# import f5_sphinx_theme
+import f5_sphinx_theme
 
 
 # -- Project information -----------------------------------------------------
