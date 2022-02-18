@@ -5,6 +5,8 @@ Test 2
    :titlesonly:
    :glob:
 
+   test3.rst
+
 https://www.f5.com/solutions/mobility-and-5g-evolution
 
 .. raw:: html
