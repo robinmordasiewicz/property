@@ -1,11 +1,9 @@
-Mobility and 5G
+Test
 =================
 
 .. toctree::
    :titlesonly:
    :glob:
-
-   test.rst
 
 https://www.f5.com/solutions/mobility-and-5g-evolution
 
