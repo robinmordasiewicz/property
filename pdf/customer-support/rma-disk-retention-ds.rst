@@ -2,7 +2,6 @@ RMA Disk Retention
 ========================
 
 .. toctree::
-   :hidden:
    :maxdepth: 5
    :titlesonly:
    :glob:

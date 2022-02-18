@@ -2,7 +2,6 @@ CGNAT and IPv6 GW
 ========================
 
 .. toctree::
-   :hidden:
    :maxdepth: 5
    :titlesonly:
    :glob:
