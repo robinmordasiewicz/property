@@ -6,6 +6,8 @@ Mobility and 5G Evolution 13
    :glob:
 
    service-provider-security/5g-security2.rst
+   test1.rst
+   test11.rst
 
 https://www.f5.com/solutions/mobility-and-5g-evolution
 
