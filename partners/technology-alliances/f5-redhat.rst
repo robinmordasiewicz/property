@@ -1,4 +1,4 @@
-Technology Alliances
+Redhat on f5.com
 =======================
 
 .. toctree::
@@ -6,11 +6,7 @@ Technology Alliances
    :titlesonly:
    :glob:
 
-   f5-redhat.rst
-   redhat-cnf-partners.rst
-   red-hat-f5.rst
-
-https://www.f5.com/partners/technology-alliances
+https://www.f5.com/partners/technology-alliances/redhat-cnf-partners
 
 .. raw:: html
 
