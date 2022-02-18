@@ -6,6 +6,7 @@ Service Provider
    :titlesonly:
    :glob:
 
+   service-provider-security/index.rst
    service-providers/300.rst
 
 https://www.f5.com/solutions/service-providers
