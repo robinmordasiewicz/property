@@ -2,7 +2,6 @@ CG-NAT Datasheet
 =================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

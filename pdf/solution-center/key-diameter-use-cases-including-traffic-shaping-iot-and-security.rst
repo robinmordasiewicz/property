@@ -2,7 +2,6 @@ Diameter Use Cases
 ========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

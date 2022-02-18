@@ -2,7 +2,6 @@ Smart Nics
 ==================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

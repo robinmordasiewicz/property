@@ -2,7 +2,6 @@ Smart NICS and VE
 ========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

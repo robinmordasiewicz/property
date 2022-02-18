@@ -2,7 +2,6 @@ WAP Gateway Offload
 ========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

@@ -2,7 +2,6 @@ Redhat Partners
 =======================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

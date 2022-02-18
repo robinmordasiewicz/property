@@ -2,7 +2,6 @@ Deployment Guides
 ======================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

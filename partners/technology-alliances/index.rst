@@ -2,7 +2,6 @@ Technology Alliances
 =======================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

@@ -2,7 +2,6 @@ Telecoms Survey 2020
 ===========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

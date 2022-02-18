@@ -2,7 +2,6 @@ Cloud Native Network
 ========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

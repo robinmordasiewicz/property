@@ -2,7 +2,6 @@ VoLTE and IMS Security
 =========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

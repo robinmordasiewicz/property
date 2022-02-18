@@ -2,7 +2,6 @@ Modernizing Telco
 ===================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

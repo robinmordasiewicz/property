@@ -2,7 +2,6 @@ Carrier-Grade NAT
 ==================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
  

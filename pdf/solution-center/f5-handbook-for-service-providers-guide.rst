@@ -2,7 +2,6 @@ SP Handbook
 ========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

@@ -2,7 +2,6 @@ Diameter and SS7
 ========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

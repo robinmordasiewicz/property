@@ -2,7 +2,6 @@ Telecom Security
 =================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

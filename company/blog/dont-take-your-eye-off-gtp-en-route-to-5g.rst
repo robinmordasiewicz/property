@@ -2,7 +2,6 @@ GTP in 5G
 ==================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

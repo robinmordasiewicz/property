@@ -2,7 +2,6 @@ IDG Report - State of 5G
 =================================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

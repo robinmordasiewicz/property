@@ -2,7 +2,6 @@ Service Proxy for k8s
 ======================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

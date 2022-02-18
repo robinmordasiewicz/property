@@ -2,7 +2,6 @@ Diameter SDC
 ==================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

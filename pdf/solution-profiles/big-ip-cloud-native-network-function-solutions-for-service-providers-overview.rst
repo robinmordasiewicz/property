@@ -2,7 +2,6 @@ CNF
 ========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 
