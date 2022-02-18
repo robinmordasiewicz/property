@@ -2,8 +2,8 @@
 =================
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

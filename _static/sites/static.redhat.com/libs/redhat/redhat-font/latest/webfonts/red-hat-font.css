@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'RedHatDisplay';
+  src: url("https://static.redhat.com/libs/redhat/redhat-font/latest/webfonts/modified/RedHatDisplayVFModified.woff2") format('woff2-variations');
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'RedHatDisplay';
+  src: url("https://static.redhat.com/libs/redhat/redhat-font/latest/webfonts/modified/RedHatDisplayVF-ItalicModified.woff2") format('woff2-variations');
+  font-weight: 300 900;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'RedHatText';
+  src: url("https://static.redhat.com/libs/redhat/redhat-font/latest/webfonts/modified/RedHatTextVFModified.woff2") format('woff2-variations');
+  font-weight: 400 500;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'RedHatText';
+  src: url("https://static.redhat.com/libs/redhat/redhat-font/latest/webfonts/modified/RedHatTextVF-ItalicModified.woff2") format('woff2-variations');
+  font-weight: 400 500;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'RedHatMono';
+  src: url("https://static.redhat.com/libs/redhat/redhat-font/latest/webfonts/RedHatMono/RedHatMonoVF.woff2") format('woff2-variations');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'RedHatMono';
+  src: url("https://static.redhat.com/libs/redhat/redhat-font/latest/webfonts/RedHatMono/RedHatMonoVF-Italic.woff2") format('woff2-variations');
+  font-weight: 300 700;
+  font-style: italic;
+  font-display: fallback;
+}

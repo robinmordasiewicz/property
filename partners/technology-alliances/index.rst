@@ -2,12 +2,13 @@ Technology Alliances
 =======================
 
 .. toctree::
-   :hidden:
    :maxdepth: 5
    :titlesonly:
    :glob:
 
-   red-hat.rst
+   f5-redhat.rst
+   redhat-cnf-partners.rst
+   red-hat-f5.rst
 
 https://www.f5.com/partners/technology-alliances
 

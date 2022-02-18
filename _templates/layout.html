@@ -67,17 +67,27 @@
         <hr>
 -->
         <span class="nav-sidebartoc">
-            {{ toctree(includehidden=True, collapse=True) }}
+            {{ toctree(includehidden=False, collapse=True) }}
         </span>
       </nav>
     </div>
 
 
     <div id="right-sidebar">
-      <h7 style="font-weight:normal"></h7>
+      <h7 style="font-weight:normal">On this page</h7>
       <nav class="nav-sidebartoc">
         <span class="nav-sidebartoc">
-         </span>
+          {{ toc }}
+          <br>
+  <ul>
+  {% for toc_item in toc %}
+      <li><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+      {% for toc_item in toc_item.children %}
+          <li><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+      {% endfor %}
+  {% endfor %}
+  </ul>
+        </span>
       </nav>
     </div>
 
