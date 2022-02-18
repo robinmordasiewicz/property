@@ -18,4 +18,7 @@
  * directory in your project to define custom styles.
  */
 
-
+.toctree-wrapper {
+    visibility: hidden;
+    height: 0px;
+}
