@@ -2,7 +2,6 @@ Solutions
 ==================
 
 .. toctree::
-   :hidden:
    :titlesonly:
    :glob:
 

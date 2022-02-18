@@ -2,7 +2,6 @@ Mobility and 5G
 =================
 
 .. toctree::
-   :hidden:
    :maxdepth: 1
    :titlesonly:
    :glob:

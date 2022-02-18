@@ -1,4 +1,4 @@
-Redhat - F5
+Redhat Partners
 =======================
 
 .. toctree::
@@ -7,19 +7,22 @@ Redhat - F5
    :titlesonly:
    :glob:
 
+   redhat-cnf-partners.rst
+   f5_big_ip_spk.rst
+
 https://catalog.redhat.com/software/cnf/search
 
 .. raw:: html
 
     <div>
       <object
-        data='../../_static/sites/catalog.redhat.com/software/cnf/detail/f5_big_ip_spk.pdf'
+        data='../../_static/sites/catalog.redhat.com/software/cnf/search.pdf'
         type="application/pdf"
         width="1366"
         height="768"
       >
         <iframe
-          src='../../_static/sites/catalog.redhat.com/software/cnf/detail/f5_big_ip_spk.pdf'
+          src='../../_static/sites/catalog.redhat.com/software/cnf/search.pdf'
           width="1366"
           height="768"
         >
@@ -27,4 +30,3 @@ https://catalog.redhat.com/software/cnf/search
         </iframe>
       </object>
     </div>
-
