@@ -26,7 +26,6 @@ author = 'Robin Mordasiewicz'
 # The full version, including alpha/beta/rc tags
 release = '202202152222'
 
-
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
@@ -52,7 +51,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-#html_theme = 'bizstyle'
+#html_theme = ''
 
 #html_sidebars = {'**': ['searchbox.html', 'localtoc.html', 'globaltoc.html']}
 
@@ -62,6 +61,16 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 #                        'html_last_updated_fmt': '%Y-%m-%d %H:%M:%S'
 #                        # 'base_url' = ''                            \\ DEFAULTS TO '/'
 #                     }
+
+html_theme = "f5_sphinx_theme"
+html_theme_path = f5_sphinx_theme.get_html_theme_path()
+html_sidebars = {"**": ["searchbox.html", "localtoc.html", "globaltoc.html"]}
+html_theme_options = {
+    "site_name": "Service Provider",
+    "next_prev_link": True
+}
+html_last_updated_fmt = "%Y-%m-%d %H:%M:%S"
+
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
