@@ -5,7 +5,7 @@ Solutions
    :titlesonly:
    :glob:
 
-   solutions/service-provider.rst
+   solutions/service-providers.rst
 
 https://www.f5.com/solutions
 
