@@ -2,7 +2,6 @@ Secure API
 =====================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

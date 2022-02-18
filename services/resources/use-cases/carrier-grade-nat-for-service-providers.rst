@@ -2,7 +2,6 @@ CG-Nat
 ==================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

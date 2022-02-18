@@ -2,7 +2,6 @@ Redhat - F5
 =======================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

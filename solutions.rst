@@ -2,10 +2,11 @@ Solutions
 ==================
 
 .. toctree::
+   :maxdepth: 10
    :titlesonly:
    :glob:
 
-   solutions/index.rst
+   solutions/service-providers.rst
 
 https://www.f5.com/solutions
 

@@ -2,7 +2,6 @@ Threat - E-book
 =================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

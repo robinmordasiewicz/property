@@ -2,7 +2,6 @@ PEM Subscriber Tiering
 ========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

@@ -2,7 +2,6 @@ Solution Center
 ======================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

@@ -3,6 +3,7 @@ Sitemap
 
 .. toctree::
    :titlesonly:
+   :maxdepth: 10
    :glob:
 
    solutions.rst

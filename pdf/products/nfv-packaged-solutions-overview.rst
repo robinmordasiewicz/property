@@ -2,7 +2,6 @@ NFV Packages
 ==================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

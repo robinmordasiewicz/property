@@ -2,7 +2,6 @@ Container Integrqrations
 =========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

@@ -2,7 +2,6 @@ Fixed-Line and Cable
 ===============================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

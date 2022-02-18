@@ -2,7 +2,6 @@ Cloud and MSP
 =================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

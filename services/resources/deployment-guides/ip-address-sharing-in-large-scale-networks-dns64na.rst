@@ -2,7 +2,6 @@ DNS64/NAT64
 ===================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

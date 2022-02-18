@@ -2,7 +2,6 @@ N6 Consolidation
 =========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

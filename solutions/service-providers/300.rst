@@ -2,7 +2,6 @@
 =================
 
 .. toctree::
-   :maxdepth: 1
    :titlesonly:
    :glob:
 
@@ -13,5 +12,4 @@
    ../how-big-ip-cgnat-provides-network-scalability-overview.rst
    simplified-operations-for-edge-an-multi-cloud-application-delivery.rst
    telecoms-annual-industry-survey.rst
-   ../mobility-and-5g-evolution.rst
 

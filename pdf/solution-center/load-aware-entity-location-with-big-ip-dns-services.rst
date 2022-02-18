@@ -2,7 +2,6 @@ Load Aware DNS
 ========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

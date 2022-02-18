@@ -2,7 +2,6 @@ Telco Applications
 ===================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

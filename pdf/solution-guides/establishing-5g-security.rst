@@ -1,8 +1,7 @@
 Establishing 5G Security
-=========================
+============================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

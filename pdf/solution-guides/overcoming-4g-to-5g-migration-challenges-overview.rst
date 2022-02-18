@@ -2,7 +2,6 @@ Path from 4g to 5g
 =========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

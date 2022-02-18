@@ -2,7 +2,6 @@ ISO 9001:2015
 ========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 
