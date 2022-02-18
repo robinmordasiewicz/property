@@ -1,10 +1,11 @@
         <!-- custom breadcrumb -->
         <h6>
           {%- if master_doc == pagename %}
-            <a href="index.html">Service Provider</a>
+            <a href="index.html"></a>
           {%- else %}
             <a href="{{ pathto(master_doc) }}">{{ project|striptags|e }}</a>
           {%- endif %}
+
           {%- if parents|length > 0 %}
             {%- for parent in parents %}
               &gt; <a href="{{ parents[loop.index0].link }}">{{ parents[loop.index0].title|striptags|e }}</a>

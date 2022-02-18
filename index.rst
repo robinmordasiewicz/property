@@ -1,18 +1,18 @@
-Solutions
+Sitemap
 ================
 
 .. toctree::
    :titlesonly:
    :glob:
 
-   solutions/index.rst
+   solutions.rst
    products/index.rst
    company/index.rst
    services/index.rst
    pdf/index.rst
 
-https://www.f5.com/solutions/
+https://www.f5.com/
 
 .. raw:: html
 
-    <iframe width="1366" height="786" src="./_static/sites/www.f5.com/solutions.html" title=NGINX frameborder="1" scrolling="yes"></iframe>
+    <iframe width="1366" height="786" src="./_static/sites/www.f5.com/index.html" title=NGINX frameborder="1" scrolling="yes"></iframe>
