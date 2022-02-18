@@ -6,8 +6,8 @@ Redhat on f5.com
    :titlesonly:
    :glob:
 
-https://www.f5.com/partners/technology-alliances/redhat-cnf-partners
+https://www.f5.com/partners/technology-alliances/red-hat
 
 .. raw:: html
 
-    <iframe width="1366" height="786" src="../../_static/sites/www.f5.com/partners/technology-alliances/redhat-cnf-partners.html" title=NGINX frameborder="1" scrolling="yes"></iframe>
+    <iframe width="1366" height="786" src="../../_static/sites/www.f5.com/partners/technology-alliances/red-hat.html" title=NGINX frameborder="1" scrolling="yes"></iframe>
