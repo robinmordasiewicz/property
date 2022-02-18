@@ -7,6 +7,7 @@ Service Provider
    :glob:
 
    mobility-and-5g-evolution-test.rst
+   managed-services.rst
 
 https://www.f5.com/solutions/service-providers
 
