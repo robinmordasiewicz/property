@@ -19,7 +19,7 @@ import f5_sphinx_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'Sitemap'
+project = 'Home'
 copyright = '2022, Robin Mordasiewicz'
 author = 'Robin Mordasiewicz'
 
