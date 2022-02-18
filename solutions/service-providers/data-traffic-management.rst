@@ -2,7 +2,6 @@ Simplify and scale
 =============================
 
 .. toctree::
-   :hidden:
    :maxdepth: 5
    :titlesonly:
    :glob:

@@ -2,7 +2,6 @@ Managed Web Security
 =====================
 
 .. toctree::
-   :hidden:
    :maxdepth: 5
    :titlesonly:
    :glob:

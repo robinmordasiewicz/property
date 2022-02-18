@@ -2,7 +2,6 @@ IPV6 Migration
 ========================
 
 .. toctree::
-   :hidden:
    :maxdepth: 5
    :titlesonly:
    :glob:

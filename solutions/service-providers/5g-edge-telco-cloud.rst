@@ -2,7 +2,6 @@ Edge Telco Cloud
 =================
 
 .. toctree::
-   :hidden:
    :maxdepth: 5
    :titlesonly:
    :glob:

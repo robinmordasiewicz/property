@@ -2,7 +2,6 @@ Standard and Premium
 ========================
 
 .. toctree::
-   :hidden:
    :maxdepth: 5
    :titlesonly:
    :glob:

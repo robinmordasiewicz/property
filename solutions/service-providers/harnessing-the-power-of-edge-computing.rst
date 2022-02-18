@@ -2,7 +2,6 @@ Edge Computing
 =============================
 
 .. toctree::
-   :hidden:
    :maxdepth: 5
    :titlesonly:
    :glob:

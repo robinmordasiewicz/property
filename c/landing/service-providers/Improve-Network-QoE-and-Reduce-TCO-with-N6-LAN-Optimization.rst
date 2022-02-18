@@ -2,7 +2,6 @@ N6 LAN Optimization
 ====================
 
 .. toctree::
-   :hidden:
    :maxdepth: 5
    :titlesonly:
    :glob:

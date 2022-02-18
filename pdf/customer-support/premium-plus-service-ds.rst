@@ -2,7 +2,6 @@ Premium Plus Description
 ==========================
 
 .. toctree::
-   :hidden:
    :maxdepth: 5
    :titlesonly:
    :glob:

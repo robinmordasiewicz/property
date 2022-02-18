@@ -2,7 +2,6 @@ MWC 2022
 =================
 
 .. toctree::
-   :hidden:
    :maxdepth: 5
    :titlesonly:
    :glob:
