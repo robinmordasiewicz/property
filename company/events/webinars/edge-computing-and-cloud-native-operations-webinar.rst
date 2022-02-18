@@ -2,7 +2,6 @@ Cloud Native Edge
 =====================
 
 .. toctree::
-   :hidden:
    :maxdepth: 5
    :titlesonly:
    :glob:

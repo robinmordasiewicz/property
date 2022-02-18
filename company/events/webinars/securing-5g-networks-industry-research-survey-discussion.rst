@@ -2,7 +2,6 @@ Securing 5G
 =================
 
 .. toctree::
-   :hidden:
    :maxdepth: 5
    :titlesonly:
    :glob:

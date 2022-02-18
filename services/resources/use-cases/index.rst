@@ -2,7 +2,6 @@ Use Cases
 =================
 
 .. toctree::
-   :hidden:
    :maxdepth: 5
    :titlesonly:
    :glob:
