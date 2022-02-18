@@ -5,7 +5,7 @@ Service Provider
    :titlesonly:
    :glob:
 
-   service-providers/index.rst
+   mobility-and-5g-evolution.rst
    service-providers/managed-services.rst
    service-provider-security/index.rst
    service-providers/300.rst
