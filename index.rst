@@ -11,7 +11,6 @@ Sitemap
    c/landing/service-providers/index.rst
    company/index.rst
    services/index.rst
-   surveys/index.rst
    pdf/index.rst
    videos/index.rst
    contact/index.rst

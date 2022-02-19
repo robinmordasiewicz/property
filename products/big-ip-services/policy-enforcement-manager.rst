@@ -5,9 +5,6 @@ Policy Enforcement
    :titlesonly:
    :glob:
 
-   policy-enforcement-manager-datasheet.rst
-   policy-enforcement-manager-solution-profile.rst
-
 https://www.f5.com/products/big-ip-services/policy-enforcement-manager
 
 .. raw:: html

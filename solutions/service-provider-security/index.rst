@@ -7,7 +7,6 @@ Security
 
    5g-security.rst
    ../service-providers/edge-security.rst
-   ../mitigate-bots-and-other-automated-attacks.rst
    ../stop-human-driven-fraud.rst
    ../manage-and-secure-apis.rst
    fixed-line-cable-and-data-center-security.rst
