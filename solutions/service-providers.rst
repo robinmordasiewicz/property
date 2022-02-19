@@ -8,6 +8,7 @@ Service Provider
 
    mobility-and-5g-evolution.rst   
    service-provider-security/index.rst
+   service-providers/managed-services.rst
    service-providers/300.rst
 
 https://www.f5.com/solutions/service-providers

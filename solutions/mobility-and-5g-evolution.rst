@@ -1,4 +1,4 @@
-5G and Mobility
+Mobility and 5G
 ====================
 
 .. toctree::
@@ -9,7 +9,6 @@
    service-providers/sgi-lan-consolidation.rst
    service-providers/5g-edge-telco-cloud.rst
    deploying-your-cloud-native-infrastructure-and-5g-core.rst
-   service-provider-security/5g-security.rst
 
 https://www.f5.com/solutions/mobility-and-5g-evolution
 
