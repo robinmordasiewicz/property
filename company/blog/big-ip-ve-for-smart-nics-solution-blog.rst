@@ -2,7 +2,6 @@ VE SmarNIC CGNAT
 ==================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

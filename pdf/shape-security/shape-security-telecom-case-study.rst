@@ -2,7 +2,6 @@ Account Security
 ========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

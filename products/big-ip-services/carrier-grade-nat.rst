@@ -2,12 +2,9 @@ Carrier-Grade NAT
 ==================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
  
-   carrier-grade-nat-pdf.rst
-
 https://www.f5.com/products/big-ip-services/carrier-grade-nat
 
 .. raw:: html

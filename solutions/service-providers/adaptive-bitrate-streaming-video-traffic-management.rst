@@ -2,7 +2,6 @@ Adaptive Bitrate
 =============================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

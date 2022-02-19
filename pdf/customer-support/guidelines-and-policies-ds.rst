@@ -2,7 +2,6 @@ Guidelines and Policies
 ========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

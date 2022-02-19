@@ -2,7 +2,6 @@ CNF Overview - PDF
 ====================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

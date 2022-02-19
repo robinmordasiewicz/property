@@ -2,7 +2,6 @@ RMA Hardware Retention
 ========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

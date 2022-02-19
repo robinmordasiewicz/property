@@ -2,7 +2,6 @@ Distributed Cloud Edge
 ========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

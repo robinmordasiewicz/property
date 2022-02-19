@@ -2,7 +2,6 @@ Softbank Edge
 ==================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

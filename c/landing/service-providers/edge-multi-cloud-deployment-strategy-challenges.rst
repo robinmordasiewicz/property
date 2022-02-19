@@ -2,7 +2,6 @@ Edge Multi-Cloud
 =================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

@@ -2,7 +2,6 @@ Multi-Tenant Architecture
 ==============================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

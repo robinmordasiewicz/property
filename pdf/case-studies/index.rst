@@ -2,7 +2,6 @@ Case Studies
 =================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

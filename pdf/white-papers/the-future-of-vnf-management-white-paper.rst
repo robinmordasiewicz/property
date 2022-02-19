@@ -2,7 +2,6 @@ Future of VNF
 ========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

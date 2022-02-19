@@ -2,7 +2,6 @@ Securing EDGE
 =========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

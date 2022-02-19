@@ -2,7 +2,6 @@ Chassis and Blades
 ======================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

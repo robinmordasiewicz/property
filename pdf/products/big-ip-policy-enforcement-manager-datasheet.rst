@@ -2,7 +2,6 @@ PEM Datasheet
 ======================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

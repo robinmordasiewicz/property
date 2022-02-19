@@ -2,7 +2,6 @@ NFV Overview
 ========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

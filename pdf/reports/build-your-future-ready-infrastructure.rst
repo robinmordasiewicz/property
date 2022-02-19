@@ -2,7 +2,6 @@ Future Ready Infra
 ===========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

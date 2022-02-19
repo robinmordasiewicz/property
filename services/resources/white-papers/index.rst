@@ -2,7 +2,6 @@ White Papers
 =================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

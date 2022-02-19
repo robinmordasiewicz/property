@@ -2,7 +2,6 @@ Solution Profiles
 ======================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

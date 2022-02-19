@@ -2,7 +2,6 @@ Virtual Gi LAN
 ==================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

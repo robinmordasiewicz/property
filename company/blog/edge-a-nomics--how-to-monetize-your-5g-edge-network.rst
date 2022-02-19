@@ -2,7 +2,6 @@ Monetize 5G EDGE
 ==================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

@@ -2,7 +2,6 @@ SmartNICS and DDoS
 =====================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

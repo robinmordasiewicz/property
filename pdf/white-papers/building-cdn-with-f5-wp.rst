@@ -2,7 +2,6 @@ Build a CDN
 ========================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

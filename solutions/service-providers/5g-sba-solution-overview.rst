@@ -2,7 +2,6 @@ Cloud Native SBA
 =================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

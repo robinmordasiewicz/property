@@ -2,7 +2,6 @@ Demo Video
 =============================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

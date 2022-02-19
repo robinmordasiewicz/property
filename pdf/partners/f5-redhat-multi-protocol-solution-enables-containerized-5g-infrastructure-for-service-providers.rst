@@ -2,7 +2,6 @@ Openshift SPK
 ===================================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 

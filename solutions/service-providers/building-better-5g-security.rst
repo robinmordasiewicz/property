@@ -2,11 +2,8 @@
 ==================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
-
-   building-better-5g-security-pdf.rst
 
 https://www.f5.com/solutions/service-providers/building-better-5g-security
 

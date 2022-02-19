@@ -2,7 +2,6 @@ EDGE Operations
 ==================
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
    :glob:
 
