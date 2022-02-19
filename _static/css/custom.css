@@ -22,3 +22,12 @@
     visibility: hidden;
     height: 0px;
 }
+
+.rst-versions.rst-badge {
+    display: block;
+
+    top: 10px;
+
+    /* Workaround for mkdocs which set a specific height for this element */
+    height: auto;
+}
