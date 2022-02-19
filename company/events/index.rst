@@ -7,7 +7,6 @@ Events
 
    mwc-2022.rst
    webinars/index.rst
-   ../../c/emea-2021/event/myForum-cloud-native-network-functions.rst
 
 https://www.f5.com/company/events
 
