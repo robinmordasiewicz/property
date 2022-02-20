@@ -17,8 +17,7 @@ PDF
    solution-profiles/index.rst
    use-cases/index.rst
    white-papers/index.rst
+   ../content/dam/f5/corp/global/pdf/white-papers/sip-paradigm-wp.rst
    building-better-5g-security-pdf.rst
    mobile-security.rst
 
-.. include:: ../sitemap-pdf.txt
-   :literal:
