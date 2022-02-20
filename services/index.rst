@@ -5,7 +5,6 @@ Services
    :titlesonly:
    :glob:
 
-   support/index.rst
    resources/index.rst
 
 https://www.f5.com/services
