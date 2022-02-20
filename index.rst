@@ -7,6 +7,6 @@ Delete Pages
    :glob:
 
 
-   pdf/solution-center/f5-service-provider-solutions.rst
+   pdf/index.rst
 
 Pages to Delete
