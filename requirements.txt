@@ -13,6 +13,7 @@ sphinx-rtd-theme
 sphinxcontrib-addmetahtml
 sphinxcontrib-blockdiag
 sphinxcontrib-mermaid
+sphinx-multiversion
 sphinxcontrib-nwdiag
 sphinxcontrib-serializinghtml
 sphinxcontrib-youtube
