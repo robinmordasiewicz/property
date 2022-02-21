@@ -65,13 +65,14 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = "f5_sphinx_theme"
 html_theme_path = f5_sphinx_theme.get_html_theme_path()
-html_sidebars = {"**": ["searchbox.html", "localtoc.html", "globaltoc.html"]}
+html_sidebars = {"**": ["searchbox.html", "localtoc.html", "globaltoc.html", "versioning.html"]}
 html_theme_options = {
     "site_name": "Sitemap",
-    "next_prev_link": True
+    "next_prev_link": True,
+    "html_last_updated_fmt": "%Y-%m-%d %H:%M:%S"
 }
-html_last_updated_fmt = "%Y-%m-%d %H:%M:%S"
 
+html_last_updated_fmt = "%Y-%m-%d %H:%M:%S"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

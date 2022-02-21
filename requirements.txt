@@ -1,6 +1,8 @@
 awscli
+botocore
 boto3
 cloud_sptheme
+colorama
 commonmark
 f5-sphinx-theme>=2.0.8
 gitpython
