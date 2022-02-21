@@ -69,10 +69,10 @@ html_sidebars = {"**": ["searchbox.html", "localtoc.html", "globaltoc.html", "ve
 html_theme_options = {
     "site_name": "Sitemap",
     "next_prev_link": True,
-    "html_last_updated_fmt": "%Y-%m-%d %H:%M:%S"
+#    "html_last_updated_fmt": "%Y-%m-%d %H:%M:%S"
 }
 
-html_last_updated_fmt = "%Y-%m-%d %H:%M:%S"
+#html_last_updated_fmt = "%Y-%m-%d %H:%M:%S"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
