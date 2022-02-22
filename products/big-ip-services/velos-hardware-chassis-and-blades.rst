@@ -1,4 +1,4 @@
-Chassis and Blades
+Velos
 ======================
 
 .. toctree::

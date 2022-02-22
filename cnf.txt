@@ -1,5 +1,0 @@
-https://sitemap.readthedocs.io/en/latest/solutions/deploying-your-cloud-native-infrastructure-and-5g-core.html
-https://sitemap.readthedocs.io/en/latest/company/news/press-releases/f5-solutions-cloud-native-5g-infrastructure-service-providers.html
-https://sitemap.readthedocs.io/en/latest/products/service-proxy-for-kubernetes.html
-https://sitemap.readthedocs.io/en/latest/services/resources/white-papers/5g-success-starts-with-cloud-native-infrastructure.html
-https://sitemap.readthedocs.io/en/latest/pdf/solution-profiles/big-ip-cloud-native-network-function-solutions-for-service-providers-overview.html
