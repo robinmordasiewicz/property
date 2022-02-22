@@ -34,8 +34,7 @@ release = '202202152222'
 #extensions = [
 #]
 extensions = [
-    "sphinxcontrib.youtube",
-    "sphinx_multiversion"
+    "sphinxcontrib.youtube"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -65,11 +64,10 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = "f5_sphinx_theme"
 html_theme_path = f5_sphinx_theme.get_html_theme_path()
-html_sidebars = {"**": ["searchbox.html", "localtoc.html", "globaltoc.html", "versioning.html"]}
+html_sidebars = {"**": ["searchbox.html", "localtoc.html", "globaltoc.html"]}
 html_theme_options = {
     "site_name": "Sitemap",
-    "next_prev_link": True,
-#    "html_last_updated_fmt": "%Y-%m-%d %H:%M:%S"
+    "next_prev_link": True
 }
 
 #html_last_updated_fmt = "%Y-%m-%d %H:%M:%S"

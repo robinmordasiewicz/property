@@ -23,5 +23,6 @@ sphinxcontrib-yt
 sphinxjp.themes.basicstrap>=0.5.0
 sphinxprettysearchresults
 tornado==3.2
+versjon
 virtualenv
 yattag
