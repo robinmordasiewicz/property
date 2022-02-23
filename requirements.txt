@@ -7,6 +7,7 @@ commonmark
 f5-sphinx-theme>=2.0.8
 gitpython
 pre-commit
+python-pptx
 recommonmark
 sphinx
 sphinx-autobuild
