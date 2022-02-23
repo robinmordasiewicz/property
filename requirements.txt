@@ -6,6 +6,7 @@ colorama
 commonmark
 f5-sphinx-theme>=2.0.8
 gitpython
+markupsafe==2.0.1
 pre-commit
 python-pptx
 recommonmark
