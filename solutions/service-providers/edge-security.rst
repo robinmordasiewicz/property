@@ -5,7 +5,6 @@ Edge Security
    :titlesonly:
    :glob:
 
-   edge-security-pdf.rst
    threat-landscape-2021-ebook.rst
 
 https://www.f5.com/solutions/service-providers/edge-security

@@ -5,11 +5,8 @@ Establishing 5G Securite
    :titlesonly:
    :glob:
 
-   ../../pdf/solution-guides/establishing-5g-security.rst
    ../service-providers/5g-security-threats-challenges-for-service-providers.rst
    ../service-providers/building-better-5g-security.rst
-   ../../products/big-ip-services/diameter-traffic-management.rst
-   ../service-providers/signaling.rst
 
 https://www.f5.com/solutions/service-provider-security/5g-security
 
