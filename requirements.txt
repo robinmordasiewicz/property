@@ -12,6 +12,7 @@ python-pptx
 recommonmark
 sphinx
 sphinx-autobuild
+sphinx-copybutton
 sphinx-markdown-tables
 sphinx-rtd-theme
 sphinxcontrib-addmetahtml
