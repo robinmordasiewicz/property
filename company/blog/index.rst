@@ -6,6 +6,7 @@ Blogs
    :glob:
 
    the-changing-face-of-telecoms-in-2022.rst
+   big-ip-cloud-native-network-functions.rst
    the-future-of-5g.rst
    f5-softbank-multi-access-edge-computing.rst
    how-cloud-based-infrastructure-enables-5g-innovation.rst
