@@ -7,6 +7,7 @@ Articles
 
    5G-Technology-Transformation-Explained.rst
    Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization.rst
+   dns-services-biggest-telecom-security-target.rst
    edge-multi-cloud-deployment-strategy-challenges.rst
    fast-track-to-the-5g-edge-n6-lan-consolidation.rst
    securing-your-5g-edge.rst
@@ -22,6 +23,11 @@ Articles
    :height: 152px
    :width: 267px
    :target: ../../../c/landing/service-providers/Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization.html
+
+.. |dns-services-biggest-telecom-security-target| image:: ../../../_static/sites/www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/targeted_TelcoNetworks_hero_md.jpg
+   :height: 152px
+   :width: 267px
+   :target: ../../../c/landing/service-providers/dns-services-biggest-telecom-security-target.html
 
 .. |edge-multi-cloud-deployment-strategy-challenges| image:: ../../../_static/sites/www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/threat_landscape_2021_INLINE-IMAGE_2_sm.jpg
    :height: 152px
@@ -55,8 +61,8 @@ Articles
    | |5G-Technology-Transformation-Explained| + |Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization| + |edge-multi-cloud-deployment-strategy-challenges| | |fast-track-to-the-5g-edge-n6-lan-consolidation| |
    | 5G Technology Transformation Explained   + Improve Network QoE and Reduce TCO with N6 LAN Optimization   + Edge multi cloud deployment strategy challenges   | Fast track to the 5G EDGE - N6 LAN consolidation |
    +------------------------------------------+---------------------------------------------------------------+---------------------------------------------------+--------------------------------------------------+
-   | |securing-your-5G-edge|                  + |telcos-prioritize-5G-network-security|                       + |threat-landscape-report-2021|                    |                                                  |
-   | Securing your 5G EDGE                    + Telcos prioritize 5G network security                         + Threat landscape report - 2021                    |                                                  |
+   | |securing-your-5G-edge|                  + |telcos-prioritize-5G-network-security|                       + |threat-landscape-report-2021|                    | |dns-services-biggest-telecom-security-target|   |
+   | Securing your 5G EDGE                    + Telcos prioritize 5G network security                         + Threat landscape report - 2021                    | DNS security target                              |
    +------------------------------------------+---------------------------------------------------------------+---------------------------------------------------+--------------------------------------------------+
 
 
