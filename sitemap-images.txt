@@ -61,6 +61,12 @@ https://www.f5.com/content/dam/f5-app-security/en/2020/article/rf-city_lights_1.
 https://www.f5.com/content/dam/f5-app-security/en/2020/article/rf_imagecollage_2.jpg
 https://www.f5.com/content/dam/f5-app-security/en/2020/article/rf_numbers_people_3.jpg
 https://www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/DIGART-SP-637612318-INLINE-IMAGE-Figure1-1200-sslo%20high%20perf.png
+https://www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/targeted_TelcoNetworks_hero_xs.jpg
+https://www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/targeted_TelcoNetworks_hero_sm.jpg
+https://www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/targeted_TelcoNetworks_hero_md.jpg
+https://www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/targeted_TelcoNetworks_hero_lg.jpg
+https://www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/targeted_TelcoNetworks_hero_xl.jpg
+https://www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/targeted_TelcoNetworks_hero_hd.jpg
 https://www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/telcos-SecureNew-5g-networks_DiscoverMore_1_labrm.jpg
 https://www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/telcos-SecureNew-5g-networks_DiscoverMore_2_tech.jpg
 https://www.f5.com/content/dam/f5-app-security/en/2021/landing-pages/telcos-SecureNew-5g-networks_DiscoverMore_3_annualreport.jpg
