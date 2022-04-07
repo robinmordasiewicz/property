@@ -70,7 +70,8 @@ Articles
    | |securing-your-5G-edge|                        + |telcos-prioritize-5G-network-security|                       + |threat-landscape-report-2021|                    |
    | Securing your 5G EDGE                          + Telcos prioritize 5G network security                         + Threat landscape report - 2021                    |
    +------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------+
-   | |dns-services-biggest-telecom-security-target| + |fast-track-to-the-5g-edge-n6-lan-consolidation|              + | |dns-services-biggest-telecom-security-target|  |
-   | DNS security target                            + Fast track to the 5G EDGE - N6 LAN consolidation              + | DNS security target                             |
+   | |dns-services-biggest-telecom-security-target| + |fast-track-to-the-5g-edge-n6-lan-consolidation|              + |dns-services-biggest-telecom-security-target|   |
+   | DNS security target                            + Fast track to the 5G EDGE - N6 LAN consolidation              + DNS security target                               |
    +------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------+
-
+--
+--
