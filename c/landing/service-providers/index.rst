@@ -9,10 +9,16 @@ Articles
    Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization.rst
    dns-services-biggest-telecom-security-target.rst
    edge-multi-cloud-deployment-strategy-challenges.rst
+   5g-makes-a-cloud-native-application-architecture-vital.rst
    fast-track-to-the-5g-edge-n6-lan-consolidation.rst
    securing-your-5g-edge.rst
    telcos-prioritize-5G-network-security.rst
    threat-landscape-report-2021.rst
+
+.. |5g-makes-a-cloud-native-application-architecture-vital| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-provider-city-lights-spectrum_950x534.jpg
+   :height: 152px
+   :width: 267px
+   :target: ../../../c/landing/service-providers/5g-makes-a-cloud-native-application-architecture-vital.html
 
 .. |5G-Technology-Transformation-Explained| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-provider-city-lights-spectrum_950x534.jpg
    :height: 152px
@@ -57,12 +63,14 @@ Articles
 .. table::
    :widths: 100 100 100 100
 
-   +------------------------------------------+---------------------------------------------------------------+---------------------------------------------------+--------------------------------------------------+
-   | |5G-Technology-Transformation-Explained| + |Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization| + |edge-multi-cloud-deployment-strategy-challenges| | |fast-track-to-the-5g-edge-n6-lan-consolidation| |
-   | 5G Technology Transformation Explained   + Improve Network QoE and Reduce TCO with N6 LAN Optimization   + Edge multi cloud deployment strategy challenges   | Fast track to the 5G EDGE - N6 LAN consolidation |
-   +------------------------------------------+---------------------------------------------------------------+---------------------------------------------------+--------------------------------------------------+
-   | |securing-your-5G-edge|                  + |telcos-prioritize-5G-network-security|                       + |threat-landscape-report-2021|                    | |dns-services-biggest-telecom-security-target|   |
-   | Securing your 5G EDGE                    + Telcos prioritize 5G network security                         + Threat landscape report - 2021                    | DNS security target                              |
-   +------------------------------------------+---------------------------------------------------------------+---------------------------------------------------+--------------------------------------------------+
-
+   +------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------+
+   | |5G-Technology-Transformation-Explained|       + |Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization| + |edge-multi-cloud-deployment-strategy-challenges| |
+   | 5G Technology Transformation Explained         + Improve Network QoE and Reduce TCO with N6 LAN Optimization   + Edge multi cloud deployment strategy challenges   |
+   +------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------+
+   | |securing-your-5G-edge|                        + |telcos-prioritize-5G-network-security|                       + |threat-landscape-report-2021|                    |
+   | Securing your 5G EDGE                          + Telcos prioritize 5G network security                         + Threat landscape report - 2021                    |
+   +------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------+
+   | |dns-services-biggest-telecom-security-target| + |fast-track-to-the-5g-edge-n6-lan-consolidation|              + | |dns-services-biggest-telecom-security-target|  |
+   | DNS security target                            + Fast track to the 5G EDGE - N6 LAN consolidation              + | DNS security target                             |
+   +------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------+
 
