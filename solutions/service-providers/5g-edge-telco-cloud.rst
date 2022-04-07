@@ -1,5 +1,5 @@
-Edge Telco Cloud
-=================
+5G Edge Telco Cloud
+====================
 
 .. toctree::
    :titlesonly:
