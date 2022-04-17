@@ -5,7 +5,7 @@ Articles
    :titlesonly:
    :glob:
 
-   5G-Transformation.rst
+   5G-Technology-Transformation-Explained.rst
    Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization.rst
    dns-services-biggest-telecom-security-target.rst
    edge-multi-cloud-deployment-strategy-challenges.rst
@@ -23,7 +23,7 @@ Articles
 .. |5G-Transformation| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-provider-city-lights-spectrum_950x534.jpg
    :height: 152px
    :width: 267px
-   :target: ../../../c/landing/service-providers/5G-Transformation.html
+   :target: ../../../c/landing/service-providers/5G-Technology-Transformation-Explained.html
 
 .. |Improve-Network-QoE-and-Reduce-TCO-with-N6-LAN-Optimization| image:: ../../../_static/sites/www.f5.com/content/dam/f5-com/global-assets/resources-featurettes/reports-articles/service-provider-networking-vedios-screens_950x534.jpg
    :height: 152px
