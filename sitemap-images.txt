@@ -10,6 +10,12 @@ https://www.f5.com/content/dam/campaigns/2020/bfsi-/bfsi-infographic-data-phone-
 https://www.f5.com/content/dam/campaigns/2020/bfsi-/bfsi-infographic-data-phone-person-night-hero_sm.jpg
 https://www.f5.com/content/dam/campaigns/2020/bfsi-/bfsi-infographic-data-phone-person-night-hero_xl.jpg
 https://www.f5.com/content/dam/campaigns/2020/bfsi-/bfsi-infographic-data-phone-person-night-hero_xs.jpg
+https://www.f5.com/content/dam/f5-app-security/en/2020/article-sp-5g-hype-becomes-reality/DIGART-SP-5G-hype-color-dots-flowing-background-768.jpg
+https://www.f5.com/content/dam/f5-app-security/en/2020/article-sp-5g-hype-becomes-reality/DIGART-SP-5G-hype-color-dots-flowing-background-1200.jpg
+https://www.f5.com/content/dam/f5-app-security/en/2020/article-sp-5g-hype-becomes-reality/DIGART-SP-5G-hype-color-dots-flowing-background-1600.jpg
+https://www.f5.com/content/dam/f5-app-security/en/2020/article-sp-5g-hype-becomes-reality/DIGART-SP-5G-hype-color-dots-flowing-background-2000.jpg
+https://www.f5.com/content/dam/f5-app-security/en/2020/article-sp-5g-hype-becomes-reality/DIGART-SP-5G-hype-container-diagram-560x339.jpg
+https://www.f5.com/content/dam/f5-app-security/en/2020/article-sp-5g-hype-becomes-reality/DIGART-SP-5G-hype-container-diagram-804x465.jpg
 https://www.f5.com/content/dam/f5-app-security/en/2020/article/5G_makes_cloud_native_app_hero_xs.jpg
 https://www.f5.com/content/dam/f5-app-security/en/2020/article/5G_makes_cloud_native_app_hero_sm.jpg
 https://www.f5.com/content/dam/f5-app-security/en/2020/article/5G_makes_cloud_native_app_hero_md.jpg
