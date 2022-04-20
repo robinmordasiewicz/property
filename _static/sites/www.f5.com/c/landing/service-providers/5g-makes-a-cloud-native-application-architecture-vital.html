@@ -1053,7 +1053,7 @@
 <div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
 <div class="cmp-text ">
     <p><span class="display-2">Shifting to Network Disaggregation with a Service-Based Architecture</span></p>
-<p>Service providers are defining and deploying a cloud-native infrastructure across the entire network from the core to the far edge, as defined by the 3rd Generation Partnership Project (3GPP), a Service-Based Architecture (SBA) is a set of interconnected network functions (NFs) that deliver the control plane functionality and common data repositories of a 5G network. Supporting a cloud-native SBA brings new requirements for the control, coordination, and orchestration of disaggregated network functions that are distributed across the network. These network functions are containerized microservices that can support the 5G Core, virtualized radio access network (vRAN), and N6-LAN NF. With a distributed, disaggregated network, service providers can obtain an adaptive network that scales as needed, thus avoiding initial preliminary upfront costs incurred with static 4G networks.<br>
+<p>Service providers are defining and deploying a cloud-native infrastructure across the entire network from the core to the far edge, as defined by the 3rd Generation Partnership Project (3GPP), a Service-Based Architecture (SBA) is a set of interconnected network functions (NFs) that deliver the control plane functionality and common data repositories of a 5G network. Supporting a cloud-native SBA brings new requirements for the control, coordination, and orchestration of disaggregated network functions that are distributed across the network. Network functions are containerized microservices that can support the 5G Core, virtualized radio access network (vRAN), and the N6-LAN NF.<br>
 </p>
 
 </div>
@@ -1106,9 +1106,9 @@
 <div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
 <div class="cmp-text ">
     <p><span class="display-2">5G Network Disaggregation</span></p>
-<p>A cloud-native, service-based architecture introduces a paradigm shift that enables service providers to migrate from a vertical to a horizontal stack implementation. A vertical stack approach increases vendor lock-in and requires that each vendor enables its own infrastructure, increasing complexity.</p>
-<p>A horizontal stack approach breaks such vendor complications and limitations while enabling the service provider to maintain control and visibility of its network. With a horizontal stack, service providers gain a consistent cloud-native infrastructure (telco cloud) implemented across core, edge, and far-edge sites—supporting vRAN, a standalone (SA) 5G Core, internal applications, and enterprise- and consumer-facing applications. In this way, 5G allows service providers to move to a horizontal stack approach, making it possible to scale edge sites as required by subscribers.</p>
-<h3><p style="color: rgb(243,112,75);line-height: 30.0px;">A cloud-native, service-based architecture has brought about a paradigm shift that enables service providers to migrate from a vertical to a horizontal stack implementation.</p>
+<p>Cloud-native, service-based architectures introduces a paradigm shift that enables service providers to migrate from a vertical to a horizontal stack implementation. A vertical stack approach increases vendor lock-in and requires that each vendor enables its own infrastructure, increasing complexity.</p>
+<p>A horizontal stack approach breaks such vendor complications and limitations while enabling the service provider to maintain control and visibility of its network. With a horizontal stack, service providers gain a consistent cloud-native infrastructure (telco cloud) implemented across core, edge, and far-edge sites—supporting vRAN, a standalone (SA) 5G Core, internal applications, and consumer facing applications. 5G allows service providers to move to a horizontal stack approach, making it possible to scale edge sites as required by subscribers.</p>
+<h3><p style="color: rgb(243,112,75);line-height: 30.0px;">A cloud-native, service-based architecture introduces a paradigm shift that enables service providers to migrate from a vertical to a horizontal stack implementation.</p>
 </h3>
 
 </div>
@@ -1382,7 +1382,7 @@
 
 
 
-<div class="a11-table__cell name bold-true"><p>Malleable software design</p>
+<div class="a11-table__cell name bold-true"><p>Modern software design</p>
 </div>
 <div class="a11-table__cell value"><p>Software design is pegged to fine-grained, isolated, and elastic func­tions (microservices) based on declarative (model-like) DevOps and cloud principles. This is in contrast to physical appliances character­ized by coarse-grained component granularity, linear processes, and a prescriptive/imperative (script-like) model.</p>
 </div>
@@ -1477,7 +1477,7 @@
 <div class="cmp-text ">
     <p><span class="display-2">F5 BIG-IP Next Service Proxy for Kubernetes</span><br>
 </p>
-<p>The <a href="../../../products/service-proxy-for-kubernetes.html" target="_self">F5 BIG-IP Next Service Proxy for Kubernetes</a> (SPK) is a unique offering specifically designed to help service providers monitor the health of container-based applications. BIG-IP SPK provides ingress/egress control with multi-protocol signaling support and critical cloud security, helping to deploy a cloud-native infrastructure across a service provider network. BIG-IP SPK aligns with Kubernetes design patterns for configuration and orchestration. It also provides industry-leading networking and security features to a Kubernetes-based infrastructure. BIG-IP SPK delivers:<br>
+<p>The <a href="../../../products/service-proxy-for-kubernetes.html" target="_self">F5 BIG-IP Next Service Proxy for Kubernetes</a> (SPK) is a unique offering specifically designed to help service providers monitor the health of container-based applications. BIG-IP Next SPK provides ingress/egress control with multi-protocol signaling support and critical cloud security, helping to deploy a cloud-native infrastructure across a service provider network. BIG-IP Next SPK aligns with Kubernetes design patterns for configuration and orchestration. It also provides industry-leading networking and security features to a Kubernetes-based infrastructure. BIG-IP Next SPK delivers:<br>
 &nbsp;</p>
 <p class="U:nudge-top-xs"><b>Ingress/egress control</b></p>
 <ul>
@@ -1512,8 +1512,8 @@
 </ul>
 <p>In addition to these features, F5 Carrier-Grade Aspen Mesh provides packet capture capabilities, which standard Kubernetes does not. Packet capture is important for troubleshooting communication issues between CNFs within the cluster and to support governmental requirements such as lawful intercept.</p>
 <p>&nbsp;</p>
-<p><span class="display-2">5G SA Core Example</span></p>
-<p>BIG-IP SPK and Carrier-Grade Aspen Mesh solve different challenges of using Kubernetes in a 5G cloud-native infrastructure. BIG-IP SPK meets the need for multi-protocol signaling support, security, and visibility of traffic into the Kubernetes cluster, while Carrier-Grade Aspen Mesh addresses communication between CNFs. Both are critical to the deployment of a 5G cloud-native infrastructure.</p>
+<p><span class="display-2">5G Stand Alone Core</span></p>
+<p>BIG-IP Next SPK and Carrier-Grade Aspen Mesh solve different challenges of using Kubernetes in a 5G cloud-native infrastructure. BIG-IP Next SPK meets the need for multi-protocol signaling support, security, and visibility of traffic into the Kubernetes cluster, while Carrier-Grade Aspen Mesh addresses communication between CNFs. Both are critical to the deployment of a 5G cloud-native infrastructure.</p>
 
 </div>
 
@@ -1553,7 +1553,7 @@
 </div>
 <div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
 <div class="cmp-text ">
-    <p><b>Figure 4:</b> An SA 5G Core, cloud-native networking architecture utilizing BIG-IP SPK and Carrier-Grade Aspen Mesh<br>
+    <p><b>Figure 4:</b>Stand Alone 5G Core, cloud-native networking architecture utilizing BIG-IP Next SPK and Carrier-Grade Aspen Mesh<br>
 <br>
 </p>
 
@@ -1564,9 +1564,9 @@
 </div>
 <div class="a01-text text aem-GridColumn aem-GridColumn--default--12">
 <div class="cmp-text ">
-    <p><span class="display-2">F5 N6 LAN Services</span></p>
+    <p><span class="display-2">F5 N6 LAN</span></p>
 <p>5G networks deliver dynamic applications that can be deployed at the core data center, edge, and far edge. As a result, network functions that used to be located in the S/Gi-LAN in 4G are now service-based CNFs that can move to the location of the applications.&nbsp;</p>
-<p>These new NFs are self-contained, independent, and reusable. Each network function service exposes its functionality through a service-based Interface (SBI), which employs a well-defined REST interface using HTTP/2. This functionality, called N6 LAN, is at the N6 interface between the packet gateway and the data network.</p>
+<p>New network functions are self-contained, independent, and reusable. Each network function service exposes its functionality through a service-based Interface (SBI), which employs a well-defined REST interface using HTTP/2. This functionality, called N6 LAN, is at the N6 interface between the packet gateway and the data network.</p>
 <p>F5 N6 LAN network functions include traffic management, network security, DNS services, policy enforcement, and carrier-grade network address translation (NAT). Until recently, most of these services have been implemented as dedicated hardware devices, but the rise of network functions virtualization (NFV) has led a gradual transition to virtualized appliances running on common server infrastructure or commercial off-the-shelf solutions.</p>
 <p>To meet service provider needs, F5 provides the industry’s most comprehensive set of N6 services in a consolidated and virtualized solution. Consolidating and virtualizing N6 services can result in up to a 60% reduction in capital and operating expenditures—while boosting performance and lowering latency.<a href="#_ftn1" name="_ftnref1"><sup>[2]</sup></a></p>
 <p>The F5 N6 services solution integrates a wide range of services from security to video optimization into a single platform. Service expansion is simplified, and the unified framework ensures there is a common technology to help service providers optimize the network and transition to 5G.</p>
