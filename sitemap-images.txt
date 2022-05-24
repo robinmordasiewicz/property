@@ -10,6 +10,12 @@ https://www.f5.com/content/dam/campaigns/2020/bfsi-/bfsi-infographic-data-phone-
 https://www.f5.com/content/dam/campaigns/2020/bfsi-/bfsi-infographic-data-phone-person-night-hero_sm.jpg
 https://www.f5.com/content/dam/campaigns/2020/bfsi-/bfsi-infographic-data-phone-person-night-hero_xl.jpg
 https://www.f5.com/content/dam/campaigns/2020/bfsi-/bfsi-infographic-data-phone-person-night-hero_xs.jpg
+https://www.f5.com/content/dam/f5-app-security/en/2020/article/Fig_1_FNL_Expanded.svg
+https://www.f5.com/content/dam/f5-app-security/en/2020/article/5g_fig_2a_b.png
+https://www.f5.com/content/dam/f5-app-security/en/2020/article/5G-Cloud_Fig_3_FNL_Expanded.svg
+https://www.f5.com/content/dam/f5-app-security/en/2020/article/5G_cna_Chart4.png
+https://www.f5.com/content/dam/f5-app-security/en/2020/article/5G-Cloud_Fig_5a_FNL_Expanded.svg
+https://www.f5.com/content/dam/f5-app-security/en/2020/article/Fig_5b_FNL_Expanded.svg
 https://www.f5.com/content/dam/f5-app-security/en/2020/article-sp-5g-hype-becomes-reality/DIGART-SP-5G-hype-HERO-city-light-spectrum-hd.jpg
 https://www.f5.com/content/dam/f5-app-security/en/2020/article-sp-5g-hype-becomes-reality/DIGART-SP-5G-hype-HERO-city-light-spectrum-lg.jpg
 https://www.f5.com/content/dam/f5-app-security/en/2020/article-sp-5g-hype-becomes-reality/DIGART-SP-5G-hype-HERO-city-light-spectrum-md.jpg
