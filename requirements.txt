@@ -24,7 +24,7 @@ sphinxcontrib-youtube
 sphinxcontrib-yt
 sphinxjp.themes.basicstrap>=0.5.0
 sphinxprettysearchresults
-tornado==3.2
+tornado==6.4.2
 versjon
 virtualenv
 yattag
